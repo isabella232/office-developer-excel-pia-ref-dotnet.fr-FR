@@ -1,0 +1,986 @@
+<Type Name="IconSetCondition" FullName="Microsoft.Office.Interop.Excel.IconSetCondition">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="bc68b806e9539de6f5350ba189ec017a58c6f1db" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20580723" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IconSetCondition" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IconSetCondition" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IconSetCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IconSetCondition" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IconSetCondition" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024497-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="8978e-101">Cet objet représente une règle de mise en forme conditionnelle de jeu d’icônes.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="8978e-101">Represents an icon set conditional formatting rule.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="8978e-102">
+        <para>Tous les objets de mise en forme conditionnelle sont contenues dans un <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection d’objets, qui est un enfant d’un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection. Vous pouvez créer un jeu d’icônes règle de mise en forme à l’aide du <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /> méthode de la collection <b>FormatConditions</b> .</para>
+        <para>Chaque jeu d’icônes contient trois, quatre ou cinq icônes. Vous utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objet à renvoyer un <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> objet pour spécifier un des jeux d’icônes intégrés. Chaque icône individuelle dans le jeu d’icônes est ensuite assigné à un sous-ensemble des valeurs de la plage par les membres de le <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> objet. Le type de seuil est également spécifié par cet objet.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="8978e-102">
+          <para>All conditional formatting objects are contained within a <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection object, which is a child of a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection. You can create an icon set formatting rule by using either the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method or <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /> method of the <b>FormatConditions</b> collection.</para>
+          <para>Each icon set contains three, four, or five icons. You use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> property of the <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> object to return an <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> object to specify one of the built-in icon sets. Each individual icon in the icon set is then assigned to a subset of the values of the range by the members of the <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> obect. The type of threshold is also specified by this object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-103">Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente l’application Microsoft Office Excel.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-103">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
+          </span>
+          <span data-ttu-id="8978e-104">Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-104">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
+          </span>
+          <span data-ttu-id="8978e-105">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-105">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="8978e-106">
+            <b>Application</b> (voir ci-dessus)</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-106">
+              <b>Application</b> (see above)</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="8978e-107">
+            <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-107">
+              <para>You can use this property with an OLE Automation object to return the application of that object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppliesTo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range AppliesTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range AppliesTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppliesTo As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ AppliesTo { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-108">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui spécifie la plage de cellules à laquelle la règle de mise en forme est appliquée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-108">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object specifying the cell range to which the formatting rule is applied.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-109">Renvoie un entier 32 bits équivalent à une <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> valeur qui indique l’application dans laquelle cet objet a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-109">Returns a 32-bit integer equivalent to an <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> value that indicates the application in which this object was created.</span>
+          </span>
+          <span data-ttu-id="8978e-110">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-110">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
+        </value>
+        <remarks>
+          <span data-ttu-id="8978e-111">
+            <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-111">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.  The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IconSetCondition.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-112">Supprime l’objet de règle de mise en forme conditionnelle spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-112">Deletes the specified conditional formatting rule object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula">
+      <MemberSignature Language="C#" Value="public string Formula { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Formula" />
+      <MemberSignature Language="VB.NET" Value="Public Property Formula As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-113">Cette propriété renvoie ou définit une valeur de type <b>String</b> représentant une formule qui détermine les valeurs auxquelles sera appliqué le jeu d'icônes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-113">Returns or sets a <b>String</b> representing a formula, which determines the values to which the icon set will be applied.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="8978e-114">
+            <b>Chaîne</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-114">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="8978e-115">
+            <para>Cette propriété est utile pour limiter la plage de valeurs qui affichera le format conditionnel. Un scénario classique est lorsque vous avez une plage de numéros contenant les valeurs positives et négatives. Vous souhaiterez peut-être créer plus d’un format conditionnel pour cette plage de numéros — une des valeurs positives et un autre pour les valeurs négatives.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-115">
+              <para>This property is useful to limit the range of values that will display the conditional format. A typical scenario is when you have a range of numbers containing both positive and negative values. You may want to create more than one conditional format for this range of numbers—one for positive values and another for negative values.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconCriteria">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.IconCriteria IconCriteria { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.IconCriteria IconCriteria" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IconCriteria As IconCriteria" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::IconCriteria ^ IconCriteria { Microsoft::Office::Interop::Excel::IconCriteria ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2727)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2727)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.IconCriteria</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-116">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> collection, qui représente l’ensemble des critères d’une icône définissez une règle de mise en forme conditionnelle.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> collection, which represents the set of criteria for an icon set conditional formatting rule.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />
+        </value>
+        <remarks>
+          <span data-ttu-id="8978e-117">
+            <para>Une fois que vous avez le <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />collection, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" /> propriété de la collection à renvoyer un <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objet. Le <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objet représente un critère d’un jeu d’icônes.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-117">
+              <para>After you have the <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />collection, you can use the <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" /> property of the collection to return an <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> object. The <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> object represents a single criterion of an icon set.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconSet">
+      <MemberSignature Language="C#" Value="public object IconSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object IconSet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property IconSet As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ IconSet { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2726)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2726)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2726)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-118">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> collection, qui spécifie le jeu d’icônes utilisé dans le format conditionnel.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-118">Returns or sets an <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> collection, which specifies the icon set used in the conditional format.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="8978e-119">
+            <b>Objet</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-119">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="8978e-120">
+            <para>Vous pouvez attribuer l’icône définie à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objet.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-120">
+              <para>You can assign the icon set by using the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> property of the <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> object. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyAppliesToRange">
+      <MemberSignature Language="C#" Value="public void ModifyAppliesToRange (Microsoft.Office.Interop.Excel.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifyAppliesToRange([in]class Microsoft.Office.Interop.Excel.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IconSetCondition.ModifyAppliesToRange(Microsoft.Office.Interop.Excel.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyAppliesToRange(Microsoft::Office::Interop::Excel::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2627)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Excel.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">
+          <span data-ttu-id="8978e-121">Plage à laquelle cette règle de mise en forme sera appliquée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-121">The range to which this formatting rule will be applied.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="8978e-122">Définit la plage de cellules à laquelle cette règle de mise en forme s’applique.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-122">Sets the cell range to which this formatting rule applies.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8978e-123">
+            <para>La plage doit se trouver dans le style de référence A1 et être entièrement dans la feuille qui est le parent de le <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. Il peut inclure l’opérateur de plage (le signe deux-points), l’opérateur d’intersection (un espace) ou l’opérateur union (une virgule). Signe dollar peut également être utilisé, mais ils sont ignorés.</para>
+            <para>Vous pouvez également utiliser un nom local défini dans n’importe quelle partie de la plage, mais le nom doit être dans la langue de la macro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-123">
+              <para>The range must be in the A1 reference style and be entirely contained within the sheet that is the parent of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. It can include the range operator (a colon), the intersection operator (a space), or the union operator (a comma). Dollar signs can also be used but they are ignored.</para>
+              <para>You can also use a local defined name in any part of the range, but the name must be in the language of the macro.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-p103">Renvoie l'objet parent de l'objet spécifié. En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-p103">Returns the parent object for the specified object. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="8978e-126">
+            <b>Objet</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-126">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentileValues">
+      <MemberSignature Language="C#" Value="public bool PercentileValues { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PercentileValues" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.PercentileValues" />
+      <MemberSignature Language="VB.NET" Value="Public Property PercentileValues As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PercentileValues { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2724)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2724)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2724)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-127">Renvoie ou définit une valeur de type <b>Boolean</b> qui indique si les seuils d’un format conditionnel de jeu d’icônes sont déterminés à l’aide de centiles.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-127">Returns or sets a <b>Boolean</b> value indicating if the thresholds for an icon set conditional format are determined by using percentiles.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="8978e-128">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-128">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="8978e-129">
+            <para>Cette propriété renvoie <b>False</b> si ce n’est pas chaque seuil est défini sur centile. Définir cette propriété sur <b>True</b> définit chaque type de seuil centile.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-129">
+              <para>This property will return <b>False</b> if not every threshold is set to percentile. Setting this property to <b>True</b> will set every threshold type to percentile.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public int Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-p104">Renvoie ou définit la valeur de priorité de la règle de mise en forme conditionnelle. La priorité détermine l’ordre d’évaluation lorsqu’une feuille de calcul contient plusieurs règles de mise en forme conditionnelle.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-p104">Returns or sets the priority value of the conditional formatting rule. The priority determines the order of evaluation when multiple conditional formatting rules exist in a worksheet.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="8978e-132">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-132">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="8978e-133">
+            <para>Lorsque vous définissez la priorité, la valeur doit être un nombre entier compris entre 1 et le nombre total de règles conditionnelles de mise en forme sur la feuille de calcul. La priorité doit être une valeur unique pour toutes les règles de la feuille de calcul, afin que la modification de la priorité de la règle de mise en forme conditionnelle spécifiée peut entraîner la valeur de priorité des autres règles dans la feuille de calcul.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-133">
+              <para>When setting the priority, the value must be a positive integer between 1 and the total number of conditional formatting rules on the worksheet. The priority must be a unique value for all rules on the worksheet, so changing the priority for the specified conditional formatting rule may cause the priority value of the other rules on the worksheet to be shifted.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PTCondition">
+      <MemberSignature Language="C#" Value="public bool PTCondition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PTCondition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.PTCondition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PTCondition As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PTCondition { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-p105">Renvoie une valeur de type <b>Boolean</b> indiquant si le format conditionnel est appliqué à un graphique de tableau croisé dynamique. Propriété en lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-p105">Returns a <b>Boolean</b> value indicating if the conditional format is being applied to a PivotTable chart. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="8978e-136">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-136">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReverseOrder">
+      <MemberSignature Language="C#" Value="public bool ReverseOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReverseOrder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.ReverseOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReverseOrder As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReverseOrder { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2723)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2723)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2723)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-137">Renvoie ou définit une valeur <b>Boolean</b> indiquant si l’ordre des icônes est inversé pour un jeu d’icônes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-137">Returns or sets a <b>Boolean</b> value indicating if the order of icons is reversed for an icon set.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="8978e-138">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-138">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="8978e-139">
+            <para>Par défaut, la plupart des jeux d’icônes que vous pouvez utiliser associe des images positives avec des valeurs élevées. Par exemple, le jeu d’icônes de « 3 feux » applique un cercle vert au seuil de valeur supérieure et un cercle rouge aux valeurs plus bas dans la plage. Si les données telles que des valeurs inférieures sont plus souhaitables, telles que les résultats en temps marathon, vous souhaiterez peut-être inverser l’ordre d’application des icônes à la plage pour associer le cercle vert aux valeurs plus basses.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-139">
+              <para>By default, most of the icon sets you can use associate positive images with higher values. For example, the "3 Traffic Lights" icon set applies a green circle to the upper value threshold and a red circle to the lowest values in the range. If your data is such that lower values are more desirable, such as marathon time results, you may want to reverse the order that icons are applied to the range to associate the green circle to the lowest values.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScopeType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.ScopeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScopeType As XlPivotConditionScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotConditionScope ScopeType { Microsoft::Office::Interop::Excel::XlPivotConditionScope get(); void set(Microsoft::Office::Interop::Excel::XlPivotConditionScope value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-140">Cette propriété renvoie ou définit une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> énumération qui détermine l’étendue du format conditionnel lorsqu’il est appliqué à un graphique de tableau croisé dynamique.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-140">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeration, which determines the scope of the conditional format when it is applied to a PivotTable chart.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
+        </value>
+        <remarks>
+          <span data-ttu-id="8978e-141">
+            <para>La valeur par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, qui définit l’étendue à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" /> propriété.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-141">
+              <para>The default value is <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, which sets the scope using the <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFirstPriority">
+      <MemberSignature Language="C#" Value="public void SetFirstPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetFirstPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IconSetCondition.SetFirstPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFirstPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFirstPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2629)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-142">Attribue à la règle de mise en forme conditionnelle en question la valeur de priorité « 1 » de sorte qu’elle soit évaluée avant toutes les autres règles présentes dans la feuille de calcul.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-142">Sets the priority value for this conditional formatting rule to "1" so that it will be evaluated before all other rules on the worksheet.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8978e-143">
+            <para>Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, si la règle n’a pas été précédemment définie à priorité « 1 », cette méthode provoque la priorité de toutes les autres règles existantes sur la feuille de calcul augmente d’un numéro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-143">
+              <para>When you have multiple conditional formatting rules in a worksheet, if the rule was not previously set to priority "1", this method will cause the priority of all other existing rules on the worksheet to be increased by one.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLastPriority">
+      <MemberSignature Language="C#" Value="public void SetLastPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLastPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IconSetCondition.SetLastPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLastPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLastPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2630)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-144">Définit l'ordre d'évaluation de la règle de mise en forme conditionnelle de sorte qu'elle soit évaluée après toutes les autres règles présentes dans la feuille de calcul.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-144">Sets the evaluation order for this conditional formatting rule so it is evaluated after all other rules on the worksheet.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8978e-145">
+            <para>La valeur réelle de la priorité est égale au nombre total de règles conditionnelles de mise en forme sur la feuille de calcul. Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, cette méthode provoque la priorité des règles qui a une valeur de priorité supérieure à cette règle doit être augmenté d’une unité.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-145">
+              <para>The actual value of the priority will be equal to the total number of conditional formatting rules on the worksheet. When you have multiple conditional formatting rules in a worksheet, this method will cause the priority of rules that had a priority value greater than this rule to be increased by one.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowIconOnly">
+      <MemberSignature Language="C#" Value="public bool ShowIconOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowIconOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.ShowIconOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowIconOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowIconOnly { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2725)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2725)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2725)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-146">Renvoie ou définit une valeur de type <b>Boolean</b> qui indique si seule l’icône est affichée pour un format conditionnel de jeu d’icônes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-146">Returns or sets a <b>Boolean</b> value indicating if only the icon is displayed for an icon set conditional format.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="8978e-147">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-147">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="8978e-148">
+            <para>La valeur par défaut de cette propriété a la <b>valeur False</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-148">
+              <para>The default value for this property is <b>False</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopIfTrue">
+      <MemberSignature Language="C#" Value="public bool StopIfTrue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StopIfTrue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.StopIfTrue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StopIfTrue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StopIfTrue { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-149">Renvoie ou définit une valeur de type <b>Boolean</b> qui détermine si les autres règles de mise en forme conditionnelle de la cellule doivent être évaluées lorsque la règle active renvoie la valeur <b>True</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-149">Returns or sets a <b>Boolean</b> value that determines if additional formatting rules on the cell should be evaluated if the current rule evaluates to <b>True</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="8978e-150">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-150">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="8978e-151">
+            <para>Pour prendre en charge la compatibilité descendante, la valeur par défaut de cette propriété est <b>True</b>, ce qui correspond au comportement contraire à celui d’une mise en forme créée dans l’interface utilisateur de règle.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-151">
+              <para>To support backward compatibility, the default value for this property is <b>True</b>, which is the opposite behavior of a formatting rule created in the user interface.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8978e-152">Renvoie une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> énumération qui spécifie le type de mise en forme conditionnelle.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-152">Returns one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> enumeration, which specifies the type of conditional format.</span>
+          </span>
+          <span data-ttu-id="8978e-153">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-153">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="8978e-154">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-154">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="8978e-155">
+            <para>Cette propriété renvoie toujours une valeur de 6, qui est équivalente à <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" />.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8978e-155">
+              <para>This property will always return a value of 6, which is equivalent to <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" />.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

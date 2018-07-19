@@ -1,0 +1,3406 @@
+<Type Name="Window" FullName="Microsoft.Office.Interop.Excel.Window">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8c49a6753e6ec53845aee64eafc52c6fc09004d7" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20577769" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Window" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Window" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Window" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Window" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Window" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020893-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="803a2-101">Cet objet représente une fenêtre.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="803a2-101">Represents a window.</span>
+      </span>
+      <span data-ttu-id="803a2-102">De nombreux éléments de feuille de calcul, telles que les barres de défilement et les quadrillages, sont en fait des propriétés de la fenêtre.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="803a2-102">Many worksheet characteristics, such as scroll bars and gridlines, are actually properties of the window.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="803a2-103">
+        <para>L’objet <b>Window</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection. La collection <b>Windows</b> renvoyée par la <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet contient toutes les fenêtres dans l’application, alors que la collection <b>Windows</b> renvoyé par la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet contient uniquement les fenêtres dans le classeur spécifié.</para>
+        <para>Utiliser <b>Windows</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la fenêtre ou le numéro d’index, pour renvoyer un seul objet <b>Window</b> .</para>
+        <para>Notez que la fenêtre active est toujours Windows (1).</para>
+        <para>La légende de la fenêtre est le texte affiché dans la barre de titre en haut de la fenêtre lorsque la fenêtre n’est pas agrandie. La légende apparaît également dans la liste des fichiers ouverts au bas du menu fenêtre. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> propriété pour définir ou renvoyer la légende de la fenêtre. Modification de la légende de la fenêtre ne change pas le nom du classeur.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="803a2-103">
+          <para>The <b>Window</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection. The <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object contains all the windows in the application, whereas the <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object contains only the windows in the specified workbook.</para>
+          <para>Use <b>Windows</b>(<paramref name="index" />), where <paramref name="index" /> is the window name or index number, to return a single <b>Window</b> object.</para>
+          <para>Note that the active window is always Windows(1).</para>
+          <para>The window caption is the text shown in the title bar at the top of the window when the window isn’t maximized. The caption is also shown in the list of open files on the bottom of the Windows menu. Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> property to set or return the window caption. Changing the window caption doesn’t change the name of the workbook.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_DisplayRightToLeft">
+      <MemberSignature Language="C#" Value="public bool _DisplayRightToLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool _DisplayRightToLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window._DisplayRightToLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property _DisplayRightToLeft As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool _DisplayRightToLeft { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(648)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(648)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(648)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-104">Réservé à une utilisation interne.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-104">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_PrintOut">
+      <MemberSignature Language="C#" Value="public object _PrintOut (object From, object To, object Copies, object Preview, object ActivePrinter, object PrintToFile, object Collate, object PrToFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object _PrintOut([in]object From, [in]object To, [in]object Copies, [in]object Preview, [in]object ActivePrinter, [in]object PrintToFile, [in]object Collate, [in]object PrToFileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window._PrintOut(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function _PrintOut (Optional From As Object, Optional To As Object, Optional Copies As Object, Optional Preview As Object, Optional ActivePrinter As Object, Optional PrintToFile As Object, Optional Collate As Object, Optional PrToFileName As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1772)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="From" Type="System.Object" />
+        <Parameter Name="To" Type="System.Object" />
+        <Parameter Name="Copies" Type="System.Object" />
+        <Parameter Name="Preview" Type="System.Object" />
+        <Parameter Name="ActivePrinter" Type="System.Object" />
+        <Parameter Name="PrintToFile" Type="System.Object" />
+        <Parameter Name="Collate" Type="System.Object" />
+        <Parameter Name="PrToFileName" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="From">To be added.</param>
+        <param name="To">To be added.</param>
+        <param name="Copies">To be added.</param>
+        <param name="Preview">To be added.</param>
+        <param name="ActivePrinter">To be added.</param>
+        <param name="PrintToFile">To be added.</param>
+        <param name="Collate">To be added.</param>
+        <param name="PrToFileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="public object Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Activate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.Activate" />
+      <MemberSignature Language="VB.NET" Value="Public Function Activate () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Activate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(304)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-105">Cette méthode amène la fenêtre au premier plan de l'ordre de plan.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-105">Brings the window to the front of the z-order.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="803a2-106">
+            <para>La méthode <b>Activate</b> n’exécute aucune macro Auto_Activate ou Auto_Deactivate susceptibles d’être liées au classeur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour exécuter ces macros.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-106">
+              <para>The <b>Activate</b> method won't run any Auto_Activate or Auto_Deactivate macros that might be attached to the workbook. Use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> method to run those macros.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateNext">
+      <MemberSignature Language="C#" Value="public object ActivateNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ActivateNext() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.ActivateNext" />
+      <MemberSignature Language="VB.NET" Value="Public Function ActivateNext () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ActivateNext();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1115)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-107">Active la fenêtre spécifiée, puis l’envoie à l’arrière-plan de la superposition.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-107">Activates the specified window, and then sends it to the back of the window z-order.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivatePrevious">
+      <MemberSignature Language="C#" Value="public object ActivatePrevious ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ActivatePrevious() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.ActivatePrevious" />
+      <MemberSignature Language="VB.NET" Value="Public Function ActivatePrevious () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ActivatePrevious();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1116)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-108">Active la fenêtre spécifiée, puis active la fenêtre située à l’arrière-plan de la superposition.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-108">Activates the specified window and then activates the window at the back of the window z-order.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveCell">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range ActiveCell { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range ActiveCell" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ActiveCell" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveCell As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ ActiveCell { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(305)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(305)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-109">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object qui représente la cellule active dans la fenêtre active (la fenêtre en haut) ou dans la fenêtre spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-109">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the active cell in the active window (the window on top) or in the specified window.</span>
+          </span>
+          <span data-ttu-id="803a2-110">Si la fenêtre n’est pas une feuille de calcul, cette propriété échoue.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-110">If the window isn't displaying a worksheet, this property fails.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-111">
+            <para>Si vous ne spécifiez pas un qualificateur d’objet, cette propriété renvoie la cellule active dans la fenêtre active.</para>
+            <para>Veillez à faire la distinction entre la cellule active et la sélection. La cellule active est une cellule unique à l’intérieur de la sélection actuelle. La sélection peut contenir plusieurs cellules, mais qu’un seul est la cellule active.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-111">
+              <para>If you don't specify an object qualifier, this property returns the active cell in the active window.</para>
+              <para>Be careful to distinguish between the active cell and the selection. The active cell is a single cell inside the current selection. The selection may contain more than one cell, but only one is the active cell.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveChart">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Chart ActiveChart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Chart ActiveChart" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ActiveChart" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveChart As Chart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Chart ^ ActiveChart { Microsoft::Office::Interop::Excel::Chart ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(183)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(183)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-112">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object qui représente le graphique actif (un graphique incorporé ou une feuille de graphique).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-112">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object that represents the active chart (either an embedded chart or a chart sheet).</span>
+          </span>
+          <span data-ttu-id="803a2-113">Un graphique incorporé est considéré comme actif lorsqu’il est sélectionné ou activé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-113">An embedded chart is considered active when it's either selected or activated.</span>
+          </span>
+          <span data-ttu-id="803a2-114">Lorsqu’aucun graphique n’est actif, cette propriété renvoie la <b>valeur Nothing</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-114">When no chart is active, this property returns <b>Nothing</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-115">
+            <para>Si vous ne spécifiez pas un qualificateur d’objet, cette propriété renvoie le graphique actif du classeur actif.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-115">
+              <para>If you don't specify an object qualifier, this property returns the active chart in the active workbook.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivePane">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Pane ActivePane { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Pane ActivePane" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ActivePane" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivePane As Pane" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Pane ^ ActivePane { Microsoft::Office::Interop::Excel::Pane ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(642)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(642)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Pane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-116">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> object qui représente le volet actif dans la fenêtre.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-116">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> object that represents the active pane in the window.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-117">
+            <para>Cette propriété peut être utilisée uniquement dans les feuilles de calcul et les feuilles macro.</para>
+            <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> propriété pour obtenir l’index du volet actif.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-117">
+              <para>This property can be used only on worksheets and macro sheets.</para>
+              <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> property to obtain the index of the active pane.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveSheet">
+      <MemberSignature Language="C#" Value="public object ActiveSheet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ActiveSheet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ActiveSheet" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveSheet As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ActiveSheet { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(307)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(307)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-118">Renvoie un object qui représente la feuille active (feuille au premier plan) dans le classeur actif ou dans la fenêtre spécifiée ou du classeur.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-118">Returns an object that represents the active sheet (the sheet on top) in the active workbook or in the specified window or workbook.</span>
+          </span>
+          <span data-ttu-id="803a2-119">Renvoie la <b>valeur Nothing</b> si aucune feuille n’est active.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-119">Returns <b>Nothing</b> if no sheet is active.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="803a2-120">
+            <b>Objet</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-120">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="803a2-121">
+            <para>Si vous ne spécifiez pas un qualificateur d’objet, cette propriété renvoie la feuille active du classeur actif.</para>
+            <para>Si un classeur apparaît dans plusieurs fenêtres, la propriété <b>ActiveSheet</b> peut être différente dans différentes fenêtres.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-121">
+              <para>If you don’t specify an object qualifier, this property returns the active sheet in the active workbook.</para>
+              <para>If a workbook appears in more than one window, the <b>ActiveSheet</b> property may be different in different windows.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveSheetView">
+      <MemberSignature Language="C#" Value="public object ActiveSheetView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ActiveSheetView" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ActiveSheetView" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveSheetView As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ActiveSheetView { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2369)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2369)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-p105">Renvoie un objet qui représente l’affichage de la feuille active dans la fenêtre spécifiée. En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-p105">Returns an object that represents the view of the active sheet in the specified window. Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-124">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Excel.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-124">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Excel application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoFilterDateGrouping">
+      <MemberSignature Language="C#" Value="public bool AutoFilterDateGrouping { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoFilterDateGrouping" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.AutoFilterDateGrouping" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoFilterDateGrouping As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoFilterDateGrouping { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2371)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2371)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2371)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-125">
+            <b>La valeur true</b> si le filtre automatique de regroupement de dates est actuellement affiché dans la fenêtre spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-125">
+              <b>True</b> if the auto filter for date grouping is currently displayed in the specified window.</span>
+          </span>
+          <span data-ttu-id="803a2-126">Lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-126">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="803a2-127">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-127">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="public object Caption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Caption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Caption" />
+      <MemberSignature Language="VB.NET" Value="Public Property Caption As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Caption { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-128">Le nom qui s’affiche dans la barre de titre de la fenêtre de document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-128">The name that appears in the title bar of the document window.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public bool Close (object SaveChanges, object Filename, object RouteWorkbook);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Close([in]object SaveChanges, [in]object Filename, [in]object RouteWorkbook) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.Close(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Close (Optional SaveChanges As Object, Optional Filename As Object, Optional RouteWorkbook As Object) As Boolean" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(277)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SaveChanges" Type="System.Object" />
+        <Parameter Name="Filename" Type="System.Object" />
+        <Parameter Name="RouteWorkbook" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="SaveChanges">
+          <span data-ttu-id="803a2-129">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-129">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-130">S’il n’y a aucune modification au classeur, cet argument est ignoré.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-130">If there are no changes to the workbook, this argument is ignored.</span>
+          </span>
+          <span data-ttu-id="803a2-131">Si des modifications sont apportées au classeur et le classeur s’affiche dans d’autres fenêtres ouvertes, cet argument est ignoré.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-131">If there are changes to the workbook and the workbook appears in other open windows, this argument is ignored.</span>
+          </span>
+          <span data-ttu-id="803a2-132">Si des modifications sont apportées au classeur, mais n’apparaît pas dans d’autres fenêtres ouvertes, cet argument spécifie si les modifications doivent être enregistrées, comme illustré dans le tableau suivant. ValueAction<b>True</b>enregistre les modifications apportées au classeur.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-132">If there are changes to the workbook but the workbook doesn't appear in any other open windows, this argument specifies whether changes should be saved, as shown in the following table.ValueAction<b>True</b>Saves the changes to the workbook.</span>
+          </span>
+          <span data-ttu-id="803a2-133">S’il n’existe pas encore associé au classeur, puis un nom de fichier <paramref name="FileName" /> est utilisé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-133">If there is not yet a file name associated with the workbook, then <paramref name="FileName" /> is used.</span>
+          </span>
+          <span data-ttu-id="803a2-134">Si <paramref name="FileName" /> est omis, l’utilisateur est invité à fournir un nom de fichier. <b>False</b> N’enregistre pas les modifications apportées à ce fichier. OmittedDisplays une boîte de dialogue demandant à l’utilisateur s’il faut enregistrer les modifications.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-134">If <paramref name="FileName" /> is omitted, the user is asked to supply a file name.<b>False</b>Does not save the changes to this file.OmittedDisplays a dialog box asking the user whether or not to save changes.</span>
+          </span>
+        </param>
+        <param name="Filename">
+          <span data-ttu-id="803a2-135">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-135">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-136">Enregistrer les modifications sous ce nom de fichier.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-136">Save changes under this file name.</span>
+          </span>
+        </param>
+        <param name="RouteWorkbook">
+          <span data-ttu-id="803a2-137">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-137">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-138">Si le classeur ne doit pas être routé au destinataire suivant (s’il n’a aucun bordereau de routage ou a déjà été acheminé), cet argument est ignoré.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-138">If the workbook doesn't need to be routed to the next recipient (if it has no routing slip or has already been routed), this argument is ignored.</span>
+          </span>
+          <span data-ttu-id="803a2-139">Dans le cas contraire, Microsoft Excel achemine le classeur comme indiqué dans le tableau suivant. <b>True</b>ValueMeaning envoie le classeur au destinataire suivant. <b>False</b> N’envoie pas le classeur. OmittedDisplays une boîte de dialogue demandant à l’utilisateur si le classeur doit être envoyé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-139">Otherwise, Microsoft Excel routes the workbook as shown in the following table.ValueMeaning<b>True</b>Sends the workbook to the next recipient.<b>False</b>Doesn't send the workbook.OmittedDisplays a dialog box asking the user whether the workbook should be sent.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="803a2-140">Ferme l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-140">Closes the object.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="803a2-141">
+            <para>La méthode <b>Close</b> n’exécute aucune macro Auto_Close du classeur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour l’exécuter.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-141">
+              <para>The <b>Close</b> method doesn't run any Auto_Close macros in the workbook. Use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> method to run the auto close macros.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-142">Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-142">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-143">
+            <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
+          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-143">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayFormulas">
+      <MemberSignature Language="C#" Value="public bool DisplayFormulas { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayFormulas" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayFormulas" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayFormulas As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayFormulas { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(644)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(644)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(644)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-144">
+            <b>True</b> si la fenêtre affiche les formules ; <b>False</b> si la fenêtre affiche les valeurs.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-144">
+              <b>True</b> if the window is displaying formulas; <b>False</b> if the window is displaying values.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-145">
+            <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-145">
+              <para>This property applies only to worksheets and macro sheets.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayGridlines">
+      <MemberSignature Language="C#" Value="public bool DisplayGridlines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayGridlines" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayGridlines" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayGridlines As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayGridlines { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(645)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(645)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(645)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-146">
+            <b>La valeur true</b> si le quadrillage est affiché.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-146">
+              <b>True</b> if gridlines are displayed.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-147">
+            <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
+            <para>Cette propriété affecte uniquement le quadrillage affiché. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> propriété pour contrôler l’impression du quadrillage.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-147">
+              <para>This property applies only to worksheets and macro sheets.</para>
+              <para>This property affects only displayed gridlines. Use the <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> property to control the printing of gridlines.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayHeadings">
+      <MemberSignature Language="C#" Value="public bool DisplayHeadings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayHeadings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayHeadings" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayHeadings As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayHeadings { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(646)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(646)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(646)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-148">
+            <b>La valeur true</b> si les en-têtes de ligne et de colonne sont affichés ; <b>False</b> s’il n’existe aucun en-tête n’est affiché.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-148">
+              <b>True</b> if both row and column headings are displayed; <b>False</b> if there are no headings displayed.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-149">
+            <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
+            <para>Cette propriété affecte uniquement les en-têtes affichés. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> propriété pour contrôler l’impression des en-têtes.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-149">
+              <para>This property applies only to worksheets and macro sheets.</para>
+              <para>This property affects only displayed headings. Use the <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> property to control the printing of headings.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayHorizontalScrollBar">
+      <MemberSignature Language="C#" Value="public bool DisplayHorizontalScrollBar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayHorizontalScrollBar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayHorizontalScrollBar" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayHorizontalScrollBar As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayHorizontalScrollBar { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(921)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(921)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(921)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-150">
+            <b>True</b> si la barre de défilement horizontale est affichée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-150">
+              <b>True</b> if the horizontal scroll bar is displayed.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayOutline">
+      <MemberSignature Language="C#" Value="public bool DisplayOutline { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayOutline" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayOutline" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayOutline As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayOutline { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(647)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(647)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(647)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-151">
+            <b>La valeur true</b> si les symboles du plan sont affichés.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-151">
+              <b>True</b> if outline symbols are displayed.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-152">
+            <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-152">
+              <para>This property applies only to worksheets and macro sheets.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayRightToLeft">
+      <MemberSignature Language="C#" Value="public bool DisplayRightToLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayRightToLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayRightToLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayRightToLeft As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayRightToLeft { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1774)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1774)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1774)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-153">
+            <b>True</b> si la fenêtre spécifiée est affichée de droite à gauche plutôt que de gauche à droite.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-153">
+              <b>True</b> if the specified window is displayed from right to left instead of from left to right.</span>
+          </span>
+          <span data-ttu-id="803a2-154">
+            <b>False</b> si l’objet est affiché de gauche à droite.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-154">
+              <b>False</b> if the object is displayed from left to right.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayRuler">
+      <MemberSignature Language="C#" Value="public bool DisplayRuler { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayRuler" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayRuler" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayRuler As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayRuler { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2370)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2370)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2370)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-155">
+            <b>True</b> si la règle est affichée pour la fenêtre spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-155">
+              <b>True</b> if a ruler is displayed for the specified window.</span>
+          </span>
+          <span data-ttu-id="803a2-156">Lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-156">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="803a2-157">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-157">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayVerticalScrollBar">
+      <MemberSignature Language="C#" Value="public bool DisplayVerticalScrollBar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayVerticalScrollBar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayVerticalScrollBar" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayVerticalScrollBar As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayVerticalScrollBar { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(922)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(922)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(922)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-158">
+            <b>True</b> si la barre de défilement verticale est affichée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-158">
+              <b>True</b> if the vertical scroll bar is displayed.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayWhitespace">
+      <MemberSignature Language="C#" Value="public bool DisplayWhitespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayWhitespace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayWhitespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayWhitespace As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayWhitespace { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2372)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2372)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2372)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-159">
+            <b>La valeur true</b> si les espaces sont affichés.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-159">
+              <b>True</b> if whitespace is displayed.</span>
+          </span>
+          <span data-ttu-id="803a2-160">Lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-160">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="803a2-161">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-161">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayWorkbookTabs">
+      <MemberSignature Language="C#" Value="public bool DisplayWorkbookTabs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayWorkbookTabs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayWorkbookTabs As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayWorkbookTabs { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(923)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(923)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(923)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-162">
+            <b>La valeur true</b> si les onglets du classeur sont affichés.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-162">
+              <b>True</b> if the workbook tabs are displayed.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayZeros">
+      <MemberSignature Language="C#" Value="public bool DisplayZeros { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayZeros" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayZeros" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayZeros As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayZeros { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(649)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(649)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(649)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-163">
+            <b>La valeur true</b> si les valeurs zéro sont affichées.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-163">
+              <b>True</b> if zero values are displayed.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-164">
+            <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-164">
+              <para>This property applies only to worksheets and macro sheets.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableResize">
+      <MemberSignature Language="C#" Value="public bool EnableResize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableResize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.EnableResize" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableResize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableResize { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1192)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1192)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1192)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-165">
+            <b>True</b> si la fenêtre peut être redimensionnée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-165">
+              <b>True</b> if the window can be resized.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FreezePanes">
+      <MemberSignature Language="C#" Value="public bool FreezePanes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FreezePanes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" />
+      <MemberSignature Language="VB.NET" Value="Public Property FreezePanes As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FreezePanes { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(650)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(650)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(650)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-166">
+            <b>La valeur true</b> si les volets fractionnés sont figés.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-166">
+              <b>True</b> if split panes are frozen.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-167">
+            <para>Il est possible de <b>FreezePanes </b><b>true</b> et <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> à <b>False</b>, ou vice versa.</para>
+            <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-167">
+              <para>It’s possible for <b>FreezePanes </b>to be <b>True</b> and <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> to be <b>False</b>, or vice versa.</para>
+              <para>This property applies only to worksheets and macro sheets.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GridlineColor">
+      <MemberSignature Language="C#" Value="public int GridlineColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 GridlineColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.GridlineColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property GridlineColor As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GridlineColor { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(651)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(651)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(651)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-168">Cette propriété renvoie ou définit la couleur du quadrillage sous forme de valeur RVB.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-168">Returns or sets the gridline color as an RGB value.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GridlineColorIndex">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlColorIndex GridlineColorIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlColorIndex GridlineColorIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.GridlineColorIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property GridlineColorIndex As XlColorIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlColorIndex GridlineColorIndex { Microsoft::Office::Interop::Excel::XlColorIndex get(); void set(Microsoft::Office::Interop::Excel::XlColorIndex value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(652)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(652)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(652)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-169">Cette propriété renvoie ou définit la couleur du quadrillage sous forme d’index dans la palette de couleurs actuelle ou sous un <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constante.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-169">Returns or sets the gridline color as an index into the current color palette or as an <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constant.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-170">
+            <para>Définir cette propriété sur <b>xlColorIndexAutomatic</b> pour spécifier la couleur automatique.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-170">
+              <para>Set this property to <b>xlColorIndexAutomatic</b> to specify the automatic color.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public double Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-171">La hauteur de la fenêtre, estimée en points.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-171">The height of the window in points.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-172">
+            <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> propriété pour déterminer la taille maximale de la fenêtre. Vous ne pouvez pas définir cette propriété si la fenêtre est agrandie ou réduite. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propriété pour déterminer l’état de la fenêtre.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-172">
+              <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> property to determine the maximum size for the window. You cannot set this property if the window is maximized or minimized. Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to determine the window state.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hwnd">
+      <MemberSignature Language="C#" Value="public int Hwnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Hwnd" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Hwnd" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hwnd As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Hwnd { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1950)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1950)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-173">Retourne le handle de fenêtre de la fenêtre spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-173">Returns the window handle of the specified window.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="803a2-174">Entier (int en c#)</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-174">Integer (int in C#)</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-175">Cette propriété renvoie le numéro d'index de l'objet dans la collection des objets similaires.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-175">Returns the index number of the object within the collection of similar objects.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LargeScroll">
+      <MemberSignature Language="C#" Value="public object LargeScroll (object Down, object Up, object ToRight, object ToLeft);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object LargeScroll([in]object Down, [in]object Up, [in]object ToRight, [in]object ToLeft) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.LargeScroll(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LargeScroll (Optional Down As Object, Optional Up As Object, Optional ToRight As Object, Optional ToLeft As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(547)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Down" Type="System.Object" />
+        <Parameter Name="Up" Type="System.Object" />
+        <Parameter Name="ToRight" Type="System.Object" />
+        <Parameter Name="ToLeft" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Down">
+          <span data-ttu-id="803a2-176">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-176">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-177">Nombre de pages à faire défiler vers le bas.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-177">The number of pages to scroll the contents down.</span>
+          </span>
+        </param>
+        <param name="Up">
+          <span data-ttu-id="803a2-178">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-178">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-179">Nombre de pages à faire défiler vers le haut.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-179">The number of pages to scroll the contents up.</span>
+          </span>
+        </param>
+        <param name="ToRight">
+          <span data-ttu-id="803a2-180">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-180">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-181">Nombre de pages à faire défiler vers la droite.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-181">The number of pages to scroll the contents to the right.</span>
+          </span>
+        </param>
+        <param name="ToLeft">
+          <span data-ttu-id="803a2-182">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-182">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-183">Nombre de pages à faire défiler vers la gauche.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-183">The number of pages to scroll the contents to the left.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="803a2-184">Cette méthode fait défiler le contenu de la fenêtre page par page.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-184">Scrolls the contents of the window by pages.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="803a2-185">
+            <para>Si <paramref name="Down" /> et <paramref name="Up" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="Down" /> est 3 et <paramref name="Up" /> est 6, le contenu défile de trois pages.</para>
+            <para>Si <paramref name="ToLeft" /> et <paramref name="ToRight" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="ToLeft" /> est 3 et <paramref name="ToRight" /> est 6, le contenu défile à droite de trois pages vers la.</para>
+            <para>Chaque argument peut être un nombre négatif.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-185">
+              <para>If <paramref name="Down" /> and <paramref name="Up" /> are both specified, the contents of the window are scrolled by the difference of the arguments. For example, if <paramref name="Down" /> is 3 and <paramref name="Up" /> is 6, the contents are scrolled up three pages.</para>
+              <para>If <paramref name="ToLeft" /> and <paramref name="ToRight" /> are both specified, the contents of the window are scrolled by the difference of the arguments. For example, if <paramref name="ToLeft" /> is 3 and <paramref name="ToRight" /> is 6, the contents are scrolled to the right three pages.</para>
+              <para>Any of the arguments can be a negative number.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public double Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-186">Distance en points entre le bord gauche de la zone client et le bord gauche de la fenêtre.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-186">The distance in points from the left edge of the client area to the left edge of the window.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewWindow">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Window NewWindow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Window NewWindow() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.NewWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Function NewWindow () As Window" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::Window ^ NewWindow();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(280)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Window</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-187">Crée une nouvelle fenêtre ou une copie de la fenêtre spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-187">Creates a new window or a copy of the specified window.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnWindow">
+      <MemberSignature Language="C#" Value="public string OnWindow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OnWindow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.OnWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnWindow As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OnWindow { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(623)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(623)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(623)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-188">Cette propriété renvoie ou définit le nom de la procédure exécutée lorsque vous activez une fenêtre.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-188">Returns or sets the name of the procedure that’s run whenever you activate a window.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-189">
+            <para>La procédure spécifiée par cette propriété n’est pas exécutée lorsque d’autres procédures basculent vers la fenêtre ou de la commande pour basculer vers une fenêtre est reçue via un canal DDE. Au lieu de cela, la procédure répond aux actions de l’utilisateur, par exemple cliquer sur une fenêtre avec la souris, cliquez sur Atteindre dans le menu Edition et ainsi de suite.</para>
+            <para>Si une feuille de calcul ou une feuille macro a une macro Auto_Activate ou Auto_Deactivate est définie, cette macro sera exécutée après la procédure spécifiée par la propriété <b>OnWindow</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-189">
+              <para>The procedure specified by this property isn’t run when other procedures switch to the window or when a command to switch to a window is received through a DDE channel. Instead, the procedure responds to the user's actions, such as clicking a window with the mouse, clicking Go To on the Edit menu, and so on.</para>
+              <para>If a worksheet or macro sheet has an Auto_Activate or Auto_Deactivate macro defined for it, those macros will be run after the procedure specified by the <b>OnWindow</b> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Panes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Panes Panes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Panes Panes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Panes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Panes As Panes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Panes ^ Panes { Microsoft::Office::Interop::Excel::Panes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(653)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(653)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Panes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-190">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> collection qui représente tous les volets de la fenêtre spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-190">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> collection that represents all the panes in the specified window.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-191">
+            <para>Cette propriété est disponible pour une fenêtre uniquement lorsque la fenêtre de <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> propriété peut être définie sur <b>True</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-191">
+              <para>This property is available for a window only if the window’s <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> property can be set to <b>True</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-192">Renvoie l'objet parent de l'objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-192">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointsToScreenPixelsX">
+      <MemberSignature Language="C#" Value="public int PointsToScreenPixelsX (int Points);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 PointsToScreenPixelsX([in]int32 Points) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.PointsToScreenPixelsX(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PointsToScreenPixelsX (Points As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int PointsToScreenPixelsX(int Points);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1776)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Points" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Points">
+          <span data-ttu-id="803a2-193">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-193">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-194">Nombre de points comptés horizontalement le long de la partie supérieure de la fenêtre du document, en partant de la gauche.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-194">The number of points horizontally along the top of the document window, starting from the left.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="803a2-195">Convertit une mesure horizontale de points (coordonnées du document) en pixels (coordonnées à l’écran).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-195">Converts a horizontal measurement from points (document coordinates) to screen pixels (screen coordinates).</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointsToScreenPixelsY">
+      <MemberSignature Language="C#" Value="public int PointsToScreenPixelsY (int Points);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 PointsToScreenPixelsY([in]int32 Points) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.PointsToScreenPixelsY(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PointsToScreenPixelsY (Points As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int PointsToScreenPixelsY(int Points);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1777)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Points" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Points">
+          <span data-ttu-id="803a2-196">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-196">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-197">Nombre de points comptés verticalement le long du bord gauche de la fenêtre du document, en partant du haut.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-197">The number of points vertically along the left edge of the document window, starting from the top.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="803a2-198">Convertit une mesure verticale de points (coordonnées du document) en pixels (coordonnées à l’écran).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-198">Converts a vertical measurement from points (document coordinates) to screen pixels (screen coordinates).</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintOut">
+      <MemberSignature Language="C#" Value="public object PrintOut (object From, object To, object Copies, object Preview, object ActivePrinter, object PrintToFile, object Collate, object PrToFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object PrintOut([in]object From, [in]object To, [in]object Copies, [in]object Preview, [in]object ActivePrinter, [in]object PrintToFile, [in]object Collate, [in]object PrToFileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.PrintOut(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PrintOut (Optional From As Object, Optional To As Object, Optional Copies As Object, Optional Preview As Object, Optional ActivePrinter As Object, Optional PrintToFile As Object, Optional Collate As Object, Optional PrToFileName As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2361)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="From" Type="System.Object" />
+        <Parameter Name="To" Type="System.Object" />
+        <Parameter Name="Copies" Type="System.Object" />
+        <Parameter Name="Preview" Type="System.Object" />
+        <Parameter Name="ActivePrinter" Type="System.Object" />
+        <Parameter Name="PrintToFile" Type="System.Object" />
+        <Parameter Name="Collate" Type="System.Object" />
+        <Parameter Name="PrToFileName" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="From">
+          <span data-ttu-id="803a2-199">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-199">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-200">Le numéro de la page à laquelle commence l’impression.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-200">The number of the page at which to start printing.</span>
+          </span>
+          <span data-ttu-id="803a2-201">Si cet argument est omis, l’impression commence au début.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-201">If this argument is omitted, printing starts at the beginning.</span>
+          </span>
+        </param>
+        <param name="To">
+          <span data-ttu-id="803a2-202">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-202">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-203">Le numéro de la dernière page à imprimer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-203">The number of the last page to print.</span>
+          </span>
+          <span data-ttu-id="803a2-204">Si cet argument est omis, l’impression se termine par la dernière page.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-204">If this argument is omitted, printing ends with the last page.</span>
+          </span>
+        </param>
+        <param name="Copies">
+          <span data-ttu-id="803a2-205">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-205">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-206">Le nombre de copies à imprimer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-206">The number of copies to print.</span>
+          </span>
+          <span data-ttu-id="803a2-207">Si cet argument est omis, une seule copie est imprimée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-207">If this argument is omitted, one copy is printed.</span>
+          </span>
+        </param>
+        <param name="Preview">
+          <span data-ttu-id="803a2-208">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-208">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-209">
+            <b>True</b> pour que Microsoft Excel affiche un aperçu avant impression de l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-209">
+              <b>True</b> to have Microsoft Excel invoke print preview before printing the object.</span>
+          </span>
+          <span data-ttu-id="803a2-210">
+            <b>False</b> (ou omis) pour imprimer l’objet immédiatement.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-210">
+              <b>False</b> (or omitted) to print the object immediately.</span>
+          </span>
+        </param>
+        <param name="ActivePrinter">
+          <span data-ttu-id="803a2-211">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-211">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-212">Définit le nom de l'imprimante active.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-212">Sets the name of the active printer.</span>
+          </span>
+        </param>
+        <param name="PrintToFile">
+          <span data-ttu-id="803a2-213">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-213">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-214">
+            <b>True</b> pour imprimer dans un fichier.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-214">
+              <b>True</b> to print to a file.</span>
+          </span>
+          <span data-ttu-id="803a2-215">Si <paramref name="PrToFileName" /> n’est pas spécifié, Microsoft Excel invite l’utilisateur à entrer le nom du fichier de sortie.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-215">If <paramref name="PrToFileName" /> is not specified, Microsoft Excel prompts the user to enter the name of the output file.</span>
+          </span>
+        </param>
+        <param name="Collate">
+          <span data-ttu-id="803a2-216">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-216">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-217">
+            <b>True</b> pour assembler plusieurs copies.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-217">
+              <b>True</b> to collate multiple copies.</span>
+          </span>
+        </param>
+        <param name="PrToFileName">
+          <span data-ttu-id="803a2-218">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-218">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-219">Si <paramref name="PrintToFile" /> est définie sur <b>True</b>, cet argument spécifie le nom du fichier que vous souhaitez effectuer l’impression.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-219">If <paramref name="PrintToFile" /> is set to <b>True</b>, this argument specifies the name of the file you want to print to.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="803a2-220">Imprime l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-220">Prints the object.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="803a2-221">
+            <para>« Pages » dans les descriptions de <paramref name="From" /> et <paramref name="To" /> fait référence aux pages imprimées, pas aux pages globales de la feuille ou du classeur.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-221">
+              <para>"Pages" in the descriptions of <paramref name="From" /> and <paramref name="To" /> refers to printed pages — not overall pages in the sheet or workbook.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintPreview">
+      <MemberSignature Language="C#" Value="public object PrintPreview (object EnableChanges);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object PrintPreview([in]object EnableChanges) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.PrintPreview(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PrintPreview (Optional EnableChanges As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(281)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EnableChanges" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="EnableChanges">
+          <span data-ttu-id="803a2-222">Permet des modifications lors de l’aperçu.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-222">Enables changes during preview.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="803a2-223">Cette méthode affiche un aperçu de l'objet tel qu'il apparaîtra une fois imprimé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-223">Shows a preview of the object as it would look when printed.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeFromPoint">
+      <MemberSignature Language="C#" Value="public object RangeFromPoint (int x, int y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object RangeFromPoint([in]int32 x, [in]int32 y) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.RangeFromPoint(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RangeFromPoint (x As Integer, y As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ RangeFromPoint(int x, int y);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1778)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">
+          <span data-ttu-id="803a2-224">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-224">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-225">Valeur (en pixels) représentant la distance horizontale par rapport au bord gauche de l'écran, en partant du haut.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-225">The value (in pixels) that represents the horizontal distance from the left edge of the screen, starting at the top.</span>
+          </span>
+        </param>
+        <param name="y">
+          <span data-ttu-id="803a2-226">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-226">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-227">Valeur (en pixels) représentant la distance verticale par rapport à la partie supérieure de l'écran, en partant de la gauche.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-227">The value (in pixels) that represents the vertical distance from the top of the screen, starting on the left.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="803a2-228">Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> ou <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet est placé au niveau de la paire spécifiée de coordonnées à l’écran.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-228">Returns the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> or <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that is positioned at the specified pair of screen coordinates.</span>
+          </span>
+          <span data-ttu-id="803a2-229">En l’absence d’une forme située aux coordonnées spécifiées, cette méthode renvoie la <b>valeur Nothing</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-229">If there isn’t a shape located at the specified coordinates, this method returns <b>Nothing</b>.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeSelection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range RangeSelection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range RangeSelection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.RangeSelection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RangeSelection As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ RangeSelection { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1189)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1189)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-230">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente les cellules sélectionnées dans la feuille de calcul dans la fenêtre spécifiée, même si un objet graphique est actif ou sélectionné dans la feuille de calcul.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-230">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the selected cells on the worksheet in the specified window even if a graphic object is active or selected on the worksheet.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-231">
+            <para>Lorsqu’un objet graphique est sélectionné dans une feuille de calcul, la <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> propriété renvoie l’objet graphique au lieu d’un objet <b>Range</b> ; la propriété <b>RangeSelection</b> renvoie la plage de cellules sélectionnée avant l’objet graphic.</para>
+            <para>Cette propriété et la propriété <b>Selection</b> renvoient des valeurs identiques lorsqu’une plage (et non un objet graphique) est sélectionnée dans la feuille de calcul.</para>
+            <para>Si la feuille active dans la fenêtre spécifiée n’est pas une feuille de calcul, cette propriété échoue.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-231">
+              <para>When a graphic object is selected on a worksheet, the <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> property returns the graphic object instead of a <b>Range</b> object; the <b>RangeSelection</b> property returns the range of cells that was selected before the graphic object was selected.</para>
+              <para>This property and the <b>Selection</b> property return identical values when a range (not a graphic object) is selected on the worksheet.</para>
+              <para>If the active sheet in the specified window isn’t a worksheet, this property fails.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollColumn">
+      <MemberSignature Language="C#" Value="public int ScrollColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ScrollColumn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ScrollColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollColumn As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ScrollColumn { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(654)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(654)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(654)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-232">Cette propriété renvoie ou définit le nombre de la colonne la plus à gauche dans la fenêtre ou le volet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-232">Returns or sets the number of the leftmost column in the pane or window.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-233">
+            <para>Si la fenêtre est fractionnée, la propriété <b>ScrollColumn</b> de le <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objet fait référence au volet supérieur gauche. Si les volets sont figés, la propriété <b>ScrollColumn</b> de l’objet <b>Window</b> exclut les zones figées.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-233">
+              <para>If the window is split, the <b>ScrollColumn</b> property of the <see cref="T:Microsoft.Office.Interop.Excel.Window" /> object refers to the upper-left pane. If the panes are frozen, the <b>ScrollColumn</b> property of the <b>Window</b> object excludes the frozen areas.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollIntoView">
+      <MemberSignature Language="C#" Value="public void ScrollIntoView (int Left, int Top, int Width, int Height, object Start);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScrollIntoView([in]int32 Left, [in]int32 Top, [in]int32 Width, [in]int32 Height, [in]object Start) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.ScrollIntoView(System.Int32,System.Int32,System.Int32,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScrollIntoView (Left As Integer, Top As Integer, Width As Integer, Height As Integer, Optional Start As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1781)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Int32" />
+        <Parameter Name="Top" Type="System.Int32" />
+        <Parameter Name="Width" Type="System.Int32" />
+        <Parameter Name="Height" Type="System.Int32" />
+        <Parameter Name="Start" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">
+          <span data-ttu-id="803a2-234">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-234">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-235">Position horizontale du rectangle (en points) par rapport au bord gauche de la fenêtre de document ou du volet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-235">The horizontal position of the rectangle (in points) from the left edge of the document window or pane.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="803a2-236">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-236">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-237">Position verticale du rectangle (en points) par rapport au bord supérieur de la fenêtre de document ou du volet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-237">The vertical position of the rectangle (in points) from the top of the document window or pane.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="803a2-238">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-238">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-239">Largeur du rectangle, en points.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-239">The width of the rectangle, in points.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="803a2-240">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-240">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-241">Hauteur du rectangle, en points.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-241">The height of the rectangle, in points.</span>
+          </span>
+        </param>
+        <param name="Start">
+          <span data-ttu-id="803a2-242">
+            <b>Integer</b> facultatif.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-242">Optional <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-243">
+            <b>True</b> pour que le coin supérieur gauche du rectangle s’affiche dans le coin supérieur gauche de la fenêtre de document ou du volet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-243">
+              <b>True</b> to have the upper-left corner of the rectangle appear in the upper-left corner of the document window or pane.</span>
+          </span>
+          <span data-ttu-id="803a2-244">
+            <b>False</b> pour que le coin inférieur droit du rectangle s’affiche dans le coin inférieur droit de la fenêtre de document ou du volet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-244">
+              <b>False</b> to have the lower-right corner of the rectangle appear in the lower-right corner of the document window or pane.</span>
+          </span>
+          <span data-ttu-id="803a2-245">La valeur par défaut est <b>True</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-245">The default value is <b>True</b>.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="803a2-246">Fait défiler la fenêtre de document afin que le contenu d’une zone rectangulaire spécifiée est affiché dans le coin supérieur gauche ou à droite de la fenêtre de document ou du volet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-246">Scrolls the document window so that the contents of a specified rectangular area are displayed in either the upper-left or lower-right corner of the document window or pane.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="803a2-247">
+            <para>Le <paramref name="Start" /> argument est utile pour orienter l’affichage de l’écran lorsque le rectangle est plus grand que la fenêtre de document ou le volet.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-247">
+              <para>The <paramref name="Start" /> argument is useful for orienting the screen display when the rectangle is larger than the document window or pane.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollRow">
+      <MemberSignature Language="C#" Value="public int ScrollRow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ScrollRow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ScrollRow" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollRow As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ScrollRow { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(655)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(655)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(655)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-248">Cette propriété renvoie ou définit le numéro de la ligne qui s’affiche en haut de la fenêtre ou le volet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-248">Returns or sets the number of the row that appears at the top of the pane or window.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-249">
+            <para>Si la fenêtre est fractionnée, la propriété <b>ScrollRow</b> de le <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objet fait référence au volet supérieur gauche. Si les volets sont figés, la propriété <b>ScrollRow</b> de l’objet <b>Window</b> exclut les zones figées.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-249">
+              <para>If the window is split, the <b>ScrollRow</b> property of the <see cref="T:Microsoft.Office.Interop.Excel.Window" /> object refers to the upper-left pane. If the panes are frozen, the <b>ScrollRow</b> property of the <b>Window</b> object excludes the frozen areas.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollWorkbookTabs">
+      <MemberSignature Language="C#" Value="public object ScrollWorkbookTabs (object Sheets, object Position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ScrollWorkbookTabs([in]object Sheets, [in]object Position) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.ScrollWorkbookTabs(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ScrollWorkbookTabs (Optional Sheets As Object, Optional Position As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(662)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Sheets" Type="System.Object" />
+        <Parameter Name="Position" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Sheets">
+          <span data-ttu-id="803a2-250">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-250">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-251">Le nombre de pages à faire défiler.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-251">The number of sheets to scroll by.</span>
+          </span>
+          <span data-ttu-id="803a2-252">Utilisez un nombre positif pour faire défiler vers l’avant, un nombre négatif à faire défiler vers le haut ou 0 (zéro), ne pas à faire défiler tout.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-252">Use a positive number to scroll forward, a negative number to scroll backward, or 0 (zero) not to scroll at all.</span>
+          </span>
+          <span data-ttu-id="803a2-253">Vous devez spécifier <paramref name="Sheets" /> si vous ne spécifiez pas <paramref name="Position" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-253">You must specify <paramref name="Sheets" /> if you don't specify <paramref name="Position" />.</span>
+          </span>
+        </param>
+        <param name="Position">
+          <span data-ttu-id="803a2-254">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-254">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-255">Utilisez <b>xlFirst</b> pour faire défiler jusqu'à la première feuille ou <b>xlLast pour faire défiler jusqu'à la dernière feuille</b> .</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-255">Use <b>xlFirst</b> to scroll to the first sheet, or use <b>xlLast</b> to scroll to the last sheet.</span>
+          </span>
+          <span data-ttu-id="803a2-256">Vous devez spécifier <paramref name="Position" /> si vous ne spécifiez pas <paramref name="Sheets" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-256">You must specify <paramref name="Position" /> if you don't specify <paramref name="Sheets" />.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="803a2-257">Fait défiler les onglets du classeur en bas de la fenêtre.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-257">Scrolls through the workbook tabs at the bottom of the window.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="803a2-258">
+            <para>La méthode <b>ScrollWorkbookTabs</b> n’affecte pas la feuille active du classeur.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-258">
+              <para>The <b>ScrollWorkbookTabs</b> method doesn't affect the active sheet in the workbook.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedSheets">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Sheets SelectedSheets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Sheets SelectedSheets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.SelectedSheets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedSheets As Sheets" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Sheets ^ SelectedSheets { Microsoft::Office::Interop::Excel::Sheets ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(656)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(656)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-259">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection qui représente toutes les feuilles sélectionnées dans la fenêtre spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-259">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection that represents all the selected sheets in the specified window.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Selection">
+      <MemberSignature Language="C#" Value="public object Selection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Selection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Selection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Selection As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Selection { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(147)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(147)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-260">Renvoie l’objet sélectionné dans la fenêtre spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-260">Returns the selected object in the specified window.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-261">
+            <para>Le type d’objet renvoyé dépend de la sélection en cours (par exemple, si une cellule est sélectionnée, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet). La propriété <b>Selection</b> renvoie <b>Nothing</b> si rien n’est sélectionné.</para>
+            <para>à l’aide de cette propriété sans qualificateur d’objet équivaut à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-261">
+              <para>The returned object type depends on the current selection (for example, if a cell is selected, this property returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object). The <b>Selection</b> property returns <b>Nothing</b> if nothing is selected.</para>
+              <para>Using this property with no object qualifier is equivalent to using the <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetViews">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SheetViews SheetViews { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SheetViews SheetViews" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.SheetViews" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SheetViews As SheetViews" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SheetViews ^ SheetViews { Microsoft::Office::Interop::Excel::SheetViews ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2368)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2368)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SheetViews</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-262">Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.SheetViews" /> objet de la fenêtre spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-262">Returns the <see cref="T:Microsoft.Office.Interop.Excel.SheetViews" /> object for the specified window.</span>
+          </span>
+          <span data-ttu-id="803a2-263">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-263">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="803a2-264">
+            <b>SheetViews</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-264">
+              <b>SheetViews</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallScroll">
+      <MemberSignature Language="C#" Value="public object SmallScroll (object Down, object Up, object ToRight, object ToLeft);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SmallScroll([in]object Down, [in]object Up, [in]object ToRight, [in]object ToLeft) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.SmallScroll(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SmallScroll (Optional Down As Object, Optional Up As Object, Optional ToRight As Object, Optional ToLeft As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(548)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Down" Type="System.Object" />
+        <Parameter Name="Up" Type="System.Object" />
+        <Parameter Name="ToRight" Type="System.Object" />
+        <Parameter Name="ToLeft" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Down">
+          <span data-ttu-id="803a2-265">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-265">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-266">Nombre de lignes à faire défiler vers le bas.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-266">The number of rows to scroll the contents down.</span>
+          </span>
+        </param>
+        <param name="Up">
+          <span data-ttu-id="803a2-267">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-267">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-268">Nombre de lignes à faire défiler vers le haut.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-268">The number of rows to scroll the contents up.</span>
+          </span>
+        </param>
+        <param name="ToRight">
+          <span data-ttu-id="803a2-269">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-269">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-270">Nombre de colonnes à faire défiler vers la droite.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-270">The number of columns to scroll the contents to the right.</span>
+          </span>
+        </param>
+        <param name="ToLeft">
+          <span data-ttu-id="803a2-271">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-271">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="803a2-272">Nombre de colonnes à faire défiler vers la gauche.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-272">The number of columns to scroll the contents to the left.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="803a2-273">Cette méthode fait défiler le contenu de la fenêtre par ligne ou par colonne.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-273">Scrolls the contents of the window by rows or columns.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="803a2-274">
+            <para>Si <paramref name="Down" /> et <paramref name="Up" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="Down" /> est 3 et <paramref name="Up" /> est 6, le contenu défile de trois lignes.</para>
+            <para>Si <paramref name="ToLeft" /> et <paramref name="ToRight" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="ToLeft" /> est 3 et <paramref name="ToRight" /> est 6, le contenu défile à droite de trois colonnes vers la.</para>
+            <para>Tous ces arguments peuvent être un nombre négatif.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-274">
+              <para>If <paramref name="Down" /> and <paramref name="Up" /> are both specified, the contents of the window are scrolled by the difference of the arguments. For example, if <paramref name="Down" /> is 3 and <paramref name="Up" /> is 6, the contents are scrolled up three rows.</para>
+              <para>If <paramref name="ToLeft" /> and <paramref name="ToRight" /> are both specified, the contents of the window are scrolled by the difference of the arguments. For example, if <paramref name="ToLeft" /> is 3 and <paramref name="ToRight" /> is 6, the contents are scrolled to the right three columns.</para>
+              <para>Any of these arguments can be a negative number.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Split">
+      <MemberSignature Language="C#" Value="public bool Split { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Split" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Split" />
+      <MemberSignature Language="VB.NET" Value="Public Property Split As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Split { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(657)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(657)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(657)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-275">
+            <b>True</b> si la fenêtre est fractionnée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-275">
+              <b>True</b> if the window is split.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-276">
+            <para>Il est possible de <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> à <b>True</b> et <b>Fractionné</b> à <b>False</b>, ou vice versa.</para>
+            <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-276">
+              <para>It’s possible for <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> to be <b>True</b> and <b>Split</b> to be <b>False</b>, or vice versa.</para>
+              <para>This property applies only to worksheets and macro sheets.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SplitColumn">
+      <MemberSignature Language="C#" Value="public int SplitColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SplitColumn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.SplitColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property SplitColumn As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SplitColumn { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(658)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(658)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(658)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-277">Cette propriété renvoie ou définit le numéro de colonne dans laquelle la fenêtre est fractionnée en volets (le nombre de colonnes à gauche de la ligne de fractionnement).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-277">Returns or sets the column number where the window is split into panes (the number of columns to the left of the split line).</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SplitHorizontal">
+      <MemberSignature Language="C#" Value="public double SplitHorizontal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 SplitHorizontal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.SplitHorizontal" />
+      <MemberSignature Language="VB.NET" Value="Public Property SplitHorizontal As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SplitHorizontal { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(659)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(659)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(659)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-278">Cette propriété renvoie ou définit l’emplacement du fractionnement horizontal de la fenêtre en points.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-278">Returns or sets the location of the horizontal window split in points.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SplitRow">
+      <MemberSignature Language="C#" Value="public int SplitRow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SplitRow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.SplitRow" />
+      <MemberSignature Language="VB.NET" Value="Public Property SplitRow As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SplitRow { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(660)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(660)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(660)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-279">Cette propriété renvoie ou définit le numéro de la ligne où la fenêtre est fractionnée en volets (le nombre de lignes au-dessus du fractionnement).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-279">Returns or sets the row number where the window is split into panes (the number of rows above the split).</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SplitVertical">
+      <MemberSignature Language="C#" Value="public double SplitVertical { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 SplitVertical" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.SplitVertical" />
+      <MemberSignature Language="VB.NET" Value="Public Property SplitVertical As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SplitVertical { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(661)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(661)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(661)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-280">Cette propriété renvoie ou définit l’emplacement du fractionnement de la fenêtre verticale en points.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-280">Returns or sets the location of the vertical window split in points.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabRatio">
+      <MemberSignature Language="C#" Value="public double TabRatio { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TabRatio" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.TabRatio" />
+      <MemberSignature Language="VB.NET" Value="Public Property TabRatio As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TabRatio { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(673)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(673)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(673)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-281">Cette propriété renvoie ou définit le rapport entre la largeur de la zone des onglets du classeur à la largeur de la barre de défilement horizontale de la fenêtre (en tant que nombre compris entre 0 (zéro) et 1 ; la valeur par défaut est 0,6).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-281">Returns or sets the ratio of the width of the workbook's tab area to the width of the window's horizontal scroll bar (as a number between 0 (zero) and 1; the default value is 0.6).</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-282">
+            <para>Cette propriété est sans effet lorsque <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> est défini sur <b>False</b> (sa valeur est conservée, mais n’a aucun effet sur l’écran).</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-282">
+              <para>This property has no effect when <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> is set to <b>False</b> (its value is retained, but it has no effect on the display).</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public double Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-283">Distance en points entre le bord supérieur de la fenêtre et le bord supérieur de la zone utilisable (sous les menus, barres d’outils ancrées en haut et la barre de formule).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-283">The distance in points from the top edge of the window to the top edge of the usable area (below the menus, any toolbars docked at the top, and the formula bar).</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-284">
+            <para>Vous ne pouvez pas définir cette propriété pour une fenêtre agrandie. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propriété pour renvoyer ou définir l’état de la fenêtre.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-284">
+              <para>You cannot set this property for a maximized window. Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to return or set the state of the window.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlWindowType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlWindowType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As XlWindowType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlWindowType Type { Microsoft::Office::Interop::Excel::XlWindowType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlWindowType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-285">Cette propriété renvoie ou définit le type de fenêtre.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-285">Returns or sets the window type.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsableHeight">
+      <MemberSignature Language="C#" Value="public double UsableHeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 UsableHeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsableHeight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double UsableHeight { double get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(389)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(389)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-286">Renvoie la hauteur en points de l’espace qu’une fenêtre peut occuper dans la zone de fenêtre d’application.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-286">Returns the maximum height in points of the space that a window can occupy in the application window area.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsableWidth">
+      <MemberSignature Language="C#" Value="public double UsableWidth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 UsableWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsableWidth As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double UsableWidth { double get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(390)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(390)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-287">Renvoie la largeur maximale exprimée en points, de l’espace qu’une fenêtre peut occuper dans la zone de fenêtre d’application.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-287">Returns the maximum width in points of the space that a window can occupy in the application window area.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="View">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlWindowView View { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlWindowView View" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.View" />
+      <MemberSignature Language="VB.NET" Value="Public Property View As XlWindowView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlWindowView View { Microsoft::Office::Interop::Excel::XlWindowView get(); void set(Microsoft::Office::Interop::Excel::XlWindowView value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1194)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1194)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1194)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlWindowView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-288">Cette propriété renvoie ou définit la vue active dans la fenêtre.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-288">Returns or sets the view showing in the window.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-289">Détermine si l’objet est visible.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-289">Determines whether the object is visible.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleRange">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range VisibleRange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range VisibleRange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.VisibleRange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisibleRange As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ VisibleRange { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-290">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object qui représente la plage de cellules qui sont visibles dans la fenêtre ou du volet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-290">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the range of cells that are visible in the window or pane.</span>
+          </span>
+          <span data-ttu-id="803a2-291">Si une colonne ou ligne est partiellement visible, il est inclus dans la plage.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-291">If a column or row is partially visible, it's included in the range.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-292">La largeur en points de la fenêtre.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-292">The width in points of the window.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-293">
+            <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> propriété pour déterminer la taille maximale de la fenêtre. Vous ne pouvez pas définir cette propriété si la fenêtre est agrandie ou réduite. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propriété pour déterminer l’état de la fenêtre.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-293">
+              <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> property to determine the maximum size for the window. You cannot set this property if the window is maximized or minimized. Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to determine the window state.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowNumber">
+      <MemberSignature Language="C#" Value="public int WindowNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 WindowNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.WindowNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WindowNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WindowNumber { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1119)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1119)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-294">Renvoie le numéro de la fenêtre.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-294">Returns the window number.</span>
+          </span>
+          <span data-ttu-id="803a2-295">Par exemple, une fenêtre nommée « Book1.xls:2 » a 2 en tant que son numéro de la fenêtre.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-295">For example, a window named "Book1.xls:2" has 2 as its window number.</span>
+          </span>
+          <span data-ttu-id="803a2-296">La plupart des fenêtres possèdent le numéro 1.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-296">Most windows have the window number 1.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-297">
+            <para>Le numéro de la fenêtre n’est pas la même que l’index de la fenêtre (la valeur de retour de la <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> propriété), qui est la position de la fenêtre dans le <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-297">
+              <para>The window number isn't the same as the window index (the return value of the <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> property), which is the position of the window within the <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowState">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlWindowState WindowState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlWindowState WindowState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.WindowState" />
+      <MemberSignature Language="VB.NET" Value="Public Property WindowState As XlWindowState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlWindowState WindowState { Microsoft::Office::Interop::Excel::XlWindowState get(); void set(Microsoft::Office::Interop::Excel::XlWindowState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(396)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(396)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(396)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlWindowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-298">Cette propriété renvoie ou définit l’état de la fenêtre.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-298">Returns or sets the state of the window.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zoom">
+      <MemberSignature Language="C#" Value="public object Zoom { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Zoom" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Zoom" />
+      <MemberSignature Language="VB.NET" Value="Public Property Zoom As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Zoom { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(663)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(663)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(663)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="803a2-299">Cette propriété renvoie ou définit la taille d’affichage de la fenêtre sous forme de pourcentage (100 est égal à sa taille normale, 200 est doublée, etc.).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-299">Returns or sets the display size of the window as a percentage (100 equals normal size, 200 equals double size, and so on).</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="803a2-300">
+            <para>Vous pouvez également définir cette propriété sur <b>True</b> pour ajuster la taille de la fenêtre la sélection en cours.</para>
+            <para>Cette fonction affecte uniquement la feuille active dans la fenêtre. Pour utiliser cette propriété sur d’autres feuilles, vous devez d’abord activer les.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="803a2-300">
+              <para>You can also set this property to <b>True</b> to make the window size fit the current selection.</para>
+              <para>This function affects only the sheet that's currently active in the window. To use this property on other sheets, you must first activate them.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
