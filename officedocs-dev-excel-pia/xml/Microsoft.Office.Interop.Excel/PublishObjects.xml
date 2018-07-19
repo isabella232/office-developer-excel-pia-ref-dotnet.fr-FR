@@ -1,0 +1,514 @@
+<Type Name="PublishObjects" FullName="Microsoft.Office.Interop.Excel.PublishObjects">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="7545f53d01351aa34dd66e734697b6588ca5ea5d" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20574038" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface PublishObjects : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PublishObjects implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PublishObjects" />
+  <TypeSignature Language="VB.NET" Value="Public Interface PublishObjects&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class PublishObjects : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024443-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="84ed9-101">Une collection de toutes les <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> objets dans le classeur.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="84ed9-101">A collection of all <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> objects in the workbook.</span>
+      </span>
+      <span data-ttu-id="84ed9-102">Chaque objet <b>PublishObject</b> représente un élément d'un classeur qui a été enregistré dans une page Web et qui peut être actualisé en fonction des valeurs spécifiées par les propriétés et méthodes de l'objet.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="84ed9-102">Each <b>PublishObject</b> object represents an item in a workbook that has been saved to a Web page and can be refreshed according to values specified by the properties and methods of the object.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="84ed9-103">
+        <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> propriété pour renvoyer la collection <b>PublishObjects</b> .</para>
+        <para>Utilisez <b>PublishObjects</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de l’élément spécifié dans le classeur, pour renvoyer un seul objet <b>PublishObject</b> .</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="84ed9-103">
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> property to return the <b>PublishObjects</b> collection.</para>
+          <para>Use <b>PublishObjects</b>(<paramref name="index" />), where <paramref name="index" /> is the index number of the specified item in the workbook, to return a single <b>PublishObject</b> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PublishObject this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PublishObject _Default(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PublishObjects._Default(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default(Index As Object) As PublishObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PublishObject ^ default[System::Object ^] { Microsoft::Office::Interop::Excel::PublishObject ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PublishObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>
+          <span data-ttu-id="84ed9-104">Réservé à une utilisation interne.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-104">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PublishObject Add (Microsoft.Office.Interop.Excel.XlSourceType SourceType, string Filename, object Sheet, object Source, object HtmlType, object DivID, object Title);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.PublishObject Add([in]valuetype Microsoft.Office.Interop.Excel.XlSourceType SourceType, [in]string Filename, [in]object Sheet, [in]object Source, [in]object HtmlType, [in]object DivID, [in]object Title) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PublishObjects.Add(Microsoft.Office.Interop.Excel.XlSourceType,System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (SourceType As XlSourceType, Filename As String, Optional Sheet As Object, Optional Source As Object, Optional HtmlType As Object, Optional DivID As Object, Optional Title As Object) As PublishObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PublishObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SourceType" Type="Microsoft.Office.Interop.Excel.XlSourceType" />
+        <Parameter Name="Filename" Type="System.String" />
+        <Parameter Name="Sheet" Type="System.Object" />
+        <Parameter Name="Source" Type="System.Object" />
+        <Parameter Name="HtmlType" Type="System.Object" />
+        <Parameter Name="DivID" Type="System.Object" />
+        <Parameter Name="Title" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="SourceType">
+          <span data-ttu-id="84ed9-105">Requis <see cref="T:Microsoft.Office.Interop.Excel.XlSourceType" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-105">Required <see cref="T:Microsoft.Office.Interop.Excel.XlSourceType" />.</span>
+          </span>
+          <span data-ttu-id="84ed9-106">Le type de la source.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-106">The source type.</span>
+          </span>
+        </param>
+        <param name="Filename">
+          <span data-ttu-id="84ed9-107">
+            <b>String</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-107">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="84ed9-108">L’URL (sur l’intranet ou le Web) ou le chemin d’accès (local ou réseau) à laquelle l’objet source a été enregistré.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-108">The URL (on the intranet or the Web) or path (local or network) to which the source object was saved.</span>
+          </span>
+        </param>
+        <param name="Sheet">
+          <span data-ttu-id="84ed9-109">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-109">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="84ed9-110">Nom de la feuille de calcul enregistrée en tant que page Web.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-110">The name of the worksheet that was saved as a Web page.</span>
+          </span>
+        </param>
+        <param name="Source">
+          <span data-ttu-id="84ed9-111">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-111">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="84ed9-112">Nom unique utilisé pour identifier les éléments qui ont une des constantes suivantes en tant que leur <paramref name="SourceType" /> argument : <b>xlSourceAutoFilter</b>, <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>, <b>xlSourcePrintArea</b>, <b>xlSourceQuery</b>ou <b> xlSourceRange</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-112">A unique name used to identify items that have one of the following constants as their <paramref name="SourceType" /> argument: <b>xlSourceAutoFilter</b>, <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>, <b>xlSourcePrintArea</b>, <b>xlSourceQuery</b>, or <b>xlSourceRange</b>.</span>
+          </span>
+          <span data-ttu-id="84ed9-113">Si <paramref name="SourceType" /> a la valeur <b>xlSourceRange</b>, Source spécifie une plage qui peut être un nom défini.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-113">If <paramref name="SourceType" /> is <b>xlSourceRange</b>, Source specifies a range, which can be a defined name.</span>
+          </span>
+          <span data-ttu-id="84ed9-114">Si <paramref name="SourceType" /> est <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>ou <b>xlSourceQuery</b><paramref name="Source" /> Spécifie le nom d’un graphique, un rapport de tableau croisé dynamique ou une table de requête.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-114">If <paramref name="SourceType" /> is <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>, or <b>xlSourceQuery</b>, <paramref name="Source" /> specifies the name of a chart, PivotTable report, or query table.</span>
+          </span>
+        </param>
+        <param name="HtmlType">
+          <span data-ttu-id="84ed9-115">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-115">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="84ed9-116">Spécifie si l’élément est enregistré sous la forme d’un composant Microsoft Office Web interactif ou en tant que texte et images statiques.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-116">Specifies whether the item is saved as an interactive Microsoft Office Web component or as static text and images.</span>
+          </span>
+          <span data-ttu-id="84ed9-117">Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> constantes. ConstantDescription<b>xlHtmlCalc</b>élément enregistré sous la forme d’un composant interactif de la feuille de calcul Microsoft Office. <b>xlHtmlChart</b> Élément enregistré sous la forme d’un composant graphique Microsoft Office interactif. <b>xlHtmlList</b> Élément enregistré sous la forme d’un composant Microsoft Office tableau croisé dynamique interactif. <b>xlHtmlStatic</b> Élément enregistré en tant que texte et images statiques.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-117">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> constants.ConstantDescription<b>xlHtmlCalc</b>Item saved as an interactive Microsoft Office Spreadsheet component.<b>xlHtmlChart</b>Item saved as an interactive Microsoft Office Chart component.<b>xlHtmlList</b>Item saved as an interactive Microsoft Office PivotTable component.<b>xlHtmlStatic</b>Item saved as static text and images.</span>
+          </span>
+        </param>
+        <param name="DivID">
+          <span data-ttu-id="84ed9-118">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-118">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="84ed9-119">Identificateur unique utilisé dans la balise HTML DIV pour identifier l'élément de la page Web.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-119">The unique identifier used in the HTML DIV tag to identify the item on the Web page.</span>
+          </span>
+        </param>
+        <param name="Title">
+          <span data-ttu-id="84ed9-120">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-120">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="84ed9-121">Titre de la page Web.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-121">The title of the Web page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="84ed9-122">Crée un objet qui représente un élément dans un document enregistré dans une page Web.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-122">Creates an object that represents an item in a document saved to a Web page.</span>
+          </span>
+          <span data-ttu-id="84ed9-123">De tels objets facilitent les mises à jour suivantes à la page Web lorsque modifications automatisées sont apportées au document dans Microsoft Excel.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-123">Such objects facilitate subsequent updates to the Web page while automated changes are being made to the document in Microsoft Excel.</span>
+          </span>
+          <span data-ttu-id="84ed9-124">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-124">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> object.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PublishObjects.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="84ed9-125">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-125">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PublishObjects.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="84ed9-126">Renvoie le nombre d'objets dans la collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-126">Returns the number of objects in the collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PublishObjects.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="84ed9-127">Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-127">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="84ed9-128">
+            <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
+          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-128">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PublishObjects.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="84ed9-129">Supprime l'objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-129">Deletes the object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PublishObjects.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PublishObject Item[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PublishObject Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PublishObjects.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item(Index As Object) As PublishObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PublishObject ^ Item[System::Object ^] { Microsoft::Office::Interop::Excel::PublishObject ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PublishObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="84ed9-130">
+            <b>Objet</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-130">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="84ed9-131">Nom ou numéro d'index de l'objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-131">The name or index number of the object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="84ed9-132">Renvoie un seul objet d'une collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-132">Returns a single object from a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PublishObjects.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="84ed9-133">Renvoie l'objet parent de l'objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-133">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Publish">
+      <MemberSignature Language="C#" Value="public void Publish ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Publish() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PublishObjects.Publish" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Publish ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Publish();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1895)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="84ed9-134">Cette méthode enregistre dans une page Web un élément ou une collection d'éléments contenus dans un document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="84ed9-134">Saves an item or a collection of items in a document to a Web page.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
