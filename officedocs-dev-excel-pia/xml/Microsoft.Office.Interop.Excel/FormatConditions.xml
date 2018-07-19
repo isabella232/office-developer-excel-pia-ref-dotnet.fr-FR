@@ -1,0 +1,509 @@
+<Type Name="FormatConditions" FullName="Microsoft.Office.Interop.Excel.FormatConditions">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="4ea44a9883870de6c0c9f822551e19d40e34f00d" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20587513" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormatConditions implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FormatConditions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FormatConditions&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FormatConditions : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024424-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Cette collection représente la collection des mises en forme conditionnelles d'une plage.</summary>
+    <remarks>
+      <para>La collection <b>FormatConditions</b> peut contenir jusqu'à trois mises en forme conditionnelles. Chaque format est représenté par un <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> objet.</para> Utilisation de 
+      <para>les <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> propriété pour renvoyer un objet <b>FormatConditions</b> . Utilisez le <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour créer un nouveau format conditionnel et utiliser le <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode modifie un format conditionnel existant.</para><para>Si vous essayez de créer plus de trois mises en forme conditionnelles d’une plage, la méthode <b>Add</b> échoue. Si une plage comporte trois mises en forme, vous pouvez utiliser la méthode <b>Modify</b> pour modifier un des formats ou vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> méthode pour supprimer une mise en forme et puis utiliser la méthode <b>Add</b> pour créer un nouveau format.</para><para>Pour plus d’informations sur les mises en forme conditionnelles, voir la <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> objet.</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public object this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object _Default(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatConditions._Default(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default(Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>Réservé à une utilisation interne.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public object Add (Microsoft.Office.Interop.Excel.XlFormatConditionType Type, object Operator, object Formula1, object Formula2, object String, object TextOperator, object DateOperator, object ScopeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Add([in]valuetype Microsoft.Office.Interop.Excel.XlFormatConditionType Type, [in]object Operator, [in]object Formula1, [in]object Formula2, [in]object String, [in]object TextOperator, [in]object DateOperator, [in]object ScopeType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Type As XlFormatConditionType, Optional Operator As Object, Optional Formula1 As Object, Optional Formula2 As Object, Optional String As Object, Optional TextOperator As Object, Optional DateOperator As Object, Optional ScopeType As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Interop.Excel.XlFormatConditionType" />
+        <Parameter Name="Operator" Type="System.Object" />
+        <Parameter Name="Formula1" Type="System.Object" />
+        <Parameter Name="Formula2" Type="System.Object" />
+        <Parameter Name="String" Type="System.Object" />
+        <Parameter Name="TextOperator" Type="System.Object" />
+        <Parameter Name="DateOperator" Type="System.Object" />
+        <Parameter Name="ScopeType" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">. (<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />. Indique si le format conditionnel repose sur la valeur d'une cellule ou sur une expression.</param>
+        <param name="Operator">L’opérateur du format conditionnel. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constantes : <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreater" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlGreaterEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLess" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlLessEqual" />, <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" />, ou <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotEqual" />. Si <paramref name="Type" /> est <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlExpression" />, <paramref name="Operator" /> argument est ignoré.</param>
+        <param name="Formula1">La valeur ou une expression associée à la mise en forme conditionnelle. Peut être une constante, une valeur de <b>chaîne</b> , une référence de cellule ou une formule.</param>
+        <param name="Formula2">La valeur ou une expression associée à la seconde partie de la condition format lorsque <paramref name="Operator" /> est <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlBetween" /> ou <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionOperator.xlNotBetween" /> (sinon, cet argument est ignoré). Peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</param>
+        <param name="String">To be added.</param>
+        <param name="TextOperator">To be added.</param>
+        <param name="DateOperator">To be added.</param>
+        <param name="ScopeType">To be added.</param>
+        <summary>Ajoute un nouveau format conditionnel.</summary>
+        <returns>A <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object qui représente le nouveau format conditionnel.</returns>
+        <remarks>
+          <para>Vous ne pouvez pas définir plus de trois mises en forme conditionnelles pour une plage. Utilisez le <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour modifier un format conditionnel existant, ou utiliser le <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> méthode pour supprimer un format existant avant d’ajouter un nouveau.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAboveAverage">
+      <MemberSignature Language="C#" Value="public object AddAboveAverage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddAboveAverage() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.AddAboveAverage" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddAboveAverage () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddAboveAverage();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2621)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Renvoie une nouvelle <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> objet qui représente une règle de mise en forme conditionnelle pour la plage spécifiée.</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />objet</returns>
+        <remarks>
+          <para>Le <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> objet est utilisé pour rechercher des valeurs au-dessus ou en dessous d’une moyenne ou l’écart-type dans une plage de cellules. Par exemple, vous pouvez trouver les intervenants moyennes ci-dessus dans un rapport annuel sur les performances ou vous pouvez localiser fabriqués matières qui se situent sous deux écarts dans une évaluation de la qualité.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddColorScale">
+      <MemberSignature Language="C#" Value="public object AddColorScale (int ColorScaleType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddColorScale([in]int32 ColorScaleType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddColorScale (ColorScaleType As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddColorScale(int ColorScaleType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2616)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ColorScaleType" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ColorScaleType">Type d'échelle de couleur.</param>
+        <summary>Renvoie une nouvelle <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> objet qui représente une règle de mise en forme conditionnelle qui utilise des dégradés dans les couleurs des cellules pour symboliser des différences relatives dans les valeurs des cellules d’une plage sélectionnée.</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />objet</returns>
+        <remarks>
+          <para>Échelles de couleur sont visual guides qui vous aident à comprennent la distribution des données et des variantes. Une échelle de couleur vous permet d’identifier les différences relatives dans les valeurs de cellules dans une plage donnée à l’aide de variation de couleur. Différentes couleurs et dégradés de couleurs représentent les différences dans les valeurs de cellule. Par exemple, dans une échelle à trois, vous pouvez spécifier que les cellules contenant les valeurs de données relative la plus élevés sont verts, cellules contenant des valeurs intermédiaires sont jaunes et les cellules contenant des valeurs les plus basses sont rouge.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDatabar">
+      <MemberSignature Language="C#" Value="public object AddDatabar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddDatabar() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.AddDatabar" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddDatabar () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddDatabar();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2618)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> objet qui représente une règle de mise en forme conditionnelle pour la plage spécifiée de la barre de données.</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Excel.Databar" />objet</returns>
+        <remarks>
+          <para>Barres de données vous aident à afficher la valeur d’une cellule par rapport à d’autres cellules. La longueur de la barre de données représente la valeur de la cellule. Une barre plue représente une valeur supérieure et une barre plus courte représente une valeur inférieure. Barres de données sont utiles pour repérer les numéros supérieur et inférieurs en particulier avec de grandes quantités de données, telles que le haut et toys vendus dans une période de congé rapport des ventes.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddIconSetCondition">
+      <MemberSignature Language="C#" Value="public object AddIconSetCondition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddIconSetCondition() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddIconSetCondition () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddIconSetCondition();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2619)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Renvoie une nouvelle <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> objet qui représente une icône de définie une règle de mise en forme conditionnelle pour la plage spécifiée.</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />objet</returns>
+        <remarks>
+          <para>Utiliser un jeu d’icônes pour annoter et de classer les données en trois à cinq catégories séparées par une valeur de seuil. Chaque icône représente une plage de valeurs. Par exemple, dans le jeu d’icônes 3 flèches, le rouge flèche vers le haut représente les valeurs supérieures, la flèche jaune horizontale représente les valeurs moyennes et le vert flèche vers le bas représente les valeurs inférieures.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTop10">
+      <MemberSignature Language="C#" Value="public object AddTop10 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddTop10() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.AddTop10" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTop10 () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddTop10();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2620)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> objet qui représente une règle de mise en forme conditionnelle pour la plage spécifiée.</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Excel.Top10" />objet</returns>
+        <remarks>
+          <para>À l’aide de la <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> objet, vous pouvez trouver les valeurs maximale et minimale d’une plage de cellules en fonction d’une valeur que vous spécifiez. Par exemple, vous trouverez les cinq produits les ventes dans un rapport régional, les 15 derniers pour cent de produits dans une enquête client ou les 25 meilleurs salaires dans une analyse du personnel de service.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddUniqueValues">
+      <MemberSignature Language="C#" Value="public object AddUniqueValues ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddUniqueValues() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.AddUniqueValues" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddUniqueValues () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ AddUniqueValues();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2622)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Renvoie une nouvelle <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> objet qui représente une règle de mise en forme conditionnelle pour la plage spécifiée.</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" />objet</returns>
+        <remarks>
+          <para>Vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> objet pour voir rapidement les cellules qui contiennent des valeurs uniques ou en doublons.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatConditions.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatConditions.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le nombre d'objets dans la collection.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatConditions.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
+          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Supprime l'objet.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatConditions.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>Objet</b>obligatoire. Numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d'une collection.</summary>
+        <returns>
+          <b>Objet</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatConditions.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie l'objet parent de l'objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
