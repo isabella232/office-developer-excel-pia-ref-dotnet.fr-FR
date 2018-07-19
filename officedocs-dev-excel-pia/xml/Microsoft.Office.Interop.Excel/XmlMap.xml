@@ -1,0 +1,747 @@
+<Type Name="XmlMap" FullName="Microsoft.Office.Interop.Excel.XmlMap">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c3b5f447ad7e8151b7dba366715192ac74ad6768" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20583607" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface XmlMap" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XmlMap" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XmlMap" />
+  <TypeSignature Language="VB.NET" Value="Public Interface XmlMap" />
+  <TypeSignature Language="C++ CLI" Value="public interface class XmlMap" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002447B-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Cet objet représente un mappage XML ajouté à un classeur.</summary>
+    <remarks>
+      <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.XmlMaps.Add(System.String,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.XmlMaps" /> collection pour ajouter un mappage XML à un classeur.</para>
+      <para>Importation et exportation de données XML</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /> méthode pour importer des données XML à partir d’un fichier de données XML dans des cellules mappées à l' spécifié <b>XmlMap</b>. Le <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ImportXml(System.String,System.Object)" /> méthode importe des données XML pour une variable <b>String</b> .</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" /> méthode pour exporter des données dans des cellules mappées à l' spécifié <b>XmlMap</b>. Le <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" /> méthode exporte les données XML dans une variable <b>String</b> .</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string _Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap._Default" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdjustColumnWidth">
+      <MemberSignature Language="C#" Value="public bool AdjustColumnWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AdjustColumnWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.AdjustColumnWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdjustColumnWidth As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AdjustColumnWidth { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1868)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1868)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1868)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>La valeur true</b> si les largeurs de colonne sont automatiquement ajustées pour les meilleurs ajuste chaque fois que vous actualisez la table de requête spécifiée ou le mappage XML. <b>False</b> si les largeurs de colonne ne sont pas automatiquement ajustées à chaque actualisation. La valeur par défaut est <b>True</b>. En lecture/écriture <b>booléen</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Largeur maximale de colonne correspond aux deux tiers la largeur de l’écran.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendOnImport">
+      <MemberSignature Language="C#" Value="public bool AppendOnImport { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AppendOnImport" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.AppendOnImport" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppendOnImport As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AppendOnImport { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2339)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2339)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2339)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si vous souhaitez ajouter de nouvelles lignes à des listes XML liées au mappage de schéma spécifié lors de l’importation de nouvelles données ou de l’actualisation d’une connexion existante. <b>False</b> si vous souhaitez remplacer le contenu des cellules. La valeur par défaut est <b>False</b>. En lecture/écriture <b>booléen</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataBinding">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XmlDataBinding DataBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.XmlDataBinding DataBinding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.DataBinding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataBinding As XmlDataBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XmlDataBinding ^ DataBinding { Microsoft::Office::Interop::Excel::XmlDataBinding ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2343)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2343)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XmlDataBinding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.XmlDataBinding" /> object qui représente la liaison associée au mappage de schéma spécifié. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.XmlMap.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Supprime le mappage XML spécifié du classeur.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Export">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlXmlExportResult Export (string Url, object Overwrite);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Interop.Excel.XlXmlExportResult Export([in]string Url, [in]object Overwrite) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Export (Url As String, Optional Overwrite As Object) As XlXmlExportResult" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1414)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlXmlExportResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Url" Type="System.String" />
+        <Parameter Name="Overwrite" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Url">
+          <b>String</b>obligatoire. Le chemin d’accès et le nom du fichier de données XML à exporter.</param>
+        <param name="Overwrite">
+          <b>Boolean</b>obligatoire. Valeur <b>True</b> pour remplacer le fichier spécifié dans le <paramref name="URL" /> paramètre si le fichier existe. La valeur par défaut si la valeur <b>False</b>.</param>
+        <summary>Exporte le contenu des cellules mappées à l’objet <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objet dans un fichier de données XML. Cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Excel.XlXmlExportResult" />.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" /> méthode pour exporter le contenu des cellules mappées vers une variable de <b>chaîne</b> .</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportXml">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlXmlExportResult ExportXml (out string Data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Interop.Excel.XlXmlExportResult ExportXml([out] string&amp; Data) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExportXml (ByRef Data As String) As XlXmlExportResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::XlXmlExportResult ExportXml([Runtime::InteropServices::Out] System::String ^ % Data);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlXmlExportResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Data" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="Data">
+          <b>String</b>obligatoire. Pour exporter les données à la variable.</param>
+        <summary>Exporte le contenu des cellules mappées à l’objet <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objet à une variable de <b>chaîne</b> . Cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Excel.XlXmlExportResult" />.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+          <para>Pour exporter le contenu des cellules mappées à un fichier de données XML, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" /> méthode.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Import">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlXmlImportResult Import (string Url, object Overwrite);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Interop.Excel.XlXmlImportResult Import([in]string Url, [in]object Overwrite) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Import (Url As String, Optional Overwrite As Object) As XlXmlImportResult" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(917)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlXmlImportResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Url" Type="System.String" />
+        <Parameter Name="Overwrite" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Url">
+          <b>String</b>obligatoire. Le chemin d’accès aux données XML à importer. Le chemin d’accès peut être spécifié dans la convention de dénomination universelle (UNC) ou format Uniform Resource Locator (URL). Le fichier peut être un fichier de données XML ou un fichier de connexion (.uxdc) à la Source de données XML Office valid.</param>
+        <param name="Overwrite">Facultatif <b>Object</b>. Valeur <b>True</b> pour remplacer les données existantes. Affectez la <b>valeur False</b> à ajouter aux données existantes. <b>False</b> est la valeur par défaut.</param>
+        <summary>Importe les données à partir du fichier de données XML spécifié dans les cellules qui ont été mappées à l’objet <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objet. Cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" />.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportXml">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlXmlImportResult ImportXml (string XmlData, object Overwrite);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Interop.Excel.XlXmlImportResult ImportXml([in]string XmlData, [in]object Overwrite) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.XmlMap.ImportXml(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportXml (XmlData As String, Optional Overwrite As Object) As XlXmlImportResult" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlXmlImportResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="XmlData" Type="System.String" />
+        <Parameter Name="Overwrite" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="XmlData">
+          <b>String</b>obligatoire. Chaîne contenant les données XML à importer.</param>
+        <param name="Overwrite">Facultatif <b>de type Boolean</b> . Spécifie s’il faut remplacer le contenu des cellules actuellement mappées sur le mappage XML spécifié. Valeur <b>True</b> pour remplacer les cellules ; a la valeur <b>False</b> pour ajouter les données à la plage existante. Si ce paramètre n’est pas spécifié, la valeur actuelle de la <see cref="P:Microsoft.Office.Interop.Excel.XmlMap.AppendOnImport" /> propriété du mappage XML détermine si le contenu des cellules est remplacé ou non.</param>
+        <summary>Importe les données XML à partir d’une variable de <b>type String</b> dans les cellules qui ont été mappées à l’objet <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objet. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" /> constante.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+          <para>Pour importer le contenu d’un fichier de données XML dans des cellules mappées au mappage de schéma spécifique, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /> méthode de l’objet <b>XmlMap</b> .</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExportable">
+      <MemberSignature Language="C#" Value="public bool IsExportable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsExportable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.IsExportable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsExportable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExportable { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2334)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2334)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie <b>la valeur True</b> si Microsoft Excel peut utiliser le <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> objets de mappage de schéma spécifié pour exporter des données XML et si toutes les listes XML mappées au mappage de schéma spécifié sont exportables. Type <b>Boolean</b> en lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le nom convivial utilisé pour identifier de manière unique un mappage dans le classeur. Valeur <b>String</b> en lecture-écriture.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreserveColumnFilter">
+      <MemberSignature Language="C#" Value="public bool PreserveColumnFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreserveColumnFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.PreserveColumnFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreserveColumnFilter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveColumnFilter { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2337)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2337)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2337)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit si le filtrage est conservé lors du mappage XML spécifié est actualisé. Type de données <b>Boolean</b> en lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreserveNumberFormatting">
+      <MemberSignature Language="C#" Value="public bool PreserveNumberFormatting { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreserveNumberFormatting" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.PreserveNumberFormatting" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreserveNumberFormatting As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveNumberFormatting { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2338)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2338)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2338)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>La valeur true</b> si le nombre de mise en forme des cellules mappées au mappage de schéma XML spécifié sera conservé lors de l’actualisation du mappage de schéma. La valeur par défaut est <b>False</b>. En lecture/écriture <b>booléen</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootElementName">
+      <MemberSignature Language="C#" Value="public string RootElementName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RootElementName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.RootElementName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootElementName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootElementName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2340)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2340)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie une chaîne (type de donnée <b>String</b>) qui représente le nom de l’élément racine du mappage de schéma XML spécifié. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootElementNamespace">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XmlNamespace RootElementNamespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.XmlNamespace RootElementNamespace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.RootElementNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootElementNamespace As XmlNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XmlNamespace ^ RootElementNamespace { Microsoft::Office::Interop::Excel::XmlNamespace ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2341)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2341)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XmlNamespace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" /> object qui représente l’élément racine du mappage de schéma XML spécifié. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveDataSourceDefinition">
+      <MemberSignature Language="C#" Value="public bool SaveDataSourceDefinition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SaveDataSourceDefinition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.SaveDataSourceDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property SaveDataSourceDefinition As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SaveDataSourceDefinition { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2336)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2336)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2336)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si les données source de la définition du mappage de schéma XML spécifié est enregistrée avec le classeur. La valeur par défaut est <b>True</b>. En lecture/écriture <b>booléen</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schemas">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XmlSchemas Schemas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.XmlSchemas Schemas" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.Schemas" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schemas As XmlSchemas" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XmlSchemas ^ Schemas { Microsoft::Office::Interop::Excel::XmlSchemas ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2342)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2342)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XmlSchemas</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.XmlSchemas" /> collection qui représente les schémas qui spécifié <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objet contient. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+          <para>Le premier élément de la collection <b>XmlSchemas</b> renvoyée est le schéma qui est utilisé comme l’élément racine du mappage de schéma XML spécifié.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowImportExportValidationErrors">
+      <MemberSignature Language="C#" Value="public bool ShowImportExportValidationErrors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowImportExportValidationErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.ShowImportExportValidationErrors" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowImportExportValidationErrors As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowImportExportValidationErrors { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2335)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2335)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2335)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie ou définit si une boîte de dialogue qui détaille les erreurs de validation du schéma lorsque des données sont importées ou exportées par l’intermédiaire du mappage de schéma XML spécifié est affichée. La valeur par défaut est <b>False</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkbookConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.WorkbookConnection WorkbookConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.WorkbookConnection WorkbookConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.XmlMap.WorkbookConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkbookConnection As WorkbookConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::WorkbookConnection ^ WorkbookConnection { Microsoft::Office::Interop::Excel::WorkbookConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2544)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2544)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie une nouvelle connexion spécifié <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objet. En lecture seule.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

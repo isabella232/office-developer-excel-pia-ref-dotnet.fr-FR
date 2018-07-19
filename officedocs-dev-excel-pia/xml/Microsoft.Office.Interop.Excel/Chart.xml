@@ -1,0 +1,66 @@
+<Type Name="Chart" FullName="Microsoft.Office.Interop.Excel.Chart">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f9f66d37751758f0af07f823171b4c06c4d2dcbb" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20577153" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Chart : Microsoft.Office.Interop.Excel._Chart, Microsoft.Office.Interop.Excel.ChartEvents_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Chart implements class Microsoft.Office.Interop.Excel._Chart, class Microsoft.Office.Interop.Excel.ChartEvents_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Chart" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Chart&#xA;Implements _Chart, ChartEvents_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Chart : Microsoft::Office::Interop::Excel::_Chart, Microsoft::Office::Interop::Excel::ChartEvents_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Excel._Chart</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Excel.ChartEvents_Event</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Excel.ChartClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000208D6-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente un graphique dans un classeur. Le graphique peut être soit incorporé (contenu dans un <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />) ou une feuille graphique distincte.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Excel._Chart" />.</para>
+      <para>Les propriétés suivantes pour le renvoi d’un <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objet sont décrites dans cette section :</para>
+      <list type="bullet">
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" /> propriété</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> propriété</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> propriété</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> propriété</description>
+        </item>
+      </list>
+      <para>Chart, propriété</para>
+      <para>Utilisez la propriété <b>Chart</b> pour renvoyer un objet <b>Chart</b> qui représente le graphique contenu dans un objet <b>ChartObject</b> .</para>
+      <para>Propriété Charts</para>
+      <para>La <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> collection contient un objet <b>Chart</b> pour chaque feuille de graphique dans un classeur. Utilisation de <b>graphiques</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index-feuille de graphique ou le nom, pour renvoyer un seul objet <b>Chart</b> .</para> Numéro d’index 
+      <para>le graphique représente la position de la feuille de graphique dans la barre d’onglets de classeur. Toutes les feuilles graphiques sont incluses dans le comptage d’index, même si elles sont masquées. Le nom de la feuille graphique est indiqué sous l’onglet du classeur du graphique. Vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel._Chart.Name" /> propriété pour définir ou renvoyer le nom du graphique.</para> Objet 
+      <para>le <b>graphique</b> est également un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection. La collection <b>Sheets</b> contient toutes les feuilles du classeur (feuilles de calcul et les feuilles de graphique). Utiliser des <b>feuilles</b>(<paramref name="index" />), où <paramref name="index" /> est le nom, pour renvoyer une seule feuille ou le numéro d’index feuille.</para><para>Propriété ActiveChart</para><para>Lorsqu’un graphique est l’objet actif, vous pouvez utiliser la propriété <b>ActiveChart</b> y faire référence. Une feuille de graphique est active si l’utilisateur a sélectionné ou est activée avec le <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> méthode.</para><para>Un graphique incorporé est actif si l’utilisateur a sélectionné ou <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> objet contenue dans a été activé avec la méthode <b>Activate</b> .</para><para>Propriété ActiveSheet</para><para>Lorsqu’une feuille de graphique est la feuille active, vous pouvez utiliser la propriété <b>ActiveSheet</b> pour faire référence multidimentionnelle.</para><para /></remarks>
+  </Docs>
+  <Members />
+</Type>

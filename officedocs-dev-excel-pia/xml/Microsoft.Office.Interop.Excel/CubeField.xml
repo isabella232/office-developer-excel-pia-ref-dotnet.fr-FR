@@ -1,0 +1,1274 @@
+<Type Name="CubeField" FullName="Microsoft.Office.Interop.Excel.CubeField">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="dd2f0a8509580a113ef53628d35dc680262b50f0" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20582417" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface CubeField" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CubeField" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CubeField" />
+  <TypeSignature Language="VB.NET" Value="Public Interface CubeField" />
+  <TypeSignature Language="C++ CLI" Value="public interface class CubeField" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002444C-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente un champ de hiérarchie ou de mesure d’un cube OLAP.</summary>
+    <remarks>
+      <para>Dans un rapport de tableau croisé dynamique, l’objet <b>CubeField</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> collection.</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PivotField.CubeField" /> propriété permet de renvoyer l’objet <b>CubeField</b> .</para>
+      <para>Utiliser <b>CubeFields</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du champ de cube pour renvoyer un seul objet <b>CubeField</b> .</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Caption">
+      <MemberSignature Language="C#" Value="public string _Caption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string _Caption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField._Caption" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property _Caption As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ _Caption { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2667)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2667)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie une valeur de type <b>String</b> qui représente le texte de l'étiquette pour le champ de cube.</summary>
+        <value>
+          <b>Chaîne</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMemberPropertyField">
+      <MemberSignature Language="C#" Value="public void AddMemberPropertyField (string Property, object PropertyOrder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddMemberPropertyField([in]string Property, [in]object PropertyOrder) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.CubeField.AddMemberPropertyField(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddMemberPropertyField (Property As String, Optional PropertyOrder As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2182)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Property" Type="System.String" />
+        <Parameter Name="PropertyOrder" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Property">
+          <b>String</b>obligatoire. Nom unique de la propriété de membre. Pour les hiérarchies équilibrées, un nom unique peut être créé en ajoutant le nom de propriété de membre « entre guillemets » sur le nom unique du niveau de que la propriété de membre est associée. Des hiérarchies déséquilibrées, un nom unique peut être créé en ajoutant le nom de propriété de membre « entre guillemets » sur le nom unique de la hiérarchie.</param>
+        <param name="PropertyOrder">Facultatif <b>Object</b>. Définit les <see cref="P:Microsoft.Office.Interop.Excel.PivotField.PropertyOrder" /> valeur de propriété pour un <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objet. La véritable position dans la collection sera immédiatement avant le champ de tableau croisé dynamique qui a le même <paramref name="PropertyOrder" /> valeur que celle indiquée dans l’argument. Si aucun champ n’a la valeur ordre donnée, la plage de valeurs acceptables est comprise entre 1 et le nombre de propriétés de membre déjà affichées pour la hiérarchie plus une. Cet argument est basé sur un. Si tous deux omis, la propriété accède à la fin de la liste.</param>
+        <summary>Cette méthode ajoute un champ de propriété de membre à l'affichage du champ de cube.</summary>
+        <remarks>
+          <para>Le champ de propriété spécifié ne seront pas visible si l’affichage de tableau croisé dynamique ne comporte aucun champ.</para>
+          <para>Pour supprimer les propriétés de membre, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.PivotField.Delete" /> méthode pour supprimer le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> d’objet à partir de la <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> collection.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMemberPropertyFieldEx">
+      <MemberSignature Language="C#" Value="public void AddMemberPropertyFieldEx (string Property, object PropertyOrder, object PropertyDisplayedIn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddMemberPropertyFieldEx([in]string Property, [in]object PropertyOrder, [in]object PropertyDisplayedIn) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.CubeField.AddMemberPropertyFieldEx(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddMemberPropertyFieldEx (Property As String, Optional PropertyOrder As Object, Optional PropertyDisplayedIn As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2668)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Property" Type="System.String" />
+        <Parameter Name="PropertyOrder" Type="System.Object" />
+        <Parameter Name="PropertyDisplayedIn" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Property">To be added.</param>
+        <param name="PropertyOrder">To be added.</param>
+        <param name="PropertyDisplayedIn">To be added.</param>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllItemsVisible">
+      <MemberSignature Language="C#" Value="public bool AllItemsVisible { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllItemsVisible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.AllItemsVisible" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllItemsVisible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllItemsVisible { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2593)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2593)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.AllItemsVisible" /> propriété vérifie si un filtrage manuel est appliqué à un champ PivotField ou de cube. Type <b>Boolean</b> en lecture seule.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Valeur par défaut est <b>True</b> et est disponible pour le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />et <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />objets.</para>
+          <para>Pour les tableaux croisés dynamiques OLAP, cette propriété est uniquement disponible pour les <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objet. Tentative d’obtenir ou définir sur le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet dans les tableaux croisés dynamiques OLAP renvoie une erreur d’exécution.</para>
+          <para>Pour les tableaux croisés dynamiques, cette propriété est disponible pour le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet.</para>
+          <para>Cette propriété est automatiquement définie sur <b>True</b> lorsqu’aucun filtrage manuel n’est appliqué (independent si le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> propriété a la valeur true ou false). Il est automatiquement définie sur <b>False</b> lorsqu’un filtrage manuel est appliqué (independent si le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> propriété a la valeur true ou false).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value>
+          <b>Application</b> (voir ci-dessus)</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="public string Caption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.Caption" />
+      <MemberSignature Language="VB.NET" Value="Public Property Caption As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Le texte de l’étiquette du champ de cube.</summary>
+        <value>
+          <b>Chaîne</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearManualFilter">
+      <MemberSignature Language="C#" Value="public void ClearManualFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearManualFilter() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.CubeField.ClearManualFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearManualFilter ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearManualFilter();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2594)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Le <see cref="M:Microsoft.Office.Interop.Excel.CubeField.ClearManualFilter" /> méthode fournit un moyen facile pour définir la propriété <b>Visible</b> sur <b>True</b> pour tous les éléments d’un champ dans les tableaux croisés dynamiques et pour vider la <b>HiddenItemsInList</b>/collections<b>VisibleItemsList</b> dans les tableaux croisés dynamiques OLAP.</summary>
+        <remarks>
+          <para>Cette méthode est disponible pour le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />objet <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />et pour le <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />objet dans le tableau croisé dynamique OLAP. Appeler pour un champ PivotField dans un tableau croisé dynamique OLAP renvoie une erreur d’exécution.</para>
+          <para>Après l’appel de cette méthode, les <b>collections HiddenItemsList</b>/<b>HiddenItems</b> et <b>VisibleItemsList</b>/<b>VisibleItems</b> sont vides.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePivotFields">
+      <MemberSignature Language="C#" Value="public void CreatePivotFields ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreatePivotFields() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CreatePivotFields ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreatePivotFields();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2671)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Le <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" /> méthode est nouvelle dans Microsoft Office Excel 2007. Il permet aux utilisateurs d’appliquer un filtre aux PivotFields ont pas encore été ajoutés au tableau croisé dynamique en créant correspondant <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />objet.</summary>
+        <remarks>
+          <para>Dans les tableaux croisés dynamiques OLAP, <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> n’existent pas jusqu'à ce que le correspondant <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> est ajouté à la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Le <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" />méthode permet aux utilisateurs de créer tous les <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> d’un <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />.  Les utilisateurs peuvent également ajouter des filtres aux champs et définir des propriétés sur les avant de l’objet CubeField est ajouté à la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
+          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CubeFieldSubType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCubeFieldSubType CubeFieldSubType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCubeFieldSubType CubeFieldSubType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldSubType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CubeFieldSubType As XlCubeFieldSubType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCubeFieldSubType CubeFieldSubType { Microsoft::Office::Interop::Excel::XlCubeFieldSubType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2670)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2670)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCubeFieldSubType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Spécifie le type d’un <see cref="P:Microsoft.Office.Interop.Excel.CubeField" />. En lecture seule.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCubeFieldSubType" />
+        </value>
+        <remarks>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldSubType" /> peut être une des valeurs de l’énumération suivante</para>
+          <list type="bullet">
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeAttribute" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeCalculatedMeasure" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeHierarchy" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeKPIGoal" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeKPIStatus" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeKPITrend" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeKPIValue" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeKPIWeight" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeMeasure" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeSet" />
+              </description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CubeFieldType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCubeFieldType CubeFieldType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCubeFieldType CubeFieldType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CubeFieldType As XlCubeFieldType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCubeFieldType CubeFieldType { Microsoft::Office::Interop::Excel::XlCubeFieldType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1918)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1918)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCubeFieldType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indique si le champ de cube OLAP est un champ de hiérarchie ou un champ de mesure.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlCubeFieldType" /> constantes : <b>xlHierarchy</b> ou <b>xlMeasure</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentPageName">
+      <MemberSignature Language="C#" Value="public string CurrentPageName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CurrentPageName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.CurrentPageName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CurrentPageName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrentPageName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1852)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1852)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1852)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le nom de page d'un champ de cube. <b>String</b> en lecture/écriture.</summary>
+        <value>
+          <b>Chaîne</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.CubeField.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Supprime l'objet.</summary>
+        <remarks>
+          <para>Vous pouvez supprimer des champs de cube uniquement si vous avez créé le champs de cube vous-même à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> objet avec la <paramref name="xlCalculatedSet" /> argument.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragToColumn">
+      <MemberSignature Language="C#" Value="public bool DragToColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DragToColumn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.DragToColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property DragToColumn As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DragToColumn { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1508)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1508)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1508)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>La valeur true</b> si le champ spécifié peut être déplacé vers la position de la colonne.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>True</b>.</para>
+          <para>Des sources de données OLAP pour la valeur est <b>False</b> pour les champs de mesure.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragToData">
+      <MemberSignature Language="C#" Value="public bool DragToData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DragToData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.DragToData" />
+      <MemberSignature Language="VB.NET" Value="Public Property DragToData As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DragToData { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1844)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1844)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1844)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>La valeur true</b> si le champ spécifié peut être déplacé vers la position des données.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>True</b>.</para>
+          <para>Des sources de données OLAP pour la valeur est <b>False</b> pour les champs de mesure.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragToHide">
+      <MemberSignature Language="C#" Value="public bool DragToHide { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DragToHide" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.DragToHide" />
+      <MemberSignature Language="VB.NET" Value="Public Property DragToHide As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DragToHide { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1509)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1509)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1509)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>La valeur true</b> si le champ peut être masqué en le glissant hors du rapport de tableau croisé dynamique.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragToPage">
+      <MemberSignature Language="C#" Value="public bool DragToPage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DragToPage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.DragToPage" />
+      <MemberSignature Language="VB.NET" Value="Public Property DragToPage As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DragToPage { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1510)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1510)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1510)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>La valeur true</b> si le champ peut être déplacé vers la position de la page.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>True</b>.</para>
+          <para>Des sources de données OLAP pour la valeur est <b>False</b> pour les champs de mesure.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragToRow">
+      <MemberSignature Language="C#" Value="public bool DragToRow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DragToRow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.DragToRow" />
+      <MemberSignature Language="VB.NET" Value="Public Property DragToRow As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DragToRow { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1511)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1511)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1511)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>La valeur true</b> si le champ peut être déplacé vers la position de ligne.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>True</b>. </para>
+          <para>Des sources de données OLAP pour la valeur est <b>False</b> pour les champs de mesure.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableMultiplePageItems">
+      <MemberSignature Language="C#" Value="public bool EnableMultiplePageItems { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableMultiplePageItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.EnableMultiplePageItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableMultiplePageItems As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableMultiplePageItems { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2184)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2184)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2184)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>La valeur true</b> pour autoriser plusieurs éléments dans la zone de champ de page pour sélectionner des tableaux croisés dynamiques OLAP.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>False</b>.</para>
+          <para>Cette propriété s’applique uniquement aux tableaux croisés dynamiques OLAP Online Analytical Processing (). Interroger ou définissant un non - tableau croisé dynamique OLAP provoque une erreur d’exécution.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlattenHierarchies">
+      <MemberSignature Language="C#" Value="public bool FlattenHierarchies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FlattenHierarchies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.FlattenHierarchies" />
+      <MemberSignature Language="VB.NET" Value="Public Property FlattenHierarchies As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FlattenHierarchies { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2924)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2924)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2924)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtient ou définit si les éléments de tous les niveaux des hiérarchies dans un champ de cube du jeu nommé sont affichés dans le même champ d’un rapport de tableau croisé dynamique basé sur un cube OLAP.</summary>
+        <value>
+          <b>la valeur true</b> si les éléments de tous les niveaux des hiérarchies dans un champ de cube du jeu nommé sont affichés dans le même champ d’un rapport de tableau croisé dynamique basé sur un cube OLAP ; Sinon, <b>false</b>.</value>
+        <remarks>
+          <para>En lecture-écriture.</para>
+          <para>
+            <b>la valeur true</b> si toutes les hiérarchies du jeu nommé spécifié sont affichés dans le même champ ; sinon, <b>false</b>.</para>
+          <para>La valeur de cette propriété correspond au paramètre d’éléments de l’affichage à partir de différents niveaux dans la case à cocher de champs séparés sur la mise en page &amp; onglet Impression de la boîte de dialogue Paramètres de champ pour un jeu nommé dans un rapport de tableau croisé dynamique basé sur un cube OLAP.</para>
+          <para>Cette propriété renvoie une erreur si le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldType" /> propriété du spécifié <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objet n’est pas <b>xlSet</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasMemberProperties">
+      <MemberSignature Language="C#" Value="public bool HasMemberProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasMemberProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.HasMemberProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasMemberProperties As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasMemberProperties { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2181)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie <b>la valeur True</b> lorsqu’il existe des propriétés de membre spécifiées à afficher pour le champ de cube.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HiddenLevels">
+      <MemberSignature Language="C#" Value="public int HiddenLevels { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HiddenLevels" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.HiddenLevels" />
+      <MemberSignature Language="VB.NET" Value="Public Property HiddenLevels As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HiddenLevels { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1920)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1920)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1920)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit les niveaux supérieurs de la hiérarchie spécifiée qui sont masqués.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est 0 (zéro), indiquant qu’aucun niveau n’est masqués.</para>
+          <para>Pour définir la valeur de cette propriété à un nombre entier supérieur à 0, vous devez d’abord définir la valeur 0.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HierarchizeDistinct">
+      <MemberSignature Language="C#" Value="public bool HierarchizeDistinct { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HierarchizeDistinct" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.HierarchizeDistinct" />
+      <MemberSignature Language="VB.NET" Value="Public Property HierarchizeDistinct As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HierarchizeDistinct { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2925)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2925)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2925)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtient ou définit si la commande et supprimer les doublons lors de l’affichage spécifié un jeu nommé dans un rapport de tableau croisé dynamique basé sur un cube OLAP.</summary>
+        <value>
+          <b>true</b> si les doublons doivent être classés et supprimés lors de l’affichage spécifié un jeu nommé dans un rapport de tableau croisé dynamique basé sur un cube OLAP ; Sinon, <b>false</b>.</value>
+        <remarks>
+          <para>En lecture-écriture.</para>
+          <para>
+            <b>la valeur true</b> si le jeu nommé est affiché comme prévu avec les doublons supprimés ; sinon, <b>false</b>.</para>
+          <para>La valeur de cette propriété correspond au paramètre de la commande automatiquement et supprimer les doublons de la case à cocher Définir la mise en page &amp; onglet Impression de la boîte de dialogue Paramètres de champ pour un jeu nommé dans un rapport de tableau croisé dynamique basé sur un cube OLAP.</para>
+          <para>Cette propriété renvoie une erreur si le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldType" /> propriété du spécifié <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objet n’est pas <b>xlSet</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeNewItemsInFilter">
+      <MemberSignature Language="C#" Value="public bool IncludeNewItemsInFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeNewItemsInFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeNewItemsInFilter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeNewItemsInFilter { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2587)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2587)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2587)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> propriété est utilisée pour effectuer le suivi des éléments inclus/exclus dans les tableaux croisés dynamiques OLAP. Lecture/écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Valeur par défaut est <b>False</b>.</para>
+          <para>Lorsque ce paramètre est défini sur <b>True</b>, les éléments exclus sont suivies lorsqu’un filtrage manuel est appliqué. Lorsque ce paramètre est défini sur <b>False</b>, les éléments inclus sont suivies lorsqu’un filtrage manuel est appliqué.</para>
+          <para>Lorsque <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> est défini sur <b>False</b>, les collections <b>HiddenItemsList</b> et <b>HiddenItems</b> sont vides et les éléments ne peuvent pas être ajoutés.</para>
+          <para>Lorsque <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> est définie sur <b>True</b>, les collections <b>VisibleItemsList</b> et <b>VisibleItems</b> sont vides et les éléments ne peuvent pas être ajoutés.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDate">
+      <MemberSignature Language="C#" Value="public bool IsDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.IsDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDate { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2672)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2672)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie <b>True</b> si le champ de cube est une date. <b>Boolean</b> en lecture seule.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LayoutForm">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlLayoutFormType LayoutForm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlLayoutFormType LayoutForm" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.LayoutForm" />
+      <MemberSignature Language="VB.NET" Value="Public Property LayoutForm As XlLayoutFormType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlLayoutFormType LayoutForm { Microsoft::Office::Interop::Excel::XlLayoutFormType get(); void set(Microsoft::Office::Interop::Excel::XlLayoutFormType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1848)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1848)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1848)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlLayoutFormType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la manière dont les éléments de tableau croisé dynamique spécifiés s’affichent, au format de tableau ou de plan.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutFormType" />peut être une de ces constantes <b>XlLayoutFormType</b> :</para>
+          <para>
+            <b>xlTabular</b> par défaut.</para>
+          <para>
+            <b>xlOutline</b> le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutSubtotalLocation" /> propriété indique où le sous-total s’affiche dans le rapport de tableau croisé dynamique.</para>
+          <para>, Vous pouvez définir cette propriété pour un champ de tableau croisé dynamique ; Toutefois, la mise en forme n’apparaît que si le champ spécifié est un champ de ligne autre que le champ le plus profond ligne (niveau le plus bas). Sources de données non-OLAP, la valeur de cette propriété ne change pas lorsque le champ est réorganisé ou lorsqu’il est ajouté ou supprimé dans le rapport de tableau croisé dynamique.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LayoutSubtotalLocation">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlSubtototalLocationType LayoutSubtotalLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlSubtototalLocationType LayoutSubtotalLocation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.LayoutSubtotalLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property LayoutSubtotalLocation As XlSubtototalLocationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlSubtototalLocationType LayoutSubtotalLocation { Microsoft::Office::Interop::Excel::XlSubtototalLocationType get(); void set(Microsoft::Office::Interop::Excel::XlSubtototalLocationType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1846)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1846)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1846)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlSubtototalLocationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la position des sous-totaux de champ de tableau croisé dynamique par rapport à (soit au-dessus ou au-dessous) le champ spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlSubtototalLocationType" />peut être une de ces constantes <b>XlSubtototalLocationType</b> :</para>
+          <para>
+            <b>xlAtTop</b>
+          </para>
+          <para>
+            <b>xlAtBottom</b> par défaut</para>
+          <para>vous pouvez définir cette propriété pour un tableau croisé dynamique de champ dans un format plan ; Toutefois, la mise en forme n’apparaît que si le texte spécifié le champ est un champ de ligne autre que celui du (niveau le plus bas). Sources de données non-OLAP, la valeur de cette propriété ne change pas lorsque le champ est réorganisé ou lorsqu’il est ajouté ou supprimé dans le rapport.</para>
+          <para>La <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutForm" /> propriété détermine si le rapport s’affiche au format de tableau ou de plan.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le nom de l'objet.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Orientation">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotFieldOrientation Orientation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotFieldOrientation Orientation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.Orientation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Orientation As XlPivotFieldOrientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotFieldOrientation Orientation { Microsoft::Office::Interop::Excel::XlPivotFieldOrientation get(); void set(Microsoft::Office::Interop::Excel::XlPivotFieldOrientation value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(134)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(134)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(134)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotFieldOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>L’emplacement du champ dans le rapport de tableau croisé dynamique spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" />peut être une de ces constantes <b>XlPivotFieldOrientation</b> :</para>
+          <para>
+            <b>xlColumnField</b>
+          </para>
+          <para>
+            <b>xlDataField</b>
+          </para>
+          <para>
+            <b>xlHidden</b>
+          </para>
+          <para>
+            <b>xlPageField</b>
+          </para>
+          <para>
+            <b>xlRowField</b>
+          </para>
+          <para>pour les sources de données OLAP, cette propriété pour un champ dans un hiérarchie définit l’orientation des autres champs dans la même hiérarchie. Les champs de dimension peuvent uniquement être orientés dans la ligne, colonne et zones de champ de page du rapport de tableau croisé dynamique. Les champs de mesure peuvent uniquement être orientés dans la zone de données. Si un champ de hiérarchie ou données <b>xlHidden</b> supprime la hiérarchie ou un champ à partir du rapport de tableau croisé dynamique.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotFields">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotFields PivotFields { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotFields PivotFields" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.PivotFields" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotFields As PivotFields" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotFields ^ PivotFields { Microsoft::Office::Interop::Excel::PivotFields ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(718)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(718)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotFields</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> collection. Cette collection contient tous les champs de tableau croisé dynamique, y compris ceux qui ne sont pas actuellement visibles à l’écran.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Sources de données de traitement analytique en ligne (OLAP), il n’existe aucuns champs masqués et l’objet ou la collection renvoyée reflète ce qui est actuellement visible.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public int Position { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Position" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Property Position As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Position { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Position de l’élément dans son champ, si l’élément est actuellement affiché.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowInFieldList">
+      <MemberSignature Language="C#" Value="public bool ShowInFieldList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowInFieldList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.ShowInFieldList" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowInFieldList As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowInFieldList { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2185)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2185)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2185)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Lorsque la valeur <b>True</b> (valeur par défaut), un <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objet s’affichera dans la liste des champs.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TreeviewControl">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.TreeviewControl TreeviewControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.TreeviewControl TreeviewControl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.TreeviewControl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TreeviewControl As TreeviewControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::TreeviewControl ^ TreeviewControl { Microsoft::Office::Interop::Excel::TreeviewControl ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1919)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1919)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.TreeviewControl</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" /> représentant le contrôle de manipulation de cube d’un rapport de tableau croisé dynamique OLAP.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Cette propriété est disponible uniquement lorsque le contrôle est visible.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CubeField.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le nom du champ spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

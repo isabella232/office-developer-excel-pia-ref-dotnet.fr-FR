@@ -1,0 +1,307 @@
+<Type Name="Names" FullName="Microsoft.Office.Interop.Excel.Names">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a76d5115c800138621098c928ea18e19669180e4" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20584727" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Names implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Names" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Names&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Names : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000208B8-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objets dans l’application ou le classeur. Chaque objet <b>Name</b> représente un nom défini pour une plage de cellules. Noms peuvent être soit intégré — comme base de données, Print_Area et Auto_Open — ou de noms personnalisés.</summary>
+    <remarks>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> propriété permet de renvoyer la collection <b>Names</b> .</para> Utilisation de 
+      <para>les <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour créer un nom et l’ajouter à la collection. La méthode <b>Add</b><paramref name="RefersTo" /> argument doit être spécifié en notation de style A1, y compris le signe dollar ($), le cas échéant. Par exemple, si la cellule A10 est sélectionnée dans la feuille Sheet1 et que vous définissez un nom à l’aide de la <paramref name="RefersTo" /> argument « = sheet1 ! A1 : B1 », le nouveau nom fait référence aux cellules A10 : B10 (parce que vous avez spécifié une référence relative). Pour spécifier une référence absolue, utilisez « = sheet1 ! $A$ 1 : $B$ 1 «.</para><para>Utiliser des <b>noms</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du nom ou le nom défini, pour renvoyer un seul objet <b>Name</b> .</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Name _Default (object Index, object IndexLocal, object RefersTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Name _Default([in]object Index, [in]object IndexLocal, [in]object RefersTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Names._Default(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function _Default (Optional Index As Object, Optional IndexLocal As Object, Optional RefersTo As Object) As Name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Name</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+        <Parameter Name="IndexLocal" Type="System.Object" />
+        <Parameter Name="RefersTo" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <param name="IndexLocal">To be added.</param>
+        <param name="RefersTo">To be added.</param>
+        <summary>Réservé à une utilisation interne.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Name Add (object Name, object RefersTo, object Visible, object MacroType, object ShortcutKey, object Category, object NameLocal, object RefersToLocal, object CategoryLocal, object RefersToR1C1, object RefersToR1C1Local);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Name Add([in]object Name, [in]object RefersTo, [in]object Visible, [in]object MacroType, [in]object ShortcutKey, [in]object Category, [in]object NameLocal, [in]object RefersToLocal, [in]object CategoryLocal, [in]object RefersToR1C1, [in]object RefersToR1C1Local) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Name</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.Object" />
+        <Parameter Name="RefersTo" Type="System.Object" />
+        <Parameter Name="Visible" Type="System.Object" />
+        <Parameter Name="MacroType" Type="System.Object" />
+        <Parameter Name="ShortcutKey" Type="System.Object" />
+        <Parameter Name="Category" Type="System.Object" />
+        <Parameter Name="NameLocal" Type="System.Object" />
+        <Parameter Name="RefersToLocal" Type="System.Object" />
+        <Parameter Name="CategoryLocal" Type="System.Object" />
+        <Parameter Name="RefersToR1C1" Type="System.Object" />
+        <Parameter Name="RefersToR1C1Local" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Name">Facultatif <b>Object</b>. Obligatoire si <paramref name="NameLocal" /> n’est pas spécifié. Texte à utiliser comme nom. Les noms ne peuvent pas contenir d’espaces et ne peut pas ressembler à des références de cellule.</param>
+        <param name="RefersTo">Facultatif <b>Object</b>. Obligatoire sauf si l’un des autres <paramref name="RefersTo" /> arguments est spécifié. Décrit ce que le nom fait référence (en utilisant la notation A1). <b>Remarque</b> Nothing est renvoyé si la référence n’existe pas.</param>
+        <param name="Visible">Facultatif <b>Object</b>. <b>True</b> pour définir le nom normalement. <b>False</b> pour définir le nom comme nom masqué (autrement dit, il n’apparaît pas dans la boîte de dialogue Définir un nom, coller un nom ou Goto). La valeur par défaut est <b>True</b>.</param>
+        <param name="MacroType">Facultatif <b>Object</b>. Type de macro, comme indiqué dans le tableau suivant. Fonction définie par le ValueMeaning1User (procédure<b>Function</b> ) 2Macro (également appelé procédure <b>Sub</b> ) 3 ou omittedNone (autrement dit, le nom ne fait pas référence à une macro ou une fonction définie par l’utilisateur)</param>
+        <param name="ShortcutKey">Facultatif <b>Object</b>. La touche de raccourci de macro. Doit être une lettre unique, tel que « z » ou « Z ». S’applique uniquement aux macros de commande.</param>
+        <param name="Category">Facultatif <b>Object</b>. La catégorie de la macro ou une fonction si <paramref name="MacroType" /> est 1 ou 2. La catégorie est utilisée dans l’Assistant fonction. Catégories existantes susceptibles d’être référencées en nombre (commençant à 1) ou par un nom (dans la langue de la macro). Microsoft Excel crée une nouvelle catégorie si la catégorie spécifiée n’existe pas déjà.</param>
+        <param name="NameLocal">Facultatif <b>Object</b>. Obligatoire si <paramref name="Name" /> n’est pas spécifié. Texte à utiliser comme nom (dans la langue de l’utilisateur). Les noms ne peuvent pas contenir d’espaces et ne peut pas ressembler à des références de cellule.</param>
+        <param name="RefersToLocal">Facultatif <b>Object</b>. Obligatoire sauf si l’un des autres <paramref name="RefersTo" /> arguments est spécifié. Décrit ce que le nom fait référence (dans la langue de l’utilisateur, en utilisant la notation A1).</param>
+        <param name="CategoryLocal">Facultatif <b>Object</b>. Obligatoire si <paramref name="Category" /> n’est pas spécifié. Texte identifiant la catégorie d’une fonction personnalisée dans la langue de l’utilisateur.</param>
+        <param name="RefersToR1C1">Facultatif <b>Object</b>. Obligatoire sauf si l’un des autres <paramref name="RefersTo" /> arguments est spécifié. Décrit ce que le nom fait référence (à l’aide de la notation de style L1C1).</param>
+        <param name="RefersToR1C1Local">Facultatif <b>Object</b>. Obligatoire sauf si l’un des autres <paramref name="RefersTo" /> arguments est spécifié. Décrit ce que le nom fait référence (dans la langue de l’utilisateur, en utilisant la notation de style R1C1).</param>
+        <summary>Définit un nouveau nom. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Names.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Names.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le nombre d'objets dans la collection. Valeur <b>Integer</b> en lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Names.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Names.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Name Item (object Index, object IndexLocal, object RefersTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Name Item([in]object Index, [in]object IndexLocal, [in]object RefersTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Names.Item(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Optional Index As Object, Optional IndexLocal As Object, Optional RefersTo As Object) As Name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Name</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+        <Parameter Name="IndexLocal" Type="System.Object" />
+        <Parameter Name="RefersTo" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Facultatif <b>Object</b>. Nom ou numéro du nom défini à renvoyer.</param>
+        <param name="IndexLocal">Facultatif <b>Object</b>. Le nom du nom défini dans la langue de l’utilisateur. Aucun nom ne sera traduit si vous utilisez cet argument.</param>
+        <param name="RefersTo">Facultatif <b>Object</b>. Ce que le nom fait référence. Cet argument vous permet d’identifier un nom à quoi elle correspond.</param>
+        <summary>Renvoie un seul <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objet à partir d’un <see cref="T:Microsoft.Office.Interop.Excel.Names" /> collection.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Vous devez spécifier un et seulement un, de ces trois arguments.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Names.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l’objet parent de l’objet spécifié. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
