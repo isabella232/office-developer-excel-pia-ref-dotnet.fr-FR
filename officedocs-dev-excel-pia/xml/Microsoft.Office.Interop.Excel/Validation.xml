@@ -1,0 +1,752 @@
+<Type Name="Validation" FullName="Microsoft.Office.Interop.Excel.Validation">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="083a06403ed93601b1e670cd7b0f4d2f6291f627" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20575802" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Validation" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Validation" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Validation" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Validation" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Validation" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002442F-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Cet objet représente la validation de données appliquée à une plage dans une feuille de calcul.</summary>
+    <remarks>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> propriété permet de renvoyer l’objet <b>Validation</b> .</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> méthode pour ajouter la validation des données à une plage et créer un objet <b>Validation</b> .</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Microsoft.Office.Interop.Excel.XlDVType Type, object AlertStyle, object Operator, object Formula1, object Formula2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add([in]valuetype Microsoft.Office.Interop.Excel.XlDVType Type, [in]object AlertStyle, [in]object Operator, [in]object Formula1, [in]object Formula2) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (Type As XlDVType, Optional AlertStyle As Object, Optional Operator As Object, Optional Formula1 As Object, Optional Formula2 As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Interop.Excel.XlDVType" />
+        <Parameter Name="AlertStyle" Type="System.Object" />
+        <Parameter Name="Operator" Type="System.Object" />
+        <Parameter Name="Formula1" Type="System.Object" />
+        <Parameter Name="Formula2" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">Requis <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />. Type de validation.</param>
+        <param name="AlertStyle">Facultatif <b>Object</b>. Le style d’alerte de validation. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> constantes : <b>xlValidAlertInformation</b>, <b>xlValidAlertStop</b>ou <b>xlValidAlertWarning</b>.</param>
+        <param name="Operator">Facultatif <b>Object</b>. L’opérateur de validation des données. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constantes : <b>xlBetween</b>, <b>xlEqual</b>, <b>xlGreater</b>, <b>xlGreaterEqual</b>, <b>xlLess</b>, <b>xlLessEqual</b>, <b>xlNotBetween</b>ou <b>xlNotEqual</b>.</param>
+        <param name="Formula1">Facultatif <b>Object</b>. La première partie de l’équation de validation des données.</param>
+        <param name="Formula2">Facultatif <b>Object</b>. La seconde partie de la validation des données lors de la <paramref name="Operator" /> est <b>xlBetween</b> ou <b>xlNotBetween</b> (sinon, cet argument est ignoré).</param>
+        <summary>Cette méthode ajoute la validation de données à la plage spécifiée.</summary>
+        <remarks>
+          <para>La méthode Add requiert différents arguments, selon le type de validation, comme indiqué dans le tableau suivant.</para>
+          <list type="table">
+            <item>
+              <term>
+                <b>xlValidateCustom</b>
+              </term>
+              <description>
+                <paramref name="Formula1" /> est obligatoire ; <paramref name="Formula2" /> est ignorée. <paramref name="Formula1" /> doit contenir une expression qui renvoie <b>True</b> lorsqu’elle est valide et <b>False</b> lors de la saisie de données n’est pas valide.</description>
+            </item>
+            <item>
+              <term>
+                <b>xlInputOnly</b>
+              </term>
+              <description>
+                <paramref name="AlertStyle" />, <paramref name="Formula1" />, ou <paramref name="Formula2" /> servent.</description>
+            </item>
+            <item>
+              <term>
+                <b>xlValidateList</b>
+              </term>
+              <description>
+                <paramref name="Formula1" /> est obligatoire ; <paramref name="Formula2" /> est ignorée. <paramref name="Formula1" /> doit contenir une référence de feuille de calcul à cette liste ou une liste de valeurs délimitées par des virgules.</description>
+            </item>
+            <item>
+              <term>
+                <b>xlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>ou <b>xlValidateTime</b></term>
+              <description>une des deux <paramref name="Formula1" /> ou <paramref name="Formula2" /> doit être spécifié, ou les deux peut être spécifié.</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlertStyle">
+      <MemberSignature Language="C#" Value="public int AlertStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AlertStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.AlertStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AlertStyle As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AlertStyle { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1605)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1605)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le style d’alerte de validation. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> pour définir le style d’alerte pour une plage. Si la plage comporte déjà la validation des données, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour modifier le style d’alerte.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Validation.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Supprime l'objet.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorMessage">
+      <MemberSignature Language="C#" Value="public string ErrorMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.ErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorMessage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1609)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1609)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1609)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le message d'erreur de validation de données. Type de données <b>String</b> en lecture-écriture.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorTitle">
+      <MemberSignature Language="C#" Value="public string ErrorTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorTitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.ErrorTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le titre de la boîte de dialogue d'erreur de validation de données. Type de données <b>String</b> en lecture-écriture.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula1">
+      <MemberSignature Language="C#" Value="public string Formula1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula1" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Formula1" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Formula1 As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula1 { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1579)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1579)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie la valeur ou une expression associée à la validation de données ou le format conditionnelle. Peut être une constante, une valeur de chaîne, une référence de cellule ou une formule. Valeur <b>String</b> en lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula2">
+      <MemberSignature Language="C#" Value="public string Formula2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula2" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Formula2" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Formula2 As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula2 { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1580)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1580)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie la valeur ou une expression associée à la seconde partie d’un format conditionnel. Valeur <b>String</b> en lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Cette propriété est utilisée uniquement lors de format conditionnel de validation de données <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> propriété est <b>xlBetween</b> ou <b>xlNotBetween</b>. Il peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreBlank">
+      <MemberSignature Language="C#" Value="public bool IgnoreBlank { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreBlank" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.IgnoreBlank" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreBlank As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreBlank { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1606)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1606)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1606)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété a la valeur <b>True</b> si des valeurs nulles sont autorisées par la validation de données de la plage. Type de données <b>Boolean</b> en lecture-écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si la propriété <b>IgnoreBlank</b> a la <b>valeur True</b>, les données de la cellule sont considérées correctes si la cellule est vide, ou si une cellule référencée par un le <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> ou <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> propriété est vide.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IMEMode">
+      <MemberSignature Language="C#" Value="public int IMEMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IMEMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.IMEMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property IMEMode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IMEMode { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1607)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1607)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1607)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la description des règles de saisie japonaises. Peut être une de le <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> constantes. Type de données <b>Integer</b> en lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Notez que cette propriété peut être définie uniquement lorsque la langue japonaise a été installée et sélectionnée.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InCellDropdown">
+      <MemberSignature Language="C#" Value="public bool InCellDropdown { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InCellDropdown" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.InCellDropdown" />
+      <MemberSignature Language="VB.NET" Value="Public Property InCellDropdown As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InCellDropdown { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1608)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1608)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1608)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si la validation de données affiche une liste déroulante qui contient les valeurs autorisées. Type de données <b>Boolean</b> en lecture-écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Cette propriété est ignorée si le type de validation n’est pas <b>xlValidateList</b>.</para>
+          <para>Utiliser le <paramref name="Minimum" /> argument de la <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> objet pour spécifier la plage qui contient des données valides.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputMessage">
+      <MemberSignature Language="C#" Value="public string InputMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InputMessage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.InputMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputMessage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InputMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1611)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1611)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1611)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le message d'entrée de validation de données. Type de données <b>String</b> en lecture-écriture.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputTitle">
+      <MemberSignature Language="C#" Value="public string InputTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InputTitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.InputTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InputTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1612)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1612)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1612)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le titre de la boîte de dialogue d'entrée de validation de données. Type de données <b>String</b> en lecture-écriture.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Modify">
+      <MemberSignature Language="C#" Value="public void Modify (object Type, object AlertStyle, object Operator, object Formula1, object Formula2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Modify([in]object Type, [in]object AlertStyle, [in]object Operator, [in]object Formula1, [in]object Formula2) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Modify (Optional Type As Object, Optional AlertStyle As Object, Optional Operator As Object, Optional Formula1 As Object, Optional Formula2 As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1581)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="System.Object" />
+        <Parameter Name="AlertStyle" Type="System.Object" />
+        <Parameter Name="Operator" Type="System.Object" />
+        <Parameter Name="Formula1" Type="System.Object" />
+        <Parameter Name="Formula2" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">Requis <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />. Type de validation.</param>
+        <param name="AlertStyle">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />. Le style d’alerte de validation.</param>
+        <param name="Operator">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />. L’opérateur de validation des données.</param>
+        <param name="Formula1">Facultatif <b>Object</b>. La première partie de l’équation de validation des données.</param>
+        <param name="Formula2">Facultatif <b>Object</b>. La seconde partie de la validation des données lors de la <paramref name="Operator" /> est <b>xlBetween</b> ou <b>xlNotBetween</b> (sinon, cet argument est ignoré).</param>
+        <summary>Cette méthode modifie la validation de données pour une plage.</summary>
+        <remarks>
+          <para>La méthode <b>Modify</b> requiert différents arguments selon le type de validation, comme indiqué dans le tableau suivant.</para>
+          <list type="table">
+            <item>
+              <term>
+                <b>xlInputOnly</b>
+              </term>
+              <description>
+                <paramref name="AlertStyle" />, <paramref name="Formula1" />, et <paramref name="Formula2" /> ne sont pas utilisés.</description>
+            </item>
+            <item>
+              <term>
+                <b>xlValidateCustom</b>
+              </term>
+              <description>
+                <paramref name="Formula1" /> est obligatoire ; <paramref name="Formula2" /> est ignorée. <paramref name="Formula1" /> doit contenir une expression qui renvoie <b>True</b> lorsqu’elle est valide et <b>False</b> lors de la saisie de données n’est pas valide.</description>
+            </item>
+            <item>
+              <term>
+                <b>xlValidateList</b>
+              </term>
+              <description>
+                <paramref name="Formula1" /> est obligatoire ; <paramref name="Formula2" /> est ignorée. <paramref name="Formula1" /> doit contenir une référence de feuille de calcul à la liste ou une liste de valeurs délimitées par des virgules.</description>
+            </item>
+            <item>
+              <term>
+                <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b>ou <b>xlValidateWholeNumber</b></term>
+              <description>
+                <paramref name="Formula1" /> ou <paramref name="Formula2" />, ou les deux, doit être spécifié.</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Operator">
+      <MemberSignature Language="C#" Value="public int Operator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Operator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Operator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Operator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(797)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(797)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l’opérateur pour le format conditionnel. Valeur <b>Integer</b> en lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowError">
+      <MemberSignature Language="C#" Value="public bool ShowError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.ShowError" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowError As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowError { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1613)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1613)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1613)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si le message d’erreur de validation de données s’affiche lorsque l’utilisateur entre des données non valides. Type de données <b>Boolean</b> en lecture-écriture.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowInput">
+      <MemberSignature Language="C#" Value="public bool ShowInput { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowInput" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.ShowInput" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowInput As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowInput { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1614)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1614)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1614)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété a la valeur <b>True</b> si le message d'entrée de validation des données s'affiche lorsque l'utilisateur sélectionne une cellule se trouvant dans la plage de validation des données. Type de données <b>Boolean</b> en lecture-écriture.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie la validation du type de données pour une plage. En lecture seule <b>entier</b> qui peut être une des constantes de <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public bool Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si tous les critères de validation sont satisfaits (autrement dit, si la plage contient des données valides). Type <b>Boolean</b> en lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

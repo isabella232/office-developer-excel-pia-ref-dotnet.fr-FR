@@ -1,0 +1,1333 @@
+<Type Name="OLEDBConnection" FullName="Microsoft.Office.Interop.Excel.OLEDBConnection">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="d431cc838470af4561eda6bfd83aba4ed9d2b249" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20576208" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface OLEDBConnection" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEDBConnection" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface OLEDBConnection" />
+  <TypeSignature Language="C++ CLI" Value="public interface class OLEDBConnection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002448D-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Cet objet représente la connexion OLE DB.</summary>
+    <remarks>
+      <para>Une connexion OLE DB peut être stockée dans un classeur Excel.  Lorsque Micrososft Excel ouvre le classeur, Excel crée une copie en mémoire de la connexion OLE DB en tant que la <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> objet.</para>
+      <para>Un <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> objet contient des informations relatives à la connexion, telles que le nom du serveur pour se connecter à et le nom des objets à ouvrir sur ce serveur.  Si vous le souhaitez, le <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> objet peut également inclure des informations d’authentification ou une commande qui est transmis au serveur et l’exécution (par exemple, une instruction SELECT doit être exécutée par SQL Server).</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ADOConnection">
+      <MemberSignature Language="C#" Value="public object ADOConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ADOConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ADOConnection As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ADOConnection { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2074)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2074)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie un objet de connexion ADO si un cache de tableau croisé dynamique est connecté à une source de données OLE DB. En lecture seule.
+
+</summary>
+        <value>
+          <b>Objet</b>
+        </value>
+        <remarks>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> propriété expose la connexion Microsoft Excel au fournisseur de données, permettant à l’utilisateur d’écrire du code dans le contexte de la même session qu’Excel. </para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> propriété est disponible uniquement pour les sessions où la source de données est une source de données OLE DB. Lorsqu’il n’existe pas de session ADO, la requête provoquera une erreur d’exécution.  Le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> propriété peut être utilisée pour n’importe quel cache OLE DB avec ADO. L’objet connection ADO peut être utilisé avec ADO MD pour trouver des informations sur les cubes OLAP sur laquelle repose le cache.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlwaysUseConnectionFile">
+      <MemberSignature Language="C#" Value="public bool AlwaysUseConnectionFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AlwaysUseConnectionFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.AlwaysUseConnectionFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlwaysUseConnectionFile As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AlwaysUseConnectionFile { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2706)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2706)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2706)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>La valeur true</b>si le fichier de connexion est toujours utilisé pour établir une connexion à la source de données. Type de données <b>Boolean</b> en lecture/écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Lorsque cette propriété a la <b>valeur True</b> le fichier de connexion sera toujours être utilisé pour établir la connexion à la source de données.  Si la connexion incorporée dans le classeur est différente du fichier de connexion externe, la connexion incorporée est ignorée et le fichier de connexion externe sera la seule version considéré comme.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente l’application Microsoft Office Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié. En lecture seule.</summary>
+        <value>
+          <b>Application</b>
+        </value>
+        <remarks>
+          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundQuery">
+      <MemberSignature Language="C#" Value="public bool BackgroundQuery { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BackgroundQuery" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.BackgroundQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackgroundQuery As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BackgroundQuery { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1427)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1427)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1427)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété a la valeur <b>True</b> si les requêtes destinées à la connexion OL DB sont exécutées de manière asynchrone (en arrière-plan). <b>Boolean</b> en lecture-écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Sources de données OLAP, cette propriété est en lecture seule et renvoie toujours la <b>valeur False</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalculatedMembers">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.CalculatedMembers CalculatedMembers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.CalculatedMembers CalculatedMembers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CalculatedMembers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CalculatedMembers As CalculatedMembers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::CalculatedMembers ^ CalculatedMembers { Microsoft::Office::Interop::Excel::CalculatedMembers ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2125)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2125)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.CalculatedMembers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtient le <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> collection pour la connexion spécifiée.</summary>
+        <value>Le <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> collection pour la connexion spécifiée.</value>
+        <remarks>
+          <para>En lecture seule.</para>
+          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CalculatedMembers" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> collection à partager des membres calculés entre plusieurs fonctions de tableaux croisés dynamiques et de cube qui utilisent la même connexion.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelRefresh">
+      <MemberSignature Language="C#" Value="public void CancelRefresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelRefresh() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEDBConnection.CancelRefresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelRefresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelRefresh();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1589)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Annule toutes les opérations d’actualisation en cours pour la connexion OLE DB spécifiée.</summary>
+        <remarks>
+          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Refreshing" /> propriété pour déterminer si une opération d’actualisation est actuellement en cours.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandText">
+      <MemberSignature Language="C#" Value="public object CommandText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CommandText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandText As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandText { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1829)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1829)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1829)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la chaîne de commande pour la source de données spécifié. <b>Objet</b> en lecture/écriture.</summary>
+        <value>
+          <b>Objet</b>
+        </value>
+        <remarks>
+          <para>Vous devez utiliser le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> propriété au lieu de la propriété <b>SQL</b>, désormais destinée principalement pour assurer la compatibilité avec les versions antérieures de Microsoft Excel. Si vous utilisez les deux propriétés, la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> valeur de la propriété est prioritaire.</para>
+          <para>La <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandType" /> propriété décrit la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> propriété.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCmdType CommandType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCmdType CommandType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandType As XlCmdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCmdType CommandType { Microsoft::Office::Interop::Excel::XlCmdType get(); void set(Microsoft::Office::Interop::Excel::XlCmdType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1830)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1830)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1830)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCmdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une des constantes <b>XlCmdType</b> . En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />
+        </value>
+        <remarks>
+          <para>La constante renvoyée ou définie décrit la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> propriété. La valeur par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connection">
+      <MemberSignature Language="C#" Value="public object Connection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Connection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />
+      <MemberSignature Language="VB.NET" Value="Public Property Connection As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Connection { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1432)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1432)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1432)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une chaîne qui contient les paramètres OLE DB qui permettent à Microsoft Excel pour se connecter à une source de données OLE DB. <b>Objet</b> en lecture/écriture.</summary>
+        <value>
+          <b>Objet</b>
+        </value>
+        <remarks>
+          <para>Définition de la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> propriété ne déclenche pas immédiatement la connexion à la source de données. Vous devez utiliser le <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> méthode à établir la connexion et récupérer les données.  Lorsque vous utilisez un fichier de cube hors connexion, définissez la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> propriété <b>et utiliser</b> le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> propriété au lieu de la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> propriété.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie une constante dans la <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> énumération qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
+        </value>
+        <remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.  Le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Creator" /> propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableRefresh">
+      <MemberSignature Language="C#" Value="public bool EnableRefresh { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableRefresh" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.EnableRefresh" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableRefresh As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableRefresh { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1477)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1477)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1477)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si la connexion peut être mise à jour par l’utilisateur. La valeur par défaut est <b>True</b>. <b>Boolean</b> en lecture-écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshOnFileOpen" /> propriété est ignorée si la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.EnableRefresh" /> propriété est définie sur <b>False</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConnected">
+      <MemberSignature Language="C#" Value="public bool IsConnected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsConnected" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConnected As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConnected { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2075)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2075)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie <b>la valeur True</b> si le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> propriété a la<b>valeur True</b>. Renvoie la <b>valeur False</b> s’il n’est pas actuellement connecté à sa source. Type <b>Boolean</b> en lecture seule.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" /> propriété ne vérifie pas si la connexion est connecté. Même si cette propriété renvoie<b>la valeur True</b>, l’envoi de commandes au fournisseur peut entraîner une erreur si la connexion n’est plus valide.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalConnection">
+      <MemberSignature Language="C#" Value="public object LocalConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object LocalConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalConnection As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ LocalConnection { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1835)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1835)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1835)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la chaîne de connexion à un fichier de cube hors connexion. <b>Objet</b> en lecture/écriture.</summary>
+        <value>
+          <b>Objet</b>
+        </value>
+        <remarks>
+          <para>Pour une source de données non-OLAP, la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> propriété est une chaîne vide et la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> propriété est définie sur <b>False</b>.</para>
+          <para>Paramètre le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> propriété ne déclenche pas immédiatement la connexion à la source de données. Vous devez d’abord utiliser le <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> méthode à établir la connexion et récupérer les données.</para>
+          <para>La valeur de la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> propriété est utilisée si la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> propriété est définie sur <b>True</b>. Si le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> propriété est définie sur <b>False</b>, la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> propriété spécifie la chaîne de connexion pour les tables de requête basés sur des sources autres que des fichiers de cube locaux.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocaleID">
+      <MemberSignature Language="C#" Value="public int LocaleID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LocaleID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocaleID" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocaleID As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LocaleID { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2940)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2940)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2940)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtient ou définit l’identificateur de paramètres régionaux pour la connexion spécifiée.</summary>
+        <value>L’identificateur de paramètres régionaux pour la connexion spécifiée.</value>
+        <remarks>
+          <para>En lecture-écriture.</para>
+          <para>Avant de définir la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocaleID" /> propriété à un nouveau paramètre régional, vous devez définir la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RetrieveInOfficeUILang" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> objet sur <b>false</b>. Pour plus d’informations sur les valeurs d’ID de paramètres régionaux (LCID) valide, recherchez le site Web MSDN « Paramètres régionaux identificateurs assignés par Microsoft ».</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaintainConnection">
+      <MemberSignature Language="C#" Value="public bool MaintainConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MaintainConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaintainConnection As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaintainConnection { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1832)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1832)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1832)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie <b>True</b> si la connexion à la source de données spécifiée est préservée après l'opération d'actualisation et jusqu'à la fermeture du classeur. <b>Boolean</b> en lecture-écriture.
+
+</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>La valeur par défaut est <b>True</b>. Si vous prévoyez des requêtes fréquentes sur un serveur, la définition de cette propriété sur <b>True</b> peut améliorer les performances en réduisant le temps de reconnexion. Définir cette propriété sur <b>False</b> entraîne une connexion ouverte à fermer.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeConnection">
+      <MemberSignature Language="C#" Value="public void MakeConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MakeConnection() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEDBConnection.MakeConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MakeConnection ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeConnection();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2076)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cette méthode établit une connexion pour la connexion OLE DB spécifiée.</summary>
+        <remarks>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.MakeConnection" /> méthode peut être utilisée lors de la connexion et l’utilisateur souhaite rétablir cette connexion. </para>
+          <para>Divers objets et méthodes renverra une erreur d’exécution si la connexion est supprimée. Utilisation de cette méthode permet de garantir une connexion avant d’exécuter d’autres objets ou méthodes.</para>
+          <para>Cette méthode provoquera une erreur d’exécution si le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> propriété de la connexion OLE DB spécifiée a été définie sur <b>False</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxDrillthroughRecords">
+      <MemberSignature Language="C#" Value="public int MaxDrillthroughRecords { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxDrillthroughRecords" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaxDrillthroughRecords" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxDrillthroughRecords As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxDrillthroughRecords { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2703)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2703)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2703)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le nombre maximal d’enregistrements à récupérer. Type de données <b>Integer</b> en lecture/écriture.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OLAP">
+      <MemberSignature Language="C#" Value="public bool OLAP { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OLAP" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.OLAP" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OLAP As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OLAP { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2077)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2077)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie <b>True</b> si la connexion OLE DB est établie avec un serveur OLAP (Online Analytical Processing). <b>Boolean</b> en lecture seule.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
+        <value>
+          <b>Objet</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reconnect">
+      <MemberSignature Language="C#" Value="public void Reconnect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reconnect() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Reconnect" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reconnect ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reconnect();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2939)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Supprime puis reconnecte la connexion spécifiée.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1417)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Actualise une connexion OLE DB.</summary>
+        <remarks>
+          <para>Lors de la connexion à la source de données OLE DB, Microsoft Excel utilise la chaîne de connexion spécifiée par la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> propriété. Si la chaîne de connexion spécifiée ne contient pas de valeurs requises, boîtes de dialogue seront affichera pour demander à l’utilisateur les informations nécessaires. Si le <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriété a la <b>valeur False</b>, les boîtes de dialogue ne s’affichent pas et la <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> méthode échoue à l’exception des informations de connexion insuffisantes.</para>
+          <para>Après Microsoft Excel crée une connexion, il stocke la chaîne de connexion terminée afin que les invites ne s’affichera pas pour les appels suivants à la <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> méthode pendant la même session d’édition. Vous pouvez obtenir la chaîne de connexion complète en examinant la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> propriété.</para>
+          <para>Après la connexion de base de données est établie, la requête SQL est validée. Si la requête n’est pas valide, la <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> Échec de la méthode avec l’exception d’erreur de syntaxe SQL.</para>
+          <para>La <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> méthode renvoie <b>la valeur True</b> si la requête est correctement terminée ou démarrée ; elle renvoie <b>False</b> si l’utilisateur annule une connexion.</para>
+          <para>Pour voir si le nombre de lignes extraites dépasse le nombre de lignes disponibles sur la feuille de calcul, examinez la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> propriété. Cette propriété est initialisée à chaque fois que le <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> méthode est appelée.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshDate">
+      <MemberSignature Language="C#" Value="public DateTime RefreshDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime RefreshDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RefreshDate As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime RefreshDate { DateTime get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(696)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(696)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie la date de dernière actualisation sur lequel la connexion OLE DB. En lecture seule <b>DateTime</b>.</summary>
+        <value>
+          <b>DateTime</b>
+        </value>
+        <remarks>
+          <para>Sources de données OLAP, cette propriété est mis à jour après chaque requête.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refreshing">
+      <MemberSignature Language="C#" Value="public bool Refreshing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Refreshing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Refreshing" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Refreshing As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Refreshing { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1587)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1587)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>			Prend la valeur <b>True</b> si une requête OLE DB d’arrière-plan est en cours de réalisation pour la connexion ODBC spécifiée. Valeur <b>Boolean</b> en lecture-écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.CancelRefresh" /> méthode pour annuler des requêtes d’arrière-plan.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshOnFileOpen">
+      <MemberSignature Language="C#" Value="public bool RefreshOnFileOpen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RefreshOnFileOpen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshOnFileOpen" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefreshOnFileOpen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RefreshOnFileOpen { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1479)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1479)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1479)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>			Prend la valeur <b>True</b> si la connexion est automatiquement mise à jour à chaque ouverture du classeur. La valeur par défaut est <b>False</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Les connexions ne sont pas automatiquement actualisées lorsque vous ouvrez le classeur à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode dans Visual Basic. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> méthode pour actualiser les données une fois que le classeur est ouvert.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshPeriod">
+      <MemberSignature Language="C#" Value="public int RefreshPeriod { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RefreshPeriod" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshPeriod" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefreshPeriod As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RefreshPeriod { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1833)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1833)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1833)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le nombre de minutes entre les actualisations. Type de données <b>Integer</b> en lecture/écriture.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>Définition de la période de 0 (zéro) désactive l’actualisation chronométrée automatique et équivaut à la définition de cette propriété sur <b>Null</b>. La valeur de la propriété <b>RefreshPeriod</b> peut être un entier compris entre 0 et 32 767.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetrieveInOfficeUILang">
+      <MemberSignature Language="C#" Value="public bool RetrieveInOfficeUILang { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RetrieveInOfficeUILang" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RetrieveInOfficeUILang" />
+      <MemberSignature Language="VB.NET" Value="Public Property RetrieveInOfficeUILang As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RetrieveInOfficeUILang { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2711)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2711)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2711)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si les données et les erreurs doivent être récupérées dans la langue de l'interface utilisateur affichée dans Office lorsqu'elle est disponible. <b>Boolean</b> en lecture-écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Si cette propriété est définie sur <b>False</b>, la valeur LCID de la chaîne de connexion est utilisée à la place. Si un LCID n’est pas spécifié, la valeur LCID par défaut du serveur est utilisée.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RobustConnect">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlRobustConnect RobustConnect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlRobustConnect RobustConnect" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RobustConnect" />
+      <MemberSignature Language="VB.NET" Value="Public Property RobustConnect As XlRobustConnect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlRobustConnect RobustConnect { Microsoft::Office::Interop::Excel::XlRobustConnect get(); void set(Microsoft::Office::Interop::Excel::XlRobustConnect value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2081)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2081)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2081)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlRobustConnect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la connexion OLE DB se connecte à sa source de données. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />
+        </value>
+        <remarks>
+          <para>Si vous utilisez une connectivité robuste, lorsque Microsoft Excel ne peut pas établir une connexion en utilisant les informations de connexion de classeur, Excel vérifie si la connexion de classeur a un chemin d’accès à un fichier de connexion externe.  Si c’est le cas, Excel ouvre le fichier de connexion externe et essayez de vous connecter en utilisant les informations contenues dans le fichier de connexion externe.  Si une connexion peut être établie après avoir utilisé le fichier de connexion externe, Excel met ensuite à jour objet de connexion du classeur.  </para>
+          <para>Cela offre une connectivité robuste dans les scénarios où un service informatique gère et met à jour les connexions dans un emplacement central, permettant le classeur d’un utilisateur à extraire automatiquement les mises à jour chaque fois que la version précédente de la Échec de la connexion (mise en cache dans le classeur). </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsODC">
+      <MemberSignature Language="C#" Value="public void SaveAsODC (string ODCFileName, object Description, object Keywords);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveAsODC([in]string ODCFileName, [in]object Description, [in]object Keywords) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEDBConnection.SaveAsODC(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveAsODC (ODCFileName As String, Optional Description As Object, Optional Keywords As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2082)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ODCFileName" Type="System.String" />
+        <Parameter Name="Description" Type="System.Object" />
+        <Parameter Name="Keywords" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ODCFileName">Emplacement où le fichier doit être enregistré.</param>
+        <param name="Description">Description qui sera enregistrée dans le fichier.</param>
+        <param name="Keywords">Mots clés séparés par des espaces et qui peuvent être utilisés pour rechercher ce fichier.</param>
+        <summary>Cette méthode enregistre la connexion OLE DB en tant que fichier Microsoft Office Data Connection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SavePassword">
+      <MemberSignature Language="C#" Value="public bool SavePassword { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SavePassword" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SavePassword" />
+      <MemberSignature Language="VB.NET" Value="Public Property SavePassword As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SavePassword { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1481)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1481)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1481)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété a la valeur <b>True</b> si le mot de passe d'une chaîne de connexion OLE DB est enregistré dans la chaîne de connexion et la valeur <b>False</b> si le mot de passe est supprimé. <b>Boolean</b> en lecture-écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Cette propriété est utilisée dans les requêtes ODBC et OLEDB, ainsi que par les tableaux croisés dynamiques et les tables de requêtes.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerCredentialsMethod">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCredentialsMethod ServerCredentialsMethod { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCredentialsMethod ServerCredentialsMethod" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ServerCredentialsMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerCredentialsMethod As XlCredentialsMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCredentialsMethod ServerCredentialsMethod { Microsoft::Office::Interop::Excel::XlCredentialsMethod get(); void set(Microsoft::Office::Interop::Excel::XlCredentialsMethod value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2704)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2704)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2704)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCredentialsMethod</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le type d’informations d’identification qui doit être utilisé pour l’authentification de serveur. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" />.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerFillColor">
+      <MemberSignature Language="C#" Value="public bool ServerFillColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ServerFillColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ServerFillColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerFillColor As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ServerFillColor { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2707)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2707)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2707)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si le format de la couleur de remplissage pour le serveur OLAP est récupéré à partir du serveur lors de l’utilisation de la connexion spécifiée. <b>Boolean</b> en lecture-écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerFontStyle">
+      <MemberSignature Language="C#" Value="public bool ServerFontStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ServerFontStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ServerFontStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerFontStyle As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ServerFontStyle { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2708)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2708)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2708)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si le format du style de police pour le serveur OLAP est récupéré à partir du serveur lors de l'utilisation de la connexion spécifiée. <b>Boolean</b> en lecture-écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerNumberFormat">
+      <MemberSignature Language="C#" Value="public bool ServerNumberFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ServerNumberFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ServerNumberFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerNumberFormat As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ServerNumberFormat { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2709)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2709)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2709)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si le format numérique pour le serveur OLAP est récupéré à partir du serveur lors de l'utilisation de la connexion spécifiée. <b>Boolean</b> en lecture-écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerSSOApplicationID">
+      <MemberSignature Language="C#" Value="public string ServerSSOApplicationID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerSSOApplicationID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ServerSSOApplicationID" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerSSOApplicationID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServerSSOApplicationID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2705)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2705)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2705)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit un identificateur SSO (Single Sign-On) d'application permettant d'effectuer une recherche d'informations d'identification dans la base de données SSO. <b>String</b> en lecture-écriture.</summary>
+        <value>
+          <b>Chaîne</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerTextColor">
+      <MemberSignature Language="C#" Value="public bool ServerTextColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ServerTextColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ServerTextColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerTextColor As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ServerTextColor { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2710)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2710)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2710)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si le format de la couleur du texte pour le serveur OLAP est récupéré à partir du serveur lors de l'utilisation de la connexion spécifiée. <b>Boolean</b> en lecture-écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceConnectionFile">
+      <MemberSignature Language="C#" Value="public string SourceConnectionFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceConnectionFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceConnectionFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceConnectionFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceConnectionFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2079)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2079)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2079)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie ou définit une chaîne <b>String</b> désignant le fichier ODC (Microsoft Office Data Connection) ou un fichier similaire qui a été utilisé pour créer la connexion. Type de données en lecture-écriture.</summary>
+        <value>
+          <b>Chaîne</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceDataFile">
+      <MemberSignature Language="C#" Value="public string SourceDataFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceDataFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceDataFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceDataFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2080)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2080)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2080)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> indiquant le fichier de données sources pour une connexion OLE DB. Lecture/écriture.</summary>
+        <value>
+          <b>Chaîne</b>
+        </value>
+        <remarks>
+          <para>Pour les sources de données de fichiers (par exemple, Access) le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> propriété contient un chemin d’accès complet au fichier de données source. Elle a la valeur null pour les sources de données sur le serveur (par exemple, SQL Server). Le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> propriété a la valeur null si la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> propriété est modifiée par programme.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseLocalConnection">
+      <MemberSignature Language="C#" Value="public bool UseLocalConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseLocalConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseLocalConnection As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseLocalConnection { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1837)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1837)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1837)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>La valeur True</b> si le <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> propriété est utilisée pour spécifier la chaîne qui permet à Microsoft Excel pour se connecter à une source de données. <b>False</b> si la chaîne de connexion spécifiée par la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> propriété est utilisée. Type de données <b>Boolean</b> en lecture/écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Cet exemple montre comment définir la chaîne de connexion du premier cache de tableau croisé dynamique pour référencer un fichier de cube hors connexion.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1455 @@
+<Type Name="OLEObjects" FullName="Microsoft.Office.Interop.Excel.OLEObjects">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="0ceeeadbbe58866d8578dc0cbfba5a77ed0fec61" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20575634" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEObjects implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEObjects" />
+  <TypeSignature Language="VB.NET" Value="Public Interface OLEObjects&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class OLEObjects : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000208A3-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> objets sur la feuille de calcul spécifiée. Chaque objet  <b>OLEObject</b> représente soit un contrôle ActiveX, soit un objet OLE lié ou incorporé.</summary>
+    <remarks>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> méthode pour renvoyer la collection <b>OLEObjects</b> .</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour créer un nouvel objet OLE et l’ajouter à la collection <b>OLEObjects</b> .</para>
+      <para>Contrôle ActiveX d’une feuille possède deux noms : le nom de la forme qui contient le contrôle, vous pouvez voir dans la zone nom lorsque vous affichez la feuille et le nom de code pour le contrôle, vous pouvez voir dans la cellule à droite de (nom) dans la fenêtre Propriétés. Lorsque vous ajoutez un contrôle à une feuille, le nom de la forme et le nom de code correspondent. Toutefois, si vous modifiez le nom de la forme ou le nom de code, l’autre n'est pas automatiquement modifiée pour correspondre.</para>
+      <para>Vous utilisez le nom de code d’un contrôle dans les noms de ses procédures événement. Toutefois, lorsque vous renvoyez un contrôle à partir de la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> ou de la collection <b>OLEObjects</b> d’une feuille, vous devez utiliser le nom de la forme, pas le nom de code pour faire référence au contrôle par son nom. Par exemple, supposons que vous ajoutez une case à cocher à un tableau et que le nom de la forme par défaut et le nom de code par défaut sont CheckBox1. Si vous modifiez ensuite le nom de code du contrôle en tapant chkFinished à côté de (nom) dans la fenêtre Propriétés, vous devez utiliser chkFinished dans les noms de procédures événementielles, mais vous devez toujours utiliser CheckBox1 pour renvoyer le contrôle à partir de <b>formes</b> ou <b>OLEObjects</b> collection.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Dummy12">
+      <MemberSignature Language="C#" Value="public void _Dummy12 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy12() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy12" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy12 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy12();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65548)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy15">
+      <MemberSignature Language="C#" Value="public void _Dummy15 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy15() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy15" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy15 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy15();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65551)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy22">
+      <MemberSignature Language="C#" Value="public void _Dummy22 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy22() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy22" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy22 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy22();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy3">
+      <MemberSignature Language="C#" Value="public void _Dummy3 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy3() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy3" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy3 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy3();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65539)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy30">
+      <MemberSignature Language="C#" Value="public void _Dummy30 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy30() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy30" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy30 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy30();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65566)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy32">
+      <MemberSignature Language="C#" Value="public void _Dummy32 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy32() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy32" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy32 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy32();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65568)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy33">
+      <MemberSignature Language="C#" Value="public void _Dummy33 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy33() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy33" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy33 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy33();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65569)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy34">
+      <MemberSignature Language="C#" Value="public void _Dummy34 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy34() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy34" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy34 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy34();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65570)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy36">
+      <MemberSignature Language="C#" Value="public void _Dummy36 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy36() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy36" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy36 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy36();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65572)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy37">
+      <MemberSignature Language="C#" Value="public void _Dummy37 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy37() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy37" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy37 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy37();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65573)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy38">
+      <MemberSignature Language="C#" Value="public void _Dummy38 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy38() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy38" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy38 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy38();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65574)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy39">
+      <MemberSignature Language="C#" Value="public void _Dummy39 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy39() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy39" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy39 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy39();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65575)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy40">
+      <MemberSignature Language="C#" Value="public void _Dummy40 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy40() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy40" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy40 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy40();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65576)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_Dummy41">
+      <MemberSignature Language="C#" Value="public void _Dummy41 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Dummy41() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects._Dummy41" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _Dummy41 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void _Dummy41();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65577)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1089)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.OLEObject Add (object ClassType, object Filename, object Link, object DisplayAsIcon, object IconFileName, object IconIndex, object IconLabel, object Left, object Top, object Width, object Height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.OLEObject Add([in]object ClassType, [in]object Filename, [in]object Link, [in]object DisplayAsIcon, [in]object IconFileName, [in]object IconIndex, [in]object IconLabel, [in]object Left, [in]object Top, [in]object Width, [in]object Height) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Optional ClassType As Object, Optional Filename As Object, Optional Link As Object, Optional DisplayAsIcon As Object, Optional IconFileName As Object, Optional IconIndex As Object, Optional IconLabel As Object, Optional Left As Object, Optional Top As Object, Optional Width As Object, Optional Height As Object) As OLEObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.OLEObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object" />
+        <Parameter Name="Filename" Type="System.Object" />
+        <Parameter Name="Link" Type="System.Object" />
+        <Parameter Name="DisplayAsIcon" Type="System.Object" />
+        <Parameter Name="IconFileName" Type="System.Object" />
+        <Parameter Name="IconIndex" Type="System.Object" />
+        <Parameter Name="IconLabel" Type="System.Object" />
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Top" Type="System.Object" />
+        <Parameter Name="Width" Type="System.Object" />
+        <Parameter Name="Height" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">Facultatif <b>Object</b>. (Vous devez spécifier soit <paramref name="ClassType" /> ou <paramref name="FileName" />.) Chaîne qui contient l’identificateur de programmation pour l’objet à créer. Si <paramref name="ClassType" /> est spécifié, <paramref name="FileName" /> et <paramref name="Link" /> sont ignorés.</param>
+        <param name="Filename">Facultatif <b>Object</b>. (Vous devez spécifier soit <paramref name="ClassType" /> ou <paramref name="FileName" />.) Chaîne qui spécifie le fichier à utiliser pour créer l’objet OLE.</param>
+        <param name="Link">Facultatif <b>Object</b>. <b>True</b> pour que le nouvel objet OLE basé sur <paramref name="FileName" /> être lié à ce fichier. Si l’objet n’est pas lié, l’objet est créé en tant que copie du fichier. <b>False</b> est la valeur par défaut.</param>
+        <param name="DisplayAsIcon">Facultatif <b>Object</b>. <b>True</b> pour afficher le nouvel objet OLE sous forme d’icône ou de son image habituelle. Si cet argument a <b>la valeur True</b>, <paramref name="IconFileName" /> et <paramref name="IconIndex" /> peut être utilisé pour spécifier une icône.</param>
+        <param name="IconFileName">Facultatif <b>Object</b>. Chaîne qui spécifie le fichier qui contient l’icône à afficher. Cet argument est utilisé uniquement si <paramref name="DisplayAsIcon" /> a la <b>valeur True</b>. Si cet argument n’est pas spécifié ou le fichier ne contient aucune icône, l’icône par défaut de la classe OLE est utilisée.</param>
+        <param name="IconIndex">Facultatif <b>Object</b>. Le nombre de l’icône dans le fichier d’icône. Il est utilisé uniquement si <paramref name="DisplayAsIcon" /> a la <b>valeur True</b> et <paramref name="IconFileName" /> fait référence à un fichier valide qui contient des icônes. Si une icône avec le numéro d’index donné n’existe pas dans le fichier spécifié par <paramref name="IconFileName" />, la première icône dans le fichier est utilisée.</param>
+        <param name="IconLabel">Facultatif <b>Object</b>. Chaîne qui spécifie une étiquette à afficher sous l’icône. Il est utilisé uniquement si <paramref name="DisplayAsIcon" /> a la <b>valeur True</b>. Si cet argument est omis ou est une chaîne vide (« »), aucune légende n’est affichée.</param>
+        <param name="Left">Facultatif <b>Object</b>. Coordonnées initiales du nouvel objet, en points, par rapport au coin supérieur gauche de la cellule A1 d'une feuille de calcul ou au coin supérieur gauche d'un graphique.</param>
+        <param name="Top">Facultatif <b>Object</b>. Coordonnées initiales du nouvel objet, en points, par rapport au coin supérieur gauche de la cellule A1 d'une feuille de calcul ou au coin supérieur gauche d'un graphique.</param>
+        <param name="Width">Facultatif <b>Object</b>. La taille initiale du nouvel objet en points.</param>
+        <param name="Height">Facultatif <b>Object</b>. Taille initiale du nouvel objet, en points.</param>
+        <summary>Cette méthode ajoute un nouvel objet OLE à une feuille. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoLoad">
+      <MemberSignature Language="C#" Value="public bool AutoLoad { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoLoad" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.AutoLoad" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoLoad As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoLoad { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1186)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1186)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1186)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si l’objet OLE est automatiquement chargé lorsque le classeur qui la contient est ouvert.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Cette propriété est ignorée par les contrôles ActiveX. Les contrôles ActiveX sont toujours chargés lorsqu’un classeur est ouvert.</para>
+          <para>Pour la plupart des types d’objets OLE, cette propriété ne doit pas être définie sur <b>True</b>. Par défaut, la propriété <b>AutoLoad</b> est définie sur <b>False</b> pour les nouveaux objets OLE ; Cela enregistre l’heure et la mémoire lors de la charge des classeurs Microsoft Excel. L’avantage de charger automatiquement OLE objets est que, pour les objets qui représentent des données volatiles, des liens vers la source de données peuvent être rétablies immédiatement et les objets fournis de nouveau, si nécessaire.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Border">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Border Border { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Border Border" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Border" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Border As Border" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Border ^ Border { Microsoft::Office::Interop::Excel::Border ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(128)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(128)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objet qui représente la bordure de l’objet.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BringToFront">
+      <MemberSignature Language="C#" Value="public object BringToFront ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object BringToFront() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects.BringToFront" />
+      <MemberSignature Language="VB.NET" Value="Public Function BringToFront () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ BringToFront();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(602)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Amène l’objet au premier plan de l’ordre de plan.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public object Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Copy() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Function Copy () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Copy();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(551)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Copie l'objet dans le Presse-papiers.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyPicture">
+      <MemberSignature Language="C#" Value="public object CopyPicture (Microsoft.Office.Interop.Excel.XlPictureAppearance Appearance = Microsoft.Office.Interop.Excel.XlPictureAppearance.xlPrinter, Microsoft.Office.Interop.Excel.XlCopyPictureFormat Format = Microsoft.Office.Interop.Excel.XlCopyPictureFormat.xlPicture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CopyPicture([in]valuetype Microsoft.Office.Interop.Excel.XlPictureAppearance Appearance, [in]valuetype Microsoft.Office.Interop.Excel.XlCopyPictureFormat Format) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects.CopyPicture(Microsoft.Office.Interop.Excel.XlPictureAppearance,Microsoft.Office.Interop.Excel.XlCopyPictureFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CopyPicture (Optional Appearance As XlPictureAppearance = Microsoft.Office.Interop.Excel.XlPictureAppearance.xlPrinter, Optional Format As XlCopyPictureFormat = Microsoft.Office.Interop.Excel.XlCopyPictureFormat.xlPicture) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(213)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Appearance" Type="Microsoft.Office.Interop.Excel.XlPictureAppearance" />
+        <Parameter Name="Format" Type="Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />
+      </Parameters>
+      <Docs>
+        <param name="Appearance">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" />. Spécifie la manière dont l’image doit être copiée.</param>
+        <param name="Format">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />. Le format de l’image.</param>
+        <summary>Copie l'objet sélectionné dans le Presse-papiers, sous forme d'image.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le nombre d'objets dans la collection.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
+          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cut">
+      <MemberSignature Language="C#" Value="public object Cut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Cut() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects.Cut" />
+      <MemberSignature Language="VB.NET" Value="Public Function Cut () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Cut();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(565)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cette méthode coupe l'objet et le place dans le Presse-papiers ou colle l'objet à l'emplacement spécifié.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>La plage coupée doit être constituée de cellules adjacentes.</para>
+          <para>Pouvant couper que des graphiques incorporés.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public object Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Supprime l'objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Duplicate">
+      <MemberSignature Language="C#" Value="public object Duplicate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Duplicate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects.Duplicate" />
+      <MemberSignature Language="VB.NET" Value="Public Function Duplicate () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Duplicate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1039)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Duplique l’objet et renvoie une référence à la nouvelle copie.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(600)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(600)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(600)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si l’objet est activé.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.GroupObject Group ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.GroupObject Group() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects.Group" />
+      <MemberSignature Language="VB.NET" Value="Public Function Group () As GroupObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::GroupObject ^ Group();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(46)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.GroupObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public double Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Hauteur de l'objet en points.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interior">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Interior Interior { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Interior Interior" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Interior" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Interior As Interior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Interior ^ Interior { Microsoft::Office::Interop::Excel::Interior ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object qui représente l’intérieur de l’objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>Objet</b>obligatoire. Nom ou numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d'une collection.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public double Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Distance, en points, du bord gauche de l'objet au bord gauche de la colonne A (dans une feuille de calcul) ou au bord gauche de la zone de graphique (dans un graphique).</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="public bool Locked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Locked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Locked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si l’objet est verrouillé ; <b>False</b> si l’objet peut être modifié lorsque la feuille est protégée.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAction">
+      <MemberSignature Language="C#" Value="public string OnAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OnAction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.OnAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnAction As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OnAction { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(596)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(596)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(596)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Placement">
+      <MemberSignature Language="C#" Value="public object Placement { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Placement" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Placement" />
+      <MemberSignature Language="VB.NET" Value="Public Property Placement As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Placement { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(617)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(617)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(617)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la manière dont l’objet est attaché aux cellules.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utiliser une des constantes suivantes :</para>
+          <para>
+            <b>xlFreeFloating</b>
+          </para>
+          <para>
+            <b>xlMove</b>
+          </para>
+          <para>
+            <b>xlMoveAndSize</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintObject">
+      <MemberSignature Language="C#" Value="public bool PrintObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PrintObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.PrintObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrintObject As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PrintObject { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(618)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(618)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(618)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si l’objet est imprimée lors de l’impression du document.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public object Select (object Replace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Select([in]object Replace) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects.Select(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Select (Optional Replace As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(235)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Replace" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Replace">Facultatif <b>Object</b>. <b>True</b> pour remplacer la sélection en cours avec l'objet spécifié. <b>False</b> pour étendre la sélection actuelle afin d'inclure tous précédemment objets sélectionnés et l'objet spécifié.</param>
+        <summary>Sélectionne l'objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendToBack">
+      <MemberSignature Language="C#" Value="public object SendToBack ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SendToBack() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.OLEObjects.SendToBack" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendToBack () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ SendToBack();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(605)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Place l’objet à l’arrière-plan de l’ordre de plan.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shadow">
+      <MemberSignature Language="C#" Value="public bool Shadow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Shadow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Shadow" />
+      <MemberSignature Language="VB.NET" Value="Public Property Shadow As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Shadow { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si la police est une police ombrée ou si l’objet est ombré.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShapeRange">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ShapeRange ShapeRange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ShapeRange ShapeRange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.ShapeRange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShapeRange As ShapeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ShapeRange ^ ShapeRange { Microsoft::Office::Interop::Excel::ShapeRange ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1528)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1528)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object qui représente l’objet spécifié ou les objets.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceName">
+      <MemberSignature Language="C#" Value="public string SourceName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.SourceName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(721)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(721)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(721)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le nom source du lien de l’objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public double Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Distance, en points, entre le bord supérieur de l’objet en haut de la ligne 1 (sur une feuille de calcul) ou à la partie supérieure de la zone de graphique (sur un graphique).</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Détermine si l’objet est visible.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Largeur de l’objet en points.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZOrder">
+      <MemberSignature Language="C#" Value="public int ZOrder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ZOrder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.OLEObjects.ZOrder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ZOrder As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ZOrder { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(622)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(622)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie la position de l’ordre de plan de l’objet.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Dans toute la collection d’objets, l’objet à l’arrière de l’axe z est <paramref name="collection" />(1), et l’objet à l’avant de l’axe z est <paramref name="collection" />(<paramref name="collection" />.<b> Count</b>).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

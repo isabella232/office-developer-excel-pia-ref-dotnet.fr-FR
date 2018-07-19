@@ -1,0 +1,248 @@
+<Type Name="ChartEvents_BeforeDoubleClickEventHandler" FullName="Microsoft.Office.Interop.Excel.ChartEvents_BeforeDoubleClickEventHandler">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8317659a581dc6a99d68d82d76b3a829ed81e45b" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20572855" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public delegate void ChartEvents_BeforeDoubleClickEventHandler(int ElementID, int Arg1, int Arg2, out bool Cancel);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChartEvents_BeforeDoubleClickEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartEvents_BeforeDoubleClickEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ChartEvents_BeforeDoubleClickEventHandler(ElementID As Integer, Arg1 As Integer, Arg2 As Integer, ByRef Cancel As Boolean)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ChartEvents_BeforeDoubleClickEventHandler(int ElementID, int Arg1, int Arg2, [Runtime::InteropServices::Out] bool % Cancel);" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="ElementID" Type="System.Int32" />
+    <Parameter Name="Arg1" Type="System.Int32" />
+    <Parameter Name="Arg2" Type="System.Int32" />
+    <Parameter Name="Cancel" Type="System.Boolean&amp;" RefType="out" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="ElementID">Obligatoire. L’utilisateur double-clique sur objet.</param>
+    <param name="Arg1">Dépend de <paramref name="ElementID" />.</param>
+    <param name="Arg2">Dépend de <paramref name="ElementID" />.</param>
+    <param name="Cancel">Facultatif. <b>False</b> lorsque l'événement se produit. Si la procédure événementielle affecte à cet argument <b>la valeur True</b>, le clic par défaut n’est pas effectuée à la fin de la procédure.</param>
+    <summary>Un type de <b>délégué</b> utilisé pour ajouter un gestionnaire d’événements pour le <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.BeforeDoubleClick" /> événement. L’événement <b>BeforeDoubleClick</b> se produit lorsqu’un graphique incorporé double-clique, avant le double-clic par défaut.</summary>
+    <remarks>
+      <para>Le tableau suivant présente les arguments associées à chaque <paramref name="ElementID" />.</para>
+      <list type="table">
+        <item>
+          <term>xlAxis</term>
+          <description>AxisIndex</description>
+          <description>AxisType</description>
+        </item>
+        <item>
+          <term>xlAxisTitle</term>
+          <description>AxisIndex</description>
+          <description>AxisType</description>
+        </item>
+        <item>
+          <term>xlDisplayUnitLabel</term>
+          <description>AxisIndex</description>
+          <description>AxisType</description>
+        </item>
+        <item>
+          <term> xlMajorGridlines</term>
+          <description>AxisIndex</description>
+          <description>AxisType</description>
+        </item>
+        <item>
+          <term>xlMinorGridlines</term>
+          <description>AxisIndex</description>
+          <description>AxisType</description>
+        </item>
+        <item>
+          <term>xlPivotChartDropZone</term>
+          <description>DropZoneType</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlPivotChartFieldButton</term>
+          <description>DropZoneType</description>
+          <description>PivotFieldIndex</description>
+        </item>
+        <item>
+          <term>xlDownBars</term>
+          <description>GroupIndex</description>
+          <description>None</description>
+        </item>
+        <item>
+          <term>xlDropLines</term>
+          <description>GroupIndex</description>
+          <description>None</description>
+        </item>
+        <item>
+          <term>xlHiLoLines</term>
+          <description>GroupIndex</description>
+          <description>None</description>
+        </item>
+        <item>
+          <term>xlRadarAxisLabels</term>
+          <description>GroupIndex</description>
+          <description>None</description>
+        </item>
+        <item>
+          <term>xlSeriesLines</term>
+          <description>GroupIndex</description>
+          <description>None</description>
+        </item>
+        <item>
+          <term>xlUpBars</term>
+          <description>GroupIndex</description>
+          <description>None</description>
+        </item>
+        <item>
+          <term>xlChartArea</term>
+          <description>Aucun</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlChartTitle</term>
+          <description>Aucun</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlCorners</term>
+          <description>Aucun</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlDataTable</term>
+          <description>Aucun</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlFloor</term>
+          <description>Aucun</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlLegend</term>
+          <description>Aucun</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlNothing</term>
+          <description>Aucun</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlPlotArea</term>
+          <description>Aucun</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlWalls</term>
+          <description>Aucun</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlDataLabel</term>
+          <description>SeriesIndex</description>
+          <description>PointIndex</description>
+        </item>
+        <item>
+          <term>xlErrorBars</term>
+          <description>SeriesIndex</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlLegendEntry</term>
+          <description>SeriesIndex</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlLegendKey</term>
+          <description>SeriesIndex</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlSeries</term>
+          <description>SeriesIndex</description>
+          <description>PointIndex</description>
+        </item>
+        <item>
+          <term>xlTrendline</term>
+          <description>SeriesIndex</description>
+          <description>TrendLineIndex</description>
+        </item>
+        <item>
+          <term>xlXErrorBars</term>
+          <description>SeriesIndex</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlYErrorBars</term>
+          <description>SeriesIndex</description>
+          <description>Aucun</description>
+        </item>
+        <item>
+          <term>xlShape</term>
+          <description>ShapeIndex</description>
+          <description>Aucun</description>
+        </item>
+      </list>
+      <para>Le tableau suivant décrit la signification des arguments.</para>
+      <list type="table">
+        <item>
+          <term>AxisIndex</term>
+          <description>Spécifie si l’axe est principal ou secondaire. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> constantes : <b>xlPrimary</b> ou <b>xlSecondary</b>.</description>
+        </item>
+        <item>
+          <term>AxisType</term>
+          <description>Spécifie le type d’axe. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> constantes : <b>xlCategory</b>, <b>xlSeriesAxis</b>ou <b>xlValue</b>.</description>
+        </item>
+        <item>
+          <term>DropZoneType</term>
+          <description>Spécifie le type de zone de dépôt : colonne, données, page ou champ de ligne. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" /> constantes : <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>ou <b>xlRowField</b>. Les constantes de champ de colonne et de ligne spécifient les champs de série et de catégorie, respectivement.</description>
+        </item>
+        <item>
+          <term>GroupIndex</term>
+          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> collection pour un groupe de graphiques particulier.</description>
+        </item>
+        <item>
+          <term>PivotFieldIndex</term>
+          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> collection pour une colonne (série), des données, page ou champ de ligne (catégorie).</description>
+        </item>
+        <item>
+          <term>PointIndex</term>
+          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.Points" /> collection pour un point spécifique dans une série. La valeur – 1 indique que tous les points de données sont sélectionnés.</description>
+        </item>
+        <item>
+          <term>SeriesIndex</term>
+          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.Series" /> collection d’une série particulière.</description>
+        </item>
+        <item>
+          <term>ShapeIndex</term>
+          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection d’une forme particulière.</description>
+        </item>
+        <item>
+          <term>TrendlineIndex</term>
+          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> collection pour une courbe de tendance particulière d’une série.</description>
+        </item>
+      </list>
+      <para>La <see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" /> méthode n’entraîne pas cet événement se produise.</para>
+      <para>Cet événement ne se produit lorsque l’utilisateur double-clique sur la bordure d’une cellule.</para>
+      <para />
+    </remarks>
+  </Docs>
+</Type>

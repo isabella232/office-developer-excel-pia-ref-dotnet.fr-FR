@@ -1,0 +1,697 @@
+<Type Name="CellFormat" FullName="Microsoft.Office.Interop.Excel.CellFormat">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="7fe04494981caca0d57f0a87169643a708571b41" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20581171" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface CellFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CellFormat" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CellFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Interface CellFormat" />
+  <TypeSignature Language="C++ CLI" Value="public interface class CellFormat" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024450-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Cet objet représente les critères de recherche pour le format des cellules.</summary>
+    <remarks>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.FindFormat" /> ou <see cref="P:Microsoft.Office.Interop.Excel._Application.ReplaceFormat" /> propriétés de la <see cref="P:Microsoft.Office.Interop.Excel._Application.Application" /> object pour renvoyer un objet <b>CellFormat</b> .</para>
+      <para>Que vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Borders" />, <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Font" />, ou <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Interior" /> propriétés de l’objet <b>CellFormat</b> , pour définir les critères de recherche pour le format des cellules.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddIndent">
+      <MemberSignature Language="C#" Value="public object AddIndent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object AddIndent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.AddIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddIndent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AddIndent { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1063)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1063)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1063)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>La valeur true</b> si le texte est automatiquement mis en retrait lorsque l’alignement du texte dans une cellule est défini sur une distribution égale horizontalement ou verticalement.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Pour définir l’alignement du texte sur une distribution égale, vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.VerticalAlignment" /> propriété <b>xlVAlignDistributed</b> lorsque la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Orientation" /> propriété est <b>xlVertical</b>et vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.HorizontalAlignment" /><b>soit distribué de manière</b> lorsque le valeur de la propriété <b>Orientation</b> est <b>xlHorizontal</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Borders">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Borders Borders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Borders Borders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.Borders" />
+      <MemberSignature Language="VB.NET" Value="Public Property Borders As Borders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Borders ^ Borders { Microsoft::Office::Interop::Excel::Borders ^ get(); void set(Microsoft::Office::Interop::Excel::Borders ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(435)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(435)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(435)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Permet à l’utilisateur de définir ou de renvoyer les critères de recherche basés sur le format de bordure de la cellule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.CellFormat.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(111)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Efface les critères définis dans le <see cref="P:Microsoft.Office.Interop.Excel._Application.FindFormat" /> et <see cref="P:Microsoft.Office.Interop.Excel._Application.ReplaceFormat" /> propriétés.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
+          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Font Font { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Font Font" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Font ^ Font { Microsoft::Office::Interop::Excel::Font ^ get(); void set(Microsoft::Office::Interop::Excel::Font ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(146)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(146)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(146)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objet, permettant à l’utilisateur définir ou renvoyer les critères de recherche selon le format de police de la cellule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormulaHidden">
+      <MemberSignature Language="C#" Value="public object FormulaHidden { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object FormulaHidden" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.FormulaHidden" />
+      <MemberSignature Language="VB.NET" Value="Public Property FormulaHidden As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ FormulaHidden { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(262)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(262)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(262)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si la formule sera masquée lorsque la feuille de calcul est protégée. Renvoie la <b>valeur Null</b> si la plage spécifiée contient certaines cellules avec <b>FormulaHidden</b> égale à <b>True</b> et d’autres cellules avec <b>FormulaHidden</b> égale à <b>False</b>.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Ne confondez pas cette propriété avec la <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> propriété. La formule sera masquée pas si le classeur est protégé et que la feuille de calcul n’est pas ; elle sera masquée uniquement si la feuille de calcul est protégée.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalAlignment">
+      <MemberSignature Language="C#" Value="public object HorizontalAlignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object HorizontalAlignment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.HorizontalAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property HorizontalAlignment As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ HorizontalAlignment { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(136)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(136)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(136)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit l'alignement horizontal de l'objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Les constantes suivantes peuvent être utilisées :</para>
+          <para>
+            <b>xlCenter</b>
+          </para>
+          <para>
+            <b>xlDistributed</b>
+          </para>
+          <para>
+            <b>xlJustify</b>
+          </para>
+          <para>
+            <b>xlLeft</b>
+          </para>
+          <para>
+            <b>xlRight</b>
+          </para>
+          <para>Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndentLevel">
+      <MemberSignature Language="C#" Value="public object IndentLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object IndentLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.IndentLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndentLevel As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ IndentLevel { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(201)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(201)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(201)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le niveau de retrait pour la cellule ou la plage. Peut être un entier compris entre 0 et 15.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>À l’aide de cette propriété pour définir le niveau de retrait à un nombre inférieur à 0 (zéro) ou supérieure à 15 provoque une erreur.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interior">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Interior Interior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Interior Interior" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.Interior" />
+      <MemberSignature Language="VB.NET" Value="Public Property Interior As Interior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Interior ^ Interior { Microsoft::Office::Interop::Excel::Interior ^ get(); void set(Microsoft::Office::Interop::Excel::Interior ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objet permettant à l’utilisateur de définir ou de renvoyer les critères de recherche basés sur le format de l’intérieur de la cellule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="public object Locked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Locked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.Locked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locked As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Locked { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si l’objet est verrouillé ; <b>False</b> si l’objet peut être modifié lorsque la feuille est protégée. Renvoie la <b>valeur Null</b> si la plage spécifiée contient des cellules verrouillées et déverrouillées.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MergeCells">
+      <MemberSignature Language="C#" Value="public object MergeCells { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object MergeCells" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.MergeCells" />
+      <MemberSignature Language="VB.NET" Value="Public Property MergeCells As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ MergeCells { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(208)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(208)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(208)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si la plage ou le style contient des cellules fusionnées ou fractionnées.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Lorsque vous sélectionnez une plage qui contient des cellules fusionnées, la sélection qui en résulte peut être différente de la sélection prévue. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> pour vérifier l’adresse de la plage sélectionnée.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberFormat">
+      <MemberSignature Language="C#" Value="public object NumberFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object NumberFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.NumberFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberFormat As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NumberFormat { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(193)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(193)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(193)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le code du format de l'objet. Renvoie la <b>valeur Null</b> si toutes les cellules de la plage spécifiée n’ont pas le même format de nombre.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Le code de format est la même chaîne que l’option de Codes de Format dans la boîte de dialogue Format de cellule. La fonction Visual Basic <b>Format</b> utilise des chaînes de code de format différentes <b>NumberFormat</b> et <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> propriétés.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberFormatLocal">
+      <MemberSignature Language="C#" Value="public object NumberFormatLocal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object NumberFormatLocal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.NumberFormatLocal" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberFormatLocal As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NumberFormatLocal { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1097)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1097)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1097)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le code du format de l'objet sous forme de chaîne dans la langue de l'utilisateur.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La fonction Visual Basic <b>Format</b> utilise des chaînes de code de format différentes la <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormat" /> et propriétés <b>NumberFormatLocal</b> .</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Orientation">
+      <MemberSignature Language="C#" Value="public object Orientation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Orientation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.Orientation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Orientation As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Orientation { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(134)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(134)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(134)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Orientation du texte. Peut être une valeur entière comprise entre -90 et 90 degrés.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La propriété <b>Orientation</b> peut être une des constantes suivantes :</para>
+          <para>
+            <b>xlDownward</b>
+          </para>
+          <para>
+            <b>xlHorizontal</b>
+          </para>
+          <para>
+            <b>xlUpward</b>
+          </para>
+          <para>
+            <b>xlVertical</b>
+          </para>
+          <para>pour les sources de données OLAP, définissez cette propriété pour un champ dans une hiérarchie définit la orientation pour les autres champs dans la même hiérarchie. Les champs de dimension peuvent uniquement être orientés dans la ligne, colonne et zones de champ de page du rapport de tableau croisé dynamique. Les champs de mesure peuvent uniquement être orientés dans la zone de données. Si un champ de hiérarchie ou données <b>xlHidden</b> supprime la hiérarchie ou un champ à partir du rapport de tableau croisé dynamique.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShrinkToFit">
+      <MemberSignature Language="C#" Value="public object ShrinkToFit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ShrinkToFit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.ShrinkToFit" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShrinkToFit As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ShrinkToFit { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(209)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(209)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(209)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>La valeur true</b> si le texte est automatiquement réduit pour s’adapter à la largeur de colonne disponible. Renvoie la <b>valeur Null</b> si cette propriété n’est pas définie sur la même valeur pour toutes les cellules de la plage spécifiée.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalAlignment">
+      <MemberSignature Language="C#" Value="public object VerticalAlignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object VerticalAlignment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.VerticalAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property VerticalAlignment As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ VerticalAlignment { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(137)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(137)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(137)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit l'alignement vertical de l'objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La propriété <b>VerticalAlignment</b> peut être une des constantes suivantes :</para>
+          <para>
+            <b>xlDistributed</b>
+          </para>
+          <para>
+            <b>xlJustify</b>
+          </para>
+          <para>
+            <b>xlTop</b>
+          </para>
+          <para>
+            <b>xlBottom</b>
+          </para>
+          <para>
+            <b>xlCenter</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WrapText">
+      <MemberSignature Language="C#" Value="public object WrapText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object WrapText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.CellFormat.WrapText" />
+      <MemberSignature Language="VB.NET" Value="Public Property WrapText As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ WrapText { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(276)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(276)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(276)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>La valeur true</b> si Microsoft Excel renvoie le texte à la ligne dans l’objet. Renvoie la <b>valeur Null</b> si la plage spécifiée contient des cellules qui habiller avec du texte et autres cellules qui ne.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Microsoft Excel modifie éventuellement la hauteur de ligne de la plage, si nécessaire, pour prendre en charge le texte de la plage.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

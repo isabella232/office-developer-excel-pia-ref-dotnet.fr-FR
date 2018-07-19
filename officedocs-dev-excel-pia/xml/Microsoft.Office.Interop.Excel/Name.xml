@@ -1,0 +1,740 @@
+<Type Name="Name" FullName="Microsoft.Office.Interop.Excel.Name">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="dc0260c6b148041f273cfeb372c53b2a97c08418" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20575893" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Name" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Name" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Name" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Name" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Name" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000208B9-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente un nom défini pour une plage de cellules.</summary>
+    <remarks>
+      <para>Noms peuvent être soit intégré — comme base de données, Print_Area et Auto_Open — ou de noms personnalisés.</para>
+      <para>Application, Workbook et objets de la feuille de calcul</para>
+      <para>Le <b>nom</b> de l' objet est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Names" /> collection pour le <see cref="T:Microsoft.Office.Interop.Excel.Application" />, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />, et <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objets. Utiliser des <b>noms</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du nom ou le nom défini, pour renvoyer un seul objet <b>Name</b> .</para>
+      <para>Le numéro d’index indique la position du nom de la collection. Les noms sont classés par ordre alphabétique d’un à z et ne sont pas la casse (il s’agit de la même commande comme est affiché dans les boîtes de dialogue Définir un nom et appliquer les noms, renvoyées par la commande nom dans le menu Insertion).</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> propriété pour renvoyer ou définir le texte du nom lui-même.</para>
+      <para>Objets Range</para>
+      <para>Bien qu’un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet peut avoir plusieurs noms, il n’existe aucune collection de <b>noms</b> de l’objet <b>Range</b> . Utilisez le <b>nom</b> avec un objet <b>Range</b> pour renvoyer le premier nom de la liste des noms (par ordre alphabétique) affecté à la plage.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string _Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name._Default" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Réservé à une utilisation interne.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Category">
+      <MemberSignature Language="C#" Value="public string Category { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Category" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Category" />
+      <MemberSignature Language="VB.NET" Value="Public Property Category As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Category { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(934)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(934)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(934)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la catégorie du nom spécifié dans la langue de la macro.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Le nom doit faire référence à une commande ou une fonction personnalisée.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryLocal">
+      <MemberSignature Language="C#" Value="public string CategoryLocal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CategoryLocal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.CategoryLocal" />
+      <MemberSignature Language="VB.NET" Value="Public Property CategoryLocal As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryLocal { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(935)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(935)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(935)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la catégorie du nom spécifié, dans la langue de l’utilisateur, si le nom fait référence à une commande ou une fonction personnalisée.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comment">
+      <MemberSignature Language="C#" Value="public string Comment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Comment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Comment As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comment { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(910)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le commentaire associé au nom. <b>String</b> en lecture-écriture.</summary>
+        <value>
+          <b>Chaîne</b>
+        </value>
+        <remarks>
+          <para>Le texte de commentaire ne peut pas dépasser 255 caractères.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si l’objet spécifié a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
+          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Name.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Supprime l'objet.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie le numéro d'index de l'objet dans la collection des objets similaires.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MacroType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlXLMMacroType MacroType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlXLMMacroType MacroType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.MacroType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MacroType As XlXLMMacroType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlXLMMacroType MacroType { Microsoft::Office::Interop::Excel::XlXLMMacroType get(); void set(Microsoft::Office::Interop::Excel::XlXLMMacroType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(936)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(936)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(936)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlXLMMacroType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit ce que le nom fait référence.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameLocal">
+      <MemberSignature Language="C#" Value="public string NameLocal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NameLocal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.NameLocal" />
+      <MemberSignature Language="VB.NET" Value="Public Property NameLocal As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameLocal { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(937)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(937)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(937)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le nom de l’objet dans la langue de l’utilisateur.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si le style est un style prédéfini, cette propriété renvoie le nom du style dans la langue des paramètres régionaux.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefersTo">
+      <MemberSignature Language="C#" Value="public object RefersTo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RefersTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.RefersTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefersTo As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RefersTo { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(938)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(938)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(938)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la formule à laquelle le nom est défini pour faire référence, dans la langue de la macro et en notation de style A1.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefersToLocal">
+      <MemberSignature Language="C#" Value="public object RefersToLocal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RefersToLocal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.RefersToLocal" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefersToLocal As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RefersToLocal { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(939)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(939)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(939)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la formule à laquelle le nom fait référence.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La formule est dans la langue de l’utilisateur, et il est en notation de style A1.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefersToR1C1">
+      <MemberSignature Language="C#" Value="public object RefersToR1C1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RefersToR1C1" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.RefersToR1C1" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefersToR1C1 As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RefersToR1C1 { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(940)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(940)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(940)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la formule à laquelle le nom fait référence.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La formule est dans la langue de la macro et elle est en notation de style R1C1.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefersToR1C1Local">
+      <MemberSignature Language="C#" Value="public object RefersToR1C1Local { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RefersToR1C1Local" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.RefersToR1C1Local" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefersToR1C1Local As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RefersToR1C1Local { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(941)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(941)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(941)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la formule à laquelle le nom fait référence.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Cette formule est dans la langue de l’utilisateur, et il est en notation de style R1C1.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefersToRange">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range RefersToRange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range RefersToRange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.RefersToRange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RefersToRange As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ RefersToRange { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1160)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1160)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet référencé par une <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objet.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si l’objet <b>Name</b> ne fait pas référence à une plage (par exemple, s’il fait référence à une constante ou une formule), cette propriété échoue.</para>
+          <para>Pour modifier la plage de référence d’un nom, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" /> propriété.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortcutKey">
+      <MemberSignature Language="C#" Value="public string ShortcutKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ShortcutKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.ShortcutKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShortcutKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ShortcutKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(597)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(597)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(597)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la touche de raccourci pour un nom défini comme une commande de macro Microsoft Excel 4.0 personnalisée.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidWorkbookParameter">
+      <MemberSignature Language="C#" Value="public bool ValidWorkbookParameter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ValidWorkbookParameter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.ValidWorkbookParameter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidWorkbookParameter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidWorkbookParameter { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2608)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2608)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie la valeur <b>True</b> si l'objet <b>Name</b> spécifié est un paramètre de classeur valide. Type de données <b>Boolean</b> en lecture seule.</summary>
+        <value>
+          <b>Booléenne</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie une chaîne contenant la formule à laquelle le nom est défini pour faire référence à.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La chaîne est en notation de style A1 dans la langue de la macro et elle commence par un signe égal.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Détermine si l’objet est visible.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La propriété <b>Visible</b> d’un élément de tableau croisé dynamique a la <b>valeur True</b> si l’élément est actuellement visible dans le tableau.</para>
+          <para>Si vous définissez la propriété <b>Visible</b> d’un nom à la <b>valeur False</b>, le nom n’apparaît pas dans la boîte de dialogue <b>Définir un nom</b> .</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkbookParameter">
+      <MemberSignature Language="C#" Value="public bool WorkbookParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WorkbookParameter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.WorkbookParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Property WorkbookParameter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WorkbookParameter { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2607)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2607)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2607)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le texte spécifié <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objet comme un paramètre de classeur. En lecture-écriture.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
