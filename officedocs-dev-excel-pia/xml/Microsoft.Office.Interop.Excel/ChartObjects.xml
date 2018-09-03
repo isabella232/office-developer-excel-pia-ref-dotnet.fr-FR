@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20586092" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartObjects : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> objets sur la feuille de graphique, la feuille boîte de dialogue ou la feuille de calcul.</summary>
     <remarks>
       <para>Chaque objet <b>ChartObject</b> représente un graphique incorporé. L’objet <b>ChartObject</b> agit comme un conteneur pour un <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objet. Propriétés et méthodes de l’objet <b>ChartObject</b> déterminent l’aspect et la taille du graphique incorporé dans la feuille.</para> Utilisation de 
-      <para>les <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" /> méthode pour renvoyer la collection <b>ChartObjects</b> . Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> méthode pour créer un graphique incorporé vide et l’ajouter à la collection. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour ajouter des données et mettre en forme le nouveau graphique.</para><para>Utilisez <b>ChartObjects</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index graphique incorporé ou le nom, pour renvoyer un seul objet <b>ChartObject</b> .</para><para /></remarks>
+      <para>les <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" /> méthode pour renvoyer la collection <b>ChartObjects</b> . Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> méthode pour créer un graphique incorporé vide et l’ajouter à la collection. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour ajouter des données et mettre en forme le nouveau graphique.</para><para>Utilisez <b>ChartObjects</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index graphique incorporé ou le nom, pour renvoyer un seul objet <b>ChartObject</b> .</para><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Copy">
@@ -533,8 +533,8 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para />
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -562,8 +562,8 @@
         <summary>Cette méthode coupe l'objet et le place dans le Presse-papiers ou colle l'objet à l'emplacement spécifié.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Uniquement les graphiques incorporés peuvent être coupés.</para>
-          <para />
+          <para>Pouvant couper que des graphiques incorporés.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -839,8 +839,8 @@
         <summary>Distance entre le bord gauche de l’objet et le bord gauche de la colonne A (sur une feuille de calcul) ou le bord gauche de la zone de graphique (sur un graphique).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la fenêtre est réduite, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Définir cette propriété sur 0 (zéro) rend la fenêtre un petit peu plus petite qu’il serait si la fenêtre d’application avait été agrandie. En d’autres termes, si cette propriété est 0 (zéro), la bordure gauche de la fenêtre Microsoft Excel principale sera peine visible à l’écran.</para>
-          <para />
+          <para>Si la fenêtre est agrandie, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Définir cette propriété sur 0 (zéro) rend la fenêtre un petit peu plus petite qu’il serait si la fenêtre d’application avait été agrandie. En d’autres termes, si cette propriété est 0 (zéro), la bordure gauche de la fenêtre Microsoft Excel principale peine sera visible à l’écran.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1035,8 +1035,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Définir cette propriété sur <b>True</b> ne protège pas la structure du graphique incorporé d’être modifiée par le biais du modèle objet.</para>
-          <para />
+          <para>La définition de cette propriété sur <b>True</b> ne protège pas la structure du graphique incorporé d’être modifiée par le biais du modèle objet.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1263,7 +1263,7 @@
         <remarks>
           <para>La propriété <b>Visible</b> d’un élément de tableau croisé dynamique a la <b>valeur True</b> si l’élément est actuellement visible dans le tableau.</para>
           <para>Si vous définissez la propriété <b>Visible</b> d’un nom à la <b>valeur False</b>, le nom n’apparaît pas dans la boîte de dialogue Définir un nom.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

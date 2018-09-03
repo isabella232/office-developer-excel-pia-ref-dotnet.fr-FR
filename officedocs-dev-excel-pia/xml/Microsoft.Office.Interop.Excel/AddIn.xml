@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20584146" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AddIn" />
@@ -38,7 +38,7 @@
       <para>La <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> méthode ajoute une macro complémentaire à la liste des compléments disponibles, mais n’installe pas l’ensemble du complément et le <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> propriété de la macro complémentaire <b>la valeur True</b> pour installer le complément. Pour installer une macro complémentaire qui n’apparaît pas dans la liste des compléments disponibles, vous devez tout d’abord utiliser la méthode <b>Add</b> et puis définissez la propriété <b>Installed</b> . Cette opération peut être effectuée en une seule étape</para>
       <para>utiliser <b>classeurs</b>(<paramref name="index" />) où <paramref name="index" /> est le complément de nom de fichier (pas de titre) pour renvoyer une référence au classeur correspondant à une macro complémentaire chargée. Vous devez utiliser le nom de fichier, car des compléments ne s’affichent normalement dans les <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> collection.</para>
       <para>Si la propriété <b>Installed</b> renvoie <b>la valeur True</b>, mais les appels aux fonctions dans le complément échouent encore, le complément peut en réalité pas être chargé. Cela car l’objet <b>Addin</b> indique l’existence et l’état de l’application add-in installé, mais ne représente pas le contenu du classeur macro complémentaire. Pour garantir qu’une macro complémentaire installée est chargée, vous devez ouvrir le classeur macro complémentaire.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -187,7 +187,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para /></remarks>
+          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -217,7 +217,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété est équivalente à la <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> , suivie du séparateur de système de fichier actif, suivi par le <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> propriété.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -251,8 +251,8 @@
           <b>La valeur true</b> si le complément est installé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définir cette propriété sur <b>True</b> installe le complément et ses fonctions Auto_Add sont appelées. Définir cette propriété sur <b>False</b> supprime le complément et ses fonctions Auto_Remove sont appelées.</para>
-          <para />
+          <para>La définition de cette propriété sur <b>True</b> installe le complément et ses fonctions Auto_Add sont appelées. Définir cette propriété sur <b>False</b> supprime le complément et ses fonctions Auto_Remove sont appelées.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -284,8 +284,8 @@
           <b>la valeur true</b> si le complément est actuellement ouvert ; Sinon, <b>false</b>.</value>
         <remarks>
           <para>
-            <b>Boolean</b> En lecture seule.</para>
-          <para />
+            <b>boolean</b> en lecture seule.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

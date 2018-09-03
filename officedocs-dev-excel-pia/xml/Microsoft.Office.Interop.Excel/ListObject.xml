@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20583019" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ListObject" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>Le <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> collection. Le <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> collection contient tous les objets de liste sur une feuille de calcul.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> pour renvoyer un <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> collection.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -94,8 +94,8 @@
         <summary>Renvoie une valeur <b>Boolean</b> indiquant si une <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet dans une feuille de calcul est actif, c'est-à-dire, si la cellule active est à l’intérieur de la plage de l’objet <b>ListObject</b> .</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Car il n’existe pas de méthode <b>Activate</b> pour l’objet <b>ListObject</b> , vous pouvez activer un objet <b>ListObject</b> uniquement en activant une plage de cellules dans la liste.</para>
-          <para />
+          <para>, Car il n’existe pas de méthode <b>Activate</b> pour l’objet <b>ListObject</b> , vous pouvez activer un objet <b>ListObject</b> uniquement en activant une plage de cellules dans la liste.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -130,7 +130,7 @@
         <remarks>
           <para>En lecture-écriture.</para>
           <para>La valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ListObject.AlternativeText" /> propriété correspond à la valeur de la zone de titre dans la boîte de dialogue texte de remplacement qui s’affiche en double-cliquant sur un tableau, en pointant sur le tableau, puis en cliquant sur texte de remplacement.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -226,7 +226,7 @@
         </value>
         <remarks>
           <para>Le texte de commentaire ne peut pas dépasser 255 caractères.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -257,7 +257,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para /></remarks>
+          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBodyRange">
@@ -312,7 +312,7 @@
         <summary>Supprime la <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet et efface les données des cellules de la feuille de calcul.</summary>
         <remarks>
           <para>Si la liste est liée à un site SharePoint, sa suppression n’affecte pas les données sur le serveur qui exécute Windows SharePoint Services. Toutes les modifications non validées apportées à la liste locale ne sont pas envoyées à la liste SharePoint. (Il n’existe aucun avertissement que ces modifications non validées sont perdues.)</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -376,7 +376,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété renvoie <b>la valeur True</b> si la fenêtre spécifiée, une feuille de calcul ou un <b>objet ListObject</b> s’affiche de droite à gauche plutôt que de gauche à droite et <b>False</b> si l’objet est affiché de gauche à droite.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -460,7 +460,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si la ligne d’insertion n’est pas visible, car la liste est inactive, l’objet <b>Nothing</b> est renvoyé.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -519,7 +519,7 @@
         <value>To be added.</value>
         <remarks>
           <para>L’objet <b>ListRows</b> renvoyé n’inclut pas l’en-tête, le total ou l’insérer des lignes.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -615,7 +615,7 @@
         <remarks>
           <para>Cette propriété renvoie une<b>String</b> qui représente l’URL de la liste publiée sur le site SharePoint.</para>
           <para>Si le <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet n’est pas lié à une liste dans un site SharePoint, l’affectation <paramref name="LinkSource" /><b>valeur True</b> à créer une nouvelle liste sur le site SharePoint spécifié. Si l’objet <b>ListObject</b> est lié à un site SharePoint, vous pouvez <paramref name="LinkSource" /> argument <b>la valeur True</b> remplace le lien existant (vous pouvez uniquement lier la liste à un site SharePoint). Si l’objet <b>ListObject</b> n’est pas lié, <paramref name="LinkSource" /><b>false</b> laissera l’objet <b>ListObject</b> sans liaison. Si l’objet <b>ListObject</b> est lié à un site SharePoint, vous pouvez <paramref name="LinkSource" /><b>false</b> conserver l’objet <b>ListObject</b> lié au site SharePoint actuel.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -700,7 +700,7 @@
         <remarks>
           <para>Cette méthode peut être utilisée uniquement avec des listes qui sont liées à un site SharePoint. Si le site SharePoint n’est pas disponible, l’appel de cette méthode renvoie une erreur.</para>
           <para>Appeler la méthode <b>Refresh</b> ne valide pas les modifications apportées à la liste dans le classeur Excel. Les modifications non validées dans la liste dans Excel sont ignorées lorsque la méthode <b>Refresh</b> est appelée. Pour éviter de perdre des modifications non validées, appelez le <see cref="M:Microsoft.Office.Interop.Excel.ListObject.UpdateChanges(Microsoft.Office.Interop.Excel.XlListConflict)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet avant d’appeler la méthode <b>Refresh</b> .</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -733,7 +733,7 @@
           <para>Aucune cellule est insérées ou déplacées par cette propriété.</para>
           <para>Cette propriété renvoie la <b>valeur Nothing</b>.</para>
           <para>Pour les listes liées à un serveur qui exécute Microsoft Windows SharePoint Services, vous pouvez redimensionner la liste à l’aide de cette méthode en fournissant un <paramref name="Range" /> argument qui diffère de la plage actuelle de l’objet ListObject uniquement par le nombre de lignes qu’il contient. Tentative de redimensionnement de listes liées à Windows SharePoint Services en ajoutant ou supprimant des colonnes (dans le <paramref name="Range" /> argument) génère une erreur d’exécution.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -764,7 +764,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Accès à cette propriété génère une erreur d’exécution si la liste n’est pas liée à un site SharePoint.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -798,7 +798,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propriété <b>ShowAutoFilter</b> par défaut, <b>la valeur True</b> pour une nouvelle <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1057,7 +1057,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Un <b>objet ListObject</b> est essentiellement une table.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1150,7 +1150,7 @@
         <remarks>
           <para>En lecture-écriture.</para>
           <para>La valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ListObject.Summary" /> propriété correspond à la valeur de la zone Description dans la boîte de dialogue texte de remplacement qui s’affiche en double-cliquant sur un tableau, en pointant sur le tableau, puis en cliquant sur texte de remplacement.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1181,7 +1181,7 @@
         <value>To be added.</value>
         <remarks>
           <para>L’objet <b>TableObject</b> est un tableau de feuille de calcul établi à partir des données renvoyées à partir d’un modèle de PowerPivot.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1271,7 +1271,7 @@
         <remarks>
           <para>Cette propriété renvoie la <b>valeur Nothing</b>.</para>
           <para>Cette méthode est appelée et la liste est supprimée, il ne peut pas être annulée.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1301,7 +1301,7 @@
           <para>Une fois que vous utilisez cette méthode, la plage de cellules constituant la liste sera une plage de données ordinaire.</para>
           <para>Cette propriété renvoie la <b>valeur Nothing</b>.</para>
           <para>L’exécution de cette méthode laisse les données des cellules, la mise en forme et les formules dans la feuille de calcul. La ligne des totaux est également inchangée. Cette méthode supprime tout lien vers un site Microsoft Windows SharePoint Services. Filtre automatique et la ligne d’insertion sont également supprimés de la liste.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1335,7 +1335,7 @@
         <remarks>
           <para>Cette propriété renvoie la <b>valeur Nothing</b>.</para>
           <para>Cette méthode s’applique uniquement aux listes liées à un site SharePoint. Si le site SharePoint n’est pas disponible, une erreur est générée.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1366,7 +1366,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

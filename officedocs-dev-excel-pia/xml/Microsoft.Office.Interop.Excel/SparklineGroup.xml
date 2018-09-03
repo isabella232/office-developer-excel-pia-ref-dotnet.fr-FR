@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20585077" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SparklineGroup : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Représente un groupe de graphiques sparkline.</summary>
     <remarks>
       <para>Le <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objet peut contenir plusieurs graphiques sparkline et contient les paramètres des propriétés pour le groupe, telles que les paramètres de couleur et de l’axe. Chaque graphique sparkline est représenté par un <see cref="T:Microsoft.Office.Interop.Excel.Sparkline" /> objet.</para> Utilisation de 
-      <para>les <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" /> méthode pour ajouter ou supprimer des graphiques sparkline dans le groupe de graphiques sparkline. Utilisez le <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> méthode pour modifier l’emplacement des graphiques sparkline et utiliser le <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" /> méthode pour modifier la plage de la source de données.</para><para /></remarks>
+      <para>les <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.Modify(Microsoft.Office.Interop.Excel.Range,System.String)" /> méthode pour ajouter ou supprimer des graphiques sparkline dans le groupe de graphiques sparkline. Utilisez le <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> méthode pour modifier l’emplacement des graphiques sparkline et utiliser le <see cref="M:Microsoft.Office.Interop.Excel.SparklineGroup.ModifySourceData(System.String)" /> méthode pour modifier la plage de la source de données.</para><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -66,7 +66,7 @@
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet.</value>
         <remarks>
           <para>En lecture seule.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -97,7 +97,7 @@
         <value>Associé <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> objet.</value>
         <remarks>
           <para>En lecture seule.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -128,7 +128,7 @@
         <value>Le nombre de graphiques sparkline dans le groupe de graphiques sparkline.</value>
         <remarks>
           <para>En lecture seule.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -160,7 +160,7 @@
         <remarks>
           <para>En lecture seule <b>longs</b>.</para>
           <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. Le <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Creator" /> propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -198,7 +198,7 @@
           <para>La plage de dates doit être une plage unidimensionnelle continue.</para>
           <para>La plage de dates peut se trouver sur une feuille autre que la <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> et <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> propriétés.</para>
           <para>Les cellules vides et les valeurs de date non dans la plage de dates ne sont pas affichées.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -257,7 +257,7 @@
         <value>Indique la manière que les cellules vides sont tracées dans un graphique.</value>
         <remarks>
           <para>Cette propriété peut être une de le <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayBlanksAs" /> constantes. En lecture-écriture.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -293,8 +293,8 @@
         <remarks>
           <para>En lecture-écriture.</para>
           <para>
-            <b>la valeur true</b> si les cellules masquées apparaissent dans le groupe de graphiques sparkline.</para>
-          <para />
+            <b>true</b> si masquée cellules sont affichées dans le groupe de graphiques sparkline.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -392,7 +392,7 @@
         <value>L’épaisseur des graphiques sparkline dans le groupe de graphiques sparkline.</value>
         <remarks>
           <para>En lecture-écriture.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -428,7 +428,7 @@
           <para>En lecture-écriture.</para>
           <para>L’emplacement de tous les graphiques sparkline dans un groupe de graphiques sparkline doit se trouver sur la même feuille, mais les données sources pour le groupe de graphiques sparkline peuvent se trouver sur une autre feuille ou du classeur.</para>
           <para>La taille de la plage qui représente le <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> propriété doit correspondre au nombre de lignes ou de colonnes dans le <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.SourceData" /> propriété pour la <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objet.</para> Plage continue 
-          <para>A associé à un groupe de graphiques sparkline ne peut être une dimension. Si la plage n’est pas continue, chaque cellule doit être spécifiée individuellement.</para><para><b>Remarque</b>: n’utilisez pas le <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> méthode pour créer une plage discontinue car la <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> méthode renvoie une référence de plage unique.</para><para /></remarks>
+          <para>A associé à un groupe de graphiques sparkline ne peut être une dimension. Si la plage n’est pas continue, chaque cellule doit être spécifiée individuellement.</para><para><b>Remarque</b>: n’utilisez pas le <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> méthode pour créer une plage discontinue car la <see cref="M:Microsoft.Office.Interop.Excel._Application.Union(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.Range,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object" /> méthode renvoie une référence de plage unique.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Modify">
@@ -572,7 +572,7 @@
         <value>L’objet parent de l’objet spécifié.</value>
         <remarks>
           <para>En lecture seule.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -608,7 +608,7 @@
           <para>En lecture-écriture.</para>
           <para>Cette propriété ne peut être définie que si les données sur lequel est basé le sparkline se trouvent dans une plage de forme carrée, par exemple, si les données se trouvent dans la plage a1 : B2.</para>
           <para>La valeur par défaut pour les données dans une plage de forme carrée consiste à tracer les données par ligne (<see cref="F:Microsoft.Office.Interop.Excel.XlSparklineRowCol.xlSparklineRowsSquare" />).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -640,7 +640,7 @@
         <remarks>
           <para>Une paire de coordonnées est une paire de valeurs représentant les coordonnées x et y-d’un point qui sont stockés dans un tableau à deux dimensions qui peut contenir les coordonnées de nombreux points.</para>
           <para>Cette propriété est en lecture seule. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> pour définir la valeur de cette propriété.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -671,7 +671,7 @@
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> objet qui représente la couleur de la série principale pour le groupe de graphiques sparkline.</value>
         <remarks>
           <para>En lecture seule.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -707,7 +707,7 @@
           <para>En lecture-écriture.</para>
           <para>Le nombre de lignes ou de colonnes dans la plage de données source doit correspondre au nombre de cellules dans les <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Location" /> plage de la propriété.</para>
           <para>La plage de source de données pour un graphique sparkline dans le groupe de graphiques sparkline doit être continue.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -741,7 +741,7 @@
         <value>Le type de graphique sparkline pour le groupe.</value>
         <remarks>
           <para>En lecture-écriture.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
