@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20577769" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Window" />
@@ -35,7 +35,7 @@
       <para>Utiliser <b>Windows</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la fenêtre ou le numéro d’index, pour renvoyer un seul objet <b>Window</b> .</para>
       <para>Notez que la fenêtre active est toujours Windows (1).</para>
       <para>La légende de la fenêtre est le texte affiché dans la barre de titre en haut de la fenêtre lorsque la fenêtre n’est pas agrandie. La légende apparaît également dans la liste des fichiers ouverts au bas du menu fenêtre. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> propriété pour définir ou renvoyer la légende de la fenêtre. Modification de la légende de la fenêtre ne change pas le nom du classeur.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -144,10 +144,7 @@
       <Docs>
         <summary>Cette méthode amène la fenêtre au premier plan de l'ordre de plan.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>La méthode <b>Activate</b> n’exécute aucune macro Auto_Activate ou Auto_Deactivate susceptibles d’être liées au classeur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour exécuter ces macros.</para>
-          <para />
-        </remarks>
+        <remarks>Méthode <para><b>Activate</b> n’exécute toutes les macros Auto_Activate ou Auto_Deactivate susceptibles d’être liées au classeur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour exécuter ces macros.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivateNext">
@@ -230,7 +227,7 @@
         <remarks>
           <para>Si vous ne spécifiez pas un qualificateur d’objet, cette propriété renvoie la cellule active dans la fenêtre active.</para>
           <para>Veillez à faire la distinction entre la cellule active et la sélection. La cellule active est une cellule unique à l’intérieur de la sélection actuelle. La sélection peut contenir plusieurs cellules, mais qu’un seul est la cellule active.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -261,7 +258,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si vous ne spécifiez pas un qualificateur d’objet, cette propriété renvoie le graphique actif du classeur actif.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -293,7 +290,7 @@
         <remarks>
           <para>Cette propriété peut être utilisée uniquement dans les feuilles de calcul et les feuilles macro.</para>
           <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> propriété pour obtenir l’index du volet actif.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -327,7 +324,7 @@
         <remarks>
           <para>Si vous ne spécifiez pas un qualificateur d’objet, cette propriété renvoie la feuille active du classeur actif.</para>
           <para>Si un classeur apparaît dans plusieurs fenêtres, la propriété <b>ActiveSheet</b> peut être différente dans différentes fenêtres.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -481,10 +478,7 @@
         <param name="RouteWorkbook">Facultatif <b>Object</b>. Si le classeur ne doit pas être routé au destinataire suivant (s’il n’a aucun bordereau de routage ou a déjà été acheminé), cet argument est ignoré. Dans le cas contraire, Microsoft Excel achemine le classeur comme indiqué dans le tableau suivant. <b>True</b>ValueMeaning envoie le classeur au destinataire suivant. <b>False</b> N’envoie pas le classeur. OmittedDisplays une boîte de dialogue demandant à l’utilisateur si le classeur doit être envoyé.</param>
         <summary>Ferme l’objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>La méthode <b>Close</b> n’exécute aucune macro Auto_Close du classeur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour l’exécuter.</para>
-          <para />
-        </remarks>
+        <remarks>Méthode <b>Close</b><para>n’exécute aucune macro Auto_Close du classeur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour l’exécuter.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -514,7 +508,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para /></remarks>
+          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayFormulas">
@@ -548,7 +542,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -584,7 +578,7 @@
         <remarks>
           <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
           <para>Cette propriété affecte uniquement le quadrillage affiché. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> propriété pour contrôler l’impression du quadrillage.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -620,7 +614,7 @@
         <remarks>
           <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
           <para>Cette propriété affecte uniquement les en-têtes affichés. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> propriété pour contrôler l’impression des en-têtes.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -687,7 +681,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -886,7 +880,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -954,7 +948,7 @@
         <remarks>
           <para>Il est possible de <b>FreezePanes </b><b>true</b> et <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> à <b>False</b>, ou vice versa.</para>
           <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1018,8 +1012,8 @@
         <summary>Cette propriété renvoie ou définit la couleur du quadrillage sous forme d’index dans la palette de couleurs actuelle ou sous un <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constante.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définir cette propriété sur <b>xlColorIndexAutomatic</b> pour spécifier la couleur automatique.</para>
-          <para />
+          <para>Cette propriété la valeur <b>xlColorIndexAutomatic</b> pour spécifier la couleur automatique.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1053,7 +1047,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> propriété pour déterminer la taille maximale de la fenêtre. Vous ne pouvez pas définir cette propriété si la fenêtre est agrandie ou réduite. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propriété pour déterminer l’état de la fenêtre.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1148,7 +1142,7 @@
           <para>Si <paramref name="Down" /> et <paramref name="Up" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="Down" /> est 3 et <paramref name="Up" /> est 6, le contenu défile de trois pages.</para>
           <para>Si <paramref name="ToLeft" /> et <paramref name="ToRight" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="ToLeft" /> est 3 et <paramref name="ToRight" /> est 6, le contenu défile à droite de trois pages vers la.</para>
           <para>Chaque argument peut être un nombre négatif.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1240,7 +1234,7 @@
         <remarks>
           <para>La procédure spécifiée par cette propriété n’est pas exécutée lorsque d’autres procédures basculent vers la fenêtre ou de la commande pour basculer vers une fenêtre est reçue via un canal DDE. Au lieu de cela, la procédure répond aux actions de l’utilisateur, par exemple cliquer sur une fenêtre avec la souris, cliquez sur Atteindre dans le menu Edition et ainsi de suite.</para>
           <para>Si une feuille de calcul ou une feuille macro a une macro Auto_Activate ou Auto_Deactivate est définie, cette macro sera exécutée après la procédure spécifiée par la propriété <b>OnWindow</b> .</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1271,7 +1265,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété est disponible pour une fenêtre uniquement lorsque la fenêtre de <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> propriété peut être définie sur <b>True</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1404,7 +1398,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>« Pages » dans les descriptions de <paramref name="From" /> et <paramref name="To" /> fait référence aux pages imprimées, pas aux pages globales de la feuille ou du classeur.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1498,7 +1492,7 @@
           <para>Lorsqu’un objet graphique est sélectionné dans une feuille de calcul, la <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> propriété renvoie l’objet graphique au lieu d’un objet <b>Range</b> ; la propriété <b>RangeSelection</b> renvoie la plage de cellules sélectionnée avant l’objet graphic.</para>
           <para>Cette propriété et la propriété <b>Selection</b> renvoient des valeurs identiques lorsqu’une plage (et non un objet graphique) est sélectionnée dans la feuille de calcul.</para>
           <para>Si la feuille active dans la fenêtre spécifiée n’est pas une feuille de calcul, cette propriété échoue.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1532,7 +1526,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si la fenêtre est fractionnée, la propriété <b>ScrollColumn</b> de le <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objet fait référence au volet supérieur gauche. Si les volets sont figés, la propriété <b>ScrollColumn</b> de l’objet <b>Window</b> exclut les zones figées.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1574,8 +1568,8 @@
           <b>Integer</b> facultatif. <b>True</b> pour que le coin supérieur gauche du rectangle s’affiche dans le coin supérieur gauche de la fenêtre de document ou du volet. <b>False</b> pour que le coin inférieur droit du rectangle s’affiche dans le coin inférieur droit de la fenêtre de document ou du volet. La valeur par défaut est <b>True</b>.</param>
         <summary>Fait défiler la fenêtre de document afin que le contenu d’une zone rectangulaire spécifiée est affiché dans le coin supérieur gauche ou à droite de la fenêtre de document ou du volet.</summary>
         <remarks>
-          <para>Le <paramref name="Start" /> argument est utile pour orienter l’affichage de l’écran lorsque le rectangle est plus grand que la fenêtre de document ou le volet.</para>
-          <para />
+          <para>La <paramref name="Start" /> argument est utile pour orienter l’affichage de l’écran lorsque le rectangle est plus grand que la fenêtre de document ou le volet.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1609,7 +1603,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si la fenêtre est fractionnée, la propriété <b>ScrollRow</b> de le <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objet fait référence au volet supérieur gauche. Si les volets sont figés, la propriété <b>ScrollRow</b> de l’objet <b>Window</b> exclut les zones figées.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1641,8 +1635,8 @@
         <summary>Fait défiler les onglets du classeur en bas de la fenêtre.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>La méthode <b>ScrollWorkbookTabs</b> n’affecte pas la feuille active du classeur.</para>
-          <para />
+          <para>La feuille active du classeur n’affecte pas la méthode <b>ScrollWorkbookTabs</b> .</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1702,7 +1696,7 @@
         <remarks>
           <para>Le type d’objet renvoyé dépend de la sélection en cours (par exemple, si une cellule est sélectionnée, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet). La propriété <b>Selection</b> renvoie <b>Nothing</b> si rien n’est sélectionné.</para>
           <para>à l’aide de cette propriété sans qualificateur d’objet équivaut à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1771,7 +1765,7 @@
           <para>Si <paramref name="Down" /> et <paramref name="Up" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="Down" /> est 3 et <paramref name="Up" /> est 6, le contenu défile de trois lignes.</para>
           <para>Si <paramref name="ToLeft" /> et <paramref name="ToRight" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="ToLeft" /> est 3 et <paramref name="ToRight" /> est 6, le contenu défile à droite de trois colonnes vers la.</para>
           <para>Tous ces arguments peuvent être un nombre négatif.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1807,7 +1801,7 @@
         <remarks>
           <para>Il est possible de <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> à <b>True</b> et <b>Fractionné</b> à <b>False</b>, ou vice versa.</para>
           <para>Cette propriété s’applique uniquement aux feuilles de calcul et les feuilles macro.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1964,8 +1958,8 @@
         <summary>Cette propriété renvoie ou définit le rapport entre la largeur de la zone des onglets du classeur à la largeur de la barre de défilement horizontale de la fenêtre (en tant que nombre compris entre 0 (zéro) et 1 ; la valeur par défaut est 0,6).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété est sans effet lorsque <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> est défini sur <b>False</b> (sa valeur est conservée, mais n’a aucun effet sur l’écran).</para>
-          <para />
+          <para>Cette propriété est sans effet lorsque <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> est défini sur <b>False</b> (sa valeur est conservée, mais n’a aucun effet sur l’affichage).</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1999,7 +1993,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Vous ne pouvez pas définir cette propriété pour une fenêtre agrandie. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propriété pour renvoyer ou définir l’état de la fenêtre.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2207,7 +2201,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> propriété pour déterminer la taille maximale de la fenêtre. Vous ne pouvez pas définir cette propriété si la fenêtre est agrandie ou réduite. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propriété pour déterminer l’état de la fenêtre.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2238,7 +2232,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Le numéro de la fenêtre n’est pas la même que l’index de la fenêtre (la valeur de retour de la <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> propriété), qui est la position de la fenêtre dans le <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2304,7 +2298,7 @@
         <remarks>
           <para>Vous pouvez également définir cette propriété sur <b>True</b> pour ajuster la taille de la fenêtre la sélection en cours.</para>
           <para>Cette fonction affecte uniquement la feuille active dans la fenêtre. Pour utiliser cette propriété sur d’autres feuilles, vous devez d’abord activer les.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

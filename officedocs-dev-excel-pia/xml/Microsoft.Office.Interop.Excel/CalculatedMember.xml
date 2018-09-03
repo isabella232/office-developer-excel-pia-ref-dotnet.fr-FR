@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20576789" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedMember" />
@@ -35,7 +35,7 @@
       <para>Avec un objet <b>CalculatedMember</b> , vous pouvez vérifier la validité d’un champ calculé ou un élément dans un tableau croisé dynamique à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.IsValid" /> propriété.</para>
       <para>
         <b>Remarque</b> la propriété <b>IsValid</b> renvoie <b>la valeur True</b> si le tableau croisé dynamique n’est pas actuellement connecté à la source de données. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.MakeConnection" /> méthode avant de tester la propriété <b>IsValid</b> .</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -125,7 +125,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si l’objet a été créé dans Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisée dans Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Excel a le code créateur XCEL.</para><para /></remarks>
+          <para>le <b>créateur</b> est conçue pour être utilisée dans Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Excel a le code créateur XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -152,7 +152,7 @@
         <summary>Supprime l'objet.</summary>
         <remarks>
           <para>Vous pouvez supprimer des champs de cube uniquement si vous avez créé le champs de cube vous-même à l’aide de la méthode <b>CalculatedMember.Add</b> avec la <paramref name="xlCalculatedSet" /> argument.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -185,7 +185,7 @@
           <para>En lecture seule.</para>
           <para>La valeur de cette propriété correspond à la valeur facultative qui peut être entrée dans la zone de texte dossier de la boîte de dialogue nouveau/modifier la valeur lorsqu’un jeu nommé est créé ou modifié. Pour créer un nouveau jeu de données dans un tableau croisé dynamique basé sur une source de données OLAP nommé, cliquez sur le tableau croisé dynamique, cliquez sur un champ, d’éléments, &amp; définit les options d’outils de tableau croisé dynamique d’onglet sur le ruban, cliquez sur Gérer les ensembles de, cliquez sur Nouveau dans la boîte de dialogue Gestionnaire de jeux, puis cliquez sur Se créer t à l’aide de MDX. La boîte de dialogue Nouveau jeu qui contient la zone de texte dossier s’affiche. De même, si vous sélectionnez un jeu nommé existant dans la boîte de dialogue Gestionnaire de jeux, puis cliquez sur Modifier, la boîte de dialogue Modifier la valeur s’affiche.</para>
           <para>Cette propriété avec la <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> et <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> propriétés des jeux nommés ne peuvent être lus (qui sont représenté par <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objets où le <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> est égal à propriété <paramref name="xlCalculatedSet" />). Impossible de lire ces propriétés pour des mesures des membres calculés (qui sont représenté par <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objets où le <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> est égal à propriété <paramref name="xlCalculatedMember" />). Si vous essayez de lire ces propriétés pour des membres calculés ou des mesures, une erreur d’exécution est générée.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -221,7 +221,7 @@
             <b>la valeur true</b> si le jeu nommé est recalculé à chaque mise à jour, sinon <b>false</b>.</para>
           <para>La valeur de cette propriété correspond à la valeur de la recalculer défini avec chaque case à cocher de mise à jour dans la boîte de dialogue nouveau/modifier la valeur qui est disponible quand un jeu nommé est créé ou modifié. Pour créer un nouveau jeu de données dans un tableau croisé dynamique basé sur une source de données OLAP nommé, cliquez sur le tableau croisé dynamique, cliquez sur un champ, d’éléments, &amp; définit les options d’outils de tableau croisé dynamique d’onglet sur le ruban, cliquez sur Gérer les ensembles de, cliquez sur Nouveau dans la boîte de dialogue Gestionnaire de jeux, puis cliquez sur Se créer t à l’aide de MDX. La boîte de dialogue Nouveau jeu qui contient le recalculer défini avec chaque case à cocher de mise à jour s’affiche. De même, si vous sélectionnez un jeu nommé existant dans la boîte de dialogue Gestionnaire de jeux, puis cliquez sur Modifier, la boîte de dialogue Modifier la valeur s’affiche.</para>
           <para>Cette propriété avec la <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> et <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> propriétés des jeux nommés ne peuvent être lus (qui sont représenté par <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objets où le <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> est égal à propriété <paramref name="xlCalculatedSet" />). Impossible de lire ces propriétés pour des mesures des membres calculés (qui sont représenté par <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objets où le <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> est égal à propriété <paramref name="xlCalculatedMember" />). Si vous essayez de lire ces propriétés pour des membres calculés ou des mesures, une erreur d’exécution est générée.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -259,7 +259,7 @@
           <para>
             <b>la valeur true</b> si les éléments de tous les niveaux de la hiérarchie du jeu nommé sont affichés dans le même champ ; sinon, <b>false</b>.</para>
           <para>La valeur de cette propriété correspond au paramètre de l’afficher les éléments à partir de différents niveaux dans des champs distincts case dans la boîte de dialogue nouveau/modifier la valeur lorsqu’un jeu nommé est créé ou modifié. Pour créer un nouveau jeu de données dans un tableau croisé dynamique basé sur une source de données OLAP nommé, cliquez sur le tableau croisé dynamique, cliquez sur un champ, d’éléments, &amp; définit les options d’outils de tableau croisé dynamique d’onglet sur le ruban, cliquez sur Gérer les ensembles de, cliquez sur Nouveau dans la boîte de dialogue Gestionnaire de jeux, puis cliquez sur Se créer t à l’aide de MDX. Cela affiche la boîte de dialogue Nouveau jeu qui contienne les éléments d’affichage à partir de différents niveaux dans la case à cocher des champs distincts. De même, si vous sélectionnez un jeu nommé existant dans la boîte de dialogue Gestionnaire de jeux, puis cliquez sur Modifier, la boîte de dialogue Modifier la valeur s’affiche.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -294,7 +294,7 @@
           <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Excel vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, Microsoft Excel lui affecte le format pour le format de date courte par défaut.</para>
           <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule en tableau des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau.</para>
           <para>En définissant la formule pour une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -333,7 +333,7 @@
             <b>la valeur true</b> si la hiérarchie du jeu nommé est affichée comme prévu avec les doublons supprimés ; sinon, <b>false</b>.</para>
           <para>La valeur de cette propriété correspond à la commande automatiquement et supprimer les doublons de la case à cocher Définir dans la boîte de dialogue nouveau/modifier la valeur lorsqu’un jeu nommé est créé ou modifié. Pour créer un nouveau jeu de données dans un tableau croisé dynamique basé sur une source de données OLAP nommé, cliquez sur le tableau croisé dynamique, cliquez sur un champ, d’éléments, &amp; définit les options d’outils de tableau croisé dynamique d’onglet sur le ruban, cliquez sur Gérer les ensembles de, cliquez sur Nouveau dans la boîte de dialogue Gestionnaire de jeux, puis cliquez sur Se créer t à l’aide de MDX. Cela affiche la boîte de dialogue Nouveau jeu qui contient la commande automatiquement et supprimer les doublons de la case à cocher set. De même, si vous sélectionnez un jeu nommé existant dans la boîte de dialogue Gestionnaire de jeux, puis cliquez sur Modifier, la boîte de dialogue Modifier la valeur s’affiche.</para>
           <para>Cette propriété avec la <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> et <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> propriétés des jeux nommés ne peuvent être lus (qui sont représenté par <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objets où le <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> est égal à propriété <paramref name="xlCalculatedSet" />). Impossible de lire ces propriétés pour des mesures des membres calculés (qui sont représenté par <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objets où le <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> est égal à propriété <paramref name="xlCalculatedMember" />). Si vous essayez de lire ces propriétés pour des membres calculés ou des mesures, une erreur d’exécution est générée.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -363,8 +363,8 @@
         <summary>Renvoie un <b>type Boolean</b> qui indique si le membre calculé spécifié a été instancié avec succès le fournisseur OLAP lors de la session en cours.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> , même si le tableau croisé dynamique n’est pas connecté à sa source de données. Assurez-vous que le tableau croisé dynamique est connecté avant de demander la valeur de la propriété <b>IsValid</b> .</para>
-          <para />
+          <para>Cette propriété renvoie <b>la valeur True</b> même si le tableau croisé dynamique n’est pas connecté à sa source de données. Assurez-vous que le tableau croisé dynamique est connecté avant de demander la valeur de la propriété <b>IsValid</b> .</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -536,7 +536,7 @@
         <remarks>
           <para>Le membre parent par défaut est déterminée par tout ce qui a été défini par le Concepteur de cube ou Analysis Services comme le membre par défaut de la hiérarchie sélectionnée. Par exemple, si un membre « All » existe pour la hiérarchie sélectionnée, puis il s’agit généralement du membre parent par défaut sur le cube.</para>
           <para>Si la hiérarchie parent sélectionné n’est pas un « All » membre parent, un autre membre de parent par défaut est défini par le Concepteur de cube ou par programme par Analysis Services. (Si un membre par défaut n’est pas spécifié par le Concepteur de cube, le moteur Analysis Services définit automatiquement une.)</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -627,7 +627,7 @@
             </item>
           </list>
           <para>Lors de la spécification d’index dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para> expression 
-          <list type="table"><item><term>. PivotItems (« [Europe]. [ France]. [Paris] »)</term><description>expression. PivotItems("Paris")</description></item></list><para>lors de l’utilisation du <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser les noms d’index de texte, comme indiqué dans le tableau suivant.</para><list type="table"><item><term>[Europe]. [ France]. [Paris]</term><description>Paris</description></item></list><para /></remarks>
+          <list type="table"><item><term>. PivotItems (« [Europe]. [ France]. [Paris] »)</term><description>expression. PivotItems("Paris")</description></item></list><para>lors de l’utilisation du <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser les noms d’index de texte, comme indiqué dans le tableau suivant.</para><list type="table"><item><term>[Europe]. [ France]. [Paris]</term><description>Paris</description></item></list><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -664,7 +664,7 @@
           <para>
             <b>xlCalculatedSet</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20572610" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DocEvents_Event" />
@@ -88,9 +88,9 @@
       <Docs>
         <summary>Cette méthode se produit lorsqu'un utilisateur double-clique sur une feuille de calcul, avant l'action de double-clic par défaut.</summary>
         <remarks>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" /> méthode n’entraîne pas cet événement se produise.</para>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" /> méthode n’entraîne pas cet événement se produise.</para>
           <para>Cet événement ne se produit lorsque l’utilisateur double-clique sur la bordure d’une cellule.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -112,7 +112,7 @@
         <summary>Cette méthode se produit lorsqu'un utilisateur clique avec le bouton droit de la souris sur une feuille de calcul, avant l'action par défaut de clic avec le bouton droit.</summary>
         <remarks>
           <para>Comme d’autres événements de feuille de calcul, cet événement ne se produit pas lorsque vous cliquez alors que le pointeur se trouve sur une forme ou d’une commande de barre (une barre d’outils ou barre de menus).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -153,7 +153,7 @@
         <summary>Se produit lorsque les cellules de la feuille de calcul sont modifiées par l’utilisateur ou par un lien externe.</summary>
         <remarks>
           <para>Cet événement ne se produit pas lorsque les cellules modifiées pendant le recalcul. Utiliser le <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.Calculate" /> événement pour interrompre un recalcul de la feuille.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -213,7 +213,7 @@
         <summary>Se produit lorsque les icônes de galerie légende (dynamiques et statiques) s’est terminé le rendu.</summary>
         <remarks>
           <para>Cet événement peut être utilisé pour indiquer quand affichage supplémentaire ou réactiver la mise à jour d’écran des boîtes de dialogue, par exemple.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -234,8 +234,8 @@
       <Docs>
         <summary>Se produit après qu’une cellule ou une plage de cellules à l’intérieur d’un tableau croisé dynamique a été modifiée ou recalculée (pour les cellules contenant des formules).</summary>
         <remarks>
-          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableAfterValueChange" /> événement ne se produit pas dans toutes les conditions autre que l’édition ou de recalcul de cellules. Par exemple, il sera se produit pas lorsque le tableau croisé dynamique est actualisé, trié, filtré ou analysé, même si ces opérations déplacement des cellules et potentiellement extraient de nouvelles valeurs à partir de la source de données OLAP.</para>
-          <para />
+          <para>La <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableAfterValueChange" /> événement ne se produit pas dans toutes les conditions autre que l’édition ou de recalcul de cellules. Par exemple, il se produit pas lorsque le tableau croisé dynamique est actualisé, trié, filtré ou analysé, même si ces opérations déplacement des cellules et potentiellement extraient de nouvelles valeurs à partir de la source de données OLAP.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -256,8 +256,8 @@
       <Docs>
         <summary>Se produit avant qu’un tableau croisé dynamique ne soit modifié.</summary>
         <remarks>
-          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> événement se produit immédiatement avant qu’Excel exécute une instruction UPDATE CUBE pour appliquer toutes les modifications apportées à la source de données OLAP du tableau croisé dynamique, et immédiatement après que l’utilisateur a choisi d’appliquer les modifications de l’interface utilisateur.</para>
-          <para />
+          <para>La <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> événement se produit immédiatement avant qu’Excel exécute une instruction UPDATE CUBE pour appliquer toutes les modifications apportées à la source de données OLAP du tableau croisé dynamique, et immédiatement après que l’utilisateur a choisi d’appliquer les modifications de l’interface utilisateur.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -278,8 +278,8 @@
       <Docs>
         <summary>Se produit avant que les modifications ne soient validées dans la source de données OLAP d’un tableau croisé dynamique.</summary>
         <remarks>
-          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> événement se produit immédiatement avant qu’Excel exécute une instruction COMMIT TRANSACTION par rapport à la source de données OLAP du tableau croisé dynamique, et immédiatement après que l’utilisateur a choisi d’enregistrer les modifications pour le tableau croisé dynamique entier.</para>
-          <para />
+          <para>La <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> événement se produit immédiatement avant qu’Excel exécute une instruction COMMIT TRANSACTION par rapport à la source de données OLAP du tableau croisé dynamique, et immédiatement après que l’utilisateur a choisi d’enregistrer les modifications pour le tableau croisé dynamique entier.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -300,8 +300,8 @@
       <Docs>
         <summary>Se produit avant que les modifications apportées à un tableau croisé dynamique ne soient ignorées.</summary>
         <remarks>
-          <para>Cet événement se produit immédiatement avant qu’Excel exécute une instruction ROLLBACK TRANSACTION par rapport à la source de données OLAP, si une transaction est toujours active, puis ignore toutes les valeurs modifiées dans le tableau croisé dynamique, une fois que l’utilisateur a choisi d’ignorer les modifications.</para>
-          <para />
+          <para>Se produit immédiatement avant qu’Excel exécute une instruction ROLLBACK TRANSACTION par rapport à la source de données OLAP, si une transaction est toujours active, puis ignore toutes les valeurs modifiées dans le tableau croisé dynamique, une fois que l’utilisateur a choisi d’ignorer les modifications.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -322,8 +322,8 @@
       <Docs>
         <summary>Se produit après modification d’un tableau croisé dynamique.</summary>
         <remarks>
-          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableChangeSync" /> événement se produit au cours de la plupart des modifications à un tableau croisé dynamique, afin que vous pouvez écrire du code pour répondre aux actions de l’utilisateur, telles que l’effacement, regroupement ou l’actualisation d’éléments dans le tableau croisé dynamique.</para>
-          <para />
+          <para>La <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableChangeSync" /> événement se produit au cours de la plupart des modifications à un tableau croisé dynamique, afin que vous pouvez écrire du code pour répondre aux actions de l’utilisateur, telles que l’effacement, regroupement ou l’actualisation d’éléments dans le tableau croisé dynamique.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20577237" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotField" />
@@ -59,7 +59,7 @@
             <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisibleFields(System.Object)" /> propriété</description>
         </item>
       </list>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -129,7 +129,7 @@
         <summary>Cette méthode ajoute un élément supplémentaire à un champ de page à plusieurs éléments.</summary>
         <remarks>
           <para>Pour éviter les erreurs d’exécution, la source de données doit être une source OLAP, le champ choisi doit être dans la position page et la <see cref="P:Microsoft.Office.Interop.Excel.CubeField.EnableMultiplePageItems" /> propriété doit être définie sur <b>True</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -165,7 +165,7 @@ En lecture seule.</summary>
           <para>Cette propriété offre un moyen simple pour vérifier rapidement si un filtrage manuel est appliqué à un <b>champ PivotField</b> ou <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />.</para>
           <para>Pour les tableaux croisés dynamiques OLAP, cette propriété est disponible uniquement pour l’objet <b>CubeField</b> . Tentative d’obtenir ou définir l’objet <b>PivotField</b> dans un OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> renvoie une erreur d’exécution.</para>
           <para>Pour les <b>tableaux croisés dynamiques</b>, cette propriété est disponible pour l’objet <b>PivotField</b> .</para> Valeur 
-          <para>la valeur par défaut est <b>True</b>.  Cette propriété est automatiquement définie sur <b>True</b> lorsqu’aucun filtrage manuel n’est appliqué (independent si le <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> propriété a la <b>valeur True</b> ou <b>False</b>). Il est automatiquement définie sur <b>False</b> lorsqu’un filtrage manuel est appliqué (independent si le <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> propriété a la <b>valeur True</b> ou <b>False</b>).</para><para>Cette propriété reflète directement l’état de la case à cocher Sélectionner tout dans la liste déroulante de filtre pour le <b>champ PivotField</b> ou <b>CubeField</b>.</para><para /></remarks>
+          <para>la valeur par défaut est <b>True</b>.  Cette propriété est automatiquement définie sur <b>True</b> lorsqu’aucun filtrage manuel n’est appliqué (independent si le <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> propriété a la <b>valeur True</b> ou <b>False</b>). Il est automatiquement définie sur <b>False</b> lorsqu’un filtrage manuel est appliqué (independent si le <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> propriété a la <b>valeur True</b> ou <b>False</b>).</para><para>Cette propriété reflète directement l’état de la case à cocher Sélectionner tout dans la liste déroulante de filtre pour le <b>champ PivotField</b> ou <b>CubeField</b>.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -463,7 +463,7 @@ En lecture seule.</summary>
           </list>
           <para>tri est pris en charge uniquement par les sous-totaux personnalisés qui sont effectivement affichés dans le tableau croisé dynamique, si vous essayez de définir <b>AutoSortCustomSubtotal</b> sur une valeur qui représente un sous-total personnalisé pas dans l’affichage de tableau croisé dynamique sera Renvoie une erreur d’exécution.</para>
           <para>Si le tri est appliqué d’après un sous-total personnalisé et que ce sous-total est supprimé du tableau croisé dynamique, la propriété <b>AutoSortCustomSubtotal</b> être définit automatiquement la valeur par défaut (1).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -616,7 +616,7 @@ En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -675,8 +675,8 @@ En lecture seule.</summary>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.CalculatedItems" /> collection qui représente tous les éléments calculés du rapport de tableau croisé dynamique spécifié. En lecture seule.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Pour les sources de données OLAP, cette méthode retourne une collection de longueur nulle.</para>
-          <para />
+          <para>Pour les sources de données, cette méthode retourne une collection de longueur nulle.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -709,8 +709,8 @@ En lecture seule.</summary>
         <summary>Cette propriété renvoie ou définit le type de calcul effectué par le champ spécifié. Cette propriété est valide uniquement pour les champs de données. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldCalculation" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sources de données OLAP, cette propriété peut uniquement renvoyer ou avoir la valeur <b>xlNormal</b>.</para>
-          <para />
+          <para>Pour les sources de données, cette propriété peut uniquement renvoyer ou avoir la valeur <b>xlNormal</b>.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -773,7 +773,7 @@ En lecture seule.</summary>
         <remarks>
           <para>Si le champ spécifié n’a pas de champ enfant, cette propriété génère une erreur.</para>
           <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -808,7 +808,7 @@ En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1037,7 +1037,7 @@ En lecture seule.</summary>
               <term>xlAllDatesInPeriodDecember</term>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1066,7 +1066,7 @@ En lecture seule.</summary>
         <remarks>
           <para>Cette méthode est disponible pour le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /><b>objet</b> dans <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> et pour le <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objet OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />. Pour appeler une <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> dans un OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> renvoie une erreur d’exécution.</para>
           <para>Les collections suivantes sont vides après un appel de cette méthode : <b>HiddenItemsList</b>, <b>HiddenItems</b>, <b>VisibleItemsList</b>et <b>VisibleItems</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1143,11 +1143,8 @@ En lecture seule.</summary>
             <item>
               <term />
             </item>
-            <item>
-              <term />
-            </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1176,10 +1173,7 @@ En lecture seule.</summary>
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para />
-        </remarks>
+        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CubeField">
@@ -1271,7 +1265,7 @@ En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Pour éviter les erreurs d’exécution, la source de données doit être une source OLAP, le champ choisi doit être dans la position Page et la <see cref="P:Microsoft.Office.Interop.Excel.CubeField.EnableMultiplePageItems" /> propriété doit être définie sur <b>True</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1305,7 +1299,7 @@ En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété s’applique aux tableaux croisés dynamiques connectés à une source de données OLAP. Toute tentative renvoyer ou définir cette propriété avec un tableau croisé dynamique qui n’est pas connecté à une source de données OLAP entraînera une erreur d’exécution.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1344,7 +1338,7 @@ En lecture seule.</summary>
           <para>La propriété <b>DatabaseSort</b> à <b>False</b> entraîne l’ordre de tri à l’ordre actuel des éléments, si aucun tri automatique n’est appliqué.</para>
           <para>Si la propriété <b>DatabaseSort affecte</b><b>la valeur True</b> ou <b>False</b> provoque une mise à jour.</para>
           <para>La propriété <b>DatabaseSort affecte</b> à <b>la valeur True</b> pour une source autre que OLAP ou un champ de données OLAP provoque une erreur d’exécution.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1382,7 +1376,7 @@ En lecture seule.</summary>
             <item><term>ligne, colonne ou champ de page</term>des
               <description>éléments dans le champ</description></item><item>,
               <term>élément</term><description>Données qualifiées par l’élément</description></item></list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1468,7 +1462,7 @@ En lecture seule.</summary>
         </value>
         <remarks>
           <para>Cette propriété renvoie <b>la valeur True</b> lorsqu’une propriété de membre donnée est utilisée comme une légende et <b>False</b> lorsqu’elle est une propriété de membre <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> n’est pas utilisée comme légende. Essayez d’utiliser cette propriété pour <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s qui ne sont pas des propriétés de membre renverra une erreur d’exécution.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1505,7 +1499,7 @@ En lecture seule.</summary>
         <remarks>
           <para>Tentative obtenir ou définir ces propriétés pour <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s qui ne sont pas des propriétés de membre renverra une erreur d’exécution.</para>
           <para>Une propriété de membre donnée est affichée dans les info-bulles lorsque la propriété <b>DisplayAsTooltip</b> est définie sur <b>True</b>et pas affichées dans les info-bulles lorsqu’elle est définie sur <b>False</b>. La valeur par défaut est <b>True</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1572,8 +1566,8 @@ En lecture seule.</summary>
           <b>True</b> si le champ spécifié peut être déplacé par glissement vers la position de la colonne. La valeur par défaut est <b>True</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sources de données OLAP, la valeur est <b>False</b> pour les champs de mesure.</para>
-          <para />
+          <para>Pour les sources de données OLAP, la valeur est <b>False</b> pour les champs de mesure.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1607,8 +1601,8 @@ En lecture seule.</summary>
           <b>La valeur true</b> si le champ spécifié peut être déplacé vers la position des données. La valeur par défaut est <b>True</b>. En lecture/écriture <b>booléen</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sources de données OLAP, la valeur est <b>False</b> pour les champs de mesure.</para>
-          <para />
+          <para>Pour les sources de données OLAP, la valeur est <b>False</b> pour les champs de mesure.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1672,8 +1666,8 @@ En lecture seule.</summary>
         <summary>Cette propriété renvoie la valeur <b>True</b> si le champ peut être déplacé par glissement vers la position de la page. La valeur par défaut est <b>True</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sources de données OLAP, la valeur est <b>False</b> pour les champs de mesure.</para>
-          <para />
+          <para>Pour les sources de données OLAP, la valeur est <b>False</b> pour les champs de mesure.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1706,8 +1700,8 @@ En lecture seule.</summary>
         <summary>Cette propriété renvoie la valeur <b>True</b> si le champ peut être déplacé par glissement vers la position de la ligne. La valeur par défaut est <b>True</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sources de données OLAP, la valeur est <b>False</b> pour les champs de mesure.</para>
-          <para />
+          <para>Pour les sources de données OLAP, la valeur est <b>False</b> pour les champs de mesure.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1743,7 +1737,7 @@ En lecture seule.</summary>
         <remarks>
           <para>Vous pouvez utiliser cette propriété uniquement pour les sources de données OLAP.</para>
           <para>Vous ne pouvez pas définir cette propriété si le champ ou l’élément est masqué.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1775,7 +1769,7 @@ En lecture seule.</summary>
         <summary>La méthode <b>DrillTo</b> prend en charge l’extraction d’un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> d’un autre <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />.</summary>
         <remarks>
           <para>Cette opération ne peut être effectuée sur des champs qui sont trouvent les <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Ainsi, soit une hiérarchie contenant les informations demandées <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> doit se trouver dans les lignes ou les colonnes de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />, ou le champ d’attribut/relationnelles doit se trouver dans les lignes ou les colonnes de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> placée en regard d’au moins un autre champ d’attribut/relationnelles. En outre, le champ extrait doit se trouver dans la même chaîne de hiérarchie ou un attribut. Si ces conditions ne sont pas remplies, une erreur d’exécution se produit.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1809,7 +1803,7 @@ En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Une erreur d’exécution se produit si le champ de tableau croisé dynamique OLAP n’est pas le niveau le plus élevé pour la hiérarchie.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1847,7 +1841,7 @@ En lecture seule.</summary>
           <para>La valeur de propriété existante est conservée pour OLAP.</para>
           <para>
             <b>Remarque</b>: dans short_Excel2007, si vous créez OLAP pré-short_Excel2007 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s (version &lt; 3) avec la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.SubtotalHiddenPageItems" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objet et le <see cref="P:Microsoft.Office.Interop.Excel.PivotField.EnableMultiplePageItems" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet la valeur <b>True</b>, modification l’état de cases à cocher dans la liste déroulante Filtre de la zone de page n’a aucun effet.  Dans ce cas, le filtre sera toujours être défini à <b>tous</b>, y compris les éléments non activés (masqués).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1885,7 +1879,7 @@ En lecture seule.</summary>
           <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Excel vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, Microsoft Excel lui affecte le format pour le format de date courte par défaut.</para>
           <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule pour un tableau Visual Basic des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau Visual Basic.</para>
           <para>En définissant la formule pour une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1917,10 +1911,7 @@ En lecture seule.</summary>
       <Docs>
         <summary>Cette propriété renvoie ou définit la fonction utilisée pour résumer le champ de tableau croisé dynamique (champs de données uniquement). En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" />.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sources de données OLAP, cette propriété est en lecture seule et renvoie toujours la valeur <b>xlUnknown</b>. Autres sources de données, cette propriété ne peut pas être la valeur <b>xlUnknown</b>.</para>
-          <para />
-        </remarks>
+        <remarks>Sources de <para>pour les données OLAP, cette propriété est en lecture seule et renvoie toujours la valeur <b>xlUnknown</b>. Autres sources de données, cette propriété ne peut pas être la valeur <b>xlUnknown</b>.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupLevel">
@@ -1951,7 +1942,7 @@ En lecture seule.</summary>
         <remarks>
           <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
           <para>Le champ parent du niveau (champ parent plus à gauche) est le niveau un, son enfant est le niveau deux et ainsi de suite.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1989,7 +1980,7 @@ En lecture seule.</summary>
           <para>Renvoie <b>la valeur True</b> pour les niveaux masqués et la <b>valeur False</b> pour les niveaux visibles (non masqués).</para>
           <para>Cette propriété s’applique uniquement aux niveaux des hiérarchies OLAP.</para>
           <para>Pour les sources de données relationnelles et les attributs OLAP, cette propriété est toujours <b>False</b>. Essayez de définir sur <b>True</b> pour un attribut ou un champ relationnel renverra une erreur d’exécution.  Il n’est pas possible de définir cette propriété sur <b>True</b> pour un niveau si tous les autres niveaux de la même hiérarchie déjà ce paramètre la valeur <b>True</b>. Au moins un niveau d’une hiérarchie d’a à cette propriété la valeur <b>False</b>. Essayez cela renverra une erreur d’exécution.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2023,8 +2014,8 @@ En lecture seule.</summary>
         <summary>Renvoie un objet qui représente soit un seul élément de tableau croisé dynamique masqué (un <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> objet), soit une collection de tous les éléments masqués (un <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> objet) dans le champ spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sources de données OLAP, cette propriété renvoie toujours une collection vide.</para>
-          <para />
+          <para>Pour les sources de données, cette propriété renvoie toujours une collection vide.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2057,8 +2048,8 @@ En lecture seule.</summary>
         <summary>Cette propriété renvoie ou définit un <b>objet</b> qui spécifie un tableau de chaînes qui sont des éléments masqués d’un champ de tableau croisé dynamique. Lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>HiddenItemsList</b> n’est valide pour les sources de données de traitement analytique en ligne (OLAP) ; à l’aide de cette propriété sur des sources de données autre que OLAP renvoie une erreur d’exécution.</para>
-          <para />
+          <para>La propriété <b>HiddenItemsList</b> n’est valide pour les sources de données de traitement analytique en ligne (OLAP), à l’aide de cette propriété sur des sources de données autre que OLAP renvoie une erreur d’exécution.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2095,7 +2086,7 @@ En lecture seule.</summary>
         <remarks>
           <para>La valeur par défaut de cette propriété a la <b>valeur False</b>.</para>
           <para>Lorsqu’un filtrage manuel est appliqué, les développeurs peuvent définir les <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> propriété sur <b>True</b> pour effectuer le suivi des éléments exclus. Ils peuvent définir la propriété sur <b>False</b> pour effectuer le suivi des éléments inclus.  Si les nouveaux éléments sont ajoutés à la source de données après le <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IncludeNewItemsInFilter" /> est définie sur <b>True</b>, les nouveaux éléments s’affichent dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> après la prochaine opération d’actualisation, car ils ne sont pas dans la collection d’éléments Excel effectue le suivi.</para> Hiérarchies de 
-          <para>OLAP pour ce paramètre est défini sur le <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objet et essayez de définir sur <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s qui font partie d’une hiérarchie échoue (avec une erreur d’exécution). Vous pouvez obtenir ce paramètre à partir de la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s qui font partie d’une hiérarchie et elle retournera les mêmes que <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> propriété.</para><para>Basculement de ce paramètre efface les collections suivantes : <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" />, <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" />, <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" />, et <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" />.  Lorsque <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> est défini sur <b>False</b>, la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" /> et <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" /> sont vides et éléments ne peuvent pas être ajoutés.  Une erreur d’exécution est renvoyée lorsque vous tentez d’ajouter des éléments.  Lorsque <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> est défini sur <b>True</b>, le <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" /> et <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" /> sont vides et éléments ne peuvent pas être ajoutés.  Une erreur d’exécution est renvoyée lorsque vous tentez d’ajouter des éléments.</para><para>Dans <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s, ce paramètre est défini sur le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet. Basculement de ce paramètre ne modifie pas l’état du filtre.</para><para /></remarks>
+          <para>OLAP pour ce paramètre est défini sur le <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objet et essayez de définir sur <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s qui font partie d’une hiérarchie échoue (avec une erreur d’exécution). Vous pouvez obtenir ce paramètre à partir de la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s qui font partie d’une hiérarchie et elle retournera les mêmes que <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> propriété.</para><para>Basculement de ce paramètre efface les collections suivantes : <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" />, <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" />, <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" />, et <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" />.  Lorsque <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> est défini sur <b>False</b>, la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItemsList" /> et <see cref="P:Microsoft.Office.Interop.Excel.PivotField.HiddenItems(System.Object)" /> sont vides et éléments ne peuvent pas être ajoutés.  Une erreur d’exécution est renvoyée lorsque vous tentez d’ajouter des éléments.  Lorsque <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> est défini sur <b>True</b>, le <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItemsList" /> et <see cref="P:Microsoft.Office.Interop.Excel.PivotField.VisibleItems(System.Object)" /> sont vides et éléments ne peuvent pas être ajoutés.  Une erreur d’exécution est renvoyée lorsque vous tentez d’ajouter des éléments.</para><para>Dans <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s, ce paramètre est défini sur le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet. Basculement de ce paramètre ne modifie pas l’état du filtre.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCalculated">
@@ -2125,8 +2116,8 @@ En lecture seule.</summary>
           <b>La valeur true</b> si le champ de tableau croisé dynamique ou tableau croisé dynamique est un champ calculé ou un élément. Type <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sources de données OLAP, cette propriété renvoie toujours <b>False</b>.</para>
-          <para />
+          <para>Pour les sources de données, cette propriété renvoie toujours <b>False</b>.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2157,7 +2148,7 @@ En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété renvoie une erreur d’exécution si une source de données de traitement analytique en ligne (OLAP) n’est pas utilisée.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2220,7 +2211,7 @@ En lecture seule.</summary>
         <remarks>
           <para>, Vous pouvez définir cette propriété pour un champ de tableau croisé dynamique ; Toutefois, la ligne vide apparaît uniquement si le champ spécifié est un champ de ligne autre que le champ le plus profond ligne (niveau le plus bas). Sources de données non-OLAP, la valeur de cette propriété ne change pas lorsque le champ est réorganisé ou ajouté au rapport de tableau croisé dynamique.</para>
           <para>Vous ne pouvez pas entrer des données dans la ligne vide dans le rapport de tableau croisé dynamique.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2256,7 +2247,7 @@ En lecture seule.</summary>
         </value>
         <remarks>
           <para>Définir cette propriété sur <b>True</b> (valeur par défaut) n’aura aucun effet visuel immédiat le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> si le <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutForm" /> propriété est définie sur <see cref="F:Microsoft.Office.Interop.Excel.XlLayoutFormType.xlTabular" />, mais elle peut être définie indépendamment.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2289,8 +2280,8 @@ En lecture seule.</summary>
         <summary>Cette propriété renvoie ou définit la manière dont les éléments de tableau croisé dynamique spécifiés s’affichent, au format de tableau ou de plan. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutFormType" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous pouvez définir cette propriété pour un champ de tableau croisé dynamique ; Toutefois, la mise en forme n’apparaît que si le champ spécifié est un champ de ligne autre que celui du (champ de ligne le plus bas niveau. Sources de données non-OLAP, la valeur de cette propriété ne change pas lorsque le champ est réorganisé ou lorsqu’il est ajouté ou supprimé dans le rapport de tableau croisé dynamique.</para>
-          <para />
+          <para>, Vous pouvez définir cette propriété pour un champ de tableau croisé dynamique ; Toutefois, la mise en forme n’apparaît que si le champ spécifié est un champ de ligne autre que celui du (champ de ligne le plus bas niveau. Sources de données non-OLAP, la valeur de cette propriété ne change pas lorsque le champ est réorganisé ou lorsqu’il est ajouté ou supprimé dans le rapport de tableau croisé dynamique.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2324,8 +2315,8 @@ En lecture seule.</summary>
           <b>True</b> si un saut de page est inséré après chaque champ. La valeur par défaut est <b>False</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Bien que vous pouvez définir cette propriété pour un champ de tableau croisé dynamique, les options d’impression s’affiche uniquement si le champ spécifié est un champ de ligne autre que le champ le plus profond ligne (niveau le plus bas). Sources de données non-OLAP, la valeur de cette propriété ne change pas lorsque le champ est réorganisé ou lorsqu’il est ajouté ou supprimé dans le rapport de tableau croisé dynamique.</para>
-          <para />
+          <para>Bien que vous pouvez définir cette propriété pour un champ de tableau croisé dynamique, les options d’impression s’affiche que si le champ spécifié est un champ de ligne autre que le champ le plus profond ligne (niveau le plus bas). Sources de données non-OLAP, la valeur de cette propriété ne change pas lorsque le champ est réorganisé ou lorsqu’il est ajouté ou supprimé dans le rapport de tableau croisé dynamique.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2360,7 +2351,7 @@ En lecture seule.</summary>
         <remarks>
           <para>Vous pouvez définir cette propriété pour un champ de tableau croisé dynamique en format plan ; Toutefois, la mise en forme n’apparaît que si le champ spécifié est un champ de ligne autre que celui du (niveau le plus bas). Sources de données non-OLAP, la valeur de cette propriété ne change pas lorsque le champ est réorganisé ou lorsqu’il est ajouté ou supprimé dans le rapport.</para>
           <para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutForm" /> propriété détermine si le rapport s’affiche au format de tableau ou de plan.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2398,7 +2389,7 @@ En lecture seule.</summary>
           <para>
             <b>Remarque</b>: ce paramètre a un effet visuel uniquement lorsque <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> est définie sur <b>True</b> pour le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />.</para>
           <para>Lorsque <see cref="P:Microsoft.Office.Interop.Excel.PivotField.MemberPropertyCaption" /> est défini, le paramètre est mémorisé tout en basculant sur la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> propriété.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2492,7 +2483,7 @@ En lecture seule.</summary>
         <remarks>
           <para>Pour le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> d’objet, vous pouvez définir la propriété <b>NumberFormat</b> uniquement pour un champ de données.</para>
           <para>Le format de code est la même chaîne que l’option de Codes de Format dans la boîte de dialogue Format de cellule. La fonction <b>Format</b> utilise des chaînes de code de format différentes <b>NumberFormat</b> et <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.NumberFormatLocal" /> propriétés.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2524,10 +2515,7 @@ En lecture seule.</summary>
       <Docs>
         <summary>L’emplacement du champ dans le rapport de tableau croisé dynamique spécifié. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" />.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sources de données OLAP, la définition de cette propriété pour un champ dans une hiérarchie définit l’orientation pour les autres champs dans la même hiérarchie. Les champs de dimension peuvent uniquement être orientés dans la ligne, colonne et zones de champ de page du rapport de tableau croisé dynamique. Les champs de mesure peuvent uniquement être orientés dans la zone de données. Si un champ de hiérarchie ou données <b>xlHidden</b> supprime la hiérarchie ou un champ à partir du rapport de tableau croisé dynamique.</para>
-          <para />
-        </remarks>
+        <remarks>Sources de données <para>pour OLAP, définissez cette propriété pour un champ dans une hiérarchie définit l’orientation pour les autres champs dans la même hiérarchie. Les champs de dimension peuvent uniquement être orientés dans la ligne, colonne et zones de champ de page du rapport de tableau croisé dynamique. Les champs de mesure peuvent uniquement être orientés dans la zone de données. Si un champ de hiérarchie ou données <b>xlHidden</b> supprime la hiérarchie ou un champ à partir du rapport de tableau croisé dynamique.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -2585,7 +2573,7 @@ En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2620,7 +2608,7 @@ En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2680,8 +2668,8 @@ En lecture seule.</summary>
         <summary>Renvoie un objet qui représente soit un seul élément de tableau croisé dynamique (un <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> objet), soit une collection de tous les éléments visibles et masquées (un <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> objet) dans le champ spécifié. En lecture seule.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Sources de données OLAP, la collection est indexée par le nom unique (nom renvoyé par la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> propriété), et non par le nom complet.</para>
-          <para />
+          <para>Pour les sources de données OLAP, la collection est indexée par le nom unique (nom renvoyé par la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> propriété), et non par le nom complet.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2747,7 +2735,7 @@ En lecture seule.</summary>
         <remarks>
           <para>Définition de cette propriété réorganise l’ordre des propriétés pour ce champ de cube. Cette propriété est basé sur un. La plage autorisée est comprise entre 1 et le nombre maximal de champs de propriété membre affichés pour la hiérarchie.</para>
           <para>Si le <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IsMemberProperty" /> propriété a la <b>valeur False</b>, à l’aide de la <b>PropertyOrder</b> propriété engendre une erreur d’exécution.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2779,7 +2767,7 @@ En lecture seule.</summary>
         <remarks>
           <para>Valide uniquement pour les champs qui sont des champs de propriété membre.</para>
           <para>Si le <see cref="P:Microsoft.Office.Interop.Excel.PivotField.IsMemberProperty" /> propriété a la <b>valeur False</b>, à l’aide de la <b>PropertyParentField</b> propriété renverra une erreur d’exécution.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2816,7 +2804,7 @@ En lecture seule.</summary>
           <para>En lecture-écriture.</para>
           <para>
             <b>la valeur true</b> si les étiquettes d’élément sont répétées pour le champ PivotField spécifié ; sinon, <b>false</b>. Le paramètre de la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.RepeatLabels" /> propriété correspond à la case à cocher Répéter élément étiquettes sur la mise en page &amp; onglet Impression de la boîte de dialogue Paramètres de champ pour un champ dans un PivotTable.To spécifier s’il faut répéter les étiquettes d’élément pour tous les champs dans un tableau croisé dynamique dans une seule opération, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" /> méthode.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2866,7 +2854,7 @@ En lecture seule.</summary>
               <description>Le champ est un type de données qui ne peut pas être serveur (un champ Mémo ou objet OLE).</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2899,8 +2887,8 @@ En lecture seule.</summary>
         <summary>Cette propriété a la valeur <b>True</b> si tous les éléments du rapport de tableau croisé dynamique sont affichés (même ceux sans données de synthèse). La valeur par défaut est <b>False</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sources de données OLAP, la valeur est toujours <b>False</b>.</para>
-          <para />
+          <para>Pour les sources de données OLAP, la valeur est toujours <b>False</b>.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2966,7 +2954,7 @@ En lecture seule.</summary>
         </value>
         <remarks>
           <para>La propriété renvoie <b>la valeur True</b> si les <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> est actuellement visible et renvoie la <b>valeur False</b> si n’est pas visible. La visibilité de la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> est déterminée par ou non la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> légende est visible dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> (non compact) sous forme de tableau.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2998,8 +2986,8 @@ En lecture seule.</summary>
           <b>Chaîne</b>
         </value>
         <remarks>
-          <para>Vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Excel.PivotField.Name" /> ou <see cref="T:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> pour non-OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s.</para>
-          <para />
+          <para>Que vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Excel.PivotField.Name" /> ou <see cref="T:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> pour non-OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3062,7 +3050,7 @@ En lecture seule.</summary>
         <remarks>
           <para>La propriété <b>StandardFormula</b> affecte principalement les noms d’éléments avec date ou numéro de la mise en forme. Il fournit un moyen pour spécifier ou demander une formule pour un élément calculé donné.</para>
           <para>La propriété <b>StandardFormula</b> est « internationale, » tandis que la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Formula" /> propriété n’est pas.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3129,10 +3117,7 @@ En lecture seule.</summary>
         <param name="Index">Facultatif <b>Object</b>. Index de sous-total, comme indiqué dans le tableau suivant. Si cet argument est omis, la méthode <b>Subtotals</b> renvoie un tableau qui contient une valeur <b>booléenne</b> pour chaque sous-total. Nums9StdDev10StdDevp11Var12VarpIf IndexMeaning1Automatic2Sum3Count4Average5Max6Min7Product8Count un index est <b>True</b>, le champ affiche le sous-total. Si l’index 1 (automatique) a la <b>valeur True</b>, toutes les autres valeurs sont définies sur <b>False</b>.</param>
         <summary>Cette propriété renvoie ou définit les sous-totaux affichés avec le champ spécifié. Valide uniquement pour les champs de données non. <b>Objet</b> en lecture/écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sources de données OLAP, <paramref name="Index" /> peut uniquement renvoyer ou avoir la valeur 1 (automatique). Le tableau renvoyé contient toujours <b>la valeur True</b> ou <b>False</b> pour le premier élément de tableau, et qu’il contient la <b>valeur False</b> pour tous les autres éléments. Un tableau des valeurs des éléments qui sont toutes <b>False</b> indique qu’il n’existe aucun sous-total.</para>
-          <para />
-        </remarks>
+        <remarks>Sources de données <para>pour OLAP, <paramref name="Index" /> peut uniquement renvoyer ou avoir la valeur 1 (automatique). Le tableau renvoyé contient toujours <b>la valeur True</b> ou <b>False</b> pour le premier élément de tableau, et qu’il contient la <b>valeur False</b> pour tous les autres éléments. Un tableau des valeurs des éléments qui sont toutes <b>False</b> indique qu’il n’existe aucun sous-total.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TotalLevels">
@@ -3162,7 +3147,7 @@ En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Tous les champs dans un ensemble de champs groupés ont la même valeur <b>TotalLevels</b> .</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3200,7 +3185,7 @@ En lecture seule.</summary>
           <para>Si <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> est définie sur <b>True</b> pour une <see cref="P:Microsoft.Office.Interop.Excel.PivotField" />, puis <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> Spécifie le légende de propriété de membre à afficher. Si aucun n’est spécifié, la première propriété de membre de ce <see cref="P:Microsoft.Office.Interop.Excel.PivotField" /> (dans l’ordre de source de données) s’affiche en tant que légende pour les éléments de ce <see cref="P:Microsoft.Office.Interop.Excel.PivotField" />.</para>
           <para>Si <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> est défini sur <b>False</b>, puis la mise à jour <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> légendes sont utilisés pour le <see cref="P:Microsoft.Office.Interop.Excel.PivotField" />.</para>
           <para>Si vous tentez de définir <see cref="P:Microsoft.Office.Interop.Excel.PivotField.UseMemberPropertyAsCaption" /> sur <b>True</b> pour un <see cref="P:Microsoft.Office.Interop.Excel.PivotField" /> avec aucune propriété de membre, une erreur d’exécution est renvoyée. Pour <see cref="P:Microsoft.Office.Interop.Excel.PivotField" />s avec aucune propriété de membre, propriété seront toujours à <b>False</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3264,10 +3249,7 @@ En lecture seule.</summary>
         <param name="Index">Facultatif <b>Object</b>. Numéro ou nom de l'élément à renvoyer (il peut s'agir d'un tableau pour indiquer plusieurs éléments).</param>
         <summary>Renvoie un objet qui représente soit un seul élément de tableau croisé dynamique visible (un <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> objet), soit une collection de tous les éléments visibles (un <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> objet) dans le champ spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sources de données OLAP, cette propriété est en lecture seule et renvoie toujours <b>la valeur True</b>. Il n’existe pas d’éléments masqués.</para>
-          <para />
-        </remarks>
+        <remarks>Sources de <para>pour les données OLAP, cette propriété est en lecture seule et renvoie toujours <b>la valeur True</b>. Aucun élément masqué.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleItemsList">
@@ -3302,7 +3284,7 @@ En lecture seule.</summary>
         </value>
         <remarks>
           <para>Cette propriété s’applique à OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s uniquement.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

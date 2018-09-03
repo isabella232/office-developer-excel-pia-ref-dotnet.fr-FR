@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20578476" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface UniqueValues" />
@@ -62,7 +62,7 @@
         </value>
         <remarks>
           <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -124,8 +124,8 @@
           <b>Borders</b>
         </value>
         <remarks>
-          <para>Pour un objet de mise en forme conditionnelle, vous pouvez uniquement définir les propriétés des bordures côté de la cellule, bas et haut.</para>
-          <para />
+          <para>Pour un objet de mise en forme conditionnelle, vous ne pouvez définir les propriétés des bordures de côté de la cellule en haut, bas et.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -158,7 +158,7 @@
         </value>
         <remarks>
           <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -248,8 +248,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.Font" />
         </value>
         <remarks>
-          <para>Pas toutes les propriétés de l’objet <b>Font</b> sont prises en charge pour un objet de mise en forme conditionnelle. Vous pouvez définir la police d’attributs de style, soulignement, couleur et barré.</para>
-          <para />
+          <para>N’est pas un objet de mise en forme conditionnelle sont prises en charge toutes les propriétés de l’objet <b>Font</b> . Vous pouvez définir la police des attributs de style, soulignement, couleur et barré.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -310,7 +310,7 @@
         <remarks>
           <para>La plage doit se trouver dans le style de référence A1 et être entièrement dans la feuille qui est le parent de le <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. Il peut inclure l’opérateur de plage (le signe deux-points), l’opérateur d’intersection (un espace) ou l’opérateur union (une virgule). Signe dollar peut également être utilisé, mais ils sont ignorés.</para>
           <para>Vous pouvez également utiliser un nom local défini dans n’importe quelle partie de la plage, mais le nom doit être dans la langue de la macro.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -345,8 +345,8 @@
           <b>Objet</b>
         </value>
         <remarks>
-          <para>Le format numérique est spécifié à l’aide des mêmes codes affichées sous l’onglet numéro de la boîte de dialogue Format de cellule. Vous pouvez utiliser un format numérique intégré, par exemple « General », ou créer un format numérique personnalisé.</para>
-          <para />
+          <para>Le format de nombre est spécifié en utilisant les mêmes codes de format affichées sous l’onglet numéro de la boîte de dialogue Format de cellule. Vous pouvez utiliser un format numérique intégré, par exemple « General », ou créer un format numérique personnalisé.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -411,8 +411,8 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Lorsque vous définissez la priorité, la valeur doit être un nombre entier compris entre 1 et le nombre total de règles conditionnelles de mise en forme sur la feuille de calcul. La priorité doit être une valeur unique pour toutes les règles de la feuille de calcul, afin que la modification de la priorité de la règle de mise en forme conditionnelle spécifiée peut entraîner la valeur de priorité des autres règles dans la feuille de calcul.</para>
-          <para />
+          <para>Lors de la définition de la priorité, la valeur doit être un nombre entier compris entre 1 et le nombre total de règles conditionnelles de mise en forme sur la feuille de calcul. La priorité doit être une valeur unique pour toutes les règles de la feuille de calcul, donc si vous modifiez la priorité de la règle de mise en forme conditionnelle spécifiée risque la valeur de priorité des autres règles dans la feuille de calcul.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -478,7 +478,7 @@
         </value>
         <remarks>
           <para>La valeur par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, qui définit l’étendue à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.UniqueValues.AppliesTo" /> propriété.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -508,7 +508,7 @@
           <para>Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, si la règle n’a pas été précédemment définie à priorité « 1 », cette méthode provoque la priorité de toutes les autres règles existantes sur la feuille de calcul est augmenté de 1.</para>
           <para>
             <b>Remarque</b>: niveaux de priorité concernant les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -538,7 +538,7 @@
           <para>La valeur effective de la priorité est égale au nombre total de règles conditionnelles de mise en forme sur la feuille de calcul. Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, cette méthode provoque la priorité des règles qui a une valeur de priorité supérieure à cette règle doit être augmenté d’une unité.</para>
           <para>
             <b>Remarque</b>: niveaux de priorité concernant les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -574,7 +574,7 @@
         </value>
         <remarks>
           <para>Pour prendre en charge la compatibilité descendante, la valeur par défaut de cette propriété est <b>True</b>, ce qui correspond au comportement contraire à celui d’une mise en forme créée dans l’interface utilisateur de règle.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -607,7 +607,7 @@
         </value>
         <remarks>
           <para>Cette propriété renvoie toujours une valeur <b>entière</b> de « 8 », ce qui équivaut à <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlUniqueValues" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

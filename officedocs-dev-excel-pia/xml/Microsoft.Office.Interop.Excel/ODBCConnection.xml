@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20578049" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ODBCConnection" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>Une connexion ODBC peut être stockée dans un classeur Excel.  Lorsque Micrososft Excel ouvre le classeur, Excel crée une copie en mémoire de la connexion ODBC en tant que la <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" /> objet.</para>
       <para>Un <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" /> objet contient des informations relatives à la connexion, telles que le nom du serveur pour se connecter à et le nom des objets à ouvrir sur ce serveur.  Si vous le souhaitez, le <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" /> objet peut également inclure des informations d’authentification ou une commande qui est transmis au serveur et l’exécution (par exemple, une instruction SELECT doit être exécutée par SQL Server).</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -68,10 +68,7 @@
         <value>
           <b>Boolean</b>
         </value>
-        <remarks>
-          <para>Lorsque cette propriété a la <b>valeur True</b>, le fichier de connexion sera utilisé pour établir la connexion à la source de données.  Si la connexion incorporée dans le classeur est différente du fichier de connexion externe, la connexion incorporée est ignorée et le fichier de connexion externe sera la seule version considéré comme.</para>
-          <para />
-        </remarks>
+        <remarks>Vous permettra de <para>Lorsque cette propriété a <b>la valeur True</b>, le fichier de connexion pour établir la connexion à la source de données.  Si la connexion incorporée dans le classeur est différente du fichier de connexion externe, la connexion incorporée est ignorée et le fichier de connexion externe sera la seule version considérés comme étant.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -102,7 +99,7 @@
           <b>Application</b> (voir ci-dessus)</value>
         <remarks>
           <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -163,7 +160,7 @@
         <summary>Annule toutes les opérations d’actualisation en cours pour la connexion ODBC spécifiée.</summary>
         <remarks>
           <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Refreshing" /> propriété pour déterminer si une opération d’actualisation est actuellement en cours.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -200,7 +197,7 @@
         <remarks>
           <para>Vous devez utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" /> propriété au lieu de la propriété <b>SQL</b> , désormais destinée principalement pour assurer la compatibilité avec les versions antérieures de Microsoft Excel. Si vous utilisez les deux propriétés, la <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" /> valeur de la propriété est prioritaire.</para>
           <para>La <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandType" /> propriété décrit la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" /> propriété.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -235,8 +232,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />
         </value>
         <remarks>
-          <para>La constante renvoyée ou définie décrit la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" /> propriété. La valeur par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />.</para>
-          <para />
+          <para>La constante renvoyée ou définie décrit la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" /> propriété. La valeur par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />. </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -271,8 +268,8 @@
           <b>Objet</b>
         </value>
         <remarks>
-          <para>Définition de la <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" /> propriété ne déclenche pas immédiatement la connexion à la source de données. Vous devez utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" /> méthode à établir la connexion et récupérer les données.</para>
-          <para />
+          <para>Paramètre le <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" /> propriété ne déclenche pas immédiatement la connexion à la source de données. Vous devez utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" /> méthode à établir la connexion et récupérer les données.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -305,7 +302,7 @@
         </value>
         <remarks>
           <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.  Le <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Creator" /> propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -341,8 +338,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.RefreshOnFileOpen" /> propriété est ignorée si la <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.EnableRefresh" /> propriété est définie sur <b>False</b>. Sources de données OLAP, la définition de cette propriété sur <b>False</b> désactive les mises à jour.</para>
-          <para />
+          <para>La <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.RefreshOnFileOpen" /> propriété est ignorée si la <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.EnableRefresh" /> propriété est définie sur <b>False</b>. Sources de données OLAP, la définition de cette propriété sur <b>False</b> désactive les mises à jour.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -405,7 +402,7 @@
           <para>Si la requête nécessite des paramètres, le <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> collection doit être initialisée avec les informations de liaison des paramètres avant la <see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" /> méthode est appelée. Si les paramètres insuffisants ont été liés, la <see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" /> Échec de la méthode avec le paramètre l’exception. Si les paramètres sont configurés pour demander leurs valeurs, boîtes de dialogue s’affichent à l’utilisateur, quel que soit le paramétrage de la <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriété. Si l’utilisateur annule une boîte de dialogue paramètre du <see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" /> méthode s’arrête et renvoie la <b>valeur False</b>. Si les paramètres supplémentaires liés à la <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> collection, ces paramètres supplémentaires sont ignorés.</para>
           <para>La <see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" /> méthode renvoie <b>la valeur True</b> si la requête est correctement terminée ou démarrée ; elle renvoie <b>False</b> si l’utilisateur annule une boîte de dialogue connexion ou paramètre.</para>
           <para>Pour voir si le nombre de lignes extraites dépasse le nombre de lignes disponibles sur la feuille de calcul, examinez la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> propriété. Cette propriété est initialisée à chaque fois que le <see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" /> méthode est appelée.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -437,8 +434,8 @@
           <b>DateTime</b>
         </value>
         <remarks>
-          <para>Sources de données OLAP, cette propriété est mis à jour après chaque requête.</para>
-          <para />
+          <para>Pour les sources de données OLAP, cette propriété est mis à jour après chaque requête.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -471,7 +468,7 @@
         </value>
         <remarks>
           <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.CancelRefresh" /> méthode pour annuler des requêtes d’arrière-plan.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -507,7 +504,7 @@
         </value>
         <remarks>
           <para>Les connexions ne sont pas automatiquement actualisées lorsque vous ouvrez le classeur à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" /> méthode pour actualiser les données une fois que le classeur est ouvert.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -542,8 +539,8 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Définition de la période de 0 (zéro) désactive l’actualisation chronométrée automatique et équivaut à la définition de cette propriété sur <b>Null</b>.  La valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.RefreshPeriod" /> propriété peut être un entier compris entre 0 et 32 767.</para>
-          <para />
+          <para>Définition d’une période à 0 (zéro) désactive l’actualisation chronométrée automatique et équivaut à la définition de cette propriété sur <b>Null</b>.  La valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.RefreshPeriod" /> propriété peut être un entier compris entre 0 et 32 767.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -580,7 +577,7 @@
         <remarks>
           <para>Si vous utilisez une connectivité robuste, lorsque Microsoft Excel ne peut pas établir une connexion en utilisant les informations de connexion de classeur, Excel vérifie si la connexion de classeur a un chemin d’accès à un fichier de connexion externe.  Si c’est le cas, Excel ouvre le fichier de connexion externe et essayez de vous connecter en utilisant les informations contenues dans le fichier de connexion externe.  Si une connexion peut être établie après avoir utilisé le fichier de connexion externe, Excel met ensuite à jour objet de connexion du classeur.  </para>
           <para>Cela offre une connectivité robuste dans les scénarios où un service informatique gère et met à jour les connexions dans un emplacement central, permettant le classeur d’un utilisateur à extraire automatiquement les mises à jour chaque fois que la version précédente de la Échec de la connexion (mise en cache dans le classeur). </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -647,8 +644,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Cette propriété est utilisée dans les requêtes ODBC et Oledb, ainsi que par les tableaux croisés dynamiques et les tables de requêtes.</para>
-          <para />
+          <para>Cette propriété est utilisée dans les requêtes ODBC et Oledb, ainsi que par les tableaux croisés dynamiques et QueryTables.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -782,8 +779,8 @@
         <remarks>
           <list type="table">
             <item>
-              <term>Liste Microsoft Excel ou base de données</term>
-              <description>la référence de cellule, sous forme de texte.</description>
+              <term>Liste de Microsoft Excel ou une base de données</term>
+              <description>La référence de cellule, sous forme de texte.</description>
             </item>
             <item>
               <term>Source de données externe</term>
@@ -799,7 +796,7 @@
             </item>
           </list>
           <para>Cette propriété n’est pas disponible pour les sources de données OLE DB.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -834,8 +831,8 @@
           <b>Chaîne</b>
         </value>
         <remarks>
-          <para>Pour les sources de données de fichiers (par exemple, Access) le <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.SourceDataFile" /> propriété contient un chemin d’accès complet au fichier de données source. Elle a la valeur null pour les sources de données sur le serveur (par exemple, SQL Server). Le <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.SourceDataFile" /> propriété a la valeur null si la <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" /> propriété est modifiée par programme.</para>
-          <para />
+          <para>Des sources de données de fichiers (par exemple, Access) le <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.SourceDataFile" /> propriété contient un chemin d’accès complet au fichier de données source. Elle a la valeur null pour les sources de données sur le serveur (par exemple, SQL Server). Le <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.SourceDataFile" /> propriété a la valeur null si la <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" /> propriété est modifiée par programme.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
