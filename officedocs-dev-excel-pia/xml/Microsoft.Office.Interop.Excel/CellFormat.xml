@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20581171" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CellFormat" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.FindFormat" /> ou <see cref="P:Microsoft.Office.Interop.Excel._Application.ReplaceFormat" /> propriétés de la <see cref="P:Microsoft.Office.Interop.Excel._Application.Application" /> object pour renvoyer un objet <b>CellFormat</b> .</para>
       <para>Que vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Borders" />, <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Font" />, ou <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Interior" /> propriétés de l’objet <b>CellFormat</b> , pour définir les critères de recherche pour le format des cellules.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -67,8 +67,8 @@
           <b>La valeur true</b> si le texte est automatiquement mis en retrait lorsque l’alignement du texte dans une cellule est défini sur une distribution égale horizontalement ou verticalement.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour définir l’alignement du texte sur une distribution égale, vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.VerticalAlignment" /> propriété <b>xlVAlignDistributed</b> lorsque la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Orientation" /> propriété est <b>xlVertical</b>et vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.HorizontalAlignment" /><b>soit distribué de manière</b> lorsque le valeur de la propriété <b>Orientation</b> est <b>xlHorizontal</b>.</para>
-          <para />
+          <para>Pour définir l’alignement du texte égale, vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.VerticalAlignment" /> propriété <b>xlVAlignDistributed</b> lorsque la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Orientation" /> propriété est <b>xlVertical</b>et vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.HorizontalAlignment" /><b>soit distribué de manière</b> lors de la valeur de la propriété <b>Orientation</b> est <b>xlHorizontal</b>.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -183,7 +183,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para /></remarks>
+          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -248,7 +248,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Ne confondez pas cette propriété avec la <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> propriété. La formule sera masquée pas si le classeur est protégé et que la feuille de calcul n’est pas ; elle sera masquée uniquement si la feuille de calcul est protégée.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -298,7 +298,7 @@
             <b>xlRight</b>
           </para>
           <para>Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -331,8 +331,8 @@
         <summary>Cette propriété renvoie ou définit le niveau de retrait pour la cellule ou la plage. Peut être un entier compris entre 0 et 15.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>À l’aide de cette propriété pour définir le niveau de retrait à un nombre inférieur à 0 (zéro) ou supérieure à 15 provoque une erreur.</para>
-          <para />
+          <para>à l’aide de cette propriété pour définir le niveau de retrait à un nombre inférieur à 0 (zéro) ou supérieure à 15 provoque une erreur.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -430,7 +430,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Lorsque vous sélectionnez une plage qui contient des cellules fusionnées, la sélection qui en résulte peut être différente de la sélection prévue. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> pour vérifier l’adresse de la plage sélectionnée.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -463,8 +463,8 @@
         <summary>Cette propriété renvoie ou définit le code du format de l'objet. Renvoie la <b>valeur Null</b> si toutes les cellules de la plage spécifiée n’ont pas le même format de nombre.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le code de format est la même chaîne que l’option de Codes de Format dans la boîte de dialogue Format de cellule. La fonction Visual Basic <b>Format</b> utilise des chaînes de code de format différentes <b>NumberFormat</b> et <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> propriétés.</para>
-          <para />
+          <para>Le format de code est la même chaîne que l’option de Codes de Format dans la boîte de dialogue Format de cellule. La fonction Visual Basic <b>Format</b> utilise des chaînes de code de format différentes <b>NumberFormat</b> et <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> propriétés.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -497,8 +497,8 @@
         <summary>Cette propriété renvoie ou définit le code du format de l'objet sous forme de chaîne dans la langue de l'utilisateur.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La fonction Visual Basic <b>Format</b> utilise des chaînes de code de format différentes la <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormat" /> et propriétés <b>NumberFormatLocal</b> .</para>
-          <para />
+          <para>Fonction le Visual Basic <b>Format</b> utilise des chaînes de code de format différentes la <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormat" /> et propriétés <b>NumberFormatLocal</b> .</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -545,7 +545,7 @@
             <b>xlVertical</b>
           </para>
           <para>pour les sources de données OLAP, définissez cette propriété pour un champ dans une hiérarchie définit la orientation pour les autres champs dans la même hiérarchie. Les champs de dimension peuvent uniquement être orientés dans la ligne, colonne et zones de champ de page du rapport de tableau croisé dynamique. Les champs de mesure peuvent uniquement être orientés dans la zone de données. Si un champ de hiérarchie ou données <b>xlHidden</b> supprime la hiérarchie ou un champ à partir du rapport de tableau croisé dynamique.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -654,7 +654,7 @@
           <para>
             <b>xlCenter</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -688,8 +688,8 @@
           <b>La valeur true</b> si Microsoft Excel renvoie le texte à la ligne dans l’objet. Renvoie la <b>valeur Null</b> si la plage spécifiée contient des cellules qui habiller avec du texte et autres cellules qui ne.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Microsoft Excel modifie éventuellement la hauteur de ligne de la plage, si nécessaire, pour prendre en charge le texte de la plage.</para>
-          <para />
+          <para>Microsoft Excel modifie la hauteur de ligne de la plage, si nécessaire, pour prendre en charge le texte de la plage.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

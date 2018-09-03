@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20581066" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
@@ -35,7 +35,7 @@
       <para>
         <b>Remarque</b>: la forme exacte de la connexion dépend du mécanisme utilisé pour récupérer des données – connexions ODBC, les connexions OLEDB et les requêtes Web contiendront des informations différentes.</para>
       <para>Une connexion peut-être également être stockée dans un fichier de connexion distinct.  La plupart des connexions dans un classeur Excel incluent un pointeur vers un fichier de connexion externe.  Fichiers de connexion ont des extensions clairement les étiquettent en tant que fichiers de connexion (*. ODC, *. IQY, etc.) et peut se trouver sur l’ordinateur local de l’utilisateur ou d’autres emplacements connus ou approuvés, tel que WSS (bibliothèque de connexions de données), ou d’autres serveurs d’entreprise.  Fichiers de connexion permettent à plusieurs utilisateurs dans la même organisation à réutiliser les connexions.  Les administrateurs réseau sont en mesure de modifier la façon dont l’organisation toute entière se connecte à une source de données principale en modifiant un fichier de connexion unique.  Un fichier de connexion n’est pas toujours requis lors de la connexion à une source de données externes.</para> Noms de connexion 
-      <para>sont des chaînes qui identifient les connexions au sein du classeur dans lequel elles sont utilisées.     Il existe des autres propriétés d’une connexion qui ne sont pas uniques.  Chaque fois qu’une formule dans Excel prend un argument qui est une connexion, il sera suffisant de faire référence au nom de cette connexion, soit directement (sous forme de chaîne) ou indirectement (par référence à une cellule qui contient le nom de connexion sous forme de chaîne.)</para><para /></remarks>
+      <para>sont des chaînes qui identifient les connexions au sein du classeur dans lequel elles sont utilisées.     Il existe des autres propriétés d’une connexion qui ne sont pas uniques.  Chaque fois qu’une formule dans Excel prend un argument qui est une connexion, il sera suffisant de faire référence au nom de cette connexion, soit directement (sous forme de chaîne) ou indirectement (par référence à une cellule qui contient le nom de connexion sous forme de chaîne.)</para><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,7 +102,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -133,7 +133,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -187,7 +187,7 @@
       <Parameters />
       <Docs>
         <summary>Cette méthode supprime une connexion de classeur.</summary>
-        <remarks>Utilisez cette méthode pour supprimer une connexion de données externes <para>. Cette méthode ne s’applique pas aux liens vers d’autres classeurs. </para><para>Suppression d’une connexion ne supprime ni supprimer tous les objets qui ont été à l’aide de cette connexion.  Suppression d’une connexion n’entraîne pas un des fichiers de connexion d’être supprimés du système de fichiers.  Si vous modifiez un de ces objets pour utiliser une autre connexion, tout va commencer à travailler à nouveau.</para><para>Objets qui utilisent une connexion supprimée se comportent comme si la connexion n’a pas pu être établie.  </para><para /></remarks>
+        <remarks>Utilisez cette méthode pour supprimer une connexion de données externes <para>. Cette méthode ne s’applique pas aux liens vers d’autres classeurs. </para><para>Suppression d’une connexion ne supprime ni supprimer tous les objets qui ont été à l’aide de cette connexion.  Suppression d’une connexion n’entraîne pas un des fichiers de connexion d’être supprimés du système de fichiers.  Si vous modifiez un de ces objets pour utiliser une autre connexion, tout va commencer à travailler à nouveau.</para><para>Objets qui utilisent une connexion supprimée se comportent comme si la connexion n’a pas pu être établie.  </para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -218,7 +218,7 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit une brève description pour une <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objet. Valeur <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>Boîte de dialogue <para>dans les propriétés de connexion, l’utilisateur peut modifier le nom de la connexion ou la description.  Modification du nom et la description dans cette boîte de dialogue modifie ces champs seulement dans l’objet de connexion Excel.</para><para>La taille maximale d’une description est de 255 caractères.  Si l’utilisateur spécifie une description dans un fichier de connexion de plus de 255 caractères, la description est tronquée pour correspondre à la limite de 255 caractères.</para><para /></remarks>
+        <remarks>Boîte de dialogue <para>dans les propriétés de connexion, l’utilisateur peut modifier le nom de la connexion ou la description.  Modification du nom et la description dans cette boîte de dialogue modifie ces champs seulement dans l’objet de connexion Excel.</para><para>La taille maximale d’une description est de 255 caractères.  Si l’utilisateur spécifie une description dans un fichier de connexion de plus de 255 caractères, la description est tronquée pour correspondre à la limite de 255 caractères.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InModel">
@@ -248,7 +248,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Doit avoir la valeur false pour les connexions héritées.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -476,7 +476,7 @@
         <remarks>
           <para>Si le <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriété a la <b>valeur False</b>, les boîtes de dialogue ne s’affichent pas et la méthode <b>Refresh</b> échoue à l’exception des informations de connexion insuffisantes.</para>
           <para>Échec d’actualisation d’une connexion n’auront pas d’incidence sur les opérations d’actualisation des autres connexions.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

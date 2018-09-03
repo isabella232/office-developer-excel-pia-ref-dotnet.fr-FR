@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579974" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _OLEObject" />
@@ -156,7 +156,7 @@
         <remarks>
           <para>Cette propriété est ignorée par les contrôles ActiveX. Les contrôles ActiveX sont toujours chargés lorsqu’un classeur est ouvert.</para>
           <para>Pour la plupart des types d’objets OLE, cette propriété ne doit pas être définie sur <b>True</b>. Par défaut, la propriété <b>AutoLoad</b> est définie sur <b>False</b> pour les nouveaux objets OLE ; Cela enregistre l’heure et la mémoire lors de la charge des classeurs Microsoft Excel. L’avantage de charger automatiquement OLE objets est que, pour les objets qui représentent des données volatiles, des liens vers la source de données peuvent être rétablies immédiatement et les objets peuvent être affichés à nouveau si nécessaire.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -355,10 +355,7 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <b>xlCreatorCode</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para />
-        </remarks>
+        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -385,8 +382,8 @@
         <summary>Cette méthode coupe l'objet et le place dans le Presse-papiers ou colle l'objet à l'emplacement spécifié.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Uniquement les graphiques incorporés peuvent être coupés.</para>
-          <para />
+          <para>Pouvant couper que des graphiques incorporés.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -589,8 +586,8 @@
         <summary>Distance, en points, du bord gauche de l'objet au bord gauche de la colonne A (dans une feuille de calcul) ou au bord gauche de la zone de graphique (dans un graphique). En lecture/écriture <b>Double</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la fenêtre est réduite, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Définir cette propriété sur 0 (zéro) rend la fenêtre un petit peu plus petite qu’il serait si la fenêtre d’application avait été agrandie. En d’autres termes, si la propriété <b>Left</b> est 0 (zéro), la bordure gauche de la fenêtre Microsoft Excel principale sera peine visible à l’écran.</para>
-          <para />
+          <para>Si la fenêtre est agrandie, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Définir cette propriété sur 0 (zéro) rend la fenêtre un petit peu plus petite qu’il serait si la fenêtre d’application avait été agrandie. En d’autres termes, si la propriété <b>Left</b> est 0 (zéro), la bordure gauche de la fenêtre Microsoft Excel principale peine sera visible à l’écran.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -624,7 +621,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Vous ne pouvez pas utiliser cette propriété avec des zones de liste à sélection multiple.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -659,7 +656,7 @@
         <remarks>
           <para>Microsoft Excel lit le contenu de chaque cellule de la plage et insère les valeurs de cellule dans la zone de liste. La liste de suivi des modifications dans les cellules de la plage.</para>
           <para>Si la liste dans la zone de liste a été créée avec le <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> méthode, cette propriété renvoie une chaîne vide (« »).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -817,8 +814,8 @@
         <summary>Cette propriété renvoie ou définit le nom d’une macro qui s’exécute lorsque l’utilisateur clique sur l’objet spécifié. Valeur <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définir cette propriété pour un menu élément remplace personnalisés informations d’aide pour l’élément de menu avec les informations de la macro affectée.</para>
-          <para />
+          <para>Définition de cette propriété pour un élément de menu remplace l’aide personnalisée définie pour l’élément de menu avec les informations de paramétrer les informations de la macro affectée.</para>
+          <para></para>
         </remarks>
         <example>
           <para>Cet exemple montre comment obliger Microsoft Excel exécuter la procédure ShapeClick chaque fois que la forme 1 est sélectionnée.</para>
@@ -907,7 +904,7 @@
           <para>
             <b>xlMoveAndSize</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1317,8 +1314,8 @@
         <summary>Renvoie la position de l’ordre de plan de l’objet. Valeur <b>Integer</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Dans toute la collection d’objets, l’objet à l’arrière de l’axe z est <paramref name="collection" />(1), et l’objet à l’avant de l’axe z est <paramref name="collection" />(<paramref name="collection" />.<b> Count</b>).</para>
-          <para />
+          <para>Dans n’importe quelle collection d’objets, l’objet à l’arrière de l’axe z est <paramref name="collection" />(1), et l’objet à l’avant de l’axe z est <paramref name="collection" />(<paramref name="collection" />.<b> Count</b>).</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
