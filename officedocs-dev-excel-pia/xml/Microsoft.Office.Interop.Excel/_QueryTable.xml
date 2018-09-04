@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20587842" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _QueryTable" />
@@ -63,8 +63,8 @@
           <b>La valeur true</b> si les largeurs de colonne sont automatiquement ajustées pour les meilleurs ajuste chaque fois que vous actualisez la table de requête spécifiée ou le mappage XML. <b>False</b> si les largeurs de colonne ne sont pas automatiquement ajustées à chaque actualisation. La valeur par défaut est <b>True</b>. En lecture/écriture <b>booléen</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Largeur maximale de colonne correspond aux deux tiers la largeur de l’écran.</para>
-          <para />
+          <para>La largeur maximale de colonne correspond aux deux tiers la largeur de l’écran.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -183,7 +183,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Pour les sources OLE DB, la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.CommandType" /> propriété décrit la valeur de la propriété <b>CommandText</b> .</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -218,7 +218,7 @@
         <remarks>
           <para>Vous pouvez définir la propriété <b>CommandType</b> que si la valeur de la propriété <b>QueryType</b> pour la table de requête ou le cache de tableau croisé dynamique est <b>xlOLEDBQuery</b>.</para>
           <para>Si la valeur de la propriété <b>CommandType</b> est <b>xlCmdCube</b>, vous ne pouvez pas modifier cette valeur si un rapport de tableau croisé dynamique associé à la table de requête.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -256,7 +256,7 @@
           <para>Lorsque vous utilisez un fichier de cube hors connexion, définissez la <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> propriété <b>et utiliser</b> le <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> propriété au lieu de la propriété <b>Connection</b> .</para>
           <para>Pour plus d’informations sur la syntaxe de chaîne de connexion, voir la <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> collection et <see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> collection.</para>
           <para>, Vous pouvez également accéder à une source de données directement à l’aide de Microsoft ActiveX Data Objects (ADO).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -285,10 +285,7 @@
       <Docs>
         <summary>Renvoie une constante dans la <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> énumération qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para />
-        </remarks>
+        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -375,7 +372,7 @@
         <remarks>
           <para>La propriété <b>EditWebPage</b> renvoie la <b>valeur Null</b> si non définie. La propriété <b>EditWebPage</b> n’est significative que si le type de requête est <b>xlWebQuery</b> ou <b>xlOLEDBQuery</b>.</para>
           <para>Si <b>propriété EditWebPage</b> n’est pas null, ignorez la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" /> propriété pour l’actualisation. Par conséquent une requête XML et la propriété <b>WebTable</b> fait référence à la table dans la page Web d’origine et doivent être utilisées uniquement dans le cas d’une modification pour préremplir la boîte de dialogue requête sur le Web.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -442,7 +439,7 @@
         <remarks>
           <para>Le <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.RefreshOnFileOpen" /> propriété est ignorée si la propriété <b>EnableRefresh</b> est définie sur <b>False</b>.</para>
           <para>Des sources de données OLAP, la définition de cette propriété sur <b>False</b> désactive les mises à jour.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -634,7 +631,7 @@
         <remarks>
           <para>Vous pouvez définir la propriété <b>MaintainConnection</b> uniquement si la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété de la table de requête ou le cache de tableau croisé dynamique est définie sur <b>xlOLEDBQuery</b>.</para>
           <para>Si vous prévoyez des requêtes fréquentes sur un serveur, la définition de cette propriété sur <b>True</b> peut améliorer les performances en réduisant le temps de reconnexion. Définition de la propriété sur <b>False</b> entraîne une connexion ouverte à fermer.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -699,7 +696,7 @@
             </item>
           </list>
           <para>Lors de la spécification d’index dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para> expression 
-          <list type="table"><item><term>. PivotItems (« [Europe]. [ France]. [Paris] »)</term><description>Expression.PivotItems("Paris")</description></item></list><para>lors de l’utilisation du <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para><list type="table"><item><term>[Europe]. [ France]. [Paris]</term><description>Paris</description></item></list><para /></remarks>
+          <list type="table"><item><term>. PivotItems (« [Europe]. [ France]. [Paris] »)</term><description>Expression.PivotItems("Paris")</description></item></list><para>lors de l’utilisation du <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para><list type="table"><item><term>[Europe]. [ France]. [Paris]</term><description>Paris</description></item></list><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -789,7 +786,7 @@
         <remarks>
           <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
           <para>Microsoft Excel inclut des exemples de requêtes Web que vous pouvez modifier en modifiant le code HTML à l’aide de WordPad ou un autre éditeur de texte. Vous pouvez trouver ces exemples dans le dossier requêtes où vous avez installé Microsoft Office.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -825,7 +822,7 @@
         <remarks>
           <para>Cette propriété a un effet que lorsque la table de requête utilise une connexion de base de données.</para>
           <para>Vous pouvez définir cette propriété sur <b>False</b> pour assurer la compatibilité avec les versions antérieures de Microsoft Excel.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -860,7 +857,7 @@
         <remarks>
           <para>Pour les tables de requête de base de données, le paramètre de mise en forme par défaut est <b>xlSimple</b>.</para>
           <para>Le nouveau style de mise en forme automatique est appliqué à la table de requête lorsque la table est actualisée. Chaque fois que <b>la propriété PreserveFormatting</b> a la valeur <b>False</b>, la mise en forme automatique est réinitialisé sur <b>Aucun</b> . Par conséquent, tout format automatique défini avant <b>la propriété PreserveFormatting</b> a la valeur <b>False</b> et avant la requête table est actualisée ne prenne effet, et la table de requête qui en résulte n’a aucune mise en forme appliquée multidimentionnelle.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -891,7 +888,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Vous spécifiez la source de données dans le préfixe pour le <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> valeur de la propriété.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -925,7 +922,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si cette propriété est utilisée pour remplacer un jeu d’enregistrements existant, la modification prend effet quand la <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> méthode est exécutée.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -956,7 +953,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Les notes suivantes s’appliquent aux objets <b>QueryTable</b> basés sur les résultats d’une requête SQL.</para> Méthode 
-          <para><b>Actualiser</b> obliger Microsoft Excel à se connecter à la source de données de l’objet <b>QueryTable</b> , exécute la requête SQL et renvoyer les données à la plage qui est basée sur l’objet <b>QueryTable</b> . Tant que cette méthode est appelée, l’objet <b>QueryTable</b> ne communique avec la source de données.</para><para>Lors de la connexion à la source de données OLE DB ou ODBC, Microsoft Excel utilise la chaîne de connexion spécifiée par la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> propriété. Si la chaîne de connexion spécifiée ne contient pas de valeurs requises, boîtes de dialogue seront affichera pour demander à l’utilisateur les informations nécessaires. Si le <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriété a la <b>valeur False</b>, les boîtes de dialogue ne s’affichent pas et la méthode <b>Refresh</b> échoue à l’exception des informations de connexion insuffisantes.</para><para>Après Microsoft Excel crée une connexion, il stocke la chaîne de connexion afin que les messages ne s’affichent pour les appels suivants à la méthode <b>Refresh</b> pendant la même session d’édition. Vous pouvez obtenir la chaîne de connexion complète en examinant la valeur de la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> propriété.</para><para>Après la connexion de base de données est établie, la requête SQL est validée. Si la requête n’est pas valide, la méthode <b>Refresh</b> échoue à l’exception de l’erreur de syntaxe SQL.</para><para>Si la requête nécessite des paramètres, le <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> collection doit être initialisée avec les informations de liaison de paramètres avant que la méthode <b>Refresh</b> est appelée. Si ce n’est pas suffisamment de paramètres ont été liés, la méthode <b>Refresh</b> échoue à l’exception de l’erreur de paramètre. Si les paramètres sont configurés pour demander leurs valeurs, boîtes de dialogue s’affichent à l’utilisateur, quel que soit le paramétrage de la <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriété. Si l’utilisateur annule une boîte de dialogue de paramètre, la méthode <b>Refresh</b> est interrompue et renvoie la <b>valeur False</b>. Si les paramètres supplémentaires liés à la collection <b>Parameters</b> , ces paramètres supplémentaires sont ignorés.</para><para>La méthode <b>Refresh</b> renvoie <b>True</b> si la requête est correctement terminée ou démarrée ; elle renvoie <b>False</b> si l’utilisateur annule une boîte de dialogue connexion ou paramètre.</para><para>Pour voir si le nombre de lignes extraites dépasse le nombre de lignes disponibles sur la feuille de calcul, examinez la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> propriété. Cette propriété est initialisée à chaque fois que la méthode <b>Refresh</b> est appelée.</para><para /></remarks>
+          <para><b>Actualiser</b> obliger Microsoft Excel à se connecter à la source de données de l’objet <b>QueryTable</b> , exécute la requête SQL et renvoyer les données à la plage qui est basée sur l’objet <b>QueryTable</b> . Tant que cette méthode est appelée, l’objet <b>QueryTable</b> ne communique avec la source de données.</para><para>Lors de la connexion à la source de données OLE DB ou ODBC, Microsoft Excel utilise la chaîne de connexion spécifiée par la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> propriété. Si la chaîne de connexion spécifiée ne contient pas de valeurs requises, boîtes de dialogue seront affichera pour demander à l’utilisateur les informations nécessaires. Si le <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriété a la <b>valeur False</b>, les boîtes de dialogue ne s’affichent pas et la méthode <b>Refresh</b> échoue à l’exception des informations de connexion insuffisantes.</para><para>Après Microsoft Excel crée une connexion, il stocke la chaîne de connexion afin que les messages ne s’affichent pour les appels suivants à la méthode <b>Refresh</b> pendant la même session d’édition. Vous pouvez obtenir la chaîne de connexion complète en examinant la valeur de la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> propriété.</para><para>Après la connexion de base de données est établie, la requête SQL est validée. Si la requête n’est pas valide, la méthode <b>Refresh</b> échoue à l’exception de l’erreur de syntaxe SQL.</para><para>Si la requête nécessite des paramètres, le <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> collection doit être initialisée avec les informations de liaison de paramètres avant que la méthode <b>Refresh</b> est appelée. Si ce n’est pas suffisamment de paramètres ont été liés, la méthode <b>Refresh</b> échoue à l’exception de l’erreur de paramètre. Si les paramètres sont configurés pour demander leurs valeurs, boîtes de dialogue s’affichent à l’utilisateur, quel que soit le paramétrage de la <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriété. Si l’utilisateur annule une boîte de dialogue de paramètre, la méthode <b>Refresh</b> est interrompue et renvoie la <b>valeur False</b>. Si les paramètres supplémentaires liés à la collection <b>Parameters</b> , ces paramètres supplémentaires sont ignorés.</para><para>La méthode <b>Refresh</b> renvoie <b>True</b> si la requête est correctement terminée ou démarrée ; elle renvoie <b>False</b> si l’utilisateur annule une boîte de dialogue connexion ou paramètre.</para><para>Pour voir si le nombre de lignes extraites dépasse le nombre de lignes disponibles sur la feuille de calcul, examinez la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> propriété. Cette propriété est initialisée à chaque fois que la méthode <b>Refresh</b> est appelée.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Refreshing">
@@ -987,7 +984,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.CancelRefresh" /> méthode pour annuler des requêtes d’arrière-plan.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1020,10 +1017,7 @@
         <summary>
           <b>True</b> si la table de requête ou le cache du tableau croisé dynamique est automatiquement mis à jour à chaque ouverture du classeur. La valeur par défaut est <b>False</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Tables de requête et les rapports de tableau croisé dynamique ne sont pas automatiquement actualisés lorsque vous ouvrez le classeur à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> méthode pour actualiser les données une fois que le classeur est ouvert.</para>
-          <para />
-        </remarks>
+        <remarks>Tables de <para>requête et les rapports de tableau croisé dynamique ne sont pas automatiquement actualisés lorsque vous ouvrez le classeur à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> méthode pour actualiser les données une fois que le classeur est ouvert.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshPeriod">
@@ -1057,7 +1051,7 @@
         <remarks>
           <para>Définition de la période de 0 (zéro) minute désactive automatique a dépassé le délai actualise et revient à définir cette propriété sur <b>Null</b>.</para>
           <para>La valeur de la propriété <b>RefreshPeriod</b> peut être un entier compris entre 0 et 32 767.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1144,7 +1138,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La plage n’inclut pas la ligne nom de champ ou de la colonne numéro de ligne.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1208,8 +1202,8 @@
         <summary>Cette propriété a la valeur <b>True</b> si le numéro des lignes est ajouté comme première colonne de la table de requête spécifiée. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définir cette propriété sur <b>True</b> n’entraîne pas immédiatement numéros de ligne. Les numéros de ligne s’affichent la prochaine fois que la table de requête est actualisée et sont reconfigurés à chaque actualisation de la table de requête.</para>
-          <para />
+          <para>La définition de cette propriété sur <b>True</b> n’entraîne immédiatement les numéros de ligne. Les numéros de ligne s’affichent la prochaine fois que la table de requête est actualisée et sont reconfigurés à chaque actualisation de la table de requête.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1274,8 +1268,8 @@
         <summary>Cette propriété a la valeur <b>True</b> si les données du rapport de tableau croisé dynamique sont enregistrées avec le classeur. Elle a la valeur <b>False</b> si seule la définition du rapport est enregistrée. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sources de données OLAP, cette propriété est toujours définie sur <b>False</b>.</para>
-          <para />
+          <para>Sources de données OLAP pour cette propriété sont toujours la valeur <b>false</b>.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1309,7 +1303,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété affecte uniquement les requêtes ODBC.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1344,7 +1338,7 @@
           <para>Si vous importez des données à l’aide de l’interface utilisateur, les données à partir de requêtes Web ou des requêtes de texte sont importées sous la forme un <see cref="T:Microsoft.Office.Interop.Excel._QueryTable" /> objet, tandis que toutes les autres données externes sont importées comme un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet.</para>
           <para>Si vous importez des données à l’aide du modèle objet, les données à partir de requêtes Web ou des requêtes de texte doivent être importées sous forme de <b>QueryTable</b>, tandis que toutes les autres données externes peuvent être importées sous forme de <b>QueryTable</b>ou un <b>objet ListObject</b> .</para>
           <para>Vous pouvez utiliser la propriété <b>QueryTable</b> de l' <b>objet ListObject</b> pour accéder à la propriété <b>Sort</b> .</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1408,8 +1402,8 @@
         <summary>Cette propriété renvoie ou définit une <b>chaîne</b> indiquant le fichier de données sources pour une table de requête.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour les sources de données de fichiers (par exemple, Access), la propriété <b>SourceDataFile</b> contient un chemin d’accès complet au fichier de données source. Elle a la valeur null pour les sources de données sur le serveur (par exemple, SQL Server). La propriété <b>SourceDataFile</b> a la valeur null si la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> propriété est modifiée par programme.</para>
-          <para />
+          <para>Pour les données de fichiers sources (par exemple, Access) la propriété <b>SourceDataFile</b> contient un chemin d’accès complet au fichier de données source. Elle a la valeur null pour les sources de données sur le serveur (par exemple, SQL Server). La propriété <b>SourceDataFile</b> a la valeur null si la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> propriété est modifiée par programme.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1485,8 +1479,8 @@
         <summary>Cette méthode crée une table de données à partir des valeurs d'entrée et des formules que vous définissez dans une feuille de calcul.</summary>
         <value>Variante</value>
         <remarks>
-          <para>Utilisez des tables de données pour effectuer une analyse en modifiant certaines valeurs constantes dans votre feuille de calcul pour voir l’impact sur les valeurs d’autres cellules.</para>
-          <para />
+          <para>Tables de données permet d’effectuer une analyse en modifiant certaines valeurs constantes dans votre feuille de calcul pour voir l’impact sur les valeurs d’autres cellules.</para>
+          <para></para>
         </remarks>
         <example>
           <para>Cet exemple crée une table de multiplication mise en forme dans les cellules a1 à K11 de la feuille Sheet1.</para>
@@ -29251,7 +29245,7 @@ dataTableRange.&lt;/span&gt;
           <para>Utilisez cette propriété uniquement lorsque votre table de requête est basé sur des données issues d’un fichier texte (avec la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété définie sur <b>xlTextImport</b>).</para>
           <para>Si vous spécifiez plus d’éléments dans le tableau que de colonnes, ces valeurs sont ignorées.</para>
           <para>Vous pouvez utiliser <b>xlEMDFormat</b> uniquement si la prise en charge linguistique taïwanais est installée et sélectionnée. La constante <b>xlEMDFormat</b> Spécifie que les dates sont utilisées.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29286,7 +29280,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque votre table de requête est basé sur des données issues d’un fichier texte (avec la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété définie sur <b>xlTextImport</b>) et uniquement si la valeur de la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> propriété a la <b>valeur xlDelimited</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29321,7 +29315,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque votre table de requête est basé sur des données issues d’un fichier texte (avec la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété définie sur <b>xlTextImport</b>) et uniquement si la valeur de la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> propriété a la <b>valeur xlDelimited</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29398,7 +29392,7 @@ dataTableRange.&lt;/span&gt;
               <description>123,123.45 (numérique)</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29433,7 +29427,7 @@ dataTableRange.&lt;/span&gt;
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque votre table de requête est basé sur des données issues d’un fichier texte (avec la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété définie sur <b>xlTextImport</b>) et uniquement si la valeur de la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> propriété est <b>définie sur xlFixedWidth</b>.</para>
           <para>Vous devez spécifier une largeur de colonne valide, non négatif. Si vous spécifiez les colonnes qui dépassent la largeur du fichier texte, ces valeurs sont ignorées. Si la largeur du fichier texte est supérieure à la largeur totale de colonnes que vous spécifiez, l’équilibre du fichier texte est importé dans une colonne supplémentaire.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29468,7 +29462,7 @@ dataTableRange.&lt;/span&gt;
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque votre table de requête est basé sur des données issues d’un fichier texte (avec la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété définie sur <b>xlTextImport</b>) et uniquement si la valeur de la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> propriété a la <b>valeur xlDelimited</b>.</para>
           <para>Si vous spécifiez plusieurs caractères dans la chaîne, seul le premier caractère est utilisé.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29502,7 +29496,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque votre table de requête est basé sur des données issues d’un fichier texte (avec la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété définie sur <b>xlTextImport</b>).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29536,7 +29530,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque votre table de requête est basé sur des données issues d’un fichier texte (avec la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété définie sur <b>xlTextImport</b>).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29573,7 +29567,7 @@ dataTableRange.&lt;/span&gt;
           <para>Utilisez cette propriété uniquement lorsque votre table de requête est basé sur des données issues d’un fichier texte (avec la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété définie sur <b>xlTextImport</b>).</para>
           <para>Si la valeur de cette propriété est <b>True</b>, la boîte de dialogue ne s’affiche pas la première fois une table de requête est actualisée.</para>
           <para>La valeur par défaut est <b>True</b> dans l’interface utilisateur.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29608,7 +29602,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque votre table de requête est basé sur des données issues d’un fichier texte (avec la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété définie sur <b>xlTextImport</b>).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29642,7 +29636,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque votre table de requête est basé sur des données issues d’un fichier texte (avec la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété définie sur <b>xlTextImport</b>) et uniquement si la valeur de la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> propriété a la <b>valeur xlDelimited</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29676,7 +29670,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque votre table de requête est basé sur des données issues d’un fichier texte (avec la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété définie sur <b>xlTextImport</b>).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29711,7 +29705,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque votre table de requête est basé sur des données issues d’un fichier texte (avec la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété définie sur <b>xlTextImport</b>) et uniquement si la valeur de la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" /> propriété a la <b>valeur xlDelimited</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29745,7 +29739,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque votre table de requête est basé sur des données issues d’un fichier texte (avec la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété définie sur <b>xlTextImport</b>).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29822,7 +29816,7 @@ dataTableRange.&lt;/span&gt;
               <description>123,123.45 (numérique)</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29920,7 +29914,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque la table de requête <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété est définie sur <b>xlWebQuery</b>, la requête renvoie un document HTML et le <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebPreFormattedTextToColumns" /> propriété est définie sur <b>True</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -29955,7 +29949,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque la table de requête <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété est définie sur <b>xlWebQuery</b> et que la requête renvoie un document HTML.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -30021,7 +30015,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque la table de requête <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété est définie sur <b>xlWebQuery</b> et que la requête renvoie un document HTML.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -30055,7 +30049,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété est utilisée uniquement lorsque la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété de la table de requête a la <b>valeur xlWebQuery</b> et que la requête renvoie un document HTML.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -30090,7 +30084,7 @@ dataTableRange.&lt;/span&gt;
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque la table de requête <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété est définie sur <b>xlWebQuery</b> et que la requête renvoie un document HTML.</para>
           <para>Si la valeur de cette propriété est <b>xlSpecifiedTables</b>, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" /> propriété pour spécifier les tables à importer.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -30125,7 +30119,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque la table de requête <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété est définie sur <b>xlWebQuery</b> et que la requête renvoie un document HTML.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -30159,7 +30153,7 @@ dataTableRange.&lt;/span&gt;
         <value>To be added.</value>
         <remarks>
           <para>Utilisez cette propriété uniquement lorsque la table de requête <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> propriété est définie sur <b>xlWebQuery</b>, la requête renvoie un document HTML et la valeur de la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebSelectionType" /> propriété est <b>xlSpecifiedTables</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -30194,7 +30188,7 @@ dataTableRange.&lt;/span&gt;
           <para>Si vous importez des données à l’aide de l’interface utilisateur, les données à partir d’une requête sur le Web ou une requête de texte sont importées comme un <see cref="T:Microsoft.Office.Interop.Excel._QueryTable" /> objet, tandis que toutes les autres données externes sont importées comme un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet.</para>
           <para>Si vous importez des données à l’aide du modèle objet, les données à partir d’une requête sur le Web ou une requête de texte doivent être importées sous forme de <b>QueryTable</b>, tandis que toutes les autres données externes peuvent être importées sous forme de <b>QueryTable</b>ou un <b>objet ListObject</b> .</para>
           <para>La propriété <b>WorkbookConnection</b> s’applique uniquement aux objets <b>QueryTable</b> .</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20586113" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ConnectorFormat" />
@@ -32,7 +32,7 @@
     <summary>Cet objet contient les propriétés et méthodes qui s’appliquent aux connecteurs.</summary>
     <remarks>
       <para>Un connecteur est une ligne reliant deux autres formes en des points de connexion. Si vous réorganisez des formes connectées, la géométrie du connecteur sera automatiquement ajustée afin que les formes restent connectées.</para> Utilisation de 
-      <para>les <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> propriété pour renvoyer un objet <b>ConnectorFormat</b> . Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> et <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> méthodes pour attacher les extrémités du connecteur à d’autres formes du document. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> méthode trouve automatiquement le chemin le plus court entre les deux formes connectées par le connecteur. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> propriété pour voir si une forme est un connecteur.</para><para>Remarque affecter une taille et une position lorsque vous ajoutez un connecteur à la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection, mais la taille et la position sont automatiquement ajustées lorsque vous attachez le début et la fin du connecteur à d’autres formes de la collection. Par conséquent, si vous souhaitez attacher un connecteur à d’autres formes, la taille initiale et la position que vous spécifiez sont sans effet. De même, vous spécifiez les points de connexion sur une forme pour attacher le connecteur lorsque vous attachez le connecteur, mais à l’aide de la méthode <b>RerouteConnections</b> après le connecteur est attaché peuvent modifier les points de connexion le connecteur s’attache, rendre votre premier choix de points de connexion non pertinents.</para><para>Connexion sont généralement numérotés selon les règles présentées dans le tableau suivant.</para><list type="table"><item><term>Les formes automatiques, WordArt, images et OLE objets</term><description>les sites de connexion sont numérotés en commençant par le haut et continuer dans le sens inverse.</description></item><item><term>Formes libres</term><description>la connexion sont les sommets et ils correspondent aux numéros de sommet.</description></item></list><para /></remarks>
+      <para>les <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> propriété pour renvoyer un objet <b>ConnectorFormat</b> . Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> et <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> méthodes pour attacher les extrémités du connecteur à d’autres formes du document. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> méthode trouve automatiquement le chemin le plus court entre les deux formes connectées par le connecteur. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> propriété pour voir si une forme est un connecteur.</para><para>Remarque affecter une taille et une position lorsque vous ajoutez un connecteur à la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection, mais la taille et la position sont automatiquement ajustées lorsque vous attachez le début et la fin du connecteur à d’autres formes de la collection. Par conséquent, si vous souhaitez attacher un connecteur à d’autres formes, la taille initiale et la position que vous spécifiez sont sans effet. De même, vous spécifiez les points de connexion sur une forme pour attacher le connecteur lorsque vous attachez le connecteur, mais à l’aide de la méthode <b>RerouteConnections</b> après le connecteur est attaché peuvent modifier les points de connexion le connecteur s’attache, rendre votre premier choix de points de connexion non pertinents.</para><para>Connexion sont généralement numérotés selon les règles présentées dans le tableau suivant.</para><list type="table"><item><term>Les formes automatiques, WordArt, images et OLE objets</term><description>les sites de connexion sont numérotés en commençant par le haut et continuer dans le sens inverse.</description></item><item><term>Formes libres</term><description>la connexion sont les sommets et ils correspondent aux numéros de sommet.</description></item></list><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -92,9 +92,9 @@
           <b>Integer</b>obligatoire. Point de connexion sur la forme spécifiée par <paramref name="ConnectedShape" />. Doit être un entier compris entre 1 et le nombre entier renvoyé par la <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> propriété de la forme spécifiée. Si vous souhaitez que le connecteur trouve automatiquement le chemin le plus court entre les deux formes qu’il se connecte, spécifiez un nombre entier valid pour cet argument et ensuite utiliser la <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> méthode après que le connecteur est attaché aux formes aux deux extrémités.</param>
         <summary>Joint le début du connecteur spécifié à une forme spécifiée.</summary>
         <remarks>
-          <para>S’il existe déjà une connexion entre le début du connecteur et une autre forme, que la connexion est interrompue. Si le début du connecteur n’est pas déjà positionné sur le point de connexion spécifié, cette méthode déplace le début du connecteur vers le point de connexion et ajuste la taille et la position du connecteur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> méthode pour attacher la fin du connecteur à une forme.</para>
+          <para>S’il existe déjà une connexion entre le début du connecteur et une autre forme, cette connexion est interrompue. Si le début du connecteur n’est pas déjà positionné sur le point de connexion spécifié, cette méthode déplace le début du connecteur vers le point de connexion et ajuste la taille et la position du connecteur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> méthode pour attacher la fin du connecteur à une forme.</para>
           <para>Lorsque vous attachez un connecteur à un objet, la taille et la position du connecteur sont automatiquement ajustées si nécessaire.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -141,7 +141,7 @@
           </para>
           <para>
             <b>msoTrue</b> le début du connecteur spécifié est connecté à une forme.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -172,7 +172,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si le début du connecteur spécifié n’est pas relié à une forme, cette propriété génère une erreur.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -203,7 +203,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si la fin du connecteur spécifié n’est pas reliée à une forme, cette propriété génère une erreur.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -229,10 +229,7 @@
       <Parameters />
       <Docs>
         <summary>Détache le début du connecteur spécifié de la forme, qu'il est associé.</summary>
-        <remarks>
-          <para>La méthode <b>BeginDisconnect</b> ne modifie pas la taille ou la position du connecteur. Le début du connecteur reste positionné sur le point de connexion mais n’est plus connecté. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> méthode pour détacher l’extrémité du connecteur d’une forme.</para>
-          <para />
-        </remarks>
+        <remarks>Méthode <para>le <b>BeginDisconnect</b> ne modifie pas la taille ou la position du connecteur. Le début du connecteur reste positionné sur le point de connexion mais n’est plus connecté. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> méthode pour détacher l’extrémité du connecteur d’une forme.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -262,7 +259,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para /></remarks>
+          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnect">
@@ -294,9 +291,9 @@
           <b>Integer</b>obligatoire. Point de connexion sur la forme spécifiée par <paramref name="ConnectedShape" />. Doit être un entier compris entre 1 et le nombre entier renvoyé par la <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> propriété de la forme spécifiée. Si vous souhaitez que le connecteur trouve automatiquement le chemin le plus court entre les deux formes qu’il se connecte, spécifiez un nombre entier valid pour cet argument et ensuite utiliser la <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> méthode après que le connecteur est attaché aux formes aux deux extrémités.</param>
         <summary>Joint l'extrémité du connecteur spécifié à une forme spécifiée.</summary>
         <remarks>
-          <para>S’il existe déjà une connexion entre la fin du connecteur et une autre forme, que la connexion est interrompue. Si la fin du connecteur n’est pas déjà positionnée sur le point de connexion spécifié, cette méthode déplace la fin du connecteur vers le point de connexion et ajuste la taille et la position du connecteur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> méthode pour joindre le début du connecteur à une forme.</para>
+          <para>S’il existe déjà une connexion entre la fin du connecteur et une autre forme, cette connexion est interrompue. Si la fin du connecteur n’est pas déjà positionnée sur le point de connexion spécifié, cette méthode déplace la fin du connecteur vers le point de connexion et ajuste la taille et la position du connecteur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> méthode pour joindre le début du connecteur à une forme.</para>
           <para>Lorsque vous attachez un connecteur à un objet, la taille et la position du connecteur sont automatiquement ajustées si nécessaire.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -333,7 +330,7 @@
             <b>msoFalse</b> la fin du connecteur spécifié n’est pas connectée à une forme.</para>
           <para>la fin du connecteur spécifié est connectée à une forme de 
             <b>la valeur msoTrue</b> .</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -364,7 +361,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si la fin du connecteur spécifié n’est pas reliée à une forme, cette propriété génère une erreur.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -395,7 +392,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si la fin du connecteur spécifié n’est pas reliée à une forme, cette propriété génère une erreur.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -423,7 +420,7 @@
         <summary>Détache l’extrémité du connecteur spécifié de la forme, qu'il est associé.</summary>
         <remarks>
           <para>Cette méthode ne modifie pas la taille ou la position du connecteur ; la fin du connecteur reste positionnée sur le point de connexion mais n’est plus connectée. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> méthode pour détacher le début du connecteur d’une forme.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -498,7 +495,7 @@
           <para>
             <b>msoConnectorTypeMixed</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
