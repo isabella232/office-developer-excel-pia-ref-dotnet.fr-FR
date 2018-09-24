@@ -1,10 +1,10 @@
 <Type Name="Phonetic" FullName="Microsoft.Office.Interop.Excel.Phonetic">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ab43da53049ee91947b83a304d2ced9fecefe68c" />
+    <Meta Name="ms.openlocfilehash" Value="968b33512b8ee5525d7c2fa249064b898613c020" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587646" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Phonetic" />
@@ -31,9 +31,9 @@
   <Docs>
     <summary>Cet objet contient des informations sur une chaîne de texte phonétique spécifique dans une cellule.</summary>
     <remarks>
-      <para>Dans Microsoft Excel 97, cet objet contenait les attributs de mise en forme pour n’importe quel texte phonétique dans la plage spécifiée.</para>
-      <para>Utiliser <b>Phonetics</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du texte phonétique, pour renvoyer un seul objet <b>Phonetic</b> .</para>
-      <para>La <see cref="P:Microsoft.Office.Interop.Excel.Range.Phonetic" /> propriété offre une compatibilité avec les versions antérieures de Microsoft Excel. Vous devez utiliser <b>Phonetics</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du texte phonétique, pour renvoyer un seul objet <b>Phonetic</b> .</para>
+      <para>Dans Microsoft Excel 97, cet objet contenait les attributs de mise en forme pour n'importe quel texte phonétique dans la plage spécifiée.</para>
+      <para>Utilisez <b>Phonetics</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du texte phonétique, pour renvoyer un seul objet <b>Phonetic</b> .</para>
+      <para>Le <see cref="P:Microsoft.Office.Interop.Excel.Range.Phonetic" /> propriété offre une compatibilité avec les versions antérieures de Microsoft Excel. Vous devez utiliser <b>Phonetics</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du texte phonétique, pour renvoyer un seul objet <b>Phonetic</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -169,8 +169,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">

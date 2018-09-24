@@ -1,10 +1,10 @@
 <Type Name="ShapeNode" FullName="Microsoft.Office.Interop.Excel.ShapeNode">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4fdacdabf56342fb3f89aa5ab8888abf01f9989b" />
+    <Meta Name="ms.openlocfilehash" Value="fa83a8cb318b1dacf1a4becb1cd2c657c30e27e3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580912" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ShapeNode : Microsoft.Office.Core._IMsoDispObj" />
@@ -30,10 +30,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Cet objet représente la géométrie et les propriétés de modification de la géométrie des nœuds d'une forme libre définie par l'utilisateur.</summary>
+    <summary>Représente la géométrie et les propriétés de modification géométrique des noeuds dans un défini par l'utilisateur libre.</summary>
     <remarks>
-      <para>Nœuds comprennent les sommets entre les segments de la forme libre et les points de contrôle des segments courbes. L’objet <b>ShapeNode</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> collection. La collection <b>ShapeNodes</b> contient tous les nœuds d’une forme libre.</para>
-      <para>Utiliser <b>nœuds</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index nœud, pour renvoyer un seul objet <b>ShapeNode</b> .</para>
+      <para>Les noeuds comprennent les sommets entre les segments de la forme libre et les points de contrôle des segments courbés. L’objet <b>ShapeNode</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> collection. La collection <b>ShapeNodes</b> contient tous les nœuds d'une forme libre.</para>
+      <para>Utiliser des <b>nœuds</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index nœud, pour renvoyer un seul objet <b>ShapeNode</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -97,7 +97,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingType">

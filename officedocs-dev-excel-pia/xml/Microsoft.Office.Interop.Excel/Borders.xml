@@ -1,10 +1,10 @@
 <Type Name="Borders" FullName="Microsoft.Office.Interop.Excel.Borders">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="65559708625b42273291cf16ec350e291ea4154d" />
+    <Meta Name="ms.openlocfilehash" Value="ac67cbe49f4367fa1e2be6aa391091c3d7ab6ce3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580660" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
@@ -36,8 +36,8 @@
     <summary>Collection de quatre <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objets qui représentent les quatre bordures d’un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ou <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objet.</summary>
     <remarks>
       <para>Utilisez la propriété <b>bordures</b> d’un objet <b>Range</b> ou <b>Style</b> pour renvoyer la collection <b>Borders</b> contenant les quatre bordures.</para>
-      <para>Utiliser <b>bordures</b>(<paramref name="index" />), où <paramref name="index" /> identifie la bordure, pour renvoyer un objet <b>Border</b> .</para>
-      <para>Index peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes : <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>, ou <b>xlInsideVertical</b>.</para>
+      <para>Utiliser des <b>bordures</b>(<paramref name="index" />), où <paramref name="index" /> identifie la bordure, pour renvoyer un objet <b>Border</b> .</para>
+      <para>Index peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes : <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>ou <b>xlInsideVertical </b>.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -230,8 +230,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -416,7 +418,7 @@
           <b>Objet</b>
         </value>
         <remarks>
-          <para>Tente d’accéder à une couleur de thème pour un objet dont la couleur n’est pas actuellement à thème génère une erreur d’exécution de requête non valide.</para>
+          <para>Toute tentative d'accès à une couleur de thème pour un objet auquel aucun thème n'est appliqué provoquera une erreur de requête non valide à l'exécution.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -453,7 +455,7 @@
         </value>
         <remarks>
           <para>Vous pouvez entrer un nombre compris entre -1 (sombre) et 1 (clair) pour la <see cref="P:Microsoft.Office.Interop.Excel.Borders.TintAndShade" /> propriété. Zéro (0) est neutre.</para>
-          <para>Tentative de définir cette propriété sur une valeur inférieure à -1 ou supérieure à 1 n’entraîne une erreur d’exécution : « la valeur spécifiée est en dehors des limites ».  Cette propriété ne fonctionne pour les couleurs de thème et les couleurs hors thème.</para>
+          <para>Toute tentative de définition de cette propriété sur une valeur inférieure à -1 ou supérieure à +1 provoquera une erreur d'exécution et l'affichage du message « La valeur tapée est en dehors des limites ». Cette propriété fonctionne pour les couleurs de thème et les couleurs hors thème.</para>
           <para></para>
         </remarks>
       </Docs>

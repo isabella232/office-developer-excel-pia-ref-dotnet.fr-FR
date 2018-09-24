@@ -1,10 +1,10 @@
 <Type Name="ChartFillFormat" FullName="Microsoft.Office.Interop.Excel.ChartFillFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c7085bf85affb6e2fef37f11e45a4f8673cac74d" />
+    <Meta Name="ms.openlocfilehash" Value="bd04354836c97d4508a39ba9a578e1e6ede7fef8" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585595" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartFillFormat" />
@@ -118,8 +118,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -191,7 +193,7 @@
             <b>msoGradientTwoColors</b>
           </para>
           <para>
-            <b>MsoGradientColorMixed</b> Indique une combinaison des autres États dans la plage spécifiée. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, ou <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> pour définir le type de dégradé du remplissage.</para>
+            <b>MsoGradientColorMixed</b> indique une combinaison des autres États dans la plage spécifiée. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, ou <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> pour définir le type de dégradé du remplissage.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -271,7 +273,7 @@
             <b>msoGradientFromTitle</b>
           </para>
           <para>
-            <b> msoGradientHorizontal</b>
+            <b>msoGradientHorizontal</b>
           </para>
           <para>
             <b>msoGradientMixed</b>
@@ -658,7 +660,7 @@
           <para>
             <b>msoTextureUserDefined</b>
           </para>
-          <para>utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserTextured(System.String)" /> pour définir le type de texture du remplissage.</para>
+          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserTextured(System.String)" /> pour définir le type de texture du remplissage.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -721,7 +723,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoFillType" /> peut être une des constantes suivantes :</para>
+            <see cref="T:Microsoft.Office.Core.MsoFillType" />peut être une des constantes suivantes :</para>
           <para>
             <b>msoFillGradient</b>
           </para>
@@ -862,8 +864,8 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> l’objet est visible.</para>
-          <para>Si vous définissez la propriété <b>Visible</b> d’un nom à la <b>valeur False</b>, le nom n’apparaît pas dans la boîte de dialogue Définir un nom.</para>
+            <b>msoTrue</b> L’objet est visible.</para>
+          <para>Si vous affectez la valeur <b>False</b> à la propriété <b>Visible</b>, le nom n'apparaît pas dans la boîte de dialogue Définir un nom.</para>
           <para></para>
         </remarks>
       </Docs>

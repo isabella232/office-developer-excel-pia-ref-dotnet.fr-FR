@@ -1,10 +1,10 @@
 <Type Name="Graphic" FullName="Microsoft.Office.Interop.Excel.Graphic">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f71cc399b82a45b3ea700b16adc69b6140e7585c" />
+    <Meta Name="ms.openlocfilehash" Value="557d2313e5eee89f3ea3d42e9d0eca09addf2bb5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585651" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Graphic" />
@@ -209,8 +209,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CropBottom">
@@ -242,7 +244,7 @@
         <summary>Cette propriété renvoie ou définit le nombre de points qui sont retirés du bas de l’image spécifiée ou l’objet OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le rognage est calculé par rapport à la taille de l’image d’origine. Par exemple, si vous insérez une image qui est à l’origine de 100 points, mettez-la afin qu’il soit de 200 points, puis définissez la propriété <b>CropBottom</b> à 50, 100 points (et non 50) est retiré de la partie inférieure de votre image.</para>
+          <para>Le rognage est calculé selon la taille d'origine de l'image. Par exemple, si vous insérez une image ayant une hauteur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une hauteur de 200 points et affectez ensuite la valeur 50 à la propriété <b>CropBottom</b>, 100 points (et non 50) seront rognés de la partie inférieure de votre image.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -276,7 +278,7 @@
         <summary>Cette propriété renvoie ou définit le nombre de points qui sont rognés du côté gauche de l'image spécifiée ou l'objet OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le rognage est calculé par rapport à la taille de l’image d’origine. Par exemple, si vous insérez une image qui est de 100 points, mettez-la afin qu’il soit de 200 points, et puis définissez la propriété <b>CropLeft</b> à 50, 100 points (et non 50) est retiré du côté gauche de votre image.</para>
+          <para>Le rognage est calculé selon la taille d'origine de l'image. Par exemple, si vous insérez une image ayant une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une largeur de 200 points, et affectez la valeur 50 à la propriété <b>CropLeft</b>, 100 points (et non 50) seront rognés du côté gauche de votre image.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -310,7 +312,7 @@
         <summary>Cette propriété renvoie ou définit le nombre de points qui sont retirés de la partie droite de l'image spécifiée ou l'objet OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le rognage est calculé par rapport à la taille de l’image d’origine. Par exemple, si vous insérez une image qui est de 100 points, mettez-la afin qu’il soit de 200 points, et puis définissez la propriété <b>CropRight</b> à 50, 100 points (et non 50) est retiré du côté droit de votre image.</para>
+          <para>Le rognage est calculé selon la taille d'origine de l'image. Par exemple, si vous insérez une image avec une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une largeur de 200 points et affectez la valeur 50 à la propriété <b>CropRight</b>, 100 points (et non 50) seront rognés du côté droit de votre image.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -344,7 +346,7 @@
         <summary>Cette propriété renvoie ou définit le nombre de points qui sont retirés du haut de l'image spécifiée ou l'objet OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le rognage est calculé par rapport à la taille de l’image d’origine. Par exemple, si vous insérez une image qui est à l’origine de 100 points, mettez-la afin qu’il soit de 200 points, puis définissez la propriété <b>CropTop</b> à 50, 100 points (et non 50) est retiré de la partie supérieure de votre image.</para>
+          <para>Le rognage est calculé selon la taille d'origine de l'image. Par exemple, si vous insérez une image avec une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une hauteur de 200 points et affectez la valeur 50 à la propriété <b>CropTop</b>, 100 points (et non 50) seront rognés de la partie supérieure de votre image.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -378,7 +380,7 @@
         <summary>Cette propriété renvoie ou définit l’URL (sur l’intranet ou le Web) ou le chemin d’accès (local ou réseau) à l’emplacement où l’objet source spécifié a été enregistré.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>FileName</b> génère une erreur si un dossier dans le chemin d’accès spécifié n’existe pas.</para>
+          <para>La propriété <b>FileName</b> génère une erreur si un dossier mentionné dans le chemin d'accès n'existe pas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -450,7 +452,7 @@
             <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse</b> vous pouvez modifier la hauteur et la largeur de la forme indépendamment de l’autre lorsque vous la redimensionnez it.</para>
+            <b>msoFalse</b> Vous pouvez modifier la hauteur et la largeur de la forme indépendamment de l’autre lorsque vous la redimensionnez.</para>
           <para>
             <b>msoTriStateMixed</b>
           </para>
@@ -458,7 +460,7 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> la forme spécifiée conserve ses proportions d’origine lorsque vous la redimensionnez it.</para>
+            <b>msoTrue</b> La forme spécifiée conserve ses proportions d’origine lorsque vous la redimensionnez.</para>
           <para></para>
         </remarks>
       </Docs>

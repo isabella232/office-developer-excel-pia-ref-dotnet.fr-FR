@@ -1,10 +1,10 @@
 <Type Name="TreeviewControl" FullName="Microsoft.Office.Interop.Excel.TreeviewControl">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d4b0076c6b1e63cbd22e3acb6d70fcbb44e93bb5" />
+    <Meta Name="ms.openlocfilehash" Value="1afb6b42e9222ca9571894f88d24856a84c5f717" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587121" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TreeviewControl" />
@@ -87,8 +87,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Drilled">
@@ -155,7 +157,10 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l’état masqué du cube membres du champ dans le contrôle de sélection de membre hiérarchique d’un champ de cube.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>Hidden</b> renvoie ou définit un tableau. Chaque élément du tableau correspond à un niveau du champ de cube masqué. Le nombre maximal d’éléments est le nombre de niveaux dans le champ de cube. Chaque élément du tableau est un tableau de type <b>String</b>contenant les noms de membres uniques qui sont masqués au niveau correspondant du contrôle. Voir la <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.DrilledDown" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> objet pour déterminer quand les membres sont visibles (développés) dans le contrôle.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Hidden</b> renvoie ou définit un tableau. Chaque élément du tableau correspond à un niveau du champ de cube masqué. Le nombre maximal d’éléments est le nombre de niveaux dans le champ de cube. Chaque élément du tableau est un tableau de type <b>String</b>contenant les noms de membres uniques qui sont masqués au niveau correspondant du contrôle. Voir la <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.DrilledDown" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> objet pour déterminer quand les membres sont visibles (développés) dans le contrôle.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

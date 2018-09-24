@@ -1,10 +1,10 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Excel.AddIn">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7b2ad4081ea4bdb99cc06e468b6712922b5b097b" />
+    <Meta Name="ms.openlocfilehash" Value="ad740aac6b501b523017ffe9ffd52b91e10dd267" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584146" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AddIn" />
@@ -33,11 +33,11 @@
     <remarks>
       <para>L’objet <b>AddIn</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> collection. La collection <b>AddIns</b> contient une liste de toutes les macros complémentaires disponibles dans Microsoft Excel, qu’elles soient ou non installées. Cette liste correspond à la liste des macros complémentaires affichée dans la boîte de dialogue Compléments (menu Outils).</para>
       <para>Utilisez <b>AddIns</b>(<paramref name="index" />), où <paramref name="index" /> est le titre ou le numéro d’index, pour renvoyer un seul objet <b>AddIn</b> .</para>
-      <para>Ne confondez pas le titre de la macro complémentaire qui apparaît dans la boîte de dialogue Macros complémentaires, avec le nom qui est le nom de fichier de la macro complémentaire. Le titre doit l’orthographe exactement tel qu’il apparaît dans la boîte de dialogue Macros complémentaires, mais la casse ne doivent pas nécessairement correspondre.</para>
-      <para>Le numéro d’index représente la position de la macro complémentaire dans la zone disponible compléments dans la boîte de dialogue Add-Ins.</para>
-      <para>La <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> méthode ajoute une macro complémentaire à la liste des compléments disponibles, mais n’installe pas l’ensemble du complément et le <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> propriété de la macro complémentaire <b>la valeur True</b> pour installer le complément. Pour installer une macro complémentaire qui n’apparaît pas dans la liste des compléments disponibles, vous devez tout d’abord utiliser la méthode <b>Add</b> et puis définissez la propriété <b>Installed</b> . Cette opération peut être effectuée en une seule étape</para>
-      <para>utiliser <b>classeurs</b>(<paramref name="index" />) où <paramref name="index" /> est le complément de nom de fichier (pas de titre) pour renvoyer une référence au classeur correspondant à une macro complémentaire chargée. Vous devez utiliser le nom de fichier, car des compléments ne s’affichent normalement dans les <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> collection.</para>
-      <para>Si la propriété <b>Installed</b> renvoie <b>la valeur True</b>, mais les appels aux fonctions dans le complément échouent encore, le complément peut en réalité pas être chargé. Cela car l’objet <b>Addin</b> indique l’existence et l’état de l’application add-in installé, mais ne représente pas le contenu du classeur macro complémentaire. Pour garantir qu’une macro complémentaire installée est chargée, vous devez ouvrir le classeur macro complémentaire.</para>
+      <para>Ne confondez pas le titre de la macro complémentaire qui apparaît dans la boîte de dialogue Macros complémentaires, avec le nom qui est le nom de fichier de la macro complémentaire. Vous devez l’orthographe le titre exactement tel qu’il apparaît dans la boîte de dialogue Macros complémentaires, mais la casse ne doivent pas nécessairement correspondre.</para>
+      <para>Le numéro d’index représente la position de la macro complémentaire dans la zone disponible compléments dans la boîte de dialogue Macros complémentaires.</para>
+      <para>Le <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> méthode ajoute une macro complémentaire à la liste des compléments disponibles, mais sans installer le complément. Définir le <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> propriété de la macro complémentaire <b>la valeur True</b> pour installer le complément. Pour installer une macro complémentaire qui n’apparaît pas dans la liste des compléments disponibles, vous devez tout d’abord utiliser la méthode <b>Add</b> et puis définissez la propriété <b>Installed</b> . Cette opération peut être effectuée en une seule étape</para>
+      <para>Utiliser des <b>classeurs</b>(<paramref name="index" />) où <paramref name="index" /> est le complément de nom de fichier (pas de titre) pour renvoyer une référence au classeur correspondant à une macro complémentaire chargée. Vous devez utiliser le nom de fichier, car des compléments ne s’affichent normalement dans les <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> collection.</para>
+      <para>Si la propriété <b>Installed</b> renvoie <b>la valeur True</b>, mais les appels vers des fonctions dans l’application add-in échouent encore, le complément ne peut pas réellement être chargé. Cela car l’objet <b>Addin</b> indique l’existence et l’état de l’application add-in installé, mais ne représente pas le contenu du classeur macro complémentaire. Pour garantir qu’une macro complémentaire installée est chargée, vous devez ouvrir le classeur macro complémentaire.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -186,8 +186,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -251,7 +253,7 @@
           <b>La valeur true</b> si le complément est installé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La définition de cette propriété sur <b>True</b> installe le complément et ses fonctions Auto_Add sont appelées. Définir cette propriété sur <b>False</b> supprime le complément et ses fonctions Auto_Remove sont appelées.</para>
+          <para>Quand la valeur <b>True</b> est affectée à cette propriété, la macro complémentaire est installée et ses fonctions Auto_Add sont appelées. Lorsque la valeur <b>False</b> est affectée à cette propriété, la macro complémentaire est supprimée et ses fonctions Auto_Remove sont appelées.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -284,7 +286,7 @@
           <b>la valeur true</b> si le complément est actuellement ouvert ; Sinon, <b>false</b>.</value>
         <remarks>
           <para>
-            <b>boolean</b> en lecture seule.</para>
+            <b>Boolean</b> En lecture seule.</para>
           <para></para>
         </remarks>
       </Docs>

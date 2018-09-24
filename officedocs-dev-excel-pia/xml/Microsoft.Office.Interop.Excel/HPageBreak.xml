@@ -1,10 +1,10 @@
 <Type Name="HPageBreak" FullName="Microsoft.Office.Interop.Excel.HPageBreak">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d7639a911b0b101be74933f305618b0af07f12d1" />
+    <Meta Name="ms.openlocfilehash" Value="810cb48a90322f18dd49494e6eee45563ac06ba7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585448" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface HPageBreak" />
@@ -34,7 +34,7 @@
       <para>L’objet <b>HPageBreak</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> collection.</para>
       <para>Utilisez <b>HPageBreaks</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du saut de page, pour renvoyer un objet <b>HPageBreak</b> .</para>
       <para>
-        <b>Remarque</b> il s’agit d’une limite de 1026 sauts de page horizontaux par feuille.</para>
+        <b>Remarque</b>  Il existe une limite de 1026 sauts de page horizontaux par feuille.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -93,8 +93,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -216,7 +218,7 @@
         <summary>Cette propriété renvoie ou définit la cellule (un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet) qui définit l’emplacement du saut de page.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sauts de page horizontaux sont alignés avec le bord supérieur de la cellule.</para>
+          <para>Sauts de page horizontaux sont alignées sur le bord supérieur de la cellule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -279,7 +281,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreak" /> peut être une de ces constantes :</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreak" />peut être une de ces constantes :</para>
           <para>
             <b>xlPageBreakAutomatic</b>
           </para>

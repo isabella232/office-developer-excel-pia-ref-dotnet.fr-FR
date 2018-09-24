@@ -1,10 +1,10 @@
 <Type Name="Hyperlink" FullName="Microsoft.Office.Interop.Excel.Hyperlink">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dd29b6bc04f2e1a3332ee1b3e06df7d844ecc7c4" />
+    <Meta Name="ms.openlocfilehash" Value="0dfd3a08d223fb5d9858e759d9369366737cb84c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580688" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Hyperlink" />
@@ -183,8 +183,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -241,7 +243,7 @@
         <summary>Cette propriété renvoie ou définit la chaîne de texte de la ligne de sujet de message électronique du lien hypertexte spécifié. La ligne d’objet est ajoutée à l’adresse du lien hypertexte.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété est généralement utilisée avec des liens hypertexte du courrier électronique.</para>
+          <para>Cette propriété est généralement utilisée avec les liens hypertexte des messages électroniques.</para>
           <para>La valeur de cette propriété est prioritaire sur toute ligne de sujet de message électronique que vous avez spécifié à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.Hyperlink.Address" /> propriété du même objet <b>Hyperlink</b> .</para>
           <para></para>
         </remarks>
@@ -395,7 +397,7 @@
         <summary>Cette propriété renvoie ou définit le texte d’info-bulle pour le lien hypertexte spécifié.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Une fois que le document a été enregistré dans une page Web, le texte d’info-bulle peut s’afficher (par exemple) lorsque le pointeur de souris est positionné sur le lien hypertexte lorsque le document est visualisé dans un navigateur Web. Certains navigateurs Web ne prennent pas en charge les info-bulles.</para>
+          <para>Une fois que le document est enregistré dans une page Web, le texte d'info-bulle peut s'afficher par exemple lorsque vous immobilisez le pointeur de la souris sur le lien hypertexte lors de la visualisation du document dans un navigateur Web. Certains navigateurs ne prennent pas en charge les info-bulles.</para>
           <para></para>
         </remarks>
       </Docs>
