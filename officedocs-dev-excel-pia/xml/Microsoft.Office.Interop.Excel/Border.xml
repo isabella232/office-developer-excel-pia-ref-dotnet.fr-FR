@@ -1,10 +1,10 @@
 <Type Name="Border" FullName="Microsoft.Office.Interop.Excel.Border">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="30183a3a980c964f6c89cba76995fed1732880ce" />
+    <Meta Name="ms.openlocfilehash" Value="615b6d793dd88e23d55febf94b9549b59f9d20c5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576782" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Border" />
@@ -30,26 +30,53 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="06cfb-101">Cet objet représente la bordure d’un objet.</span>
+      <span data-ttu-id="21b69-101">Cet objet représente la bordure d’un objet.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="06cfb-101">Represents the border of an object.</span>
+        <span data-stu-id="21b69-101">Represents the border of an object.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="06cfb-102">
-        <para>Plus délimité objets (tout à l’exception de la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> et <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objets) ont une bordure qui est traitée comme une seule entité, quel que soit le nombre de côtés il a. La bordure entière doit être renvoyée en tant qu’unité. Utilisez la propriété <b>Border</b> pour renvoyer l’objet <b>Border</b> pour ce type d’objet.</para> Les objets 
-        <b>range</b> et <b>Style</b><para>dotés de quatre bordures discrètes : gauche, droite, haut et bas, qui peuvent être renvoyées individuellement ou en tant que groupe. Utilisez la propriété <b>bordures</b> d’une <b>plage</b> ou objet <b>Style</b> pour renvoyer la collection <b>Borders</b> contenant les quatre bordures et les bordures de la traite comme une unité.</para><para>Utiliser <b>bordures</b>(<paramref name="index" />), où <paramref name="index" /> identifie la bordure, pour renvoyer un objet <b>Border</b> .</para><para><paramref name="Index" /> peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes : <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, xlInsideHorizontal <b></b>, ou <b>xlInsideVertical</b>.</para><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="06cfb-102">
-          <para>Most bordered objects (all except for the <see cref="T:Microsoft.Office.Interop.Excel.Range" /> and <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objects) have a border that’s treated as a single entity, regardless of how many sides it has. The entire border must be returned as a unit. Use the <b>Border</b> property to return the <b>Border</b> object for this kind of object.</para>
-          <para>
-            <b>Range</b> and <b>Style</b> objects have four discrete borders — left, right, top, and bottom — that can be returned individually or as a group. Use the <b>Borders</b> property of a <b>Range</b> or <b>Style</b> object to return the <b>Borders</b> collection, which contains all four borders and treats the borders as a unit.</para>
-          <para>Use <b>Borders</b>(<paramref name="index" />), where <paramref name="index" /> identifies the border, to return a single <b>Border</b> object.</para>
-          <para>
-            <paramref name="Index" /> can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constants: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>, or <b>xlInsideVertical</b>.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="21b69-102">Plus délimité objets (tout à l’exception de la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> et <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objets) ont une bordure qui est traitée comme une seule entité, quel que soit le nombre de côtés il a.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21b69-102">Most bordered objects (all except for the <see cref="T:Microsoft.Office.Interop.Excel.Range" /> and <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objects) have a border that’s treated as a single entity, regardless of how many sides it has.</span>
         </span>
-      </span>
+        <span data-ttu-id="21b69-103">La bordure entière doit être renvoyée en tant qu’unité.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21b69-103">The entire border must be returned as a unit.</span>
+        </span>
+        <span data-ttu-id="21b69-104">Utilisez la propriété <b>Border</b> pour renvoyer l’objet <b>Border</b> pour ce type d’objet.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21b69-104">Use the <b>Border</b> property to return the <b>Border</b> object for this kind of object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="21b69-105">Les objets 
+        <b>Range</b> et <b>Style</b> dotés de quatre bordures discrètes : gauche, droite, haut et bas, qui peuvent être renvoyées individuellement ou en tant que groupe.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21b69-105">
+            <b>Range</b> and <b>Style</b> objects have four discrete borders — left, right, top, and bottom — that can be returned individually or as a group.</span>
+        </span>
+        <span data-ttu-id="21b69-106">Utilisez la propriété <b>bordures</b> d’un objet <b>Range</b> ou <b>Style</b> pour renvoyer la collection <b>Borders</b> contenant les quatre bordures et les bordures de la traite comme une unité.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21b69-106">Use the <b>Borders</b> property of a <b>Range</b> or <b>Style</b> object to return the <b>Borders</b> collection, which contains all four borders and treats the borders as a unit.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="21b69-107">Utiliser des <b>bordures</b>(<paramref name="index" />), où <paramref name="index" /> identifie la bordure, pour renvoyer un objet <b>Border</b> .</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21b69-107">Use <b>Borders</b>(<paramref name="index" />), where <paramref name="index" /> identifies the border, to return a single <b>Border</b> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="21b69-108">
+          <paramref name="Index" />peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes : <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>ou <b>xlInsideVertical</b>.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="21b69-108">
+            <paramref name="Index" /> can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constants: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>, or <b>xlInsideVertical</b>.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -77,9 +104,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="06cfb-103">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</span>
+          <span data-ttu-id="21b69-109">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="06cfb-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="21b69-109">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -113,23 +140,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="06cfb-104">Cette propriété renvoie ou définit la couleur principale de la bordure.</span>
+          <span data-ttu-id="21b69-110">Cette propriété renvoie ou définit la couleur principale de la bordure.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="06cfb-104">Returns or sets the primary color of the border.</span>
+            <span data-stu-id="21b69-110">Returns or sets the primary color of the border.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="06cfb-105">
-            <para>Utiliser la fonction <b>RGB</b> pour créer une valeur de couleur.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="06cfb-105">
-              <para>Use the <b>RGB</b> function to create a color value.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="21b69-111">Utilisez la fonction <b>RGB</b> pour créer une valeur de couleur.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-111">Use the <b>RGB</b> function to create a color value.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -160,35 +184,40 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="06cfb-106">Cette propriété renvoie ou définit la couleur de la bordure.</span>
+          <span data-ttu-id="21b69-112">Cette propriété renvoie ou définit la couleur de la bordure.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="06cfb-106">Returns or sets the color of the border.</span>
+            <span data-stu-id="21b69-112">Returns or sets the color of the border.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="06cfb-107">
-            <para>La couleur est spécifiée sous la forme d’une valeur d’index dans la palette de couleurs actuelle ou comme une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes :</para>
-            <para>
-              <b>xlColorIndexAutomatic</b>
-            </para>
-            <para>
-              <b>xlColorIndexNone</b>
-            </para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="06cfb-107">
-              <para>The color is specified as an index value into the current color palette, or as one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constants:</para>
-              <para>
-                <b>xlColorIndexAutomatic</b>
-              </para>
-              <para>
-                <b>xlColorIndexNone</b>
-              </para>
-              <para></para>
+          <para>
+            <span data-ttu-id="21b69-113">La couleur est spécifiée sous la forme d’une valeur d’index dans la palette de couleurs actuelle ou comme une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes :</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-113">The color is specified as an index value into the current color palette, or as one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-114">
+              <b>xlColorIndexAutomatic</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-114">
+                <b>xlColorIndexAutomatic</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-115">
+              <b>xlColorIndexNone</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-115">
+                <b>xlColorIndexNone</b>
+              </span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -216,23 +245,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="06cfb-108">Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</span>
+          <span data-ttu-id="21b69-116">Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="06cfb-108">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="21b69-116">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="06cfb-109">
-            <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="06cfb-109">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="21b69-117">Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-117">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-118">La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-118">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="21b69-119">Par exemple, Microsoft Excel possède le code créateur XCEL.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-119">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -263,73 +299,102 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="06cfb-110">Cette propriété renvoie ou définit le style de trait pour la bordure.</span>
+          <span data-ttu-id="21b69-120">Cette propriété renvoie ou définit le style de trait pour la bordure.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="06cfb-110">Returns or sets the line style for the border.</span>
+            <span data-stu-id="21b69-120">Returns or sets the line style for the border.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="06cfb-111">
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" />peut être une de ces constantes <b>XlLineStyle</b> :</para>
-            <para>
-              <b>xlContinuous</b>
-            </para>
-            <para>
-              <b>xlDash</b>
-            </para>
-            <para>
-              <b>xlDashDot</b>
-            </para>
-            <para>
-              <b>xlDashDotDot</b>
-            </para>
-            <para>
-              <b>xlDot</b>
-            </para>
-            <para>
-              <b>xlDouble</b>
-            </para>
-            <para>
-              <b>xlSlantDashDot</b>
-            </para>
-            <para>
-              <b>xlLineStyleNone</b>
-            </para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="06cfb-111">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" /> can be one of these <b>XlLineStyle</b> constants:</para>
-              <para>
-                <b>xlContinuous</b>
-              </para>
-              <para>
-                <b>xlDash</b>
-              </para>
-              <para>
-                <b>xlDashDot</b>
-              </para>
-              <para>
-                <b>xlDashDotDot</b>
-              </para>
-              <para>
-                <b>xlDot</b>
-              </para>
-              <para>
-                <b>xlDouble</b>
-              </para>
-              <para>
-                <b>xlSlantDashDot</b>
-              </para>
-              <para>
-                <b>xlLineStyleNone</b>
-              </para>
-              <para></para>
+          <para>
+            <span data-ttu-id="21b69-121">
+              <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" />peut être une de ces constantes <b>XlLineStyle</b> :</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-121">
+                <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" /> can be one of these <b>XlLineStyle</b> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-122">
+              <b>xlContinuous</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-122">
+                <b>xlContinuous</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-123">
+              <b>xlDash</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-123">
+                <b>xlDash</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-124">
+              <b>xlDashDot</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-124">
+                <b>xlDashDot</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-125">
+              <b>xlDashDotDot</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-125">
+                <b>xlDashDotDot</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-126">
+              <b>xlDot</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-126">
+                <b>xlDot</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-127">
+              <b>xlDouble</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-127">
+                <b>xlDouble</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-128">
+              <b>xlSlantDashDot</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-128">
+                <b>xlSlantDashDot</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-129">
+              <b>xlLineStyleNone</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-129">
+                <b>xlLineStyleNone</b>
+              </span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -357,9 +422,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="06cfb-112">Renvoie l'objet parent de l'objet spécifié.</span>
+          <span data-ttu-id="21b69-130">Renvoie l'objet parent de l'objet spécifié.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="06cfb-112">Returns the parent object for the specified object.</span>
+            <span data-stu-id="21b69-130">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -393,37 +458,34 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="06cfb-113">Cette propriété renvoie ou définit la couleur de thème dans le jeu de couleurs appliqué qui est associé à l’objet spécifié.</span>
+          <span data-ttu-id="21b69-131">Cette propriété renvoie ou définit la couleur de thème dans le jeu de couleurs appliqué qui est associé à l’objet spécifié.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="06cfb-113">Returns or sets the theme color in the applied color scheme that is associated with the specified object.</span>
+            <span data-stu-id="21b69-131">Returns or sets the theme color in the applied color scheme that is associated with the specified object.</span>
           </span>
-          <span data-ttu-id="06cfb-114">
+          <span data-ttu-id="21b69-132">
             <b>Objet</b> en lecture/écriture.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="06cfb-114">Read/write <b>Object</b>.</span>
+            <span data-stu-id="21b69-132">Read/write <b>Object</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="06cfb-115">
+          <span data-ttu-id="21b69-133">
             <b>Objet</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="06cfb-115">
+            <span data-stu-id="21b69-133">
               <b>Object</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="06cfb-116">
-            <para>Tente d’accéder à une couleur de thème pour un objet dont la couleur n’est pas actuellement à thème génère une erreur d’exécution de requête non valide.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="06cfb-116">
-              <para>Attempting to access a theme color for an object whose color is not currently themed will result in an invalid request run-time error.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="21b69-134">Toute tentative d'accès à une couleur de thème pour un objet auquel aucun thème n'est appliqué provoquera une erreur de requête non valide à l'exécution.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-134">Attempting to access a theme color for an object whose color is not currently themed will result in an invalid request run-time error.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -454,34 +516,39 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="06cfb-117">Cette propriété renvoie ou définit une valeur <b>unique</b> qui éclaircit ou assombrit une couleur.</span>
+          <span data-ttu-id="21b69-135">Cette propriété renvoie ou définit une valeur <b>unique</b> qui éclaircit ou assombrit une couleur.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="06cfb-117">Returns or sets a <b>Single</b> that lightens or darkens a color.</span>
+            <span data-stu-id="21b69-135">Returns or sets a <b>Single</b> that lightens or darkens a color.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="06cfb-118">
+          <span data-ttu-id="21b69-136">
             <b>Unique</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="06cfb-118">
+            <span data-stu-id="21b69-136">
               <b>Single</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="06cfb-119">
-            <para>Vous pouvez entrer un nombre compris entre -1 (sombre) et 1 (clair) pour la <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> propriété. Zéro (0) est neutre.</para>
-            <para>Tentative de définir cette propriété sur une valeur inférieure à -1 ou supérieure à 1 n’entraîne une erreur d’exécution : « la valeur spécifiée est en dehors des limites ».  Cette propriété ne fonctionne pour les couleurs de thème et les couleurs hors thème.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="06cfb-119">
-              <para>You can enter a number from -1 (darkest) to 1 (lightest) for the <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> property. Zero (0) is neutral.</para>
-              <para>Attempting to set this property to a value less than -1 or more than 1 results in a run-time error: "The specified value is out of range."  This property works for both theme colors and nontheme colors.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="21b69-137">Vous pouvez entrer un nombre compris entre -1 (sombre) et 1 (clair) pour la <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> propriété.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-137">You can enter a number from -1 (darkest) to 1 (lightest) for the <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> property.</span>
             </span>
-          </span>
+            <span data-ttu-id="21b69-138">Zéro (0) est neutre.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-138">Zero (0) is neutral.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-p106">Toute tentative de définition de cette propriété sur une valeur inférieure à -1 ou supérieure à +1 provoquera une erreur d'exécution et l'affichage du message « La valeur tapée est en dehors des limites ». Cette propriété fonctionne pour les couleurs de thème et les couleurs hors thème.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-p106">Attempting to set this property to a value less than -1 or more than 1 results in a run-time error: "The specified value is out of range."  This property works for both theme colors and nontheme colors.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -512,49 +579,62 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="06cfb-120">Cette propriété renvoie ou définit l’épaisseur de la bordure.</span>
+          <span data-ttu-id="21b69-141">Cette propriété renvoie ou définit l’épaisseur de la bordure.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="06cfb-120">Returns or sets the weight of the border.</span>
+            <span data-stu-id="21b69-141">Returns or sets the weight of the border.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="06cfb-121">
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" />peut être une de ces constantes <b>XlBorderWeight</b> :</para>
-            <para>
-              <b>xlHairline</b>
-            </para>
-            <para>
-              <b>xlThin</b>
-            </para>
-            <para>
-              <b>xlMedium</b>
-            </para>
-            <para>
-              <b>xlThick</b>
-            </para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="06cfb-121">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" /> can be one of these <b>XlBorderWeight</b> constants:</para>
-              <para>
-                <b>xlHairline</b>
-              </para>
-              <para>
-                <b>xlThin</b>
-              </para>
-              <para>
-                <b>xlMedium</b>
-              </para>
-              <para>
-                <b>xlThick</b>
-              </para>
-              <para></para>
+          <para>
+            <span data-ttu-id="21b69-142">
+              <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" />peut être une de ces constantes <b>XlBorderWeight</b> :</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-142">
+                <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" /> can be one of these <b>XlBorderWeight</b> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-143">
+              <b>xlHairline</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-143">
+                <b>xlHairline</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-144">
+              <b>xlThin</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-144">
+                <b>xlThin</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-145">
+              <b>xlMedium</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-145">
+                <b>xlMedium</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="21b69-146">
+              <b>xlThick</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="21b69-146">
+                <b>xlThick</b>
+              </span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

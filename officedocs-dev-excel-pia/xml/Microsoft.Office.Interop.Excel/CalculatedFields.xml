@@ -1,10 +1,10 @@
 <Type Name="CalculatedFields" FullName="Microsoft.Office.Interop.Excel.CalculatedFields">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="322bea970ce4e1d5a0095eafdd21ad263f26ffe7" />
+    <Meta Name="ms.openlocfilehash" Value="551200c74cbef27982489b80758fa22c187b61fe" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572673" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedFields : System.Collections.IEnumerable" />
@@ -34,28 +34,37 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="285b3-101">Une collection de <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objets représentant tous les champs calculés du rapport de tableau croisé dynamique spécifié.</span>
+      <span data-ttu-id="95341-101">Une collection de <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objets représentant tous les champs calculés du rapport de tableau croisé dynamique spécifié.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="285b3-101">A collection of <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objects that represents all the calculated fields in the specified PivotTable report.</span>
+        <span data-stu-id="95341-101">A collection of <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objects that represents all the calculated fields in the specified PivotTable report.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="285b3-102">
-        <para>, Par exemple, un rapport qui contient les champs crédits et débits pourrait posséder un champ calculé intitulé « Bénéfices » et définie comme le montant dans le champ de chiffre d’affaires moins le montant dans le champ débits.</para>
-        <para>Pour les sources de données, vous ne pouvez pas définir cette collection, et elle renvoie toujours la <b>valeur Nothing</b>.</para>
-        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /> méthode pour renvoyer la collection <b>CalculatedFields</b> .</para>
-        <para>Utilisez <b>CalculatedFields</b>(<paramref name="index" />), où <paramref name="index" /> est du champ spécifié nom ou numéro d’index, pour renvoyer un seul objet <b>PivotField</b> de la collection <b>CalculatedFields</b> .</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="285b3-102">
-          <para>For example, a report that contains Revenue and Expense fields could have a calculated field named “Profit” and defined as the amount in the Revenue field minus the amount in the Expense field.</para>
-          <para>For OLAP data sources, you cannot set this collection, and it always returns <b>Nothing</b>.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /> method to return the <b>CalculatedFields</b> collection.</para>
-          <para>Use <b>CalculatedFields</b>(<paramref name="index" />), where <paramref name="index" /> is the specified field’s name or index number, to return a single <b>PivotField</b> object from the <b>CalculatedFields</b> collection.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="95341-102">Par exemple, un rapport qui contient les champs crédits et débits pourrait posséder un champ calculé intitulé « Bénéfices » et définie comme le montant dans le champ de chiffre d’affaires moins le montant dans le champ de note de frais.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="95341-102">For example, a report that contains Revenue and Expense fields could have a calculated field named “Profit” and defined as the amount in the Revenue field minus the amount in the Expense field.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="95341-103">Vous ne pouvez pas définir cette collection dans le cas des sources de données OLAP : la valeur <b>Nothing</b> est toujours renvoyée.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="95341-103">For OLAP data sources, you cannot set this collection, and it always returns <b>Nothing</b>.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="95341-104">Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /> méthode pour renvoyer la collection <b>CalculatedFields</b> .</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="95341-104">Use the <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /> method to return the <b>CalculatedFields</b> collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="95341-105">Utilisez <b>CalculatedFields</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou le numéro d’index, pour renvoyer un seul objet <b>PivotField</b> de la collection <b>CalculatedFields</b> du champ spécifié.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="95341-105">Use <b>CalculatedFields</b>(<paramref name="index" />), where <paramref name="index" /> is the specified field’s name or index number, to return a single <b>PivotField</b> object from the <b>CalculatedFields</b> collection.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -89,9 +98,9 @@
         <param name="Name">To be added.</param>
         <param name="Formula">To be added.</param>
         <summary>
-          <span data-ttu-id="285b3-103">Réservé à une utilisation interne.</span>
+          <span data-ttu-id="95341-106">Réservé à une utilisation interne.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-103">Reserved for internal use.</span>
+            <span data-stu-id="95341-106">Reserved for internal use.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -129,9 +138,9 @@
       <Docs>
         <param name="Field">To be added.</param>
         <summary>
-          <span data-ttu-id="285b3-104">Réservé à une utilisation interne.</span>
+          <span data-ttu-id="95341-107">Réservé à une utilisation interne.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-104">Reserved for internal use.</span>
+            <span data-stu-id="95341-107">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -163,53 +172,53 @@
       </Parameters>
       <Docs>
         <param name="Name">
-          <span data-ttu-id="285b3-105">
+          <span data-ttu-id="95341-108">
             <b>String</b>obligatoire.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-105">Required <b>String</b>.</span>
+            <span data-stu-id="95341-108">Required <b>String</b>.</span>
           </span>
-          <span data-ttu-id="285b3-106">Nom du champ.</span>
+          <span data-ttu-id="95341-109">Nom du champ.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-106">The name of the field.</span>
+            <span data-stu-id="95341-109">The name of the field.</span>
           </span>
         </param>
         <param name="Formula">
-          <span data-ttu-id="285b3-107">
+          <span data-ttu-id="95341-110">
             <b>String</b>obligatoire.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-107">Required <b>String</b>.</span>
+            <span data-stu-id="95341-110">Required <b>String</b>.</span>
           </span>
-          <span data-ttu-id="285b3-108">Formule du champ.</span>
+          <span data-ttu-id="95341-111">Formule du champ.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-108">The formula for the field.</span>
+            <span data-stu-id="95341-111">The formula for the field.</span>
           </span>
         </param>
         <param name="UseStandardFormula">
-          <span data-ttu-id="285b3-109">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="95341-112">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-109">Optional <b>Object</b>.</span>
+            <span data-stu-id="95341-112">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="285b3-110">
+          <span data-ttu-id="95341-113">
             <b>False</b> (par défaut) pour la compatibilité descendante.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-110">
+            <span data-stu-id="95341-113">
               <b>False</b> (default) for upward compatibility.</span>
           </span>
-          <span data-ttu-id="285b3-111">
+          <span data-ttu-id="95341-114">
             <b>True</b> pour que les chaînes contenues dans les arguments qui sont des noms de champ (sera interprétée comme ayant été mises en anglais (États-Unis) standard au lieu de paramètres locaux).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-111">
+            <span data-stu-id="95341-114">
               <b>True</b> for strings contained in any arguments that are field names (will be interpreted as having been formatted in standard U.S. English instead of local settings).</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="285b3-112">Crée un nouveau champ calculé.</span>
+          <span data-ttu-id="95341-115">Crée un nouveau champ calculé.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-112">Creates a new calculated field.</span>
+            <span data-stu-id="95341-115">Creates a new calculated field.</span>
           </span>
-          <span data-ttu-id="285b3-113">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet.</span>
+          <span data-ttu-id="95341-116">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-113">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> object.</span>
+            <span data-stu-id="95341-116">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -240,9 +249,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="285b3-114">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</span>
+          <span data-ttu-id="95341-117">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-114">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="95341-117">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -273,9 +282,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="285b3-115">Renvoie le nombre d'objets dans la collection.</span>
+          <span data-ttu-id="95341-118">Renvoie le nombre d'objets dans la collection.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-115">Returns the number of objects in the collection.</span>
+            <span data-stu-id="95341-118">Returns the number of objects in the collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -306,23 +315,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="285b3-116">Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</span>
+          <span data-ttu-id="95341-119">Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-116">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="95341-119">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="285b3-117">
-            <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="285b3-117">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="95341-120">Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="95341-120">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="95341-121">La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="95341-121">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="95341-122">Par exemple, Microsoft Excel possède le code créateur XCEL.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="95341-122">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -382,20 +398,20 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="285b3-118">
+          <span data-ttu-id="95341-123">
             <b>Objet</b>obligatoire.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-118">Required <b>Object</b>.</span>
+            <span data-stu-id="95341-123">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="285b3-119">Nom ou numéro d'index de l'objet.</span>
+          <span data-ttu-id="95341-124">Nom ou numéro d'index de l'objet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-119">The name or index number for the object.</span>
+            <span data-stu-id="95341-124">The name or index number for the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="285b3-120">Renvoie un seul objet d'une collection.</span>
+          <span data-ttu-id="95341-125">Renvoie un seul objet d'une collection.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-120">Returns a single object from a collection.</span>
+            <span data-stu-id="95341-125">Returns a single object from a collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -426,9 +442,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="285b3-121">Cette propriété renvoie l'objet parent de l'objet spécifié.</span>
+          <span data-ttu-id="95341-126">Cette propriété renvoie l'objet parent de l'objet spécifié.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="285b3-121">Returns the parent object for the specified object.</span>
+            <span data-stu-id="95341-126">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>

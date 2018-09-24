@@ -1,10 +1,10 @@
 <Type Name="Charts" FullName="Microsoft.Office.Interop.Excel.Charts">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f0e75c27ff1370b7c1737585a6a29f589fcd20eb" />
+    <Meta Name="ms.openlocfilehash" Value="21bb7adb80852e2d82d5897dcd0ffec87dcefadd" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581738" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Charts : System.Collections.IEnumerable" />
@@ -34,40 +34,57 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="ccf9c-101">Collection de toutes les feuilles graphiques du classeur actif ou spécifié.</span>
+      <span data-ttu-id="36e58-101">Collection de toutes les feuilles graphiques du classeur actif ou spécifié.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="ccf9c-101">A collection of all the chart sheets in the specified or active workbook.</span>
+        <span data-stu-id="36e58-101">A collection of all the chart sheets in the specified or active workbook.</span>
       </span>
-      <span data-ttu-id="ccf9c-102">Chaque feuille de graphique est représenté par un <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objet.</span>
+      <span data-ttu-id="36e58-102">Chaque feuille de graphique est représenté par un <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objet.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="ccf9c-102">Each chart sheet is represented by a <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object.</span>
+        <span data-stu-id="36e58-102">Each chart sheet is represented by a <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object.</span>
       </span>
-      <span data-ttu-id="ccf9c-103">Cela n’inclut pas les graphiques incorporés dans des feuilles de calcul ou des feuilles de boîte de dialogue.</span>
+      <span data-ttu-id="36e58-103">Cela n’inclut pas les graphiques incorporés dans des feuilles de calcul ou des feuilles de boîte de dialogue.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="ccf9c-103">This doesn’t include charts embedded on worksheets or dialog sheets.</span>
+        <span data-stu-id="36e58-103">This doesn’t include charts embedded on worksheets or dialog sheets.</span>
       </span>
-      <span data-ttu-id="ccf9c-104">Pour plus d’informations sur les graphiques incorporés, voir la <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> objet.</span>
+      <span data-ttu-id="36e58-104">Pour plus d’informations sur les graphiques incorporés, voir la <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> objet.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="ccf9c-104">For information about embedded charts, see the <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> object.</span>
+        <span data-stu-id="36e58-104">For information about embedded charts, see the <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> object.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="ccf9c-105">
-        <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> propriété permet de renvoyer la collection <b>Charts</b> . Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> méthode pour créer une nouvelle feuille de graphique et l’ajouter au classeur.</para>
-        <para>Vous pouvez combiner les <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> méthode avec la <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour ajouter un nouveau graphique contenant des données à partir d’une feuille de calcul.</para>
-        <para>Utilisez les <b>graphiques</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de feuille de graphique ou le nom, pour renvoyer un seul objet <b>Chart</b> .</para>
-        <para>La <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection contient toutes les feuilles du classeur (feuilles de calcul et les feuilles de graphique). Utiliser des <b>feuilles</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la feuille ou le numéro, pour renvoyer une seule feuille.</para>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="ccf9c-105">
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> property to return the <b>Charts</b> collection. Use the <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> method to create a new chart sheet and add it to the workbook.</para>
-          <para>You can combine the <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> method with the <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to add a new chart that contains data from a worksheet.</para>
-          <para>Use <b>Charts</b>(<paramref name="index" />), where <paramref name="index" /> is the chart sheet index number or name, to return a single <b>Chart</b> object.</para>
-          <para>The <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection contains all the sheets in the workbook (both chart sheets and worksheets). Use <b>Sheets</b>(<paramref name="index" />), where <paramref name="index" /> is the sheet name or number, to return a single sheet.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="36e58-105">Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> propriété permet de renvoyer la collection <b>Charts</b> .</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="36e58-105">Use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> property to return the <b>Charts</b> collection.</span>
         </span>
-      </span>
+        <span data-ttu-id="36e58-106">Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> méthode pour créer une nouvelle feuille de graphique et l’ajouter au classeur.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="36e58-106">Use the <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> method to create a new chart sheet and add it to the workbook.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="36e58-107">Vous pouvez combiner les <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> méthode avec la <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour ajouter un nouveau graphique contenant des données à partir d’une feuille de calcul.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="36e58-107">You can combine the <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> method with the <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to add a new chart that contains data from a worksheet.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="36e58-108">Utilisation de <b>graphiques</b>(<paramref name="index" />), où <paramref name="index" /> est le nom, pour renvoyer un seul objet <b>Chart</b> ou le numéro d’index de feuille de graphique.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="36e58-108">Use <b>Charts</b>(<paramref name="index" />), where <paramref name="index" /> is the chart sheet index number or name, to return a single <b>Chart</b> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="36e58-109">Le <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection contient toutes les feuilles du classeur (feuilles de calcul et les feuilles de graphique).</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="36e58-109">The <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection contains all the sheets in the workbook (both chart sheets and worksheets).</span>
+        </span>
+        <span data-ttu-id="36e58-110">Utiliser des <b>feuilles</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la feuille ou le numéro, pour renvoyer une seule feuille.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="36e58-110">Use <b>Sheets</b>(<paramref name="index" />), where <paramref name="index" /> is the sheet name or number, to return a single sheet.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -102,9 +119,9 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>
-          <span data-ttu-id="ccf9c-106">Réservé à une utilisation interne.</span>
+          <span data-ttu-id="36e58-111">Réservé à une utilisation interne.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-106">Reserved for internal use.</span>
+            <span data-stu-id="36e58-111">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -136,9 +153,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="ccf9c-107">Réservé à une utilisation interne.</span>
+          <span data-ttu-id="36e58-112">Réservé à une utilisation interne.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-107">Reserved for internal use.</span>
+            <span data-stu-id="36e58-112">Reserved for internal use.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -183,9 +200,9 @@
         <param name="PrintToFile">To be added.</param>
         <param name="Collate">To be added.</param>
         <summary>
-          <span data-ttu-id="ccf9c-108">Réservé à une utilisation interne.</span>
+          <span data-ttu-id="36e58-113">Réservé à une utilisation interne.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-108">Reserved for internal use.</span>
+            <span data-stu-id="36e58-113">Reserved for internal use.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -222,9 +239,9 @@
         <param name="After">To be added.</param>
         <param name="Count">To be added.</param>
         <summary>
-          <span data-ttu-id="ccf9c-109">Cet objet, ce membre ou cette énumération est déconseillé et n'est pas destiné à être utilisé dans votre code.</span>
+          <span data-ttu-id="36e58-114">Cet objet, ce membre ou cette énumération est déconseillé et n'est pas destiné à être utilisé dans votre code.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-109">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
+            <span data-stu-id="36e58-114">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -257,33 +274,33 @@
       </Parameters>
       <Docs>
         <param name="Before">
-          <span data-ttu-id="ccf9c-110">Objet qui spécifie la feuille devant laquelle la nouvelle feuille est ajoutée.</span>
+          <span data-ttu-id="36e58-115">Objet qui spécifie la feuille devant laquelle la nouvelle feuille est ajoutée.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-110">An object that specifies the sheet before which the new sheet is added.</span>
+            <span data-stu-id="36e58-115">An object that specifies the sheet before which the new sheet is added.</span>
           </span>
         </param>
         <param name="After">
-          <span data-ttu-id="ccf9c-111">Objet qui spécifie la feuille derrière laquelle la nouvelle feuille est ajoutée.</span>
+          <span data-ttu-id="36e58-116">Objet qui spécifie la feuille derrière laquelle la nouvelle feuille est ajoutée.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-111">An object that specifies the sheet after which the new sheet is added.</span>
+            <span data-stu-id="36e58-116">An object that specifies the sheet after which the new sheet is added.</span>
           </span>
         </param>
         <param name="Count">
-          <span data-ttu-id="ccf9c-p102">Nombre de feuilles à ajouter. La valeur par défaut est 1.</span>
+          <span data-ttu-id="36e58-p104">Nombre de feuilles à ajouter. La valeur par défaut est 1.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-p102">The number of sheets to be added. The default value is one.</span>
+            <span data-stu-id="36e58-p104">The number of sheets to be added. The default value is one.</span>
           </span>
         </param>
         <param name="NewLayout">
-          <span data-ttu-id="ccf9c-114">Si <b>NewLayout</b> a la <b>valeur True</b>, le graphique est inséré en utilisant les nouvelles règles de mise en forme dynamiques (titre est activée, et légende est sur uniquement s’il y a plusieurs séries).</span>
+          <span data-ttu-id="36e58-119">Si <b>NewLayout</b> a la <b>valeur True</b>, le graphique est inséré en utilisant les nouvelles règles de mise en forme dynamiques (titre est activée, et légende est sur uniquement s’il y a plusieurs séries).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-114">If <b>NewLayout</b> is <b>True</b>, the chart is inserted by using the new dynamic formatting rules (Title is on, and Legend is on only if there are multiple series).</span>
+            <span data-stu-id="36e58-119">If <b>NewLayout</b> is <b>True</b>, the chart is inserted by using the new dynamic formatting rules (Title is on, and Legend is on only if there are multiple series).</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="ccf9c-115">Insère un graphique directement sur la grille.</span>
+          <span data-ttu-id="36e58-120">Insère un graphique directement sur la grille.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-115">Inserts a chart directly onto the grid.</span>
+            <span data-stu-id="36e58-120">Inserts a chart directly onto the grid.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -314,13 +331,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ccf9c-116">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</span>
+          <span data-ttu-id="36e58-121">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="36e58-121">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
-          <span data-ttu-id="ccf9c-117">En lecture seule.</span>
+          <span data-ttu-id="36e58-122">En lecture seule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-117">Read-only.</span>
+            <span data-stu-id="36e58-122">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -351,50 +368,47 @@
       </Parameters>
       <Docs>
         <param name="Before">
-          <span data-ttu-id="ccf9c-118">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-123">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-118">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-123">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-119">La feuille avant laquelle la feuille copiée sera placée.</span>
+          <span data-ttu-id="36e58-124">La feuille avant laquelle la feuille copiée sera placée.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-119">The sheet before which the copied sheet will be placed.</span>
+            <span data-stu-id="36e58-124">The sheet before which the copied sheet will be placed.</span>
           </span>
-          <span data-ttu-id="ccf9c-120">Vous ne pouvez pas spécifier <paramref name="Before" /> si vous spécifiez <paramref name="After" />.</span>
+          <span data-ttu-id="36e58-125">Vous ne pouvez pas spécifier <paramref name="Before" /> si vous spécifiez <paramref name="After" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-120">You cannot specify <paramref name="Before" /> if you specify <paramref name="After" />.</span>
+            <span data-stu-id="36e58-125">You cannot specify <paramref name="Before" /> if you specify <paramref name="After" />.</span>
           </span>
         </param>
         <param name="After">
-          <span data-ttu-id="ccf9c-121">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-126">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-121">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-126">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-122">La feuille après laquelle la feuille copiée sera placée.</span>
+          <span data-ttu-id="36e58-127">La feuille après laquelle la feuille copiée sera placée.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-122">The sheet after which the copied sheet will be placed.</span>
+            <span data-stu-id="36e58-127">The sheet after which the copied sheet will be placed.</span>
           </span>
-          <span data-ttu-id="ccf9c-123">Vous ne pouvez pas spécifier <paramref name="After" /> si vous spécifiez <paramref name="Before" />.</span>
+          <span data-ttu-id="36e58-128">Vous ne pouvez pas spécifier <paramref name="After" /> si vous spécifiez <paramref name="Before" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-123">You cannot specify <paramref name="After" /> if you specify <paramref name="Before" />.</span>
+            <span data-stu-id="36e58-128">You cannot specify <paramref name="After" /> if you specify <paramref name="Before" />.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="ccf9c-124">Copie la feuille à un autre emplacement dans le classeur.</span>
+          <span data-ttu-id="36e58-129">Copie la feuille à un autre emplacement dans le classeur.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-124">Copies the sheet to another location in the workbook.</span>
+            <span data-stu-id="36e58-129">Copies the sheet to another location in the workbook.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="ccf9c-125">
-            <para>Si vous ne spécifiez pas ces <paramref name="Before" /> ou <paramref name="After" />, Microsoft Excel crée un nouveau classeur contenant la feuille copiée.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-125">
-              <para>If you don't specify either <paramref name="Before" /> or <paramref name="After" />, Microsoft Excel creates a new workbook that contains the copied sheet.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="36e58-130">Si vous ne spécifiez pas ces <paramref name="Before" /> ou <paramref name="After" />, Microsoft Excel crée un nouveau classeur contenant la feuille copiée.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="36e58-130">If you don't specify either <paramref name="Before" /> or <paramref name="After" />, Microsoft Excel creates a new workbook that contains the copied sheet.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -422,13 +436,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ccf9c-126">Renvoie le nombre d'objets dans la collection.</span>
+          <span data-ttu-id="36e58-131">Renvoie le nombre d'objets dans la collection.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-126">Returns the number of objects in the collection.</span>
+            <span data-stu-id="36e58-131">Returns the number of objects in the collection.</span>
           </span>
-          <span data-ttu-id="ccf9c-127">Valeur Integer en lecture seule.</span>
+          <span data-ttu-id="36e58-132">Valeur Integer en lecture seule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-127">Read-only Integer.</span>
+            <span data-stu-id="36e58-132">Read-only Integer.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -459,28 +473,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ccf9c-128">Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</span>
+          <span data-ttu-id="36e58-133">Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-128">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="36e58-133">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="ccf9c-129">Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</span>
+          <span data-ttu-id="36e58-134">Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-129">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            <span data-stu-id="36e58-134">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
           </span>
-          <span data-ttu-id="ccf9c-130">En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          <span data-ttu-id="36e58-135">En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-130">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            <span data-stu-id="36e58-135">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="ccf9c-131">Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-131">
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="36e58-136">La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="36e58-136">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
             </span>
-          </span>
+            <span data-ttu-id="36e58-137">Par exemple, Microsoft Excel possède le code créateur XCEL.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="36e58-137">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -506,9 +524,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="ccf9c-132">Supprime l'objet.</span>
+          <span data-ttu-id="36e58-138">Supprime l'objet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-132">Deletes the object.</span>
+            <span data-stu-id="36e58-138">Deletes the object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -570,27 +588,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ccf9c-133">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> sauts de collection qui représente la page horizontale sur la feuille.</span>
+          <span data-ttu-id="36e58-139">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> sauts de collection qui représente la page horizontale sur la feuille.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-133">Returns an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> collection that represents the horizontal page breaks on the sheet.</span>
+            <span data-stu-id="36e58-139">Returns an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> collection that represents the horizontal page breaks on the sheet.</span>
           </span>
-          <span data-ttu-id="ccf9c-134">En lecture seule.</span>
+          <span data-ttu-id="36e58-140">En lecture seule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-134">Read-only.</span>
+            <span data-stu-id="36e58-140">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="ccf9c-135">
-            <para>Est une limite de sauts de page horizontaux 1026 par feuille.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-135">
-              <para>There is a limit of 1026 horizontal page breaks per sheet.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="36e58-141">Une feuille ne peut pas contenir plus de 1 026 sauts de page horizontaux.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="36e58-141">There is a limit of 1026 horizontal page breaks per sheet.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -621,20 +636,20 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="ccf9c-136">
+          <span data-ttu-id="36e58-142">
             <b>Objet</b>obligatoire.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-136">Required <b>Object</b>.</span>
+            <span data-stu-id="36e58-142">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-137">Nom ou numéro d'index de l'objet.</span>
+          <span data-ttu-id="36e58-143">Nom ou numéro d'index de l'objet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-137">The name or index number of the object.</span>
+            <span data-stu-id="36e58-143">The name or index number of the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="ccf9c-138">Renvoie un seul objet d'une collection.</span>
+          <span data-ttu-id="36e58-144">Renvoie un seul objet d'une collection.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-138">Returns a single object from a collection.</span>
+            <span data-stu-id="36e58-144">Returns a single object from a collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -665,50 +680,47 @@
       </Parameters>
       <Docs>
         <param name="Before">
-          <span data-ttu-id="ccf9c-139">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-145">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-139">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-145">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-140">La feuille avant laquelle la feuille déplacée sera placée.</span>
+          <span data-ttu-id="36e58-146">La feuille avant laquelle la feuille déplacée sera placée.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-140">The sheet before which the moved sheet will be placed.</span>
+            <span data-stu-id="36e58-146">The sheet before which the moved sheet will be placed.</span>
           </span>
-          <span data-ttu-id="ccf9c-141">Vous ne pouvez pas spécifier <paramref name="Before" /> si vous spécifiez <paramref name="After" />.</span>
+          <span data-ttu-id="36e58-147">Vous ne pouvez pas spécifier <paramref name="Before" /> si vous spécifiez <paramref name="After" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-141">You cannot specify <paramref name="Before" /> if you specify <paramref name="After" />.</span>
+            <span data-stu-id="36e58-147">You cannot specify <paramref name="Before" /> if you specify <paramref name="After" />.</span>
           </span>
         </param>
         <param name="After">
-          <span data-ttu-id="ccf9c-142">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-148">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-142">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-148">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-143">La feuille après laquelle la feuille déplacée sera placée.</span>
+          <span data-ttu-id="36e58-149">La feuille après laquelle la feuille déplacée sera placée.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-143">The sheet after which the moved sheet will be placed.</span>
+            <span data-stu-id="36e58-149">The sheet after which the moved sheet will be placed.</span>
           </span>
-          <span data-ttu-id="ccf9c-144">Vous ne pouvez pas spécifier <paramref name="After" /> si vous spécifiez <paramref name="Before" />.</span>
+          <span data-ttu-id="36e58-150">Vous ne pouvez pas spécifier <paramref name="After" /> si vous spécifiez <paramref name="Before" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-144">You cannot specify <paramref name="After" /> if you specify <paramref name="Before" />.</span>
+            <span data-stu-id="36e58-150">You cannot specify <paramref name="After" /> if you specify <paramref name="Before" />.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="ccf9c-145">Cette méthode déplace la feuille à un autre endroit du classeur.</span>
+          <span data-ttu-id="36e58-151">Cette méthode déplace la feuille à un autre endroit du classeur.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-145">Moves the sheet to another location in the workbook.</span>
+            <span data-stu-id="36e58-151">Moves the sheet to another location in the workbook.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="ccf9c-146">
-            <para>Si vous ne spécifiez pas ces <paramref name="Before" /> ou <paramref name="After" />, Microsoft Excel crée un nouveau classeur contenant la feuille déplacée.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-146">
-              <para>If you don't specify either <paramref name="Before" /> or <paramref name="After" />, Microsoft Excel creates a new workbook that contains the moved sheet.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="36e58-152">Si vous ne spécifiez pas ces <paramref name="Before" /> ou <paramref name="After" />, Microsoft Excel crée un nouveau classeur contenant la feuille déplacée.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="36e58-152">If you don't specify either <paramref name="Before" /> or <paramref name="After" />, Microsoft Excel creates a new workbook that contains the moved sheet.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -736,9 +748,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ccf9c-p112">Renvoie l'objet parent de l'objet spécifié. En lecture seule.</span>
+          <span data-ttu-id="36e58-p115">Renvoie l'objet parent de l'objet spécifié. En lecture seule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-p112">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="36e58-p115">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -778,130 +790,127 @@
       </Parameters>
       <Docs>
         <param name="From">
-          <span data-ttu-id="ccf9c-149">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-155">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-149">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-155">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-150">Le numéro de la page à laquelle commence l’impression.</span>
+          <span data-ttu-id="36e58-156">Le numéro de la page à laquelle commence l’impression.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-150">The number of the page at which to start printing.</span>
+            <span data-stu-id="36e58-156">The number of the page at which to start printing.</span>
           </span>
-          <span data-ttu-id="ccf9c-151">Si cet argument est omis, l’impression commence au début.</span>
+          <span data-ttu-id="36e58-157">Si cet argument est omis, l’impression commence au début.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-151">If this argument is omitted, printing starts at the beginning.</span>
+            <span data-stu-id="36e58-157">If this argument is omitted, printing starts at the beginning.</span>
           </span>
         </param>
         <param name="To">
-          <span data-ttu-id="ccf9c-152">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-158">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-152">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-158">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-153">Le numéro de la dernière page à imprimer.</span>
+          <span data-ttu-id="36e58-159">Le numéro de la dernière page à imprimer.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-153">The number of the last page to print.</span>
+            <span data-stu-id="36e58-159">The number of the last page to print.</span>
           </span>
-          <span data-ttu-id="ccf9c-154">Si cet argument est omis, l’impression se termine par la dernière page.</span>
+          <span data-ttu-id="36e58-160">Si cet argument est omis, l’impression se termine par la dernière page.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-154">If this argument is omitted, printing ends with the last page.</span>
+            <span data-stu-id="36e58-160">If this argument is omitted, printing ends with the last page.</span>
           </span>
         </param>
         <param name="Copies">
-          <span data-ttu-id="ccf9c-155">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-161">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-155">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-161">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-156">Le nombre de copies à imprimer.</span>
+          <span data-ttu-id="36e58-162">Le nombre de copies à imprimer.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-156">The number of copies to print.</span>
+            <span data-stu-id="36e58-162">The number of copies to print.</span>
           </span>
-          <span data-ttu-id="ccf9c-157">Si cet argument est omis, une seule copie est imprimée.</span>
+          <span data-ttu-id="36e58-163">Si cet argument est omis, une seule copie est imprimée.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-157">If this argument is omitted, one copy is printed.</span>
+            <span data-stu-id="36e58-163">If this argument is omitted, one copy is printed.</span>
           </span>
         </param>
         <param name="Preview">
-          <span data-ttu-id="ccf9c-158">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-164">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-158">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-164">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-159">
+          <span data-ttu-id="36e58-165">
             <b>True</b> pour que Microsoft Excel affiche un aperçu avant impression de l’objet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-159">
+            <span data-stu-id="36e58-165">
               <b>True</b> to have Microsoft Excel invoke print preview before printing the object.</span>
           </span>
-          <span data-ttu-id="ccf9c-160">
+          <span data-ttu-id="36e58-166">
             <b>False</b> (ou omis) pour imprimer l’objet immédiatement.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-160">
+            <span data-stu-id="36e58-166">
               <b>False</b> (or omitted) to print the object immediately.</span>
           </span>
         </param>
         <param name="ActivePrinter">
-          <span data-ttu-id="ccf9c-161">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-167">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-161">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-167">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-162">Définit le nom de l'imprimante active.</span>
+          <span data-ttu-id="36e58-168">Définit le nom de l'imprimante active.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-162">Sets the name of the active printer.</span>
+            <span data-stu-id="36e58-168">Sets the name of the active printer.</span>
           </span>
         </param>
         <param name="PrintToFile">
-          <span data-ttu-id="ccf9c-163">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-169">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-163">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-169">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-164">
+          <span data-ttu-id="36e58-170">
             <b>True</b> pour imprimer dans un fichier.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-164">
+            <span data-stu-id="36e58-170">
               <b>True</b> to print to a file.</span>
           </span>
-          <span data-ttu-id="ccf9c-165">Si <paramref name="PrToFileName" /> n’est pas spécifié, Microsoft Excel invite l’utilisateur à entrer le nom du fichier de sortie.</span>
+          <span data-ttu-id="36e58-171">Si <paramref name="PrToFileName" /> n’est pas spécifié, Microsoft Excel invite l’utilisateur à entrer le nom du fichier de sortie.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-165">If <paramref name="PrToFileName" /> is not specified, Microsoft Excel prompts the user to enter the name of the output file.</span>
+            <span data-stu-id="36e58-171">If <paramref name="PrToFileName" /> is not specified, Microsoft Excel prompts the user to enter the name of the output file.</span>
           </span>
         </param>
         <param name="Collate">
-          <span data-ttu-id="ccf9c-166">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-172">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-166">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-172">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-167">
+          <span data-ttu-id="36e58-173">
             <b>True</b> pour assembler plusieurs copies.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-167">
+            <span data-stu-id="36e58-173">
               <b>True</b> to collate multiple copies.</span>
           </span>
         </param>
         <param name="PrToFileName">
-          <span data-ttu-id="ccf9c-168">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-174">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-168">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-174">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-169">Si <paramref name="PrintToFile" /> est définie sur <b>True</b>, cet argument spécifie le nom du fichier que vous souhaitez effectuer l’impression.</span>
+          <span data-ttu-id="36e58-175">Si <paramref name="PrintToFile" /> est définie sur <b>True</b>, cet argument spécifie le nom du fichier que vous souhaitez effectuer l’impression.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-169">If <paramref name="PrintToFile" /> is set to <b>True</b>, this argument specifies the name of the file you want to print to.</span>
+            <span data-stu-id="36e58-175">If <paramref name="PrintToFile" /> is set to <b>True</b>, this argument specifies the name of the file you want to print to.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="ccf9c-170">Imprime l’objet.</span>
+          <span data-ttu-id="36e58-176">Imprime l’objet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-170">Prints the object.</span>
+            <span data-stu-id="36e58-176">Prints the object.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="ccf9c-171">
-            <para>« Pages » dans les descriptions de <paramref name="From" /> et <paramref name="To" /> fait référence aux pages imprimées, pas toutes les pages de la feuille ou du classeur.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-171">
-              <para>"Pages" in the descriptions of <paramref name="From" /> and <paramref name="To" /> refers to printed pages, not overall pages in the sheet or workbook.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="36e58-177">« Pages » dans les descriptions de <paramref name="From" /> et <paramref name="To" /> fait référence aux pages imprimées, pas toutes les pages de la feuille ou du classeur.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="36e58-177">"Pages" in the descriptions of <paramref name="From" /> and <paramref name="To" /> refers to printed pages, not overall pages in the sheet or workbook.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -943,9 +952,9 @@
         <param name="Collate">To be added.</param>
         <param name="PrToFileName">To be added.</param>
         <summary>
-          <span data-ttu-id="ccf9c-172">Réservé à une utilisation interne.</span>
+          <span data-ttu-id="36e58-178">Réservé à une utilisation interne.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-172">Reserved for internal use.</span>
+            <span data-stu-id="36e58-178">Reserved for internal use.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -974,21 +983,21 @@
       </Parameters>
       <Docs>
         <param name="EnableChanges">
-          <span data-ttu-id="ccf9c-173">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-179">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-173">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-179">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-174">
+          <span data-ttu-id="36e58-180">
             <b>True</b> pour activer les modifications pour les graphiques spécifiés.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-174">
+            <span data-stu-id="36e58-180">
               <b>True</b> to enable changes to the specified charts.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="ccf9c-175">Cette méthode affiche un aperçu de l'objet tel qu'il apparaîtra une fois imprimé.</span>
+          <span data-ttu-id="36e58-181">Cette méthode affiche un aperçu de l'objet tel qu'il apparaîtra une fois imprimé.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-175">Shows a preview of the object as it would look when printed.</span>
+            <span data-stu-id="36e58-181">Shows a preview of the object as it would look when printed.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1017,19 +1026,19 @@
       </Parameters>
       <Docs>
         <param name="Replace">
-          <span data-ttu-id="ccf9c-176">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="36e58-182">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-176">Optional <b>Object</b>.</span>
+            <span data-stu-id="36e58-182">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="ccf9c-177">Objet à remplacer.</span>
+          <span data-ttu-id="36e58-183">Objet à remplacer.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-177">The object to replace.</span>
+            <span data-stu-id="36e58-183">The object to replace.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="ccf9c-178">Sélectionne l'objet.</span>
+          <span data-ttu-id="36e58-184">Sélectionne l'objet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-178">Selects the object.</span>
+            <span data-stu-id="36e58-184">Selects the object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1062,14 +1071,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ccf9c-179">Détermine si l’objet est visible.</span>
+          <span data-ttu-id="36e58-185">Détermine si l’objet est visible.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-179">Determines whether the object is visible.</span>
+            <span data-stu-id="36e58-185">Determines whether the object is visible.</span>
           </span>
-          <span data-ttu-id="ccf9c-180">
+          <span data-ttu-id="36e58-186">
             <b>Objet</b> en lecture/écriture.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-180">Read/write <b>Object</b>.</span>
+            <span data-stu-id="36e58-186">Read/write <b>Object</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1100,13 +1109,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ccf9c-181">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> collection qui représente la page verticale sauts sur la feuille.</span>
+          <span data-ttu-id="36e58-187">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> collection qui représente la page verticale sauts sur la feuille.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-181">Returns a <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> collection that represents the vertical page breaks on the sheet.</span>
+            <span data-stu-id="36e58-187">Returns a <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> collection that represents the vertical page breaks on the sheet.</span>
           </span>
-          <span data-ttu-id="ccf9c-182">En lecture seule.</span>
+          <span data-ttu-id="36e58-188">En lecture seule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ccf9c-182">Read-only.</span>
+            <span data-stu-id="36e58-188">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>

@@ -1,10 +1,10 @@
 <Type Name="XlFileValidationPivotMode" FullName="Microsoft.Office.Interop.Excel.XlFileValidationPivotMode">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c8e55ec1ec9ea610add3c7ccb937797796fc156c" />
+    <Meta Name="ms.openlocfilehash" Value="b2b09bda61eed0ec23579a26ff7207bf32c883e0" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575347" />
   </Metadata>
   <TypeSignature Language="C#" Value="public enum XlFileValidationPivotMode" />
@@ -21,52 +21,77 @@
   </Base>
   <Docs>
     <summary>
-      <span data-ttu-id="0e4fd-101">Spécifie comment valider les caches de données pour les rapports de tableau croisé dynamique.</span>
+      <span data-ttu-id="46d76-101">Spécifie comment valider les caches de données pour les rapports de tableau croisé dynamique.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="0e4fd-101">Specifies how to validate the data caches for PivotTable reports.</span>
+        <span data-stu-id="46d76-101">Specifies how to validate the data caches for PivotTable reports.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="0e4fd-102">
-        <para>Cette énumération est utilisée pour spécifier le paramètre de la <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objet.</para>
-        <para>L’impact du paramètre <b>xlFileValidationPivotDefault</b> est contrôlée par la valeur de Registre PivotOptions, qui est définie dans la sous-clé de Registre suivante : HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation. La valeur de PivotOptions est une valeur DWORD qui peut être définie comme indiqué dans le tableau suivant.</para>
-        <list type="table">
-          <item>
-            <term>0</term>
-            <description>jamais valider les caches de données de rapport de tableau croisé dynamique. (Non recommandé)</description>
-          </item>
-          <item>
-            <term>1</term>
-            <description>les données de rapport de tableau croisé dynamique valider met en cache dans les cas suivants (paramètre par défaut) : le fichier a été ouvert à partir de la Internet.The fichier est une pièce jointe. Le fichier a été ouvert à l’aide de la commande Ouvrir en mode protégé de la boîte de dialogue Ouvrir. Le fichier a été ouvert à partir d’un emplacement non sécurisé connu où le contenu Internet est mis en cache localement ou à partir d’un emplacement non approuvé défini par l’utilisateur. Le cache de données est analysé lors du chargement lors de l’ouverture du fichier.</description>
-          </item>
-          <item>
-            <term>2</term>
-            <description>Valider tous les caches de données de rapport de tableau croisé dynamique.</description>
-          </item>
-        </list>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="0e4fd-102">
-          <para>This enumeration is used to specify the setting of the <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> property of the <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object.</para>
-          <para>The effect of the <b>xlFileValidationPivotDefault</b> setting is controlled by the PivotOptions registry value, which is set in the following registry subkey: HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation. The PivotOptions value is a DWORD value that can be set as listed in the following table.</para>
-          <list type="table">
-            <item>
-              <term>0</term>
-              <description>Never validate PivotTable report data caches. (Not recommended)</description>
-            </item>
-            <item>
-              <term>1</term>
-              <description>Validate PivotTable report data caches in the following cases (Default setting):The file was opened from the Internet.The file is an e-mail attachment.The file was opened by using the Open in Protected View command of the Open dialog box.The file was opened from a known unsafe location where Internet content is cached locally, or from a user-defined untrusted location. The data cache is parsed on load when the file is opened.</description>
-            </item>
-            <item>
-              <term>2</term>
-              <description>Validate all PivotTable report data caches.</description>
-            </item>
-          </list>
-          <para></para>
+      <para>
+        <span data-ttu-id="46d76-102">Cette énumération est utilisée pour spécifier le paramètre de la <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objet.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="46d76-102">This enumeration is used to specify the setting of the <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> property of the <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="46d76-103">L’effet du paramètre <b>xlFileValidationPivotDefault</b> est contrôlée par la valeur de Registre PivotOptions, qui est définie dans la sous-clé de Registre suivante : HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="46d76-103">The effect of the <b>xlFileValidationPivotDefault</b> setting is controlled by the PivotOptions registry value, which is set in the following registry subkey: HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation.</span>
+        </span>
+        <span data-ttu-id="46d76-104">La valeur de PivotOptions est une valeur DWORD qui peut être définie comme indiqué dans le tableau suivant.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="46d76-104">The PivotOptions value is a DWORD value that can be set as listed in the following table.</span>
+        </span>
+      </para>
+      <list type="table">
+        <item>
+          <term>
+            <span data-ttu-id="46d76-105">0</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="46d76-105">0</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="46d76-p102">Ne jamais valider les caches de données de rapport de tableau croisé dynamique (non recommandé).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="46d76-p102">Never validate PivotTable report data caches. (Not recommended)</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="46d76-108">1</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="46d76-108">1</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="46d76-109">Valider les caches de données de rapport de tableau croisé dynamique dans les cas suivants (paramètre par défaut) : le fichier a été ouvert à partir de la Internet.The fichier est une pièce jointe. Le fichier a été ouvert à l’aide de la commande Ouvrir en mode protégé de la boîte de dialogue Ouvrir. Le fichier a été ouvert à partir d’un emplacement non sécurisé connu où le contenu Internet est mis en cache localement ou à partir d’un emplacement non approuvé défini par l’utilisateur.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="46d76-109">Validate PivotTable report data caches in the following cases (Default setting):The file was opened from the Internet.The file is an e-mail attachment.The file was opened by using the Open in Protected View command of the Open dialog box.The file was opened from a known unsafe location where Internet content is cached locally, or from a user-defined untrusted location.</span>
+            </span>
+            <span data-ttu-id="46d76-110">Le cache de données est analysé lors du chargement, à l’ouverture du fichier.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="46d76-110">The data cache is parsed on load when the file is opened.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="46d76-111">2</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="46d76-111">2</span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="46d76-112">Valider tous les caches de données de rapport de tableau croisé dynamique.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="46d76-112">Validate all PivotTable report data caches.</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -87,9 +112,9 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0e4fd-103">Valider le contenu des caches de données comme spécifié par le paramètre de Registre PivotOptions (par défaut).</span>
+          <span data-ttu-id="46d76-113">Valider le contenu des caches de données comme spécifié par le paramètre de Registre PivotOptions (par défaut).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0e4fd-103">Validate the contents of data caches as specified by the PivotOptions registry setting (default).</span>
+            <span data-stu-id="46d76-113">Validate the contents of data caches as specified by the PivotOptions registry setting (default).</span>
           </span>
         </summary>
       </Docs>
@@ -111,9 +136,9 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0e4fd-104">Valider le contenu de tous les caches de données indépendamment du paramètre de Registre.</span>
+          <span data-ttu-id="46d76-114">Valider le contenu de tous les caches de données indépendamment du paramètre de Registre.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0e4fd-104">Validate the contents of all data caches regardless of the registry setting.</span>
+            <span data-stu-id="46d76-114">Validate the contents of all data caches regardless of the registry setting.</span>
           </span>
         </summary>
       </Docs>
@@ -135,9 +160,9 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>
-          <span data-ttu-id="0e4fd-105">Ne pas valider le contenu des caches de données.</span>
+          <span data-ttu-id="46d76-115">Ne pas valider le contenu des caches de données.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="0e4fd-105">Do not validate the contents of data caches.</span>
+            <span data-stu-id="46d76-115">Do not validate the contents of data caches.</span>
           </span>
         </summary>
       </Docs>

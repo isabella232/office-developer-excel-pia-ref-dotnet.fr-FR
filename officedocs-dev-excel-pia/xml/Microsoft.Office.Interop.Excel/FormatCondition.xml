@@ -1,10 +1,10 @@
 <Type Name="FormatCondition" FullName="Microsoft.Office.Interop.Excel.FormatCondition">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a635d52289eab8b27e83a83f54b3afc26b142b07" />
+    <Meta Name="ms.openlocfilehash" Value="06db90663108615d83dc620b65e7671be2f3d791" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584412" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FormatCondition" />
@@ -30,64 +30,147 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="a6785-101">Cet objet représente une mise en forme conditionnelle.</span>
+      <span data-ttu-id="fae7d-101">Cet objet représente une mise en forme conditionnelle.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="a6785-101">Represents a conditional format.</span>
+        <span data-stu-id="fae7d-101">Represents a conditional format.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="a6785-102">
-        <para>L’objet <b>FormatCondition</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. La collection <b>FormatConditions</b> peut contenir jusqu'à trois mises en forme conditionnelles pour une plage donnée.</para>
-        <para>Utiliser <b>FormatConditions</b>(<paramref name="index" />), où index est le numéro d’index du format conditionnel, pour renvoyer un objet <b>FormatCondition</b> .</para> Utilisation de 
-      <para>les <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour créer un nouveau format conditionnel. Si vous essayez de créer plus de trois mises en forme conditionnelles d’une plage, la méthode <b>Add</b> échoue. Si une plage comporte trois mises en forme, vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour modifier un des formats ou vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> méthode pour supprimer une mise en forme et puis utiliser la méthode <b>Add</b> pour créer un nouveau format.</para><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />, <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />, et <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" /> propriétés de la <b>FormatCondition</b> pour contrôler l’apparence des cellules mis en forme d’objet. Certaines propriétés de ces objets ne sont pas pris en charge par le modèle objet de mise en forme conditionnelle. Les propriétés qui peuvent être utilisées avec la mise en forme conditionnelle sont répertoriées dans le tableau suivant.</para><list type="table"><item><term><b>Police</b></term><description><b>gras</b><b>ColorIndex</b><b>FontStyle</b><b>italique</b><b>Barré</b><b>couleurs</b><b>souligné</b>les styles de soulignement Comptabilité ne peut pas être utilisés.</description></item> Styles de bordure 
-        <item><term><b>bordure</b></term><description><b>inférieur</b><b>gauche</b><b>droite</b>de
-            <b>couleur</b><b>Style</b>suivants peuvent être utilisés (tous les autres utilisateurs ne sont pas pris en charge) : <b>xlNone</b>, <b>xlSolid</b>, <b>xlDash</b>, <b>xlDot</b>, <b>xlDashDot</b>, <b>xlDashDotDot</b>, <b>xlGray50</b>, <b>xlGray75</b>et <b>xlGray25</b>. <b>Haut</b><b>Poids</b> Les épaisseurs de bordure suivantes peuvent être utilisées (tous les autres utilisateurs ne sont pas pris en charge) : <b>xlWeightHairline</b> et <b>xlWeightThin</b>.</description></item><item><term><b>Intérieur</b></term><description><b>couleur</b><b>ColorIndex</b><b>motif</b><b>PatternColorIndex</b></description></item></list><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a6785-102">
-          <para>The <b>FormatCondition</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. The <b>FormatConditions</b> collection can contain up to three conditional formats for a given range.</para>
-          <para>Use <b>FormatConditions</b>(<paramref name="index" />), where index is the index number of the conditional format, to return a <b>FormatCondition</b> object.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to create a new conditional format. If you try to create more than three conditional formats for a single range, the <b>Add</b> method fails. If a range has three formats, you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to change one of the formats, or you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> method to delete a format and then use the <b>Add</b> method to create a new format.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />, <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />, and <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" /> properties of the <b>FormatCondition</b> object to control the appearance of formatted cells. Some properties of these objects aren’t supported by the conditional format object model. The properties that can be used with conditional formatting are listed in the following table.</para>
-          <list type="table">
-            <item>
-              <term>
+      <para>
+        <span data-ttu-id="fae7d-102">L’objet <b>FormatCondition</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="fae7d-102">The <b>FormatCondition</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection.</span>
+        </span>
+        <span data-ttu-id="fae7d-103">La collection <b>FormatConditions</b> peut contenir jusqu'à trois mises en forme conditionnelles pour une plage donnée.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="fae7d-103">The <b>FormatConditions</b> collection can contain up to three conditional formats for a given range.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="fae7d-104">Utiliser <b>FormatConditions</b>(<paramref name="index" />), où index est le numéro d’index du format conditionnel, pour renvoyer un objet <b>FormatCondition</b> .</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="fae7d-104">Use <b>FormatConditions</b>(<paramref name="index" />), where index is the index number of the conditional format, to return a <b>FormatCondition</b> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="fae7d-105">Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour créer un nouveau format conditionnel.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="fae7d-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to create a new conditional format.</span>
+        </span>
+        <span data-ttu-id="fae7d-106">Si vous essayez de créer plus de trois mises en forme conditionnelles d’une plage, la méthode <b>Add</b> échoue.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="fae7d-106">If you try to create more than three conditional formats for a single range, the <b>Add</b> method fails.</span>
+        </span>
+        <span data-ttu-id="fae7d-107">Si une plage comporte trois mises en forme, vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour modifier un des formats ou vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> méthode pour supprimer une mise en forme et puis utiliser la méthode <b>Add</b> pour créer un nouveau format.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="fae7d-107">If a range has three formats, you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to change one of the formats, or you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> method to delete a format and then use the <b>Add</b> method to create a new format.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="fae7d-108">Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />, <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />, et <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" /> propriétés de la <b>FormatCondition</b> pour contrôler l’apparence des cellules mis en forme d’objet.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="fae7d-108">Use the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />, <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />, and <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" /> properties of the <b>FormatCondition</b> object to control the appearance of formatted cells.</span>
+        </span>
+        <span data-ttu-id="fae7d-109">Certaines propriétés de ces objets ne sont pas pris en charge par le modèle objet de mise en forme conditionnelle.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="fae7d-109">Some properties of these objects aren’t supported by the conditional format object model.</span>
+        </span>
+        <span data-ttu-id="fae7d-110">Les propriétés qui peuvent être utilisées avec la mise en forme conditionnelle sont répertoriées dans le tableau suivant.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="fae7d-110">The properties that can be used with conditional formatting are listed in the following table.</span>
+        </span>
+      </para>
+      <list type="table">
+        <item>
+          <term>
+            <span data-ttu-id="fae7d-111">
+              <b>Police</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-111">
                 <b>Font</b>
-              </term>
-              <description>
+              </span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="fae7d-112">
+              <b>Gras</b>
+              <b>Couleur</b>
+              <b>ColorIndex</b>
+              <b>FontStyle</b>
+              <b>Italique</b>
+              <b>Barré</b>
+              <b>Soulignement</b> Les styles de soulignement Comptabilité ne peut pas être utilisés.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-112">
                 <b>Bold</b>
                 <b>Color</b>
                 <b>ColorIndex</b>
                 <b>FontStyle</b>
                 <b>Italic</b>
                 <b>Strikethrough</b>
-                <b>Underline</b>The accounting underline styles cannot be used.</description>
-            </item>
-            <item>
-              <term>
+                <b>Underline</b>The accounting underline styles cannot be used.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="fae7d-113">
+              <b>Bordure</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-113">
                 <b>Border</b>
-              </term>
-              <description>
+              </span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="fae7d-114">
+              <b>Bas</b>
+              <b>Couleur</b>
+              <b>Gauche</b>
+              <b>Droite</b>
+              <b>Style</b> Les styles de bordure suivants peuvent être utilisés (tous les autres utilisateurs ne sont pas pris en charge) : <b>xlNone</b>, <b>xlSolid</b>, <b>xlDash</b>, <b>xlDot</b>, <b>xlDashDot</b>, <b>xlDashDotDot</b>, <b>xlGray50</b>, <b>xlGray75</b>et <b>xlGray25 </b>. <b>Haut</b><b>Poids</b> Les épaisseurs de bordure suivantes peuvent être utilisées (tous les autres utilisateurs ne sont pas pris en charge) : <b>xlWeightHairline</b> et <b>xlWeightThin</b>.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-114">
                 <b>Bottom</b>
                 <b>Color</b>
                 <b>Left</b>
                 <b>Right</b>
-                <b>Style</b>The following border styles can be used (all others aren’t supported): <b>xlNone</b>, <b>xlSolid</b>, <b>xlDash</b>, <b>xlDot</b>, <b>xlDashDot</b>, <b>xlDashDotDot</b>, <b>xlGray50</b>, <b>xlGray75</b>, and <b>xlGray25</b>.<b>Top</b><b>Weight</b>The following border weights can be used (all others aren’t supported): <b>xlWeightHairline</b> and <b>xlWeightThin</b>.</description>
-            </item>
-            <item>
-              <term>
+                <b>Style</b>The following border styles can be used (all others aren’t supported): <b>xlNone</b>, <b>xlSolid</b>, <b>xlDash</b>, <b>xlDot</b>, <b>xlDashDot</b>, <b>xlDashDotDot</b>, <b>xlGray50</b>, <b>xlGray75</b>, and <b>xlGray25</b>.<b>Top</b><b>Weight</b>The following border weights can be used (all others aren’t supported): <b>xlWeightHairline</b> and <b>xlWeightThin</b>.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="fae7d-115">
+              <b>Intérieur</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-115">
                 <b>Interior</b>
-              </term>
-              <description>
+              </span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="fae7d-116">
+              <b>Couleur</b>
+              <b>ColorIndex</b>
+              <b>Motif</b>
+              <b>PatternColorIndex</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-116">
                 <b>Color</b>
                 <b>ColorIndex</b>
                 <b>Pattern</b>
                 <b>PatternColorIndex</b>
-              </description>
-            </item>
-          </list>
-          <para></para>
-        </span>
-      </span>
+              </span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -115,9 +198,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-103">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</span>
+          <span data-ttu-id="fae7d-117">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="fae7d-117">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -148,9 +231,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-104">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui spécifie la plage de cellules à laquelle la règle de mise en forme est appliquée.</span>
+          <span data-ttu-id="fae7d-118">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui spécifie la plage de cellules à laquelle la règle de mise en forme est appliquée.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-104">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object specifying the cell range to which the formatting rule is applied.</span>
+            <span data-stu-id="fae7d-118">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object specifying the cell range to which the formatting rule is applied.</span>
           </span>
         </summary>
         <value>
@@ -183,9 +266,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-105">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> collection qui représente les bordures d’un style ou d’une plage de cellules (y compris une plage définie dans le cadre d’un format conditionnel).</span>
+          <span data-ttu-id="fae7d-119">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> collection qui représente les bordures d’un style ou d’une plage de cellules (y compris une plage définie dans le cadre d’un format conditionnel).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-105">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> collection that represents the borders of a style or a range of cells (including a range defined as part of a conditional format).</span>
+            <span data-stu-id="fae7d-119">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> collection that represents the borders of a style or a range of cells (including a range defined as part of a conditional format).</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -216,23 +299,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-106">Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</span>
+          <span data-ttu-id="fae7d-120">Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-106">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="fae7d-120">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="a6785-107">
-            <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a6785-107">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="fae7d-121">Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-121">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="fae7d-122">La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-122">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="fae7d-123">Par exemple, Microsoft Excel possède le code créateur XCEL.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-123">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -263,13 +353,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-108">Spécifie le <see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" /> opérateur Date utilisé dans la mise en forme conditionnelle.</span>
+          <span data-ttu-id="fae7d-124">Spécifie le <see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" /> opérateur Date utilisé dans la mise en forme conditionnelle.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-108">Specifies the <see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" /> Date operator used in the format condition.</span>
+            <span data-stu-id="fae7d-124">Specifies the <see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" /> Date operator used in the format condition.</span>
           </span>
-          <span data-ttu-id="a6785-109">Lecture/écriture.</span>
+          <span data-ttu-id="fae7d-125">Lecture/écriture.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-109">Read/write.</span>
+            <span data-stu-id="fae7d-125">Read/write.</span>
           </span>
         </summary>
         <value>
@@ -300,9 +390,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-110">Supprime l'objet.</span>
+          <span data-ttu-id="fae7d-126">Supprime l'objet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-110">Deletes the object.</span>
+            <span data-stu-id="fae7d-126">Deletes the object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -332,9 +422,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-111">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objet qui représente la police de l’objet spécifié.</span>
+          <span data-ttu-id="fae7d-127">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objet qui représente la police de l’objet spécifié.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-111">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span>
+            <span data-stu-id="fae7d-127">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -365,23 +455,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-112">Renvoie la valeur ou une expression associée à la validation de données ou le format conditionnelle.</span>
+          <span data-ttu-id="fae7d-128">Renvoie la valeur ou une expression associée à la validation de données ou le format conditionnelle.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-112">Returns the value or expression associated with the conditional format or data validation.</span>
+            <span data-stu-id="fae7d-128">Returns the value or expression associated with the conditional format or data validation.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="a6785-113">
-            <para>La propriété <b>Formula1</b> peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a6785-113">
-              <para>The <b>Formula1</b> property can be a constant value, a string value, a cell reference, or a formula.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="fae7d-129">La propriété <b>Formula1</b> peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-129">The <b>Formula1</b> property can be a constant value, a string value, a cell reference, or a formula.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -409,20 +496,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-114">Renvoie la valeur ou une expression associée à la seconde partie d’un format conditionnel.</span>
+          <span data-ttu-id="fae7d-130">Renvoie la valeur ou une expression associée à la seconde partie d’un format conditionnel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-114">Returns the value or expression associated with the second part of a conditional format or data validation.</span>
+            <span data-stu-id="fae7d-130">Returns the value or expression associated with the second part of a conditional format or data validation.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="a6785-115">Propriété <para>le <b>Formula2</b> est uniquement utilisée lors de format conditionnel de validation de données <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" /> propriété est <b>xlBetween</b> ou <b>xlNotBetween</b>. Peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a6785-115">
-              <para>The <b>Formula2</b> property is used only when the data validation conditional format <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" /> property is <b>xlBetween</b> or <b>xlNotBetween</b>. Can be a constant value, a string value, a cell reference, or a formula.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="fae7d-131">La propriété <b>Formula2</b> est uniquement utilisée lors de format conditionnel de validation de données <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" /> propriété est <b>xlBetween</b> ou <b>xlNotBetween</b>.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-131">The <b>Formula2</b> property is used only when the data validation conditional format <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" /> property is <b>xlBetween</b> or <b>xlNotBetween</b>.</span>
             </span>
-          </span>
+            <span data-ttu-id="fae7d-132">Peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-132">Can be a constant value, a string value, a cell reference, or a formula.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -450,9 +541,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-116">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object qui représente l’intérieur de l’objet spécifié.</span>
+          <span data-ttu-id="fae7d-133">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object qui représente l’intérieur de l’objet spécifié.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object that represents the interior of the specified object.</span>
+            <span data-stu-id="fae7d-133">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object that represents the interior of the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -488,65 +579,65 @@
       </Parameters>
       <Docs>
         <param name="Type">
-          <span data-ttu-id="a6785-117">Requis <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />.</span>
+          <span data-ttu-id="fae7d-134">Requis <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-117">Required <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />.</span>
+            <span data-stu-id="fae7d-134">Required <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />.</span>
           </span>
-          <span data-ttu-id="a6785-118">Indique si le format conditionnel repose sur la valeur d'une cellule ou sur une expression.</span>
+          <span data-ttu-id="fae7d-135">Indique si le format conditionnel repose sur la valeur d'une cellule ou sur une expression.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-118">Specifies whether the conditional format is based on a cell value or an expression.</span>
+            <span data-stu-id="fae7d-135">Specifies whether the conditional format is based on a cell value or an expression.</span>
           </span>
-          <span data-ttu-id="a6785-119">Peut être une des constantes <b>XlFormatCondition obligatoire</b> suivantes :<b>xlCellValue</b><b>xlExpression</b></span>
+          <span data-ttu-id="fae7d-136">Peut être une des constantes <b>XlFormatCondition obligatoire</b> suivantes :<b>xlCellValue</b><b>xlExpression</b></span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-119">Can be one of the following <b>XlFormatCondition</b> constants:<b>xlCellValue</b><b>xlExpression</b></span>
+            <span data-stu-id="fae7d-136">Can be one of the following <b>XlFormatCondition</b> constants:<b>xlCellValue</b><b>xlExpression</b></span>
           </span>
         </param>
         <param name="Operator">
-          <span data-ttu-id="a6785-120">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span>
+          <span data-ttu-id="fae7d-137">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-120">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span>
+            <span data-stu-id="fae7d-137">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span>
           </span>
-          <span data-ttu-id="a6785-121">L’opérateur du format conditionnel.</span>
+          <span data-ttu-id="fae7d-138">L’opérateur du format conditionnel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-121">The conditional format operator.</span>
+            <span data-stu-id="fae7d-138">The conditional format operator.</span>
           </span>
-          <span data-ttu-id="a6785-122">Peut être une des constantes <b>XlFormatConditionOperator</b> suivantes :<b>xlBetween</b><b>xlEqual</b><b>xlGreater</b><b>xlGreaterEqual</b><b>xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>si <paramref name="Type" />, est <b>xlExpression</b>, le <paramref name="Operator" /> argument est ignoré.</span>
+          <span data-ttu-id="fae7d-139">Peut être une des constantes <b>XlFormatConditionOperator</b> suivantes :<b>xlBetween</b><b>xlEqual</b><b>xlGreater</b><b>xlGreaterEqual</b><b>xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>si <paramref name="Type" />, est <b>xlExpression</b>, le <paramref name="Operator" /> argument est ignoré.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-122">Can be one of the following <b>XlFormatConditionOperator</b> constants:<b>xlBetween</b><b>xlEqual</b><b>xlGreater</b><b>xlGreaterEqual</b><b>xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>If <paramref name="Type" />, is <b>xlExpression</b>, the <paramref name="Operator" /> argument is ignored.</span>
+            <span data-stu-id="fae7d-139">Can be one of the following <b>XlFormatConditionOperator</b> constants:<b>xlBetween</b><b>xlEqual</b><b>xlGreater</b><b>xlGreaterEqual</b><b>xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>If <paramref name="Type" />, is <b>xlExpression</b>, the <paramref name="Operator" /> argument is ignored.</span>
           </span>
         </param>
         <param name="Formula1">
-          <span data-ttu-id="a6785-123">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="fae7d-140">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-123">Optional <b>Object</b>.</span>
+            <span data-stu-id="fae7d-140">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="a6785-124">La valeur ou une expression associée à la mise en forme conditionnelle.</span>
+          <span data-ttu-id="fae7d-141">La valeur ou une expression associée à la mise en forme conditionnelle.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-124">The value or expression associated with the conditional format.</span>
+            <span data-stu-id="fae7d-141">The value or expression associated with the conditional format.</span>
           </span>
-          <span data-ttu-id="a6785-125">Peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</span>
+          <span data-ttu-id="fae7d-142">Peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-125">Can be a constant value, a string value, a cell reference, or a formula.</span>
+            <span data-stu-id="fae7d-142">Can be a constant value, a string value, a cell reference, or a formula.</span>
           </span>
         </param>
         <param name="Formula2">
-          <span data-ttu-id="a6785-126">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="fae7d-143">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-126">Optional <b>Object</b>.</span>
+            <span data-stu-id="fae7d-143">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="a6785-127">La valeur ou une expression associée à la mise en forme conditionnelle.</span>
+          <span data-ttu-id="fae7d-144">La valeur ou une expression associée à la mise en forme conditionnelle.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-127">The value or expression associated with the conditional format.</span>
+            <span data-stu-id="fae7d-144">The value or expression associated with the conditional format.</span>
           </span>
-          <span data-ttu-id="a6785-128">Peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</span>
+          <span data-ttu-id="fae7d-145">Peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-128">Can be a constant value, a string value, a cell reference, or a formula.</span>
+            <span data-stu-id="fae7d-145">Can be a constant value, a string value, a cell reference, or a formula.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="a6785-129">Cette méthode modifie un format conditionnel existant.</span>
+          <span data-ttu-id="fae7d-146">Cette méthode modifie un format conditionnel existant.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-129">Modifies an existing conditional format.</span>
+            <span data-stu-id="fae7d-146">Modifies an existing conditional format.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -575,30 +666,39 @@
       </Parameters>
       <Docs>
         <param name="Range">
-          <span data-ttu-id="a6785-130">Plage à laquelle cette règle de mise en forme sera appliquée.</span>
+          <span data-ttu-id="fae7d-147">Plage à laquelle cette règle de mise en forme sera appliquée.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-130">The range to which this formatting rule will be applied.</span>
+            <span data-stu-id="fae7d-147">The range to which this formatting rule will be applied.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="a6785-131">Définit la plage de cellules à laquelle cette règle de mise en forme s’applique.</span>
+          <span data-ttu-id="fae7d-148">Définit la plage de cellules à laquelle cette règle de mise en forme s’applique.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-131">Sets the cell range to which this formatting rule applies.</span>
+            <span data-stu-id="fae7d-148">Sets the cell range to which this formatting rule applies.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="a6785-132">
-            <para>La plage doit se trouver dans le style de référence A1 et être entièrement dans la feuille qui est le parent de le <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. Il peut inclure l’opérateur de plage (le signe deux-points), l’opérateur d’intersection (un espace) ou l’opérateur union (une virgule). Signe dollar peut également être utilisé, mais ils sont ignorés.</para>
-            <para>Vous pouvez également utiliser un nom local défini dans n’importe quelle partie de la plage, mais le nom doit être dans la langue de la macro.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a6785-132">
-              <para>The range must be in the A1 reference style and be entirely contained within the sheet that is the parent of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. It can include the range operator (a colon), the intersection operator (a space), or the union operator (a comma). Dollar signs can also be used but they are ignored.</para>
-              <para>You can also use a local defined name in any part of the range, but the name must be in the language of the macro.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="fae7d-149">La plage doit se trouver dans le style de référence A1 et être entièrement dans la feuille qui est le parent de le <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-149">The range must be in the A1 reference style and be entirely contained within the sheet that is the parent of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection.</span>
             </span>
-          </span>
+            <span data-ttu-id="fae7d-150">Il peut inclure l’opérateur de plage (le signe deux-points), l’opérateur d’intersection (un espace) ou l’opérateur union (une virgule).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-150">It can include the range operator (a colon), the intersection operator (a space), or the union operator (a comma).</span>
+            </span>
+            <span data-ttu-id="fae7d-151">Signe dollar peut également être utilisé, mais ils sont ignorés.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-151">Dollar signs can also be used but they are ignored.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="fae7d-152">Vous pouvez également utiliser un nom défini en local à n'importe quel endroit de la plage, mais le nom doit appartenir au langage de la macro.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-152">You can also use a local defined name in any part of the range, but the name must be in the language of the macro.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -666,37 +766,34 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-133">Cette propriété renvoie ou définit le format de nombre appliqué à une cellule si la règle de mise en forme conditionnelle renvoie <b>la valeur True</b>.</span>
+          <span data-ttu-id="fae7d-153">Cette propriété renvoie ou définit le format de nombre appliqué à une cellule si la règle de mise en forme conditionnelle renvoie <b>la valeur True</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-133">Returns or sets the number format applied to a cell if the conditional formatting rule evaluates to <b>True</b>.</span>
+            <span data-stu-id="fae7d-153">Returns or sets the number format applied to a cell if the conditional formatting rule evaluates to <b>True</b>.</span>
           </span>
-          <span data-ttu-id="a6785-134">
+          <span data-ttu-id="fae7d-154">
             <b>Objet</b> en lecture/écriture.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-134">Read/write <b>Object</b>.</span>
+            <span data-stu-id="fae7d-154">Read/write <b>Object</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="a6785-135">
+          <span data-ttu-id="fae7d-155">
             <b>Objet</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-135">
+            <span data-stu-id="fae7d-155">
               <b>Object</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="a6785-136">
-            <para>Le format de nombre est spécifié en utilisant les mêmes codes de format affichées sous l’onglet numéro de la boîte de dialogue Format de cellule. Vous pouvez utiliser un format numérique intégré, par exemple « General », ou créer un format numérique personnalisé.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a6785-136">
-              <para>The number format is specified using the same format codes displayed on the Number tab of the Format Cells dialog box. You can use a built-in number format, for example "General", or create a custom number format.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="fae7d-p113">Le format numérique est spécifié à l'aide des mêmes codes de format que ceux affichés dans la boîte de dialogue Format de cellule, sous l'onglet Nombre. Vous pouvez utiliser un format numérique intégré, par exemple "General" ou créer un format numérique personnalisé.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-p113">The number format is specified using the same format codes displayed on the Number tab of the Format Cells dialog box. You can use a built-in number format, for example "General", or create a custom number format.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -724,9 +821,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-137">Renvoie l’opérateur pour le format conditionnel.</span>
+          <span data-ttu-id="fae7d-158">Renvoie l’opérateur pour le format conditionnel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-137">Returns the operator for the conditional format.</span>
+            <span data-stu-id="fae7d-158">Returns the operator for the conditional format.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -757,9 +854,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-138">Renvoie l'objet parent de l'objet spécifié.</span>
+          <span data-ttu-id="fae7d-159">Renvoie l'objet parent de l'objet spécifié.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-138">Returns the parent object for the specified object.</span>
+            <span data-stu-id="fae7d-159">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -793,32 +890,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-p107">Renvoie ou définit la valeur de priorité de la règle de mise en forme conditionnelle. La priorité détermine l’ordre d’évaluation lorsqu’une feuille de calcul contient plusieurs règles de mise en forme conditionnelle.</span>
+          <span data-ttu-id="fae7d-p114">Renvoie ou définit la valeur de priorité de la règle de mise en forme conditionnelle. La priorité détermine l’ordre d’évaluation lorsqu’une feuille de calcul contient plusieurs règles de mise en forme conditionnelle.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-p107">Returns or sets the priority value of the conditional formatting rule. The priority determines the order of evaluation when multiple conditional formatting rules exist in a worksheet.</span>
+            <span data-stu-id="fae7d-p114">Returns or sets the priority value of the conditional formatting rule. The priority determines the order of evaluation when multiple conditional formatting rules exist in a worksheet.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="a6785-141">
+          <span data-ttu-id="fae7d-162">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-141">
+            <span data-stu-id="fae7d-162">
               <b>Integer</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="a6785-142">
-            <para>Lors de la définition de la priorité, la valeur doit être un nombre entier compris entre 1 et le nombre total de règles conditionnelles de mise en forme sur la feuille de calcul. La priorité doit être une valeur unique pour toutes les règles de la feuille de calcul, donc si vous modifiez la priorité de la règle de mise en forme conditionnelle spécifiée risque la valeur de priorité des autres règles dans la feuille de calcul.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a6785-142">
-              <para>When setting the priority, the value must be a positive integer between 1 and the total number of conditional formatting rules on the worksheet. The priority must be a unique value for all rules on the worksheet, so changing the priority for the specified conditional formatting rule may cause the priority value of the other rules on the worksheet to be shifted.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="fae7d-p115">La valeur de priorité que vous définissez doit être un entier positif compris entre 1 et le nombre total de règles de mise en forme conditionnelle contenues dans la feuille de calcul. Dans la mesure où la valeur de priorité doit être unique pour toutes les règles de la feuille de calcul, le fait de modifier la priorité d'une règle de mise en forme conditionnelle donnée risque d'entraîner la modification de la valeur de priorité des autres règles de la feuille de calcul.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-p115">When setting the priority, the value must be a positive integer between 1 and the total number of conditional formatting rules on the worksheet. The priority must be a unique value for all rules on the worksheet, so changing the priority for the specified conditional formatting rule may cause the priority value of the other rules on the worksheet to be shifted.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -846,17 +940,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-p108">Renvoie une valeur de type <b>Boolean</b> indiquant si le format conditionnel est appliqué à un graphique de tableau croisé dynamique. Propriété en lecture seule.</span>
+          <span data-ttu-id="fae7d-p116">Renvoie une valeur de type <b>Boolean</b> indiquant si le format conditionnel est appliqué à un graphique de tableau croisé dynamique. Propriété en lecture seule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-p108">Returns a <b>Boolean</b> value indicating if the conditional format is being applied to a PivotTable chart. Read-only.</span>
+            <span data-stu-id="fae7d-p116">Returns a <b>Boolean</b> value indicating if the conditional format is being applied to a PivotTable chart. Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="a6785-145">
+          <span data-ttu-id="fae7d-167">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-145">
+            <span data-stu-id="fae7d-167">
               <b>Boolean</b>
             </span>
           </span>
@@ -891,25 +985,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-146">Cette propriété renvoie ou définit une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> énumération qui détermine l’étendue du format conditionnel lorsqu’il est appliqué à un graphique de tableau croisé dynamique.</span>
+          <span data-ttu-id="fae7d-168">Cette propriété renvoie ou définit une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> énumération qui détermine l’étendue du format conditionnel lorsqu’il est appliqué à un graphique de tableau croisé dynamique.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-146">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeration, which determines the scope of the conditional format when it is applied to a PivotTable chart.</span>
+            <span data-stu-id="fae7d-168">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeration, which determines the scope of the conditional format when it is applied to a PivotTable chart.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
         </value>
         <remarks>
-          <span data-ttu-id="a6785-147">
-            <para>La valeur par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, qui définit l’étendue à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />propriété.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a6785-147">
-              <para>The default value is <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, which sets the scope using the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />property.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="fae7d-169">La valeur par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, qui définit l’étendue à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />propriété.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-169">The default value is <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, which sets the scope using the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />property.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -935,26 +1026,27 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-148">Attribue à la règle de mise en forme conditionnelle en question la valeur de priorité « 1 » de sorte qu’elle soit évaluée avant toutes les autres règles présentes dans la feuille de calcul.</span>
+          <span data-ttu-id="fae7d-170">Attribue à la règle de mise en forme conditionnelle en question la valeur de priorité « 1 » de sorte qu’elle soit évaluée avant toutes les autres règles présentes dans la feuille de calcul.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-148">Sets the priority value for this conditional formatting rule to "1" so that it will be evaluated before all other rules on the worksheet.</span>
+            <span data-stu-id="fae7d-170">Sets the priority value for this conditional formatting rule to "1" so that it will be evaluated before all other rules on the worksheet.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="a6785-149">
-            <para>Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, si la règle n’a pas été précédemment définie à priorité « 1 », cette méthode provoque la priorité de toutes les autres règles existantes sur la feuille de calcul est augmenté de 1.</para>
-            <para>
-              <b>Remarque</b>: niveaux de priorité concernant les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a6785-149">
-              <para>When you have multiple conditional formatting rules  in a worksheet, if the rule was not previously set to priority "1", this method will cause the priority of all other existing rules on the worksheet to be increased by one.</para>
-              <para>
-                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="fae7d-171">Si la feuille de calcul contient plusieurs règles de mise en forme conditionnelle et que la règle n'était pas auparavant associée à la priorité « 1 », cette méthode augmente d'une unité la valeur de priorité de toutes les autres règles figurant dans la feuille de calcul.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-171">When you have multiple conditional formatting rules  in a worksheet, if the rule was not previously set to priority "1", this method will cause the priority of all other existing rules on the worksheet to be increased by one.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="fae7d-172">
+              <b>Remarque</b>: les niveaux de priorité pour les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-172">
+                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -980,26 +1072,27 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-150">Définit l'ordre d'évaluation de la règle de mise en forme conditionnelle de sorte qu'elle soit évaluée après toutes les autres règles présentes dans la feuille de calcul.</span>
+          <span data-ttu-id="fae7d-173">Définit l'ordre d'évaluation de la règle de mise en forme conditionnelle de sorte qu'elle soit évaluée après toutes les autres règles présentes dans la feuille de calcul.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-150">Sets the evaluation order for this conditional formatting rule so it is evaluated after all other rules on the worksheet.</span>
+            <span data-stu-id="fae7d-173">Sets the evaluation order for this conditional formatting rule so it is evaluated after all other rules on the worksheet.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="a6785-151">
-            <para>La valeur effective de la priorité est égale au nombre total de règles conditionnelles de mise en forme sur la feuille de calcul. Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, cette méthode provoque la priorité des règles qui a une valeur de priorité supérieure à cette règle doit être augmenté d’une unité.</para>
-            <para>
-              <b>Remarque</b>: niveaux de priorité concernant les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a6785-151">
-              <para>The actual vaule of the priority will be equal to the total number of conditional formatting rules on the worksheet. When you have multiple conditional formatting rules  in a worksheet, this method will cause the priority of rules that had a priority value greater than this rule to be increased by one.</para>
-              <para>
-                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="fae7d-p117">La valeur effective de la priorité est égale au nombre total de règles de mise en forme conditionnelle présentes dans la feuille de calcul. Si la feuille de calcul contient plusieurs règles de mise en forme conditionnelle, cette méthode augmente d'une unité la priorité des règles dont la valeur était supérieure à celle de la règle en question.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-p117">The actual vaule of the priority will be equal to the total number of conditional formatting rules on the worksheet. When you have multiple conditional formatting rules  in a worksheet, this method will cause the priority of rules that had a priority value greater than this rule to be increased by one.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="fae7d-176">
+              <b>Remarque</b>: les niveaux de priorité pour les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-176">
+                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1030,32 +1123,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-152">Renvoie ou définit une valeur de type <b>Boolean</b> qui détermine si les autres règles de mise en forme conditionnelle de la cellule doivent être évaluées lorsque la règle active renvoie la valeur <b>True</b>.</span>
+          <span data-ttu-id="fae7d-177">Renvoie ou définit une valeur de type <b>Boolean</b> qui détermine si les autres règles de mise en forme conditionnelle de la cellule doivent être évaluées lorsque la règle active renvoie la valeur <b>True</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-152">Returns or sets a <b>Boolean</b> value that determines if additional formatting rules on the cell should be evaluated if the current rule evaluates to <b>True</b>.</span>
+            <span data-stu-id="fae7d-177">Returns or sets a <b>Boolean</b> value that determines if additional formatting rules on the cell should be evaluated if the current rule evaluates to <b>True</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="a6785-153">
+          <span data-ttu-id="fae7d-178">
             <b>Boolean</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-153">
+            <span data-stu-id="fae7d-178">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="a6785-154">
-            <para>Pour prendre en charge la compatibilité descendante, la valeur par défaut de cette propriété est <b>True</b>, ce qui correspond au comportement contraire à celui d’une mise en forme créée dans l’interface utilisateur de règle.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a6785-154">
-              <para>To support backward compatibility, the default value for this property is <b>True</b>, which is the opposite behavior of a formatting rule created in the user interface.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="fae7d-179">Pour assurer une compatibilité en amont, la valeur par défaut de cette propriété est <b>True</b>, ce qui correspond au comportement contraire à celui d'une règle de mise en forme créée dans l'interface utilisateur.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-179">To support backward compatibility, the default value for this property is <b>True</b>, which is the opposite behavior of a formatting rule created in the user interface.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1086,32 +1176,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-155">Cette propriété renvoie ou définit une valeur <b>String</b> qui spécifie le texte utilisé par la règle de mise en forme conditionnelle.</span>
+          <span data-ttu-id="fae7d-180">Cette propriété renvoie ou définit une valeur <b>String</b> qui spécifie le texte utilisé par la règle de mise en forme conditionnelle.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-155">Returns or sets a <b>String</b> value specifying the text used by the conditional formatting rule.</span>
+            <span data-stu-id="fae7d-180">Returns or sets a <b>String</b> value specifying the text used by the conditional formatting rule.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="a6785-156">
+          <span data-ttu-id="fae7d-181">
             <b>Chaîne</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-156">
+            <span data-stu-id="fae7d-181">
               <b>String</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="a6785-157">
-            <para>Cette propriété est ignorée si la <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" /> propriété n’est pas définie sur <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a6785-157">
-              <para>This property is ignored if the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" /> property is not set to <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="fae7d-182">Cette propriété est ignorée si la <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" /> propriété n’est pas définie sur <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-182">This property is ignored if the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" /> property is not set to <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1142,9 +1229,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-158">Cette propriété renvoie ou définit une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /> énumération, spécifiant la recherche de texte effectuée par la règle de mise en forme conditionnelle.</span>
+          <span data-ttu-id="fae7d-183">Cette propriété renvoie ou définit une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /> énumération, spécifiant la recherche de texte effectuée par la règle de mise en forme conditionnelle.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-158">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /> enumeration, specifying the text search performed by the conditional formatting rule.</span>
+            <span data-stu-id="fae7d-183">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /> enumeration, specifying the text search performed by the conditional formatting rule.</span>
           </span>
         </summary>
         <value>
@@ -1177,35 +1264,40 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a6785-159">Renvoie le type d’objet.</span>
+          <span data-ttu-id="fae7d-184">Renvoie le type d’objet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a6785-159">Returns the object type.</span>
+            <span data-stu-id="fae7d-184">Returns the object type.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="a6785-160">
-            <para>Le type d’objet peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> constantes :</para>
-            <para>
-              <b>xlCellValue</b>
-            </para>
-            <para>
-              <b>xlExpression</b>
-            </para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a6785-160">
-              <para>The object type can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> constants:</para>
-              <para>
-                <b>xlCellValue</b>
-              </para>
-              <para>
-                <b>xlExpression</b>
-              </para>
-              <para></para>
+          <para>
+            <span data-ttu-id="fae7d-185">Le type d’objet peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> constantes :</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-185">The object type can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="fae7d-186">
+              <b>xlCellValue</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-186">
+                <b>xlCellValue</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="fae7d-187">
+              <b>xlExpression</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="fae7d-187">
+                <b>xlExpression</b>
+              </span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

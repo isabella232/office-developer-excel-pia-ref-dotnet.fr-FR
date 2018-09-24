@@ -1,10 +1,10 @@
 <Type Name="PivotTables" FullName="Microsoft.Office.Interop.Excel.PivotTables">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fec2de78dcf640219cb44f66becd0a0dbc77878e" />
+    <Meta Name="ms.openlocfilehash" Value="b1b870f7e0d404abd82b95ed4e0d3df8f815f25c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578021" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTables : System.Collections.IEnumerable" />
@@ -34,26 +34,41 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="c4946-101">Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objets sur la feuille de calcul spécifiée.</span>
+      <span data-ttu-id="56329-101">Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objets sur la feuille de calcul spécifiée.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="c4946-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objects on the specified worksheet.</span>
+        <span data-stu-id="56329-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objects on the specified worksheet.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="c4946-102">
-        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /> méthode pour renvoyer la collection <b>PivotTables</b> .</para>
-        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour créer un nouveau rapport de tableau croisé dynamique et l’ajouter à la collection.</para>
-        <para>Utiliser <b>les tableaux croisés dynamiques</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de tableau croisé dynamique ou le nom, pour renvoyer un seul objet <b>PivotTable</b> .</para> Programmation d’un rapport 
-      <para>car tableau croisé dynamique peut être complexe, il est généralement plus pratique d’enregistrer les actions de rapport de tableau croisé dynamique, puis de réviser le code enregistré. Pour enregistrer une macro, pointez sur Macro dans le menu Outils, cliquez sur nouvelle Macro.</para><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="c4946-102">
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /> method to return the <b>PivotTables</b> collection.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to create a new PivotTable report and add it to the collection.</para>
-          <para>Use <b>PivotTables</b>(<paramref name="index" />), where <paramref name="index" /> is the PivotTable index number or name, to return a single <b>PivotTable</b> object.</para>
-          <para>Because PivotTable report programming can be complex, it’s generally easiest to record PivotTable report actions and then revise the recorded code. To record a macro, point to Macro on the Tools menu and click Record New Macro.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="56329-102">Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /> méthode pour renvoyer la collection de <b>tableaux croisés dynamiques</b> .</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="56329-102">Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /> method to return the <b>PivotTables</b> collection.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="56329-103">Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour créer un nouveau rapport de tableau croisé dynamique et l’ajouter à la collection.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="56329-103">Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to create a new PivotTable report and add it to the collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="56329-104">Utiliser des <b>tableaux croisés dynamiques</b>(<paramref name="index" />), où <paramref name="index" /> est le nom, pour renvoyer un seul objet de <b>tableau croisé dynamique</b> ou le numéro d’index de tableau croisé dynamique.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="56329-104">Use <b>PivotTables</b>(<paramref name="index" />), where <paramref name="index" /> is the PivotTable index number or name, to return a single <b>PivotTable</b> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="56329-105">La programmation d'un rapport de tableau croisé dynamique pouvant être complexe, il est généralement plus pratique d'enregistrer les opérations effectuées avec le rapport tableau croisé dynamique, puis de vérifier le code enregistré.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="56329-105">Because PivotTable report programming can be complex, it’s generally easiest to record PivotTable report actions and then revise the recorded code.</span>
+        </span>
+        <span data-ttu-id="56329-106">Pour enregistrer une macro, pointez sur Macro dans le menu Outils, cliquez sur nouvelle Macro.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="56329-106">To record a macro, point to Macro on the Tools menu and click Record New Macro.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -83,80 +98,80 @@
       </Parameters>
       <Docs>
         <param name="PivotCache">
-          <span data-ttu-id="c4946-103">Requis <b>PivotCache</b>.</span>
+          <span data-ttu-id="56329-107">Requis <b>PivotCache</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-103">Required <b>PivotCache</b>.</span>
+            <span data-stu-id="56329-107">Required <b>PivotCache</b>.</span>
           </span>
-          <span data-ttu-id="c4946-104">Le cache de tableau croisé dynamique sur laquelle est basé le nouveau rapport de tableau croisé dynamique.</span>
+          <span data-ttu-id="56329-108">Le cache de tableau croisé dynamique sur laquelle est basé le nouveau rapport de tableau croisé dynamique.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-104">The PivotTable cache on which the new PivotTable report is based.</span>
+            <span data-stu-id="56329-108">The PivotTable cache on which the new PivotTable report is based.</span>
           </span>
-          <span data-ttu-id="c4946-105">Le cache fournit les données pour le rapport.</span>
+          <span data-ttu-id="56329-109">Le cache fournit les données pour le rapport.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-105">The cache provides data for the report.</span>
+            <span data-stu-id="56329-109">The cache provides data for the report.</span>
           </span>
         </param>
         <param name="TableDestination">
-          <span data-ttu-id="c4946-106">
+          <span data-ttu-id="56329-110">
             <b>Objet</b>obligatoire.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-106">Required <b>Object</b>.</span>
+            <span data-stu-id="56329-110">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="c4946-107">La cellule dans le coin supérieur gauche de la plage de destination de l’état de tableau croisé dynamique (plage de la feuille de calcul où le rapport obtenu sera placé).</span>
+          <span data-ttu-id="56329-111">La cellule dans le coin supérieur gauche de la plage de destination de l’état de tableau croisé dynamique (plage de la feuille de calcul où le rapport obtenu sera placé).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-107">The cell in the upper-left corner of the PivotTable report's destination range (the range on the worksheet where the resulting report will be placed).</span>
+            <span data-stu-id="56329-111">The cell in the upper-left corner of the PivotTable report's destination range (the range on the worksheet where the resulting report will be placed).</span>
           </span>
-          <span data-ttu-id="c4946-108">Vous devez spécifier une plage de destination sur la feuille de calcul qui contient le <paramref name="PivotTables" /> objet spécifié par <paramref name="expression" />.</span>
+          <span data-ttu-id="56329-112">Vous devez spécifier une plage de destination sur la feuille de calcul qui contient le <paramref name="PivotTables" /> objet spécifié par <paramref name="expression" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-108">You must specify a destination range on the worksheet that contains the <paramref name="PivotTables" /> object specified by <paramref name="expression" />.</span>
+            <span data-stu-id="56329-112">You must specify a destination range on the worksheet that contains the <paramref name="PivotTables" /> object specified by <paramref name="expression" />.</span>
           </span>
         </param>
         <param name="TableName">
-          <span data-ttu-id="c4946-109">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="56329-113">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-109">Optional <b>Object</b>.</span>
+            <span data-stu-id="56329-113">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="c4946-110">Nom du nouveau rapport de tableau croisé dynamique.</span>
+          <span data-ttu-id="56329-114">Nom du nouveau rapport de tableau croisé dynamique.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-110">The name of the new PivotTable report.</span>
+            <span data-stu-id="56329-114">The name of the new PivotTable report.</span>
           </span>
         </param>
         <param name="ReadData">
-          <span data-ttu-id="c4946-111">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="56329-115">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-111">Optional <b>Object</b>.</span>
+            <span data-stu-id="56329-115">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="c4946-112">
+          <span data-ttu-id="56329-116">
             <b>True</b> pour créer un cache de tableau croisé dynamique qui contient tous les enregistrements à partir de la base de données externe ; Ce cache peut être très volumineux.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-112">
+            <span data-stu-id="56329-116">
               <b>True</b> to create a PivotTable cache that contains all records from the external database; this cache can be very large.</span>
           </span>
-          <span data-ttu-id="c4946-113">
+          <span data-ttu-id="56329-117">
             <b>False</b> pour autoriser la définition de certains champs comme champs de page serveur avant la lecture des données.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-113">
+            <span data-stu-id="56329-117">
               <b>False</b> to enable setting some of the fields as server-based page fields before the data is actually read.</span>
           </span>
         </param>
         <param name="DefaultVersion">
-          <span data-ttu-id="c4946-114">Facultatif <b>Object</b>.</span>
+          <span data-ttu-id="56329-118">Facultatif <b>Object</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-114">Optional <b>Object</b>.</span>
+            <span data-stu-id="56329-118">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="c4946-115">Version de Microsoft Excel dans laquelle le tableau croisé dynamique a été initialement créé.</span>
+          <span data-ttu-id="56329-119">Version de Microsoft Excel dans laquelle le tableau croisé dynamique a été initialement créé.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-115">The version of Microsoft Excel the PivotTable was originally created in.</span>
+            <span data-stu-id="56329-119">The version of Microsoft Excel the PivotTable was originally created in.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="c4946-116">Ajoute un nouveau rapport de tableau croisé dynamique.</span>
+          <span data-ttu-id="56329-120">Ajoute un nouveau rapport de tableau croisé dynamique.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-116">Adds a new PivotTable report.</span>
+            <span data-stu-id="56329-120">Adds a new PivotTable report.</span>
           </span>
-          <span data-ttu-id="c4946-117">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objet.</span>
+          <span data-ttu-id="56329-121">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-117">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object.</span>
+            <span data-stu-id="56329-121">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -187,13 +202,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="c4946-118">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</span>
+          <span data-ttu-id="56329-122">Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-118">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="56329-122">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
-          <span data-ttu-id="c4946-119">En lecture seule.</span>
+          <span data-ttu-id="56329-123">En lecture seule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-119">Read-only.</span>
+            <span data-stu-id="56329-123">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -224,13 +239,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="c4946-120">Renvoie le nombre d'objets dans la collection.</span>
+          <span data-ttu-id="56329-124">Renvoie le nombre d'objets dans la collection.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-120">Returns the number of objects in the collection.</span>
+            <span data-stu-id="56329-124">Returns the number of objects in the collection.</span>
           </span>
-          <span data-ttu-id="c4946-121">Valeur <b>Integer</b> en lecture seule.</span>
+          <span data-ttu-id="56329-125">Valeur <b>Integer</b> en lecture seule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-121">Read-only <b>Integer</b>.</span>
+            <span data-stu-id="56329-125">Read-only <b>Integer</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -261,28 +276,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="c4946-122">Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</span>
+          <span data-ttu-id="56329-126">Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-122">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="56329-126">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="c4946-123">Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</span>
+          <span data-ttu-id="56329-127">Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            <span data-stu-id="56329-127">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
           </span>
-          <span data-ttu-id="c4946-124">En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          <span data-ttu-id="56329-128">En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-124">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            <span data-stu-id="56329-128">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="c4946-125">Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c4946-125">
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="56329-129">La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="56329-129">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
             </span>
-          </span>
+            <span data-ttu-id="56329-130">Par exemple, Microsoft Excel possède le code créateur XCEL.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="56329-130">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -342,20 +361,20 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="c4946-126">
+          <span data-ttu-id="56329-131">
             <b>Objet</b>obligatoire.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-126">Required <b>Object</b>.</span>
+            <span data-stu-id="56329-131">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="c4946-127">Nom ou numéro d'index de l'objet.</span>
+          <span data-ttu-id="56329-132">Nom ou numéro d'index de l'objet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-127">The name or index number for the object.</span>
+            <span data-stu-id="56329-132">The name or index number for the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="c4946-128">Renvoie un seul objet d'une collection.</span>
+          <span data-ttu-id="56329-133">Renvoie un seul objet d'une collection.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-128">Returns a single object from a collection.</span>
+            <span data-stu-id="56329-133">Returns a single object from a collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -386,9 +405,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="c4946-p111">Renvoie l’objet parent de l’objet spécifié. En lecture seule.</span>
+          <span data-ttu-id="56329-p113">Renvoie l’objet parent de l’objet spécifié. En lecture seule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4946-p111">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="56329-p113">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>

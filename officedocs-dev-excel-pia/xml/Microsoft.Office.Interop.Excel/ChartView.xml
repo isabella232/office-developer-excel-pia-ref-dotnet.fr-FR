@@ -1,10 +1,10 @@
 <Type Name="ChartView" FullName="Microsoft.Office.Interop.Excel.ChartView">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="64e3d0eb74ea386ed7789a74ad85ee0f5db4ab04" />
+    <Meta Name="ms.openlocfilehash" Value="66d11355e519fc34b24dc963c54e03b1573babd9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577202" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartView" />
@@ -30,547 +30,295 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="009f1-101">Cet objet représente un affichage d’un graphique.</span>
+      <span data-ttu-id="f6be0-101">Cet objet représente un affichage d’un graphique.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="009f1-101">Represents a view of a chart.</span>
+        <span data-stu-id="f6be0-101">Represents a view of a chart.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="009f1-102">Objet <para>la <b>ChartView</b> est un des objets pouvant être renvoyés par la <see cref="T:Microsoft.Office.Interop.Excel.SheetViews" /> collection, similaire à la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection. L’objet <b>ChartView</b> s’applique uniquement aux feuilles de graphique.   </para><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="009f1-102">
-          <para>The  <b>ChartView</b> object is one of the objects  that can be returned by the  <see cref="T:Microsoft.Office.Interop.Excel.SheetViews" /> collection, similar to the <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection. The  <b>ChartView</b> object applies only to chart sheets.   </para>
-          <para></para>
+      <para>
+        <span data-ttu-id="f6be0-102">L’objet <b>ChartView</b> est l’un des objets pouvant être renvoyés par la <see cref="T:Microsoft.Office.Interop.Excel.SheetViews" /> collection, similaire à la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="f6be0-102">The  <b>ChartView</b> object is one of the objects  that can be returned by the  <see cref="T:Microsoft.Office.Interop.Excel.SheetViews" /> collection, similar to the <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection.</span>
         </span>
-      </span>
+        <span data-ttu-id="f6be0-103">L’objet <b>ChartView</b> s’applique uniquement aux feuilles de graphique.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="f6be0-103">The  <b>ChartView</b> object applies only to chart sheets.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
     <example>
-      <span data-ttu-id="009f1-103">
-        <para>L’exemple suivant renvoie un objet <b>ChartView</b> .</para>
-        <code>&lt;span class="label"&gt;ActiveWindow.SheetViews.Item(1)  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/span&gt;</code>
-        <para>L’exemple suivant renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> objet.</para>
-        <code>&lt;span class="label"&gt;ActiveWindow.SheetViews.Item(1).Sheet  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/span&gt;</code>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="009f1-103">
-          <para>The following example returns a <b>ChartView</b> object.</para>
-          <code>&lt;span class="label"&gt;ActiveWindow.SheetViews.Item(1)  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/span&gt;</code>
-          <para>The following example returns a <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> object.</para>
-          <code>&lt;span class="label"&gt;ActiveWindow.SheetViews.Item(1).Sheet  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/span&gt;</code>
+      <para>
+        <span data-ttu-id="f6be0-104">L'exemple suivant renvoie un objet <b>ChartView</b>.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="f6be0-104">The following example returns a <b>ChartView</b> object.</span>
         </span>
-      </span>
+      </para>
+      <code>&lt;span class="label"&gt;ActiveWindow.SheetViews.Item(1)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/span&gt;</code>
+      <para>
+        <span data-ttu-id="f6be0-105">L’exemple suivant renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> objet.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="f6be0-105">The following example returns a <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> object.</span>
+        </span>
+      </para>
+      <code>&lt;span class="label"&gt;ActiveWindow.SheetViews.Item(1).Sheet  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/span&gt;</code>
     </example>
   </Docs>
   <Members>
@@ -598,38 +346,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="009f1-104">Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente l’application Microsoft Office Excel.</span>
+          <span data-ttu-id="f6be0-106">Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente l’application Microsoft Office Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="009f1-104">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
+            <span data-stu-id="f6be0-106">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
           </span>
-          <span data-ttu-id="009f1-105">Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié.</span>
+          <span data-ttu-id="f6be0-107">Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="009f1-105">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
+            <span data-stu-id="f6be0-107">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
           </span>
-          <span data-ttu-id="009f1-106">En lecture seule.</span>
+          <span data-ttu-id="f6be0-108">En lecture seule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="009f1-106">Read-only.</span>
+            <span data-stu-id="f6be0-108">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="009f1-107">
+          <span data-ttu-id="f6be0-109">
             <b>Application</b> (voir ci-dessus)</span>
           <span class="sxs-lookup">
-            <span data-stu-id="009f1-107">
+            <span data-stu-id="f6be0-109">
               <b>Application</b> (see above)</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="009f1-108">
-            <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="009f1-108">
-              <para>You can use this property with an OLE Automation object to return the application of that object.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="f6be0-110">Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="f6be0-110">You can use this property with an OLE Automation object to return the application of that object.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -657,29 +402,34 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="009f1-109">Renvoie une constante de le <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> énumération qui indique l’application dans laquelle cet objet a été créé.</span>
+          <span data-ttu-id="f6be0-111">Renvoie une constante de le <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> énumération qui indique l’application dans laquelle cet objet a été créé.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="009f1-109">Returns a constant from the <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeration that indicates the application in which this object was created.</span>
+            <span data-stu-id="f6be0-111">Returns a constant from the <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeration that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="009f1-110">En lecture seule.</span>
+          <span data-ttu-id="f6be0-112">En lecture seule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="009f1-110">Read-only.</span>
+            <span data-stu-id="f6be0-112">Read-only.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <span data-ttu-id="009f1-111">
-            <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.  Le <see cref="P:Microsoft.Office.Interop.Excel.ChartView.Creator" /> propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="009f1-111">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.  The <see cref="P:Microsoft.Office.Interop.Excel.ChartView.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="f6be0-113">Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="f6be0-113">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+            <span data-ttu-id="f6be0-114">Le <see cref="P:Microsoft.Office.Interop.Excel.ChartView.Creator" /> propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="f6be0-114">The <see cref="P:Microsoft.Office.Interop.Excel.ChartView.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="f6be0-115">Par exemple, Microsoft Excel possède le code créateur XCEL.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="f6be0-115">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -707,17 +457,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="009f1-p103">Renvoie l'objet parent de l'objet spécifié. En lecture seule.</span>
+          <span data-ttu-id="f6be0-p105">Renvoie l'objet parent de l'objet spécifié. En lecture seule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="009f1-p103">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="f6be0-p105">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="009f1-114">
+          <span data-ttu-id="f6be0-118">
             <b>Objet</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="009f1-114">
+            <span data-stu-id="f6be0-118">
               <b>Object</b>
             </span>
           </span>
@@ -749,21 +499,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="009f1-115">Renvoie le nom de la feuille spécifié <see cref="T:Microsoft.Office.Interop.Excel.ChartView" /> objet.</span>
+          <span data-ttu-id="f6be0-119">Renvoie le nom de la feuille spécifié <see cref="T:Microsoft.Office.Interop.Excel.ChartView" /> objet.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="009f1-115">Returns the sheet name for the specified <see cref="T:Microsoft.Office.Interop.Excel.ChartView" /> object.</span>
+            <span data-stu-id="f6be0-119">Returns the sheet name for the specified <see cref="T:Microsoft.Office.Interop.Excel.ChartView" /> object.</span>
           </span>
-          <span data-ttu-id="009f1-116">En lecture seule.</span>
+          <span data-ttu-id="f6be0-120">En lecture seule.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="009f1-116">Read-only.</span>
+            <span data-stu-id="f6be0-120">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="009f1-117">
+          <span data-ttu-id="f6be0-121">
             <b>Objet</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="009f1-117">
+            <span data-stu-id="f6be0-121">
               <b>Object</b>
             </span>
           </span>
