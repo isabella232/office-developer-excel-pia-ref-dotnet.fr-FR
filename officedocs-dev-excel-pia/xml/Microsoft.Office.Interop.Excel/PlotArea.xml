@@ -1,10 +1,10 @@
 <Type Name="PlotArea" FullName="Microsoft.Office.Interop.Excel.PlotArea">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bb1049061bbf006d23a68d870ddfb1d3042027a2" />
+    <Meta Name="ms.openlocfilehash" Value="5a540fca333680ff420954f4c897f1253f3abc3a" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574731" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PlotArea" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Cet objet représente la zone de traçage d'un graphique. Il s'agit de la zone où les données constituant le graphique sont tracées.</summary>
     <remarks>
-      <para>La zone de traçage d’un graphique 2D contient les marques de données, le quadrillage, étiquettes de données, courbes de tendance et éléments de graphique facultatifs placés dans la zone de graphique. La zone de traçage d’un graphique 3D contient tous les éléments ci-dessus plus parois, plancher, axes, des titres d’axes et les étiquettes de graduation du graphique. La zone de traçage est entourée par la zone de graphique. La zone de graphique dans un graphique 2D contient les axes, le titre du graphique, les titres d’axes et la légende. La zone de graphique sur un graphique 3D contient le titre du graphique et la légende. Pour plus d’informations sur la mise en forme de la zone de graphique, consultez le <see cref="T:Microsoft.Office.Interop.Excel.ChartArea" /> objet.</para>
+      <para>Dans un graphique 2D, la zone de traçage contient les indicateurs de données, le quadrillage, les étiquettes de données, les courbes de tendance et les éléments graphiques facultatifs situés dans la zone de graphique. Dans un graphique 3D, la zone de traçage contient tous les éléments énumérés ci-dessus, ainsi que les panneaux, le plancher, les axes, les titres d'axe et les étiquettes de graduation. La zone de traçage est entourée par la zone de graphique. Dans un graphique 2D, la zone de graphique contient les axes, le titre du graphique, les titres des axes et la légende. Dans un graphique 3D, la zone de graphique contient le type du graphique et la légende. Pour plus d’informations sur la mise en forme de la zone de graphique, consultez le <see cref="T:Microsoft.Office.Interop.Excel.ChartArea" /> objet.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Chart.PlotArea" /> propriété pour renvoyer un objet <b>PlotArea</b> .</para>
       <para></para>
     </remarks>
@@ -272,8 +272,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">

@@ -1,10 +1,10 @@
 <Type Name="Slicer" FullName="Microsoft.Office.Interop.Excel.Slicer">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eacfd0890002beb17c916870ea77d7aa5ba1db4b" />
+    <Meta Name="ms.openlocfilehash" Value="3a23eef4e7b55760a8f9b05aacbfcb4b526de165" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587667" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Slicer" />
@@ -63,11 +63,11 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> object qui représente le bouton segment qui est actuellement activé pour le segment spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>ActiveItem</b> renvoie un objet <b>SlicerItem</b> lorsque le segment spécifié est activé et que le contrôle actif est un bouton dans le segment (par exemple, l’utilisateur peut accéder les boutons dans le segment de clavier dans cet état).</para>
+          <para>La propriété <b>ActiveItem</b> renvoie un objet <b>SlicerItem</b> lorsque le segment est activé et que le contrôle actif est un bouton dans le segment (par exemple, l’utilisateur peut faire naviguer les boutons dans le segment avec le clavier dans cet état).</para>
           <para>La propriété <b>ActiveItem</b> renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) dans les circonstances suivantes :</para>
           <list type="bullet">
             <item>
-              <description>Le segment spécifié n’est pas actif (n’est pas sélectionné ni actif).</description>
+              <description>Le segment spécifié n’est pas activé (n’est pas sélectionné ni actif).</description>
             </item>
             <item>
               <description>Le segment spécifié est activé et le segment même entier est sélectionné (par exemple, l’utilisateur peut déplacer le segment entier à l’aide du clavier dans cet état).</description>
@@ -140,7 +140,7 @@
         <summary>Obtient ou définit la légende du segment spécifié.</summary>
         <value>La légende du segment spécifié.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>La valeur spécifiée pour le <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> propriété doit s’afficher dans l’en-tête du segment. Si le <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> propriété n’est pas spécifiée, Microsoft Excel utilise la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> propriété de sous-jacent <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet.</para>
           <para></para>
         </remarks>
@@ -175,8 +175,8 @@
         <summary>Obtient ou définit la largeur, en points, de chaque colonne dans le segment.</summary>
         <value>La largeur, en points, de chaque colonne dans le segment.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objet est automatiquement ajusté en fonction de la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> propriété et la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> propriété.</para>
+          <para>Lecture/écriture.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objet est automatiquement ajusté en fonction de la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> propriété et la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> propriété.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -232,7 +232,7 @@
         <summary>Obtient un 32 bits <b>entier</b> qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>32 bits <b>entier</b> qui indique l’application dans laquelle cet objet a été créé.</value>
         <remarks>
-          <para>En lecture seule <b>longs</b>.</para>
+          <para>En lecture seule <b>long</b>.</para>
           <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. Le <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
           <para></para>
         </remarks>
@@ -318,9 +318,9 @@
         <value>
           <b>la valeur true</b> si le segment spécifié peut être déplacé ou redimensionné à l’aide de l’interface utilisateur ; Sinon, <b>false</b>. La valeur par défaut est <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>
-            <b>la valeur true</b> si le segment ne peut pas être déplacé ou redimensionné en sélectionnant des bordures ou des poignées de saisie dans l’interface utilisateur ; sinon, <b>false</b>. La valeur par défaut est <b>false</b>. Définition de la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /><b>true</b> la propriété affecte uniquement l’interface utilisateur. Déplacez ou redimensionnez le segment en définissant les propriétés telles que la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />, ou <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> propriétés de la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objet à partir du code n’est pas désactivé.</para>
+            <b>la valeur true</b> si le segment ne peut pas être déplacé ou redimensionné en sélectionnant des bordures ou des poignées de saisie dans l’interface utilisateur ; Sinon, <b>false</b>. La valeur par défaut est <b>false</b>. Définition de la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /><b>true</b> la propriété affecte uniquement l’interface utilisateur. Déplacez ou redimensionnez le segment en définissant les propriétés telles que la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />, ou <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> propriétés de la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objet à partir du code n’est pas désactivé.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -355,9 +355,9 @@
         <value>
           <b>true</b> si l’en-tête qui affiche le segment <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> est visible ; Sinon, <b>false</b>. La valeur par défaut est <b>true</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>
-            <b>la valeur true</b> si l’en-tête est visible, sinon <b>false</b>. La valeur par défaut est <b>true</b>.</para>
+            <b>true</b> si l’en-tête est visible ; Sinon, <b>false</b>. La valeur par défaut est <b>true</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -391,7 +391,7 @@
         <summary>Obtient ou définit la hauteur du segment spécifié, en points.</summary>
         <value>La hauteur du segment spécifié, en points.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -425,7 +425,7 @@
         <summary>Obtient ou définit la position horizontale du segment spécifié, en points, par rapport au coin supérieur gauche de la cellule A1 sur une feuille de calcul.</summary>
         <value>La position horizontale du segment spécifié, en points, par rapport au coin supérieur gauche de la cellule A1 sur une feuille de calcul.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -460,7 +460,7 @@
         <value>
           <b>la valeur true</b> si le segment spécifié peut être modifié quand la feuille qui le contient est protégée ; Sinon, <b>false</b>. La valeur par défaut est <b>true</b></value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>
             <b>la valeur true</b> si le segment est verrouillé lorsque la feuille est protégée. <b>false</b> si le segment peut être modifié quand la feuille est protégée. La valeur par défaut est <b>true</b>.</para>
           <para></para>
@@ -496,7 +496,7 @@
         <summary>Obtient ou définit le nom du segment spécifié.</summary>
         <value>Le nom du segment spécifié.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>Le nom doit être unique parmi tous les segments dans un classeur. Le nom par défaut utilise le texte qui le nom de champ du champ PivotField sur laquelle repose le segment, et si nécessaire, ajoute un espace et un numéro pour le nom unique.</para>
           <para></para>
         </remarks>
@@ -531,8 +531,8 @@
         <summary>Obtient ou définit le nombre de colonnes dans le segment spécifié.</summary>
         <value>Le nombre de colonnes dans le segment spécifié. La valeur par défaut est 1.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>La valeur par défaut est 1.</para>
+          <para>Lecture/écriture.</para>
+          <para>La valeur par défaut est 1 (un).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -597,7 +597,7 @@
         <summary>Obtient ou définit la hauteur, en points, de chaque ligne dans le segment spécifié.</summary>
         <value>La hauteur, en points, de chaque ligne dans le segment spécifié.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>Cette propriété n’affecte pas la hauteur du segment. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objet pour renvoyer ou définir la hauteur du segment.</para>
           <para></para>
         </remarks>
@@ -693,7 +693,7 @@
         <value>Le <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objet associé au segment.</value>
         <remarks>
           <para>En lecture seule.</para>
-          <para>Cette propriété s’applique uniquement aux sources de données OLAP.</para>
+          <para>Cette propriété ne s’applique qu’aux sources de données OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -755,7 +755,7 @@
         <summary>Obtient ou définit le style actuellement appliqué pour le segment spécifié.</summary>
         <value>Le style actuellement appliqué pour le segment spécifié.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -817,7 +817,7 @@
         <summary>Obtient ou définit la position verticale du segment spécifié, en points, par rapport au coin supérieur gauche de la cellule A1 sur une feuille de calcul.</summary>
         <value>La position verticale du segment spécifié, en points, par rapport au coin supérieur gauche de la cellule A1 sur une feuille de calcul.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -851,7 +851,7 @@
         <summary>Obtient ou définit la largeur du segment spécifié, en points.</summary>
         <value>Largeur du segment spécifié, en points.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Propriété en lecture-écriture.</para>
           <para></para>
         </remarks>
       </Docs>

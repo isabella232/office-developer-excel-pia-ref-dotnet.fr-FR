@@ -1,10 +1,10 @@
 <Type Name="ProtectedViewWindow" FullName="Microsoft.Office.Interop.Excel.ProtectedViewWindow">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e408f0f28015c64503fb4f24fd3d1bb9d13526ce" />
+    <Meta Name="ms.openlocfilehash" Value="ba924f04fb4c1accdb23e5bb8b2f1b404a2117ad" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574759" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
@@ -31,25 +31,25 @@
   <Docs>
     <summary>Représente une fenêtre mode protégé.</summary>
     <remarks>
-      <para>Mode protégé d’une fenêtre est utilisée pour afficher un classeur à partir d’un emplacement potentiellement dangereux. Des emplacements non sécurisés sont définis comme suit :</para>
+      <para>Une fenêtre Mode protégé sert à afficher un classeur provenant d’un emplacement potentiellement dangereux. Les emplacements présentant des risques de sécurité potentiels sont définis comme suit :</para>
       <list type="number">
         <item>
-          <description>fichiers ouverts à partir d’Internet.</description>
+          <description>Fichiers ouverts à partir d’Internet.</description>
         </item>
         <item>
-          <description>Les pièces jointes ouvertes à partir de Microsoft Outlook 2010.</description>
+          <description>Pièces jointes ouvertes Microsoft Outlook 2010.</description>
         </item>
         <item>
           <description>Fichiers bloqués par la stratégie de blocage des fichiers.</description>
         </item>
         <item>
-          <description>Fichiers dont la Validation de fichier Office échouent.</description>
+          <description>Fichiers dont le processus de validation de fichier Office échoue.</description>
         </item>
         <item>
-          <description>Fichiers explicitement ouverts en mode protégé à l’aide de la commande Ouvrir en mode protégé du bouton Ouvrir dans la boîte de dialogue Ouvrir.</description>
+          <description>Fichiers explicitement ouverts en Mode protégé à l’aide de la commande Ouvrir en mode protégé du bouton Ouvrir dans la boîte de dialogue Ouvrir.</description>
         </item>
       </list>
-      <para>Classeurs affichés dans une fenêtre mode protégé ne peuvent pas être modifiés et sont limités à partir du contenu actif tel que Visual Basic pour Applications macros et connexions de données en cours d’exécution.</para>
+      <para>Classeurs affichés dans une fenêtre mode protégé ne peuvent pas être modifiés et sont pas autorisés à exécuter du contenu actif tel que Visual Basic pour Applications (VBA) et les connexions de données.</para>
       <para>Pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> d’objet à partir de la <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> collection, utilisez protectedviewwindows (index), où Index est le numéro d’index de la fenêtre que vous souhaitez ouvrir. Vous pouvez également accéder à la <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> object qui représente la fenêtre mode protégé active à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet.</para>
       <para>Après avoir accédé à un <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objet, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> propriété pour accéder à la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object qui représente le fichier de classeur qui est ouvert dans la fenêtre mode protégé. Une fenêtre mode protégé est conçu pour protéger l’utilisateur à partir du code malveillant, les opérations vous pouvez effectuer à l’aide d’un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet renvoyé par un <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objet seront limité. La plupart des opérations qui ne sont pas autorisés vont renvoyer « erreur d’exécution 1004 : cette commande n’est pas disponible lorsque Excel est en bac à sable. »</para>
       <para></para>
@@ -141,7 +141,7 @@
         <summary>Obtient ou définit une valeur qui représente le nom qui s’affiche dans la barre de titre de la fenêtre mode protégé.</summary>
         <value>Le nom qui s’affiche dans la barre de titre de la fenêtre mode protégé.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -201,8 +201,21 @@
         <returns>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet.</returns>
         <remarks>
           <para>Si le <paramref name="WriteResPassword" /> paramètre est omis et le classeur requiert un mot de passe, l’utilisateur est invité pour le mot de passe.</para>
-          <para>Si le <paramref name="UpdateLinks" /> paramètre est omis, l’utilisateur est invité à spécifier la mise à jour des liens. Si Excel ouvre un fichier dans WKS, WK1, ou WK3 format et le <paramref name="UpdateLinks" /> argument est 0, aucun graphique n’est créés ; Sinon, Excel génère des graphiques à partir des diagrammes associés au fichier.</para> Évitez de 
-          <para>à l’aide de mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demander le mot de passe de l’utilisateur, stockez-le dans une variable et ensuite utiliser la variable dans votre code.</para><para>Vous pouvez spécifier une des valeurs répertoriées dans le tableau suivant, dans le <paramref name="UpdateLinks" /> paramètre afin de déterminer si les références externes (liens) sont mises à jour lorsque le classeur est ouvert.</para><list type="table"><item><term>0</term><description>références externes (liens) ne seront pas mis à jour lorsque le classeur est ouvert.</description></item><item><term>3</term><description>références externes (liens) seront mis à jour lorsque le classeur est ouvert.</description></item></list><para></para></remarks>
+          <para>Si le <paramref name="UpdateLinks" /> paramètre est omis, l’utilisateur est invité à spécifier la mise à jour des liens. Si Excel ouvre un fichier dans WKS, WK1, ou WK3 format et le <paramref name="UpdateLinks" /> argument est 0, aucun graphique n’est créés ; Sinon, Excel génère des graphiques à partir des diagrammes associés au fichier.</para>
+          <para>Évitez d'utiliser des mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demandez-le à l'utilisateur, stockez-le dans une variable et servez-vous de la variable dans votre code.</para>
+          <para>Vous pouvez spécifier une des valeurs répertoriées dans le tableau suivant, dans le <paramref name="UpdateLinks" /> paramètre afin de déterminer si les références externes (liens) sont mises à jour lorsque le classeur est ouvert.</para>
+          <list type="table">
+            <item>
+              <term>0</term>
+              <description>Les références externes (liens) ne sont pas mises à jour à l’ouverture du classeur.</description>
+            </item>
+            <item>
+              <term>3</term>
+              <description>Les références externes (liens) sont mises à jour à l’ouverture du classeur</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableResize">
@@ -235,7 +248,7 @@
         <value>
           <b>true</b> si la fenêtre mode protégé peut être redimensionnée ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -269,7 +282,7 @@
         <summary>Obtient ou définit une valeur qui représente la hauteur, en points, de la fenêtre mode protégé.</summary>
         <value>La hauteur, en points, de la fenêtre mode protégé.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>Vous ne pouvez pas définir cette propriété si la fenêtre mode protégé est agrandie ou réduite. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> propriété pour déterminer l’état de la fenêtre.</para>
           <para></para>
         </remarks>
@@ -304,7 +317,7 @@
         <summary>Obtient ou définit une valeur qui représente la distance, en points, entre le bord gauche de la zone client et le bord gauche de la fenêtre mode protégé.</summary>
         <value>Distance, en points, entre le bord gauche de la zone client et le bord gauche de la fenêtre mode protégé.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -367,7 +380,7 @@
         <value>Le chemin d’accès du fichier source qui est ouvert dans la fenêtre mode protégé spécifiée.</value>
         <remarks>
           <para>En lecture seule.</para>
-          <para>Le chemin d’accès n’inclut pas un caractère de fin (par exemple, « C:\MSOffice »). Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" /> propriété pour ajouter le caractère qui sépare les dossiers et les lettres de lecteur. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" /> de la <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objet à renvoyer le nom du fichier source sans le chemin d’accès.</para>
+          <para>Le chemin d'accès n'inclut pas de caractère de fin (par exemple, « C:\MSOffice »). Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" /> propriété pour ajouter le caractère qui sépare les dossiers et les lettres de lecteur. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" /> de la <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objet à renvoyer le nom du fichier source sans le chemin d’accès.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -401,7 +414,7 @@
         <summary>Obtient ou définit une valeur qui représente la distance, en points, entre le bord supérieur de la fenêtre mode protégé spécifiée et le bord supérieur de la zone utilisable.</summary>
         <value>Distance, en points, entre le bord supérieur de la fenêtre mode protégé spécifiée et le bord supérieur de la zone utilisable.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>Vous ne pouvez pas définir cette propriété pour une fenêtre mode protégé agrandie. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> propriété pour renvoyer ou définir l’état de la fenêtre.</para>
           <para></para>
         </remarks>
@@ -437,7 +450,7 @@
         <value>
           <b>true</b> si la fenêtre mode protégé spécifiée est visible ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -471,7 +484,7 @@
         <summary>Obtient ou définit une valeur qui spécifie la largeur, exprimée en points, de la fenêtre mode protégé spécifiée.</summary>
         <value>La largeur, en points, de la fenêtre mode protégé spécifiée.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>Vous ne pouvez pas définir cette propriété si la fenêtre mode protégé est agrandie ou réduite. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> propriété pour déterminer l’état de la fenêtre.</para>
           <para></para>
         </remarks>
@@ -506,7 +519,7 @@
         <summary>Obtient ou définit l’état de la fenêtre mode protégé spécifiée.</summary>
         <value>L’état de la fenêtre mode protégé spécifiée.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -538,7 +551,7 @@
         <value>Le classeur est ouvert dans la fenêtre mode protégé spécifiée.</value>
         <remarks>
           <para>En lecture seule.</para>
-          <para>, Car une fenêtre mode protégé est conçue pour protéger l’utilisateur à partir du code malveillant, les opérations vous pouvez effectuer à l’aide d’un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet renvoyé par la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> méthode seront limitée. Toute opération qui n’est pas autorisée renvoie « erreur d’exécution 1004 : cette commande n’est pas disponible lorsque Excel est en bac à sable. »</para>
+          <para>Une fenêtre mode protégé est conçu pour protéger l’utilisateur à partir du code malveillant, les opérations vous pouvez effectuer à l’aide d’un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet renvoyé par la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> méthode seront limitée. Toute opération qui n’est pas autorisée renvoie « erreur d’exécution 1004 : cette commande n’est pas disponible lorsque Excel est en bac à sable. »</para>
           <para></para>
         </remarks>
       </Docs>

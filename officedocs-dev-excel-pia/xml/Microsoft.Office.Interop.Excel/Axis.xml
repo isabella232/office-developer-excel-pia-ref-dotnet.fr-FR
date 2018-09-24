@@ -1,10 +1,10 @@
 <Type Name="Axis" FullName="Microsoft.Office.Interop.Excel.Axis">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ddfafcdfbef138ea093cab8dfc3008aaafe95251" />
+    <Meta Name="ms.openlocfilehash" Value="d10d4e8e1ee2a7c304ba94c879df8f19e1748061" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572932" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Axis" />
@@ -32,7 +32,7 @@
     <summary>Représente un axe unique dans un graphique.</summary>
     <remarks>
       <para>L’objet <b>Axis</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Axes" /> collection.</para>
-      <para>Utilisez <b>Axes</b>(<paramref name="type, group" />) où le type est le type d’axe et groupe le groupe d’axes pour renvoyer un seul objet <b>Axis</b> . <paramref name="Type" /> peut être une des opérations suivantes <see cref="ff" /> constantes : <b>xlCategory</b>, <b>xlSeries</b>ou <b>xlValue</b>. <paramref name="Group" /> peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> constantes : <b>xlPrimary</b> ou <b>xlSecondary</b>. Pour plus d’informations, voir la <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> méthode.</para>
+      <para>Utilisez <b>Axes</b>(<paramref name="type, group" />) où le type est le type d’axe et groupe le groupe d’axes pour renvoyer un seul objet <b>Axis</b> . <paramref name="Type" />peut être une des opérations suivantes <see cref="ff" /> constantes : <b>xlCategory</b>, <b>xlSeries</b>ou <b>xlValue</b>. <paramref name="Group" />peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> constantes : <b>xlPrimary</b> ou <b>xlSecondary</b>. Pour plus d’informations, voir la <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> méthode.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -94,7 +94,7 @@
         <summary>Cette propriété a la valeur <b>True</b> si l'axe des ordonnées coupe l'axe des abscisses entre les abscisses.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété s’applique uniquement aux axes des abscisses et ne s’applique pas aux graphiques 3D.</para>
+          <para>Cette propriété ne concerne que les axes des abscisses et ne s'applique pas aux graphiques 3D.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -125,7 +125,7 @@
         <summary>Renvoie le groupe pour l’axe spécifié.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour les graphiques 3D, seul <b>xlPrimary</b> est valide.</para>
+          <para>Pour les graphiques 3D, seule la constante <b>xlPrimary</b> est valide.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -187,8 +187,8 @@
         <summary>Renvoie ou définit l'unité de base de l'axe des abscisses spécifié.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété n’a aucun effet visible si la <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /> propriété pour l’axe spécifié a la valeur <b>xlCategoryScale</b>. La valeur définie est conservée, toutefois et prend effet lorsque la propriété <b>CategoryType</b> est définie à la <b>propriété CategoryType</b>.</para>
-          <para>Vous ne pouvez pas définir cette propriété pour un axe des ordonnées.</para>
+          <para>Cette propriété n’a aucun effet visible si la <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /> propriété pour l’axe spécifié a la valeur <b>xlCategoryScale</b>. La valeur définie est toutefois conservée et prend effet lorsque la propriété <b>CategoryType</b> est définie à la <b>propriété CategoryType</b>.</para>
+          <para>Vous ne pouvez pas utiliser cette propriété pour un axe des ordonnées.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -223,7 +223,7 @@
           <b>La valeur true</b> si Microsoft Excel sélectionne les unités de base appropriées pour l’axe des abscisses spécifié. La valeur par défaut est <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous ne pouvez pas définir cette propriété pour un axe des ordonnées.</para>
+          <para>Vous ne pouvez pas utiliser cette propriété pour un axe des ordonnées.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -286,7 +286,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Lorsque vous définissez cette propriété, vous pouvez la définir soit un tableau ou un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui contient les noms de catégorie.</para>
-          <para>Cette propriété s’applique uniquement aux axes des abscisses.</para>
+          <para>Cette propriété s'applique uniquement aux axes des catégories.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -320,7 +320,7 @@
         <summary>Renvoie ou définit le type d'axe des abscisses.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous ne pouvez pas définir cette propriété pour un axe des ordonnées.</para>
+          <para>Vous ne pouvez pas utiliser cette propriété pour un axe des ordonnées.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -351,8 +351,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Crosses">
@@ -391,30 +393,30 @@
               <term>
                 <b>xlAxisCrossesAutomatic</b>
               </term>
-              <description>Microsoft Excel définit le point d’intersection des.</description>
+              <description>Microsoft Excel détermine le point d'intersection des axes.</description>
             </item>
             <item>
               <term>
                 <b>xlMinimum</b>
               </term>
-              <description>les axes se croisent à la valeur minimale.</description>
+              <description>Coupe à la valeur minimale.</description>
             </item>
             <item>
               <term>
                 <b>xlMaximum</b>
               </term>
-              <description>les axes se croisent à la valeur maximale.</description>
+              <description>Coupe à la valeur maximale.</description>
             </item>
             <item>
               <term>
                 <b>xlAxisCrossesCustom</b>
               </term>
-              <description>le <see cref="P:Microsoft.Office.Interop.Excel.Axis.CrossesAt" /> propriété spécifie le point d’intersection des.</description>
+              <description>Le <see cref="P:Microsoft.Office.Interop.Excel.Axis.CrossesAt" /> propriété spécifie le point d’intersection de l’axe.</description>
             </item>
           </list>
-          <para>Cette propriété n’est pas disponible pour les graphiques en radar. Pour les graphiques 3D, cette propriété ne peut être appliquée à l’axe des ordonnées et indique où le plan défini par l’axe des abscisses croise l’axe des ordonnées.</para>
-          <para>Cette propriété peut être utilisée pour les axes des abscisses et des ordonnées. Sur l’axe des abscisses, <b>xlMinimum</b> définit l’axe des ordonnées à couper à la première abscisse et <b>xlMaximum</b> définit l’axe des ordonnées à couper à la dernière abscisse.</para>
-          <para>Notez que <b>xlMinimum</b> et <b>xlMaximum</b> peuvent avoir des significations différentes, selon l’axe.</para>
+          <para>Cette propriété n'est pas disponible pour les graphiques en radar. Dans le cas des graphiques 3D, cette propriété ne peut être appliquée qu'à l'axe des ordonnées et indique le point d'intersection du plan défini par l'axe des abscisses et de l'axe des ordonnées.</para>
+          <para>Cette propriété peut être utilisée pour l'axe des ordonnées et l'axe des abscisses. Sur l'axe des abscisses, <b>xlMinimum</b> définit le point d'intersection à la première abscisse tandis que <b>xlMaximum</b> définit le point d'intersection à la dernière abscisse.</para>
+          <para>Notez que <b>xlMinimum</b> et <b>xlMaximum</b> peuvent avoir des significations différentes, selon l'axe concerné.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -449,7 +451,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Définir cette propriété provoque le <see cref="P:Microsoft.Office.Interop.Excel.Axis.Crosses" /> propriété Crosses en <b>xlAxisCrossesCustom</b>.</para>
-          <para>Cette propriété ne peut pas être utilisée sur des graphiques en radar. Pour les graphiques 3D, cette propriété indique où le plan défini par l’axe des abscisses croise l’axe des ordonnées.</para>
+          <para>Cette propriété ne peut pas être utilisée pour les graphiques en radar. Dans le cas des graphiques 3D, cette propriété indique le point d'intersection du plan défini par l'axe des abscisses et de l'axe des ordonnées.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -509,9 +511,9 @@
         <summary>Cette propriété renvoie ou définit l'étiquette d'unité pour l'axe des ordonnées.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>À l’aide des étiquettes d’unité lorsque vous traitez des valeurs élevées permet de graduation marquer les étiquettes plus facile à lire. Par exemple, si vous votre axe des ordonnées en unités de centaines, milliers ou millions d’étiquette, vous pouvez utiliser des valeurs numériques plus petites les graduations sur l’axe des.</para>
+          <para>L'emploi d'étiquettes d'unité facilite la lecture des étiquettes de graduation lorsque vous représentez sous la forme de graphique des valeurs importantes. Par exemple, si vous graduez l'axe des ordonnées en unités de centaines, milliers ou millions, vous pouvez utiliser des valeurs numériques plus petites pour les graduations de l'axe.</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayUnit" /> peut être une de ces constantes <b>XlDisplayUnit</b> :</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayUnit" />peut être une de ces constantes <b>XlDisplayUnit</b> :</para>
           <para>
             <b>xlHundredMillions</b>
           </para>
@@ -578,7 +580,10 @@
       <Docs>
         <summary>Si la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnit" /> propriété est <b>xlCustom</b>, la propriété <b>DisplayUnitCustom</b> renvoie ou définit la valeur des unités affichées. La valeur doit être comprise entre 0 et 10E307.</summary>
         <value>To be added.</value>
-        <remarks>Intitulés d’unité <para>Using valeurs élevées lorsque de graduation marquant les étiquettes plus facile à lire. Par exemple, si vous votre axe des ordonnées en unités de centaines, milliers ou millions d’étiquette, vous pouvez utiliser des valeurs numériques plus petites les graduations sur l’axe des.</para><para></para></remarks>
+        <remarks>
+          <para>L'emploi d'étiquettes d'unité facilite la lecture des étiquettes de graduation lorsque vous représentez sous la forme de graphique des valeurs importantes. Par exemple, si vous graduez l'axe des ordonnées en unités de centaines, milliers ou millions, vous pouvez utiliser des valeurs numériques plus petites pour les graduations de l'axe.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayUnitLabel">
@@ -857,7 +862,7 @@
           <b>Double</b>
         </value>
         <remarks>
-          <para>Tentative de définir cette propriété sur une valeur inférieure ou égale à zéro (0) provoque une erreur. La valeur par défaut est 10.</para>
+          <para>La définition de cette propriété avec une valeur inférieure ou égale à zéro (0) provoque une erreur. La valeur par défaut est 10.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1002,7 +1007,7 @@
           <b>La valeur true</b> si Microsoft Excel calcule les unités principales de l’axe des ordonnées.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définissant le <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> propriété définit cette propriété sur <b>False</b>.</para>
+          <para>Définition de la <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> propriété définit cette propriété sur <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1115,7 +1120,7 @@
           <b>La valeur true</b> si Microsoft Excel calcule la valeur maximale pour l’axe des ordonnées.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définissant le <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> propriété définit cette propriété sur <b>False</b>.</para>
+          <para>Définition de la <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> propriété définit cette propriété sur <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1184,7 +1189,7 @@
           <b>La valeur true</b> si Microsoft Excel calcule la valeur minimale pour l’axe des ordonnées.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définissant le <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> propriété définit cette propriété sur <b>False</b>.</para>
+          <para>Définition de la <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> propriété définit cette propriété sur <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1329,7 +1334,7 @@
           <b>La valeur true</b> si Microsoft Excel calcule les unités secondaires pour l’axe des ordonnées.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définissant le <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> propriété définit cette propriété sur <b>False</b>.</para>
+          <para>Définition de la <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> propriété définit cette propriété sur <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1436,7 +1441,7 @@
           <b>La valeur true</b> si Microsoft Excel trace les données points du dernier au premier.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété ne peut pas être utilisée sur des graphiques en radar.</para>
+          <para>Cette propriété ne peut pas être utilisée sur les graphiques en radar.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1554,7 +1559,7 @@
           <para>
             <b>xlTickLabelPositionNextToAxis</b>
           </para>
-          <para>, vous ne pouvez pas utiliser le <b> xlTickLabelPositionHigh</b> constante dans les graphiques 3D.</para>
+          <para>Vous ne pouvez pas utiliser la constante <b>xlTickLabelPositionHigh</b> sur des graphiques 3D.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1616,7 +1621,7 @@
         <summary>Cette propriété renvoie ou définit le nombre d'abscisses ou de séries entre les étiquettes de graduation. S’applique uniquement aux axes des abscisses et des séries.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Espacement des étiquettes de graduation sur l’axe des ordonnées est toujours calculé par Microsoft Excel.</para>
+          <para>L'espacement des étiquettes de graduation de l'axe des ordonnées est toujours calculé par Microsoft Excel.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1652,7 +1657,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> propriété renvoie l’espacement actuel des étiquettes de graduation, que le paramètre soit automatique ou non.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> propriété renvoie l’espacement actuel des étiquettes de graduation, que le paramètre soit automatique ou non.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1751,7 +1756,7 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />peut être une de ces constantes <b>XlAxisType</b> :</para>
           <para>
-            <b>xlCategory</b>
+            <b>constante xlCategory</b>
           </para>
           <para>
             <b>xlSeriesAxis</b>
@@ -1759,7 +1764,7 @@
           <para>
             <b>xlValue</b>
           </para>
-          <para>lorsque vous utilisez cette propriété pour l’axe horizontal des nuages, la <b>constante xlCategory</b> est renvoyée comme type d’axe.</para>
+          <para>Si vous utilisez cette propriété pour l'axe horizontal des nuages de points, la constante <b>xlCategory</b> est renvoyée comme type d'axe.</para>
           <para></para>
         </remarks>
       </Docs>

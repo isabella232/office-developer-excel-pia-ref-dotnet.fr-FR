@@ -1,10 +1,10 @@
 <Type Name="TextEffectFormat" FullName="Microsoft.Office.Interop.Excel.TextEffectFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="988e85ab2e6ef7b42cff85a134ea2c142a4955d7" />
+    <Meta Name="ms.openlocfilehash" Value="fbb84779b82f0d04327c445fb2dede8ff19b5468" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581010" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TextEffectFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -125,8 +125,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FontBold">
@@ -375,7 +377,7 @@
         <summary>Cette propriété renvoie ou définit la forme de l'objet WordArt spécifié.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définissant le <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.PresetTextEffect" /> propriété définit automatiquement la propriété <b>PresetShape</b> .</para>
+          <para>Définition de la <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.PresetTextEffect" /> propriété définit automatiquement la propriété <b>PresetShape</b> .</para>
           <para></para>
         </remarks>
       </Docs>
@@ -410,7 +412,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Les valeurs de cette propriété correspondent aux formats contenus dans la boîte de dialogue Galerie WordArt (numérotés de gauche à droite et de haut en bas).</para>
-          <para>Définir automatiquement de la propriété <b>PresetTextEffect</b> définit de nombreuses autres propriétés de mise en forme de la forme spécifiée.</para>
+          <para>Configuration automatique de la propriété <b>PresetTextEffect</b> définit les nombreuses autres propriétés de mise en forme de la forme spécifiée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -446,7 +448,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si l’objet WordArt comporte du texte horizontal, la définition de la propriété <b>RotatedChars</b> sur <b>msoTrue</b> fait pivoter les caractères de 90 degrés vers la gauche. Si l’objet WordArt comporte du texte vertical, la définition de la propriété <b>RotatedChars</b> sur <b>msoFalse</b> fait pivoter les caractères de 90 degrés vers la droite. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> méthode pour basculer entre le texte horizontal et vertical.</para>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> méthode et <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objet et la propriété <b>RotatedChars</b> et <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> objet affectent l’orientation des caractères et le sens du texte dans une <b>forme</b> de l' objet représente l’objet WordArt. Vous devrez peut-être plusieurs essais pour savoir comment combiner les effets de ces propriétés et méthodes pour obtenir le résultat souhaité.</para>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> méthode et <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objet et la propriété <b>RotatedChars</b> et <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> objet affectent l’orientation des caractères et le sens du texte dans un objet <b>Shape</b> qui représente Objet WordArt. Vous devrez peut-être plusieurs essais pour savoir comment combiner les effets de ces propriétés et méthodes pour obtenir le résultat souhaité.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -506,7 +508,7 @@
         <summary>Cette méthode passe, dans l'objet WordArt spécifié, de l'orientation horizontale de l'enchaînement de texte à l'orientation verticale et vice-versa.</summary>
         <remarks>
           <para>La méthode <b>ToggleVerticalText</b> intervertit les valeurs de la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Width" /> et <see cref="P:Microsoft.Office.Interop.Excel.Shape.Height" /> propriétés de l’objet <b>Shape</b> qui représente l’objet WordArt et conserve la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Left" /> et <see cref="P:Microsoft.Office.Interop.Excel.Shape.Top" /> propriétés.</para>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> méthode et <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objet et le <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.RotatedChars" /> propriété et la méthode <b>ToggleVerticalText</b> de le <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> objet affectent l’orientation des caractères et le sens du texte dans une <b>forme</b> objet qui représente l’objet WordArt. Vous devrez peut-être plusieurs essais pour savoir comment combiner les effets de ces propriétés et méthodes pour obtenir le résultat souhaité.</para>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> méthode et <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objet et le <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.RotatedChars" /> propriété et la méthode <b>ToggleVerticalText</b> de la <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> objet affectent l’orientation des caractères et le sens du texte dans une <b>forme</b> de l' objet représente l’objet WordArt. Vous devrez peut-être plusieurs essais pour savoir comment combiner les effets de ces propriétés et méthodes pour obtenir le résultat souhaité.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -540,15 +542,15 @@
         <summary>Cette propriété renvoie ou définit le rapport entre l’espace horizontal alloué à chaque caractère dans l’objet WordArt spécifié à la largeur du caractère. Peut être une valeur comprise entre 0 (zéro) et 5.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Valeurs élevées pour cette propriété spécifient un espace entre les caractères ; les valeurs inférieures à 1 peuvent entraîner un chevauchement des caractères.</para>
-          <para>Le tableau suivant reprend les valeurs de la propriété <b>Tracking</b> correspondant aux paramètres disponibles dans l’interface utilisateur.</para>
+          <para>Les valeurs élevées pour cette propriété spécifient un espace entre les caractères ; les valeurs inférieures à 1 peuvent entraîner un chevauchement des caractères.</para>
+          <para>Le tableau suivant reprend les valeurs de la propriété <b>Tracking</b> correspondant aux paramètres disponibles à travers l'interface utilisateur.</para>
           <list type="table">
             <item>
-              <term>Très serré</term>
+              <term>Très rapproché</term>
               <description>0,8</description>
             </item>
             <item>
-              <term>serré</term>
+              <term>Rapproché</term>
               <description>0,9</description>
             </item>
             <item>
@@ -556,11 +558,11 @@
               <description>1.0</description>
             </item>
             <item>
-              <term>libre</term>
+              <term>Espacé</term>
               <description>1.2</description>
             </item>
             <item>
-              <term>très espacé</term>
+              <term>Très espacé</term>
               <description>1,5</description>
             </item>
           </list>

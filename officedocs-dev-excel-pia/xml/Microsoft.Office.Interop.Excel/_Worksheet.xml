@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583131" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Worksheet" />
@@ -529,7 +529,7 @@
           <b>La valeur true</b> si les flèches de la liste déroulante Filtre automatique sont actuellement affichées dans la feuille. Cette propriété est indépendante de la <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.FilterMode" /> propriété. Type de données <b>Boolean</b> en lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si les flèches du menu déroulant sont actuellement affichées. Vous pouvez définir cette propriété sur <b>False</b> pour supprimer les flèches, mais vous ne pouvez pas la valeur <b>True</b>. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> méthode pour filtrer une liste et afficher les flèches déroulantes.</para>
+          <para>Cette propriété renvoie <b>la valeur True</b> si les flèches du menu déroulant sont actuellement affichées. Vous pouvez définir cette propriété sur <b>False</b> pour supprimer les flèches, mais vous ne pouvez pas la valeur <b>True</b>. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> méthode pour filtrer une liste et afficher les flèches du menu déroulant.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -596,7 +596,7 @@
         <remarks>
           <list type="table">
             <item>
-              <term>Tous les classeurs ouverts</term>
+              <term>tous les classeurs ouverts</term>
               <description>Application.Calculate</description>
             </item>
             <item>
@@ -604,7 +604,7 @@
               <description>Worksheets (1). Calculer</description>
             </item>
             <item>
-              <term>une plage spécifiée</term>
+              <term>une plage déterminée</term>
               <description>Worksheets (1). Rows(2). Calculer</description>
             </item>
           </list>
@@ -639,7 +639,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Étant donné que la <see cref="P:Microsoft.Office.Interop.Excel.Worksheets.Item(System.Object)" /> propriété est la propriété par défaut pour l’objet <b>Range</b> , vous pouvez spécifier l’index de ligne et de colonne immédiatement après le mot clé <b>Cells</b> . Pour plus d’informations, voir la propriété <b>Item</b> .</para>
-          <para>à l’aide de cette propriété sans qualificateur d’objet renvoie un objet <b>Range</b> qui représente toutes les cellules de la feuille de calcul active.</para>
+          <para>Sans qualificateur d’objet, cette propriété renvoie un objet <b>Range</b> qui représente toutes les cellules de la feuille de calcul active.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -889,9 +889,9 @@
         <summary>Renvoie le nom de code pour l’objet. Valeur <b>String</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La valeur que vous voyez dans la cellule à droite de <b>(nom)</b> dans la fenêtre Propriétés est le nom de code de l’objet sélectionné. Au moment du design, vous pouvez modifier le nom de code d’un objet en changeant cette valeur. Vous ne pouvez pas modifier par programme de cette propriété au moment de l’exécution.</para>
+          <para>La valeur que vous voyez dans la cellule à droite de <b>(nom)</b> dans la fenêtre Propriétés est le nom de code de l’objet sélectionné. Au moment du design, vous pouvez modifier le nom de code d’un objet en changeant cette valeur. Vous ne pouvez pas modifier par programme cette propriété à l’exécution.</para>
           <para>Le nom de code pour un objet peut être utilisé à la place d’une expression qui renvoie l’objet.</para>
-          <para>, Il est possible que le nom de feuille peut être différent du nom de code. Lorsque vous créez une feuille, le nom de la feuille et le nom de code sont identiques, mais la modification du nom de feuille ne change pas le nom de code et réciproquement (à l’aide de la fenêtre Propriétés dans Visual Basic Editor) ne change pas le nom de la feuille.</para>
+          <para>Il est possible que le nom de feuille peut être différent du nom de code. Lorsque vous créez une feuille, le nom de la feuille et le nom de code sont identiques, mais la modification du nom de feuille ne change pas le nom de code et réciproquement (à l’aide de la fenêtre Propriétés dans Visual Basic Editor) ne change pas le nom de la feuille.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1018,15 +1018,15 @@
           <list type="table">
             <item>
               <term>1</term>
-              <description>utiliser des étiquettes de ligne du haut.</description>
+              <description>Utiliser des étiquettes de ligne du haut.</description>
             </item>
             <item>
               <term>2</term>
-              <description>utiliser des étiquettes dans la colonne de gauche.</description>
+              <description>Utiliser des étiquettes dans la colonne de gauche.</description>
             </item>
             <item>
               <term>3</term>
-              <description>créer des liens vers les données sources.</description>
+              <description>Créer des liens vers la source de données.</description>
             </item>
           </list>
           <para></para>
@@ -1126,7 +1126,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomProperties">
@@ -1155,7 +1158,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" /> représentant les informations d’identificateur associées à une feuille de calcul.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour la propriété <b>CustomProperties</b> , les informations d’identificateur pour une feuille de calcul peuvent représenter des métadonnées pour XML.</para>
+          <para>Pour la propriété <b>CustomProperties</b>, les informations d'identificateur pour une feuille de calcul peuvent représenter des métadonnées pour XML.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1264,7 +1267,7 @@
           <b>True</b> si les sauts de page (automatiques et manuels) de la feuille de calcul spécifiée sont affichés. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous ne pouvez pas définir cette propriété si vous ne disposez pas d’imprimante installée.</para>
+          <para>Vous ne pouvez pas définir cette propriété si aucune imprimante n'est installée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1445,7 +1448,7 @@
           <b>True</b> si les flèches du filtre automatique sont activées lorsque la protection Interface utilisateur seulement est activée. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété s’applique à chaque feuille de calcul et n’est pas enregistrée avec la feuille de calcul ou la session.</para>
+          <para>Cette propriété s'applique à chaque feuille de calcul et n'est enregistrée ni avec celle-ci, ni avec la session.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1480,7 +1483,7 @@
           <b>True</b> si Microsoft Excel recalcule automatiquement la feuille de calcul quand cela est nécessaire. <b>False</b> si Excel ne recalcule pas la feuille. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Lorsque la valeur de cette propriété a la <b>valeur False</b>, vous ne pouvez pas demander un recalcul. Lorsque vous modifiez la valeur <b>false</b> à <b>la valeur True</b>, Excel recalcule la feuille de calcul.</para>
+          <para>Quand la valeur de cette propriété est <b>False</b>, vous ne pouvez pas demander un recalcul. Quand vous changez la valeur de cette propriété, de <b>False</b> en <b>True</b>, Microsoft Excel recalcule la feuille de calcul.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1517,7 +1520,7 @@
         </value>
         <remarks>
           <para>Lorsque la valeur <b>True</b> (valeur par défaut), l’évaluation de formats conditionnels se produira automatiquement selon vos besoins.  Lorsque cette propriété a la valeur <b>False</b>, mises en forme conditionnelles sera pas réévaluées.  N’importe quel précédemment mise en forme conditionnelle sera toujours visible, mais il ne mettra pas à jour en tant que valeurs de cellule ou <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" /> plages sont modifiées.  </para>
-          <para>L’objectif de cet indicateur est pour permettre aux programmeurs configurer une règle entièrement avant de l’évaluer.  Ceci est particulièrement utile lorsque la condition est appliquée à une plage de grande taille comme performances peuvent être lente dans ces cas-là.</para>
+          <para>L’objectif de cet indicateur est pour permettre aux programmeurs configurer une règle entièrement avant de l’évaluer.  Ceci est particulièrement utile lorsque la condition est appliquée à une plage de grande taille comme performances peuvent être lente dans ces cas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1558,7 +1561,7 @@
           <b>True</b> si les symboles du plan sont activés lorsque la protection Interface utilisateur seulement est activée. Type de données <b>Boolean</b> en lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété s’applique à chaque feuille de calcul et n’est pas enregistrée avec la feuille de calcul ou la session.</para>
+          <para>Cette propriété s'applique à chaque feuille de calcul et n'est enregistrée ni avec celle-ci, ni avec la session.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1599,8 +1602,8 @@
           <b>True</b> si les contrôles et les actions du tableau croisé dynamique sont activés lorsque la protection Interface utilisateur seulement est activée. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété s’applique à chaque feuille de calcul et n’est pas enregistrée avec la feuille de calcul ou la session.</para>
-          <para>Il doit exister un nombre suffisant de cellules non verrouillées en dessous et à droite du rapport de tableau croisé dynamique pour Microsoft Excel puisse le recalculer et afficher le rapport de tableau croisé dynamique.</para>
+          <para>Cette propriété s'applique à chaque feuille de calcul et n'est enregistrée ni avec celle-ci, ni avec la session.</para>
+          <para>Il doit exister un nombre suffisant de cellules non verrouillées en dessous et à droite du rapport de tableau croisé dynamique, afin que Microsoft Excel puisse le recalculer et l'afficher.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1634,7 +1637,7 @@
         <summary>Cette propriété renvoie ou définit ce qui peut être sélectionné dans la feuille. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlEnableSelection" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété prend effet que lorsque la feuille de calcul est protégée : <b>xlNoSelection</b> empêche toute sélection dans la feuille, <b>xlUnlockedCells</b> autorise uniquement les cellules dont la propriété <b>Locked</b> a la <b>valeur False</b> à sélectionner et <b> xlNoRestrictions</b> permet de n’importe quelle cellule à sélectionner.</para>
+          <para>Cette propriété ne prend effet que lorsque la feuille de calcul est protégée : <b>xlNoSelection</b> empêche toute sélection dans la feuille, <b>xlUnlockedCells</b> ne permet que la sélection des cellules dont la propriété <b>Locked</b> est <b>False</b>, enfin <b>xlNoRestrictions</b> permet la sélection de n'importe quelle cellule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1670,9 +1673,17 @@
         <summary>Cette méthode convertit un nom Microsoft Excel en un objet ou une valeur.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Les types suivants de noms dans Microsoft Excel peuvent être utilisés avec cette méthode :</para> Noms 
-          <list type="bullet"><item><description>défini. Vous pouvez spécifier n’importe quel nom.</description></item> Références 
-            <item><description>externe. Vous pouvez utiliser le ! Pour faire référence à une feuille de calcul défini dans un autre classeur.</description></item></list><para></para></remarks>
+          <para>Les types de noms suivants peuvent être utilisés dans Microsoft Excel avec cette méthode :</para>
+          <list type="bullet">
+            <item>
+              <description>Noms définis. Vous pouvez spécifier n’importe quel nom.</description>
+            </item>
+            <item>
+              <description>Références externes. Vous pouvez utiliser le ! Pour faire référence à une feuille de calcul défini dans un autre classeur.</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportAsFixedFormat">
@@ -1719,7 +1730,7 @@
         <param name="FixedFormatExtClassPtr">Pointeur vers la classe <b>FixedFormatExt</b> .</param>
         <summary>Réalise une exportation dans un fichier avec le format spécifié.</summary>
         <remarks>
-          <para>Cette méthode prend également en charge l’initialisation d’un complément pour exporter un fichier dans un fichier au format fixe. Par exemple, Excel effectue la conversion du format de fichier si les convertisseurs sont présents. La conversion est habituellement initiée par l’utilisateur.</para>
+          <para>Cette méthode prend également en charge l’initialisation d’une macro complémentaire pour exporter un fichier dans un fichier au format fixé. Par exemple, Excel effectue la conversion de format s’il existe des convertisseurs. La conversion est généralement décidée par l’utilisateur.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1754,7 +1765,7 @@
           <b>True</b> si la feuille de calcul est en mode filtre. Type <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété a la <b>valeur True</b> si la feuille de calcul contient une liste filtrée des lignes masquées.</para>
+          <para>Cette propriété est <b>True</b> si la feuille de calcul contient une liste filtrée des lignes masquées.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1853,7 +1864,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> sauts de collection qui représente la page horizontale sur la feuille. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Est une limite de 1026 sauts de page horizontaux par feuille.</para>
+          <para>Une feuille ne peut pas contenir plus de 1 026 sauts de page horizontaux.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2195,8 +2206,8 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Chart" />, <see cref="T:Microsoft.Office.Interop.Excel.Range" />, ou <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object qui représente la cellule ou la feuille suivante. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet est une plage, cette propriété simule l’utilisation de la touche TAB, bien que la propriété renvoie la prochaine cellule sans la sélectionner it.</para>
-          <para>Dans une feuille de calcul protégée, cette propriété renvoie la prochaine cellule non verrouillée. Dans une feuille non protégée, cette propriété renvoie toujours la cellule immédiatement à droite de la cellule spécifiée.</para>
+          <para>Si l'objet est une plage, cette propriété simule l'utilisation de la touche TAB, bien que la propriété renvoie la prochaine cellule sans la sélectionner.</para>
+          <para>Dans une feuille protégée, cette propriété renvoie la prochaine cellule non verrouillée. Dans une feuille non protégée, elle renvoie toujours la cellule située immédiatement à droite de la cellule spécifiée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2673,7 +2684,7 @@
         <summary>Cette méthode colle le contenu du Presse-papiers dans la feuille.</summary>
         <remarks>
           <para>Si vous ne spécifiez pas le <paramref name="Destination" /> argument, vous devez sélectionner la plage de destination avant d’utiliser cette méthode.</para>
-          <para>Cette méthode peut modifier la sélection de la feuille, selon le contenu du Presse-papiers.</para>
+          <para>Cette méthode peut modifier la sélection de la feuille ; cela dépend du contenu du Presse-papiers.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2720,8 +2731,8 @@
         <remarks>
           <para>
             <paramref name="NoHTMLFormatting" />importe uniquement lorsque <paramref name="Format" /> = « HTML ». Dans tous les autres cas, <paramref name="NoHTMLFormatting" /> sera ignorée.</para>
-          <para>Vous devez sélectionner la plage de destination avant d’utiliser cette méthode.</para>
-          <para>Cette méthode peut modifier la sélection de la feuille, selon le contenu du Presse-papiers.</para>
+          <para>Vous devez sélectionner la plage de destination avant d'utiliser cette méthode.</para>
+          <para>Cette méthode peut modifier la sélection de la feuille ; cela dépend du contenu du Presse-papiers.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2878,8 +2889,8 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Chart" />, <see cref="T:Microsoft.Office.Interop.Excel.Range" />, ou <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object qui représente la cellule ou la feuille précédente. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet est une plage, cette propriété revient à appuyer sur MAJ + TAB, contrairement à la combinaison de touches, toutefois, la propriété renvoie la cellule précédente sans la sélectionner it.</para>
-          <para>Dans une feuille de calcul protégée, cette propriété renvoie la cellule non verrouillée précédente. Dans une feuille non protégée, cette propriété renvoie toujours la cellule immédiatement à gauche de la cellule spécifiée.</para>
+          <para>Si l'objet est une plage, cette propriété simule la combinaison de touches MAJ+TAB mais, à l'inverse de celle-ci, renvoie la cellule précédente sans la sélectionner.</para>
+          <para>Dans le cas d'une feuille protégée, cette propriété renvoie la cellule précédente non verrouillée. Dans le cas d'une feuille non protégée, cette propriété renvoie toujours la cellule située immédiatement à gauche de la cellule spécifiée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2911,7 +2922,7 @@
         <value>Le nombre de pages de commentaires qui seront imprimées pour la feuille de calcul active.</value>
         <remarks>
           <para>En lecture seule.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" /> propriété retournera uniquement un nombre supérieur à zéro si les commentaires dans l’onglet Feuille de la mise en Page boîte de dialogue a la valeur à la fin de la feuille. Cette propriété renvoie zéro si la feuille est une feuille de graphique ou une feuille boîte de dialogue MS Excel 5.0.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" /> propriété retournera uniquement un nombre supérieur à zéro si les commentaires dans l’onglet Feuille de la mise en Page boîte de dialogue a la valeur à la fin de la feuille. Cette propriété renvoie zéro si la feuille est une feuille de graphique ou une feuille boîte de dialogue MS Excel 5.0.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3098,7 +3109,7 @@
         <summary>Cette méthode protège une feuille de calcul de sorte qu'elle ne puisse être modifiée.</summary>
         <remarks>
           <para>Si vous appliquez la méthode <b>Protect</b> avec la <paramref name="UserInterfaceOnly" /> argument la valeur <b>True</b> pour une feuille de calcul et puis enregistrez le classeur, la feuille de calcul entière (pas seulement l’interface) sera protégée lorsque vous rouvrez le classeur. Pour réactiver la protection d’interface utilisateur une fois que le classeur est ouvert, vous devez de nouveau appliquer la méthode <b>Protect</b> avec <paramref name="UserInterfaceOnly" /> la valeur <b>True</b>.</para>
-          <para>Si vous souhaitez apporter une modification à une feuille de calcul protégée, il est possible d’utiliser la méthode <b>Protect</b> sur une feuille de calcul protégée si le mot de passe est fourni. Une autre méthode consisterait à ôter la protection de la feuille de calcul, apportez les modifications nécessaires, puis protéger la feuille de calcul à nouveau.</para>
+          <para>Si vous souhaitez apporter une modification à une feuille de calcul protégée, il est possible d’utiliser la méthode <b>Protect</b> sur une feuille de calcul protégée si le mot de passe est fourni. Une autre méthode consisterait à ôter la protection de la feuille de calcul, apportez les modifications nécessaires, puis à nouveau protéger la feuille de calcul.</para>
           <para>
             <b>Remarque</b>: 'Non protégé' signifie la cellule peut être verrouillée (boîte de dialogue Format de cellule) mais est inclus dans une plage définie dans le permettre aux utilisateurs de modifier les plages de boîte de dialogue, et l’utilisateur sans protection de la plage avec un mot de passe a été validée via des autorisations NT.</para>
           <para></para>
@@ -3550,7 +3561,7 @@
         <summary>Cette propriété renvoie ou définit la plage où le défilement est autorisé comme une référence de plage de style A1. Cellules en dehors de la zone de défilement ne peuvent pas être sélectionnés. Valeur <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définir cette propriété sur une chaîne vide (« ») pour permettre la sélection de cellule pour la totalité de la feuille.</para>
+          <para>Donnez à cette propriété la valeur d'une chaîne vide ("") pour permettre la sélection des cellules de toute la feuille.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3734,7 +3745,7 @@
         <summary>Affiche la grille de données associée au classeur.</summary>
         <remarks>
           <para>L’exécution s’arrête lorsque vous utilisez le formulaire de données. Lorsque vous fermez le formulaire de données, l’exécution reprend à la ligne qui suit la méthode <b>ShowDataForm</b> .</para>
-          <para>Cette méthode exécute la grille de données personnalisée, si elle existe.</para>
+          <para>Cette méthode exécute la grille de données personnalisée, le cas échéant.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3900,7 +3911,7 @@
         <summary>Renvoie ou définit la largeur standard (valeur par défaut) pour toutes les colonnes de la feuille de calcul. Type de données <b>Double</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Une unité de largeur de colonne est égale à la largeur d’un caractère du style Normal. Pour les polices proportionnelles, la largeur du caractère 0 (zéro) est utilisée.</para>
+          <para>Une unité de largeur de colonne est égale à la largeur d'un caractère du style Normal. Dans le cas des polices proportionnelles, la largeur du caractère 0 (zéro) est utilisée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4114,7 +4125,7 @@
         <param name="Password">Facultatif <b>Object</b>. Chaîne qui indique le mot de passe qui respecte la casse à utiliser pour ôter la protection de la feuille ou du classeur. Si la feuille ou du classeur n’est pas protégé par un mot de passe, cet argument est ignoré. Si vous omettez cet argument pour une feuille est protégée par un mot de passe, vous devrez le mot de passe. Si vous omettez cet argument pour un classeur est protégé par un mot de passe, la méthode échoue.</param>
         <summary>Cette méthode supprime la protection d'une feuille ou d'un classeur. Elle est sans effet si la feuille ou le classeur n'est pas protégé.</summary>
         <remarks>
-          <para>Si vous oubliez le mot de passe, vous ne pouvez pas ôter la protection de la feuille ou du classeur. Il est conseillé de conserver une liste de vos mots de passe et les noms de documents correspondants dans un endroit sûr.</para>
+          <para>Si vous oubliez le mot de passe, vous ne pourrez pas supprimer la protection de la feuille ou du classeur. Pensez à conserver en lieu sûr une liste de vos mots de passe et les noms des documents correspondants.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4185,8 +4196,8 @@
         <summary>Détermine si l’objet est visible. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlSheetVisibility" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>Visible</b> d’un élément de tableau croisé dynamique a la <b>valeur True</b> si l’élément est actuellement visible dans le tableau.</para>
-          <para>Si vous définissez la propriété <b>Visible</b> d’un nom à la <b>valeur False</b>, le nom n’apparaît pas dans la boîte de dialogue Définir un nom.</para>
+          <para>La propriété <b>Visible</b> d'un élément de tableau croisé dynamique a la valeur <b>True</b> si cet élément apparaît actuellement dans le tableau.</para>
+          <para>Si vous affectez la valeur <b>False</b> à la propriété <b>Visible</b>, le nom n'apparaît pas dans la boîte de dialogue Définir un nom.</para>
           <para></para>
         </remarks>
       </Docs>

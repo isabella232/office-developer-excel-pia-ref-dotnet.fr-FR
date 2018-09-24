@@ -1,10 +1,10 @@
 <Type Name="DefaultWebOptions" FullName="Microsoft.Office.Interop.Excel.DefaultWebOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="89da5d5cdace92821c0dcb0423dda5bc8169b1f6" />
+    <Meta Name="ms.openlocfilehash" Value="f60968ca4bfd4013c6973e97422f9c5c78bdce23" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585567" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DefaultWebOptions" />
@@ -64,7 +64,7 @@
           <b>La valeur true</b> si PNG (Portable Network Graphics) est autorisé comme format d’image lorsque vous enregistrez des documents en tant que page Web. <b>False</b> si PNG n'est pas autorisé comme format de sortie. La valeur par défaut est <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si vous enregistrez des images au format PNG au lieu de n’importe quel autre format de fichier, vous pourrez améliorer la qualité de l’image ou réduire la taille des fichiers image et donc réduire le temps de téléchargement, en partant du principe que les navigateurs Web cible prennent en charge le format PNG.</para>
+          <para>L'enregistrement des images au format PNG vous permet d'améliorer, contrairement aux autres formats de fichier, la qualité de l'image ou de réduire la taille des fichiers image, ce qui optimise la durée de téléchargement, à condition que les navigateurs Web cible prennent en charge le format PNG.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -99,7 +99,7 @@
           <b>La valeur true</b> si le codage par défaut est utilisé lorsque vous enregistrez un document page Web ou texte brut, indépendamment du codage d’origine du fichier lors de son ouverture. <b>False</b> si le codage d’origine du fichier est utilisé. <b>False</b> est la valeur par défaut.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Encoding" /> propriété peut être utilisée pour définir le codage par défaut.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Encoding" /> propriété peut être utilisée pour définir le codage par défaut.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -162,8 +162,8 @@
           <b>La valeur true</b> si Microsoft Excel vérifie si une application Office constitue l’éditeur HTML par défaut lorsque vous démarrez Excel. <b>False</b> si Excel n’effectue pas cette vérification. La valeur par défaut est <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété est utilisée uniquement si le navigateur Web que vous utilisez prend en charge l’édition HTML et les éditeurs HTML.</para>
-          <para>Pour utiliser un éditeur HTML différent, vous devez définir cette propriété sur <b>False</b> et puis enregistrer l’éditeur comme éditeur HTML système par défaut.</para>
+          <para>Cette propriété est utilisée uniquement si le navigateur Web que vous utilisez prend en charge l'édition HTML et les éditeurs HTML.</para>
+          <para>Pour utiliser un éditeur HTML différent, vous devez définir cette propriété sur <b>False</b> et puis enregistrer l'éditeur comme éditeur HTML du système par défaut.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -194,8 +194,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DownloadComponents">
@@ -228,8 +230,10 @@
           <b>La valeur true</b> si Microsoft Office Web components nécessaires sont téléchargés lorsque vous affichez le document enregistré dans un navigateur Web, mais uniquement si les composants ne sont pas déjà installés. <b>False</b> si les composants ne sont pas téléchargés. <b>False</b> est la valeur par défaut.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LocationOfComponents" /> propriété à une URL centrale (sur l’intranet ou le Web) ou le chemin d’accès (local ou réseau) à un emplacement à partir duquel les utilisateurs autorisés peuvent télécharger les composants lorsqu’ils visualisent votre document enregistré. Le chemin d’accès doit être valide et doit pointer vers un emplacement qui contient les composants nécessaires et l’utilisateur doit disposer d’une licence Microsoft Office valide.</para> Composants 
-          <para>office Web ajoutent l’interactivité à des documents que vous enregistrez en tant que pages Web. Si vous affichez une page Web dans un navigateur sur un ordinateur qui n’a pas les composants installés, les parties interactives de la page sera statiques.</para><para></para></remarks>
+          <para>Vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LocationOfComponents" /> propriété à une URL centrale (sur l’intranet ou le Web) ou le chemin d’accès (local ou réseau) à un emplacement à partir duquel les utilisateurs autorisés peuvent télécharger les composants lorsqu’ils visualisent votre document enregistré. Le chemin d’accès doit être valide et doit pointer vers un emplacement qui contient les composants nécessaires, et l’utilisateur doit disposer d’une licence valide de Microsoft Office.</para>
+          <para>Les composants Microsoft Office Web Components permettent d'ajouter des fonctions interactives aux documents que vous enregistrez sous la forme de pages Web. Si vous visualisez une page Web à partir d'un navigateur situé sur un ordinateur sur lequel les composants ne sont pas installés, les parties interactives de la page seront statiques.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -260,7 +264,10 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le codage de document (code page ou jeu de caractères) à être utilisé par le navigateur Web quand vous affichez le document enregistré. La valeur par défaut est la page de codes système.</summary>
         <value>To be added.</value>
-        <remarks>Vous ne pouvez pas utiliser une des constantes <b>MsoEncoding</b> qui ont le suffixe de <b>détection automatique</b>de <para>. Ces constantes sont utilisées par le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" /> méthode.</para><para></para></remarks>
+        <remarks>
+          <para>Vous ne pouvez pas utiliser une des constantes <b>MsoEncoding</b> qui ont le suffixe de <b>détection automatique</b>. Ces constantes sont utilisées par le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" /> méthode.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FolderSuffix">
@@ -289,9 +296,208 @@
         <summary>Renvoie le suffixe de dossier que Microsoft Excel utilise lorsque vous enregistrez un document sous forme de page Web, utilisez des noms de fichiers longs et choisissez d’enregistrer les fichiers de prise en charge dans un dossier séparé (autrement dit, si le <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" /> et <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" /> propriétés est définie sur <b>True</b>).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Documents nouvellement créés utilisent le suffixe renvoyé par la propriété <b>FolderSuffix</b> de l’objet <b>DefaultWebOptions</b> . La valeur de la <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> objet peut être différente de celle de l’objet <b>DefaultWebOptions</b> si le document a été précédemment modifié dans une version linguistique différente de Microsoft Excel. Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> méthode pour appliquer le suffixe de la langue que vous utilisez actuellement dans Microsoft Office.</para>
-          <para>Par défaut, le nom du dossier de prise en charge est le nom de la page Web plus un trait de soulignement (_), un point (.), ou un trait d’union (-) et le mot « fichiers » (dans la langue de la version d’Excel dans laquelle le fichier a été enregistré en tant que page Web). Par exemple, supposons que vous utilisez la version néerlandais d’Excel pour enregistrer un fichier appelé « Page1 » comme une page Web. Le nom par défaut du dossier de prise en charge est Page1_bestanden.</para> Tableau 
-          <para>suivantes répertorie toutes les versions linguistiques d’Office et indique correspondant <b>LanguageID</b> propriété valeur et dossier suffixe. Pour les langues qui ne sont pas répertoriés dans le tableau, le suffixe « .files » est utilisé.</para><list type="table"><item><term>Arabe</term><description>1025</description><description>.files</description></item><item><term>Basque</term><description>1069</description><description>_fitxategiak</description></item><item><term>brésilien</term><description>1046</description><description>_arquivos</description></item><item><term>bulgare</term><description>1026</description><description>.files</description></item><item><term>Catalan</term><description>1027</description><description>_fitxers</description></item><item><term>Chinois - simplifié</term><description>2052</description><description>.files</description></item><item><term>Chinois - traditionnel</term><description>1028</description><description>.files</description></item><item><term>Croate</term><description>1050</description><description>_datoteke</description></item><item><term>Tchèque</term><description>1029</description><description>_soubory</description></item><item><term>Danoise</term><description>1030</description><description>-système de fichiers</description></item><item><term>Néerlandais</term><description>1043</description><description>_bestanden</description></item><item><term>Anglais</term><description>1033</description><description>_files</description></item><item><term>Estonien</term><description>1061</description><description>_failid</description></item><item><term>Finnois</term><description>1035</description><description>_tiedostot</description></item><item><term>Français</term><description>1036</description><description>_fichiers</description></item><item><term>Allemand</term><description>1031</description><description>-Dateien</description></item><item><term>Grec</term><description>1032</description><description>.files</description></item><item><term>Hébreu</term><description>1037</description><description>.files</description></item><item><term>Hongrois</term><description>1038</description><description>_elemei</description></item><item><term>Italienne</term><description>1040</description><description>-fichier</description></item><item><term>Japonais</term><description>1041</description><description>.files</description></item><item><term>Coréen</term><description>1042</description><description>.files</description></item><item><term>Letton</term><description>1062</description><description>_fails</description></item><item><term>Lituanien</term><description>1063</description><description>_bylos</description></item><item><term>Norvégien</term><description>1044</description><description>-système de fichiers</description></item><item><term>Polonais</term><description>1045</description><description>_pliki</description></item><item><term>Portugais</term><description>2070</description><description>_ficheiros</description></item><item><term>Roumain</term><description>1048</description><description>.files</description></item><item><term>Russe</term><description>1049</description><description>.files</description></item><item><term>Serbe (cyrillique)</term><description>3098</description><description>.files</description></item><item><term>Serbe (Latin)</term><description>2074</description><description>_fajlovi</description></item><item><term>Couronne</term><description>1051</description><description>.files</description></item><item><term>Slovène</term><description>1060</description><description>_datoteke</description></item><item><term>Espagnol</term><description>3082</description><description>_archivos</description></item><item><term>Suédois</term><description>1053</description><description>-système de fichiers</description></item><item><term>Thaï</term><description>1054</description><description>.files</description></item><item><term>Turc</term><description>1055</description><description>_dosyalar</description></item><item><term>Ukrainien</term><description>1058</description><description>.files</description></item><item><term>Vietnamien</term><description>1066</description><description>.files</description></item></list><para></para></remarks>
+          <para>Documents nouvellement créés utilisent le suffixe renvoyé par la propriété <b>FolderSuffix</b> de l'objet <b>DefaultWebOptions</b>. La valeur de la <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> objet peut être différente de celle de l’objet <b>DefaultWebOptions</b> si le document a été précédemment modifié dans une version linguistique différente de Microsoft Excel. Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> méthode pour appliquer le suffixe de la langue que vous utilisez actuellement dans Microsoft Office.</para>
+          <para>Par défaut, le nom du dossier de prise en charge correspond au nom de la page Web auquel sont ajoutés un trait de soulignement (_), un point (.) ou un trait d'union (-) et le mot « files » (qui s'affiche dans la langue de la version de Microsoft Excel utilisée lors de l'enregistrement du fichier sous la forme d'une page Web). Par exemple, si vous utilisez la version néerlandaise de Microsoft Excel pour enregistrer un fichier nommé « Page1 » sous la forme d'une page Web, le nom par défaut du dossier de prise en charge est « Page1_bestanden ».</para>
+          <para>Le tableau suivant répertorie les versions de chaque langue d'Office et indique la valeur de sa propriété <b>LanguageID</b> et le suffixe de son dossier correspondants. Pour les langues qui ne sont pas répertoriées dans le tableau, le suffixe ".files" est utilisé.</para>
+          <list type="table">
+            <item>
+              <term>Arabe</term>
+              <description>1025</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Basque</term>
+              <description>1069</description>
+              <description>_fitxategiak</description>
+            </item>
+            <item>
+              <term>Portugais (Brésil)</term>
+              <description>1046</description>
+              <description>_arquivos</description>
+            </item>
+            <item>
+              <term>Bulgare</term>
+              <description>1026</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Catalan</term>
+              <description>1027</description>
+              <description>_fitxers</description>
+            </item>
+            <item>
+              <term>Chinois - Simplifié</term>
+              <description>2052</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Chinois - Traditionnel</term>
+              <description>1028</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Croate</term>
+              <description>1050</description>
+              <description>_datoteke</description>
+            </item>
+            <item>
+              <term>Tchèque</term>
+              <description>1029</description>
+              <description>_soubory</description>
+            </item>
+            <item>
+              <term>Danois</term>
+              <description>1030</description>
+              <description>-filer</description>
+            </item>
+            <item>
+              <term>Néerlandais</term>
+              <description>1043</description>
+              <description>_bestanden</description>
+            </item>
+            <item>
+              <term>Anglais</term>
+              <description>1033</description>
+              <description>_files</description>
+            </item>
+            <item>
+              <term>Estonien</term>
+              <description>1061</description>
+              <description>_failid</description>
+            </item>
+            <item>
+              <term>Finnois</term>
+              <description>1035</description>
+              <description>_tiedostot</description>
+            </item>
+            <item>
+              <term>Français</term>
+              <description>1036</description>
+              <description>_fichiers</description>
+            </item>
+            <item>
+              <term>Allemand</term>
+              <description>1031</description>
+              <description>-Dateien</description>
+            </item>
+            <item>
+              <term>Grec</term>
+              <description>1032</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Hébreu</term>
+              <description>1037</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Hongrois</term>
+              <description>1038</description>
+              <description>_elemei</description>
+            </item>
+            <item>
+              <term>Italien</term>
+              <description>1040</description>
+              <description>-file</description>
+            </item>
+            <item>
+              <term>Japonais</term>
+              <description>1041</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Coréen</term>
+              <description>1042</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Letton</term>
+              <description>1062</description>
+              <description>_fails</description>
+            </item>
+            <item>
+              <term>Lituanien</term>
+              <description>1063</description>
+              <description>_bylos</description>
+            </item>
+            <item>
+              <term>Norvégien</term>
+              <description>1044</description>
+              <description>-filer</description>
+            </item>
+            <item>
+              <term>Polonais</term>
+              <description>1045</description>
+              <description>_pliki</description>
+            </item>
+            <item>
+              <term>Portugais</term>
+              <description>2070</description>
+              <description>_ficheiros</description>
+            </item>
+            <item>
+              <term>Roumain</term>
+              <description>1048</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Russe</term>
+              <description>1049</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Serbe (Cyrillique)</term>
+              <description>3098</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Serbe (Latin)</term>
+              <description>2074</description>
+              <description>_fajlovi</description>
+            </item>
+            <item>
+              <term>Slovaque</term>
+              <description>1051</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Slovène</term>
+              <description>1060</description>
+              <description>_datoteke</description>
+            </item>
+            <item>
+              <term>Espagnol</term>
+              <description>3082</description>
+              <description>_archivos</description>
+            </item>
+            <item>
+              <term>Suédois</term>
+              <description>1053</description>
+              <description>-filer</description>
+            </item>
+            <item>
+              <term>Thaï</term>
+              <description>1054</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Turc</term>
+              <description>1055</description>
+              <description>_dosyalar</description>
+            </item>
+            <item>
+              <term>Ukrainien</term>
+              <description>1058</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>Vietnamien</term>
+              <description>1066</description>
+              <description>.files</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fonts">
@@ -383,7 +589,7 @@
         <summary>Cette propriété renvoie ou définit l’URL centrale (sur l’intranet ou le Web) ou le chemin d’accès (local ou réseau) à l’emplacement à partir duquel les utilisateurs autorisés peuvent télécharger Microsoft Office Web components lorsqu’ils visualisent votre document enregistré. La valeur par défaut est local ou un chemin d’installation réseau pour Microsoft Office.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Office Web components sont automatiquement téléchargés avec la page Web spécifiée si la <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.DownloadComponents" /> propriété est définie sur <b>True</b>, les composants ne sont pas déjà installés, le chemin d’accès est valide et qu’il pointe vers un emplacement qui contient les composants nécessaires, et l’utilisateur possède une licence Microsoft Office valide.</para>
+          <para>Office Web components sont automatiquement téléchargés avec la page Web spécifiée si la <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.DownloadComponents" /> propriété est définie sur <b>True</b>, les composants ne sont pas déjà installés, le chemin d’accès est valide et qu’il pointe vers un emplacement qui contient les composants nécessaires et utilisateur dispose d’une licence valide de Microsoft Office.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -418,8 +624,8 @@
           <b>True</b> si tous les fichiers de prise en charge, tels que les textures d'arrière-plan et les graphismes, sont organisés dans un dossier séparé lorsque vous enregistrez le document spécifié en tant que page Web. <b>False</b> si les fichiers de prise en charge sont enregistrés dans le même dossier que la page Web. La valeur par défaut est <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le nouveau dossier est créé dans le dossier où vous avez enregistré la page Web et est nommé d’après le document. Si les noms de fichiers longs sont utilisés, un suffixe est ajouté au nom du dossier. Le <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> propriété renvoie le suffixe de dossier pour la prise en charge de la langue que vous avez sélectionnée ou installée, ou le suffixe de dossier par défaut.</para>
-          <para>Si vous enregistrez un document qui a été précédemment enregistré avec la propriété <b>OrganizeInFolder</b> d’une valeur différente, Microsoft Excel déplace automatiquement la prise en charge des fichiers dans ou hors du dossier, comme il convient.</para>
+          <para>Le nouveau dossier est créé dans le dossier où vous avez enregistré la page Web et est nommé d'après le document. Si les noms de fichiers longs sont utilisés, un suffixe est ajouté au nom du dossier. Le <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> propriété renvoie le suffixe de dossier pour la prise en charge de la langue que vous avez sélectionnée ou installée, ou le suffixe de dossier par défaut.</para>
+          <para>Si vous enregistrez un document qui était auparavant enregistré avec une valeur différente affectée à la propriété <b>OrganizeInFolder</b>, Microsoft Excel déplace automatiquement les fichiers de prise en charge à l'intérieur du dossier ou en dehors du dossier selon les cas.</para>
           <para>Si vous n’utilisez pas les noms de fichiers longs (autrement dit, si le <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" /> propriété est définie sur <b>False</b>), Microsoft Excel enregistre automatiquement les fichiers de prise en charge dans un dossier distinct. Les fichiers ne peuvent pas être enregistrés dans le même dossier que la page Web.</para>
           <para></para>
         </remarks>
@@ -482,8 +688,8 @@
         <summary>Cette propriété renvoie ou définit la densité (en pixels par pouce) des images graphiques et des cellules de tableau sur une page Web. La plage des valeurs est habituellement comprise entre 19 et 480, et les valeurs usuelles de la taille des écrans classiques sont de l'ordre de 72, 96 et 120. La valeur par défaut est de 96.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété détermine la taille des images et des cellules de la page Web spécifiée par rapport à la taille du texte chaque fois que vous affichez le document enregistré dans un navigateur Web. Les dimensions physiques de l’image qui en résulte ou de la cellule sont le résultat des dimensions d’origine (en centimètres) multiplié par le nombre de pixels par pouce.</para>
-          <para>Vous utilisez le <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.ScreenSize" /> propriété à définir la taille d’écran optimale correspondant aux navigateurs Web cibles.</para>
+          <para>Cette propriété détermine la taille des images et des cellules de la page Web spécifiée par rapport à celle du texte chaque fois que vous affichez le document enregistré dans un navigateur Web. Les dimensions physiques de l'image ou des cellules téléchargées s'obtiennent en multipliant les dimensions d'origine (en pouces) par le nombre de pixels par pouce.</para>
+          <para>Vous utilisez la <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.ScreenSize" /> propriété à définir la taille d’écran optimale correspondant aux navigateurs Web cibles.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -518,7 +724,7 @@
           <b>True</b> si les feuilles de style en cascade (CSS) sont utilisées pour les polices lorsque vous affichez un document enregistré dans un navigateur Web de mise en forme. Microsoft Excel crée un fichier de feuille de style en cascade et l’enregistre dans le dossier spécifié ou dans le même dossier que votre page Web, selon la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" /> propriété. <b>False</b> si HTML &lt;police&gt; balises et feuilles de style en cascade sont utilisées. La valeur par défaut est <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous devez définir cette propriété sur <b>True</b> si votre navigateur Web prend en charge les feuilles de style en cascade, comme cela vous donner de manière plus précise la disposition et la mise en forme de contrôle de votre page Web et lui donner un aspect plus proche de votre document (tel qu’il apparaît dans Microsoft Excel).</para>
+          <para>Vous devez affecter la valeur <b>True</b>True à cette propriété si votre navigateur Web prend en charge les feuilles de style en cascade : vous pouvez ainsi contrôler de manière plus précise la disposition et la mise en forme dans votre page Web et lui donner un aspect plus proche de votre document (tel qu'il s'affiche dans Microsoft Excel).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -553,8 +759,8 @@
           <b>True</b> si les fichiers image ne sont pas générés à partir d'objets de dessin lorsque vous enregistrez un document en tant que page Web. <b>False</b> si les images sont générées. La valeur par défaut est <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous pouvez réduire la taille des fichiers en ne générant ne pas d’images pour les objets de dessin, si votre navigateur Web prend en charge le langage VML (Vector Markup Language). Par exemple, Microsoft Internet Explorer 5 prend en charge cette fonctionnalité, et vous devez définir la propriété <b>RelyOnVML</b><b>la valeur True</b> si vous utilisez ce navigateur. Pour les navigateurs qui ne prennent pas en charge VML, l’image n’apparaît pas lorsque vous affichez une page Web enregistrée avec cette propriété activée.</para>
-          <para>, Par exemple, vous ne devez pas générer images si votre page Web utilise des fichiers image que vous avez précédemment générés et si l’emplacement où vous enregistrez le document est différent de l’emplacement final de la page sur le serveur Web.</para>
+          <para>Vous pouvez réduire la taille des fichiers en ne générant pas d'images pour les objets dessin, si votre navigateur Web prend en charge le langage VML (Vector Markup Language). Ainsi, dans la mesure où Microsoft Internet Explorer 5 gére cette fonctionnalité, vous devez affecter la valeur True à la propriété RelyOnVML si vous utilisez ce navigateur. Pour les navigateurs ne prenant pas en charge VML, l'image ne s'affichera pas lorsque vous visualiserez une page Web enregistrée avec cette propriété.</para>
+          <para>Par exemple, vous ne devez pas générer les images si votre page Web utilise des fichiers image que vous avez précédemment générés et si l’emplacement où vous enregistrez le document est différent de l’emplacement final de la page sur le serveur Web.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -666,7 +872,7 @@
             <b>msoScreenSize544x376</b>
           </para>
           <para>
-            <b>msoScreenSize720x512 </b>
+            <b>msoScreenSize720x512</b>
           </para>
           <para>
             <b>msoScreenSize1024x768</b>
@@ -684,7 +890,7 @@
             <b>msoScreenSize640x480</b>
           </para>
           <para>
-            <b>msoScreenSize800x600 </b>par défaut</para>
+            <b>msoScreenSize800x600</b> Par défaut</para>
           <para></para>
         </remarks>
       </Docs>
@@ -719,7 +925,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>MsoTargetBrowser</b> peut être une de ces constantes <b>MsoTargetBrowser</b> . </para>
+            <b>MsoTargetBrowser</b> peut être l'une de ces constantes <b>MsoTargetBrowser</b>.</para>
           <para>
             <b>msoTargetBrowserIE4</b> Microsoft Internet Explorer 4.0 ou version ultérieure.</para>
           <para>
@@ -727,7 +933,7 @@
           <para>
             <b>msoTargetBrowserIE6</b> Microsoft Internet Explorer 6.0 ou version ultérieure.</para>
           <para>
-            <b>msoTargetBrowserV3</b> Microsoft Internet Explorer 3.0, Netscape Navigator 3.0 ou ultérieure.</para>
+            <b>msoTargetBrowserV3</b> Microsoft Internet Explorer 3.0, Netscape Navigator 3.0 ou version ultérieure.</para>
           <para>
             <b>msoTargetBrowserV4</b> Microsoft Internet Explorer 4.0, Netscape Navigator 4.0 ou version ultérieure.</para>
           <para></para>
@@ -764,7 +970,7 @@
           <b>La valeur true</b> si les liens hypertexte et les chemins d’accès à tous les fichiers de prise en charge sont automatiquement mis à jour avant d’enregistrer le document sous forme de page Web, en vous assurant que les liens sont actualisés au moment où que le document est enregistré. <b>False</b> si les liens ne sont pas mis à jour. La valeur par défaut est <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous devez définir cette propriété sur <b>False</b> si l’emplacement où le document est enregistré est différent de l’emplacement final sur le serveur Web et les fichiers de prise en charge ne sont pas disponibles dans le premier emplacement.</para>
+          <para>Vous devez définir sur la valeur <b>False</b> cette propriété si l'emplacement où le document est enregistré diffère de l'emplacement final sur le serveur Web et si les fichiers pris en charge ne sont pas disponibles à l'emplacement d'enregistrement.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -799,7 +1005,7 @@
           <b>True</b> si les noms de fichiers longs sont utilisés lorsque vous enregistrez le document en tant que page Web. <b>False</b> si les noms de fichiers longs ne sont pas utilisés et le format de nom de fichier DOS (8.3) est utilisé. La valeur par défaut est <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si vous n’utilisez pas les noms de fichiers longs et que votre document comporte des fichiers de prise en charge, Microsoft Excel place automatiquement ces fichiers dans un dossier distinct. Sinon, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" /> propriété pour déterminer si les fichiers de prise en charge sont organisés dans un dossier séparé.</para>
+          <para>Si vous n’utilisez pas les noms de fichiers longs et que votre document comporte des fichiers de prise en charge, Microsoft Excel place automatiquement ces fichiers dans un dossier distinct. Sinon, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" /> propriété pour déterminer si les fichiers de prise en charge sont organisés dans un dossier distinct.</para>
           <para></para>
         </remarks>
       </Docs>

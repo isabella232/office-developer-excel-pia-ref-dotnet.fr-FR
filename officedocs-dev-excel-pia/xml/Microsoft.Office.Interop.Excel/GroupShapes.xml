@@ -1,10 +1,10 @@
 <Type Name="GroupShapes" FullName="Microsoft.Office.Interop.Excel.GroupShapes">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="08f0c9c9914f1d93c86d67a488eeab74bc79ab4c" />
+    <Meta Name="ms.openlocfilehash" Value="ebe63e575d737f035f42220903f1e7f1ac5fd0cc" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586652" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
@@ -35,8 +35,10 @@
   <Docs>
     <summary>Cet objet représente les formes individuelles d’une forme groupée.</summary>
     <remarks>
-      <para>Chaque forme est représentée par une <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objet. À l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> méthode avec cet objet, vous pouvez manipuler les formes individuelles d’un groupe sans avoir à les dissocier.</para> Utilisation de 
-      <para>les <see cref="P:Microsoft.Office.Interop.Excel.Shape.GroupItems" /> propriété pour renvoyer la collection <b>GroupShapes</b> . Utilisez <b>GroupItems</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro de la forme individuelle dans la forme groupée, pour renvoyer une seule forme à partir de la collection <b>GroupShapes</b> .</para><para></para></remarks>
+      <para>Chaque forme est représentée par une <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objet. À l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> méthode avec cet objet, vous pouvez manipuler les formes individuelles d’un groupe sans avoir à les dissocier.</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Shape.GroupItems" /> propriété pour renvoyer la collection <b>GroupShapes</b> . Utilisez <b>GroupItems</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro de la forme individuelle dans la forme groupée, pour renvoyer une seule forme à partir de la collection <b>GroupShapes</b> .</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -153,8 +155,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

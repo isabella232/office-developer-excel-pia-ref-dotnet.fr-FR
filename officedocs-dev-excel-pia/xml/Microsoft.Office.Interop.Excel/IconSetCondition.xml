@@ -1,10 +1,10 @@
 <Type Name="IconSetCondition" FullName="Microsoft.Office.Interop.Excel.IconSetCondition">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bc68b806e9539de6f5350ba189ec017a58c6f1db" />
+    <Meta Name="ms.openlocfilehash" Value="60529c90129fadd3409df7f77d68bfab6f56e963" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580723" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconSetCondition" />
@@ -64,7 +64,7 @@
         <value>
           <b>Application</b> (voir ci-dessus)</value>
         <remarks>
-          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet.</para>
+          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -127,7 +127,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -188,7 +188,7 @@
           <b>Chaîne</b>
         </value>
         <remarks>
-          <para>Cette propriété est utile pour limiter la plage de valeurs qui affichera le format conditionnel. Un scénario classique est lorsque vous avez une plage de numéros contenant les valeurs positives et négatives. Vous souhaiterez peut-être créer plus d’un format conditionnel pour cette plage de numéros — une des valeurs positives et un autre pour les valeurs négatives.</para>
+          <para>Cette propriété permet de limiter la plage de valeurs affichant le format conditionnel. C'est utile par exemple lorsqu'une plage de nombres contient à la fois des valeurs positives et négatives. Vous pouvez créer plus d'un format conditionnel pour cette plage, un pour les valeurs positives et un autre pour les valeurs négatives.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -257,7 +257,7 @@
           <b>Objet</b>
         </value>
         <remarks>
-          <para>Vous pouvez attribuer l’icône définie à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objet.</para>
+          <para>Vous pouvez attribuer l’icône définie à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objet. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -288,7 +288,7 @@
         <summary>Définit la plage de cellules à laquelle cette règle de mise en forme s’applique.</summary>
         <remarks>
           <para>La plage doit se trouver dans le style de référence A1 et être entièrement dans la feuille qui est le parent de le <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. Il peut inclure l’opérateur de plage (le signe deux-points), l’opérateur d’intersection (un espace) ou l’opérateur union (une virgule). Signe dollar peut également être utilisé, mais ils sont ignorés.</para>
-          <para>Vous pouvez également utiliser un nom local défini dans n’importe quelle partie de la plage, mais le nom doit être dans la langue de la macro.</para>
+          <para>Vous pouvez également utiliser un nom défini en local à n'importe quel endroit de la plage, mais le nom doit appartenir au langage de la macro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -354,7 +354,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Cette propriété renvoie la <b>valeur False</b> si ce n’est pas chaque seuil est défini sur centile. Définir cette propriété sur <b>True</b> définit chaque type de seuil centile.</para>
+          <para>Cette propriété renvoie <b>False</b> si tous les seuils ne sont pas définis pour utiliser les centiles. Attribuez-lui la valeur <b>True</b> pour utiliser systématiquement les centiles.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -390,7 +390,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Lors de la définition de la priorité, la valeur doit être un nombre entier compris entre 1 et le nombre total de règles conditionnelles de mise en forme sur la feuille de calcul. La priorité doit être une valeur unique pour toutes les règles de la feuille de calcul, donc si vous modifiez la priorité de la règle de mise en forme conditionnelle spécifiée risque la valeur de priorité des autres règles dans la feuille de calcul.</para>
+          <para>La valeur de priorité que vous définissez doit être un entier positif compris entre 1 et le nombre total de règles de mise en forme conditionnelle contenues dans la feuille de calcul. Dans la mesure où la valeur de priorité doit être unique pour toutes les règles de la feuille de calcul, le fait de modifier la priorité d'une règle de mise en forme conditionnelle donnée risque d'entraîner la modification de la valeur de priorité des autres règles de la feuille de calcul.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -456,7 +456,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Par défaut, la plupart des jeux d’icônes que vous pouvez utiliser associe des images positives avec des valeurs élevées. Par exemple, le jeu d’icônes de « 3 feux » applique un cercle vert au seuil de valeur supérieure et un cercle rouge aux valeurs plus bas dans la plage. Si les données telles que des valeurs inférieures sont plus souhaitables, telles que les résultats en temps marathon, vous souhaiterez peut-être inverser l’ordre d’application des icônes à la plage pour associer le cercle vert aux valeurs plus basses.</para>
+          <para>Par défaut, la plupart des jeux d’icônes que vous pouvez utiliser associent des images positives avec des valeurs supérieures. Par exemple, le jeu d’icônes de « 3 Feux de circulation » applique un cercle vert au seuil de valeur supérieure et un cercle rouge aux valeurs plus petites de la plage. Si, pour vos données, des valeurs inférieures sont plus souhaitables, par exemple pour des résultats de marathon, vous souhaiterez peut-être inverser l’ordre d’application des icônes à la plage pour associer le cercle vert aux valeurs les plus petites petites.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -520,7 +520,7 @@
       <Docs>
         <summary>Attribue à la règle de mise en forme conditionnelle en question la valeur de priorité « 1 » de sorte qu’elle soit évaluée avant toutes les autres règles présentes dans la feuille de calcul.</summary>
         <remarks>
-          <para>Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, si la règle n’a pas été précédemment définie à priorité « 1 », cette méthode provoque la priorité de toutes les autres règles existantes sur la feuille de calcul est augmenté de 1.</para>
+          <para>Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, si la règle n’a pas été précédemment définie à priorité « 1 », cette méthode provoque la priorité de toutes les autres règles existantes sur la feuille de calcul augmente d’un numéro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -584,7 +584,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>La valeur par défaut de cette propriété a la <b>valeur False</b>.</para>
+          <para>La valeur par défaut de cette propriété est <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -617,7 +617,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Pour prendre en charge la compatibilité descendante, la valeur par défaut de cette propriété est <b>True</b>, ce qui correspond au comportement contraire à celui d’une mise en forme créée dans l’interface utilisateur de règle.</para>
+          <para>Pour assurer une compatibilité en amont, la valeur par défaut de cette propriété est <b>True</b>, ce qui correspond au comportement contraire à celui d'une règle de mise en forme créée dans l'interface utilisateur.</para>
           <para></para>
         </remarks>
       </Docs>

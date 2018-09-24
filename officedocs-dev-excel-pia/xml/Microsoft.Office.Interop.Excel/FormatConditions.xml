@@ -1,10 +1,10 @@
 <Type Name="FormatConditions" FullName="Microsoft.Office.Interop.Excel.FormatConditions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4ea44a9883870de6c0c9f822551e19d40e34f00d" />
+    <Meta Name="ms.openlocfilehash" Value="ba5c29fb9f36cf63da85041a757db4dd4b830ce1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587513" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
@@ -35,8 +35,12 @@
   <Docs>
     <summary>Cette collection représente la collection des mises en forme conditionnelles d'une plage.</summary>
     <remarks>
-      <para>La collection <b>FormatConditions</b> peut contenir jusqu'à trois mises en forme conditionnelles. Chaque format est représenté par un <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> objet.</para> Utilisation de 
-      <para>les <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> propriété pour renvoyer un objet <b>FormatConditions</b> . Utilisez le <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour créer un nouveau format conditionnel et utiliser le <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode modifie un format conditionnel existant.</para><para>Si vous essayez de créer plus de trois mises en forme conditionnelles d’une plage, la méthode <b>Add</b> échoue. Si une plage comporte trois mises en forme, vous pouvez utiliser la méthode <b>Modify</b> pour modifier un des formats ou vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> méthode pour supprimer une mise en forme et puis utiliser la méthode <b>Add</b> pour créer un nouveau format.</para><para>Pour plus d’informations sur les mises en forme conditionnelles, voir la <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> objet.</para><para></para></remarks>
+      <para>La collection <b>FormatConditions</b> peut contenir jusqu'à trois mises en forme conditionnelles. Chaque format est représenté par un <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> objet.</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> propriété pour renvoyer un objet <b>FormatConditions</b> . Utilisez le <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour créer un nouveau format conditionnel et utiliser le <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode modifie un format conditionnel existant.</para>
+      <para>Si vous essayez de créer plus de trois mises en forme conditionnelles d’une plage, la méthode <b>Add</b> échoue. Si une plage comporte trois mises en forme, vous pouvez utiliser la méthode <b>Modify</b> pour modifier un des formats ou vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> méthode pour supprimer une mise en forme et puis utiliser la méthode <b>Add</b> pour créer un nouveau format.</para>
+      <para>Pour plus d’informations sur les mises en forme conditionnelles, voir la <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> objet.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -113,7 +117,10 @@
         <param name="ScopeType">To be added.</param>
         <summary>Ajoute un nouveau format conditionnel.</summary>
         <returns>A <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> object qui représente le nouveau format conditionnel.</returns>
-        <remarks>Vous ne pouvez pas définir plus de trois mises en forme conditionnelles pour une plage de <para>. Utilisez le <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour modifier un format conditionnel existant, ou utiliser le <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> méthode pour supprimer un format existant avant d’ajouter un nouveau.</para><para></para></remarks>
+        <remarks>
+          <para>Vous ne pouvez pas définir plus de trois mises en forme conditionnelles pour une plage. Utilisez le <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour modifier un format conditionnel existant, ou utiliser le <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> méthode pour supprimer un format existant avant d’ajouter un nouveau.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAboveAverage">
@@ -141,7 +148,7 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />objet</returns>
         <remarks>
-          <para>La <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> objet est utilisé pour rechercher des valeurs au-dessus ou en dessous d’une moyenne ou l’écart-type dans une plage de cellules. Par exemple, vous pouvez trouver les intervenants moyennes ci-dessus dans une étude annuelle des performances ou vous pouvez localiser des matières fabriqués qui se situent sous deux écarts dans une évaluation de la qualité.</para>
+          <para>Le <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" /> objet est utilisé pour rechercher des valeurs au-dessus ou en dessous d’une moyenne ou l’écart-type dans une plage de cellules. Par exemple, vous pouvez trouver les intervenants moyennes ci-dessus dans un rapport annuel sur les performances ou vous pouvez localiser fabriqués matières qui se situent sous deux écarts dans une évaluation de la qualité.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -173,7 +180,10 @@
         <summary>Renvoie une nouvelle <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> objet qui représente une règle de mise en forme conditionnelle qui utilise des dégradés dans les couleurs des cellules pour symboliser des différences relatives dans les valeurs des cellules d’une plage sélectionnée.</summary>
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />objet</returns>
-        <remarks>Échelles de couleur de <para>sont visual guides qui vous aident à comprennent la distribution des données et des variantes. Une échelle de couleur vous permet d’identifier les différences relatives dans les valeurs de cellules dans une plage donnée à l’aide de variation de couleur. Différentes couleurs et dégradés de couleurs représentent les différences dans les valeurs de cellule. Par exemple, dans une échelle à trois, vous pouvez spécifier que les cellules contenant les valeurs de données relative la plus élevés sont verts, les cellules contenant des valeurs intermédiaires sont jaunes et red. les cellules contenant des valeurs les plus basses sont</para><para></para></remarks>
+        <remarks>
+          <para>Les échelles de couleur sont des repères visuels qui vous aident à comprendre la répartition et la variation des données. Une échelle de couleur vous permet d'identifier les différences relatives entre les valeurs des cellules d'une plage donnée à l'aide d'une variation de couleur. Les couleurs et les dégradés représentent les différences entre les valeurs des cellules. Par exemple, dans une échelle de trois couleurs, vous pouvez spécifier que les cellules comportant les valeurs les plus élevées sont en vert, celles avec des valeurs intermédiaires sont en jaune et celles avec les valeurs les plus faibles sont en rouge.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddDatabar">
@@ -200,7 +210,10 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> objet qui représente une règle de mise en forme conditionnelle pour la plage spécifiée de la barre de données.</summary>
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.Databar" />objet</returns>
-        <remarks>Barres de données <para>vous aider à consulter la valeur d’une cellule par rapport à d’autres cellules. La longueur de la barre de données représente la valeur de la cellule. Une barre plue représente une valeur supérieure et une barre plus courte représente une valeur inférieure. Barres de données sont utiles pour repérer les numéros supérieur et inférieurs en particulier avec de grandes quantités de données, telles que le haut et toys vendus dans une période de congé rapport des ventes.</para><para></para></remarks>
+        <remarks>
+          <para>Les barres de données vous aident à mieux voir la valeur d'une cellule par rapport aux autres cellules. La longueur de la barre de données représente la valeur de la cellule. Plus la barre est longue, plus la valeur est élevée et inversement. Les barres de données permettent de mettre en évidence les nombres les plus élevés et les plus faibles, en particulier dans de grandes quantités de données, par exemple les jouets les plus vendus et les moins vendus dans un rapport des ventes en période festive.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddIconSetCondition">
@@ -228,7 +241,7 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />objet</returns>
         <remarks>
-          <para>Utiliser une jeu d’icônes pour annoter et de classer les données en trois à cinq catégories séparées par une valeur de seuil. Chaque icône représente une plage de valeurs. Par exemple, dans le jeu d’icônes 3 flèches, le rouge flèche vers le haut représente les valeurs supérieures, la flèche jaune horizontale représente les valeurs moyennes et la flèche bas verte représente les valeurs inférieures.</para>
+          <para>Utilisez un jeu d'icônes pour annoter et classifier les données en catégories, de trois à cinq, séparées par une valeur seuil. Chaque icône représente une plage de valeurs. Par exemple, dans le jeu d'icônes 3 Flèches, la flèche rouge pointant vers le haut représente les valeurs les plus élevées, la flèche transversale jaune représente les valeurs intermédiaires et la flèche verte pointant vers le bas représente les valeurs les plus faibles.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -258,7 +271,7 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.Top10" />objet</returns>
         <remarks>
-          <para>à l’aide du <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> objet, vous pouvez trouver les valeurs maximale et minimale d’une plage de cellules en fonction d’une valeur que vous spécifiez. Par exemple, vous trouverez les cinq produits les ventes dans un rapport régional, les 15 derniers pour cent de produits dans un client enquête, ou les salaires haut 25 dans une analyse du personnel de service.</para>
+          <para>À l’aide de la <see cref="T:Microsoft.Office.Interop.Excel.Top10" /> objet, vous pouvez trouver les valeurs maximale et minimale d’une plage de cellules en fonction d’une valeur que vous spécifiez. Par exemple, vous trouverez les cinq produits les ventes dans un rapport régional, les 15 derniers pour cent de produits dans une enquête client ou les 25 meilleurs salaires dans une analyse du personnel de service.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -288,7 +301,7 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" />objet</returns>
         <remarks>
-          <para>Que vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> objet pour voir rapidement les cellules qui contiennent des valeurs uniques ou dupliquées.</para>
+          <para>Vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> objet pour voir rapidement les cellules qui contiennent des valeurs uniques ou en doublons.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -375,8 +388,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

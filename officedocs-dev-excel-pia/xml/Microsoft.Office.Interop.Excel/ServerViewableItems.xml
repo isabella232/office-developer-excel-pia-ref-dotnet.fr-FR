@@ -1,10 +1,10 @@
 <Type Name="ServerViewableItems" FullName="Microsoft.Office.Interop.Excel.ServerViewableItems">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c2be0679f4fcc0da628343344a5b5b0cce8a4549" />
+    <Meta Name="ms.openlocfilehash" Value="6a49378a5a672e109bb0d1469a510a5d3faf8153" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579449" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
@@ -36,8 +36,8 @@
     <summary>Collection d'objets qui a été marquée aussi visible sur le serveur.</summary>
     <remarks>
       <para>Il s’agit d’une collection de références à des objets dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Seuls les objets de cette collection seront affichera sur le serveur.  Par défaut, l’intégralité du classeur (y compris toutes les feuilles de calcul) est affiché.  </para>
-      <para>Une seule <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> objet peut exister par <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.  Cette collection n’est pas indexable par nom car il n’existe aucune garantie que les noms des objets qui sont marqués comme visibles sur le serveur sont uniques.</para>
-      <para>Interface utilisateur dans le Excel, vous pouvez afficher la collection d’objets qui sont marqués comme visibles sur le serveur dans la boîte de dialogue Options Excel Services.</para>
+      <para>Seul <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> objet peut exister par <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.  Cette collection n’est pas indexable par nom car il n’existe aucune garantie que les noms des objets qui sont marqués comme visibles sur le serveur sont uniques.</para>
+      <para>Dans l’interface utilisateur d’Excel, vous pouvez afficher la collection d’objets qui sont marqués comme visibles sur le serveur dans la boîte de dialogue Options Excel Services.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -140,7 +140,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
-          <para>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie l’application Microsoft Office Excel. Utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié.</para>
+          <para>Utilisée sans qualificateur d’objet, cette propriété renvoie l’application Microsoft Office Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -203,7 +203,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -235,7 +235,7 @@
           <b>Entier</b> de l’index de l’objet que vous souhaitez supprimer obligatoire.</param>
         <summary>Supprime une référence à un objet dans le <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> collection dans le <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.</summary>
         <remarks>
-          <para>Si vous ne souhaitez pas un objet particulier soit visible dans Excel Services, utilisez cette méthode pour supprimer cet objet.</para>
+          <para>Si vous ne souhaitez pas qu'un objet particulier soit visible dans Excel Services, utilisez cette méthode pour le supprimer.</para>
           <para></para>
         </remarks>
       </Docs>

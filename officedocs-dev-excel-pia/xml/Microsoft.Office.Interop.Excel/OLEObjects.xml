@@ -1,10 +1,10 @@
 <Type Name="OLEObjects" FullName="Microsoft.Office.Interop.Excel.OLEObjects">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0ceeeadbbe58866d8578dc0cbfba5a77ed0fec61" />
+    <Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575634" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
@@ -37,8 +37,8 @@
     <remarks>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> méthode pour renvoyer la collection <b>OLEObjects</b> .</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour créer un nouvel objet OLE et l’ajouter à la collection <b>OLEObjects</b> .</para>
-      <para>Contrôle ActiveX d’une feuille possède deux noms : le nom de la forme qui contient le contrôle, vous pouvez voir dans la zone nom lorsque vous affichez la feuille et le nom de code pour le contrôle, vous pouvez voir dans la cellule à droite de (nom) dans la fenêtre Propriétés. Lorsque vous ajoutez un contrôle à une feuille, le nom de la forme et le nom de code correspondent. Toutefois, si vous modifiez le nom de la forme ou le nom de code, l’autre n'est pas automatiquement modifiée pour correspondre.</para>
-      <para>Vous utilisez le nom de code d’un contrôle dans les noms de ses procédures événement. Toutefois, lorsque vous renvoyez un contrôle à partir de la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> ou de la collection <b>OLEObjects</b> d’une feuille, vous devez utiliser le nom de la forme, pas le nom de code pour faire référence au contrôle par son nom. Par exemple, supposons que vous ajoutez une case à cocher à un tableau et que le nom de la forme par défaut et le nom de code par défaut sont CheckBox1. Si vous modifiez ensuite le nom de code du contrôle en tapant chkFinished à côté de (nom) dans la fenêtre Propriétés, vous devez utiliser chkFinished dans les noms de procédures événementielles, mais vous devez toujours utiliser CheckBox1 pour renvoyer le contrôle à partir de <b>formes</b> ou <b>OLEObjects</b> collection.</para>
+      <para>Un contrôle ActiveX sur une feuille possède deux noms : le nom de la forme qui contient le contrôle, vous pouvez voir dans la zone nom lorsque vous affichez la feuille et le nom de code pour le contrôle, vous pouvez voir dans la cellule à droite de (nom) dans la fenêtre Propriétés. Lorsque vous ajoutez un contrôle à une feuille, le nom de la forme et le nom de code correspondent. Toutefois, si vous modifiez le nom de la forme ou le nom de code, l’autre n'est pas automatiquement modifiée pour correspondre.</para>
+      <para>Vous utilisez le nom d’un contrôle de code dans les noms de ses procédures événement. Toutefois, lorsque vous renvoyez un contrôle à partir de la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> ou de la collection <b>OLEObjects</b> d’une feuille, vous devez utiliser le nom de la forme, pas le nom de code pour faire référence au contrôle par son nom. Par exemple, supposons que vous ajoutez une case à cocher à un tableau et que le nom de la forme par défaut et le nom de code par défaut sont CheckBox1. Si vous modifiez ensuite le nom de code du contrôle en tapant chkFinished à côté de (nom) dans la fenêtre Propriétés, vous devez utiliser chkFinished dans les noms de procédures événementielles, mais vous devez toujours utiliser CheckBox1 pour renvoyer le contrôle à partir de <b>formes</b> ou <b>OLEObjects</b> collection.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -541,8 +541,8 @@
           <b>True</b> si l’objet OLE est automatiquement chargé lorsque le classeur qui la contient est ouvert.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété est ignorée par les contrôles ActiveX. Les contrôles ActiveX sont toujours chargés lorsqu’un classeur est ouvert.</para>
-          <para>Pour la plupart des types d’objets OLE, cette propriété ne doit pas être définie sur <b>True</b>. Par défaut, la propriété <b>AutoLoad</b> est définie sur <b>False</b> pour les nouveaux objets OLE ; Cela enregistre l’heure et la mémoire lors de la charge des classeurs Microsoft Excel. L’avantage de charger automatiquement OLE objets est que, pour les objets qui représentent des données volatiles, des liens vers la source de données peuvent être rétablies immédiatement et les objets fournis de nouveau, si nécessaire.</para>
+          <para>Cette propriété est ignorée par les contrôles ActiveX. Les contrôles ActiveX sont toujours chargés quand un classeur est ouvert.</para>
+          <para>Pour la plupart des types d'objets OLE, cette propriété ne devrait pas avoir la valeur <b>True</b>. Par défaut, la propriété <b>AutoLoad</b> a la valeur <b>False</b> pour les nouveaux objets OLE ; cela permet de gagner du temps et de la mémoire quand Microsoft Excel charge des classeurs. L'avantage de charger automatiquement des objets OLE est que pour des objets représentant des données volatiles, les liens aux données sources peuvent être rétablis immédiatement et les objets fournis de nouveau, si nécessaire.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -711,8 +711,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -740,7 +742,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>La plage coupée doit être constituée de cellules adjacentes.</para>
-          <para>Pouvant couper que des graphiques incorporés.</para>
+          <para>Vous ne pouvez couper que des graphiques incorporés.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1136,7 +1138,7 @@
         <summary>Cette propriété renvoie ou définit la manière dont l’objet est attaché aux cellules.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Utiliser une des constantes suivantes :</para>
+          <para>Utilisez une des constantes suivantes :</para>
           <para>
             <b>xlFreeFloating</b>
           </para>
@@ -1446,7 +1448,7 @@
         <summary>Renvoie la position de l’ordre de plan de l’objet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Dans n’importe quelle collection d’objets, l’objet à l’arrière de l’axe z est <paramref name="collection" />(1), et l’objet à l’avant de l’axe z est <paramref name="collection" />(<paramref name="collection" />.<b> Count</b>).</para>
+          <para>Dans toute la collection d’objets, l’objet à l’arrière de l’axe z est <paramref name="collection" />(1), et l’objet à l’avant de l’axe z est <paramref name="collection" />(<paramref name="collection" />.<b> Count</b>).</para>
           <para></para>
         </remarks>
       </Docs>

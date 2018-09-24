@@ -1,10 +1,10 @@
 <Type Name="PivotTable" FullName="Microsoft.Office.Interop.Excel.PivotTable">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="712758e7feaa480772d8b4950b401c1829bedb75" />
+    <Meta Name="ms.openlocfilehash" Value="364b8d02df1ff32fe7432d4ed2dd804098003fda" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587709" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTable" />
@@ -31,8 +31,10 @@
   <Docs>
     <summary>Cet objet représente un rapport de tableau croisé dynamique dans une feuille de calcul. L’objet <b>PivotTable</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> collection. La collection <b>PivotTables</b> contient tous les objets de <b>tableau croisé dynamique</b> dans une feuille de calcul.</summary>
     <remarks>
-      <para>Utiliser des <b>tableaux croisés dynamiques</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de tableau croisé dynamique ou le nom, pour renvoyer un seul objet <b>PivotTable</b> .</para> Programmation d’un rapport 
-      <para>car tableau croisé dynamique peut être complexe, il est généralement plus pratique d’enregistrer les actions de rapport de tableau croisé dynamique, puis de réviser le code enregistré. Pour enregistrer une macro, pointez sur Macro dans le menu Outils, puis cliquez sur nouvelle Macro.</para><para></para></remarks>
+      <para>Utiliser des <b>tableaux croisés dynamiques</b>(<paramref name="index" />), où <paramref name="index" /> est le nom, pour renvoyer un seul objet de <b>tableau croisé dynamique</b> ou le numéro d’index de tableau croisé dynamique.</para>
+      <para>La programmation d'un rapport de tableau croisé dynamique pouvant être complexe, il est généralement plus pratique d'enregistrer les opérations effectuées avec le rapport tableau croisé dynamique, puis de vérifier le code enregistré. Pour enregistrer une macro, pointez sur Macro dans le menu Outils, puis sur nouvelle Macro.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -199,9 +201,9 @@
         <summary>Ajoute des champs de lignes, de colonnes, et de pages à un rapport de tableau ou de graphique croisé dynamique.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Vous devez spécifier un des arguments champ.</para>
+          <para>Vous devez spécifier un des arguments de champs.</para>
           <para>Noms de champs spécifient le nom unique renvoyé par la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet.</para>
-          <para>Cette méthode n’est pas disponible pour les sources de données OLAP.</para>
+          <para>Cette méthode n'est pas disponible pour les sources de données OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -229,7 +231,7 @@
       <Docs>
         <summary>Effectue une opération d’écriture différée pour toutes les cellules modifiées dans un rapport de tableau croisé dynamique reposant sur une source de données OLAP.</summary>
         <remarks>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" /> méthode exécute une instruction UPDATE CUBE pour toutes les modifications apportées dans la zone de valeurs de tableau croisé dynamique depuis la dernière opération d’appliquer les modifications, ou depuis la création de tableau croisé dynamique si la validation d’applique les modifications n’a été effectuée. Cette méthode génère une erreur d’exécution si elle est exécutée sur un rapport de tableau croisé dynamique basé sur une source de données non-OLAP.</para>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" /> méthode exécute une instruction UPDATE CUBE pour toutes les modifications apportées dans la zone de valeurs de tableau croisé dynamique depuis la dernière opération d’appliquer les modifications, ou depuis la création de tableau croisé dynamique si la validation d’applique les modifications n’a été effectuée. Cette méthode génère une erreur d’exécution si elle est exécutée sur un rapport de tableau croisé dynamique basé sur une source de données autre que OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -263,8 +265,8 @@
         <summary>Obtient ou définit si pour exécuter un <b>CUBE de mise à jour</b> de l' instruction pour chaque cellule est modifiée, ou uniquement lorsque l’utilisateur choisit de calculer les modifications lors de l’exécution d’une analyse dans un tableau croisé dynamique basé sur une source de données OLAP.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.XlAllocation" /> objet.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Allocation" /> propriété correspond à la calculer avec les modifications de configuration dans la boîte de dialogue Paramètres d’analyse de scénarios. Le paramètre par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlAllocation.xlManualAllocation" />, qui correspond à la manuellement (si option Calculer un tableau croisé dynamique avec modifications) paramètre.</para>
+          <para>Lecture/écriture.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Allocation" /> propriété correspond à la calculer avec les modifications de configuration dans la boîte de dialogue Paramètres d’analyse de scénarios. Le paramètre par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlAllocation.xlManualAllocation" />, qui correspond à la manuellement (si option Calculer un tableau croisé dynamique avec modifications) paramètre.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -298,8 +300,8 @@
         <summary>Obtient ou définit la méthode à utiliser pour affecter des valeurs lors de l’exécution d’une analyse dans un rapport de tableau croisé dynamique basé sur une source de données OLAP.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.XlAllocationMethod" /> objet.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propriété correspond à la méthode de répartition dans la boîte de dialogue Paramètres d’analyse de scénarios. Le paramètre par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlEqualAllocation" />, qui correspond au paramètre de l’Allocation égale. Si le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propriété est définie sur <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />, qui correspond au paramètre de l’Allocation pondérée, vous pouvez éventuellement spécifier l’expression de poids à utiliser en définissant le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> propriété. Si vous ne spécifiez pas une expression de poids, une expression de poids équivalente à &lt;valeur de la cellule de feuille&gt; / &lt;valeur existante&gt; est utilisé.</para>
+          <para>Lecture/écriture.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propriété correspond à la méthode de répartition dans la boîte de dialogue Paramètres d’analyse de scénarios. Le paramètre par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlEqualAllocation" />, qui correspond au paramètre de l’Allocation égale. Si le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propriété est définie sur <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />, qui correspond au paramètre de l’Allocation pondérée, vous pouvez éventuellement spécifier l’expression de poids à utiliser en définissant le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> propriété. Si vous ne spécifiez pas une expression de poids, une expression de poids équivalente à &lt;valeur de la cellule de feuille&gt; / &lt;valeur existante&gt; est utilisé.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -333,8 +335,8 @@
         <summary>Obtient ou définit la valeur à allouer lors de l’exécution d’une analyse dans un rapport de tableau croisé dynamique basé sur une source de données OLAP.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.XlAllocationValue" /> objet.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationValue" /> propriété correspond à la valeur au paramètre d’affecter la boîte de dialogue Paramètres d’analyse de scénarios. Le paramètre par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationValue.xlAllocateValue" />, qui correspond à la la valeur entrée divisée par le nombre d’allocations définissant.</para>
+          <para>Lecture/écriture.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationValue" /> propriété correspond à la valeur au paramètre d’affecter la boîte de dialogue Paramètres d’analyse de scénarios. Le paramètre par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationValue.xlAllocateValue" />, qui correspond à la la valeur entrée divisée par le nombre d’allocations définition.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -368,8 +370,8 @@
         <summary>Obtient ou définit l’expression de poids MDX à utiliser lors de l’exécution d’une analyse dans un rapport de tableau croisé dynamique basé sur une source de données OLAP.</summary>
         <value>L’expression de poids MDX à utiliser lors de l’exécution d’une analyse dans un rapport de tableau croisé dynamique basé sur une source de données OLAP.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> propriété correspond au paramètre de l’Expression de poids dans la boîte de dialogue Paramètres d’analyse de scénarios. Avant la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> propriété peut être définie, vous devez définir la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propriété <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />.</para>
+          <para>Lecture/écriture.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> propriété correspond au paramètre de l’Expression de poids dans la boîte de dialogue Paramètres d’analyse de scénarios. Avant la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> propriété peut être définie, vous devez définir la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propriété <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -407,7 +409,9 @@ Lecture/écriture.</summary>
         </value>
         <remarks>
           <para>Valeur par défaut est <b>False</b>.</para>
-          <para>Lorsque cette propriété est définie sur <b>True</b>, plusieurs filtres peuvent être appliqués à un seul <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />. Lorsqu’elle est définie sur <b>False</b>, appliquer un filtre à un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> qui est déjà filtrée supprimer le filtre existant et appliquer une nouvelle.  Définir cette propriété sur <b>False</b> lors de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> a champs avec plusieurs ne filtre appliqué en mode silencieux supprimer tous les filtres dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> sans afficher toutes les alertes. Toutefois, il existe une alerte lorsque cette opération est effectuée par le biais de l’interface utilisateur.</para>
+          <para>Lorsque cette propriété est définie sur <b>True</b>, plusieurs filtres peuvent être appliqués à un seul <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />. Lorsqu’elle est définie sur <b>False</b>, appliquer un filtre à un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> qui est déjà filtrée supprimer le filtre existant et appliquer une nouvelle.
+
+Définir cette propriété sur <b>False</b> lors de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> a champs avec plusieurs ne filtre appliqué en mode silencieux supprimer tous les filtres dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> sans afficher toutes les alertes. Toutefois, il est une alerte lorsque cette opération est effectuée par le biais de l’interface utilisateur.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -441,7 +445,7 @@ Lecture/écriture.</summary>
         <summary>Obtient ou définit la chaîne de texte descriptif (de remplacement) du tableau croisé dynamique spécifié.</summary>
         <value>La chaîne de texte descriptif (de remplacement) du tableau croisé dynamique spécifié.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>La valeur de la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AlternativeText" /> propriété correspond à la valeur dans la zone Titre sous l’onglet texte de remplacement de la boîte de dialogue Options de tableau croisé dynamique.</para>
           <para></para>
         </remarks>
@@ -504,7 +508,7 @@ Lecture/écriture.</summary>
         <summary>Cette propriété renvoie ou définit le numéro d’index du cache de tableau croisé dynamique. Type de données <b>Integer</b> en lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si vous définissez la <b>CacheIndex,</b> propriété afin qu’un rapport de tableau croisé dynamique utilise le cache d’un deuxième rapport de tableau croisé dynamique, les champs du premier rapport doivent être un sous-ensemble valid des champs du second rapport.</para>
+          <para>Si la propriété <b>CacheIndex</b> est paramétrée de telle manière qu'un rapport de tableau croisé dynamique utilise le cache d'un deuxième rapport de tableau croisé dynamique, les champs du premier rapport doivent constituer un sous-ensemble valide des champs du deuxième rapport.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -561,7 +565,7 @@ Lecture/écriture.</summary>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> collection représentant tous les membres calculés et mesures calculées pour un tableau croisé dynamique OLAP.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété est utilisée pour les sources de traitement analytique en ligne (OLAP) ; une source autre que OLAP renvoie une erreur d’exécution.</para>
+          <para>Cette propriété est utilisée pour des sources OLAP (Online Analytical Processing) ; une source autre que OLAP renvoie une erreur d'exécution.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -596,9 +600,9 @@ Lecture/écriture.</summary>
         <value>
           <b>la valeur true</b> si les membres calculés à partir des serveurs OLAP doivent être évaluées dans les filtres ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>
-            <b>la valeur true</b> si les membres sont évalués dans les filtres ; sinon, <b>false</b>.</para>
+            <b>la valeur true</b> si les membres calculés sont évalués dans les filtres ; Sinon, <b>false</b>.</para>
           <para>La valeur de cette propriété correspond au paramètre des membres Evaluate calculée à partir des serveurs OLAP dans la case à cocher de filtres sur les totaux &amp; onglet Filtres de la boîte de dialogue Options de tableau croisé dynamique pour un rapport de tableau croisé dynamique basé sur une source de données OLAP.</para>
           <para></para>
         </remarks>
@@ -630,7 +634,7 @@ Lecture/écriture.</summary>
         <param name="conn">Requis <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object qui représente la nouvelle connexion pour le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</param>
         <summary>Modifie la connexion de l’objet <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</summary>
         <remarks>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> méthode peut uniquement être utilisée avec un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> qui est connecté à une source de données externe. Une erreur d’exécution se produit si le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> méthode est utilisée avec un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> qui utilise des données stockées dans une feuille de calcul comme source de données.</para>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> méthode peut uniquement être utilisée avec un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> qui est connecté à une source de données externe. Une erreur d’exécution se produit si le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> méthode est utilisée avec un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> qui utilise des données stockées dans une feuille de calcul comme source de données.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -693,7 +697,7 @@ Lecture/écriture.</summary>
           <b>String</b> obligatoire un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> ou <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> object qui représente la nouvelle <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> spécifié <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</param>
         <summary>Modifications du <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> des <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</summary>
         <remarks>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> méthode peut uniquement être utilisée avec un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> qui utilise des données stockées dans une feuille de calcul comme source de données. Une erreur d’exécution se produit si le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> méthode est utilisée avec un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> qui est connecté à une source de données externes.</para>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> méthode peut uniquement être utilisée avec un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> qui utilise des données stockées dans une feuille de calcul comme source de données. Une erreur d’exécution se produit si le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> méthode est utilisée avec un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> qui est connecté à une source de données externe.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -749,7 +753,7 @@ Lecture/écriture.</summary>
       <Docs>
         <summary>Le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" /> méthode est utilisée pour effacer un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Si vous décochez <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s inclut la suppression de tous les champs et la suppression de tous les de filtrage et de tri appliqué à la <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />. Cette méthode réinitialise la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> à l’état qu’il avait juste après sa création, avant de tous les champs ont été ajoutés.</summary>
         <remarks>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" /> fonction ne prend aucun argument et est disponible pour les deux relationnels et OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s</para>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" /> fonction ne prend aucun argument et est disponible pour les deux relationnels et OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -868,7 +872,7 @@ Lecture/écriture.</summary>
       <Docs>
         <summary>Effectue une opération de validation sur la source de données d’un rapport de tableau croisé dynamique basé sur une source de données OLAP.</summary>
         <remarks>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CommitChanges" /> méthode envoie une instruction COMMIT TRANSACTION sur le serveur OLAP et efface toutes les cellules qui ont été modifiés en entrant une valeur, mais n’effacera pas les formules dans les cellules de valeurs. Cette méthode génère une erreur d’exécution si elle est exécutée sur un rapport de tableau croisé dynamique basé sur une source de données non-OLAP.</para>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CommitChanges" /> méthode envoie une instruction COMMIT TRANSACTION sur le serveur OLAP et efface toutes les cellules qui ont été modifiés en entrant une valeur, mais n’effacera pas les formules dans les cellules de valeurs. Cette méthode génère une erreur d’exécution si elle est exécutée sur un rapport de tableau croisé dynamique basé sur une source de données autre que OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -902,7 +906,7 @@ Lecture/écriture.</summary>
         <summary>Spécifie la légende s’affiche dans l’en-tête de colonne d’une <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> quand disposition en lignes compacte. Lecture/écriture.</summary>
         <value>String</value>
         <remarks>
-          <para>Lorsque l’utilisateur personnalise ces légendes dans la grille, il est également répercutée dans ces propriétés.</para>
+          <para>Lorsque l'utilisateur personnalise ces légendes dans la grille, ces modifications sont également répercutées dans ces propriétés.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -938,7 +942,7 @@ Lecture/écriture.</summary>
           <b>Chaîne</b>
         </value>
         <remarks>
-          <para>Lorsque l’utilisateur personnalise ces légendes dans la grille, il est également répercutée dans ces propriétés.</para>
+          <para>Lorsque l'utilisateur personnalise ces légendes dans la grille, ces modifications sont également répercutées dans ces propriétés.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -973,7 +977,10 @@ Lecture/écriture.</summary>
         <value>
           <b>Integer</b>
         </value>
-        <remarks>Valeur <para>la valeur par défaut est 1. Les valeurs valides pour ce paramètre sont comprises entre 0 au retrait maximal spécifié dans Microsoft Excel.</para><para></para></remarks>
+        <remarks>
+          <para>La valeur par défaut est 1. Les valeurs valides de ce paramètre sont comprises entre 0 et la valeur de retrait maximale définie dans Microsoft Excel.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToFormulas">
@@ -1002,7 +1009,7 @@ Lecture/écriture.</summary>
         <param name="ConvertFilters">Obligatoire contient de <b>valeur booléenne</b><b>True</b> ou <b>False</b> pour indiquer l’état de la zone Filtre.</param>
         <summary>Le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ConvertToFormulas(System.Boolean)" /> méthode est nouvelle dans 1st_Excel12 et est utilisée pour convertir une <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> pour les formules de cube.</summary>
         <remarks>
-          <para>L’argument détermine s’il faut convertir la zone de filtre de le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
+          <para>L’argument détermine s’il faut convertir la zone de filtre de le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -1070,7 +1077,10 @@ Lecture/écriture.</summary>
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CubeFields">
@@ -1239,7 +1249,11 @@ Lecture/écriture.</summary>
       <Parameters />
       <Docs>
         <summary>Ignore toutes les modifications apportées dans les cellules modifiées d’un rapport de tableau croisé dynamique reposant sur une source de données OLAP.</summary>
-        <remarks>Rapport de <para>pour un tableau croisé dynamique basé sur une source de données OLAP, la méthode supprime toutes les valeurs et les formules entrées dans les cellules de valeurs, puis exécute une opération de mise à jour de tableau croisé dynamique pour récupérer les valeurs les plus récentes à partir de la source de données. Elle affecte la valeur de la source de données à une référence null (Nothing dans Visual Basic) pour toutes les cellules de valeurs qui sont modifiés et exécute également une instruction ROLLBACK TRANSACTION sur le serveur OLAP.</para><para>Si vous essayez d’exécuter cette méthode pour un rapport de tableau croisé dynamique basé sur une source de données non-OLAP, cette méthode génère une erreur d’exécution.</para><para></para></remarks>
+        <remarks>
+          <para>Pour un rapport de tableau croisé dynamique basé sur une source de données OLAP, la méthode supprime toutes les valeurs et les formules entrées dans les cellules de valeurs, puis exécute une opération de mise à jour de tableau croisé dynamique pour récupérer les valeurs les plus récentes à partir de la source de données. Il définit la valeur de source de données à une référence null (Nothing dans Visual Basic) pour toutes les cellules de valeurs qui sont modifiés et exécute également une instruction ROLLBACK TRANSACTION sur le serveur OLAP.</para>
+          <para>Si vous essayez d’exécuter cette méthode pour un rapport de tableau croisé dynamique reposant sur une source de données non-OLAP, cette méthode génère une erreur d’exécution.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayContextTooltips">
@@ -1273,7 +1287,7 @@ Lecture/écriture.</summary>
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Si <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayContextTooltips" /> est défini sur <b>False</b>, les info-bulles contextuelles pour <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> cellules ne s’affiche pas. Si elle est définie sur <b>True</b>, les info-bulles pour <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> cellules dans les zones de ligne, colonne et les données seront afficheront.</para>
+          <para>Si <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayContextTooltips" /> est défini sur <b>False</b>, les info-bulles contextuelles pour <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> cellules ne s’affiche pas. Si elle est définie sur <b>True</b>, les info-bulles pour <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> cellules dans les zones de ligne, colonne et de données seront affiche.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1307,7 +1321,7 @@ Lecture/écriture.</summary>
         <summary>Renvoie la valeur <b>True</b> lorsque le mot clé MDX non vide est inclus dans la requête au fournisseur OLAP pour l’axe des ordonnées. Le fournisseur OLAP ne renvoie pas de colonnes vides dans le jeu de résultats. Renvoie la valeur <b>False</b> lorsque le mot clé non vide n’est pas spécifié. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le tableau croisé dynamique doit être connecté à une source de données de traitement analytique en ligne (OLAP) afin d’éviter une erreur d’exécution.</para>
+          <para>Le tableau croisé dynamique doit être connecté à une source de données OLAP (Online Analytical Processing) pour éviter une erreur d'exécution.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1341,7 +1355,7 @@ Lecture/écriture.</summary>
         <summary>Cette propriété renvoie la valeur <b>True</b> lorsque le mot clé MDX non vide est inclus dans la requête au fournisseur OLAP pour l'axe des abscisses. Le fournisseur OLAP ne renvoie pas de lignes vides dans le jeu de résultats. Cette propriété renvoie la valeur <b>False</b> lorsque le mot clé non vide n'est pas spécifié. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le tableau croisé dynamique doit être connecté à une source de données de traitement analytique en ligne (OLAP) afin d’éviter une erreur d’exécution.</para>
+          <para>Le tableau croisé dynamique doit être connecté à une source de données OLAP (Online Analytical Processing) pour éviter une erreur d'exécution.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1377,7 +1391,7 @@ Lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ErrorString" /> propriété à définir la chaîne d’erreur personnalisée.</para>
-          <para>Cette propriété est particulièrement utile pour la suppression des erreurs de division par zéro lorsque des champs calculés sont pivotés.</para>
+          <para>Cette propriété permet de supprimer les erreurs de division par zéro lorsque des champs calculés sont pivotés.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1763,7 +1777,7 @@ Lecture/écriture.</summary>
           <b>True</b> pour désactiver l’alerte lorsque l’utilisateur remplace des valeurs dans la zone de données du tableau croisé dynamique. La valeur <b>True</b> permet également à l’utilisateur de modifier des valeurs de données qui ne pouvaient précédemment pas être changées. La valeur par défaut est <b>False</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Toute modification effectuée sur les valeurs de données est perdue lors de l’actualisation.</para>
+          <para>Toute modification effectuée sur des valeurs de données est perdue lors de l'actualisation.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1798,8 +1812,8 @@ Lecture/écriture.</summary>
           <b>True</b>si le rappel des éléments est activé. La valeur par défaut est <b>True</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définition de cette propriété pour un rapport de tableau croisé dynamique est appliquée à tous les champs de ce rapport.</para>
-          <para>Pour les sources de données OLAP, la valeur est toujours <b>True</b>.</para>
+          <para>Cette propriété est appliquée à tous les champs du rapport de tableau croisé dynamique.</para>
+          <para>Dans le cas des sources de données OLAP, cette propriété a toujours la valeur <b>True</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1834,7 +1848,7 @@ Lecture/écriture.</summary>
           <b>True</b> si la boîte de dialogue <b>Champ dynamique</b> est disponible lorsque l’utilisateur double-clique sur le champ de tableau croisé dynamique. La valeur par défaut est <b>True</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définition de cette propriété pour un rapport de tableau croisé dynamique est appliquée à tous les champs de ce rapport.</para>
+          <para>Cette propriété est appliquée à tous les champs du rapport de tableau croisé dynamique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1901,7 +1915,7 @@ Lecture/écriture.</summary>
           <b>True</b> si l’Assistant tableau croisé dynamique est disponible. La valeur par défaut est <b>True</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Lorsque cette propriété est définie, les groupes de champs ne sont pas affichés sur la feuille de calcul.</para>
+          <para>Lorsque cette propriété est définie, les groupes de champs ne sont pas affichés dans la feuille de calcul.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1936,8 +1950,14 @@ Lecture/écriture.</summary>
         <value>
           <b>true</b> si l’écriture dans la source de données est activé pour le tableau croisé dynamique spécifié ; Sinon, <b>false</b>. La valeur par défaut est <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para> Sources de 
-          <para>pour les données OLAP, la définition sur le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /><b>la valeur true</b> à la propriété permet d’écriture différée et désactive l’alerte lorsque l’utilisateur remplace les valeurs dans la zone de données de tableau croisé dynamique. Sources de données non-OLAP, définissant le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriété la <b>valeur true</b> permet d’écriture différée dans le code et permet également à l’utilisateur modifier les valeurs de données qui ne pouvaient précédemment pas être changées.</para><para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> et <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriétés de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objet ne peut pas être défini sur <b>true</b> en même temps.</para><para>Si le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriété est définie sur <b>true</b> , puis le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriété est définie sur <b>true</b>, le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriété est automatiquement définie sur <b>false</b> , le tableau croisé dynamique est actualisé et toute modification effectuée sur les valeurs de données est perdues.</para><para>Si le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriété est définie sur <b>true</b> , puis le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriété est définie sur <b>true</b>, le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />propriété est automatiquement définie sur <b>false</b> , le tableau croisé dynamique n’est pas actualisé, et les valeurs de source de données sont restaurées.</para><para>Pour les sources de données non-OLAP, cette propriété génère une erreur d’exécution.</para><para></para></remarks>
+          <para>Lecture/écriture.</para>
+          <para>Sources de données OLAP, la définition sur le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /><b>la valeur true</b> à la propriété permet d’écriture différée et désactive l’alerte lorsque l’utilisateur remplace les valeurs dans la zone de données de tableau croisé dynamique. Sources de données non-OLAP, définissant le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriété la <b>valeur true</b> permet d’écriture différée dans le code et permet également à l’utilisateur modifier les valeurs de données précédemment a pas peuvent être modifiés.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> et <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriétés de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objet ne peut pas être défini sur <b>true</b> en même temps.</para>
+          <para>Si le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriété est définie sur <b>true</b> , puis le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriété est définie sur <b>true</b>, le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriété est automatiquement définie sur <b>false</b> , le tableau croisé dynamique est actualisé et toute modification effectuée sur les valeurs de données est perdue.</para>
+          <para>Si le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propriété est définie sur <b>true</b> , puis le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriété est définie sur <b>true</b>, le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />propriété est automatiquement définie sur <b>false</b> , le tableau croisé dynamique n’est pas actualisé, et les valeurs de source de données sont restaurées.</para>
+          <para>Dans le cas des sources de données non-OLAP, le fait de définir cette propriété génère une erreur d’exécution.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorString">
@@ -2277,7 +2297,7 @@ Lecture/écriture.</summary>
         <summary>Renvoie un objet qui représente soit un seul champ de tableau croisé dynamique (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet), soit une collection de tous les champs (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objet) qui ne sont pas actuellement affichés sous forme de champs de ligne, de colonne, de page ou de données. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour les sources de données, cette propriété renvoie toujours une collection vide.</para>
+          <para>Dans le cas des sources de données OLAP, cette propriété renvoie toujours une collection vide.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2347,7 +2367,7 @@ Lecture/écriture.</summary>
         <summary>Cette propriété renvoie ou définit le nom du champ qui sera affiché comme détails lorsque le <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.ShowDetail" /> propriété a la <b>valeur True</b> pour le champ de ligne ou de colonne le plus profond. Valeur <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
+          <para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2384,7 +2404,7 @@ Lecture/écriture.</summary>
         </value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" /> peut être soit xlCompactRow, xlTabularRow ou xlOutlineRow.</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" />peut être la valeur xlCompactRow, xlTabularRow ou xlOutlineRow.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2412,7 +2432,7 @@ Lecture/écriture.</summary>
       <Docs>
         <summary>Permet de créér une liste des éléments calculés du tableau croisé dynamique et de champs sur une feuille de calcul séparée.</summary>
         <remarks>
-          <para>Cette méthode n’est pas disponible pour les sources de données OLAP.</para>
+          <para>Cette méthode n'est pas disponible pour les sources de données OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2671,8 +2691,8 @@ Lecture/écriture.</summary>
         <summary>Renvoie un objet qui représente soit un seul champ de tableau croisé dynamique (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet), soit une collection de tous les champs (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> object) qui s’affichent comme champs de page. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Une hiérarchie ne peut contenir qu’un seul champ de page.</para>
-          <para>Pour un rapport de tableau croisé dynamique basé sur un cache de tableau croisé dynamique, la collection de champs de tableau croisé dynamique renvoyée reflète les éléments s’actuellement dans le cache.</para>
+          <para>Une hiérarchie ne peut contenir qu'un seul champ de page.</para>
+          <para>Dans le cas d'un rapport de tableau croisé dynamique s'appuyant sur le cache d'un tableau croisé dynamique, la collection des champs de tableau croisé dynamique renvoyée reflète les éléments se trouvant actuellement dans le cache.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2706,7 +2726,7 @@ Lecture/écriture.</summary>
         <summary>Renvoie ou définit le style utilisé dans la zone de champ de page liée. Valeur par défaut : Null (aucun style appliqué). Type de données <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Ce style est utilisé comme style par défaut pour la zone d’arrière-plan, et il est appliqué avant toute mise en forme de l’utilisateur. Cellules vidées lorsque la zone de champ de page un champ est appliqué à un autre emplacement conservent ce style.</para>
+          <para>Ce style correspond à celui par défaut pour la zone en arrière-plan. Il est appliqué avant toute mise en forme utilisateur. Les cellules vidées lorsque vous faites pivoter un champ de la zone de champ de page vers un autre emplacement conservent ce style.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2936,7 +2956,7 @@ Lecture/écriture.</summary>
         <summary>Renvoie un objet qui représente soit un seul champ de tableau croisé dynamique (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet), soit une collection de champs visibles et masquées (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objet) dans le rapport de tableau croisé dynamique. En lecture seule.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Pour les sources de données il ne sont pas de champs masqués et l’objet ou la collection renvoyée reflète ce qui est actuellement visible.</para>
+          <para>Sources de données OLAP il en existe pas de champs masqués et l’objet ou la collection renvoyée reflète ce qui est actuellement visible.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2967,7 +2987,7 @@ Lecture/écriture.</summary>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" /> objet qui représente la collection des formules spécifié <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> rapport. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour les sources de données, cette propriété renvoie une collection vide.</para>
+          <para>Dans le cas des sources de données OLAP, cette propriété renvoie une collection vide.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3032,7 +3052,7 @@ Lecture/écriture.</summary>
         <param name="UseStandardName">Facultatif <b>Object</b>. <b>True</b> pour les macros enregistrées qui seront exécutées avec d'autres paramètres régionaux.</param>
         <summary>Cette méthode sélectionne une partie d'un rapport de tableau croisé dynamique.</summary>
         <remarks>
-          <para>Vous pouvez utiliser le mode spécifié uniquement pour sélectionner l’élément correspondant dans le rapport de tableau croisé dynamique. Par exemple, vous ne pouvez pas sélectionner des données et étiquettes à l’aide du mode <b>xlButton</b> . de même, vous ne pouvez pas sélectionner les boutons en mode <b>xlDataOnly</b> .</para>
+          <para>Vous pouvez utiliser le mode spécifié uniquement pour sélectionner l’élément correspondant dans le rapport de tableau croisé dynamique. Par exemple, vous ne pouvez pas sélectionner des données et étiquettes à l’aide du mode <b>xlButton</b> . de même, vous ne pouvez pas sélectionner boutons à l’aide du mode <b>xlDataOnly</b> .</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3288,8 +3308,11 @@ Lecture/écriture.</summary>
       <Docs>
         <summary>Cette propriété a la valeur <b>True</b> si les titres à imprimer de la feuille de calcul sont définis en fonction du rapport de tableau croisé dynamique. Elle prend la valeur <b>False</b> si les titres à imprimer inclus dans la feuille de calcul sont utilisés. Valeur par défaut : <b>False</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>Les titres d’impression <para>la ligne sont définies sur les lignes qui contiennent des éléments de champ de colonne de l’état de tableau croisé dynamique. Les titres d’impression de colonne sont définies pour les colonnes qui contiennent les éléments de ligne.</para> Rapport de 
-          <para>du tableau croisé dynamique doit être le seul dans la zone d’impression. Pour définir un format avec retrait pour un rapport de tableau croisé dynamique, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" /> méthode.</para><para></para></remarks>
+        <remarks>
+          <para>Les titres de ligne à imprimer sont définis en fonction des lignes qui contiennent les éléments de champ de colonne inclus dans le rapport de tableau croisé dynamique. Les titres de colonne à imprimer sont définis pour leur part en fonction des colonnes qui contiennent les éléments de ligne.</para>
+          <para>Le rapport de tableau croisé dynamique doit être le seul dans la zone d’impression. Pour définir un format avec retrait pour un rapport de tableau croisé dynamique, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" /> méthode.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshDataSourceValues">
@@ -3316,8 +3339,8 @@ Lecture/écriture.</summary>
         <summary>Extrait les valeurs actuelles dans la source de données pour toutes les cellules modifiées d’un rapport de tableau croisé dynamique en mode écriture différée.</summary>
         <remarks>
           <para>Pour déterminer si un rapport de tableau croisé dynamique se trouve dans le mode d’écriture différée, vérifiez le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> ou <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> propriétés de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object, qui renvoie la valeur True. Pour les rapports de tableau croisé dynamique qui ne sont pas en mode d’écriture différée, essayez d’exécuter cette méthode génère une erreur d’exécution.</para>
-          <para>Pour les rapports de tableau croisé avec des sources de données OLAP, l’exécution de la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RefreshDataSourceValues" /> méthode crée une connexion au serveur OLAP distincte et exécute la requête MDX complète (la valeur de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.MDX" /> propriété) qui est utilisé pour effectuer une opération de mise à jour pour remplir le rapport de tableau croisé dynamique. Excel extrait les valeurs renvoyées pour toutes les cellules qui ont été modifiés dans l’affichage de tableau croisé dynamique, puis les stocke dans le <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> propriété pour ces cellules.</para>
-          <para>Cette méthode s’applique uniquement aux rapports de tableau croisé dynamique avec les sources de données OLAP. Essayez d’exécuter cette méthode ou les rapports de tableau croisé dynamique avec des sources de données non-OLAP génère une erreur d’exécution.</para>
+          <para>Pour les rapports de tableau croisé dynamique avec des sources de données OLAP, l’exécution de la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RefreshDataSourceValues" /> méthode crée une connexion au serveur OLAP distincte et exécute la requête MDX complète (la valeur de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.MDX" /> propriété) qui est utilisé pour effectuer une opération de mise à jour pour remplir le rapport de tableau croisé dynamique. Excel extrait les valeurs renvoyées pour toutes les cellules qui ont été modifiés dans l’affichage de tableau croisé dynamique, puis les stocke dans le <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> propriété pour ces cellules.</para>
+          <para>Cette méthode s’applique uniquement aux rapports de tableau croisé dynamique avec des sources de données OLAP. La tentative d’exécution de cette méthode sur des rapports de tableau croisé dynamique sans source de données OLAP génère une erreur d’exécution.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3348,7 +3371,7 @@ Lecture/écriture.</summary>
         <summary>Renvoie la date de dernière actualisation sur lequel le rapport de tableau croisé dynamique. En lecture seule <b>DateTime</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour les sources de données OLAP, cette propriété est mis à jour après chaque requête.</para>
+          <para>Dans le cas des sources de données OLAP, cette propriété est mise à jour après chaque requête.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3379,7 +3402,7 @@ Lecture/écriture.</summary>
         <summary>Renvoie le nom de la personne qui a actualisé les données de rapport de tableau croisé dynamique ou le cache de tableau croisé dynamique. Valeur <b>String</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour les sources de données OLAP, cette propriété est mis à jour après chaque requête.</para>
+          <para>Dans le cas des sources de données OLAP, cette propriété est mise à jour après chaque requête.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3436,7 +3459,7 @@ Lecture/écriture.</summary>
         <param name="Repeat">Spécifie si les étiquettes d’éléments doivent être répétées pour tous les champs de tableau croisé dynamique du tableau croisé dynamique spécifié.</param>
         <summary>Définit s’il faut répéter les étiquettes d’éléments pour tous les champs du tableau croisé dynamique spécifié.</summary>
         <remarks>
-          <para>À l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" /> méthode correspond aux commandes Répéter toutes les étiquettes d’éléments et faire pas répéter les étiquettes d’article sur la liste déroulante disposition du rapport de l’onglet Créer des outils de tableau croisé dynamique</para>
+          <para>À l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" /> méthode correspond aux commandes Répéter toutes les étiquettes d’éléments et faire pas répéter les étiquettes d’article sur la liste déroulante disposition du rapport de l’onglet conception des outils de tableau croisé dynamique.</para>
           <para>Pour spécifier s’il faut répéter les étiquettes d’élément pour un champ PivotField unique, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.RepeatLabels" /> propriété.</para>
           <para></para>
         </remarks>
@@ -3628,7 +3651,7 @@ Lecture/écriture.</summary>
         <summary>Cette propriété a la valeur <b>True</b> si les données du rapport de tableau croisé dynamique sont enregistrées avec le classeur. Elle a la valeur <b>False</b> si seule la définition du rapport est enregistrée. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Sources de données OLAP pour cette propriété sont toujours la valeur <b>false</b>.</para>
+          <para>Dans le cas des sources de données OLAP, cette propriété a toujours la valeur <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3662,7 +3685,7 @@ Lecture/écriture.</summary>
         <summary>Cette propriété renvoie ou définit le mode de sélection structuré de rapport de tableau croisé dynamique. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlPTSelectionMode" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si le champ de tableau croisé dynamique n’est pas sous forme hiérarchique, spécifiant la somme d’une de ces constantes et de <b>xlFirstRow</b> équivaut à spécifier la constante seule.</para>
+          <para>Si le champ de tableau croisé dynamique n'est pas sous forme hiérarchique, l'indication de la somme d'une de ces constantes et de <b>xlFirstRow</b> équivaut à spécifier la constante seule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3703,7 +3726,7 @@ Lecture/écriture.</summary>
           <b>True</b> si l’expression MDX (Multidimensional Expression) que Microsoft Excel envoie au serveur inclut la <see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.BackColor" /> propriété pour chaque cellule dans la zone de données qui correspond à une cellule dans le jeu de données de traitement analytique en ligne (OLAP). La valeur par défaut est <b>False</b>. En lecture/écriture <b>booléen</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si le jeu de données OLAP renvoie une valeur de la propriété <b>BackColor</b> , la couleur de remplissage de cellule est définie avec la couleur la plus proche dans la palette de Microsoft Excel pour cette feuille de calcul. Si l’utilisateur s’applique à motif cellule mise en forme à la cellule manuellement, qui remplace toute mise en forme de l’ensemble de données OLAP.</para>
+          <para>Si le jeu de données OLAP renvoie une valeur de la propriété <b>BackColor</b> , la couleur de remplissage de cellule est définie à la couleur la plus proche dans la palette de Microsoft Excel pour cette feuille de calcul. Si l’utilisateur s’applique à motif cellule mise en forme à la cellule manuellement, qui remplace toute mise en forme de l’ensemble de données OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3739,7 +3762,7 @@ Lecture/écriture.</summary>
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Renvoie <b>la valeur True</b> si les indicateurs d’extraction sont affichés dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> et renvoie la <b>valeur False</b> si les indicateurs d’extraction ne sont pas affichées dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
+          <para>Renvoie <b>la valeur True</b> si les indicateurs d’extraction sont affichés dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> et renvoie la <b>valeur False</b> si les indicateurs d’extraction ne sont pas affichées dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -3801,7 +3824,7 @@ Lecture/écriture.</summary>
         <summary>Crée un rapport de tableau croisé dynamique pour chaque élément dans le champ de page. Chaque nouveau rapport de tableau croisé dynamique est créé dans une nouvelle feuille de calcul.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Cette méthode n’est pas disponible pour les sources de données OLAP.</para>
+          <para>Cette méthode n'est pas disponible pour les sources de données OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3991,8 +4014,8 @@ Lecture/écriture.</summary>
         <value>
           <b>true</b> si l’affichage de la ligne de valeurs ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>Cette propriété correspond au paramètre de la case de la ligne valeurs sur l’onglet Affichage de la boîte de dialogue Options de tableau croisé dynamique indiquent.</para>
+          <para>Lecture/écriture.</para>
+          <para>Cette propriété correspond au paramètre de la case à cocher Afficher les valeurs sous l’onglet Affichage de la boîte de dialogue Options du tableau croisé dynamique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4023,8 +4046,10 @@ Lecture/écriture.</summary>
         <summary>Obtient le <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> collection pour le tableau croisé dynamique spécifié.</summary>
         <value>Le <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> collection pour le tableau croisé dynamique spécifié.</value>
         <remarks>
-          <para>En lecture seule.</para> Les segments 
-          <para>peuvent être utilisés pour filtrer les données dans les rapports de tableau croisé dynamique. Le <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> collection contient <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objets qui représentent les segments qui sont associés à l’objet PivotTable spécifié.</para><para></para></remarks>
+          <para>En lecture seule.</para>
+          <para>Les segments peuvent être utilisés pour filtrer les données dans les rapports de tableau croisé dynamique. Le <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> collection contient <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objets qui représentent les segments qui sont associés à l’objet PivotTable spécifié.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallGrid">
@@ -4056,7 +4081,7 @@ Lecture/écriture.</summary>
         <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel utilise un quadrillage composé de deux cellules en largeur sur deux cellules en profondeur pour tout nouveau rapport de tableau croisé dynamique. Elle prend la valeur <b>False</b> si Microsoft Excel utilise un plan de gabarit vide. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous devez utiliser le plan de gabarit. La grille est fournie uniquement, car elle permet d’assurer la compatibilité avec les versions antérieures d’Excel.</para>
+          <para>Vous devez utiliser le plan de gabarit. Le quadrillage est destiné uniquement à assurer la compatibilité avec les versions antérieures de Microsoft Excel.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4092,7 +4117,7 @@ Lecture/écriture.</summary>
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Définir cette propriété sur <b>False</b> peut optimiser les performances pour les champs comprenant de nombreux éléments, et permet également aux utilisateurs qui souhaitent pas basée sur une liste de tri personnalisé pour éviter les it.</para>
+          <para>Le fait d'attribuer la valeur <b>False</b> à cette propriété peut optimiser les performances pour les champs comprenant de nombreux éléments ; cela permet en outre aux utilisateurs qui ne souhaitent pas utiliser un tri à base de listes personnalisées de l'éviter.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4129,23 +4154,23 @@ Lecture/écriture.</summary>
           <para>La valeur renvoyée dépend de la source de données, comme suit :</para>
           <list type="table">
             <item>
-              <term>Liste Microsoft Excel ou base de données</term>
-              <description>la référence de cellule, sous forme de texte.</description>
+              <term>Liste ou base de données Microsoft Excel</term>
+              <description>Référence de cellule, texte.</description>
             </item>
             <item>
               <term>Source de données externe</term>
-              <description>un tableau. Chaque ligne contient une chaîne de connexion SQL et les éléments restants en tant que chaîne de requête divisée en segments de 255 caractères.</description>
+              <description>Un tableau. Chaque ligne se compose d’une chaîne de connexion SQL et les éléments restants en tant que chaîne de requête divisée en segments de 255 caractères.</description>
             </item>
             <item>
               <term>Plusieurs plages de consolidation</term>
-              <description>un tableau à deux dimensions. Chaque ligne se compose d’une référence et ses éléments de champ de page associée.</description>
+              <description>Tableau à deux dimensions. Chaque ligne contient une référence et les éléments de champ de page associés.</description>
             </item>
             <item>
-              <term>Un autre tableau croisé dynamique</term>
-              <description>un des trois types d’informations ci-dessus.</description>
+              <term>Autre rapport de tableau croisé dynamique</term>
+              <description>Une des trois sortes d'informations ci-dessus.</description>
             </item>
           </list>
-          <para>Cette propriété n’est pas disponible pour les sources de données OLE DB.</para>
+          <para>Cette propriété n'est pas disponible pour les sources de données OLE DB.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4179,7 +4204,7 @@ Lecture/écriture.</summary>
         <summary>Cette propriété a la valeur <b>True</b> si les éléments de champ de page masqués dans le rapport de tableau croisé dynamique sont inclus dans des sous-totaux, des totaux et des totaux généraux de lignes et de colonnes. La valeur par défaut est <b>False</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour les sources de données OLAP, la valeur est toujours <b>True</b>.</para>
+          <para>Dans le cas des sources de données OLAP, cette propriété a toujours la valeur <b>True</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4210,7 +4235,7 @@ Lecture/écriture.</summary>
         <param name="Location">Requis <see cref="T:Microsoft.Office.Interop.Excel.XlSubtototalLocationType" /> peut être la <b>valeur xlAtTop</b> ou <b>xlAtBottom</b>.</param>
         <summary>Cette méthode modifie l’emplacement du sous-total pour tout <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />. Modification de l’emplacement du sous-total a un effet visuel immédiat uniquement pour les champs sous forme hiérarchique, mais elle est définie pour les champs ainsi que dans un tableau.</summary>
         <remarks>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.SubtotalLocation(Microsoft.Office.Interop.Excel.XlSubtototalLocationType)" /> méthode définit la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutSubtotalLocation" /> propriété pour tout <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s automatiquement.</para>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.SubtotalLocation(Microsoft.Office.Interop.Excel.XlSubtototalLocationType)" /> méthode définit la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutSubtotalLocation" /> propriété pour tout <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s automatiquement.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4244,7 +4269,7 @@ Lecture/écriture.</summary>
         <summary>Obtient ou définit la description associée à la chaîne de texte de remplacement pour le tableau croisé dynamique spécifié.</summary>
         <value>La description associée à la chaîne de texte de remplacement pour le tableau croisé dynamique spécifié.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>La valeur de la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Summary" /> propriété correspond à la valeur dans la zone Description sous l’onglet texte de remplacement de la boîte de dialogue Options de tableau croisé dynamique.</para>
           <para></para>
         </remarks>
@@ -4276,7 +4301,7 @@ Lecture/écriture.</summary>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente la plage contenant le rapport de tableau croisé dynamique entier, mais n’inclut pas les champs de page. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange2" /> propriété inclut les champs de page.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange2" /> propriété inclut les champs de page.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4307,7 +4332,7 @@ Lecture/écriture.</summary>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente la plage contenant l’intégralité du rapport de tableau croisé dynamique, y compris les champs de page. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange1" /> propriété n’inclut pas les champs de page.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange1" /> propriété n’inclut pas les champs de page.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4347,7 +4372,7 @@ Lecture/écriture.</summary>
         <summary>Cette propriété renvoie ou définit le style utilisé dans le corps du rapport de tableau croisé dynamique. La valeur par défaut est une chaîne nulle (aucun style n’est appliqué par défaut). Valeur <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Ce style est utilisé comme style par défaut pour la zone d’arrière-plan, et il est appliqué avant toute mise en forme de l’utilisateur.</para>
+          <para>Ce style est utilisé comme style par défaut pour la zone d’arrière-plan, et elle est appliquée avant toute mise en forme de l’utilisateur.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4449,7 +4474,7 @@ Lecture/écriture.</summary>
           <b>True</b> si un astérisque (*) est affiché en regard de chaque valeur totale sous-total et dans le rapport de tableau croisé dynamique spécifié si le rapport est basé sur une source de données OLAP. La valeur par défaut est <b>True</b>. En lecture/écriture <b>booléen</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Lorsque cette propriété est définie sur <b>True</b>, l’astérisque indique que les éléments masqués sont inclus dans le total. L’astérisque s’affiche que si tous les éléments dans le rapport ont été masquées.</para>
+          <para>Lorsque cette propriété a la valeur <b>True</b>, l'astérisque indique que des éléments masqués sont inclus dans le total. L'astérisque s'affiche toujours, même si aucun élément n'a été masqué dans le rapport.</para>
           <para>Pour les sources de données non-OLAP, la valeur de cette propriété est toujours <b>False</b>.</para>
           <para></para>
         </remarks>
@@ -4631,7 +4656,7 @@ Lecture/écriture.</summary>
         <summary>Renvoie un objet qui représente soit un seul champ dans un rapport de tableau croisé dynamique (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet), soit une collection de tous les champs visibles (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objet). Champs visibles sont affichés sous forme de ligne, de colonne, de page ou de champs de données. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour les sources de données il ne sont pas de champs masqués et cette propriété renvoie tous les champs dans le cache de tableau croisé dynamique.</para>
+          <para>Pour OLAP des sources de données il n’existe aucuns champs masqués et cette propriété renvoie tous les champs dans le cache de tableau croisé dynamique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4666,8 +4691,8 @@ Lecture/écriture.</summary>
           <b>La valeur True</b> (valeur par défaut) pour activer les tableaux croisés dynamiques de traitement analytique en ligne (OLAP) recalculer le total après qu’un élément a été masqué. Type de données <b>Boolean</b> en lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Dans les tableaux croisés dynamiques non - OLAP, si vous masquez un élément, le total est recalculé pour refléter uniquement les éléments qui restent visibles dans le tableau croisé dynamique. Dans un tableau croisé dynamique OLAP, le total est calculé sur le serveur et n’est par conséquent pas affecté par si tous les éléments sont masqués dans le tableau croisé dynamique. Toutefois, si la propriété <b>VisualTotals</b> est définie sur <b>False</b> pour un tableau croisé dynamique OLAP, puis les résultats de tableau croisé dynamique OLAP correspondent à ceux du tableau croisé dynamique non - OLAP.</para>
-          <para>Pour les tableaux croisés dynamiques OLAP, <b>la propriété VisualTotals de <b>la valeur True</b> (valeur par défaut)</b> fonctionne comme pour les tableaux croisés dynamiques non - OLAP.</para>
+          <para>Dans le cas des tableaux croisés dynamiques non-OLAP, si vous masquez un élément, le total est recalculé pour ne refléter que les éléments qui restent visibles dans le tableau. En ce qui concerne les tableaux croisés dynamiques OLAP, le total est calculé sur le serveur et n'est donc pas affecté par le fait que des éléments soient masqués dans le tableau. Cependant, si la propriété <b>VisualTotals</b> a la valeur <b>False</b> pour un tableau OLAP, les résultats du tableau OLAP correspondent à ceux du tableau croisé dynamique non-OLAP.</para>
+          <para>La propriété <b>VisualTotals</b> pour des tableaux croisés dynamiques OLAP et dont la valeur est <b>True</b> (par défaut) fonctionne de la même manière que celle décrite pour les tableaux croisés dynamiques non-OLAP.</para>
           <para>La propriété <b>VisualTotals</b> renvoie <b>la valeur True</b> pour tous les nouveaux tableaux croisés dynamiques. Toutefois, si vous ouvrez un classeur dans la version actuelle de Microsoft Excel et le tableau croisé dynamique a été créé dans une version antérieure de Microsoft Excel, la propriété <b>VisualTotals</b> renvoie <b>False</b>.</para>
           <para></para>
         </remarks>
@@ -4703,9 +4728,9 @@ Lecture/écriture.</summary>
         <value>
           <b>true</b> si filtrée des éléments dans les totaux de jeux nommés pour l’objet PivotTable spécifié sont inclus ; Sinon, <b>false</b>. La valeur par défaut est <b>false</b></value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>
-            <b>la valeur true</b> si les éléments filtrés sont inclus dans les totaux de jeux nommés ; sinon, <b>false</b>. La valeur par défaut de cette propriété a la <b>valeur false</b>.</para>
+            <b>la valeur true</b> si les éléments filtrés sont inclus dans les totaux de jeux nommés ; Sinon, <b>false</b>. La valeur par défaut de cette propriété a la <b>valeur false</b>.</para>
           <para>Dans un tableau croisé dynamique basé sur une source de données OLAP, vous pouvez configurer si les totaux des jeux nommés dans le tableau croisé dynamique comprennent les éléments qui ont été filtrés. Le paramètre de la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisualTotalsForSets" /> propriété correspond aux éléments inclure filtré dans la case à cocher set totaux les totaux &amp; onglet Filtres de la boîte de dialogue Options de tableau croisé dynamique.</para>
           <para></para>
         </remarks>

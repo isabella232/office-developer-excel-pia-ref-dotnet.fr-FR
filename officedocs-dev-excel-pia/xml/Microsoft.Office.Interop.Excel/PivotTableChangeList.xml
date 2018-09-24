@@ -1,10 +1,10 @@
 <Type Name="PivotTableChangeList" FullName="Microsoft.Office.Interop.Excel.PivotTableChangeList">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="63698bef46404d04033b537d223fd3813ffa3abc" />
+    <Meta Name="ms.openlocfilehash" Value="636cf57ba1c7b70d9eb9e8e8297d99ac0acff5dc" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574717" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTableChangeList : System.Collections.IEnumerable" />
@@ -35,7 +35,7 @@
   <Docs>
     <summary>Représente la liste des modifications qu’un utilisateur a apportées aux cellules de valeurs dans un rapport de tableau croisé dynamique basé sur une source de données OLAP.</summary>
     <remarks>
-      <para>La <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection contient <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objets qui représentent les modifications qu’un utilisateur a apportées aux cellules de valeurs dans un rapport de tableau croisé dynamique. Pour renvoyer la <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection pour un tableau croisé dynamique, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ChangeList" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objet.</para>
+      <para>Le <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection contient <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objets qui représentent les modifications qu’un utilisateur a apportées aux cellules de valeurs dans un rapport de tableau croisé dynamique. Pour renvoyer la <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection pour un tableau croisé dynamique, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ChangeList" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objet.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -109,7 +109,7 @@
         <summary>Ajoute un <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objet spécifié <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection.</summary>
         <returns>Cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />.</returns>
         <remarks>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> méthode vous permet d’ajouter <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objets qui représentent les modifications apportées au rapport de tableau croisé dynamique par le biais de code. Cela ajoute à l’instruction UPDATE CUBE qui construit Excel en fonction de cette liste des modifications. Notez que si l’utilisateur modifie les paramètres d’allocation afin que toutes les modifications ont les mêmes paramètres, Excel exécuter plusieurs instructions UPDATE CUBE, un pour chaque groupe de modifications qui ont été apportées alors que les mêmes paramètres ont été appliquées.</para>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> méthode vous permet d’ajouter <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objets qui représentent les modifications apportées au rapport de tableau croisé dynamique par le biais de code. Cela ajoute à l’instruction UPDATE CUBE qui construit Excel en fonction de cette liste des modifications. Notez que si l’utilisateur modifie les paramètres d’allocation afin que toutes les modifications ont les mêmes paramètres, Excel exécuter plusieurs instructions UPDATE CUBE, un pour chaque groupe de modifications qui ont été apportées alors que les mêmes paramètres ont été appliquées.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -199,7 +199,7 @@
         <summary>Obtient un 32 bits <b>entier</b> qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>32 bits <b>entier</b> qui indique l’application dans laquelle cet objet a été créé.</value>
         <remarks>
-          <para>En lecture seule <b>longs</b>.</para>
+          <para>En lecture seule <b>long</b>.</para>
           <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. Le <see cref="P:Microsoft.Office.Interop.Excel.PivotTableChangeList.Creator" /> propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
           <para></para>
         </remarks>

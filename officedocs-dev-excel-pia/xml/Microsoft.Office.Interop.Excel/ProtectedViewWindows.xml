@@ -1,10 +1,10 @@
 <Type Name="ProtectedViewWindows" FullName="Microsoft.Office.Interop.Excel.ProtectedViewWindows">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5f5d6154812eece1e15f8ff475735c633b7bf0bc" />
+    <Meta Name="ms.openlocfilehash" Value="66b22fff8688e9bbf701a61d74932c01a62ad6e6" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578917" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ProtectedViewWindows : System.Collections.IEnumerable" />
@@ -160,7 +160,7 @@
         <summary>Obtient un 32 bits <b>entier</b> qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>32 bits <b>entier</b> qui indique l’application dans laquelle cet objet a été créé.</value>
         <remarks>
-          <para>En lecture seule <b>longs</b>.</para>
+          <para>En lecture seule <b>long</b>.</para>
           <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. Le <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindows.Creator" /> propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
           <para></para>
         </remarks>
@@ -263,7 +263,10 @@
           <b>true</b> pour réparer le classeur afin d’éviter toute altération.</param>
         <summary>Ouvre le classeur spécifié dans une nouvelle fenêtre Mode protégé.</summary>
         <returns>A <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objet.</returns>
-        <remarks>Évitez de <para>à l’aide de mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demander le mot de passe de l’utilisateur, stockez-le dans une variable et ensuite utiliser la variable dans votre code.</para><para></para></remarks>
+        <remarks>
+          <para>Évitez d'utiliser des mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demandez-le à l'utilisateur, stockez-le dans une variable et servez-vous de la variable dans votre code.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

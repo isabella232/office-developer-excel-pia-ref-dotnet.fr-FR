@@ -1,10 +1,10 @@
 <Type Name="PivotCell" FullName="Microsoft.Office.Interop.Excel.PivotCell">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="97d53069436a318096bbfbdc2ce01e7de3cf9166" />
+    <Meta Name="ms.openlocfilehash" Value="d2f870880113d0a92987ae33be86341048714031" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574724" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotCell" />
@@ -32,8 +32,8 @@
     <summary>Cet objet représente une cellule dans un rapport de tableau croisé dynamique.</summary>
     <remarks>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection pour renvoyer un objet <b>PivotCell</b> .</para>
-      <para>Une fois qu’un objet <b>PivotCell</b> est renvoyé, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> propriété pour déterminer quel type de cellule d’une plage spécifique de Salomon</para>
-      <para>Que vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> ou <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> propriété pour déterminer le <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection correspond aux éléments sur l’axe de ligne ou de colonne qui représente le numéro sélectionné.</para>
+      <para>Une fois qu’un objet <b>PivotCell</b> est renvoyé, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> est la propriété pour déterminer quel type de cellule d’une plage spécifique.</para>
+      <para>Vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> ou <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> propriété pour déterminer le <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection correspond aux éléments sur l’axe de ligne ou de colonne qui représente le numéro sélectionné.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -61,8 +61,8 @@
       <Docs>
         <summary>Effectue une opération d’écriture différée sur la cellule spécifiée dans un rapport de tableau croisé dynamique reposant sur une source de données OLAP.</summary>
         <remarks>
-          <para>Cette méthode exécute une instruction UPDATE CUBE pour ajouter uniquement la modification de cette cellule particulière, mais également inclut toutes les modifications précédentes appliquées. Une fois l’exécution de l’instruction de mise à jour un CUBE, une mise à jour du tableau croisé dynamique est exécutée, et une instruction ROLLBACK TRANSACTION est ensuite exécutée.</para>
-          <para>En cours d’exécution le <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" /> méthode d’une cellule dans un rapport de tableau croisé dynamique basé sur une source de données non-OLAP génère une erreur d’exécution.</para>
+          <para>Cette méthode exécute une instruction UPDATE CUBE pour ajouter simplement la modification à cette cellule en particulier, mais inclut également les précédentes modifications appliquées. Une fois l’instruction UPDATE CUBE exécutée, une mise à jour du tableau croisé dynamique, puis une instruction ROLLBACK TRANSACTION sont exécutées.</para>
+          <para>Exécution de la <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" /> méthode d’une cellule dans un rapport de tableau croisé dynamique basé sur une source de données non-OLAP génère une erreur d’exécution.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -121,8 +121,73 @@
         <summary>Indique si une cellule de valeur de tableau croisé dynamique a été modifiée ou recalculée depuis le rapport de tableau croisé dynamique a été créé ou la dernière opération de validation a été effectuée.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.XlCellChangedState" /> objet.</value>
         <remarks>
-          <para>La valeur de la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> propriété est <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> par défaut.</para> Rapports de 
-          <para>de tableau croisé dynamique avec des sources de données non-OLAP, la valeur de cette propriété peut être uniquement le <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> ou <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />. Il est <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour les cellules qui n’ont pas été modifiés et sont <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> pour les cellules qui ont été modifiés. Suppression des modifications lui affecte la valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />.</para><para>Application et enregistrer les modifications s’applique uniquement aux rapports de tableau croisé dynamique avec les sources de données OLAP. Les descriptions suivantes des états possibles de le <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> propriété s’applique uniquement aux tableaux croisés dynamiques dotés de source de données OLAP.</para><list type="bullet"><item><description><see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> -la cellule n’a pas été modifiée ou recalculée (si la cellule contient une formule) depuis le tableau croisé dynamique a été créé, ou depuis le dernier enregistrement ou annuler l’opération de modifications a été effectuée.</description></item><item><description><see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> -la cellule a été modifiée ou recalculée depuis le tableau croisé dynamique a été créé, ou depuis la dernière appliquer les modifications ou enregistrer les modifications de l’opération a été effectuée, mais cette modification n’a pas été appliquée (l’instruction UPDATE CUBE n’a pas été exécutée pour qu’il).</description></item><item><description><see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />- la cellule a été modifiée ou recalculée depuis le tableau croisé dynamique a été créé, ou depuis la dernière appliquer les modifications, enregistrer les modifications, ou ignorer les modifications opération a été effectuée et que la modification a été appliquée (l’instruction UPDATE CUBE a été exécutée pour qu’il).</description></item></list><para>Le tableau suivant décrit comment différentes actions par l’utilisateur affectent le paramétrage de la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> propriété dans un tableau croisé dynamique avec une source de données OLAP.</para><list type="table"><item><term>Tape une valeur ou une formule dans une ou plusieurs cellules.</term><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> pour ces cellules.</description><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> pour ces cellules.</description></item><item><term>Recalcule une ou plusieurs cellules avec une formule, soit manuellement (F9) ou automatiquement par Excel.</term><description>N/a</description><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> pour ces cellules.</description></item><item><term>Enregistre (valide) les modifications.</term><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour tous les modifié cellules sans formule.</description><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> pour tous les modifié les cellules contenant une formule.</description></item><item><term>Rejette toutes les modifications.</term><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour tous les modifié cellules sans formule.</description><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour tous les modifié les cellules contenant une formule.</description></item><item><term>Ignore la modification dans une cellule unique.</term><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour cette cellule uniquement.</description><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour cette cellule uniquement.</description></item><item><term>Efface plusieurs cellules en une seule opération.</term><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour toutes ces cellules.</description><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour toutes ces cellules.</description></item><item><term>Efface une cellule.</term><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour cette cellule uniquement.</description><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour cette cellule uniquement.</description></item><item><term>Effectue une opération d’annulation qui modifie la valeur à une valeur précédemment modifiée, avant que cette valeur soit appliquée.</term><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> pour tous les modifié cellules sans formule.</description><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> pour tous les modifié les cellules contenant une formule.</description></item><item><term>Effectue une opération d’annulation qui modifie la valeur à une valeur précédemment modifiée, une fois que cette valeur soit appliquée.</term><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> pour tous les modifié cellules sans formule.</description><description>Défini sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> pour tous les modifié les cellules contenant une formule.</description></item></list><para></para></remarks>
+          <para>La valeur de la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> propriété est <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> par défaut.</para>
+          <para>Pour les rapports de tableau croisé dynamique avec des sources de données non-OLAP, la valeur de cette propriété peut être uniquement soit <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> ou <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />. Il est <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour les cellules qui n’ont pas été modifiés et sont <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> pour les cellules qui ont été modifiés. Suppression des modifications lui affecte la valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />.</para>
+          <para>L’application et l’enregistrement des modifications s’applique uniquement aux rapports de tableau croisé dynamique avec les sources de données OLAP. Les descriptions suivantes des états possibles de le <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> propriété s’applique uniquement aux tableaux croisés dynamiques dotés de source de données OLAP.</para>
+          <list type="bullet">
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />-la cellule n’a pas été modifiée ou recalculée (si la cellule contient une formule) depuis le tableau croisé dynamique a été créé, ou depuis le dernier enregistrement ou annuler l’opération de modifications a été effectuée.</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />-la cellule a été modifiée ou recalculée depuis le tableau croisé dynamique a été créé, ou depuis la dernière appliquer les modifications ou enregistrer les modifications de l’opération a été effectuée, mais cette modification n’a pas été appliquée (l’instruction UPDATE CUBE n’a pas été exécutée pour qu’il).</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />-la cellule a été modifiée ou recalculée depuis le tableau croisé dynamique a été créé, ou depuis la dernière appliquer les modifications, enregistrer ou annuler l’opération de modification a été effectué et que la modification a été appliquée (l’instruction UPDATE CUBE a été exécutée pour qu’il).</description>
+            </item>
+          </list>
+          <para>Le tableau suivant décrit comment différentes actions par l’utilisateur affectent le paramétrage de la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> propriété dans un tableau croisé dynamique avec une source de données OLAP.</para>
+          <list type="table">
+            <item>
+              <term>Tape une valeur ou une formule dans une ou plusieurs cellules.</term>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> pour ces cellules.</description>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> pour ces cellules.</description>
+            </item>
+            <item>
+              <term>Recalcule une ou plusieurs cellules avec une formule, soit manuellement (F9), soit automatiquement par Excel.</term>
+              <description>N/D</description>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> pour ces cellules.</description>
+            </item>
+            <item>
+              <term>Enregistre (valide) les modifications.</term>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour tous les modifié cellules sans formule.</description>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> pour tous les modifié les cellules contenant une formule.</description>
+            </item>
+            <item>
+              <term>Ignore toutes les modifications.</term>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour tous les modifié cellules sans formule.</description>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour tous les modifié les cellules contenant une formule.</description>
+            </item>
+            <item>
+              <term>Ignore la modification dans une seule cellule.</term>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour cette cellule uniquement.</description>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour cette cellule uniquement.</description>
+            </item>
+            <item>
+              <term>Efface plusieurs cellules en une seule opération.</term>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour toutes ces cellules.</description>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour toutes ces cellules.</description>
+            </item>
+            <item>
+              <term>Efface une cellule.</term>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour cette cellule uniquement.</description>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour cette cellule uniquement.</description>
+            </item>
+            <item>
+              <term>Effectue une opération d’annulation qui modifie la valeur à une valeur précédemment modifiée, avant que cette valeur ne soit appliquée.</term>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> pour tous les modifié cellules sans formule.</description>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> pour tous les modifié les cellules contenant une formule.</description>
+            </item>
+            <item>
+              <term>Effectue une opération d’annulation qui modifie la valeur à une valeur précédemment modifiée, après que cette valeur soit appliquée.</term>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> pour tous les modifié cellules sans formule.</description>
+              <description>La valeur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> pour tous les modifié les cellules contenant une formule.</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnItems">
@@ -179,8 +244,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomSubtotalFunction">
@@ -236,7 +303,7 @@
             <b>xlStDevP</b>
           </para>
           <para>
-            <b>xlSum </b>
+            <b>xlSum</b>
           </para>
           <para>
             <b>xlUnknown</b>
@@ -247,7 +314,7 @@
           <para>
             <b>xlVarP</b>
           </para>
-          <para>la propriété <b>CustomSubtotalFunction</b> renvoie une erreur si le type d’objet <b>PivotCell</b> n’est pas un sous-total personnalisé. Cette propriété s’applique uniquement aux données sources non-OLAP.</para>
+          <para>La propriété <b>CustomSubtotalFunction</b> renvoie une erreur si le type d'objet <b>PivotCell</b> n'est pas un sous-total personnalisé. Cette propriété s'applique uniquement à des sources de données autres que OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -311,7 +378,7 @@
         <remarks>
           <para>En lecture seule.</para>
           <para>Chaque fois qu’une cellule dans la zone de valeurs d’un rapport de tableau croisé dynamique est modifiée, la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> propriété doit contenir la valeur dernière extraction de la source de données avant la modification a eu lieu. Pour les cellules de la valeur de rapport tableau croisé dynamique qui n’ont pas été modifiés ou dont la valeur de source de données n’a pas été explicitement récupérée, cette propriété renvoie une référence null (Nothing dans Visual Basic). Pour les rapports de tableau croisé dynamique avec des sources de données OLAP, la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> propriété est récupérée à partir d’une connexion séparée pour garantir qu’elle ne contient pas la valeur de toutes les opérations d’écriture différée que l’utilisateur peut avoir apportées.</para>
-          <para>Lecture la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> propriété pour les cellules qui se trouvent en dehors de la zone de valeurs d’un rapport de tableau croisé dynamique génère une erreur d’exécution.</para>
+          <para>Lire la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> propriété pour les cellules qui se trouvent en dehors de la zone de valeurs d’un rapport de tableau croisé dynamique génère une erreur d’exécution.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -402,7 +469,7 @@
         <value>Un tuple qui fournit les coordonnées MDX complètes de la cellule de la valeur spécifiée dans le tableau croisé dynamique avec une source de données OLAP.</value>
         <remarks>
           <para>En lecture seule.</para>
-          <para>Les dimensions sont retournés dans le tuple par le <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" /> propriété inclure des coordonnées de ligne et de colonne ainsi que les coordonnées de filtre de rapport. Pour les cellules à l’extérieur de la zone des valeurs de tableau croisé dynamique et en dehors d’un tableau croisé dynamique, l’accès à cette propriété génère une erreur d’exécution. Pour les tableaux croisés dynamiques avec une sélection de plusieurs élément dans un champ de filtre de rapport, l’accès à cette propriété génère également une erreur d’exécution.</para>
+          <para>Les dimensions sont retournés dans le tuple par le <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" /> propriété inclure des coordonnées de ligne et de colonne ainsi que les coordonnées de filtre de rapport. Pour les cellules à l’extérieur de la zone des valeurs de tableau croisé dynamique et en dehors d’un tableau croisé dynamique, l’accès à cette propriété génère une erreur d’exécution. Pour les tableaux croisés dynamiques avec une sélection de plusieurs élément dans un champ de filtre de rapport, l’accès à cette propriété également génère une erreur d’exécution.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -464,25 +531,25 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlPivotCellType" />peut être une des constantes de <b>XlPivotCellType</b> suivantes :</para>
           <para>
-            <b>xlPivotCellBlankCell</b> cellule vide structurelle dans le tableau croisé dynamique.</para>
+            <b>xlPivotCellBlankCell</b> Cellule vide structurelle dans le tableau croisé dynamique.</para>
           <para>
-            <b>xlPivotCellCustomSubtotal</b> une cellule dans la zone de ligne ou de colonne correspondant à un sous-total personnalisé.</para>
-          <para>étiquette de champ de données 
-            <b>xlPivotCellDataField</b> A (pas le bouton <b>données</b> ).</para>
+            <b>xlPivotCellCustomSubtotal</b> Une cellule dans la zone de ligne ou de colonne correspondant à un sous-total personnalisé.</para>
           <para>
-            <b>xlPivotCellDataPivotField</b> bouton <b>données</b> .</para>
+            <b>xlPivotCellDataField</b> Une étiquette de champ de données (pas le bouton <b>données</b> ).</para>
           <para>
-            <b>xlPivotCellGrandTotal</b> cellule contenue dans une zone de ligne ou de colonne qui est un total général.</para>
+            <b>xlPivotCellDataPivotField</b> Le bouton <b>données</b> .</para>
           <para>
-            <b>xlPivotCellPageFieldItem</b> cellule qui indique l’élément sélectionné d’un champ de Page.</para>
+            <b>xlPivotCellGrandTotal</b> Une cellule dans une zone de ligne ou de colonne qui est un total général.</para>
           <para>
-            <b>xlPivotCellPivotField</b> bouton de champ (pas le bouton <b>données</b> ).</para>
+            <b>xlPivotCellPageFieldItem</b> Cellule qui indique l’élément sélectionné d’un champ de Page.</para>
           <para>
-            <b>xlPivotCellPivotItem</b> une cellule dans la zone de ligne ou de colonne qui n’est pas une sous-total, général total, personnalisée sous-total, ou une ligne vide.</para>
+            <b>xlPivotCellPivotField</b> Bouton de champ (pas le bouton <b>données</b> ).</para>
           <para>
-            <b>xlPivotCellSubtotal</b> cellule contenue dans la zone de ligne ou de colonne qui est un sous-total.</para>
+            <b>xlPivotCellPivotItem</b> Une cellule dans la zone de ligne ou de colonne qui n’est pas une sous-total, général total, personnalisée sous-total, ou une ligne vide.</para>
           <para>
-            <b>xlPivotCellValue n’importe</b> quelle cellule dans la zone de données (sauf une ligne vide).</para>
+            <b>xlPivotCellSubtotal</b> Une cellule dans la zone de ligne ou de colonne qui est un sous-total.</para>
+          <para>
+            <b>xlPivotCellValue n’importe</b> N’importe quelle cellule dans la zone de données (sauf une ligne vide).</para>
           <para></para>
         </remarks>
       </Docs>

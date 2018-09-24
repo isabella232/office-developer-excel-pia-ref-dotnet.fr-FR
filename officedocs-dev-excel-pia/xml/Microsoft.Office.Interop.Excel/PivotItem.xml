@@ -1,10 +1,10 @@
 <Type Name="PivotItem" FullName="Microsoft.Office.Interop.Excel.PivotItem">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e442965f9ffbd148054a2f84e29e9a51ecca6941" />
+    <Meta Name="ms.openlocfilehash" Value="fb2cfd5e547820789be4ff24b8428ca8e43d853e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578980" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotItem" />
@@ -162,7 +162,7 @@
         <summary>Renvoie un objet qui représente soit un seul élément de tableau croisé dynamique (un <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> objet), soit une collection de tous les éléments (un <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> object) qui sont des enfants de groupe dans le champ spécifié ou des enfants de l’élément spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
+          <para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -192,7 +192,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataRange">
@@ -221,14 +224,22 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété renvoie la <b>DataRange,</b> propriété suivantes, selon l’objet :</para>
+          <para>
+            <b>DataRange,</b> de la propriété renvoie suivantes, selon l’objet :</para>
           <list type="table">
             <item>
-              <term>champ de données</term>de
-              <description>données contenaient dans le champ</description></item>de
-            <item><term>ligne, colonne ou champ de page</term>des
-              <description>éléments dans le champ</description></item><item>,
-              <term>élément</term><description>Données qualifiées par l’élément</description></item></list>
+              <term>Champ de données</term>
+              <description>Données contenues dans le champ</description>
+            </item>
+            <item>
+              <term>Ligne, colonne, ou champ de page</term>
+              <description>Éléments du champ</description>
+            </item>
+            <item>
+              <term>Élément</term>
+              <description>Données qualifiées par l'élément</description>
+            </item>
+          </list>
           <para></para>
         </remarks>
       </Docs>
@@ -291,8 +302,8 @@
           <b>True</b> si l’indicateur du champ de tableau croisé dynamique ou de l’élément de tableau croisé dynamique spécifié présente un état développé (ou visible). Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous pouvez utiliser cette propriété uniquement pour les sources de données OLAP.</para>
-          <para>Vous ne pouvez pas définir cette propriété si le champ ou l’élément est masqué.</para>
+          <para>Vous ne pouvez utiliser cette propriété que pour les sources de données OLAP.</para>
+          <para>Vous ne pouvez pas définir cette propriété si le champ ou l'élément est masqué.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -322,7 +333,10 @@
       <Docs>
         <param name="Field">To be added.</param>
         <summary>Le<see cref="M:Microsoft.Office.Interop.Excel.PivotItem.DrillTo(System.String)" /> méthode prend en charge l’extraction d’un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> d’un <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />.</summary>
-        <remarks>Sources de données <para>pour OLAP, le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> vers lequel extraire doit se trouver dans la même hiérarchie que le <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> extrait ou, si plusieurs hiérarchies d’attributs sont placés en regard de l’autre des lignes ou colonnes, la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> vers lequel extraire doit être une de l’attribut hiérarchies en regard de l’autre ; Aucune hiérarchie d’utilisateur ne peut être placés entre le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> de la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> extrait et <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> vers lequel extraire.  Si ces conditions ne sont pas remplies, une erreur d’exécution est renvoyée.</para><para></para></remarks>
+        <remarks>
+          <para>Sources de données OLAP, le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> vers lequel extraire doit se trouver dans la même hiérarchie que le <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> extrait ou, si plusieurs hiérarchies d’attributs sont placés en regard de l’autre des lignes ou colonnes, la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> vers lequel extraire doit être une de l’attribut hiérarchies en regard de l’autre ; Aucune hiérarchie d’utilisateur ne peut être placés entre le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> de la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> extrait et <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> vers lequel extraire.  Si ces conditions ne sont pas remplies, une erreur d’exécution est renvoyée.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Formula">
@@ -354,11 +368,11 @@
         <summary>Cette propriété renvoie ou définit la formule de l'objet dans une notation de style A1 et dans la langue de la macro. En lecture/écriture, <b>chaîne</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
-          <para>Si la cellule contient une constante, cette propriété renvoie la constante. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule sous forme de chaîne dans le même format qui s’affiche dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Excel vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, Microsoft Excel lui affecte le format pour le format de date courte par défaut.</para>
-          <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule pour un tableau Visual Basic des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau Visual Basic.</para>
-          <para>En définissant la formule pour une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
+          <para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
+          <para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule en tant que chaîne dans le même format que celui qui doit s'afficher dans la barre de formule (y compris le signe égal).</para>
+          <para>Si vous affectez une date à la formule d'une cellule, Microsoft Excel vérifie si la cellule est déjà dotée de l'un des formats numériques ou de date. Si tel n'est pas le cas, Microsoft Excel lui affecte le format de date numérique par défaut.</para>
+          <para>S'il s'agit d'une plage à une ou deux dimensions, vous pouvez désigner la formule comme un tableau Visual Basic possédant les mêmes dimensions. De même, vous pouvez inclure la formule dans un tableau Visual Basic.</para>
+          <para>Le fait de définir la formule pour une plage comprenant plusieurs cellules insère cette formule dans la totalité des cellules de la plage.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -390,7 +404,7 @@
           <b>La valeur true</b> si le champ de tableau croisé dynamique ou tableau croisé dynamique est un champ calculé ou un élément. Type <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour les sources de données, cette propriété renvoie toujours <b>False</b>.</para>
+          <para>Dans le cas des sources de données OLAP, cette propriété renvoie toujours la valeur <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -508,7 +522,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> object qui représente l’élément de tableau croisé dynamique parent de l’objet parent <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet (le champ doit être groupé de sorte qu’il ait un parent). En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
+          <para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -540,7 +554,7 @@
           <b>True</b> si l’élément spécifié est visible parce qu’un de ses parents affiche les détails. <b>False</b> si l’élément spécifié n’est pas visible car un de ses parents masque les détails. Cette propriété n’est disponible que si l’élément est groupé. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
+          <para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -605,7 +619,7 @@
         <summary>Renvoie le nombre d’enregistrements dans le cache de tableau croisé dynamique ou le nombre d’enregistrements du cache contenant l’élément spécifié. Valeur <b>Integer</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété reflète l’état transitoire du cache au moment où elle est interrogée. Le cache peut changer entre les requêtes.</para>
+          <para>Cette propriété reflète l'état transitoire du cache au moment où il fait l'objet de la requête. Le cache peut changer d'une requête à l'autre.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -641,23 +655,23 @@
         <value>To be added.</value>
         <remarks>
           <para>La plage spécifiée doit être une seule colonne de synthèse ou une ligne dans un plan. Cette propriété a la valeur <b>true</b> si l’élément affiche les détails.</para>
-          <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
-          <para>Si la plage spécifiée n’est pas dans un rapport de tableau croisé dynamique, les instructions suivantes sont vraies :</para>
+          <para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
+          <para>Si la plage spécifiée ne se trouve pas dans un rapport de tableau croisé dynamique, les remarques suivantes s'appliquent :</para>
           <list type="bullet">
             <item>
-              <description>La plage doit être dans une seule ligne de synthèse ou une colonne.</description>
+              <description>La plage doit être contenue dans une seule ligne ou colonne de synthèse.</description>
             </item>
             <item>
-              <description>Cette propriété renvoie la <b>valeur False</b> si aucun des enfants de la ligne ou de colonne sont masquées.</description>
+              <description>Cette propriété renvoie la valeur <b>False</b> si aucun des enfants de la ligne ou de la colonne n'est masqué.</description>
             </item>
             <item>
-              <description>La définition de cette propriété sur <b>True</b> équivaut à afficher tous les enfants de la ligne de synthèse ou de la colonne.</description>
+              <description>Affecter la valeur <b>True</b> à cette propriété équivaut à afficher tous les enfants de la ligne ou colonne de synthèse.</description>
             </item>
             <item>
-              <description>Définir cette propriété sur <b>False</b> équivaut à masquer tous les enfants de la ligne de synthèse ou de la colonne.</description>
+              <description>Affecter la valeur <b>False</b> à cette propriété équivaut à masquer tous les enfants de la ligne ou colonne de synthèse.</description>
             </item>
           </list>
-          <para>Si la plage spécifiée se trouve dans un rapport de tableau croisé dynamique, il est possible de définir cette propriété pour plusieurs cellules à la fois si la plage est contiguë. Cette propriété peut être renvoyée uniquement si la plage est une cellule unique.</para>
+          <para>Si la plage spécifiée se trouve dans un rapport de tableau croisé dynamique, il est possible d'affecter cette propriété à plusieurs cellules à la fois si la plage est contiguë. Cette propriété peut être renvoyée seulement si la plage est une cellule seule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -716,7 +730,7 @@
         <summary>Renvoie une <b>chaîne</b> qui représente le nom de la source de l’élément de tableau croisé dynamique dans les paramètres de format standard anglais (États-Unis). En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété est utilisée lorsqu’un élément a une version localisée et que la valeur de sa propriété <b>SourceNameStandard</b> diffère de la <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.SourceName" /> propriété valeur, comme avec la mise en forme date.</para>
+          <para>Cette propriété est utilisée lorsqu’un élément a une version localisée et que la valeur de sa propriété <b>SourceNameStandard</b> diffère de la <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.SourceName" /> propriété valeur, comme avec un format de date.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -750,7 +764,7 @@
         <summary>Renvoie ou définit une valeur de type <b>String</b> qui spécifie des formules avec une mise en forme Anglais standard (États-Unis). En lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>StandardFormula</b> affecte principalement les noms d’éléments avec date ou numéro de la mise en forme. Il fournit un moyen pour spécifier ou demander une formule pour un élément calculé donné.</para>
+          <para>La propriété <b>StandardFormula</b> affecte principalement les noms d'éléments avec un format de date ou de nombre. Elle offre un moyen de spécifier ou de demander une formule pour un élément calculé donné.</para>
           <para>La propriété <b>StandardFormula</b> est « internationale » tandis que la <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Formula" /> propriété n’est pas.</para>
           <para></para>
         </remarks>
@@ -816,8 +830,8 @@
         <summary>Cette propriété détermine si l'objet est visible. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>Visible</b> d’un élément de tableau croisé dynamique a la <b>valeur True</b> si l’élément est actuellement visible dans le tableau.</para>
-          <para>Si vous définissez la propriété <b>Visible</b> d’un nom à la <b>valeur False</b>, le nom n’apparaît pas dans la boîte de dialogue Définir un nom.</para>
+          <para>La propriété <b>Visible</b> d'un élément de tableau croisé dynamique a la valeur <b>True</b> si cet élément apparaît actuellement dans le tableau.</para>
+          <para>Si vous affectez la valeur <b>False</b> à la propriété <b>Visible</b>, le nom n'apparaît pas dans la boîte de dialogue Définir un nom.</para>
           <para></para>
         </remarks>
       </Docs>

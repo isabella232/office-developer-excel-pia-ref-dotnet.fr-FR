@@ -1,10 +1,10 @@
 <Type Name="ControlFormat" FullName="Microsoft.Office.Interop.Excel.ControlFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="482ee10d764810f337717c2623a0421ee3669708" />
+    <Meta Name="ms.openlocfilehash" Value="d88e80486b6e3c8db83afbc148105146372d3b01" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578280" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ControlFormat" />
@@ -102,7 +102,7 @@
         <param name="Index">Facultatif <b>Object</b>. La position de la nouvelle entrée. Si la liste a moins d’entrées que l’index spécifié, les éléments vides de la fin de la liste sont ajoutés à la position spécifiée. Si cet argument est omis, l’élément est ajouté à la liste existante.</param>
         <summary>Cette méthode ajoute un élément à une zone de liste ou à une zone de liste modifiable.</summary>
         <remarks>
-          <para>à l’aide de cette méthode supprime toute plage spécifiée par la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> propriété.</para>
+          <para>Cette méthode supprime toute plage spécifiée par la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> propriété.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -161,8 +161,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownLines">
@@ -289,7 +291,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si vous placez une valeur dans la cellule, le contrôle prend cette valeur. De même, si vous modifiez la valeur du contrôle, cette valeur est également placée dans la cellule.</para>
-          <para>Vous ne pouvez pas utiliser cette propriété avec des zones de liste à sélection multiple.</para>
+          <para>Il est impossible d'utiliser cette propriété avec des zones de liste à sélection multiple.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -389,8 +391,8 @@
         <summary>Cette propriété renvoie ou définit la plage de feuille de calcul utilisée pour remplir la zone de liste spécifié.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définir cette propriété supprime toute liste existant dans la zone de liste.</para>
-          <para>Microsoft Excel lit le contenu de chaque cellule de la plage et insère les valeurs de cellule dans la zone de liste. La liste de suivi des modifications dans les cellules de la plage.</para>
+          <para>Définir cette propriété supprime toute liste existante dans la zone de liste.</para>
+          <para>Microsoft Excel lit le contenu de chaque cellule de la plage et insère les valeurs des cellules dans la zone de liste. La liste assure le suivi des modifications effectuées dans les cellules de la plage.</para>
           <para>Si la liste dans la zone de liste a été créée avec le <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> méthode, cette propriété renvoie une chaîne vide (« »).</para>
           <para></para>
         </remarks>
@@ -556,9 +558,13 @@
         <summary>Cette propriété renvoie ou définit le mode de sélection de la zone de liste spécifié. Peut être une des constantes suivantes : <b>xlNone</b>, <b>xlSimple</b>ou <b>xlExtended</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Unique (<b>xlNone</b>) permet de sélectionner un seul élément à la fois à sélectionner. En cliquant sur la souris ou en appuyant sur la barre d’espace annule la sélection et sélectionner le dernier élément cliqué.</para> Multiselect 
-          <para>simple (<b>xlSimple</b>) fait basculer la sélection sur un élément dans la liste vous cliquez dessus avec la souris ou appuyez sur espace lorsque le focus est sur l’élément. Ce mode est approprié pour les listes de choix, qui sont souvent plusieurs éléments sélectionnés.</para> Multiple 
-          <para>étendue (<b>xlExtended</b>) généralement se comporte comme une zone de liste à sélection unique. Lorsque vous cliquez sur un élément, vous annulez toutes les autres sélections. Quand vous maintenez la touche MAJ ENFONCÉE tout en cliquant sur la souris ou en appuyant sur une touche de direction, vous sélectionnez éléments dans l’ordre dans l’élément actuel. Lorsque vous maintenez la touche CTRL ENFONCÉE tout en cliquant sur la souris, vous ajoutez éléments uniques à la liste. Ce mode est approprié lorsque plusieurs éléments sont autorisés, mais pas souvent utilisés.</para><para>Que vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" /> ou <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" /> propriété pour renvoyer et définir l’élément sélectionné dans une zone de liste à sélection unique.</para><para>Vous ne pouvez pas lier des zones de liste à sélection multiple à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" /> propriété.</para><para></para></remarks>
+          <para>La sélection unique (<b>xlNone</b>) ne permet de sélectionner qu'un seul élément à la fois. Appuyer sur Espace ou cliquer avec la souris sur un autre élément permet d'annuler la sélection précédente et de sélectionner le dernier élément cliqué.</para>
+          <para>Multiple simple (<b>xlSimple</b>) fait basculer la sélection sur un élément dans la liste vous cliquez dessus avec la souris ou appuyez sur espace lorsque le focus est sur l’élément. Ce mode est approprié pour les listes de choix, qui sont souvent plusieurs éléments sélectionnés.</para>
+          <para>Étendue multiple (<b>xlExtended</b>) généralement se comporte comme une zone de liste à sélection unique. Lorsque vous cliquez sur un élément, vous annulez toutes les autres sélections. Quand vous maintenez la touche MAJ ENFONCÉE tout en cliquant sur la souris ou en appuyant sur une touche de direction, vous sélectionnez éléments dans l’ordre dans l’élément actuel. Lorsque vous maintenez la touche CTRL ENFONCÉE tout en cliquant sur la souris, vous ajoutez éléments uniques à la liste. Ce mode est approprié lorsque plusieurs éléments sont autorisés, mais pas souvent utilisés.</para>
+          <para>Vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" /> ou <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" /> propriété pour renvoyer et définir l’élément sélectionné dans une zone de liste à sélection unique.</para>
+          <para>Vous ne pouvez pas lier des zones de liste à sélection multiple à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" /> propriété.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -674,8 +680,8 @@
         <param name="Count">Facultatif <b>Object</b>. Le nombre d’éléments à supprimer en commençant par l’élément <paramref name="Index" />. Si cet argument est omis, un élément est supprimé. Si <paramref name="Index" />  +  <paramref name="Count" /> dépasse le nombre d’éléments dans la liste, tous les éléments de <paramref name="Index" /> par le biais de la fin de la liste sont supprimés sans erreur.</param>
         <summary>Supprime un ou plusieurs éléments d’une zone de liste ou d’une zone de liste modifiable.</summary>
         <remarks>
-          <para>Si l’objet spécifié possède sa plage de remplissage, cette méthode échoue.</para>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> méthode pour supprimer toutes les entrées d’une zone de liste Microsoft Excel ou d’une zone de liste déroulante.</para>
+          <para>Si l'objet spécifié possède sa plage de remplissage, cette méthode échoue.</para>
+          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> méthode pour supprimer toutes les entrées d’une zone de liste déroulante ou de zone de liste Microsoft Excel.</para>
           <para></para>
         </remarks>
       </Docs>

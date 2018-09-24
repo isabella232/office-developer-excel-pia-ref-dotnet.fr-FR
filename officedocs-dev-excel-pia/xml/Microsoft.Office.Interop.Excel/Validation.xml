@@ -1,10 +1,10 @@
 <Type Name="Validation" FullName="Microsoft.Office.Interop.Excel.Validation">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="083a06403ed93601b1e670cd7b0f4d2f6291f627" />
+    <Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575802" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Validation" />
@@ -77,26 +77,26 @@
                 <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" /> est obligatoire ; <paramref name="Formula2" /> est ignorée. <paramref name="Formula1" /> doit contenir une expression qui renvoie <b>True</b> lorsqu’elle est valide et <b>False</b> lors de la saisie de données n’est pas valide.</description>
+                <paramref name="Formula1" />est obligatoire ; <paramref name="Formula2" /> est ignorée. <paramref name="Formula1" />doit contenir une expression qui renvoie <b>True</b> lorsqu’elle est valide et <b>False</b> lors de la saisie de données n’est pas valide.</description>
             </item>
             <item>
               <term>
                 <b>xlInputOnly</b>
               </term>
               <description>
-                <paramref name="AlertStyle" />, <paramref name="Formula1" />, ou <paramref name="Formula2" /> servent.</description>
+                <paramref name="AlertStyle" />, <paramref name="Formula1" />, ou <paramref name="Formula2" /> sont utilisés.</description>
             </item>
             <item>
               <term>
                 <b>xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" /> est obligatoire ; <paramref name="Formula2" /> est ignorée. <paramref name="Formula1" /> doit contenir une référence de feuille de calcul à cette liste ou une liste de valeurs délimitées par des virgules.</description>
+                <paramref name="Formula1" />est obligatoire ; <paramref name="Formula2" /> est ignorée. <paramref name="Formula1" />doit contenir une liste de valeurs délimitées par des virgules ou une référence de feuille de calcul à cette liste.</description>
             </item>
             <item>
               <term>
-                <b>xlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>ou <b>xlValidateTime</b></term>
-              <description>une des deux <paramref name="Formula1" /> ou <paramref name="Formula2" /> doit être spécifié, ou les deux peut être spécifié.</description>
+                <b>XlValidateWholeNumbe</b>r, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, ou <b>xlValidateTime</b></term>
+              <description>Peut être <paramref name="Formula1" /> ou <paramref name="Formula2" /> doit être spécifié, ou les deux mai être spécifié.</description>
             </item>
           </list>
           <para></para>
@@ -187,7 +187,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -331,7 +334,7 @@
         <summary>Renvoie la valeur ou une expression associée à la seconde partie d’un format conditionnel. Valeur <b>String</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété est utilisée uniquement si format conditionnel de validation de données <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> propriété est <b>xlBetween</b> ou <b>xlNotBetween</b>. Il peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</para>
+          <para>Cette propriété est utilisée uniquement lors de format conditionnel de validation de données <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> propriété est <b>xlBetween</b> ou <b>xlNotBetween</b>. Il peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -399,7 +402,7 @@
         <summary>Cette propriété renvoie ou définit la description des règles de saisie japonaises. Peut être une de le <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> constantes. Type de données <b>Integer</b> en lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Notez que cette propriété peut être définie uniquement lorsque la langue japonaise a été installée et sélectionnée.</para>
+          <para>Notez que cette propriété ne peut être définie que lorsque la langue japonaise a été installée et sélectionnée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -434,7 +437,7 @@
           <b>True</b> si la validation de données affiche une liste déroulante qui contient les valeurs autorisées. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété est ignorée si le type de validation n’est pas <b>xlValidateList</b>.</para>
+          <para>Cette propriété est ignorée si le type de validation n'est pas <b>xlValidateList</b>.</para>
           <para>Utiliser le <paramref name="Minimum" /> argument de la <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> objet pour spécifier la plage qui contient des données valides.</para>
           <para></para>
         </remarks>
@@ -549,20 +552,20 @@
                 <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" /> est obligatoire ; <paramref name="Formula2" /> est ignorée. <paramref name="Formula1" /> doit contenir une expression qui renvoie <b>True</b> lorsqu’elle est valide et <b>False</b> lors de la saisie de données n’est pas valide.</description>
+                <paramref name="Formula1" />est obligatoire ; <paramref name="Formula2" /> est ignorée. <paramref name="Formula1" />doit contenir une expression qui renvoie <b>True</b> lorsqu’elle est valide et <b>False</b> lors de la saisie de données n’est pas valide.</description>
             </item>
             <item>
               <term>
                 <b>xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" /> est obligatoire ; <paramref name="Formula2" /> est ignorée. <paramref name="Formula1" /> doit contenir une référence de feuille de calcul à la liste ou une liste de valeurs délimitées par des virgules.</description>
+                <paramref name="Formula1" />est obligatoire ; <paramref name="Formula2" /> est ignorée. <paramref name="Formula1" />doit contenir une liste de valeurs délimitées par des virgules ou une référence de feuille de calcul à la liste.</description>
             </item>
             <item>
               <term>
-                <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b>ou <b>xlValidateWholeNumber</b></term>
+                <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b> ou <b>xlValidateWholeNumber</b></term>
               <description>
-                <paramref name="Formula1" /> ou <paramref name="Formula2" />, ou les deux, doit être spécifié.</description>
+                <paramref name="Formula1" />ou <paramref name="Formula2" />, ou les deux, doit être spécifié.</description>
             </item>
           </list>
           <para></para>

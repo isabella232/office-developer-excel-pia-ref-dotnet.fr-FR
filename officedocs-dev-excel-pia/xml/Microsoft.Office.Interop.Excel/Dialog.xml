@@ -1,10 +1,10 @@
 <Type Name="Dialog" FullName="Microsoft.Office.Interop.Excel.Dialog">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="683b59b8e165135797b6775618abd9a9ace43d44" />
+    <Meta Name="ms.openlocfilehash" Value="274e93847efbe2121de825e75c0a66505c3899d3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582865" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Dialog" />
@@ -32,7 +32,7 @@
     <summary>Cet objet représente une boîte de dialogue Microsoft Excel intégrée.</summary>
     <remarks>
       <para>L’objet <b>Dialog</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> collection. La collection <b>Dialogs</b> contient toutes les boîtes de dialogue intégrées dans Microsoft Excel. Vous ne pouvez pas créer une boîte de dialogue intégrée ou ajoutez une à la collection. La chose utile seulement vous pouvez faire avec un objet <b>Dialog</b> est l’utiliser avec la <see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour afficher la boîte de dialogue correspondante.</para>
-      <para>Utilisation <b>des boîtes de dialogue</b>(<paramref name="index" />), où <paramref name="index" /> est une constante intégrée identifiant la boîte de dialogue, pour renvoyer un seul objet <b>Dialog</b> .</para>
+      <para>Utiliser <b>les boîtes de dialogue</b>(<paramref name="index" />), où <paramref name="index" /> est une constante intégrée identifiant la boîte de dialogue, pour renvoyer un seul objet <b>Dialog</b> .</para>
       <para>Microsoft Excel contient des constantes intégrées pour la plupart des boîtes de dialogue intégrée. Chaque constante est constituée du préfixe « xlDialog » suivi du nom de la boîte de dialogue. Par exemple, la constante de la boîte de dialogue affecter un nom est <b>xlDialogApplyNames</b>, et la constante de la boîte de dialogue Chercher est <b>xlDialogFindFile</b>. Ces constantes sont membres de le <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> type énuméré.</para>
       <para></para>
     </remarks>
@@ -92,8 +92,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -209,7 +211,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Pour les boîtes de dialogue prédéfinies, cette méthode renvoie <b>la valeur True</b> si l’utilisateur clique sur OK, ou elle renvoie la <b>valeur False</b> si l’utilisateur clique sur Annuler.</para>
-          <para>Vous pouvez utiliser une boîte de dialogue pour modifier de nombreuses propriétés en même temps. Par exemple, vous pouvez utiliser la boîte de dialogue Format de cellule pour modifier toutes les propriétés de le <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objet.</para>
+          <para>Vous pouvez utiliser une boîte de dialogue pour modifier les propriétés de nombreux en même temps. Par exemple, vous pouvez utiliser la boîte de dialogue Format de cellule pour modifier toutes les propriétés de le <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objet.</para>
           <para>Pour certaines boîtes de dialogue prédéfinies (la boîte de dialogue Ouvrir, par exemple), vous pouvez définir les valeurs initiales avec arg1, arg2,..., arg30. Pour plus d’informations sur les boîtes de dialogue prédéfinies, voir la <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> collection.</para>
           <para></para>
         </remarks>

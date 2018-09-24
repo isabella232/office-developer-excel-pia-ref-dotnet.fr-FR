@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575046" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Workbook" />
@@ -331,54 +331,325 @@
         <summary>Obtient ou définit si certaines fonctions de feuille de calcul utilisent les algorithmes de précision le plus récent pour calculer leurs résultats.</summary>
         <value>Spécifie la version d’algorithmes à utiliser pour certaines fonctions de feuille de calcul.</value>
         <remarks>
-          <para>En lecture/écriture</para>
+          <para>En lecture-écriture.</para>
           <para>Par défaut, certaines fonctions de feuille de calcul à partir de Microsoft Office Excel 2007 et versions antérieures de Microsoft Excel utilisent les nouveaux algorithmes qui augmentent leur exactitude. Toutefois, dans certains cas, les nouveaux algorithmes de diminuent les performances de ces fonctions par rapport à leurs performances dans Microsoft Office Excel 2007 et versions antérieures d’Excel. Pour spécifier que ces fonctions de feuille de calcul utilisent les algorithmes plus anciens pour augmenter les performances, définissez la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propriété 1. Le tableau suivant décrit les paramètres possibles pour le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propriété.</para>
           <list type="table">
             <item>
-              <term>0</term>pour
-              <description>utiliser les algorithmes plus récents et les plus précis (par défaut)</description></item>
+              <term>0</term>
+              <description>Utiliser les algorithmes plus précis les plus récents (par défaut)</description>
+            </item>
             <item>
               <term>1</term>
-              <description>utiliser Microsoft Office Excel 2007 ou les algorithmes de version antérieures</description>
+              <description>Utilisez les algorithmes de version antérieures ou de Microsoft Office Excel 2007</description>
             </item>
             <item>
               <term>2</term>
-              <description>algorithmes d’utiliser Microsoft Excel 2010</description>
+              <description>Utiliser les algorithmes de Microsoft Excel 2010</description>
             </item>
           </list>
           <para>
-            <b>Attention</b>: paramètre le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propriété une valeur autre que 0, 1 ou 2 entraînera un comportement indéfini.</para> Table 
-          <para>suit résume les fonctions affectées en définissant le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propriété 1. Les fonctions qui sont répertoriées dans la colonne « Fonctions non affectées » utiliseront toujours les algorithmes de précision le plus récent ou n’ont pas été modifiées dans Excel 2010. Pour les noms de fonction qui contiennent un point (.) dans leurs noms, pour déterminer le nom de la fonction correspondante implémenté dans VBA en tant que méthode de le <see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" /> objet, substituez le caractère de soulignement (_) au point. Par exemple, la méthode VBA qui correspond à la version bêta. Fonction de distribution est la <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" /> méthode.</para><list type="table"><item><term>BETADIST</term><description>agrégation</description></item><item><term>Beta</term><description>bêta. Distribution</description></item><item><term>BINOMDIST</term><description>bêta. INV</description></item><item><term>CHIDIST</term><description>BINOM. Distribution</description></item><item><term>CHIINV</term><description>BINOM. INV</description></item><item><term>CHITEST</term><description>CEILING</description></item><item><term>confiance</term><description>plafond. PRÉCISE</description></item><item><term>CRITBINOM</term><description>CHISQ. Distribution</description></item><item><term>CUMIPMT</term><description>CHISQ. DISTRIBUTION RT</description></item><item><term>CUMPRINC</term><description>CHISQ. INV</description></item><item><term>ERF</term><description>CHISQ. FACTURE RT</description></item><item><term>ERFC</term><description>CHISQ. TEST</description></item><item><term>EXPONDIST</term><description>confiance. NORME</description></item><item><term>FDIST</term><description>confiance. T</description></item><item><term>FINV</term><description>COVAR</description></item><item><term>FTEST</term><description>COVARIANCE. P</description></item><item><term>GAMMADIST</term><description>COVARIANCE. S</description></item><item><term>GAMMALN</term><description>ERF. PRÉCISE</description></item><item><term>GAMMINV</term><description>ERFC. PRÉCISE</description></item><item><term>méthode HYPGEOMDIST</term><description>EXPON. Distribution</description></item><item><term>IPMT</term><description>loi</description></item><item><term>IRR</term><description>loi. RT</description></item><item><term>LOGINV</term><description>F.INV</description></item><item><term>LOGNORMDIST</term><description>F.INV. RT</description></item><item><term>NEGBINOMDIST</term><description>F.TEST</description></item><item><term>NORMDIST</term><description>plancher</description></item><item><term>NORMINV</term><description>FLOOR. PRÉCISE</description></item><item><term>NORMSDIST</term><description>GAMMA. Distribution</description></item><item><term>NORMSINV</term><description>GAMMA. INV</description></item><item><term>PMT</term><description>GAMMALN. PRÉCISE</description></item><item><term>POISSON</term><description>HYPGEOM. Distribution</description></item><item><term>PPMT</term><description>ISO. PLAFOND</description></item><item><term>STDEV</term><description>LOGNORM. Distribution</description></item><item><term>STDEVP</term><description>LOGNORM. INV</description></item><item><term>TDIST</term><description>MOD</description></item><item><term>TINV</term><description>MODE</description></item><item><term>fonction TTEST</term><description>MODE. Plusieurs</description></item><item><term>VAR</term><description>MODE. SNGL</description></item><item><term>VARA</term><description>NEGBINOM. Distribution</description></item><item><term>VARP</term><description>Nb. INTL</description></item><item><term>VARPA</term><description>normales. Distribution</description></item><item><term>WEIBULL</term><description>normales. INV</description></item><item><term>fonction XIRR</term><description>normales. S.DIST</description></item><item><term>la fonction ZTEST</term><description>normales. S.INV</description></item><item><term />centile
-            </item><item><term />centile. Exclure
-            </item><item><term />centile. INC
-            </item><item><term />fonction PERCENTRANK
-            </item><item><term />rang. Exclure
-            </item><item><term />rang. INC
-            </item><item><term />POISSON. Distribution
-            </item><item><term />QUARTILE
-            </item><item><term />QUARTILE. Exclure
-            </item><item><term />QUARTILE. INC
-            </item><item><term />rang
-            </item><item><term />rang. AVG
-            </item><item><term />rang. EQ
-            </item><item><term />STDEV. P
-            </item><item><term />STDEV. S
-            </item><item><term />T.DIST
-            </item><item><term />T.DIST.2T
-            </item><item><term />T.DIST. RT
-            </item><item><term />T.DIST. RT
-            </item><item><term />T.INV
-            </item><item><term />T.INV.2T
-            </item><item><term />T.INV. RT
-            </item><item><term />T.TEST
-            </item><item><term />var P
-            </item><item><term />var S
-            </item><item><term />WEEKDAY
-            </item><item><term />WEEKNUM
-            </item><item><term />WEIBULL. Distribution
-            </item><item><term />journée de travail. INTL
-            </item><item><term />Z.TEST
-            </item></list><para></para></remarks>
+            <b>Mise en garde</b>: paramètre le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propriété une valeur autre que 0, 1 ou 2 entraînera un comportement indéfini.</para>
+          <para>Le tableau suivant résume les fonctions affectées en définissant le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propriété 1. Les fonctions qui sont répertoriées dans la colonne « Fonctions non affectées » utiliseront toujours les algorithmes de précision le plus récent ou n’ont pas été modifiées dans Excel 2010. Pour les noms de fonction qui contiennent un point (.) dans leurs noms, pour déterminer le nom de la fonction correspondante implémenté dans VBA en tant que méthode de le <see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" /> objet, substituez le caractère de soulignement (_) au point. Par exemple, la méthode VBA qui correspond à la version bêta. Fonction de distribution est la <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" /> méthode.</para>
+          <list type="table">
+            <item>
+              <term>LOI.BETA</term>
+              <description>AGREGAT</description>
+            </item>
+            <item>
+              <term>BETA.INVERSE</term>
+              <description>Bêta. DISTRIB.</description>
+            </item>
+            <item>
+              <term>LOI.BINOMIALE</term>
+              <description>Bêta. INV</description>
+            </item>
+            <item>
+              <term>LOI.KHIDEUX</term>
+              <description>BINOM. DISTRIB.</description>
+            </item>
+            <item>
+              <term>KHIDEUX.INVERSE</term>
+              <description>BINOM. INV</description>
+            </item>
+            <item>
+              <term>TEST.KHIDEUX</term>
+              <description>PLAFOND</description>
+            </item>
+            <item>
+              <term>INTERVALLE.CONFIANCE</term>
+              <description>CEILING. PRÉCIS</description>
+            </item>
+            <item>
+              <term>CRITERE.LOI.BINOMIALE</term>
+              <description>CHISQ. DISTRIB.</description>
+            </item>
+            <item>
+              <term>CUMUL.INTER</term>
+              <description>CHISQ. DISTRIBUTION RT</description>
+            </item>
+            <item>
+              <term>CUMUL.PRINCPER</term>
+              <description>CHISQ. INV</description>
+            </item>
+            <item>
+              <term>ERF</term>
+              <description>CHISQ. FACTURE RT</description>
+            </item>
+            <item>
+              <term>ERFC</term>
+              <description>CHISQ. TEST</description>
+            </item>
+            <item>
+              <term>LOI.EXPONENTIELLE</term>
+              <description>NIVEAU DE CONFIANCE. NORME</description>
+            </item>
+            <item>
+              <term>LOI.F</term>
+              <description>NIVEAU DE CONFIANCE. T</description>
+            </item>
+            <item>
+              <term>INVERSE.LOI.F</term>
+              <description>COVARIANCE</description>
+            </item>
+            <item>
+              <term>TEST.F</term>
+              <description>COVARIANCE. P</description>
+            </item>
+            <item>
+              <term>LOI.GAMMA</term>
+              <description>COVARIANCE. S</description>
+            </item>
+            <item>
+              <term>LNGAMMA</term>
+              <description>ERF. PRÉCIS</description>
+            </item>
+            <item>
+              <term>LOI.GAMMA.INVERSE</term>
+              <description>ERFC. PRÉCIS</description>
+            </item>
+            <item>
+              <term>LOI.HYPERGEOMETRIQUE</term>
+              <description>EXPON. DISTRIB.</description>
+            </item>
+            <item>
+              <term>INTPER</term>
+              <description>LOI</description>
+            </item>
+            <item>
+              <term>TRI</term>
+              <description>LOI. RT</description>
+            </item>
+            <item>
+              <term>LOI.LOGNORMALE.INVERSE</term>
+              <description>F.INV</description>
+            </item>
+            <item>
+              <term>LOI.LOGNORMALE</term>
+              <description>F.INV. RT</description>
+            </item>
+            <item>
+              <term>LOI.BINOMIALE.NEG</term>
+              <description>F.TEST</description>
+            </item>
+            <item>
+              <term>LOI.NORMALE</term>
+              <description>PLANCHER</description>
+            </item>
+            <item>
+              <term>LOI.NORMALE.INVERSE</term>
+              <description>FLOOR. PRÉCIS</description>
+            </item>
+            <item>
+              <term>LOI.NORMALE.STANDARD</term>
+              <description>GAMMA. DISTRIB.</description>
+            </item>
+            <item>
+              <term>LOI.NORMALE.STANDARD.INVERSE</term>
+              <description>GAMMA. INV</description>
+            </item>
+            <item>
+              <term>REMBOUR</term>
+              <description>GAMMALN. PRÉCIS</description>
+            </item>
+            <item>
+              <term>LOI.POISSON</term>
+              <description>HYPGEOM. DISTRIB.</description>
+            </item>
+            <item>
+              <term>PRINCPER</term>
+              <description>ISO. PLAFOND</description>
+            </item>
+            <item>
+              <term>ECARTYPE</term>
+              <description>LOGNORM. DISTRIB.</description>
+            </item>
+            <item>
+              <term>ECARTYPEP</term>
+              <description>LOGNORM. INV</description>
+            </item>
+            <item>
+              <term>LOI.STUDENT</term>
+              <description>MOD</description>
+            </item>
+            <item>
+              <term>LOI.STUDENT.INVERSE</term>
+              <description>MODE</description>
+            </item>
+            <item>
+              <term>TEST.STUDENT</term>
+              <description>MODE. PLUSIEURS</description>
+            </item>
+            <item>
+              <term>VAR</term>
+              <description>MODE. SNGL</description>
+            </item>
+            <item>
+              <term>VARA</term>
+              <description>NEGBINOM. DISTRIB.</description>
+            </item>
+            <item>
+              <term>VAR.P</term>
+              <description>NB. INTL</description>
+            </item>
+            <item>
+              <term>VARPA</term>
+              <description>NORMALES. DISTRIB.</description>
+            </item>
+            <item>
+              <term>LOI.WEIBULL</term>
+              <description>NORMALES. INV</description>
+            </item>
+            <item>
+              <term>TRI.PAIEMENTS</term>
+              <description>NORMALES. S.DIST</description>
+            </item>
+            <item>
+              <term>TEST.Z</term>
+              <description>NORMALES. S.INV</description>
+            </item>
+            <item>
+              <term />
+              <description>CENTILE</description>
+            </item>
+            <item>
+              <term />
+              <description>CENTILE. EXCLURE</description>
+            </item>
+            <item>
+              <term />
+              <description>CENTILE. INC</description>
+            </item>
+            <item>
+              <term />
+              <description>RANG.POURCENTAGE</description>
+            </item>
+            <item>
+              <term />
+              <description>RANG. EXCLURE</description>
+            </item>
+            <item>
+              <term />
+              <description>RANG. INC</description>
+            </item>
+            <item>
+              <term />
+              <description>POISSON. DISTRIB.</description>
+            </item>
+            <item>
+              <term />
+              <description>QUARTILE</description>
+            </item>
+            <item>
+              <term />
+              <description>QUARTILE. EXCLURE</description>
+            </item>
+            <item>
+              <term />
+              <description>QUARTILE. INC</description>
+            </item>
+            <item>
+              <term />
+              <description>RANG</description>
+            </item>
+            <item>
+              <term />
+              <description>RANG. AVG</description>
+            </item>
+            <item>
+              <term />
+              <description>RANG. EQ</description>
+            </item>
+            <item>
+              <term />
+              <description>STDEV. P</description>
+            </item>
+            <item>
+              <term />
+              <description>STDEV. S</description>
+            </item>
+            <item>
+              <term />
+              <description>T.DIST</description>
+            </item>
+            <item>
+              <term />
+              <description>T.DIST.2T</description>
+            </item>
+            <item>
+              <term />
+              <description>T.DIST. RT</description>
+            </item>
+            <item>
+              <term />
+              <description>T.DIST. RT</description>
+            </item>
+            <item>
+              <term />
+              <description>T.INV</description>
+            </item>
+            <item>
+              <term />
+              <description>T.INV.2T</description>
+            </item>
+            <item>
+              <term />
+              <description>T.INV. RT</description>
+            </item>
+            <item>
+              <term />
+              <description>T.TEST</description>
+            </item>
+            <item>
+              <term />
+              <description>VAR P</description>
+            </item>
+            <item>
+              <term />
+              <description>VAR S</description>
+            </item>
+            <item>
+              <term />
+              <description>JOURSEM</description>
+            </item>
+            <item>
+              <term />
+              <description>NO.SEMAINE</description>
+            </item>
+            <item>
+              <term />
+              <description>WEIBULL. DISTRIB.</description>
+            </item>
+            <item>
+              <term />
+              <description>JOURNÉE DE TRAVAIL. INTL</description>
+            </item>
+            <item>
+              <term />
+              <description>Z.TEST</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Activate">
@@ -435,7 +706,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object qui représente le graphique actif (un graphique incorporé ou une feuille de graphique). Un graphique incorporé est considéré comme actif lorsqu’il est sélectionné ou activé. Lorsqu’aucun graphique n’est actif, cette propriété renvoie la <b>valeur Nothing</b>. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si vous ne spécifiez pas un qualificateur d’objet, cette propriété renvoie le graphique actif du classeur actif.</para>
+          <para>Si vous ne spécifiez aucun qualificateur d'objet, cette propriété renvoie le graphique actif du classeur actif.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -466,7 +737,7 @@
         <summary>Renvoie un object qui représente la feuille active (feuille au premier plan) dans le classeur actif ou dans la fenêtre spécifiée ou du classeur. Renvoie la <b>valeur Nothing</b> si aucune feuille n’est active. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si vous ne spécifiez pas un qualificateur d’objet, cette propriété renvoie la feuille active du classeur actif.</para>
+          <para>Si vous ne spécifiez pas d'identificateur d'objet, cette propriété renvoie la feuille active du classeur actif.</para>
           <para>Si un classeur apparaît dans plusieurs fenêtres, la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> propriété peut être différente dans différentes fenêtres.</para>
           <para></para>
         </remarks>
@@ -498,7 +769,7 @@
         <summary>Obtient un objet qui représente le slicer actif du classeur actif ou du classeur spécifié.</summary>
         <value>Objet qui représente le slicer actif du classeur actif ou du classeur spécifié.</value>
         <remarks>
-          <para>Retourne une référence null (Nothing dans Visual Basic) si aucun segment n’est actif.</para>
+          <para>Renvoie une référence null (Nothing dans Visual Basic) si aucun segment n’est actif.</para>
           <para>En lecture seule.</para>
           <para>Si vous ne spécifiez pas un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> d’objet, cette propriété retourne le slicer actif du classeur actif.</para>
           <para></para>
@@ -628,19 +899,19 @@
         <value>Cette propriété renvoie <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
         <example>
-          <para>Cet exemple montre comment supprime tous les commentaires ajoutés par Jean Selva dans la feuille active.</para>
+          <para>Cet exemple montre comment supprimer tous les commentaires ajoutés par Jean Selva dans la feuille active.</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Cet exemple montre comment supprime tous les commentaires ajoutés par Jean Selva dans la feuille active.</para>
+          <para>Cet exemple montre comment supprimer tous les commentaires ajoutés par Jean Selva dans la feuille active.</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Cet exemple montre comment supprime tous les commentaires ajoutés par Jean Selva dans la feuille active.</para>
+          <para>Cet exemple montre comment supprimer tous les commentaires ajoutés par Jean Selva dans la feuille active.</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
@@ -711,7 +982,7 @@
           <b>True</b> si les modifications apportées au classeur partagé sont transmises aux autres utilisateurs dès que le classeur est mis à jour automatiquement. <b>False</b> si les modifications ne sont pas transmises (ce classeur est néanmoins toujours synchronisé avec les modifications effectuées par d’autres utilisateurs). La valeur par défaut est <b>True</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AutoUpdateFrequency" /> propriété doit être définie sur une valeur comprise entre 5 et 1 440 pour cette propriété prenne effet.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AutoUpdateFrequency" /> propriété doit être définie sur une valeur comprise entre 5 et 1 440 pour cette propriété prenne effet.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -773,35 +1044,43 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Core.DocumentProperties" /> collection qui représente toutes les propriétés de document intégrées pour le classeur spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété renvoie l’ensemble des propriétés de document prédéfinies. Utiliser le <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> méthode pour renvoyer un seul membre de la collection (un <see cref="T:Microsoft.Office.Core.DocumentProperty" /> objet) en spécifiant le nom de la propriété ou l’index de la collection (en tant que numéro).</para>
-          <para>Vous pouvez faire référence aux propriétés de document par valeur d’index ou par son nom. La liste suivante présente le document prédéfinies disponible les noms de propriété :</para>
-          <para>titre </para>
-          <para>objet</para>
-          <para>auteur</para>
-          <para>mots clés</para>
-          <para>commentaires</para>
-          <para>modèle</para>
-          <para>Auteur dernier</para>
-          <para>Numéro de révision</para>
-          <para> Nom de l’application</para>
-          <para>la Date de dernière impression</para>
+          <para>Cette propriété renvoie l’ensemble des propriétés de document prédéfinies. Utiliser le <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> méthode pour renvoyer un seul membre de la collection (un <see cref="T:Microsoft.Office.Core.DocumentProperty" /> objet) en spécifiant le nom de la propriété ou l’index de la collection (en tant que nombre).</para>
+          <para>Vous pouvez faire référence aux propriétés de document soit par index soit par nom. La liste suivante affiche les noms des propriétés de document prédéfinies disponibles :</para>
+          <para>Title </para>
+          <para>Objet</para>
+          <para>Auteur</para>
+          <para>Keywords</para>
+          <para>Commentaires</para>
+          <para>Template</para>
+          <para>Last Author</para>
+          <para>Revision Number</para>
+          <para>Nom de l’application</para>
+          <para>Last Print Date</para>
           <para>Creation Date </para>
-          <para>heure du dernier enregistrement</para>
-          <para>temps Total d’édition</para>
-          <para>nombre de Pages</para>
-          <para>nombre de mots</para>
-          <para>nombre de caractères</para>
-          <para>sécurité</para>
-          <para> Catégorie</para>
+          <para>Last Save Time</para>
+          <para>Total Editing Time</para>
+          <para>Number of Pages</para>
+          <para>Number of Words</para>
+          <para>Number of Characters</para>
+          <para>Sécurité</para>
+          <para>Category</para>
           <para>Format</para>
-          <para>Gestionnaire</para>
-          <para>nombre d’octets</para>
-          <para>nombre de lignes de</para>
-          <para>nombre de paragraphes</para>
-          <para>nombre de diapositives</para>
-          <para>nombre de Notes</para>de la
-          <para>société</para><para>nombre de diapositives masquées</para><para>Nombre d’éléments multimédias Clips</para><para>Base de lien hypertexte</para><para>Nombre de caractères (avec des espaces)</para> Les applications conteneur 
-          <para>ne sont pas nécessaires pour définir des valeurs pour chaque propriété de document prédéfinie. Si Microsoft Excel ne définit pas une valeur pour une des propriétés de document prédéfinies, la lecture de la <see cref="P:Microsoft.Office.Core.DocumentProperty.Value" /> propriété pour cette propriété de document provoque une erreur.</para><para>La méthode <b>Item</b> est la méthode par défaut pour la collection <b>DocumentProperties</b> .</para><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties" /> propriété pour renvoyer la collection de propriétés de document personnalisées.</para><para></para></remarks>
+          <para>Manager</para>
+          <para>Société</para>
+          <para>Number of Bytes</para>
+          <para>Number of Lines</para>
+          <para>Number of Paragraphs</para>
+          <para>Number of Slides</para>
+          <para>Number of Notes</para>
+          <para>Number of Hidden Slides</para>
+          <para>Number of Multimedia Clips</para>
+          <para>Base de lien hypertexte</para>
+          <para>Nombre de caractères (avec des espaces)</para>
+          <para>Applications conteneur ne sont pas nécessaires pour définir des valeurs pour chaque propriété de document prédéfinie. Si Microsoft Excel ne définit pas une valeur pour une des propriétés de document prédéfinies, la lecture de la <see cref="P:Microsoft.Office.Core.DocumentProperty.Value" /> propriété pour cette propriété de document provoque une erreur.</para>
+          <para>La méthode <b>Item</b> est la méthode par défaut pour la collection <b>DocumentProperties</b> .</para>
+          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties" /> propriété pour renvoyer la collection de propriétés de document personnalisées.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CalculationVersion">
@@ -830,7 +1109,7 @@
         <summary>Renvoie un nombre dont les quatre derniers chiffres sont le numéro de version de moteur de calcul secondaire et dont autres chiffres (à gauche) sont la version principale de Microsoft Excel. Pour un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> d’objet, cette propriété renvoie des informations sur la version d’Excel que le classeur a été entièrement recalculé. Valeur <b>Integer</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si le classeur a été enregistré dans une version antérieure de Microsoft Excel, et si le classeur n’a pas été entièrement recalculé, cette propriété renvoie 0.</para>
+          <para>Si le classeur a été enregistré dans une version antérieure de Microsoft Excel, et si le classeur n’a pas été entièrement recalculé, cette propriété renvoie la valeur 0.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -923,7 +1202,7 @@
         <param name="Notify">Facultatif <b>Object</b>. Cet argument est omis ou a la valeur <b>True</b> pour prévenir l'utilisateur si le fichier n'est pas immédiatement accessible.</param>
         <summary>Modifie les autorisations d’accès au classeur ce qui peut impliquer la nécessité de charger, à partir du disque, une version mise à jour.</summary>
         <remarks>
-          <para>Si vous avez un fichier ouvert en mode lecture seule, vous n’avez pas accès exclusif au fichier. Si vous modifiez un fichier en lecture seule en lecture/écriture, Microsoft Excel doit charger une nouvelle copie du fichier pour vous assurer qu’aucune modification effectuée pendant que le fichier était ouvert en lecture seule.</para>
+          <para>Si vous consultez un fichier ouvert en lecture seule, vous n'y avez pas un accès exclusif. Si vous faites passer le mode d'accès à un fichier de « lecture seule » en « lecture-écriture », Microsoft Excel doit charger une nouvelle copie du fichier pour être sûr qu'aucune modification n'y a été apportée pendant que vous le consultiez en lecture seule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -957,7 +1236,7 @@
         <summary>Cette propriété renvoie ou définit le nombre de jours affichés dans l’historique des modifications du classeur partagé. Type de données <b>Integer</b> en lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Toutes les modifications dans l’historique de modification antérieurs à la valeur de cette propriété sont supprimées lorsque le classeur est fermé.</para>
+          <para>Toute modification, dans l'historique des modifications, ultérieure à la définition de cette propriété est supprimée à la fermeture du classeur.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1056,7 +1335,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection qui représente toutes les feuilles graphiques du classeur spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>à l’aide de cette propriété sans qualificateur d’objet renvoie toutes les feuilles du classeur actif du graphique.</para>
+          <para>À l’aide de cette propriété sans qualificateur d’objet renvoie toutes les feuilles graphiques du classeur actif.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1159,7 +1438,7 @@
         <summary>Enregistre un classeur sur un serveur à partir d’un ordinateur local, et définit le classeur local en lecture seule pour éviter qu’il ne soit modifié localement.</summary>
         <remarks>
           <para>Définition de la <paramref name="MakePublic" /> paramètre sur <b>true</b> envoie le classeur pour le processus d’approbation, qui peut éventuellement aboutir à une version du classeur publié aux utilisateurs ayant des droits en lecture seule sur le classeur (s’applique uniquement si <paramref name="SaveChanges" /> est défini sur true <b></b>). </para>
-          <para>Pour tirer parti des fonctionnalités de collaboration intégrées à Microsoft Excel, documents doivent être stockés sur un serveur Microsoft SharePoint Server.</para>
+          <para>Pour bénéficier des fonctionnalités de collaboration intégrées à Microsoft Excel, les documents doivent être stockés sur un serveur Microsoft SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1196,7 +1475,7 @@
         <param name="RouteWorkbook">Facultatif <b>Object</b>. Si le classeur ne doit pas être routé au destinataire suivant (s’il n’a aucun bordereau de routage ou a déjà été acheminé), cet argument est ignoré. Dans le cas contraire, Microsoft Excel achemine le classeur comme indiqué dans le tableau suivant. <b>True</b>ValueMeaning envoie le classeur au destinataire suivant. <b>False</b> N’envoie pas le classeur. OmittedDisplays une boîte de dialogue demandant à l’utilisateur si le classeur doit être envoyé.</param>
         <summary>Ferme l’objet.</summary>
         <remarks>
-          <para>Fermeture d’un classeur à l’aide de la méthode <b>Close</b> ne s’exécute pas toutes les macros Auto_Close du classeur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour exécuter la macro Auto_Close.</para>
+          <para>Fermeture d’un classeur à l’aide de la méthode <b>Close</b> n’exécute aucune macro Auto_Close du classeur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour exécuter la macro Auto_Close.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1228,7 +1507,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Le nom de code pour un objet peut être utilisé à la place d’une expression qui renvoie l’objet.</para>
-          <para>, Il est possible que le nom de feuille peut être différent du nom de code. Lorsque vous créez une feuille, le nom de la feuille et le nom de code sont identiques, mais la modification du nom de feuille ne change pas le nom de code et réciproquement (à l’aide de la fenêtre Propriétés dans Visual Basic Editor) ne change pas le nom de la feuille.</para>
+          <para>Il est possible que le nom de feuille peut être différent du nom de code. Lorsque vous créez une feuille, le nom de la feuille et le nom de code sont identiques, mais la modification du nom de feuille ne change pas le nom de code et réciproquement (à l’aide de la fenêtre Propriétés dans Visual Basic Editor) ne change pas le nom de la feuille.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1301,7 +1580,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Lorsqu’un classeur est incorporé dans une autre application et activé par l’utilisateur en double-cliquant sur le classeur, à l’aide de cette propriété avec un objet <b>Workbook</b> renvoie l’ensemble des barres d’outils Microsoft Excel disponibles dans l’autre application. À tout autre moment, à l’aide de cette propriété avec un objet <b>Workbook</b> renvoie <b>Nothing</b>.</para>
-          <para>Il n’existe aucun moyen par programme pour renvoyer l’ensemble de barres de commandes attaché à un classeur.</para>
+          <para>Aucune programmation n'existe pour renvoyer l'ensemble des barres de commandes outils attachées à un classeur.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1348,19 +1627,19 @@
         <value>Cette propriété renvoie <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
         <example>
-          <para>Cet exemple montre comment supprime tous les commentaires ajoutés par Jean Selva dans la feuille active.</para>
+          <para>Cet exemple montre comment supprimer tous les commentaires ajoutés par Jean Selva dans la feuille active.</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Cet exemple montre comment supprime tous les commentaires ajoutés par Jean Selva dans la feuille active.</para>
+          <para>Cet exemple montre comment supprimer tous les commentaires ajoutés par Jean Selva dans la feuille active.</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Cet exemple montre comment supprime tous les commentaires ajoutés par Jean Selva dans la feuille active.</para>
+          <para>Cet exemple montre comment supprimer tous les commentaires ajoutés par Jean Selva dans la feuille active.</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
@@ -1484,7 +1763,7 @@
         <summary>Renvoie l’objet qui représente l’application de conteneur de l’objet OLE spécifié. Type de données <b>Object</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété permet d’accéder au modèle objet de l’application conteneur si un classeur Excel est ouvert dans une application hôte, tel que Microsoft Internet Explorer.</para>
+          <para>Cette propriété offre une manière d'accéder au modèle objet de l'application de conteneur lorsqu'un classeur Excel est ouvert dans une application hôte telle que Microsoft Internet Explorer.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1576,7 +1855,10 @@
       <Docs>
         <summary>Renvoie une constante dans la <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> énumération qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDocumentProperties">
@@ -1605,7 +1887,7 @@
         <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Core.DocumentProperties" /> collection qui représente toutes les propriétés de document personnalisées pour le classeur spécifié.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété renvoie l’ensemble des propriétés de document personnalisées. Utiliser le <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> méthode pour renvoyer un seul membre de la collection (un <see cref="T:Microsoft.Office.Core.DocumentProperty" /> objet) en spécifiant le nom de la propriété ou l’index de la collection (en tant que numéro).</para>
+          <para>Cette propriété renvoie l’ensemble des propriétés de document personnalisées. Utiliser le <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> méthode pour renvoyer un seul membre de la collection (un <see cref="T:Microsoft.Office.Core.DocumentProperty" /> objet) en spécifiant le nom de la propriété ou l’index de la collection (en tant que nombre).</para>
           <para>La méthode <b>Item</b> est la méthode par défaut pour la collection <b>DocumentProperties</b> .</para>
           <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties" /> propriété pour renvoyer la collection de propriétés de document prédéfinies.</para>
           <para></para>
@@ -1782,7 +2064,7 @@
         <summary>Obtient ou définit le style de la <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> objet qui est utilisé comme style par défaut pour les slicers.</summary>
         <value>Le style à partir de la <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> objet qui est utilisé comme style par défaut pour les slicers.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1961,22 +2243,25 @@
         <summary>Cette propriété renvoie ou définit le mode d’affichage des formes. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayDrawingObjects" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Peut être une des constantes XlDisplayDrawingObjects.</para>
+          <para>Peut être une des constantes XlDisplayDrawingObjects suivantes.</para>
           <list type="table">
             <item>
               <term>
                 <paramref name="xlDisplayShapes" />
-              </term>Affiche toutes les formes.
+              </term>
+              <description>Affiche toutes les formes.</description>
             </item>
             <item>
               <term>
                 <paramref name="xlPlaceholders" />
-              </term>Afficher uniquement des espaces réservés.
+              </term>
+              <description>Affiche uniquement les indicateurs de position.</description>
             </item>
             <item>
               <term>
                 <paramref name="xlHide" />
-              </term>Masquer toutes les formes.
+              </term>
+              <description>Masque toutes les formes.</description>
             </item>
           </list>
           <para></para>
@@ -2250,7 +2535,7 @@
         <summary>Enregistre des fichiers modifiés, de tout format, dans un intervalle de temps. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si Microsoft Excel échoue, le système échoue, ou si le système est fermée (ne pas permettant à Excel d’enregistrer les fichiers modifiés), les fichiers sauvegardés sont ouverts et l’utilisateur a la possibilité d’enregistrer les modifications dans le cas contraire auraient été perdues. Lorsque l’utilisateur redémarre Excel, une fenêtre de récupération de document s’affiche, l’utilisateur de récupérer les fichiers que dont ils ont été occupent. Définir cette propriété sur <b>True</b> (valeur par défaut) active cette fonctionnalité.</para>
+          <para>Si Microsoft Excel échoue, si le système échoue ou si le système n'est pas éteint correctement (ne permettant pas à Excel d'enregistrer les fichiers modifiés), les fichiers sauvegardés sont ouverts et l'utilisateur a une occasion d'enregistrer des modifications qui seraient autrement perdues. Lorsque l'utilisateur redémarre Excel, une fenêtre de récupération des documents s'ouvre, donnant à l'utilisateur la possibilité de récupérer les fichiers sur lesquels il travaillait. L'affectation de la valeur <b>True</b> (par défaut) à cette propriété active cette fonctionnalité.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2454,7 +2739,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>En mode de compatibilité, certaines fonctionnalités est désactivée ou fonctionne différemment.  Par exemple, dans short_Excel2007 il existe plus de lignes et de colonnes que les versions antérieures d’Excel. Référencement structuré est disponible dans short_Excel2007.</para>
+          <para>En mode de compatibilité, certaines fonctionnalités sont désactivées ou fonctionnent différemment.  Par exemple, dans short_Excel2007 il existe plus de lignes et de colonnes que les versions antérieures d’Excel. Référencement structuré est également disponible dans short_Excel2007.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2486,7 +2771,7 @@
         <summary>Attribue à l’utilisateur en cours un accès exclusif au classeur ouvert en tant que liste partagée.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>La méthode <b>ExclusiveAccess</b> enregistre toute modification apportée au classeur et oblige les autres utilisateurs qui ont le classeur ouvrent à enregistrer leurs modifications dans un fichier différent.</para>
+          <para>La méthode <b>ExclusiveAccess</b> enregistre toute modification apportée au classeur et oblige les autres utilisateurs qui ont ouvert ce dernier à enregistrer leurs modifications dans un fichier différent.</para>
           <para>Si le classeur spécifié n’est pas ouvert en tant que liste partagée, cette méthode échoue. Pour déterminer si un classeur est ouvert en tant que liste partagée, utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" /> propriété.</para>
           <para></para>
         </remarks>
@@ -2535,7 +2820,7 @@
         <summary>Le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExportAsFixedFormat(Microsoft.Office.Interop.Excel.XlFixedFormatType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode est utilisée pour publier un classeur au format PDF ou XPS.</summary>
         <remarks>To be added.</remarks>
         <example>
-          <para>L’exemple suivant crée le PDF avec la qualité standard dans le répertoire du fichier actif et affiche le fichier dans la visionneuse après sa publication.</para>
+          <para>L’exemple suivant crée le PDF avec la qualité standard dans le répertoire du fichier actif et il affiche le fichier dans la visionneuse après sa publication.</para>
           <para>
             <b>Remarque</b>: une erreur se produit si le complément PDF n’est pas installé.</para>
         </example>
@@ -2570,7 +2855,7 @@
         <summary>Renvoie le format de fichier et/ou le type du classeur. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlFileFormat" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2606,7 +2891,9 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Définissant la valeur à <b>la valeur True</b> marque le classeur en tant que final, avertit les destinataires (le cas échéant) que le classeur est final et définit le classeur en lecture seule.</para>
+          <para>Avec la valeur <b>True</b>, le classeur est marqué comme étant final, les éventuels destinataires en sont avertis et le classeur est défini en lecture seule.
+
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2952,7 +3239,7 @@
         <summary>Cette propriété a la valeur <b>True</b> si le classeur possède un bordereau de routage. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La définition de cette propriété sur <b>True</b> crée un bordereau de routage avec les valeurs par défaut. Définition de la propriété sur <b>False</b> supprime le bordereau de routage.</para>
+          <para>Si vous affectez la valeur <b>True</b> à cette propriété, un bordereau de routage doté des valeurs par défaut est créé. Si vous lui affectez la valeur <b>False</b>, le bordereau de routage est supprimé.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2985,7 +3272,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Cette propriété est particulièrement utile par programme pour déterminer si un classeur doit être enregistré dans un format de fichier prenant en charge. Si enregistré dans un autre format, les macros et les projets de code contenus dans le document peuvent être perdues.</para>
+          <para>Cette propriété est surtout utile en programmation, pour déterminer si un classeur doit être enregistré dans un format acceptant les macros. S'il est enregistré dans un autre format, les macros et les projets de code contenus dans le document risquent d'être perdus.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3143,7 +3430,7 @@
         <summary>Valeur de type <b>Boolean</b> qui spécifie si les bordures de la liste sont visibles lorsqu’une liste n’est pas active. Renvoie la valeur <b>True</b> si la bordure est visible. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La définition de cette propriété affecte toutes les listes qui se trouvent sur la feuille de calcul.</para>
+          <para>La définition de cette propriété affecte toutes les listes présentes dans la feuille de calcul.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3178,22 +3465,22 @@
           <b>True</b> si le classeur s’exécute comme un programme complémentaire. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Lorsque vous définissez cette propriété sur <b>True</b>, le classeur présente les caractéristiques suivantes :</para>
+          <para>Quand vous affectez la valeur <b>True</b> à cette propriété, le classeur présente les caractéristiques suivantes :</para>
           <list type="bullet">
             <item>
-              <description>vous n’êtes pas invité à enregistrer le classeur si les modifications sont effectuées pendant que le classeur est ouvert.</description>
+              <description>Vous n'êtes pas invité à enregistrer le classeur si les modifications sont effectuées pendant que le classeur est ouvert.</description>
             </item>
             <item>
-              <description>La fenêtre du classeur n’est pas visible.</description>
+              <description>La fenêtre du classeur n'est pas visible.</description>
             </item>
             <item>
-              <description>Toutes les macros dans le classeur ne soit visibles dans la boîte de dialogue Macro (affichée en pointant sur Macro dans le menu Outils et en cliquant sur Macros).</description>
+              <description>Aucune macro du classeur n'est visible dans la boîte de dialogue Macro (affichée en pointant dans le menu Outils sur Macro puis en cliquant sur Macros).</description>
             </item>
             <item>
-              <description>Macros du classeur peuvent toujours être exécutées à partir de la boîte de dialogue Macro même si elles ne sont pas visibles. En outre, les noms de macro ne doivent être qualifié avec le nom du classeur.</description>
+              <description>Les macros du classeur peuvent toujours être exécutées à partir de la boîte de dialogue Macro même si elles ne sont pas visibles. De plus, les noms de macros n'ont pas besoin d'être qualifiés par le nom du classeur.</description>
             </item>
             <item>
-              <description>Maintenant la touche MAJ enfoncée lorsque vous ouvrez le classeur n’a aucun effet.</description>
+              <description>Maintenir la touche MAJ lors de l'ouverture du classeur est sans effet.</description>
             </item>
           </list>
           <para></para>
@@ -3370,8 +3657,8 @@
         <summary>Renvoie un tableau de liaisons dans le classeur. Les noms dans le tableau sont les noms des documents liés, des éditions ou des serveurs DDE ou OLE. Renvoie la valeur <b>Empty</b> s’il n’y a aucun lien. <b>Objet</b>.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Le format du tableau est un tableau unidimensionnel pour tous les types mais éditeur et l’abonné. Les chaînes retournées contiennent le nom de la source de liaison, dans la notation appropriée pour le type de lien. Par exemple, des liens utiliser DDE la « Server | Document ! Élément « syntaxe.</para>
-          <para>Pour les liaisons éditeur et abonné, le tableau retourné est à deux dimensions. La première colonne du tableau contient les noms de l’édition et la deuxième colonne contient les références des éditions en tant que texte.</para>
+          <para>Le tableau est à une dimension pour tous les types, quel que soit le type de liaisons, à l'exception de la publication et de l'abonnement. Les chaînes de caractères renvoyées contiennent le nom de la source de la liaison dans la notation appropriée au type de liaison. Par exemple, les liaisons DDE utilisent la syntaxe « Server|Document!Item ».</para>
+          <para>Pour les liaisons de publication et d'abonnement, le tableau renvoyé est à double entrée. La première colonne du tableau contient les noms de la publication et la seconde colonne, les références des éditions sous la forme de texte.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3889,7 +4176,10 @@
       <Docs>
         <summary>Renvoie ou définit le mot de passe qui doit être fourni pour ouvrir le classeur spécifié. Type de données <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>Mots de passe <para>forte utilisation combinant des majuscules et minuscules, nombres et des symboles. Mots de passe faibles ne combinent pas ces éléments. Mot de passe fort : Y6dh ! et5. Mot de passe faible : House27. Utilisez un mot de passe que vous pouvez vous souvenir afin que vous n’êtes pas obligé de Notez-le.</para><para></para></remarks>
+        <remarks>
+          <para>[!REMARQUE] Définissez des mots de passe forts qui combinent des lettres minuscules et majuscules, des nombres et des symboles. Les mots de passe faibles ne regroupent pas ces éléments. Mot de passe fort : Y6dh!et5. Mot de passe faible : Maison27. Utilisez un mot de passe fort dont vous pouvez vous souvenir sans devoir le noter.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PasswordEncryptionAlgorithm">
@@ -4518,7 +4808,10 @@
         <param name="CreateBackup">Facultatif <b>Object</b>. <b>True</b> pour créer un fichier de sauvegarde.</param>
         <param name="SharingPassword">Facultatif <b>Object</b>. Chaîne indiquant le mot de passe à utiliser pour protéger le fichier contre le partage.</param>
         <summary>Enregistre le classeur et le protège contre le partage.</summary>
-        <remarks>Mots de passe <para>forte utilisation combinant des majuscules et minuscules, nombres et des symboles. Mots de passe faibles ne combinent pas ces éléments. Mot de passe fort : Y6dh ! et5. Mot de passe faible : House27. Utilisez un mot de passe que vous pouvez vous souvenir afin que vous n’êtes pas obligé de Notez-le.</para><para></para></remarks>
+        <remarks>
+          <para>[!REMARQUE] Définissez des mots de passe forts qui combinent des lettres minuscules et majuscules, des nombres et des symboles. Les mots de passe faibles ne regroupent pas ces éléments. Mot de passe fort : Y6dh!et5. Mot de passe faible : Maison27. Utilisez un mot de passe fort dont vous pouvez vous souvenir sans devoir le noter.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectSharingEx">
@@ -4741,7 +5034,7 @@
           <b>True</b> si le classeur a été enregistré en lecture seule recommandée. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Lorsque vous ouvrez un classeur qui a été enregistré en lecture seule recommandée, Microsoft Excel affiche un message vous conseillant d’ouvrir le classeur en lecture seule.</para>
+          <para>Lorsque vous ouvrez un classeur qui a été enregistré en lecture seule recommandée, Microsoft Excel affiche un message vous conseillant d'ouvrir le classeur en lecture seule.</para>
           <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode modifier cette propriété.</para>
           <para></para>
         </remarks>
@@ -4798,7 +5091,7 @@
       <Docs>
         <summary>Cette méthode actualise toutes les plages de données externes et les rapports de tableau croisé dynamique du classeur spécifié.</summary>
         <remarks>
-          <para>Objets dont la <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.BackgroundQuery" /> propriété la valeur <b>True</b> sont actualisés en arrière-plan.</para>
+          <para>Les objets dont la <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.BackgroundQuery" /> propriété la valeur <b>True</b> sont actualisés en arrière-plan.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5124,7 +5417,7 @@
         <summary>Renvoie le nombre de fois que le classeur a été enregistré pendant l’ouverture en tant que liste partagée. Si le classeur est ouvert en mode exclusif, cette propriété renvoie la valeur 0 (zéro). Valeur <b>Integer</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>RevisionNumber</b> est mise à jour uniquement lorsque la copie locale du classeur est enregistrée, pas lorsque des copies distantes sont enregistrés.</para>
+          <para>La propriété <b>RevisionNumber</b> est mise à jour uniquement lors de l'enregistrement de la copie locale du classeur et non de celui des copies distantes.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5195,7 +5488,7 @@
         <summary>Cette propriété a la valeur <b>True</b> si le classeur a été routé au destinataire suivant et la valeur <b>False</b> si le classeur doit être routé. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si le classeur n’a pas été routé au destinataire actif, cette propriété est toujours <b>False</b> (par exemple, si le document ne possède pas de bordereau de routage ou si une règle de routage bordereau vient d’être créée).</para>
+          <para>Si le classeur n'a pas été routé au destinataire actif, cette propriété correspond toujours à <b>False</b> (par exemple, si le document n'a pas de bordereau de routage ou si celui-ci vient juste d'être créé).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5449,7 +5742,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si un classeur n’a jamais été enregistré, sa <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> propriété renvoie une chaîne vide (« »).</para>
-          <para>Vous pouvez définir cette propriété sur <b>True</b> si vous voulez fermer un classeur modifié sans l’enregistrer ni être invité à enregistrer les it.</para>
+          <para>Vous pouvez définir cette propriété sur <b>True</b> si vous voulez fermer un classeur modifié sans l’enregistrer ou sans qu’une invite vous propose de le faire.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5552,8 +5845,8 @@
         <param name="ShowMessage">Facultatif <b>Object</b>. <b>True :</b> affiche le message de télécopie avant de l'envoyer. <b>False</b> envoie la télécopie sans afficher le message de télécopie.</param>
         <summary>Envoie une feuille de calcul sous forme de télécopie aux destinataires spécifiés.</summary>
         <remarks>
-          <para>L’utilisation de la méthode <b>SendFaxOverInternet</b> nécessite que le service de télécopie est activé sur l’ordinateur d’un utilisateur.</para>
-          <para>Le format utilisé pour spécifier des numéros de télécopie dans le <paramref name="Recipients" /> paramètre est soit <paramref name="recipientsfaxnumber@usersfaxprovider" /> ou <paramref name="recipientsname@recipientsfaxnumber" />. Pour obtenir des informations de fournisseur de télécopie de l’utilisateur à l’aide de l’emplacement de Registre suivant :</para>
+          <para>Pour que la méthode <b>SendFaxOverInternet</b> puisse être utilisée, le service de télécopie doit être activé sur l'ordinateur de l'utilisateur.</para>
+          <para>Le format utilisé pour spécifier des numéros de télécopie dans le <paramref name="Recipients" /> paramètre est soit <paramref name="recipientsfaxnumber@usersfaxprovider" /> ou <paramref name="recipientsname@recipientsfaxnumber" />. Vous pouvez accéder aux données du fournisseur de télécopie de l'utilisateur via le chemin du registre suivant :</para>
           <para>HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Services\Fax</para>
           <para>Utilisez la valeur de la clé FaxAddress au niveau de ce chemin d’accès du Registre pour déterminer le format à utiliser pour un destinataire.</para>
           <para></para>
@@ -5590,7 +5883,10 @@
         <param name="ShowMessage">Facultatif <b>Object</b>. Une valeur de <b>type Boolean</b> qui indique si le message doit être affiché lorsque la méthode est exécutée. La valeur par défaut est <b>True</b>. Si vous définissez sur <b>False</b>, le message est automatiquement envoyé aux destinataires sans montrer au préalable le message à l'expéditeur.</param>
         <param name="IncludeAttachment">Facultatif <b>Object</b>. Une valeur de <b>type Boolean</b> qui indique si le message doit inclure une pièce jointe ou un lien vers un emplacement du serveur. La valeur par défaut est <b>True</b>. Si défini sur <b>False</b>, le document doit être stocké sur un emplacement partagé.</param>
         <summary>Envoie un message électronique contenant un classeur à réviser aux destinataires spécifiés.</summary>
-        <remarks>Méthode <para>le <b>SendForReview</b> commence un cycle de révision collaborative. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.EndReview" /> méthode à la fin d’un cycle de révision.</para><para></para></remarks>
+        <remarks>
+          <para>La méthode <b>SendForReview</b> commence un cycle de révision collaborative. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.EndReview" /> méthode à la fin d’un cycle de révision.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendMail">
@@ -5718,7 +6014,7 @@
           <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ServerViewableItems" />
         </value>
         <remarks>
-          <para>Cette propriété renvoie une collection d’éléments qui peuvent être publiés dans Excel Services.  Il peut inclure des tableaux, tableaux croisés dynamiques, des plages nommées et des graphiques.  Il peut également contenir des feuilles dans la mesure où il n’est pas un mélange de feuilles et de la liste précédente.  </para>
+          <para>Cette propriété renvoie une collection des éléments qui ont pu être publiés dans Excel Services. Elle peut inclure des Tableaux, des tableaux croisés dynamiques, des Plages nommées et des Graphiques. Elle peut également contenir des Feuilles, du moment que ces Feuilles ne sont pas combinées avec les éléments de la liste précédente.  </para>
           <para></para>
         </remarks>
       </Docs>
@@ -5789,7 +6085,7 @@
         <summary>Définit les options de chiffrement des classeurs à l’aide de mots de passe.</summary>
         <remarks>
           <para>Le <paramref name="PasswordEncryptionProvider" />, <paramref name="PasswordEncryptionAlgorithm" />, et <paramref name="PasswordEncryptionKeyLength" /> arguments ne sont pas indépendants. Un fournisseur de chiffrement sélectionné limite le jeu d’algorithmes et la longueur de clé qui peut être choisie.</para>
-          <para>Pour la <paramref name="PasswordEncryptionKeyLength" /> argument il n’existe aucune limite inhérente sur la plage de la longueur de clé. La plage est déterminée par le fournisseur de services de chiffrement qui détermine également l’algorithme de chiffrement.</para>
+          <para>Pour le <paramref name="PasswordEncryptionKeyLength" /> argument il n’existe aucune limite inhérente sur la plage de la longueur de clé. La plage est déterminée par le fournisseur de services de chiffrement qui détermine également l’algorithme de chiffrement.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5922,7 +6218,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Cette propriété contrôle la visibilité du volet filtre de graphique croisé dynamique (fait passer l’état activé/désactivé).  Afin qu’il soit visible, un objet de <b>graphique croisé dynamique</b> doit être activée. </para>
+          <para>Cette propriété contrôle la visibilité du volet Filtre de graphique croisé dynamique (l'active ou le désactive). Pour que ce volet soit visible, un objet <b>PivotChart</b> doit être sélectionné.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5987,7 +6283,8 @@
           <see cref="T:Microsoft.Office.Core.SignatureSet" />
         </value>
         <remarks>
-          <para>Numériquement pour se connecter à des classeurs Excel2007 vérifier les autres signatures, vous aurez besoin de Microsoft CryptoAPI et un certificat de signature numérique unique. CryptoAPI est installé avec Microsoft Internet Explorer 4.01 ou version ultérieure. Vous pouvez obtenir un certificat de signature numérique à partir d’une autorité de certification. </para>
+          <para>Pour signer les classeurs Excel2007 numériquement et vérifier les autres signatures, vous devez Microsoft CryptoAPI et un certificat de signature numérique unique. CryptoAPI est installé avec Microsoft Internet Explorer 4.01 ou version ultérieure. Pour obtenir un certificat de signature numérique, adressez-vous à une autorité de certification.
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6018,7 +6315,7 @@
         <summary>Obtient le <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> objet associée au classeur.</summary>
         <value>Le <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> objet associée au classeur.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6342,7 +6639,7 @@
       <Docs>
         <summary>Active ou désactive le mode Création de formulaire activé ou désactivé.</summary>
         <remarks>
-          <para>Lorsque Excel est en mode Création, la barre d’outils Boîte à outils contrôles s’affiche. Vous pouvez utiliser cette barre d’outils pour insérer des contrôles ActiveX tels que des boutons de commande, des barres de défilement et des cases d’option. En mode Création, les procédures événementielles ne s’exécutent, et lorsque vous cliquez sur un contrôle incorporé, les poignées de redimensionnement du contrôle s’affichent.</para>
+          <para>Lorsque Excel est en mode Création, la barre d’outils Boîte à outils contrôles s’affiche. Vous pouvez utiliser cette barre d’outils pour insérer des contrôles ActiveX tels que des boutons de commande, des barres de défilement et des cases d’option. En mode Création, procédures événementielles ne s’exécutent, et lorsque vous cliquez sur un contrôle incorporé, les poignées de redimensionnement du contrôle s’affichent.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6375,7 +6672,7 @@
         <param name="Password">Facultatif <b>Object</b>. Chaîne qui indique le mot de passe qui respecte la casse à utiliser pour ôter la protection de la feuille ou du classeur. Si la feuille ou du classeur n’est pas protégé par un mot de passe, cet argument est ignoré. Si vous omettez cet argument pour une feuille est protégée par un mot de passe, vous devrez le mot de passe. Si vous omettez cet argument pour un classeur est protégé par un mot de passe, la méthode échoue.</param>
         <summary>Cette méthode supprime la protection d'une feuille ou d'un classeur. Elle est sans effet si la feuille ou le classeur n'est pas protégé.</summary>
         <remarks>
-          <para>Si vous oubliez le mot de passe, vous ne pouvez pas ôter la protection de la feuille ou du classeur. Il est conseillé de conserver une liste de vos mots de passe et les noms de documents correspondants dans un endroit sûr.</para>
+          <para>Si vous oubliez le mot de passe, vous ne pourrez pas supprimer la protection de la feuille ou du classeur. Pensez à conserver en lieu sûr une liste de vos mots de passe et les noms des documents correspondants.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6404,7 +6701,10 @@
       <Docs>
         <param name="SharingPassword">Facultatif <b>Object</b>. Mot de passe du classeur.</param>
         <summary>Désactive la protection contre le partage et enregistre le classeur.</summary>
-        <remarks>Mots de passe <para>forte utilisation combinant des majuscules et minuscules, nombres et des symboles. Mots de passe faibles ne combinent pas ces éléments. Mot de passe fort : Y6dh ! et5. Mot de passe faible : House27. Utilisez un mot de passe que vous pouvez vous souvenir afin que vous n’êtes pas obligé de Notez-le.</para><para></para></remarks>
+        <remarks>
+          <para>[!REMARQUE] Définissez des mots de passe forts qui combinent des lettres minuscules et majuscules, des nombres et des symboles. Les mots de passe faibles ne regroupent pas ces éléments. Mot de passe fort : Y6dh!et5. Mot de passe faible : Maison27. Utilisez un mot de passe fort dont vous pouvez vous souvenir sans devoir le noter.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateFromFile">
@@ -6433,7 +6733,7 @@
       <Docs>
         <summary>Met à jour un classeur en lecture seule à partir de la version du classeur enregistrée sur disque, si cette version est plus récente que la copie du classeur chargée en mémoire. Si la copie du disque n’a pas été modifiée depuis que le classeur a été chargé en mémoire, la copie du classeur résidant en mémoire n’est pas rechargée.</summary>
         <remarks>
-          <para>Cette méthode est utile lorsqu’un classeur est ouvert en lecture seule par un utilisateur A et ouvert en lecture/écriture par un utilisateur B. Si l’utilisateur B enregistre une version plus récente du classeur sur le disque pendant que l’utilisateur A a toujours le classeur ouvert, l’utilisateur Qu'a ne peut pas obtenir la copie de la mise à jour sans fermer puis rouvrir le classeur paramètres d’affichage. La méthode <b>UpdateFromFile</b> met à jour la copie en mémoire du classeur à partir du fichier disque.</para>
+          <para>Cette méthode est utile lorsqu'un classeur est ouvert en lecture seule par un utilisateur A et ouvert en lecture-écriture par un utilisateur B. Si ce dernier enregistre une version plus récente du classeur sur le disque pendant que l'utilisateur A a toujours le classeur ouvert, l'utilisateur A ne peut pas obtenir la version mise à jour du classeur sans fermer puis rouvrir le classeur, ce qui l'oblige à redéfinir ses paramètres d'affichage. La méthode <b>UpdateFromFile</b> met à jour la copie du classeur en mémoire à partir du fichier enregistré sur disque.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6468,7 +6768,7 @@
         <param name="Type">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlLinkType" />.</param>
         <summary>Cette méthode met à jour une ou plusieurs liaisons Microsoft Excel, DDE ou OLE.</summary>
         <remarks>
-          <para>Lorsque la méthode <b>UpdateLink</b> est appelée sans aucun paramètre, Excel par défaut pour tous les liens de feuille de calcul de mise à jour.</para>
+          <para>Lorsque la méthode <b>UpdateLink</b> est appelée sans aucun paramètre, Excel par défaut pour la mise à jour tous les liens de feuille de calcul.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6608,7 +6908,7 @@
         <summary>Renvoie un tableau basé sur 1, à deux dimensions qui fournit des informations sur chaque utilisateur dont le classeur est ouvert en tant que liste partagée. Le premier élément de la seconde dimension correspond au nom de l'utilisateur, le deuxième élément correspond à la date et à l'heure de la dernière ouverture du classeur par l'utilisateur, et le troisième élément est un nombre indiquant le type de liste (1 pour un accès exclusif et 2 pour un accès partagé). En lecture seule <b>Object</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>UserStatus</b> ne renvoie aucune information sur les utilisateurs qui ont ouvert en lecture seule du classeur spécifié.</para>
+          <para>La propriété <b>UserStatus</b> ne renvoie aucune information sur les utilisateurs qui ont ouvert le classeur spécifié en lecture seule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6838,8 +7138,8 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection qui représente toutes les feuilles de calcul du classeur spécifié. Objet <b>Sheets</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>à l’aide de cette propriété sans qualificateur d’objet renvoie toutes les feuilles de calcul du classeur actif.</para>
-          <para>Cette propriété ne renvoie pas les feuilles de macro, utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" /> propriété ou la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" /> propriété permet de renvoyer ces feuilles.</para>
+          <para>Lorsqu'elle est utilisée sans qualificateur d'objet, cette propriété renvoie toutes les feuilles de calcul dans le classeur actif.</para>
+          <para>Cette propriété ne renvoie pas les feuilles de macro ; Utilisez le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" /> propriété ou la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" /> propriété permet de renvoyer ces feuilles.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6977,13 +7277,13 @@
         <remarks>
           <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
           <para>Ne spécifiez aucune valeur pour le <paramref name="Destination" /> paramètre si vous souhaitez importer des données dans un mappage existant.</para>
-          <para>Les conditions suivantes entraîne la méthode <b>XMLImport</b> génère des erreurs d’exécution :</para>
+          <para>Les conditions suivantes provoquent la méthode <b>XMLImport</b> génère des erreurs d’exécution :</para>
           <list type="bullet">
             <item>
-              <description>Les données XML spécifiées contient des erreurs de syntaxe.</description>
+              <description>Les données XML spécifiées contiennent des erreurs de syntaxe.</description>
             </item>
             <item>
-              <description>Le processus d’importation a été annulé parce que les données spécifiées ne rentrent pas dans la feuille de calcul.</description>
+              <description>L'importation a été annulée parce que les données spécifiées ne rentrent pas dans la feuille de calcul.</description>
             </item>
           </list>
           <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImportXml(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet pour importer des données XML précédemment chargées dans la mémoire.</para>
@@ -7027,13 +7327,13 @@
         <remarks>
           <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
           <para>Ne spécifiez aucune valeur pour le <paramref name="Destination" /> paramètre si vous souhaitez importer des données dans un mappage existant.</para>
-          <para>Les conditions suivantes entraîne la méthode <b>XMLImport</b> génère des erreurs d’exécution :</para>
+          <para>Les conditions suivantes provoquent la méthode <b>XMLImport</b> génère des erreurs d’exécution :</para>
           <list type="bullet">
             <item>
-              <description>Les données XML spécifiées contient des erreurs de syntaxe.</description>
+              <description>Les données XML spécifiées contiennent des erreurs de syntaxe.</description>
             </item>
             <item>
-              <description>Le processus d’importation a été annulé parce que les données spécifiées ne rentrent pas dans la feuille de calcul.</description>
+              <description>L'importation a été annulée parce que les données spécifiées ne rentrent pas dans la feuille de calcul.</description>
             </item>
           </list>
           <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImport(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet pour importer un fichier de données XML dans le classeur actif.</para>

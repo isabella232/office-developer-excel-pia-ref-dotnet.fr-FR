@@ -1,10 +1,10 @@
 <Type Name="SeriesLines" FullName="Microsoft.Office.Interop.Excel.SeriesLines">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8321fba00e3ca6402156f0e7ec2471f1a9f0b501" />
+    <Meta Name="ms.openlocfilehash" Value="4391fa7806d633ad9ab407bbf4845d8131816a1d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575326" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SeriesLines" />
@@ -30,7 +30,12 @@
   </Attributes>
   <Docs>
     <summary>Représente les lignes de séries dans un groupe de graphiques. Lignes de séries connectent les valeurs de données de chaque série.</summary>
-    <remarks>Barres empilées 2D uniquement de <para>ou de groupes de graphiques en histogrammes peuvent avoir les lignes de séries. Cet objet n’est pas une collection. Il n’existe aucun objet qui représente une seule ligne de série ; les lignes de série est activées pour tous les points d’un groupe de graphiques sont soit ou que vous les avez désactivés.</para><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.SeriesLines" /> propriété pour renvoyer un objet <b>SeriesLines</b> .</para><para>Si le <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasSeriesLines" /> propriété a la <b>valeur False</b>, la plupart des propriétés de l’objet <b>SeriesLines</b> sont désactivées.</para><para></para></remarks>
+    <remarks>
+      <para>Uniquement 2D en barres empilées ou groupes de graphiques en histogrammes peuvent avoir les lignes de séries. Cet objet n’est pas une collection. Il n’existe aucun objet qui représente une seule ligne de série ; les lignes de série est activées pour tous les points d’un groupe de graphiques sont soit ou vous avez activées.</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.SeriesLines" /> propriété pour renvoyer un objet <b>SeriesLines</b> .</para>
+      <para>Si le <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasSeriesLines" /> propriété a la <b>valeur False</b>, la plupart des propriétés de l’objet <b>SeriesLines</b> sont désactivées.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -115,8 +120,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

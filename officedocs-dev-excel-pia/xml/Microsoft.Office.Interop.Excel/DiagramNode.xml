@@ -1,10 +1,10 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Excel.DiagramNode">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0ca42ecf50dd3405db74400e2269347011d04258" />
+    <Meta Name="ms.openlocfilehash" Value="86e622fca7f83a44ee8326d13178a7a41108a865" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576145" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
@@ -34,22 +34,38 @@
     <remarks>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> méthode pour ajouter un nœud à un diagramme ou à un nœud de diagramme.</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" /> méthode pour supprimer un nœud d’un diagramme ou un nœud de diagramme.</para>
-      <para>Pour renvoyer un objet <b>DiagramNode</b> , utilisez une des opérations suivantes :</para>
+      <para>Pour renvoyer un objet <b>DiagramNode</b> , utilisez une des options suivantes :</para>
       <list type="bullet">
         <item>
           <description>L’objet <b>DiagramNode</b><see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" />, <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" />, ou <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" /> méthodes ou son <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" /> propriété</description>
         </item>
         <item>
-          <description>la <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> la collection <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> méthodes ou <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> ou <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> propriétés </description>
+          <description>Le <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> la collection <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> méthodes ou <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> ou <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> propriétés</description>
         </item>
         <item>
           <description>Le <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> la collection <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" /> méthode</description>
         </item>
         <item>
-          <description>la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> l’objet ou <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> propriété <b>DiagramNode</b> de la collection</description>
+          <description>Le <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> l’objet ou <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> propriété <b>DiagramNode</b> de la collection</description>
         </item>
-      </list>nœud de diagramme
-      <para>A peut s’arrêter ou elle peut contenir d’autres diagrammes enfants, enfants nœuds de diagramme ou formes enfants. Faire référence à ces avec les éléments suivants :</para><list type="bullet"><item><description>pour faire référence à un diagramme enfant, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" /> propriété.</description></item><item><description>Pour faire référence à un nœud de diagramme enfant individuel, utilisez <b>AddNode</b>, méthodes <b>CloneNode</b>, <b>NextNode</b> ou <b>PrevNode</b> ou la propriété <b>Root</b> .</description></item><item><description>Pour faire référence à une collection de nœuds de diagramme enfants, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> propriété.</description></item><item><description>Pour faire référence à une forme, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" /> ou <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" /> propriétés.</description></item></list><para></para></remarks>
+      </list>
+      <para>Un nœud de diagramme peut terminer, ou elle peut contenir d’autres diagrammes enfants, nœuds de diagramme enfants ou formes enfants. Reportez-vous à ces avec les éléments suivants :</para>
+      <list type="bullet">
+        <item>
+          <description>Pour faire référence à un diagramme enfant, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" /> propriété.</description>
+        </item>
+        <item>
+          <description>Pour faire référence à un nœud de diagramme enfant individuel, utilisez <b>AddNode</b>, méthodes <b>CloneNode</b>, <b>NextNode</b> ou <b>PrevNode</b> ou la propriété <b>Root</b> .</description>
+        </item>
+        <item>
+          <description>Pour faire référence à une collection de nœuds de diagramme enfants, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> propriété.</description>
+        </item>
+        <item>
+          <description>Pour faire référence à une forme, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" /> ou <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" /> propriétés.</description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -203,8 +219,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -292,17 +310,17 @@
           <para>
             <b>MsoOrgChartLayoutType</b> peut être une de ces constantes <b>MsoOrgChartLayoutType</b> .</para>
           <para>
-            <b>msoOrgChartLayoutAssistant</b> place des nœuds enfant comme des assistants.</para>
+            <b>msoOrgChartLayoutAssistant</b> Dispose les nœuds enfant comme des assistants.</para>
           <para>
-            <b>msoOrgChartLayoutBothHanging</b> place des nœuds enfant verticalement à partir du nœud parent à gauche et droite.</para>
+            <b>msoOrgChartLayoutBothHanging</b> Place les nœuds enfant verticalement à partir du nœud parent à gauche et droite.</para>
           <para>
-            <b>msoOrgChartLayoutLeftHanging</b> place des nœuds enfant verticalement à partir du nœud parent sur le côté gauche.</para>
+            <b>msoOrgChartLayoutLeftHanging</b> Dispose les nœuds enfant verticalement à partir du nœud parent sur le côté gauche.</para>
           <para>
-            <b>msoOrgChartLayoutMixed renvoie une</b> valeur pour un nœud parent ayant des enfants mis en forme avec plusieurs <b>MsoOrgChartLayoutType</b>.</para>
+            <b>msoOrgChartLayoutMixed renvoie une</b> Valeur renvoyée pour un nœud parent ayant des enfants mis en forme avec plusieurs <b>MsoOrgChartLayoutType</b>.</para>
           <para>
-            <b>msoOrgChartLayoutRightHanging</b> place des nœuds enfant verticalement à partir du nœud parent sur le côté droit.</para>
+            <b>msoOrgChartLayoutRightHanging</b> Dispose les nœuds enfant verticalement à partir du nœud parent sur le côté droit.</para>
           <para>
-            <b>msoOrgChartLayoutStandard</b> place des nœuds enfant horizontalement en dessous du nœud parent.</para>
+            <b>msoOrgChartLayoutStandard</b> Dispose les nœuds enfant horizontalement en dessous du nœud parent.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -443,7 +461,7 @@
         <param name="pTargetNode">Requis <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objet. Le nœud de diagramme cible à remplacer.</param>
         <summary>Remplace un nœud de diagramme cible par le nœud de diagramme source.</summary>
         <remarks>
-          <para>Le nœud de diagramme cible est supprimé et le nœud de diagramme source, y compris tous ses nœuds enfants, sont déplacés vers où le nœud de diagramme cible était.</para>
+          <para>Le nœud de diagramme cible est supprimé et le nœud de diagramme source, y compris tous ses nœuds enfants, sont déplacés vers où était le nœud de diagramme cible.</para>
           <para></para>
         </remarks>
       </Docs>

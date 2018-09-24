@@ -1,10 +1,10 @@
 <Type Name="CubeField" FullName="Microsoft.Office.Interop.Excel.CubeField">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dd2f0a8509580a113ef53628d35dc680262b50f0" />
+    <Meta Name="ms.openlocfilehash" Value="bf16f6175f71fd20e3da730314c01f3723f6ca55" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582417" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CubeField" />
@@ -30,7 +30,7 @@
     <remarks>
       <para>Dans un rapport de tableau croisé dynamique, l’objet <b>CubeField</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> collection.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PivotField.CubeField" /> propriété permet de renvoyer l’objet <b>CubeField</b> .</para>
-      <para>Utiliser <b>CubeFields</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du champ de cube pour renvoyer un seul objet <b>CubeField</b> .</para>
+      <para>Utilisez <b>CubeFields</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du champ de cube pour renvoyer un seul objet <b>CubeField</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -99,8 +99,8 @@
         <param name="PropertyOrder">Facultatif <b>Object</b>. Définit les <see cref="P:Microsoft.Office.Interop.Excel.PivotField.PropertyOrder" /> valeur de propriété pour un <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objet. La véritable position dans la collection sera immédiatement avant le champ de tableau croisé dynamique qui a le même <paramref name="PropertyOrder" /> valeur que celle indiquée dans l’argument. Si aucun champ n’a la valeur ordre donnée, la plage de valeurs acceptables est comprise entre 1 et le nombre de propriétés de membre déjà affichées pour la hiérarchie plus une. Cet argument est basé sur un. Si tous deux omis, la propriété accède à la fin de la liste.</param>
         <summary>Cette méthode ajoute un champ de propriété de membre à l'affichage du champ de cube.</summary>
         <remarks>
-          <para>Le champ de propriété spécifié ne seront pas visible si l’affichage de tableau croisé dynamique ne comporte aucun champ.</para>
-          <para>Pour supprimer les propriétés de membre, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.PivotField.Delete" /> méthode pour supprimer le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> d’objet à partir de la <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> collection.</para>
+          <para>Le champ de propriété spécifié n'est pas visible si le tableau croisé dynamique ne contient pas de champ.</para>
+          <para>Pour supprimer des propriétés de membre, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.PivotField.Delete" /> méthode pour supprimer le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> d’objet à partir de la <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> collection.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -257,7 +257,7 @@
       <Docs>
         <summary>Le <see cref="M:Microsoft.Office.Interop.Excel.CubeField.ClearManualFilter" /> méthode fournit un moyen facile pour définir la propriété <b>Visible</b> sur <b>True</b> pour tous les éléments d’un champ dans les tableaux croisés dynamiques et pour vider la <b>HiddenItemsInList</b>/collections<b>VisibleItemsList</b> dans les tableaux croisés dynamiques OLAP.</summary>
         <remarks>
-          <para>Cette méthode est disponible pour le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />objet <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />et pour le <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />objet dans le tableau croisé dynamique OLAP. Appeler pour un champ PivotField dans un tableau croisé dynamique OLAP renvoie une erreur d’exécution.</para>
+          <para>Cette méthode est disponible pour le <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />objet <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />et pour le <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />objet dans le tableau croisé dynamique OLAP. L’appel sur un objet PivotField dans un tableau croisé dynamique OLAP renvoie une erreur d’exécution.</para>
           <para>Après l’appel de cette méthode, les <b>collections HiddenItemsList</b>/<b>HiddenItems</b> et <b>VisibleItemsList</b>/<b>VisibleItems</b> sont vides.</para>
           <para></para>
         </remarks>
@@ -286,7 +286,7 @@
       <Docs>
         <summary>Le <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" /> méthode est nouvelle dans Microsoft Office Excel 2007. Il permet aux utilisateurs d’appliquer un filtre aux PivotFields ont pas encore été ajoutés au tableau croisé dynamique en créant correspondant <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />objet.</summary>
         <remarks>
-          <para>De tableaux croisés dynamiques OLAP, <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> n’existent pas jusqu'à ce que le correspondant <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> est ajouté à la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Le <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" />méthode permet aux utilisateurs de créer tous les <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> d’un <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />.  Les utilisateurs peuvent également ajouter des filtres aux champs et définir des propriétés sur les avant de l’objet CubeField est ajouté à la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
+          <para>Dans les tableaux croisés dynamiques OLAP, <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> n’existent pas jusqu'à ce que le correspondant <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> est ajouté à la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Le <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" />méthode permet aux utilisateurs de créer tous les <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> d’un <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />.  Les utilisateurs peuvent également ajouter des filtres aux champs et définir des propriétés sur les avant de l’objet CubeField est ajouté à la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -317,8 +317,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CubeFieldSubType">
@@ -349,7 +351,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCubeFieldSubType" />
         </value>
         <remarks>
-          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldSubType" /> peut être une des valeurs de l’énumération suivante</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldSubType" /> peut être une des valeurs de l’énumération suivante </para>
           <list type="bullet">
             <item>
               <description>
@@ -394,6 +396,11 @@
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeMeasure" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCubeFieldSubType.xlCubeSet" />
               </description>
             </item>
           </list>
@@ -524,7 +531,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La valeur par défaut est <b>True</b>.</para>
-          <para>Des sources de données OLAP pour la valeur est <b>False</b> pour les champs de mesure.</para>
+          <para>Pour les sources de données OLAP, la valeur est <b>False</b> pour les champs de mesure.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -560,7 +567,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La valeur par défaut est <b>True</b>.</para>
-          <para>Des sources de données OLAP pour la valeur est <b>False</b> pour les champs de mesure.</para>
+          <para>Pour les sources de données OLAP, la valeur est <b>False</b> pour les champs de mesure.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -631,7 +638,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La valeur par défaut est <b>True</b>.</para>
-          <para>Des sources de données OLAP pour la valeur est <b>False</b> pour les champs de mesure.</para>
+          <para>Pour les sources de données OLAP, la valeur est <b>False</b> pour les champs de mesure.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -666,8 +673,8 @@
           <b>La valeur true</b> si le champ peut être déplacé vers la position de ligne.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La valeur par défaut est <b>True</b>. </para>
-          <para>Des sources de données OLAP pour la valeur est <b>False</b> pour les champs de mesure.</para>
+          <para>La valeur par défaut est <b>True</b>.</para>
+          <para>Pour les sources de données OLAP, la valeur est <b>False</b> pour les champs de mesure.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -702,7 +709,8 @@
           <b>La valeur true</b> pour autoriser plusieurs éléments dans la zone de champ de page pour sélectionner des tableaux croisés dynamiques OLAP.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La valeur par défaut est <b>False</b>.</para>
+          <para>
+            <b>False</b> est la valeur par défaut.</para>
           <para>Cette propriété s’applique uniquement aux tableaux croisés dynamiques OLAP Online Analytical Processing (). Interroger ou définissant un non - tableau croisé dynamique OLAP provoque une erreur d’exécution.</para>
           <para></para>
         </remarks>
@@ -738,9 +746,9 @@
         <value>
           <b>la valeur true</b> si les éléments de tous les niveaux des hiérarchies dans un champ de cube du jeu nommé sont affichés dans le même champ d’un rapport de tableau croisé dynamique basé sur un cube OLAP ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>
-            <b>la valeur true</b> si toutes les hiérarchies du jeu nommé spécifié sont affichés dans le même champ ; sinon, <b>false</b>.</para>
+            <b>true</b> si toutes les hiérarchies du jeu nommé spécifié sont affichés dans le même champ ; Sinon, <b>false</b>.</para>
           <para>La valeur de cette propriété correspond au paramètre d’éléments de l’affichage à partir de différents niveaux dans la case à cocher de champs séparés sur la mise en page &amp; onglet Impression de la boîte de dialogue Paramètres de champ pour un jeu nommé dans un rapport de tableau croisé dynamique basé sur un cube OLAP.</para>
           <para>Cette propriété renvoie une erreur si le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldType" /> propriété du spécifié <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objet n’est pas <b>xlSet</b>.</para>
           <para></para>
@@ -811,7 +819,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La valeur par défaut est 0 (zéro), indiquant qu’aucun niveau n’est masqués.</para>
-          <para>Pour définir la valeur de cette propriété à un nombre entier supérieur à 0, vous devez d’abord définir la valeur 0.</para>
+          <para>Pour définir la valeur de cette propriété à un nombre entier supérieur à 0, vous devez d’abord affecter la valeur 0.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -846,9 +854,9 @@
         <value>
           <b>true</b> si les doublons doivent être classés et supprimés lors de l’affichage spécifié un jeu nommé dans un rapport de tableau croisé dynamique basé sur un cube OLAP ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>
-            <b>la valeur true</b> si le jeu nommé est affiché comme prévu avec les doublons supprimés ; sinon, <b>false</b>.</para>
+            <b>la valeur true</b> si le jeu nommé est affiché comme prévu avec les doublons supprimés ; Sinon, <b>false</b>.</para>
           <para>La valeur de cette propriété correspond au paramètre de la commande automatiquement et supprimer les doublons de la case à cocher Définir la mise en page &amp; onglet Impression de la boîte de dialogue Paramètres de champ pour un jeu nommé dans un rapport de tableau croisé dynamique basé sur un cube OLAP.</para>
           <para>Cette propriété renvoie une erreur si le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldType" /> propriété du spécifié <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objet n’est pas <b>xlSet</b>.</para>
           <para></para>
@@ -887,7 +895,7 @@
         </value>
         <remarks>
           <para>Valeur par défaut est <b>False</b>.</para>
-          <para>Lorsque ce paramètre est défini sur <b>True</b>, les éléments exclus sont suivies lorsqu’un filtrage manuel est appliqué. Lorsque ce paramètre est défini sur <b>False</b>, les éléments inclus sont suivies lorsqu’un filtrage manuel est appliqué.</para>
+          <para>Avec la valeur <b>True</b>, les éléments exclus font l'objet d'un suivi lorsque le filtrage manuel est appliqué. Avec la valeur <b>False</b>, les éléments inclus font l'objet d'un suivi lorsque le filtrage manuel est appliqué.</para>
           <para>Lorsque <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> est défini sur <b>False</b>, les collections <b>HiddenItemsList</b> et <b>HiddenItems</b> sont vides et les éléments ne peuvent pas être ajoutés.</para>
           <para>Lorsque <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> est définie sur <b>True</b>, les collections <b>VisibleItemsList</b> et <b>VisibleItems</b> sont vides et les éléments ne peuvent pas être ajoutés.</para>
           <para></para>
@@ -956,10 +964,10 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutFormType" />peut être une de ces constantes <b>XlLayoutFormType</b> :</para>
           <para>
-            <b>xlTabular</b> par défaut.</para>
+            <b>xlTabular</b> Valeur par défaut.</para>
           <para>
-            <b>xlOutline</b> le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutSubtotalLocation" /> propriété indique où le sous-total s’affiche dans le rapport de tableau croisé dynamique.</para>
-          <para>, Vous pouvez définir cette propriété pour un champ de tableau croisé dynamique ; Toutefois, la mise en forme n’apparaît que si le champ spécifié est un champ de ligne autre que le champ le plus profond ligne (niveau le plus bas). Sources de données non-OLAP, la valeur de cette propriété ne change pas lorsque le champ est réorganisé ou lorsqu’il est ajouté ou supprimé dans le rapport de tableau croisé dynamique.</para>
+            <b>xlOutline</b> Le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutSubtotalLocation" /> propriété indique où le sous-total s’affiche dans le rapport de tableau croisé dynamique.</para>
+          <para>Vous pouvez définir cette propriété pour n'importe quel champ de tableau croisé dynamique ; cependant, la mise en forme s'affiche uniquement si le champ spécifié est un champ de ligne différent de celui situé le plus au centre (niveau le plus bas). Dans le cas des sources de données autres que OLAP, la valeur de cette propriété ne change pas lorsque le champ est réorganisé ou lorsqu'il est ajouté ou supprimé dans un rapport de tableau croisé dynamique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -996,12 +1004,12 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlSubtototalLocationType" />peut être une de ces constantes <b>XlSubtototalLocationType</b> :</para>
           <para>
-            <b>xlAtTop</b>
+            <b>valeur xlAtTop</b>
           </para>
           <para>
-            <b>xlAtBottom</b> par défaut</para>
-          <para>vous pouvez définir cette propriété pour un tableau croisé dynamique de champ dans un format plan ; Toutefois, la mise en forme n’apparaît que si le texte spécifié le champ est un champ de ligne autre que celui du (niveau le plus bas). Sources de données non-OLAP, la valeur de cette propriété ne change pas lorsque le champ est réorganisé ou lorsqu’il est ajouté ou supprimé dans le rapport.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutForm" /> propriété détermine si le rapport s’affiche au format de tableau ou de plan.</para>
+            <b>xlAtBottom</b> Par défaut</para>
+          <para>Vous pouvez définir cette propriété pour un champ de tableau croisé dynamique en format plan ; Toutefois, la mise en forme s’affiche uniquement si le champ spécifié est un champ de ligne autre que celui du (niveau le plus bas). Sources de données non-OLAP, la valeur de cette propriété ne change pas lorsque le champ est réorganisé ou lorsqu’il est ajouté ou supprimé dans le rapport.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutForm" /> propriété détermine si le rapport s’affiche au format de tableau ou de plan.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1080,7 +1088,7 @@
           <para>
             <b>xlRowField</b>
           </para>
-          <para>pour les sources de données OLAP, cette propriété pour un champ dans un hiérarchie définit l’orientation des autres champs dans la même hiérarchie. Les champs de dimension peuvent uniquement être orientés dans la ligne, colonne et zones de champ de page du rapport de tableau croisé dynamique. Les champs de mesure peuvent uniquement être orientés dans la zone de données. Si un champ de hiérarchie ou données <b>xlHidden</b> supprime la hiérarchie ou un champ à partir du rapport de tableau croisé dynamique.</para>
+          <para>Sources de données OLAP, la définition de cette propriété pour un champ dans une hiérarchie définit l’orientation pour les autres champs dans la même hiérarchie. Les champs de dimension peuvent uniquement être orientés dans la ligne, colonne et zones de champ de page du rapport de tableau croisé dynamique. Les champs de mesure peuvent uniquement être orientés dans la zone de données. Si un champ de hiérarchie ou données <b>xlHidden</b> supprime la hiérarchie ou un champ à partir du rapport de tableau croisé dynamique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1139,7 +1147,7 @@
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> collection. Cette collection contient tous les champs de tableau croisé dynamique, y compris ceux qui ne sont pas actuellement visibles à l’écran.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour traitement OLAP (Online Analytical) des sources de données, il n’existe aucuns champs masqués et l’objet ou la collection renvoyée reflète ce qui est actuellement visible.</para>
+          <para>Pour des sources de données OLAP (Online Analytical Processing), il n'existe pas de champs masqués et l'objet ou la collection renvoyés reflètent ce qui est actuellement visible.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1232,7 +1240,7 @@
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" /> représentant le contrôle de manipulation de cube d’un rapport de tableau croisé dynamique OLAP.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété est disponible uniquement lorsque le contrôle est visible.</para>
+          <para>Cette propriété n'est disponible que lorsque le contrôle est visible.</para>
           <para></para>
         </remarks>
       </Docs>

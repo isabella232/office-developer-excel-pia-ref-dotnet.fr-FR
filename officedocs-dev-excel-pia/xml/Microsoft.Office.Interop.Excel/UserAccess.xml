@@ -1,10 +1,10 @@
 <Type Name="UserAccess" FullName="Microsoft.Office.Interop.Excel.UserAccess">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cbd39fb1f38835efe39fe6d5eb2e5786a179eb1c" />
+    <Meta Name="ms.openlocfilehash" Value="5757d729f5b2ba76353f83174ceb6884fc95261d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587198" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface UserAccess" />
@@ -131,28 +131,42 @@
             </item>
             <item>
               <term>
-                <b>nom</b>
+                <b>Nom</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
-              <description>(Identique à la valeur de propriété SQL en lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
+              <description>(Valeur identique à celle de la propriété SQL ; en lecture seule)</description>
             </item>
             <item>
               <term>
                 <b>Valeur</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Lors de la spécification d’index dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para> expression 
-          <list type="table"><item><term>. PivotItems (« [Europe]. [ France]. [Paris] »)</term><description>expression. PivotItems("Paris")</description></item></list><para>lors de l’utilisation du <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para><list type="table"><item><term>[Europe]. [ France]. [Paris]</term><description>Paris</description></item></list><para></para></remarks>
+          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <list type="table">
+            <item>
+              <term>expression. PivotItems (« [Europe]. [ France]. [Paris] »)</term>
+              <description>expression. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para>Lorsque vous utilisez la <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para>
+          <list type="table">
+            <item>
+              <term>[Europe]. [France]. [Paris]</term>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

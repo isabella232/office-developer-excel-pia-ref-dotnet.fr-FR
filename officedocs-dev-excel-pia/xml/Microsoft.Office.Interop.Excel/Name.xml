@@ -1,10 +1,10 @@
 <Type Name="Name" FullName="Microsoft.Office.Interop.Excel.Name">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dc0260c6b148041f273cfeb372c53b2a97c08418" />
+    <Meta Name="ms.openlocfilehash" Value="03c7a9b67e0c5237abc6e68749010ea9f9840fdb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575893" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Name" />
@@ -32,12 +32,12 @@
     <summary>Représente un nom défini pour une plage de cellules.</summary>
     <remarks>
       <para>Noms peuvent être soit intégré — comme base de données, Print_Area et Auto_Open — ou de noms personnalisés.</para>
-      <para>Application, Workbook et objets de la feuille de calcul</para>
-      <para>Le <b>nom</b> de l' objet est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Names" /> collection pour le <see cref="T:Microsoft.Office.Interop.Excel.Application" />, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />, et <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objets. Utiliser des <b>noms</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du nom ou le nom défini, pour renvoyer un seul objet <b>Name</b> .</para>
+      <para>Objets Application, Workbook et Worksheet</para>
+      <para>L’objet <b>Name</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Names" /> collection pour le <see cref="T:Microsoft.Office.Interop.Excel.Application" />, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />, et <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objets. Utiliser des <b>noms</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du nom ou le nom défini, pour renvoyer un seul objet <b>Name</b> .</para>
       <para>Le numéro d’index indique la position du nom de la collection. Les noms sont classés par ordre alphabétique d’un à z et ne sont pas la casse (il s’agit de la même commande comme est affiché dans les boîtes de dialogue Définir un nom et appliquer les noms, renvoyées par la commande nom dans le menu Insertion).</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> propriété pour renvoyer ou définir le texte du nom lui-même.</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> propriété pour renvoyer ou définir le texte du nom.</para>
       <para>Objets Range</para>
-      <para>Bien qu’un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet peut avoir plusieurs noms, il n’existe aucune collection de <b>noms</b> de l’objet <b>Range</b> . Utilisez le <b>nom</b> avec un objet <b>Range</b> pour renvoyer le premier nom de la liste des noms (par ordre alphabétique) affecté à la plage.</para>
+      <para>Bien qu’un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet peut avoir plusieurs noms, il n’existe aucune collection de <b>noms</b> de l’objet <b>Range</b> . Utiliser le <b>nom</b> avec un objet <b>Range</b> pour renvoyer le premier nom de la liste des noms (par ordre alphabétique) affecté à la plage.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -197,7 +197,7 @@
           <b>Chaîne</b>
         </value>
         <remarks>
-          <para>Le texte de commentaire ne peut pas dépasser 255 caractères.</para>
+          <para>Le texte de commentaire ne doit pas dépasser 255 caractères. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -228,8 +228,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet spécifié a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -375,7 +377,7 @@
         <summary>Cette propriété renvoie ou définit le nom de l’objet dans la langue de l’utilisateur.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si le style est un style prédéfini, cette propriété renvoie le nom du style dans la langue des paramètres régionaux.</para>
+          <para>S'il s'agit d'un style prédéfini, cette propriété renvoie le nom du style dans la langue définie au niveau des paramètres régionaux.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -568,7 +570,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si l’objet <b>Name</b> ne fait pas référence à une plage (par exemple, s’il fait référence à une constante ou une formule), cette propriété échoue.</para>
-          <para>Pour modifier la plage de référence d’un nom, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" /> propriété.</para>
+          <para>Pour modifier un nom fait référence à la plage, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" /> propriété.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -697,8 +699,8 @@
         <summary>Détermine si l’objet est visible.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>Visible</b> d’un élément de tableau croisé dynamique a la <b>valeur True</b> si l’élément est actuellement visible dans le tableau.</para>
-          <para>Si vous définissez la propriété <b>Visible</b> d’un nom à la <b>valeur False</b>, le nom n’apparaît pas dans la boîte de dialogue <b>Définir un nom</b> .</para>
+          <para>La propriété <b>Visible</b> d'un élément de tableau croisé dynamique a la valeur <b>True</b> si cet élément apparaît actuellement dans le tableau.</para>
+          <para>Si vous affectez la valeur <b>False</b> à la propriété <b>Visible</b>, le nom n'apparaît pas dans la boîte de dialogue <b>Définir un nom</b>.</para>
           <para></para>
         </remarks>
       </Docs>

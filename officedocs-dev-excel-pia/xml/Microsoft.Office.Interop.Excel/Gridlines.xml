@@ -1,10 +1,10 @@
 <Type Name="Gridlines" FullName="Microsoft.Office.Interop.Excel.Gridlines">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d1c9f24e537089867dcd5dca9af3db9ad8ac46f8" />
+    <Meta Name="ms.openlocfilehash" Value="0eedebe1673c91747036dcee52774783edd7c982" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578749" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Gridlines" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Représente un quadrillage principal ou secondaire sur un axe de graphique.</summary>
     <remarks>
-      <para>Le quadrillage prolonge la marques de graduation sur un axe de graphique pour le rendre plus facile à voir les valeurs associées aux marques de données. Cet objet n’est pas une collection. Il n’existe aucun objet qui représente un seul quadrillage. vous avez activé le quadrillage ou tous les désactivés.</para>
+      <para>Le quadrillage prolonge les marques de graduation d'un axe de graphique afin de faciliter la lecture des valeurs associées aux indicateurs de données. Cet objet n'est pas une collection. Il n'existe aucun objet représentant un seul quadrillage. Le quadrillage est soit activé soit désactivé.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorGridlines" /> propriété permet de renvoyer l’objet <b>GridLines</b> représentant le quadrillage principal de l’axe. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorGridlines" /> propriété permet de renvoyer l’objet <b>GridLines</b> qui représente le quadrillage secondaire. Il est possible de revenir à la fois de quadrillage en même temps.</para>
       <para></para>
     </remarks>
@@ -119,8 +119,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -209,35 +211,42 @@
           <list type="table">
             <item>
               <term>
-                <b>légende</b>
+                <b>Légende</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
-                <b>nom</b>
+                <b>Nom</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
-              <description>(Identique à la valeur de propriété SQL en lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
+              <description>(Valeur identique à celle de la propriété SQL ; en lecture seule)</description>
             </item>
             <item>
               <term>
                 <b>Valeur</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Lors de la spécification d’index dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para> expression 
-          <list type="table"><item><term>. PivotItems (« [Europe]. [ France]. [Paris] »)</term><description>expression. PivotItems("Paris")</description></item></list><para></para></remarks>
+          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <list type="table">
+            <item>
+              <term>expression. PivotItems (« [Europe]. [ France]. [Paris] »)</term>
+              <description>expression. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

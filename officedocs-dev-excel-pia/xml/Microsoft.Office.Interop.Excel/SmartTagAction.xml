@@ -1,10 +1,10 @@
 <Type Name="SmartTagAction" FullName="Microsoft.Office.Interop.Excel.SmartTagAction">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f9b7525cdde5955b94995035e9fee9c22d92425a" />
+    <Meta Name="ms.openlocfilehash" Value="0a10fef880f7ed0c7daae5414a8fa44a05aefdd9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578077" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SmartTagAction" />
@@ -153,7 +153,7 @@
         <summary>Cette propriété renvoie ou définit une valeur de <b>type Boolean</b> qui indique si une case à cocher dans un document dynamique est sélectionnée.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définition <b>CheckBoxState,</b> de la propriété sur <b>True</b> sélectionne la case à cocher. Définir cette propriété sur <b>False</b> désactive la case à cocher.</para>
+          <para>Définition de <b>CheckBoxState,</b> de la propriété sur <b>True</b> sélectionne la case à cocher. Définir cette propriété sur <b>False</b> désactive la case à cocher.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -184,8 +184,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -312,37 +314,37 @@
             </item>
             <item>
               <term>
-                <b>nom</b>
+                <b>Nom</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
-              <description>(Identique à la valeur de propriété SQL en lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
+              <description>(Valeur identique à celle de la propriété SQL ; en lecture seule)</description>
             </item>
             <item>
               <term>
                 <b>Valeur</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Lors de la spécification d’index dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
           <list type="table">
             <item>
               <term>Expression.PivotItems (« [Europe]. [ France]. [Paris] »)</term>
               <description>expression. PivotItems("Paris")</description>
             </item>
           </list>
-          <para>lors de l’utilisation du <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para>
+          <para>Lorsque vous utilisez la <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para>
           <list type="table">
             <item>
-              <term>[Europe]. [ France]. [Paris]</term>
+              <term>[Europe]. [France]. [Paris]</term>
               <description>Paris</description>
             </item>
           </list>
@@ -509,7 +511,7 @@
             <b>xlSmartTagControlCombo</b>
           </para>
           <para>
-            <b>xlSmartTagControlHelp </b>
+            <b>xlSmartTagControlHelp</b>
           </para>
           <para>
             <b>xlSmartTagControlHelpURL</b>
@@ -530,7 +532,7 @@
             <b>xlSmartTagControlRadioGroup</b>
           </para>
           <para>
-            <b> xlSmartTagControlSeparator</b>
+            <b>xlSmartTagControlSeparator</b>
           </para>
           <para>
             <b>xlSmartTagControlSmartTag</b>

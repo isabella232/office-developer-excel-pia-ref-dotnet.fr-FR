@@ -1,10 +1,10 @@
 <Type Name="RoutingSlip" FullName="Microsoft.Office.Interop.Excel.RoutingSlip">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cecf638f353f71fb8e3f7ca178c4b958a480636c" />
+    <Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572701" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface RoutingSlip" />
@@ -91,8 +91,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delivery">
@@ -124,7 +126,7 @@
         <summary>Cette propriété renvoie ou définit la méthode de remise de routage. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> constantes : <b>xlOneAfterAnother</b> ou <b>xlAllAtOnce</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous ne pouvez pas définir cette propriété si le routage est en cours.</para>
+          <para>Vous ne pouvez pas définir cette propriété pendant la procédure de routage.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -221,8 +223,8 @@
         <summary>Cette propriété renvoie ou définit les destinataires du bordereau de routage.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>L’ordre de la liste des destinataires définit l’ordre de distribution si l’option de routage a la <b>valeur xlOneAfterAnother</b>.</para>
-          <para>Si un bordereau de routage est en cours, seuls les destinataires qui n’ont pas encore reçu et routé le document sont renvoyées ou définies.</para>
+          <para>L'ordre de la liste des destinataires définit l'ordre de distribution si l'option de distribution de routage a la valeur <b>xlOneAfterAnother</b>.</para>
+          <para>Si un bordereau de routage est en cours de traitement, seuls les destinataires qui n'ont pas encore reçu et routé le document sont renvoyés ou définis.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -251,7 +253,7 @@
         <summary>Rétablit le bordereau de routage afin qu’une nouvelle règle de routage peut être lancée avec le même bordereau (en utilisant les mêmes informations liste destinataires de remise).</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Le routage doivent être effectuées avant d’utiliser cette méthode. À un autre moment à l’aide de cette méthode provoque une erreur.</para>
+          <para>Le routage doit être effectué avant d’utiliser cette méthode. À un autre moment à l’aide de cette méthode provoque une erreur.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -380,7 +382,7 @@
           <b>La valeur true</b> si le suivi est activé pour le bordereau de routage.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous ne pouvez pas définir cette propriété si le routage est en cours.</para>
+          <para>Vous ne pouvez pas définir cette propriété pendant la procédure de routage.</para>
           <para></para>
         </remarks>
       </Docs>

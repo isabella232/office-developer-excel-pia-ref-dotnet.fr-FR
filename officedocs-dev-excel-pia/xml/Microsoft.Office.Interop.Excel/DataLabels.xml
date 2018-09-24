@@ -1,10 +1,10 @@
 <Type Name="DataLabels" FullName="Microsoft.Office.Interop.Excel.DataLabels">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="434368df27639f11f635a2389a37b5e4bd558ba2" />
+    <Meta Name="ms.openlocfilehash" Value="59a0db665b8a81c22e071c0c60a0f23b4492e55a" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584552" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
@@ -399,7 +399,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -600,7 +603,7 @@
           <para>
             <b>xlRight</b>
           </para>
-          <para>Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -727,7 +730,7 @@
         <summary>Cette propriété renvoie ou définit le code du format de l'objet. En lecture/écriture, <b>chaîne</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le format de code est la même chaîne que l’option de Codes de Format dans la boîte de dialogue Format de cellule. La fonction <b>Format</b> utilise des chaînes de code de format différentes <b>NumberFormat</b> et <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> propriétés.</para>
+          <para>Le code de format est la même chaîne que l'option de Codes de Format dans la boîte de dialogue Format de cellule. La fonction <b>Format</b> utilise des chaînes de code de format différentes <b>NumberFormat</b> et <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> propriétés.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -965,7 +968,7 @@
         <summary>Cette propriété renvoie ou définit le sens de lecture de l’objet spécifié. Peut être une des constantes suivantes : <b>xlContext</b>, <b>xlLTR</b> (de gauche à droite) ou <b>xlRTL</b> (de droite à gauche). Type de données <b>Integer</b> en lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1025,7 +1028,7 @@
         <summary>Définit ou renvoie un <b>objet</b> représentant le séparateur utilisé pour les étiquettes de données dans un graphique. Lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le graphique doit d’abord être actif avant de pouvoir accéder par programme les étiquettes de données ; sinon, une erreur d’exécution se produit.</para>
+          <para>Le graphique doit d'abord être actif avant que vous pouvez accéder par programmation ; les étiquettes de données dans le cas contraire, une erreur d'exécution se produit.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1091,7 +1094,7 @@
         <summary>Cette propriété renvoie la valeur <b>True</b> pour afficher la taille des bulles pour les étiquettes de données sur un graphique et la valeur <b>False</b> pour la masquer. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le graphique doit d’abord être actif avant que vous pouvez accéder par programme les étiquettes de données ou une erreur d’exécution se produit.</para>
+          <para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1125,7 +1128,7 @@
         <summary>Cette propriété renvoie la valeur <b>True</b> pour afficher le nom des catégories pour les étiquettes de données dans un graphique. Elle renvoie la valeur <b>False</b> pour le masquer. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le graphique doit d’abord être actif avant que vous pouvez accéder par programme les étiquettes de données ou une erreur d’exécution se produit.</para>
+          <para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1190,7 +1193,7 @@
         <summary>Cette propriété renvoie la valeur <b>True</b> pour afficher la valeur de pourcentage pour les étiquettes de données dans un graphique. Elle renvoie la valeur <b>False</b> pour la masquer. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le graphique doit d’abord être actif avant que vous pouvez accéder par programme les étiquettes de données ou une erreur d’exécution se produit.</para>
+          <para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1258,7 +1261,7 @@
         <summary>Cette propriété renvoie ou définit un objet de type <b>Boolean</b> pour indiquer le comportement d'affichage du nom de la série pour les étiquettes de données dans un graphique. Cette propriété a la valeur <b>True</b> pour afficher le nom de la série. Elle a la valeur <b>False</b> pour le masquer. En lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le graphique doit d’abord être actif avant que vous pouvez accéder par programme les étiquettes de données ou une erreur d’exécution se produit.</para>
+          <para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1292,7 +1295,7 @@
         <summary>Cette propriété renvoie ou définit un objet de type <b>Boolean</b> correspondant à un comportement d'affichage des valeurs d'étiquettes de données d'un graphique spécifié. La valeur <b>True</b> affiche les valeurs. La valeur <b>False</b> les masque. En lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Du graphique spécifié doit d’abord être actif avant que vous pouvez accéder par programme les étiquettes de données ou une erreur d’exécution se produit.</para>
+          <para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
           <para></para>
         </remarks>
       </Docs>

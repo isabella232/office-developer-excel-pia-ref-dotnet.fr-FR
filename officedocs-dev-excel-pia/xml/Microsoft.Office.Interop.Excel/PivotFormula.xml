@@ -1,10 +1,10 @@
 <Type Name="PivotFormula" FullName="Microsoft.Office.Interop.Excel.PivotFormula">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f7a0555508b1378be940d3dc42a9131282186bb8" />
+    <Meta Name="ms.openlocfilehash" Value="ce492b9d9661d497cae1980426cde80b49102656" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585147" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotFormula" />
@@ -32,7 +32,7 @@
     <summary>Cet objet représente une formule utilisée pour calculer les résultats dans un rapport de tableau croisé dynamique.</summary>
     <remarks>
       <para>Utilisez <b>PivotFormulas</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro de la formule ou la chaîne sur le côté gauche de la formule, pour renvoyer l’objet <b>PivotFormula</b> .</para>
-      <para>Cet objet et ses propriétés et méthodes associées ne sont pas disponibles pour les sources de données OLAP, car les champs calculés et les éléments ne sont pas pris en charge.</para>
+      <para>Cet objet ainsi que les propriétés et méthodes qui lui sont associées ne sont pas disponibles pour les sources de données OLAP, car les champs et les éléments calculés ne sont pas pris en charge.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -128,8 +128,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -186,11 +188,11 @@
         <summary>Cette propriété renvoie ou définit la formule de l’objet dans une notation de style A1.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
-          <para>Si la cellule contient une constante, cette propriété renvoie la constante. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule sous forme de chaîne dans le même format qui s’affiche dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Excel vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, Microsoft Excel lui affecte le format pour le format de date courte par défaut.</para>
+          <para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
+          <para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule en tant que chaîne dans le même format que celui qui doit s'afficher dans la barre de formule (y compris le signe égal).</para>
+          <para>Si vous affectez une date à la formule d'une cellule, Microsoft Excel vérifie si la cellule est déjà dotée de l'un des formats numériques ou de date. Si tel n'est pas le cas, Microsoft Excel lui affecte le format de date numérique par défaut.</para>
           <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule en tableau des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau.</para>
-          <para>En définissant la formule pour une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
+          <para>Le fait de définir la formule pour une plage comprenant plusieurs cellules insère cette formule dans la totalité des cellules de la plage.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -283,7 +285,7 @@
         <summary>Cette propriété renvoie ou définit une <b>chaîne</b> spécifiant la mise en forme des formules standard anglais (États-Unis).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>StandardFormula</b> affecte principalement les noms d’éléments avec date ou numéro de la mise en forme. Il fournit un moyen pour spécifier ou demander une formule pour un élément calculé donné.</para>
+          <para>La propriété <b>StandardFormula</b> affecte principalement les noms d'éléments avec un format de date ou de nombre. Elle offre un moyen de spécifier ou de demander une formule pour un élément calculé donné.</para>
           <para>La propriété <b>StandardFormula</b> est « internationale » tandis que la <see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Formula" /> propriété n’est pas.</para>
           <para></para>
         </remarks>

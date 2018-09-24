@@ -1,10 +1,10 @@
 <Type Name="ChartGroup" FullName="Microsoft.Office.Interop.Excel.ChartGroup">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="91aeed6a7dfc46c2d925ce34ca5aa8b7e1be919f" />
+    <Meta Name="ms.openlocfilehash" Value="d867c9c484716da4b2528f8d662af2030b791599" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578245" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartGroup" />
@@ -31,33 +31,33 @@
   <Docs>
     <summary>Représente une ou plusieurs séries tracées dans un graphique avec le même format. L’objet <b>ChartGroup</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> collection.</summary>
     <remarks>
-      <para>Un graphique contient un ou plusieurs groupes de graphiques, chaque groupe de graphique contient une ou plusieurs séries, et chaque série contient un ou plusieurs points. Par exemple, un seul graphique peut contenir à la fois un groupe courbes, contenant toutes les séries tracées avec le format de graphique en courbes et un groupe de graphique à barres, contenant toutes les séries tracées avec le format de graphique en barres.</para>
+      <para>Un graphique contient un ou plusieurs groupes de graphique, chaque groupe de graphique contient une ou plusieurs séries, et chaque série contient un ou plusieurs points. Par exemple, un seul graphique peut contenir un groupe courbes, contenant toutes les séries tracées avec le format de graphique en courbes et un groupe de graphique à barres, contenant toutes les séries tracées avec le format de graphique en barres.</para>
       <para>Utilisez <b>ChartGroups</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de groupe de graphiques, pour renvoyer un seul objet <b>ChartGroup</b> . Si le graphique a été activé, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> propriété.</para>
-      <para>Le numéro d’index d’un groupe de graphiques particulier peut changer si le format de graphique utilisé pour ce groupe est modifié, il peut être plus facile d’utiliser une des méthodes graphique nommé groupe contextuel pour renvoyer un groupe de graphiques particulier. Le <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> méthode renvoie la collection de groupes de graphiques en secteurs dans un graphique, la <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> méthode retourne la collection de groupes de graphiques en ligne et ainsi de suite. Chacune de ces méthodes peut être utilisé avec un numéro d’index pour renvoyer un seul objet <b>ChartGroup</b> ou sans numéro d’index pour renvoyer une collection <b>ChartGroups</b> . Les méthodes de groupe de graphique suivantes sont disponibles :</para>
+      <para>Le numéro d’index d’un groupe de graphiques particulier pouvant changer si le format de graphique utilisé pour ce groupe est modifié, il peut être plus facile d’utiliser une des méthodes graphique nommé groupe contextuel pour renvoyer un groupe de graphiques particulier. Le <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> méthode renvoie la collection de groupes de graphiques en secteurs dans un graphique, la <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> méthode retourne la collection de groupes de graphiques en ligne et ainsi de suite. Chacune de ces méthodes peut être utilisé avec un numéro d’index pour renvoyer un seul objet <b>ChartGroup</b> ou sans numéro d’index pour renvoyer une collection <b>ChartGroups</b> . Les méthodes de groupe de graphique suivantes sont disponibles :</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> méthode</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />méthode</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> méthode</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />méthode</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> méthode</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />méthode</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> méthode</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />méthode</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> méthode</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />méthode</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> méthode</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />méthode</description>
         </item>
       </list>
       <para></para>
@@ -121,7 +121,7 @@
         <summary>Renvoie le groupe pour la série ou le groupe de graphiques spécifié.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour les graphiques 3D seul <b>xlPrimary</b> est valide.</para>
+          <para>Pour les graphiques 3D, seul <b>xlPrimary</b> est valide.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -210,7 +210,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DoughnutHoleSize">
@@ -388,7 +391,7 @@
         <summary>Barre et aux graphiques en histogrammes : cette propriété renvoie ou définit l’espace entre les barres ou en histogrammes clusters sous forme de pourcentage de la barre ou une colonne largeur. Secteurs de secteurs et les graphiques à barres de secteurs : cette propriété renvoie ou définit l’espace entre les sections principales et secondaires du graphique.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La valeur de cette propriété doit être comprise entre 0 et 500.</para>
+          <para>La valeur de cette propriété doit être comprise entre 0 et 500 %.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -669,7 +672,7 @@
         <summary>Spécifie la position des barres et des colonnes. Peut être une valeur comprise entre – 100 et 100. S’applique uniquement aux barres 2D et aux graphiques en histogrammes 2D.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si cette propriété a la valeur -100, les barres sont espacées d’une barre largeur entre eux. Si le chevauchement est 0 (zéro), il n’existe aucun espace entre les barres (chaque barre commence immédiatement après la précédente). Si le chevauchement est 100, les barres sont espacées se chevauchent.</para>
+          <para>Si cette propriété a la valeur -100, les barres sont espacées d’une barre largeur entre eux. Si le chevauchement est 0 (zéro), il n’existe aucun espace entre les barres (chaque barre commence immédiatement après la précédente). Si le chevauchement est 100, les barres sont positionnées sur l’autre.</para>
           <para></para>
         </remarks>
       </Docs>

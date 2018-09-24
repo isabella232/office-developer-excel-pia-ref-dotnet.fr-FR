@@ -1,10 +1,10 @@
 <Type Name="WorkbookEvents_Event" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_Event">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6f0025a298b025acdc36577d72a1f6f03353008" />
+    <Meta Name="ms.openlocfilehash" Value="2c6690aaaabf5f77b79d72b8fb4094774b86969d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586260" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
@@ -92,7 +92,7 @@
       <Docs>
         <summary>Se produit lorsque le classeur est désinstallé sous la forme d’une macro complémentaire.</summary>
         <remarks>
-          <para>Le complément ne se ferme automatiquement lorsqu’elle est désinstallée.</para>
+          <para>La macro n'est pas fermée automatiquement lorsqu'elle est désinstallée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -317,7 +317,7 @@
         <summary>Se produit lorsqu’un nouveau graphique est créé dans le classeur.</summary>
         <remarks>
           <para>Le <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> événement se produit chaque fois qu’un nouveau graphique est inséré ou collé dans une feuille de calcul, une feuille de graphique ou d’autres types de feuille. Si plusieurs graphiques sont insérées ou collées, l’événement se produit pour chaque graphique dans l’ordre ils sont insérés ou collés. Si un objet graphique ou une feuille de graphique est déplacé d’un emplacement vers un autre, l’événement ne se produit pas. Toutefois, si le graphique est déplacé entre un objet graphique et une feuille de graphique, l’événement se produit, car un nouveau graphique doit être créé.</para>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> événement ne se produit pas dans les scénarios suivants : copier ou coller une feuille de graphique, modification d’un type de graphique, modification d’une source de données du graphique, l’annulation ou au rétablissement d’insertion ou collage d’un graphique et le chargement d’un classeur qui contient un graphique.</para>
+          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> événement ne se produit pas dans les scénarios suivants : copier ou coller une feuille de graphique, modification d’un type de graphique, modification d’une source de données du graphique, l’annulation ou au rétablissement d’insertion ou collage d’un graphique et le chargement d’un classeur qui contient un graphique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -415,7 +415,7 @@
       <Docs>
         <summary>L’événement est déclenché lorsque l’utilisateur extrait le jeu d’enregistrements ou appelle l’action rowset sur un tableau croisé dynamique OLAP.</summary>
         <remarks>
-          <para>, Car le jeu d’enregistrements est créé de façon asynchrone, l’événement permet d’automatiser déterminer si l’action a été terminée. En outre, étant donné que le jeu d’enregistrements est créé dans une feuille distincte, l’événement doit être au niveau du classeur.</para>
+          <para>Dans la mesure où le jeu d'enregistrements est créé de façon asynchrone, l'événement permet d'automatiser la détection de la fin de l'action. De plus, étant donné que le jeu d'enregistrements est créé dans une autre feuille, l'événement doit se situer au niveau du classeur.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -494,7 +494,7 @@
       <Docs>
         <summary>Se produit lorsque l’utilisateur clique avec le bouton droit de la souris sur une feuille de calcul avant le clic par défaut avec le bouton droit de la souris.</summary>
         <remarks>
-          <para>Cet événement ne se produit pas dans les feuilles de graphique.</para>
+          <para>Cet événement ne se produit pas sur les feuilles de graphique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -535,7 +535,7 @@
       <Docs>
         <summary>Cet événement se produit lorsque des cellules d'une feuille de calcul sont modifiées par l'utilisateur ou par un lien externe.</summary>
         <remarks>
-          <para>Cet événement ne se produit pas dans les feuilles de graphique.</para>
+          <para>Cet événement ne se produit pas sur les feuilles de graphique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -617,7 +617,7 @@
       <Docs>
         <summary>Se produit après qu’une cellule ou une plage de cellules à l’intérieur d’un tableau croisé dynamique a été modifiée ou recalculée (pour les cellules contenant des formules).</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" /> événement ne se produit pas dans toutes les conditions autre que l’édition ou de recalcul de cellules. Par exemple, il se produit pas lorsque le tableau croisé dynamique est actualisé, trié, filtré ou analysé, même si ces opérations déplacement des cellules et potentiellement extraient de nouvelles valeurs à partir de la source de données OLAP.</para>
+          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" /> événement ne se produit pas dans toutes les conditions autre que l’édition ou de recalcul de cellules. Par exemple, il sera se produit pas lorsque le tableau croisé dynamique est actualisé, trié, filtré ou analysé, même si ces opérations déplacement des cellules et potentiellement extraient de nouvelles valeurs à partir de la source de données OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -639,7 +639,7 @@
       <Docs>
         <summary>Se produit avant qu’un tableau croisé dynamique ne soit modifié.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> événement se produit immédiatement avant qu’Excel exécute une instruction UPDATE CUBE pour appliquer toutes les modifications apportées à la source de données OLAP du tableau croisé dynamique, et immédiatement après que l’utilisateur a choisi d’appliquer les modifications de l’interface utilisateur.</para>
+          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> événement se produit immédiatement avant qu’Excel exécute une instruction UPDATE CUBE pour appliquer toutes les modifications apportées à la source de données OLAP du tableau croisé dynamique, et immédiatement après que l’utilisateur a choisi d’appliquer les modifications de l’interface utilisateur.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -661,7 +661,7 @@
       <Docs>
         <summary>Se produit avant que les modifications ne soient validées dans la source de données OLAP d’un tableau croisé dynamique.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> événement se produit immédiatement avant qu’Excel exécute une instruction COMMIT TRANSACTION par rapport à la source de données OLAP du tableau croisé dynamique, et immédiatement après que l’utilisateur a choisi d’enregistrer les modifications pour le tableau croisé dynamique entier.</para>
+          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> événement se produit immédiatement avant qu’Excel exécute une instruction COMMIT TRANSACTION par rapport à la source de données OLAP du tableau croisé dynamique, et immédiatement après que l’utilisateur a choisi d’enregistrer les modifications pour le tableau croisé dynamique entier.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -683,7 +683,7 @@
       <Docs>
         <summary>Se produit avant que les modifications apportées à un tableau croisé dynamique ne soient ignorées.</summary>
         <remarks>
-          <para>Se produit immédiatement avant qu’Excel exécute une instruction ROLLBACK TRANSACTION par rapport à la source de données OLAP, si une transaction est toujours active, puis ignore toutes les valeurs modifiées dans le tableau croisé dynamique, une fois que l’utilisateur a choisi d’ignorer les modifications.</para>
+          <para>Cet événement se produit immédiatement avant qu’Excel exécute une instruction ROLLBACK TRANSACTION par rapport à la source de données OLAP, si une transaction est toujours active, puis ignore toutes les valeurs modifiées dans le tableau croisé dynamique, une fois que l’utilisateur a choisi d’ignorer les modifications.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -705,7 +705,7 @@
       <Docs>
         <summary>Se produit après modification d’un tableau croisé dynamique.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" />se produit au cours de la plupart des modifications à un tableau croisé dynamique, afin que vous pouvez écrire du code pour répondre aux actions de l’utilisateur, telles que l’effacement, le regroupement ou l’actualisation d’éléments dans le tableau croisé dynamique.</para>
+          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" />se produit au cours de la plupart des modifications à un tableau croisé dynamique, afin que vous pouvez écrire du code pour répondre aux actions de l’utilisateur, telles que l’effacement, le regroupement ou l’actualisation d’éléments dans le tableau croisé dynamique.</para>
           <para></para>
         </remarks>
       </Docs>

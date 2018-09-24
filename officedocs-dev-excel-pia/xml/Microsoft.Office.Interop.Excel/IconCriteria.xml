@@ -1,10 +1,10 @@
 <Type Name="IconCriteria" FullName="Microsoft.Office.Interop.Excel.IconCriteria">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ef3b184a713db5375fa9501f07c78266ac2688e2" />
+    <Meta Name="ms.openlocfilehash" Value="dee775d3bd8923235b1ef96a3cdebab5cd05c778" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572918" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconCriteria : System.Collections.IEnumerable" />
@@ -34,9 +34,12 @@
   </Attributes>
   <Docs>
     <summary>Représente la collection de <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objets. Chaque <b>IconCriterion</b> représente les valeurs et le type de seuil de chaque icône d’une icône de définie une règle de mise en forme conditionnelle.</summary>
-    <remarks>Collection <para><b>IconCriteria</b> est renvoyée à partir du <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> objet. Vous pouvez accéder à chaque objet <b>IconCriterion</b> dans la collection en passant un index dans la collection. Consultez l’exemple pour plus d’informations.</para><para></para></remarks>
+    <remarks>
+      <para>La collection <b>IconCriteria</b> est renvoyée à partir du <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> objet. Vous pouvez accéder à chaque objet <b>IconCriterion</b> dans la collection en passant un index dans la collection. Consultez l’exemple pour plus d’informations.</para>
+      <para></para>
+    </remarks>
     <example>
-      <para>L’exemple de code suivant crée une plage de numéros représentant les résultats de test et puis comment appliquer une règle de mise en forme conditionnelle de jeu d’icônes à cette plage. Le type de jeu d’icônes est ensuite modifié à partir de l’icône par défaut à un jeu d’icônes de cinq flèches. Enfin, le type de seuil centiles est remplacé par un nombre codé en dur.</para>
+      <para>L’exemple de code suivant crée une plage de nombres représentant des résultats de test et lui applique une règle de mise en forme conditionnelle de jeu d’icônes. Le type du jeu d’icônes par défaut est ensuite remplacé par un jeu d’icônes de cinq flèches. Enfin, le type de seuil en centiles est remplacé par un nombre codé en dur.</para>
       <code>&lt;span class="label"&gt;Sub CreateIconSetCF() 
 
 
@@ -26726,7 +26729,7 @@ End Sub&lt;/span&gt;</code>
         <summary>Cette propriété renvoie une valeur de type <b>Long</b> qui spécifie le nombre de critères pour une règle de mise en forme conditionnelle de jeu d’icônes. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le nombre de critères équivaut au nombre de valeurs de seuil affectées au jeu d’icônes.</para>
+          <para>Le nombre de critères équivaut au nombre de valeurs de seuil affectées à un jeu d'icônes.</para>
           <para></para>
         </remarks>
       </Docs>

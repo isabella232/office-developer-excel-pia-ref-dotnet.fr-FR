@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580324" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Chart" />
@@ -386,7 +386,7 @@
         <param name="Filename">Nom de fichier d'un modèle de graphique.</param>
         <summary>Applique un type de graphique standard ou personnalisé à un graphique.</summary>
         <remarks>
-          <para>Cette méthode ne prend pas en charge des constantes pour des graphiques natifs ou combinés.</para>
+          <para>Cette méthode ne permet pas d'accepter des constantes pour des graphiques natifs ou combinés.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -498,7 +498,7 @@
         <param name="ChartType">Type du graphique</param>
         <summary>Applique les mises en page proposées dans le ruban.</summary>
         <remarks>
-          <para>Lorsque vous utilisez une mise en forme sur le type de graphique actuel, un nombre compris entre 1 et 10 est appliqué au type de graphique.  Vous pouvez également appliquer la mise en page d’un type de graphique dans un autre type de graphique.  Par exemple, vous pouvez appliquer les mises en page qui sont disponibles à partir d’un graphique en courbes à un graphique en histogrammes.  La mise en page ajoute uniquement les éléments de graphique disponibles pour ce type de graphique particulier.</para>
+          <para>Lorsque vous utilisez une mise en page sur le type de graphique actuel, un nombre compris entre 1 et 10 lui est appliqué. Vous pouvez également appliquer la mise en forme d'un type de graphique à un autre type de graphique. Par exemple, vous pouvez appliquer les mises en page disponibles dans un graphique en courbes à un histogramme. La mise en forme n'ajoute que les éléments de graphique qui sont disponibles pour ce type de graphique particulier.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1063,7 +1063,7 @@
           <b>Objet</b>
         </value>
         <remarks>
-          <para>Vous pouvez utiliser un nombre compris entre 1 et 48 pour définir le style de graphique.</para>
+          <para>Vous pouvez utiliser un numéro entre 1 et 48 pour définir le style du graphique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1128,7 +1128,7 @@
         <summary>Renvoie ou définit le type de graphique.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Certains types de graphiques ne sont pas disponibles pour les rapports de graphique croisé dynamique.</para>
+          <para>Certains types de graphique ne sont pas disponibles pour les rapports de graphique croisé dynamique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1306,7 +1306,10 @@
       <Parameters />
       <Docs>
         <summary>Cette méthode redéfinit la mise en forme automatique des éléments de graphique.</summary>
-        <remarks>Utilisez cette méthode pour réinitialiser les mise en forme automatique des éléments de graphique <para>.    Si vous utilisez cette méthode sur un graphique, toute la mise en forme (y compris les substitutions) sera réinitialisée.</para><para></para></remarks>
+        <remarks>
+          <para>Utilisez cette méthode pour rétablir la mise en forme automatique des éléments de graphique.    Si vous utilisez cette méthode sur un graphique, toute la mise en forme (y compris les ajouts) sera rétablie.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CodeName">
@@ -1334,7 +1337,11 @@
       <Docs>
         <summary>Renvoie le nom de code pour l’objet.</summary>
         <value>To be added.</value>
-        <remarks>La valeur que vous voyez dans la cellule à droite de (nom) dans la fenêtre Propriétés de <para>est le nom de code de l’objet sélectionné. Au moment du design, vous pouvez modifier le nom de code d’un objet en changeant cette valeur. Vous ne pouvez pas modifier par programme de cette propriété au moment de l’exécution.</para><para>Le nom de code pour un objet peut être utilisé à la place d’une expression qui renvoie l’objet. Il est possible que le nom de feuille peut être différent du nom de code. Lorsque vous créez une feuille, le nom de la feuille et le nom de code sont identiques, mais la modification du nom de feuille ne change pas le nom de code et réciproquement ne change pas le nom de la feuille.</para><para></para></remarks>
+        <remarks>
+          <para>La valeur que vous voyez dans la cellule à droite de (nom) dans la fenêtre Propriétés est le nom de code de l’objet sélectionné. Au moment du design, vous pouvez modifier le nom de code d’un objet en changeant cette valeur. Vous ne pouvez pas modifier par programme cette propriété à l’exécution.</para>
+          <para>Le nom de code pour un objet peut être utilisé à la place d’une expression qui renvoie l’objet. Il est possible que le nom de feuille peut être différent du nom de code. Lorsque vous créez une feuille, le nom de la feuille et le nom de code sont identiques, mais la modification du nom de feuille ne change pas le nom de code et réciproquement ne change pas le nom de la feuille.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Column3DGroup">
@@ -1608,7 +1615,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataTable">
@@ -1934,14 +1944,14 @@
         <summary>Cette propriété renvoie la distance verticale (en points) du bord du texte de délimitation de zone vers l'emplacement vers lequel la ligne de légende rejoint la zone de texte pour une légende avec une valeur de déroulement été d'être défini explicitement. Type de données <b>Single</b> en lecture seule.</summary>
         <returns>Cette propriété renvoie <see cref="T:System.Object" />.</returns>
         <remarks>
-          <para>Cette distance est mesurée à partir du haut de la zone de texte, sauf si la propriété <b>AutoAttach</b> a la valeur <b>True</b> et la zone de texte se trouve à gauche de l’origine de la ligne de légende (endroit sur lequel la légende), auquel cas la distance de déroulement est mesurée à partir de t bas annuel de la zone de texte. </para>
+          <para>Cette distance est mesurée à partir du haut de la zone de texte sauf si la valeur <b>True</b> est affectée à la propriété <b>AutoAttach</b> et que la zone de texte est située à gauche de l'origine du trait de légende (endroit sur lequel la légende pointe). Dans ce cas, la distance de projection est mesurée à partir du bas de la zone de texte.</para>
           <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> pour définir la valeur de cette propriété.</para>
           <para></para>
           <para>La valeur de cette propriété reflète précisément la position de la pièce jointe trait de légende à la zone de texte uniquement si la légende est définie de manière explicite drop valeur — autrement dit, si la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> propriété est <b>DropType</b>.</para>
           <para></para>
         </remarks>
         <example>
-          <para>Cet exemple montre comment remplace le déroulement personnalisé pour la forme 1 dans myDocument par une des deux projections prédéfinies, selon que la valeur de la projection personnalisée est supérieure ou inférieure à la moitié de la hauteur de la zone de texte de légende. Cet exemple fonctionne, Shape1 doit être une légende.</para>
+          <para>Cet exemple montre comment remplacer la projection personnalisée de la forme 1 dans myDocument par une des deux projections prédéfinies, selon que la valeur de projection personnalisée est supérieure ou inférieure à la moitié de la hauteur de la zone de texte de la légende. Pour que l'exemple fonctionne, la forme 1 doit être une légende.</para>
           <code>&lt;span class="label"&gt;Set myDocument = Worksheets(1)  
  
  
@@ -1995,7 +2005,7 @@ With myDocument.Shapes(1).Callout
 &lt;span class="label"&gt;&amp;lt; .Parent.Height / 2 Then             .PresetDrop msoCalloutDropTop         Else             .PresetDrop msoCalloutDropBottom         End If     End If End With&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Cet exemple montre comment remplace le déroulement personnalisé pour la forme 1 dans myDocument par une des deux projections prédéfinies, selon que la valeur de la projection personnalisée est supérieure ou inférieure à la moitié de la hauteur de la zone de texte de légende. Cet exemple fonctionne, Shape1 doit être une légende.</para>
+          <para>Cet exemple montre comment remplacer la projection personnalisée de la forme 1 dans myDocument par une des deux projections prédéfinies, selon que la valeur de projection personnalisée est supérieure ou inférieure à la moitié de la hauteur de la zone de texte de la légende. Pour que l'exemple fonctionne, la forme 1 doit être une légende.</para>
           <code>&lt;span class="label"&gt;Set myDocument = Worksheets(1)  
  
  
@@ -2049,7 +2059,7 @@ With myDocument.Shapes(1).Callout
 &lt;span class="label"&gt;&amp;lt; .Parent.Height / 2 Then             .PresetDrop msoCalloutDropTop         Else             .PresetDrop msoCalloutDropBottom         End If     End If End With&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Cet exemple montre comment remplace le déroulement personnalisé pour la forme 1 dans myDocument par une des deux projections prédéfinies, selon que la valeur de la projection personnalisée est supérieure ou inférieure à la moitié de la hauteur de la zone de texte de légende. Cet exemple fonctionne, Shape1 doit être une légende.</para>
+          <para>Cet exemple montre comment remplacer la projection personnalisée de la forme 1 dans myDocument par une des deux projections prédéfinies, selon que la valeur de projection personnalisée est supérieure ou inférieure à la moitié de la hauteur de la zone de texte de la légende. Pour que l'exemple fonctionne, la forme 1 doit être une légende.</para>
           <code>&lt;span class="label"&gt;Set myDocument = Worksheets(1)  
  
  
@@ -2213,7 +2223,7 @@ With myDocument.Shapes(1).Callout
         <summary>Cette propriété renvoie ou définit l’élévation du graphique 3D en degrés.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>L’élévation du graphique est la hauteur à partir de laquelle vous visualisez le graphique en degrés. La valeur par défaut est 15 pour la plupart des types de graphiques. La valeur de cette propriété doit être entre -90 et 90, à l’exception des graphiques à barres 3D où elle doit être comprise entre 0 et 44.</para>
+          <para>L’élévation du graphique est la hauteur à partir de laquelle vous visualisez le graphique en degrés. Pour la plupart des types de graphiques, la valeur par défaut est 15 degrés. La valeur de cette propriété doit être comprise entre -90 et 90 degrés, sauf pour les graphiques à barres où elle doit être comprise entre 0 et 44 degrés.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2328,7 +2338,7 @@ With myDocument.Shapes(1).Callout
         <param name="FixedFormatExtClassPtr">Pointeur vers la classe FixedFormatExt.</param>
         <summary>Réalise une exportation dans un fichier avec le format spécifié.</summary>
         <remarks>
-          <para>Cette méthode prend également en charge l’initialisation d’un complément pour exporter un fichier dans un fichier au format fixe. Par exemple, Excel effectue la conversion du format de fichier si les convertisseurs sont présents. La conversion est habituellement initiée par l’utilisateur.</para>
+          <para>Cette méthode prend également en charge l’initialisation d’une macro complémentaire pour exporter un fichier dans un fichier au format fixé. Par exemple, Excel effectue la conversion de format s’il existe des convertisseurs. La conversion est généralement décidée par l’utilisateur.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2394,7 +2404,7 @@ With myDocument.Shapes(1).Callout
         <returns>To be added.</returns>
         <remarks>
           <para>Les objets 
-            <b>series</b> dans les lignes ou colonnes masquées n’apparaissent pas dans la collection de séries en cours, sauf si l’utilisateur a activé l’option <b>Afficher les données dans les lignes et colonnes masquées</b> dans la boîte de dialogue Sélectionner les données.</para>
+            <b>Series</b> dans les lignes ou colonnes masquées n’apparaissent pas dans la collection de séries en cours, sauf si l’utilisateur a activé l’option <b>Afficher les données dans les lignes et colonnes masquées</b> dans la boîte de dialogue Sélectionner des données.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2500,7 +2510,7 @@ With myDocument.Shapes(1).Callout
             </item>
             <item>
               <term>
-                <b> xlMajorGridlines</b>
+                <b>xlMajorGridlines</b>
               </term>
               <description>AxisIndex</description>
               <description>AxisType</description>
@@ -2517,7 +2527,7 @@ With myDocument.Shapes(1).Callout
                 <b>xlPivotChartDropZone</b>
               </term>
               <description>DropZoneType</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
@@ -2531,105 +2541,105 @@ With myDocument.Shapes(1).Callout
                 <b>xlDownBars</b>
               </term>
               <description>GroupIndex</description>
-              <description>None</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlDropLines</b>
               </term>
               <description>GroupIndex</description>
-              <description>None</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlHiLoLines</b>
               </term>
               <description>GroupIndex</description>
-              <description>None</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlRadarAxisLabels</b>
               </term>
               <description>GroupIndex</description>
-              <description>None</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlSeriesLines</b>
               </term>
               <description>GroupIndex</description>
-              <description>None</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlUpBars</b>
               </term>
               <description>GroupIndex</description>
-              <description>None</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlChartArea</b>
               </term>
-              <description>Aucun</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlChartTitle</b>
               </term>
-              <description>Aucun</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlCorners</b>
               </term>
-              <description>Aucun</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlDataTable</b>
               </term>
-              <description>Aucun</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlFloor</b>
               </term>
-              <description>Aucun</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlLegend</b>
               </term>
-              <description>Aucun</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlNothing</b>
               </term>
-              <description>Aucun</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlPlotArea</b>
               </term>
-              <description>Aucun</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlWalls</b>
               </term>
-              <description>Aucun</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
@@ -2643,21 +2653,21 @@ With myDocument.Shapes(1).Callout
                 <b>xlErrorBars</b>
               </term>
               <description>SeriesIndex</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlLegendEntry</b>
               </term>
               <description>SeriesIndex</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlLegendKey</b>
               </term>
               <description>SeriesIndex</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
@@ -2671,7 +2681,7 @@ With myDocument.Shapes(1).Callout
                 <b>xlShape</b>
               </term>
               <description>ShapeIndex</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
@@ -2685,14 +2695,14 @@ With myDocument.Shapes(1).Callout
                 <b>xlXErrorBars</b>
               </term>
               <description>SeriesIndex</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
             </item>
             <item>
               <term>
                 <b>xlYErrorBars</b>
               </term>
               <description>SeriesIndex</description>
-              <description>Aucun</description>
+              <description>Aucune</description>
             </item>
           </list>
           <para>Le tableau suivant décrit la signification de <paramref name="Arg1" /> et <paramref name="Arg2" /> après que la méthode.</para>
@@ -2707,7 +2717,7 @@ With myDocument.Shapes(1).Callout
             </item>
             <item>
               <term>DropZoneType</term>
-              <description>Spécifie le type de zone de dépôt : colonne, données, page ou champ de ligne. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" /> constantes : <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>ou <b>xlRowField</b>. Les constantes de champ de colonne et de ligne spécifient les champs de série et de catégorie respectivement.</description>
+              <description>Spécifie le type de zone de dépôt : colonne, données, page ou champ de ligne. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" /> constantes : <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>ou <b>xlRowField</b>. Les constantes de champ de colonne et de ligne spécifient respectivement les champs de série et de catégorie.</description>
             </item>
             <item>
               <term>GroupIndex</term>
@@ -2715,7 +2725,7 @@ With myDocument.Shapes(1).Callout
             </item>
             <item>
               <term>PivotFieldIndex</term>
-              <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> collection pour une colonne (série), des données, page ou champ de ligne (catégorie). -1 si le type de zone de dépôt est <b>xlDataField</b>.</description>
+              <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> collection pour une colonne (série), des données, page ou champ de ligne (catégorie). -1 si la liste déroulante type de zone est <b>xlDataField</b>.</description>
             </item>
             <item>
               <term>PointIndex</term>
@@ -3329,31 +3339,31 @@ With myDocument.Shapes(1).Callout
           <para></para>
         </remarks>
         <example>
-          <para>Cet exemple montre comment définit les entrées dans une zone de liste sur la feuille de calcul 1. Si Shapes (2) ne représente pas une zone de liste, cet exemple échoue.</para>
+          <para>Cet exemple montre comment définir les entrées dans une zone de liste de la feuille de calcul Worksheet 1. Si Shapes(2) ne représente pas une zone de liste, cet exemple échoue.</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(2).ControlFormat.&lt;/span&gt;
 &lt;i&gt;List&lt;/i&gt;
 &lt;span class="label"&gt;= _     Array("cogs", "widgets", "sprockets", "gizmos")&lt;/span&gt;</code>
-          <para>Cet exemple montre comment définit l’entrée 4 dans une zone de liste sur la feuille de calcul 1. Si Shapes (2) ne représente pas une zone de liste, cet exemple échoue.</para>
+          <para>Cet exemple montre comment définir l'entrée 4 dans une zone de liste de la feuille de calcul Worksheet 1. Si Shapes(2) ne représente pas une zone de liste, cet exemple échoue.</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(2).ControlFormat.&lt;/span&gt;
 &lt;i&gt;List&lt;/i&gt;
 &lt;span class="label"&gt;(4) = "gadgets"&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Cet exemple montre comment définit les entrées dans une zone de liste sur la feuille de calcul 1. Si Shapes (2) ne représente pas une zone de liste, cet exemple échoue.</para>
+          <para>Cet exemple montre comment définir les entrées dans une zone de liste de la feuille de calcul Worksheet 1. Si Shapes(2) ne représente pas une zone de liste, cet exemple échoue.</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(2).ControlFormat.&lt;/span&gt;
 &lt;i&gt;List&lt;/i&gt;
 &lt;span class="label"&gt;= _     Array("cogs", "widgets", "sprockets", "gizmos")&lt;/span&gt;</code>
-          <para>Cet exemple montre comment définit l’entrée 4 dans une zone de liste sur la feuille de calcul 1. Si Shapes (2) ne représente pas une zone de liste, cet exemple échoue.</para>
+          <para>Cet exemple montre comment définir l'entrée 4 dans une zone de liste de la feuille de calcul Worksheet 1. Si Shapes(2) ne représente pas une zone de liste, cet exemple échoue.</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(2).ControlFormat.&lt;/span&gt;
 &lt;i&gt;List&lt;/i&gt;
 &lt;span class="label"&gt;(4) = "gadgets"&lt;/span&gt;</code>
         </example>
         <example>
-          <para>Cet exemple montre comment définit les entrées dans une zone de liste sur la feuille de calcul 1. Si Shapes (2) ne représente pas une zone de liste, cet exemple échoue.</para>
+          <para>Cet exemple montre comment définir les entrées dans une zone de liste de la feuille de calcul Worksheet 1. Si Shapes(2) ne représente pas une zone de liste, cet exemple échoue.</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(2).ControlFormat.&lt;/span&gt;
 &lt;i&gt;List&lt;/i&gt;
 &lt;span class="label"&gt;= _     Array("cogs", "widgets", "sprockets", "gizmos")&lt;/span&gt;</code>
-          <para>Cet exemple montre comment définit l’entrée 4 dans une zone de liste sur la feuille de calcul 1. Si Shapes (2) ne représente pas une zone de liste, cet exemple échoue.</para>
+          <para>Cet exemple montre comment définir l'entrée 4 dans une zone de liste de la feuille de calcul Worksheet 1. Si Shapes(2) ne représente pas une zone de liste, cet exemple échoue.</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(2).ControlFormat.&lt;/span&gt;
 &lt;i&gt;List&lt;/i&gt;
 &lt;span class="label"&gt;(4) = "gadgets"&lt;/span&gt;</code>
@@ -3824,7 +3834,7 @@ With myDocument.Shapes(1).Callout
         <param name="Type">Facultatif <b>Object</b>. Spécifie les informations de graphique à coller si un graphique est dans le Presse-papiers. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /> constantes : <b>xlFormats</b>, <b>xlFormulas</b>ou <b>xlAll</b>. La valeur par défaut est <b>xlAll</b>. S’il existe des données autres que d’un graphique dans le Presse-papiers, cet argument ne peut pas être utilisé.</param>
         <summary>Cette méthode colle les données de graphique provenant du Presse-papiers dans le graphique spécifié.</summary>
         <remarks>
-          <para>Cette méthode modifie la sélection en cours.</para>
+          <para>Cette méthode modifie la sélection actuelle.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3994,7 +4004,7 @@ With myDocument.Shapes(1).Callout
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.PivotLayout" /> object qui représente le positionnement des champs dans un rapport de tableau croisé dynamique et le positionnement des axes dans un rapport de graphique croisé dynamique.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si le graphique spécifié n’est pas un rapport de graphique croisé dynamique, la valeur de cette propriété est <b>Nothing</b>.</para>
+          <para>Si le graphique spécifié n'est pas un rapport de graphique croisé dynamique, la valeur de cette propriété correspond alors à <b>Nothing</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4315,7 +4325,10 @@ With myDocument.Shapes(1).Callout
         <param name="Scenarios">Facultatif <b>Object</b>. <b>True</b> pour protéger les scénarios. Cet argument est valide uniquement pour les feuilles de calcul. La valeur par défaut est <b>True</b>.</param>
         <param name="UserInterfaceOnly">Facultatif <b>Object</b>. <b>True</b> pour protéger l’interface utilisateur, mais pas les macros. Si cet argument est omis, la protection s’applique à la fois aux macros et à l’interface utilisateur.</param>
         <summary>Cette méthode protège un graphique de sorte qu'il ne puisse pas être modifié.</summary>
-        <remarks>Mots de passe <para>forte utilisation combinant des majuscules et minuscules, nombres et des symboles. Mots de passe faibles ne combinent pas ces éléments. Mot de passe fort : Y6dh ! et5. Mot de passe faible : House27. Utilisez un mot de passe que vous pouvez vous souvenir afin que vous n’êtes pas obligé de Notez-le.</para><para></para></remarks>
+        <remarks>
+          <para>[!REMARQUE] Définissez des mots de passe forts qui combinent des lettres minuscules et majuscules, des nombres et des symboles. Les mots de passe faibles ne regroupent pas ces éléments. Mot de passe fort : Y6dh!et5. Mot de passe faible : Maison27. Utilisez un mot de passe fort dont vous pouvez vous souvenir sans devoir le noter.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectContents">
@@ -4549,7 +4562,7 @@ With myDocument.Shapes(1).Callout
           <b>La valeur true</b> si les éléments de graphique ne peuvent pas être sélectionnés.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Lorsque cette propriété a la <b>valeur True</b>, les formes ne peut pas être ajoutés au graphique et les événements Click et DoubleClick pour des éléments de graphique ne se produisent.</para>
+          <para>Lorsque cette propriété a la valeur <b>True</b>, il est impossible d'ajouter des formes dans le graphique et les événements Click et DoubleClick ne se produisent pas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4798,7 +4811,7 @@ With myDocument.Shapes(1).Callout
 
 </summary>
         <remarks>
-          <para>Par défaut, cette méthode enregistre le graphique actif au répertoire de modèle de graphique de l’utilisateur.  Si une URL ou UNC est spécifié, le graphique sera enregistré dans l’emplacement spécifié à la place. </para>
+          <para>Par défaut, cette méthode enregistre le graphique actif dans le répertoire de modèles de graphique de l'utilisateur. Si un chemin UNC ou URL est spécifié, le graphique y sera enregistré. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -5046,16 +5059,16 @@ With myDocument.Shapes(1).Callout
           <para>Pour les graphiques, les commandes suivantes dans l’onglet Disposition correspondent à la <see cref="M:Microsoft.Office.Interop.Excel._Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" /> méthode :</para>
           <list type="bullet">
             <item>
-              <description>toutes les commandes du groupe étiquettes.</description>
+              <description>Toutes les commandes du groupe Étiquettes.</description>
             </item>
             <item>
-              <description>Tous les éléments dans le groupe d’Axes.</description>
+              <description>Toutes les commandes du groupe Axes.</description>
             </item>
             <item>
-              <description>Tous les éléments dans le groupe analyse.</description>
+              <description>Toutes les commandes du groupe Analyse.</description>
             </item>
             <item>
-              <description>Boutons zone de traçage, paroi et plancher de graphique.</description>
+              <description>Les boutons Zone de traçage, Paroi et Plancher de graphique.</description>
             </item>
           </list>
           <para></para>
@@ -5152,9 +5165,9 @@ With myDocument.Shapes(1).Callout
         <value>
           <b>true</b> si tous les boutons sur un graphique croisé dynamique de champ doivent être affichés ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>Set la <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" /> propriété sur <b>true</b> pour afficher tous les boutons de champ sur le graphique croisé dynamique spécifié. Définissez la propriété sur <b>false</b> pour masquer tous les boutons de champ.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" /> propriété correspond à la commande Masquer tout dans la liste déroulante de boutons de champ de l’onglet analyse qui est disponible quand un graphique croisé dynamique est sélectionné.</para>
+          <para>Lecture/écriture.</para>
+          <para>Définir le <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" /> propriété sur <b>true</b> pour afficher tous les boutons de champ sur le graphique croisé dynamique spécifié. Définissez la propriété sur <b>false</b> pour masquer tous les boutons de champ.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAllFieldButtons" /> propriété correspond à la commande Masquer tout dans la liste déroulante de boutons de champ de l’onglet analyse qui est disponible quand un graphique croisé dynamique est sélectionné.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5189,9 +5202,9 @@ With myDocument.Shapes(1).Callout
         <value>
           <b>la valeur true</b> si les boutons du champ axe sur un graphique croisé dynamique doit être affichée ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>Set la <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" /> propriété sur <b>true</b> pour afficher les boutons du champ axe sur le graphique croisé dynamique spécifié. Définissez la propriété sur <b>false</b> pour masquer les boutons.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" /> propriété correspond à la commande Afficher les boutons du champ axe sur la liste déroulante de boutons de champ de l’onglet analyse qui est disponible quand un graphique croisé dynamique est sélectionné.</para>
+          <para>Lecture/écriture.</para>
+          <para>Définir le <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" /> propriété sur <b>true</b> pour afficher les boutons du champ axe sur le graphique croisé dynamique spécifié. Définissez la propriété sur <b>false</b> pour masquer les boutons.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowAxisFieldButtons" /> propriété correspond à la commande Afficher les boutons du champ axe sur la liste déroulante de boutons de champ de l’onglet analyse qui est disponible quand un graphique croisé dynamique est sélectionné.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5227,7 +5240,7 @@ With myDocument.Shapes(1).Callout
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Si vous modifiez l’axe des ordonnées de telle sorte qu’il est devenu plus petite que la taille des points de données, vous pouvez utiliser cette propriété pour définir s’il faut afficher les étiquettes de données. Cette propriété s’applique aux graphiques 2D uniquement.</para>
+          <para>Si vous modifiez l'axe des ordonnées de telle sorte qu'il est maintenant plus petit que la taille des points de données, vous pouvez utiliser cette propriété pour indiquer s'il faut afficher les étiquettes des données. Cette propriété s'applique uniquement aux graphiques 2D.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5262,9 +5275,9 @@ With myDocument.Shapes(1).Callout
         <value>
           <b>la valeur true</b> si les boutons de champ de légende sur un graphique croisé dynamique doit être affichée ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>Set la <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" /> propriété sur <b>true</b> pour afficher les boutons du champ Légende sur le graphique croisé dynamique spécifié. Définissez la propriété sur <b>false</b> pour masquer les boutons.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" /> propriété correspond à la commande Afficher les boutons du champ légende dans la liste déroulante de boutons de champ de l’onglet analyse qui est disponible quand un graphique croisé dynamique est sélectionné.</para>
+          <para>Lecture/écriture.</para>
+          <para>Définir le <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" /> propriété sur <b>true</b> pour afficher les boutons du champ Légende sur le graphique croisé dynamique spécifié. Définissez la propriété sur <b>false</b> pour masquer les boutons.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowLegendFieldButtons" /> propriété correspond à la commande Afficher les boutons du champ légende dans la liste déroulante de boutons de champ de l’onglet analyse qui est disponible quand un graphique croisé dynamique est sélectionné.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5299,9 +5312,9 @@ With myDocument.Shapes(1).Callout
         <value>
           <b>la valeur true</b> si les boutons de champ de filtre de rapport sur un graphique croisé dynamique doit être affichée ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>Set la <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" /> propriété sur <b>true</b> pour afficher les boutons de champ filtre de rapport sur le graphique croisé dynamique spécifié. Définissez la propriété sur <b>false</b> pour masquer les boutons.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" /> propriété correspond à la commande Afficher les boutons du champ Filtre état dans la liste déroulante de boutons de champ de l’onglet analyse qui est disponible quand un graphique croisé dynamique est sélectionné.</para>
+          <para>Lecture/écriture.</para>
+          <para>Définir le <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" /> propriété sur <b>true</b> pour afficher les boutons de champ filtre de rapport sur le graphique croisé dynamique spécifié. Définissez la propriété sur <b>false</b> pour masquer les boutons.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowReportFilterFieldButtons" /> propriété correspond à la commande Afficher les boutons du champ Filtre état dans la liste déroulante de boutons de champ de l’onglet analyse qui est disponible quand un graphique croisé dynamique est sélectionné.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5336,9 +5349,9 @@ With myDocument.Shapes(1).Callout
         <value>
           <b>la valeur true</b> si les boutons du champ valeur sur un graphique croisé dynamique doit être affichée ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>Set la <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" /> propriété sur <b>true</b> pour afficher les boutons du champ valeur sur le graphique croisé dynamique spécifié. Définissez la propriété sur <b>false</b> pour masquer le bouton.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" /> propriété correspond à la commande Afficher les boutons du champ valeur dans la liste déroulante de boutons de champ de l’onglet analyse qui est disponible quand un graphique croisé dynamique est sélectionné.</para>
+          <para>Lecture/écriture.</para>
+          <para>Définir le <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" /> propriété sur <b>true</b> pour afficher les boutons du champ valeur sur le graphique croisé dynamique spécifié. Définissez la propriété sur <b>false</b> pour masquer le bouton.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel._Chart.ShowValueFieldButtons" /> propriété correspond à la commande Afficher les boutons du champ valeur dans la liste déroulante de boutons de champ de l’onglet analyse qui est disponible quand un graphique croisé dynamique est sélectionné.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5699,7 +5712,7 @@ With myDocument.Shapes(1).Callout
         <param name="Password">Facultatif <b>Object</b>. Chaîne qui indique le mot de passe qui respecte la casse à utiliser pour ôter la protection de la feuille ou du classeur. Si la feuille ou du classeur n’est pas protégé par un mot de passe, cet argument est ignoré. Si vous omettez cet argument pour une feuille est protégée par un mot de passe, vous devrez le mot de passe. Si vous omettez cet argument pour un classeur est protégé par un mot de passe, la méthode échoue.</param>
         <summary>Cette méthode supprime la protection d'une feuille ou d'un classeur. Elle est sans effet si la feuille ou le classeur n'est pas protégé.</summary>
         <remarks>
-          <para>Si vous oubliez le mot de passe, vous ne pouvez pas ôter la protection de la feuille ou du classeur. Il est conseillé de conserver une liste de vos mots de passe et les noms de documents correspondants dans un endroit sûr.</para>
+          <para>Si vous oubliez le mot de passe, vous ne pourrez pas supprimer la protection de la feuille ou du classeur. Pensez à conserver en lieu sûr une liste de vos mots de passe et les noms des documents correspondants.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5770,7 +5783,7 @@ With myDocument.Shapes(1).Callout
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Walls" /> object qui représente les panneaux du graphique 3D.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété ne s’applique pas aux graphiques en secteurs 3D.</para>
+          <para>Cette propriété ne s’applique pas aux graphiques en secteurs 3D.</para>
           <para></para>
         </remarks>
       </Docs>

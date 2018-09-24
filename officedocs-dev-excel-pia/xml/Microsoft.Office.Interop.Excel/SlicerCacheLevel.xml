@@ -1,10 +1,10 @@
 <Type Name="SlicerCacheLevel" FullName="Microsoft.Office.Interop.Excel.SlicerCacheLevel">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43900a2e801ac6164f29d0632611e43dbce1a178" />
+    <Meta Name="ms.openlocfilehash" Value="3e50741c9a2b1462398bc2cd7a9e64c639d93725" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587268" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerCacheLevel" />
@@ -124,7 +124,7 @@
         <summary>Obtient un 32 bits <b>entier</b> qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>32 bits <b>entier</b> qui indique l’application dans laquelle cet objet a été créé.</value>
         <remarks>
-          <para>En lecture seule <b>longs</b>.</para>
+          <para>En lecture seule <b>long</b>.</para>
           <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. Le <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.Creator" /> propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
           <para></para>
         </remarks>
@@ -159,10 +159,12 @@
         <summary>Obtient ou définit un segment participe à travers filtrage avec les autres segments qui partagent le même cache de segment et la façon dont le filtrage croisé est affiché.</summary>
         <value>Spécifie si vous participez à un segment le filtrage croisé avec les autres segments qui partagent le même cache de segment et comment couper le filtrage est affiché.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>Si plusieurs segment est associé avec le même tableau croisé dynamique, par défaut, si l’ou les éléments que vous filtrez par dans un segment ont aucune donnée correspondante dans un autre segment, ces éléments sont toutes estompées. Par exemple, si vous avez slicer Country et un segment d’état, et que vous cliquez sur un pays dans le segment pays, tous les États dans le segment d’état qui sont pas que pays est estompé. Cette fonctionnalité est désignée comme « coupe le filtrage. »</para> Paramètres 
-          <para>l’interface utilisateur qui correspondent au paramètre de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriété sont l’indiquer visuellement les éléments sans donnée et afficher les éléments sans données dernières cases dans la boîte de dialogue Paramètres de segment. Définition de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriété <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> correspond à la sélection à la fois l’indiquer visuellement les éléments sans donnée et afficher les éléments sans données dernière les cases à cocher. Définition de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriété <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> correspond à sélectionner uniquement les indiquer visuellement des éléments avec aucune case à cocher de données. Si vous désactivez les cases à cocher correspondant au paramètre de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriété <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />.</para> Segments 
-          <para>le filtrage des sources de données non-OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>false</b>) ne sont pas pris en charge par le <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objet. Pour les segments le filtrage des tableaux croisés dynamiques basés sur des plages, des listes et des sources de données relationnelles non-OLAP, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objet, au lieu de cela.</para><para></para></remarks>
+          <para>Lecture/écriture.</para>
+          <para>Si plusieurs segments sont associés au même tableau croisé dynamique, par défaut, si le ou les éléments que vous filtrez dans un segment n’ont pas de données correspondantes dans un autre segment, ces éléments sont estompés. Par exemple, si vous avez un segment Pays et un segment État, et que vous cliquez sur un pays dans le segment Pays, tous les états du segment État ne se trouvant pas dans ce pays sont estompés. Cette fonctionnalité est appelée « filtrage croisé ».</para>
+          <para>Les paramètres de l’interface utilisateur qui correspondent au paramètre de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriété sont l’indiquer visuellement les éléments sans donnée et afficher les éléments sans données dernières cases dans la boîte de dialogue Paramètres de segment. Définition de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriété <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> correspond à la sélection à la fois l’indiquer visuellement les éléments sans donnée et afficher les éléments sans données dernière les cases à cocher. Définition de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriété <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> correspond à sélectionner uniquement les indiquer visuellement des éléments avec aucune case à cocher de données. Si vous désactivez les cases à cocher correspondant au paramètre de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriété <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />.</para>
+          <para>Le filtrage des sources de données non-OLAP des segments (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>) ne sont pas pris en charge par le <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objet. Pour les segments le filtrage des tableaux croisés dynamiques basés sur des plages, des listes et des sources de données relationnelles non-OLAP, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objet, au lieu de cela.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -315,7 +317,7 @@
         <summary>Obtient ou définit si les éléments du segment sont triés.</summary>
         <value>Spécifie si les éléments du segment sont triés.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>Le paramètre par défaut de cette propriété est <b>xlDataSourceOrder</b> (1).</para>
           <para></para>
         </remarks>
@@ -348,7 +350,7 @@
         <value>La liste des éléments du segment qui sont inclus dans le filtre de segment.</value>
         <remarks>
           <para>En lecture seule.</para>
-          <para>La liste des éléments du segment sont renvoyées sous forme de chaînes de nom unique MDX. Si cette liste est vide, le segment n’est pas le filtrage la source de données et segment toutes les mosaïques sont affichés sous forme sélectionnée.</para>
+          <para>La liste des éléments de slicer est retournée sous la forme de chaînes de noms uniques MDX. Si cette liste est vide, le slicer ne filtre pas la source de données et tous les éléments de slicer sont affichés sous la forme sélectionnée.</para>
           <para></para>
         </remarks>
       </Docs>

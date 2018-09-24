@@ -1,10 +1,10 @@
 <Type Name="ListObjects" FullName="Microsoft.Office.Interop.Excel.ListObjects">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c26d759231e55f2d7cd0214bee3fb3636fe79db1" />
+    <Meta Name="ms.openlocfilehash" Value="297eaae8b8252f38795243645194d97dbacd5ca5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580940" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ListObjects : System.Collections.IEnumerable" />
@@ -113,7 +113,7 @@
         <summary>Cette méthode crée un nouvel objet Liste. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Lorsque la liste comporte des en-têtes, la première ligne de cellules est converti en <b>texte</b>, si n’est pas déjà fait. La conversion sera basée sur le texte de la cellule. Cela signifie que s’il existe une valeur de date avec un format de <b>Date</b> qui modifie les paramètres régionaux, la conversion en liste peut produire des résultats différents en fonction des paramètres régionaux du système. En outre, s’il existe deux cellules dans la ligne d’en-tête qui ont le même texte, un <b>entier</b> incrémenté ajouté pour rendre chaque en-tête de colonne unique.</para>
+          <para>Si la liste comporte des en-têtes, la première ligne de cellules est convertie en <b>texte</b>, si n’est pas déjà faite. La conversion sera basée sur le texte de la cellule. Cela signifie que s’il existe une valeur de date avec un format de <b>Date</b> qui modifie les paramètres régionaux, la conversion en liste peut produire des résultats différents en fonction des paramètres régionaux du système. En outre, s’il existe deux cellules dans la ligne d’en-tête qui ont le même texte, un <b>entier</b> incrémenté sera ajouté pour rendre chaque en-tête de colonne unique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -237,7 +237,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

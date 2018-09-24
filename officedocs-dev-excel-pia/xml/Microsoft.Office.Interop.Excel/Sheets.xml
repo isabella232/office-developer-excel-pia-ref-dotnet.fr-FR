@@ -1,10 +1,10 @@
 <Type Name="Sheets" FullName="Microsoft.Office.Interop.Excel.Sheets">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="370f0fa19b86c461efce88bb828c15aab19745a1" />
+    <Meta Name="ms.openlocfilehash" Value="db6b3bb11f3b424395c8a07057d1712212b447b0" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581213" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Sheets : System.Collections.IEnumerable" />
@@ -32,11 +32,11 @@
   <Docs>
     <summary>Collection de toutes les feuilles du classeur actif ou spécifié.</summary>
     <remarks>
-      <para>La collection <b>Sheets</b> peut contenir <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> ou <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objets. La collection <b>Sheets</b> est utile lorsque vous souhaitez retourner des feuilles d’un type quelconque. Si vous avez besoin travailler avec des feuilles qu’un seul type, voir la rubrique de l’objet de ce type de feuille.</para>
+      <para>La collection <b>Sheets</b> peut contenir <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> ou <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objets. La collection <b>Sheets</b> est utile lorsque vous souhaitez retourner des feuilles d’un type quelconque. Si vous avez besoin travailler avec des feuilles qu’un seul type, consultez la rubrique de l’objet pour ce type de feuille.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Sheets" /> propriété permet de renvoyer la collection <b>Sheets</b> .</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Sheets.Add(System.Object,System.Object,System.Object,System.Object)" /> méthode pour créer une nouvelle feuille et l’ajouter à la collection.</para>
-      <para>Utiliser <b>feuilles</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la feuille ou le numéro d’index, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> ou <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objet.</para>
-      <para>Utiliser <b>feuilles</b>(<paramref name="array" />) pour spécifier plusieurs feuilles.</para>
+      <para>Utiliser des <b>feuilles</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la feuille ou le numéro d’index, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> ou <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objet.</para>
+      <para>Utiliser des <b>feuilles</b>(<paramref name="array" />) pour spécifier plusieurs feuilles.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -311,7 +311,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -431,7 +434,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> sauts de collection qui représente la page horizontale sur la feuille. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Est une limite de 1026 sauts de page horizontaux par feuille.</para>
+          <para>Une feuille ne peut pas contenir plus de 1 026 sauts de page horizontaux.</para>
           <para></para>
         </remarks>
       </Docs>

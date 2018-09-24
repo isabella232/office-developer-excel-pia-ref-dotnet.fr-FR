@@ -1,10 +1,10 @@
 <Type Name="Filters" FullName="Microsoft.Office.Interop.Excel.Filters">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="02380890f898435500e6ce36cdc89dbc807e2698" />
+    <Meta Name="ms.openlocfilehash" Value="28985bf19bc6e390d2a427305474e1d55159a8bf" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577048" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Filters : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Excel.Filter" /> objets représentant tous les filtres d’une plage filtrée automatiquement.</summary>
     <remarks>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Filters" /> propriété permet de renvoyer la collection <b>Filters</b> .</para>
-      <para>Utiliser <b>les filtres</b>(<paramref name="index" />), où <paramref name="index" /> est le titre du filtre ou le numéro d’index, pour renvoyer un seul objet <b>Filter</b> .</para>
+      <para>Utiliser des <b>filtres</b>(<paramref name="index" />), où <paramref name="index" /> est le titre du filtre ou le numéro d’index, pour renvoyer un seul objet <b>Filter</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -157,7 +157,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

@@ -1,10 +1,10 @@
 <Type Name="PivotFields" FullName="Microsoft.Office.Interop.Excel.PivotFields">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e9e082deeb3ead6e32fc7df870f7f8494e27376b" />
+    <Meta Name="ms.openlocfilehash" Value="b9bff936f8cd3ec167ac2ff150e560a9433d1081" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586869" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotFields : System.Collections.IEnumerable" />
@@ -37,31 +37,31 @@
     <remarks>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotFields(System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objet pour renvoyer la collection <b>PivotFields</b> .</para>
       <para>Utilisez <b>PivotFields</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de champ ou le numéro d’index, pour renvoyer un seul objet <b>PivotField</b> .</para>
-      <para>Dans certains cas, il peut être plus facile d’utiliser une des propriétés renvoyant un sous-ensemble des champs de tableau croisé dynamique. Les propriétés suivantes sont disponibles :</para>
+      <para>Dans certains cas, il peut être plus pratique d'utiliser l'une des propriétés renvoyant un sous-ensemble des champs du tableau croisé dynamique. Les propriétés suivantes sont disponibles :</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ColumnFields(System.Object)" /> propriété</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ColumnFields(System.Object)" />propriété</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DataFields(System.Object)" /> propriété</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DataFields(System.Object)" />propriété</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.HiddenFields(System.Object)" /> propriété</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.HiddenFields(System.Object)" />propriété</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PageFields(System.Object)" /> propriété</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PageFields(System.Object)" />propriété</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.RowFields(System.Object)" /> propriété</description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.RowFields(System.Object)" />propriété</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisibleFields(System.Object)" /> propriété </description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisibleFields(System.Object)" />propriété</description>
         </item>
       </list>
       <para></para>
@@ -149,7 +149,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

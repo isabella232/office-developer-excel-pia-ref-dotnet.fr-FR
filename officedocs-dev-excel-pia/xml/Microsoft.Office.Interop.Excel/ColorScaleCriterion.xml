@@ -1,10 +1,10 @@
 <Type Name="ColorScaleCriterion" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriterion">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="24fc2abe615803db23b08c339fdd812ffa384856" />
+    <Meta Name="ms.openlocfilehash" Value="71a5a3fdaa7d1393ccedac6ff867343c7fd8ae11" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580541" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
@@ -32,7 +32,7 @@
     <summary>Cet objet représente les critères pour les seuils minimum, intermédiaire ou maximum d'un format conditionnel de format de couleur.</summary>
     <remarks>
       <para>Chaque <b>ColorScaleCriterion</b> fait partie de la <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> collection. Utilisez <b>ColorScaleCriteria</b>(<paramref name="index" />), pour renvoyer un critère individuel.</para>
-      <para>Vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />, <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" />, et <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" /> de chaque seuil pour l’échelle de couleurs.</para>
+      <para>Vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />, <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" />, et <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" /> de chaque seuil pour l’échelle de couleur.</para>
       <para></para>
     </remarks>
     <example>
@@ -101,7 +101,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Pour une règle de mise en forme conditionnelle d’échelle à deux couleurs, cette propriété renvoie une valeur de « 1 » pour le seuil minimum et « 2 » pour le seuil maximum. Lorsque vous utilisez une règle d’échelle de trois couleurs, les valeurs seront « 1 » pour le minimum, « 2 » pour le milieu et « 3 » pour le seuil maximum.</para>
+          <para>Pour une règle de format conditionnel d'échelle de deux couleurs, cette propriété renvoie la valeur « 1 » pour le seuil minimum et « 2 » pour le seuil maximum. Pour une règle d'échelle de trois couleurs, les valeurs sont « 1 » pour le seuil minimum, « 2 » pour le seuil intermédiaire et « 3 » pour le seuil maximum.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -136,7 +136,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />
         </value>
-        <remarks>À l’échelle <para>le type de valeur de seuil pour une barre de données ou la couleur peut être un nombre, %, une formule ou centile. Si le type centile utilisera la fonction Percentile dans Excel pour déterminer la valeur de seuil.</para><para></para></remarks>
+        <remarks>
+          <para>Le type de valeur de seuil pour une barre de données ou la couleur à l’échelle peut être un nombre, %, une formule ou centile. Si le type centile utilise la fonction Percentile dans Excel pour déterminer la valeur de seuil.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -171,7 +174,7 @@
         </value>
         <remarks>
           <para>Vous pouvez définir la valeur que si le <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> propriété pour le format conditionnel est définie sur une des constantes suivantes : <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />, ou <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />.</para>
-          <para>Si le type de seuil est une formule, vous pouvez définir la formule en tant que <b>chaîne</b>. La formule doit renvoyer un seul numéro.</para>
+          <para>Si le type de seuil est une formule, vous pouvez définir la formule en tant que  <b>String</b>. La formule doit renvoyer un seul nombre.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="ThreeDFormat" FullName="Microsoft.Office.Interop.Excel.ThreeDFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4d21b65911fea75417444605a0fe5b47bd944918" />
+    <Meta Name="ms.openlocfilehash" Value="a7446cb76912959213bb4dcc1c28dae6c32fcad1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585945" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ThreeDFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -33,7 +33,7 @@
     <summary>Représente la mise en forme en trois dimensions de la forme.</summary>
     <remarks>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Shape.ThreeD" /> propriété pour renvoyer un objet <b>ThreeDFormat</b> .</para>
-      <para>Vous ne pouvez pas appliquer la mise en forme en trois dimensions à certains types de formes, telles que des chemins d’accès multiple-disjoints ou en relief. La plupart des propriétés et méthodes de l' <b>ThreeDFormat</b> d’objet pour les formes échouera.</para>
+      <para>Vous ne pouvez pas appliquer de mise en forme en trois dimensions à certains types de formes, tels que les formes biseautées ou les chemins à plusieurs branches. La plupart des propriétés et des méthodes de l’objet <b>ThreeDFormat</b> appliquées à de telles formes échouent.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -359,8 +359,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Depth">
@@ -606,7 +608,7 @@
           <b>Single</b>obligatoire. Spécifie la quantité (en degrés) de la rotation de la forme autour de l’axe des ordonnées. Peut être une valeur comprise entre -90 et 90. Une valeur positive fait pivoter la forme vers la gauche. une valeur négative la fait pivoter à droite.</param>
         <summary>Fait pivoter la forme indiquée, selon le nombre de degrés spécifié, autour de l'axe y.</summary>
         <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> propriété pour définir la rotation absolue de la forme autour de l’axe des y.</para>
+          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> propriété pour définir la rotation absolue de la forme autour de l’axe des ordonnées.</para>
           <para>Pour changer la rotation d’une forme autour de l’axe des x, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> méthode. Pour modifier la rotation autour de l’axe z, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" /> méthode.</para>
           <para>Vous ne pouvez pas ajuster la rotation de la forme spécifiée autour de l’axe des y au-delà de la limite supérieure ou inférieure de la propriété <b>RotationY</b> (90 degrés à – 90 degrés). Par exemple, si la propriété <b>RotationY</b> est initialement définie à 80 et que vous spécifiez 40 pour le <paramref name="Increment" /> argument, la rotation obtenue sera de 90 (limite supérieure de la propriété <b>RotationY</b> ) au lieu de 120.</para>
           <para></para>
@@ -863,7 +865,7 @@
           <see cref="T:Microsoft.Office.Core.MsoLightRigType" />
         </value>
         <remarks>
-          <para>Vous ne verrez pas les effets d’éclairage définis si l’extrusion a une surface filetée.</para>
+          <para>Vous ne verrez pas les effets d'éclairage définis si l'option Maquette a été sélectionnée pour la surface de l'extrusion.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -956,7 +958,7 @@
         <summary>Renvoie le format d'extrusion prédéfini.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Chaque format d’extrusion prédéfini contient un ensemble de valeurs prédéfinies pour les différentes propriétés de l’extrusion. Si l’extrusion a un format personnalisé plutôt qu’un format prédéfini, cette propriété renvoie <see cref="F:Microsoft.Office.Core.MsoPresetThreeDFormat.msoPresetThreeDFormatMixed" />. Les valeurs de cette propriété correspondent aux options (numérotées de gauche à droite et de haut en bas) affichées lorsque vous cliquez sur le bouton 3D de la barre d’outils dessin.</para>
+          <para>Chaque format d'extrusion prédéfini contient un ensemble de valeurs prédéfinies pour les différentes propriétés de l'extrusion. Si l’extrusion a un format personnalisé plutôt qu’un format prédéfini, cette propriété renvoie <see cref="F:Microsoft.Office.Core.MsoPresetThreeDFormat.msoPresetThreeDFormatMixed" />. Les valeurs de cette propriété correspondent aux options (numérotées de gauche à droite et de haut en bas) affichées si vous cliquez sur le bouton 3D de la barre d'outils Dessin.</para>
           <para>Pour définir le format d’extrusion prédéfini, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetThreeDFormat(Microsoft.Office.Core.MsoPresetThreeDFormat)" /> méthode.</para>
           <para></para>
         </remarks>
@@ -1019,7 +1021,7 @@
         <summary>Ramène à zéro la rotation de l'extrusion autour des axes x et y de façon à orienter l'avant de l'extrusion vers l'avant.</summary>
         <remarks>
           <para>Cette méthode ne redéfinit pas la rotation autour de l’axe z.</para>
-          <para>Pour définir la rotation de l’extrusion autour de l’axe des abscisses et des ordonnées sur tout autre que 0 (zéro), utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> et <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> propriétés de la <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objet. Pour définir la rotation de l’extrusion autour de l’axe z, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object qui représente la forme extrudée.</para>
+          <para>Pour définir la rotation de l’extrusion autour de l’axe des abscisses et des ordonnées sur une valeur autre que 0 (zéro), utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> et <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> propriétés de la <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objet. Pour définir la rotation de l’extrusion autour de l’axe z, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object qui représente la forme extrudée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1053,7 +1055,7 @@
         <summary>Cette propriété renvoie ou définit la rotation de la forme extrudée autour de l'axe des x en degrés.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>RotationX</b> peut être une valeur comprise entre -90 et 90. Une valeur positive indique une rotation vers le haut ; une valeur négative indique une rotation vers le bas.</para>
+          <para>La propriété <b>RotationX</b> peut être une valeur comprise entre -90 et 90. Une valeur positive indique une rotation vers le haut ; une valeur négative indique une rotation vers le bas.</para>
           <para>Pour définir la rotation de la forme extrudée autour de l’axe des y, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objet. Pour définir la rotation de la forme extrudée autour de l’axe z, utilisez la propriété Rotation de le <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objet. Pour changer la direction du chemin de balayage de l’extrusion sans faire pivoter la face avant de l’extrusion, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> méthode.</para>
           <para></para>
         </remarks>
@@ -1125,7 +1127,7 @@
           <b>Unique</b>
         </value>
         <remarks>
-          <para>La propriété <b>RotationZ</b> peut être une valeur comprise entre – 90 et 90. Une valeur positive indique une rotation vers le haut ; une valeur négative indique une rotation vers le bas.</para>
+          <para>La propriété <b>RotationZ</b> peut être une valeur comprise entre -90 et 90. Une valeur positive indique la rotation vers le haut; une valeur négative indique la rotation baisse.</para>
           <para>Pour définir la rotation de la forme extrudée autour de l’axe des y, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objet. Pour définir la rotation de la forme extrudée autour de l’axe des x, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> propriété de l’objet <b>ThreeDFormat</b> . Pour changer la direction du chemin de balayage de l’extrusion sans faire pivoter la face avant de l’extrusion, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> méthode.</para>
           <para></para>
         </remarks>

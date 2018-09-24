@@ -1,10 +1,10 @@
 <Type Name="Range" FullName="Microsoft.Office.Interop.Excel.Range">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e87541caefc40cd684f69da1a8301eb9348e7fbc" />
+    <Meta Name="ms.openlocfilehash" Value="b8435c17b649304d5fae3920a40103ffa541f441" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584965" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Range : System.Collections.IEnumerable" />
@@ -247,7 +247,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Cette propriété renvoie <b>la valeur True</b> si le texte est automatiquement mis en retrait lorsque l’alignement du texte dans une cellule est défini sur une distribution égale horizontalement ou verticalement.</para>
-          <para>Pour définir l’alignement du texte égale, vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.Range.VerticalAlignment" /> propriété <b>xlVAlignDistributed</b> lorsque la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.Range.Orientation" /> propriété est <b>xlVertical</b>et vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.Range.HorizontalAlignment" /><b>soit distribué de manière</b> lors de la valeur de la propriété Orientation est <b>xlHorizontal</b>.</para>
+          <para>Pour définir l’alignement du texte sur une distribution égale, vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.Range.VerticalAlignment" /> propriété <b>xlVAlignDistributed</b> lorsque la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.Range.Orientation" /> propriété est <b>xlVertical</b>et vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.Range.HorizontalAlignment" /><b>soit distribué de manière</b> lorsque le valeur de la propriété Orientation est <b>xlHorizontal</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -398,7 +398,7 @@
       <Docs>
         <summary>Effectue une opération d’écriture différée pour toutes les cellules modifiées dans une plage basée sur une source de données OLAP.</summary>
         <remarks>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.Range.AllocateChanges" /> méthode exécute une instruction UPDATE CUBE pour toutes les modifications apportées dans la plage depuis la dernière opération d’application des modifications. Cette méthode génère une erreur d’exécution si elle est exécutée sur une plage basée sur une source de données non-OLAP.</para>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Excel.Range.AllocateChanges" /> méthode exécute une instruction UPDATE CUBE pour toutes les modifications apportées dans la plage depuis la dernière opération d’application des modifications. Cette méthode génère une erreur d’exécution si elle est exécutée sur une plage basée sur une source de données autre que OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -501,8 +501,8 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Vous pouvez utiliser la fonction <b>Array</b> pour créer la liste des noms pour le <paramref name="Names" /> argument.</para>
-          <para>Si vous souhaitez appliquer des noms à toute la feuille, utilisez Cells.ApplyNames.</para>
-          <para>Vous ne pouvez pas « annuler » noms ; pour supprimer des noms, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.Name.Delete" /> méthode.</para>
+          <para>Si vous voulez attribuer des noms à la feuille entière, utilisez Cells.ApplyNames.</para>
+          <para>Vous ne pouvez pas « annuler » noms ; Pour supprimer des noms, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.Name.Delete" /> méthode.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -592,7 +592,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Si aucune correspondance n’est saisie semi-automatique ou si plus d’une entrée dans la liste correspond à la chaîne à compléter, cette méthode renvoie une chaîne vide.</para>
-          <para>Cette méthode fonctionne même si la fonctionnalité de saisie semi-automatique est désactivée.</para>
+          <para>Cette méthode fonctionne même si la fonction de saisie semi-automatique est désactivée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -662,7 +662,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Appliquer la <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.AutoFilter" /> propriété pour un <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objet à renvoyer un <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> objet.</para>
-          <para>Si vous omettez tous les arguments, cette méthode active ou désactive simplement l’affichage des flèches déroulantes filtre automatique de la plage spécifiée.</para>
+          <para>Si vous ne définissez aucun argument, cette méthode active ou désactive simplement l'affichage des flèches déroulantes du filtre automatique dans la plage spécifiée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -692,7 +692,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>L’expression doit être une ligne ou une plage de lignes, ou une colonne ou une plage de colonnes. Dans le cas contraire, cette méthode génère une erreur.</para>
-          <para>Une unité de largeur de colonne est égale à la largeur d’un caractère du style Normal.</para>
+          <para>Une seule unité de largeur de colonne est égale à la largeur d’un caractère unique du style Normal.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -738,7 +738,7 @@
         <summary>Formate automatiquement la plage spécifiée, à l’aide d’un format prédéfini.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Si la plage est une cellule unique, cette méthode met également en forme la zone entourant la cellule.</para>
+          <para>Si la plage est une cellule unique, cette méthode met également la zone entourant la cellule. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -808,7 +808,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Vous devez spécifier soit <paramref name="ColorIndex" /> ou <paramref name="Color" />, mais pas les deux.</para>
-          <para>, Vous pouvez spécifier <paramref name="LineStyle" /> ou <paramref name="Weight" />, mais pas les deux. Si vous ne spécifiez pas un argument, Microsoft Excel utilise le style de trait par défaut et le poids.</para>
+          <para>Vous pouvez spécifier <paramref name="LineStyle" /> ou <paramref name="Weight" />, mais pas les deux. Si vous ne spécifiez pas un argument, Microsoft Excel utilise le style de trait par défaut et le poids.</para>
           <para>Cette méthode présente l’intégralité de la plage sans la remplir. Pour définir la bordure de toutes les cellules, vous devez définir la <see cref="P:Microsoft.Office.Interop.Excel.Borders.Color" />, <see cref="P:Microsoft.Office.Interop.Excel.Borders.LineStyle" />, et <see cref="P:Microsoft.Office.Interop.Excel.Borders.Weight" /> propriétés de la collection Borders. Pour effacer la bordure, vous devez définir la propriété <b>LineStyle</b><b>xlLineStyleNone</b> pour toutes les cellules de la plage.</para>
           <para></para>
         </remarks>
@@ -930,7 +930,7 @@
           <b>Objet</b>
         </returns>
         <remarks>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.Range.CalculateRowMajorOrder" /> méthode calcule la plage spécifiée plage cellule par cellule, à partir de son coin supérieur gauche à son vers le bas à droite dans l’ordre ligne-champ. C’est le même processus qui est utilisé par Excel 2000 et versions antérieures pour calculer une plage.</para>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Excel.Range.CalculateRowMajorOrder" /> méthode calcule la plage spécifiée plage cellule par cellule, à partir de son coin supérieur gauche à son vers le bas à droite dans l’ordre ligne-champ. Voici le même processus est utilisé par Excel 2000 et versions antérieures pour calculer une plage.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -995,9 +995,9 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> objet qui représente une plage de caractères dans le texte de l’objet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous pouvez utiliser l’objet <b>Characters</b> au sein d’une chaîne de texte en caractères format.</para>
+          <para>Vous pouvez utiliser l’objet <b>Characters</b> format caractères au sein d’une chaîne de texte.</para>
           <para>L’objet <b>Characters</b> n’est pas une collection.</para>
-          <para>Pour la <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> objet, <see cref="M:Microsoft.Office.Interop.Excel.TextFrame.Characters(System.Object,System.Object)" /> est une méthode.</para>
+          <para>Pour le <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> objet, <see cref="M:Microsoft.Office.Interop.Excel.TextFrame.Characters(System.Object,System.Object)" /> est une méthode.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1034,7 +1034,7 @@
         <summary>Vérifie l’orthographe d’un objet.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Cette méthode n’a aucune valeur de retour ; Microsoft Excel affiche la boîte de dialogue Orthographe.</para>
+          <para>Cette méthode ne renvoie pas de valeur ; Microsoft Excel affiche la boîte de dialogue Orthographe.</para>
           <para>Pour vérifier les en-têtes, pieds de page et les objets sur une feuille de calcul, utilisez cette méthode sur un <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objet.</para>
           <para>Pour ne vérifier que les cellules et les annotations, utilisez cette méthode avec l’objet renvoyé par la <see cref="P:Microsoft.Office.Interop.Excel.Range.Cells" /> propriété.</para>
           <para></para>
@@ -1170,7 +1170,7 @@
       <Docs>
         <summary>Supprime tous les liens hypertexte de la plage spécifiée.</summary>
         <remarks>
-          <para>Appelant le <see cref="M:Microsoft.Office.Interop.Excel.Range.ClearHyperlinks" /> méthode dans la plage spécifiée équivaut à l’aide de la commande Effacer les liens hypertexte de clair liste déroulante dans la section Modification de l’onglet Accueil. Seuls les liens hypertexte seront supprimés ; toutes les autres cellules de contenu, tels que le texte et la mise en forme ne sont pas affectés.</para>
+          <para>Appel de la <see cref="M:Microsoft.Office.Interop.Excel.Range.ClearHyperlinks" /> méthode dans la plage spécifiée équivaut à l’aide de la commande Effacer les liens hypertexte de clair liste déroulante dans la section Modification de l’onglet Accueil. Seuls les liens hypertexte seront supprimés ; toutes les autres cellules le contenu, tel que le texte et la mise en forme ne sont pas affectés.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1253,7 +1253,7 @@
         <summary>Renvoie le nombre de la première colonne de la première zone de la plage spécifiée.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Colonne A renvoie 1, colonne B renvoie 2 et ainsi de suite.</para>
+          <para>Colonne A renvoie 1, colonne B renvoie 2, etc.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1317,7 +1317,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object qui représente les colonnes de la plage spécifiée.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Lorsqu’elle est appliquée à un objet <b>Range</b> qui est une zone de sélection multiple, cette propriété renvoie les colonnes de la première zone de la plage uniquement. Par exemple, si l’objet <b>Range</b> comporte deux zones : a1 : B2 et C3 : D4 — le <see cref="P:Microsoft.Office.Interop.Excel.Range.Count" /> propriété renvoie la valeur 2, pas 4. Pour utiliser cette propriété sur une plage qui peut contenir une sélection de plusieurs zones, testez le <see cref="P:Microsoft.Office.Interop.Excel.Areas.Count" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Areas" /> objet pour déterminer si la plage contient plusieurs zones. Si elle est le cas, une boucle sur chaque zone de la plage.</para>
+          <para>Lorsqu’elle est appliquée à un objet <b>Range</b> qui est une zone de sélection multiple, cette propriété renvoie les colonnes de la première zone de la plage uniquement. Par exemple, si l’objet <b>Range</b> comporte deux zones : a1 : B2 et C3 : D4 — le <see cref="P:Microsoft.Office.Interop.Excel.Range.Count" /> propriété renvoie la valeur 2, pas 4. Pour utiliser cette propriété sur une plage qui peut contenir une sélection de plusieurs zones, testez le <see cref="P:Microsoft.Office.Interop.Excel.Areas.Count" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Areas" /> objet pour déterminer si la plage contient plusieurs zones. Si c’est le cas, une boucle sur chaque zone de la plage.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1351,7 +1351,7 @@
         <summary>Cette propriété renvoie ou définit la largeur de toutes les colonnes de la plage spécifiée.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Une unité de largeur de colonne est égale à la largeur d’un caractère du style Normal. Pour les polices proportionnelles, la largeur du caractère 0 (zéro) est utilisée.</para>
+          <para>Une unité de largeur de colonne est égale à la largeur d'un caractère du style Normal. Dans le cas des polices proportionnelles, la largeur du caractère 0 (zéro) est utilisée.</para>
           <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Range.Width" /> propriété pour renvoyer la largeur d’une colonne en points.</para>
           <para>Si toutes les colonnes de la plage ont la même largeur, la propriété <b>ColumnWidth</b> renvoie la largeur. Si les colonnes de la plage sont de largeurs différentes, cette propriété renvoie <b>Null</b>.</para>
           <para></para>
@@ -1482,7 +1482,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Si l’objet <b>Recordset</b> contient des champs avec des objets OLE, cette méthode échoue.</para>
-          <para>Copie commence à la ligne active de l’objet <b>Recordset</b> . Après la copie, la propriété <b>EOF</b> de l’objet <b>Recordset</b> a la <b>valeur True</b>.</para>
+          <para>La copie commence à la ligne active de l’objet <b>Recordset</b> . Après la copie, la propriété <b>EOF</b> de l’objet <b>Recordset</b> est <b>True</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1679,8 +1679,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet spécifié a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentArray">
@@ -1737,7 +1739,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object qui représente la zone en cours.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La région actuelle est une plage délimitée par n’importe quelle combinaison de lignes et colonnes vides.</para>
+          <para>La zone en cours est une plage délimitée par n’importe quelle combinaison de lignes et colonnes vides.</para>
           <para>Cette propriété est utile pour de nombreuses opérations qui étendent automatiquement la sélection pour inclure toute la zone en cours, telles que la <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFormat(Microsoft.Office.Interop.Excel.XlRangeAutoFormat,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode.</para>
           <para>Cette propriété ne peut pas être utilisée sur une feuille de calcul protégée.</para>
           <para></para>
@@ -1771,7 +1773,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>La plage coupée doit être constituée de cellules adjacentes.</para>
-          <para>Pouvant couper que des graphiques incorporés.</para>
+          <para>Vous ne pouvez couper que des graphiques incorporés.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1869,7 +1871,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Il peut s’agir d’une sélection multiple (union d’objets <b>Range</b> ) s’il existe plusieurs dépendants.</para>
-          <para>La propriété <b>Dependents</b> fonctionne uniquement sur actif de la feuille et ne peut pas suivre les références distantes.</para>
+          <para>La propriété <b>Dependents</b> fonctionne uniquement sur la feuille active et ne peut pas suivre les références distantes.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1898,7 +1900,7 @@
         <summary>Affiche une boîte de dialogue définie par une table de définition de boîte de dialogue dans une feuille macro Microsoft Excel 4.0.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Cette méthode renvoie le numéro du contrôle choisi ou la valeur <b>False</b> si l’utilisateur clique sur le bouton Annuler.</para>
+          <para>Cette méthode renvoie le numéro du contrôle choisi, ou renvoie la <b>valeur False</b> si l’utilisateur clique sur le bouton Annuler.</para>
           <para>Retourné <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet doit faire référence à une table de définition de boîte de dialogue dans une feuille macro Microsoft Excel 4.0.</para>
           <para></para>
         </remarks>
@@ -1931,7 +1933,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Il peut s’agir d’une sélection multiple (union d’objets <b>Range</b> ) s’il existe plusieurs dépendants.</para>
-          <para>La propriété <b>Direct Dependents</b> fonctionne uniquement sur actif de la feuille et ne peut pas suivre les références distantes.</para>
+          <para>La propriété <b>Direct Dependents</b> fonctionne uniquement sur la feuille active et ne peut pas suivre les références distantes.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1962,7 +1964,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente la plage contenant tous les antécédents directs d’une cellule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>DirectPrecedents</b> fonctionne uniquement sur actif de la feuille et ne peut pas suivre les références distantes.</para>
+          <para>La propriété <b>DirectPrecedents</b> fonctionne uniquement sur la feuille active et ne peut pas suivre des références distantes.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1991,7 +1993,7 @@
         <summary>Cette méthode désigne une plage qui doit être recalculée lorsque le recalcul suivant se produit.</summary>
         <remarks>
           <para>Le <see cref="M:Microsoft.Office.Interop.Excel.Range.Calculate" /> méthode impose la plage spécifiée, qui doit être recalculée, pour les cellules que Microsoft Excel comme nécessitant un recalcul.</para>
-          <para>Si l’application est en mode de calcul manuel, à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.Range.Dirty" /> méthode indique à Excel d’identifier la cellule spécifiée à recalculer. Si l’application est en mode de calcul automatique, à l’aide de la méthode <b>Dirty</b> indique à Excel qu’un recalcul.</para>
+          <para>Si l’application est en mode de calcul manuel, à l’aide du <see cref="M:Microsoft.Office.Interop.Excel.Range.Dirty" /> méthode indique à Excel d’identifier la cellule spécifiée à recalculer. Si l’application est en mode de calcul automatique, à l’aide de la méthode <b>Dirty</b> indique à Excel d’effectuer un recalcul.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2125,7 +2127,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente la cellule à la fin de la région contenant la plage source.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Équivaut à appuyer sur fin + haut, fin + bas, fin + gauche ou fin + droite.</para>
+          <para>Équivaut à appuyer sur fin + haut, fin + bas, fin + gauche ou fin + droite. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -2218,7 +2220,7 @@
         <summary>Permet à l’utilisateur accéder aux options de vérification des erreurs.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Référence le <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> objet pour afficher la liste des valeurs d’index associées aux options de vérification des erreurs.</para>
+          <para>Référence du <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> objet pour afficher la liste des valeurs d’index associées aux options de vérification des erreurs.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2264,7 +2266,7 @@
         <param name="FixedFormatExtClassPtr">Pointeur <b>d’objet</b> facultatif à la classe <b>FixedFormatExt</b> .</param>
         <summary>Réalise une exportation dans un fichier avec le format spécifié.</summary>
         <remarks>
-          <para>Cette méthode prend également en charge l’initialisation d’un complément pour exporter un fichier dans un fichier au format fixe. Par exemple, Excel effectue la conversion du format de fichier si les convertisseurs sont présents. La conversion est habituellement initiée par l’utilisateur.</para>
+          <para>Cette méthode prend également en charge l’initialisation d’une macro complémentaire pour exporter un fichier dans un fichier au format fixé. Par exemple, Excel effectue la conversion de format s’il existe des convertisseurs. La conversion est généralement décidée par l’utilisateur.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2431,8 +2433,8 @@
           <para>Cette méthode renvoie la <b>valeur Nothing</b> si aucune correspondance n’est trouvée.</para>
           <para>Cette méthode n’affecte pas la sélection ou la cellule active.</para>
           <para>Les paramètres de <paramref name="LookIn" />, <paramref name="LookAt" />, <paramref name="SearchOrder" />, et <paramref name="MatchByte" /> sont enregistrés chaque fois que vous utilisez cette méthode. Si vous ne spécifiez des valeurs pour ces arguments la prochaine fois que vous appelez la méthode, les valeurs enregistrées sont utilisées. La définition de ces arguments modifie les paramètres de la boîte de dialogue Rechercher et modifier les paramètres dans la boîte de dialogue Rechercher modifie les valeurs enregistrées qui sont utilisées si vous omettez les arguments. Pour éviter les problèmes, définissez explicitement ces arguments chaque fois que vous utilisez cette méthode.</para>
-          <para>Que vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.Range.FindNext(System.Object)" /> et <see cref="M:Microsoft.Office.Interop.Excel.Range.FindPrevious(System.Object)" /> méthodes pour répéter la recherche.</para>
-          <para>Lors de la recherche atteint la fin de la plage de recherche spécifiée, elle revient au début de la plage. Pour arrêter une recherche lorsqu’elle revient, enregistrez l’adresse de la première cellule trouvée, puis tester chaque adresse de cellule trouvé successive par rapport à cette adresse d’enregistrée.</para>
+          <para>Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.Range.FindNext(System.Object)" /> et <see cref="M:Microsoft.Office.Interop.Excel.Range.FindPrevious(System.Object)" /> méthodes pour répéter la recherche.</para>
+          <para>Lorsque la recherche atteint la fin de la plage de recherche spécifiée, elle revient au début de cette plage. Pour arrêter une recherche lorsqu'elle revient au point de départ, enregistrez l'adresse de la première cellule trouvée, puis comparez l'adresse de chaque cellule ultérieurement trouvée avec l'adresse enregistrée.</para>
           <para>Pour rechercher les cellules qui correspondent à des modèles plus complexes, utilisez une <b>For Each... Suivant</b> instruction avec l’opérateur <b>Like</b> .</para>
           <para></para>
         </remarks>
@@ -2466,7 +2468,7 @@
         <remarks>
           <para>Elle recherche la cellule suivante qui correspond aux mêmes critères et renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui la représente.</para>
           <para>Cette méthode n’affecte pas la sélection ou la cellule active.</para>
-          <para>Lors de la recherche atteint la fin de la plage de recherche spécifiée, elle revient au début de la plage. Pour arrêter une recherche lorsqu’elle revient, enregistrez l’adresse de la première cellule trouvée, puis tester chaque adresse de cellule trouvé successive par rapport à cette adresse d’enregistrée.</para>
+          <para>Lorsque la recherche atteint la fin de la plage de recherche spécifiée, elle revient au début de cette plage. Pour arrêter une recherche lorsqu'elle revient au point de départ, enregistrez l'adresse de la première cellule trouvée, puis comparez l'adresse de chaque cellule ultérieurement trouvée avec l'adresse enregistrée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2499,7 +2501,7 @@
         <remarks>
           <para>Elle recherche la cellule précédente qui correspond aux mêmes critères et renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui la représente.</para>
           <para>Cette méthode n’affecte pas la sélection ou la cellule active.</para>
-          <para>Lorsque la recherche atteint le début de la plage de recherche spécifiée, elle revient à la fin de la plage. Pour arrêter une recherche lorsqu’elle revient, enregistrez l’adresse de la première cellule trouvée, puis tester chaque adresse de cellule trouvé successive par rapport à cette adresse d’enregistrée.</para>
+          <para>Lorsque la recherche atteint le début de la plage de recherche spécifiée, elle revient à la fin de cette plage. Pour arrêter une recherche lorsqu'elle revient au point de départ, enregistrez l'adresse de la première cellule trouvée, puis comparez l'adresse de chaque cellule ultérieurement trouvée avec l'adresse enregistrée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2614,11 +2616,11 @@
         <summary>Cette propriété renvoie ou définit la formule de l'objet dans une notation de style A1 et dans la langue de la macro.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
-          <para>Si la cellule contient une constante, cette propriété renvoie la constante. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule sous forme de chaîne dans le même format qui s’affiche dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Excel vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, Microsoft Excel lui affecte le format pour le format de date courte par défaut.</para>
+          <para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
+          <para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule en tant que chaîne dans le même format que celui qui doit s'afficher dans la barre de formule (y compris le signe égal).</para>
+          <para>Si vous affectez une date à la formule d'une cellule, Microsoft Excel vérifie si la cellule est déjà dotée de l'un des formats numériques ou de date. Si tel n'est pas le cas, Microsoft Excel lui affecte le format de date numérique par défaut.</para>
           <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule en tableau des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau de base.</para>
-          <para>En définissant la formule pour une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
+          <para>Le fait de définir la formule pour une plage comprenant plusieurs cellules insère cette formule dans la totalité des cellules de la plage.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2654,7 +2656,7 @@
         <remarks>
           <para>Cette propriété renvoie (ou peut être définie sur) une seule formule ou un tableau.</para>
           <para>Si la plage spécifiée ne contient une formule matricielle, cette propriété renvoie <b>Null</b>.</para>
-          <para>Si vous utilisez cette propriété pour entrer une formule matricielle, la formule doit utiliser le style de référence L1C1, pas la référence A1 (consultez le second exemple) de style.</para>
+          <para>Si vous utilisez cette propriété pour entrer une formule sous forme matricielle, vous devez utiliser le style de référence L1C1, et non le style de référence A1 (consultez le second exemple).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2688,7 +2690,7 @@
         <summary>Détermine si la formule sera masquée lorsque la feuille de calcul est protégée.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si la formule sera masquée lorsque la feuille de calcul est protégée. Renvoie la <b>valeur Null</b> si la plage spécifiée contient certaines cellules avec <b>FormulaHidden</b> égale à <b>True</b> et d’autres cellules avec <b>FormulaHidden</b> égale à <b>False</b>.</para>
+          <para>Cette propriété renvoie <b>la valeur True</b> si la formule sera masquée lorsque la feuille de calcul est protégée. Elle renvoie <b>Null</b> si la plage spécifiée contient certaines cellules avec <b>FormulaHidden</b> égale à <b>True</b> et autres cellules avec <b>FormulaHidden</b> égale à <b>False</b>.</para>
           <para>Ne confondez pas cette propriété avec la <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> propriété. La formule sera masquée pas si le classeur est protégé et n’est pas la feuille de calcul, mais uniquement si la feuille de calcul est protégée.</para>
           <para></para>
         </remarks>
@@ -2785,10 +2787,10 @@
         <summary>Cette propriété renvoie ou définit la formule de l'objet, à l'aide de références de style A1 dans la langue de l'utilisateur.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la cellule contient une constante, cette propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété renvoie la formule sous forme de chaîne, dans le même format dans lequel il doit être affiché dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Excel vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, le format de nombre est remplacé par le format de date courte par défaut.</para>
+          <para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété la renvoie sous forme de chaîne, dans le format affiché dans la barre de formule (signe égal inclus).</para>
+          <para>Si vous définissez une date comme valeur ou formule d'une cellule, Microsoft Excel vérifie si la cellule est déjà mise en forme avec un des formats de nombre Date ou Heure. Si ce n'est pas le cas, Microsoft Excel applique le format Date court par défaut.</para>
           <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule en tableau des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau.</para>
-          <para>En définissant la formule d’une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
+          <para>En définissant la formule d'une plage à cellules multiples, toutes les cellules de la plage sont remplies par la formule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2822,10 +2824,10 @@
         <summary>Cette propriété renvoie ou définit la formule de l'objet, en utilisant la notation R1C1 dans la langue de la macro.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la cellule contient une constante, cette propriété renvoie la constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété renvoie la formule sous forme de chaîne, dans le même format dans lequel il doit être affiché dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Excel vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, le format de nombre est remplacé par le format de date courte par défaut.</para>
+          <para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété la renvoie sous forme de chaîne, dans le format affiché dans la barre de formule (signe égal inclus).</para>
+          <para>Si vous définissez une date comme valeur ou formule d'une cellule, Microsoft Excel vérifie si la cellule est déjà mise en forme avec un des formats de nombre Date ou Heure. Si ce n'est pas le cas, Microsoft Excel applique le format Date court par défaut.</para>
           <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule en tableau des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau.</para>
-          <para>En définissant la formule d’une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
+          <para>En définissant la formule d'une plage à cellules multiples, toutes les cellules de la plage sont remplies par la formule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2859,10 +2861,10 @@
         <summary>Cette propriété renvoie ou définit la formule de l'objet, en utilisant la notation R1C1 dans la langue de l'utilisateur.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la cellule contient une constante, cette propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété renvoie la formule sous forme de chaîne, dans le même format dans lequel il doit être affiché dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Excel vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, le format de nombre est remplacé par le format de date courte par défaut.</para>
+          <para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété la renvoie sous forme de chaîne, dans le format affiché dans la barre de formule (signe égal inclus).</para>
+          <para>Si vous définissez une date comme valeur ou formule d'une cellule, Microsoft Excel vérifie si la cellule est déjà mise en forme avec un des formats de nombre Date ou Heure. Si ce n'est pas le cas, Microsoft Excel applique le format Date court par défaut.</para>
           <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule en tableau des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau.</para>
-          <para>En définissant la formule d’une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
+          <para>En définissant la formule d'une plage à cellules multiples, toutes les cellules de la plage sont remplies par la formule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2958,7 +2960,7 @@
         <summary>Calcule les valeurs nécessaires pour atteindre un objectif spécifique.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Si celui-ci est un montant renvoyé par une formule, cette méthode calcule une valeur qui, lorsque fournie à votre formule, entraîne la formule renvoyer le numéro voulu.</para>
+          <para>Si l’objectif est un montant renvoyé par une formule, cette méthode calcule une valeur qui, lorsque fournie à votre formule, entraîne la formule renvoyer le numéro voulu.</para>
           <para>Cette méthode renvoie <b>la valeur True</b> si le résultat est atteint.</para>
           <para></para>
         </remarks>
@@ -2995,7 +2997,10 @@
         <param name="Periods">Facultatif <b>Object</b>. Tableau de valeurs booléennes qui spécifient la période pour le groupe, comme indiqué dans le tableau suivant. Si un élément dans le tableau a la <b>valeur True</b>, un groupe est créé pour la période correspondante ; Si l’élément a la <b>valeur False</b>, aucun groupe est créé. Si le champ n’est pas un champ de date, cet argument est ignoré.</param>
         <summary>Lors de la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet représente une seule cellule dans la plage de données d’un champ de tableau croisé dynamique, la méthode <b>Group</b> effectue un regroupement par chiffres ou dates dans ce champ.</summary>
         <returns>To be added.</returns>
-        <remarks>Objet <para>la <b>plage</b> doit être une seule cellule dans la plage de données du champ de tableau croisé dynamique. Si vous tentez d’appliquer cette méthode à plusieurs cellules, elle échouera mais n’affichera pas un message d’erreur.</para><para></para></remarks>
+        <remarks>
+          <para>L’objet <b>Range</b> doit être une seule cellule dans la plage de données du champ de tableau croisé dynamique. Si vous tentez d’appliquer cette méthode à plusieurs cellules, elle échouera mais n’affichera pas un message d’erreur.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasArray">
@@ -3211,7 +3216,7 @@
         <summary>Cette propriété renvoie ou définit l’étiquette d’identification de la cellule spécifiée lors de la page est enregistrée en tant que page Web.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous pouvez utiliser une étiquette d’identification en tant que référence de lien hypertexte dans d’autres documents HTML ou sur la même page Web.</para>
+          <para>Vous pouvez utiliser une étiquette d'identification en tant que référence de lien hypertexte dans d'autres documents HTML ou sur la même page Web.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3246,7 +3251,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Le niveau de retrait peut être un entier compris entre 0 et 15.</para>
-          <para>à l’aide de cette propriété pour définir le niveau de retrait à un nombre inférieur à 0 (zéro) ou supérieure à 15 provoque une erreur.</para>
+          <para>L'utilisation de cette propriété pour affecter une valeur inférieure à 0 (zéro) ou supérieure à 15 au niveau de retrait génère une erreur.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3308,7 +3313,7 @@
           <b>Integer</b>obligatoire. Valeur à ajouter au retrait actuel.</param>
         <summary>Ajoute un retrait dans les cellules de la plage spécifiée.</summary>
         <remarks>
-          <para>à l’aide de cette méthode pour définir le niveau de retrait à un nombre inférieur à 0 (zéro) ou supérieure à 15 provoque une erreur.</para>
+          <para>L'utilisation de cette méthode pour affecter une valeur inférieure à 0 (zéro) ou supérieure à 15 à un niveau de retrait génère une erreur.</para>
           <para>Utiliser le<b /><see cref="P:Microsoft.Office.Interop.Excel.Range.IndentLevel" /> propriété pour renvoyer le niveau de retrait d’une plage.</para>
           <para></para>
         </remarks>
@@ -3378,7 +3383,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente une plage décalée à la plage spécifiée.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La <paramref name="RowIndex" /> et <paramref name="ColumnIndex" /> arguments sont des décalages relatifs. En d’autres termes, en spécifiant un <paramref name="RowIndex" /> renvoie les cellules de la première ligne de la plage, pas la première ligne de la feuille de calcul 1.</para>
+          <para>Le <paramref name="RowIndex" /> et <paramref name="ColumnIndex" /> arguments sont des décalages relatifs. En d’autres termes, en spécifiant un <paramref name="RowIndex" /> de 1 renvoie les cellules de la première ligne de la plage, pas la première ligne de la feuille de calcul.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3407,7 +3412,7 @@
         <summary>Cette méthode réorganise le texte dans une plage de façon à ce qu'il la remplisse de manière uniforme.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Si la plage n’est pas suffisamment importante, Microsoft Excel affiche un message vous indiquant que le texte s’étendra au-dessous de la plage. Si vous cliquez sur le bouton OK, texte justifié remplace le contenu dans les cellules qui se prolongent au-delà de la plage sélectionnée. Pour empêcher l’affichage de ce message, définissez la <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriété la <b>valeur False</b>. Une fois que vous définissez cette propriété, le texte remplacera toujours le contenu des cellules situées au-dessous de la plage.</para>
+          <para>Si la plage n’est pas suffisamment importante, Microsoft Excel affiche un message vous indiquant que le texte s’étendra au-dessous de la plage. Si vous cliquez sur le bouton OK, texte justifié remplace le contenu dans les cellules qui se prolongent au-delà de la plage sélectionnée. Pour empêcher l’affichage de ce message, définissez la <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriété la <b>valeur False</b>. Une fois que vous définissez cette propriété, texte remplace toujours le contenu des cellules situées sous la plage.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3438,8 +3443,8 @@
         <summary>La distance entre le bord gauche de la colonne A et le bord gauche de la plage.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la plage est discontinue, la première zone est utilisée. Si la plage contient plusieurs colonnes de large, la colonne de gauche de la plage est utilisée.</para>
-          <para>Si la fenêtre est agrandie, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Définir cette propriété sur 0 (zéro) rend la fenêtre un petit peu plus petite qu’il serait si la fenêtre d’application avait été agrandie. En d’autres termes, si cette propriété est 0 (zéro), la bordure gauche de la fenêtre Microsoft Excel principale peine sera visible à l’écran.</para>
+          <para>Si la plage n'est pas continue, la première zone est utilisée. Si la plage est constituée de plusieurs colonnes, celle située le plus à gauche dans la plage est utilisée.</para>
+          <para>Si la fenêtre est réduite, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Définir cette propriété sur 0 (zéro) rend la fenêtre un petit peu plus petite qu’il serait si la fenêtre d’application avait été agrandie. En d’autres termes, si cette propriété est 0 (zéro), la bordure gauche de la fenêtre Microsoft Excel principale sera peine visible à l’écran.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3593,7 +3598,7 @@
             </item>
             <item>
               <description>
-                <b>xlPageItem </b>
+                <b>xlPageItem</b>
               </description>
             </item>
             <item>
@@ -3698,7 +3703,7 @@
         <param name="Across">Facultatif <b>Object</b>. <b>True</b> pour fusionner les cellules de chaque ligne de la plage spécifiée en cellules fusionnées individuelles. <b>False</b> est la valeur par défaut.</param>
         <summary>Crée une cellule fusionnée à partir du <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet.</summary>
         <remarks>
-          <para>La valeur d’une plage fusionnée est spécifiée dans la cellule du coin supérieur gauche de la plage.</para>
+          <para>La valeur d'une plage fusionnée est spécifiée dans la cellule du coin supérieur gauche de la plage.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3800,31 +3805,45 @@
         <value>To be added.</value>
         <remarks>
           <para>Le nom d’un objet <b>Range</b> est un <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objet. Pour les autres types d’objet, le nom est une <b>chaîne</b>.</para>
-          <para>Le tableau suivant indique les valeurs de l’exemple de la propriété <b>Name</b> et les propriétés associées en fonction d’une source de données OLAP dont le nom unique « [Europe]. [France]. [Paris] » et « Paris » du nom de source de données non-OLAP avec l’élément.</para>
+          <para>Le tableau suivant contient des valeurs d’exemple de la propriété <b>Name</b> et des propriétés liées affectées d’une source de données OLAP dotée du nom unique "[Europe].[France].[Paris]" et d’une source de données autre que OLAP dotée du nom "Paris".</para>
           <list type="table">
             <item>
-              <term>Légende</term>
+              <term>Caption</term>
               <description>Paris</description>
               <description>Paris</description>
             </item>
             <item>
-              <term>nom</term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <term>Nom</term>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>SourceName</term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
-              <description>(Identique à la valeur de propriété SQL en lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
+              <description>(Valeur identique à celle de la propriété SQL ; en lecture seule)</description>
             </item>
             <item>
               <term>Valeur</term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Lors de la spécification d’index dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para> expression 
-          <list type="table"><item><term>. PivotItems (« [Europe]. [ France]. [Paris] »)</term><description>expression. PivotItems("Paris")</description></item></list><para>lors de l’utilisation du <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para><list type="table"><item><term>[Europe]. [ France]. [Paris]</term><description>Paris</description></item></list><para></para></remarks>
+          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <list type="table">
+            <item>
+              <term>expression. PivotItems (« [Europe]. [ France]. [Paris] »)</term>
+              <description>expression. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para>Lorsque vous utilisez la <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para>
+          <list type="table">
+            <item>
+              <term>[Europe]. [France]. [Paris]</term>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigateArrow">
@@ -3857,7 +3876,7 @@
         <summary>Déplace une flèche d’audit pour la plage spécifiée pour l’ou les cellules antécédentes, dépendante ou erreur à l’origine.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Sélectionne les antécédents, dépendants, ou erreur de cellules et renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object qui représente la nouvelle sélection. Cette méthode génère une erreur si elle est appliquée à une cellule sans flèches d’audit visibles.</para>
+          <para>Sélectionne les cellules antécédentes, dépendantes ou erreur et renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object qui représente la nouvelle sélection. Cette méthode provoque une erreur si elle est appliquée à une cellule sans flèches d’audit visibles.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3888,8 +3907,8 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object qui représente la cellule suivante.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété simule l’utilisation de la touche TAB, bien que la propriété renvoie la prochaine cellule sans la sélectionner it.</para>
-          <para>Dans une feuille de calcul protégée, cette propriété renvoie la prochaine cellule non verrouillée. Dans une feuille non protégée, cette propriété renvoie toujours la cellule immédiatement à droite de la cellule spécifiée.</para>
+          <para>Cette propriété simule l’utilisation de la touche TAB, bien que la propriété renvoie la prochaine cellule sans la sélectionner.</para>
+          <para>Dans une feuille protégée, cette propriété renvoie la prochaine cellule non verrouillée. Dans une feuille non protégée, elle renvoie toujours la cellule située immédiatement à droite de la cellule spécifiée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3925,7 +3944,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Notes de cellule ont été remplacées par des commentaires de plage. Pour plus d’informations, voir la <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> objet.</para>
-          <para>Pour ajouter une note qui contient plus de 255 caractères, une fois cette méthode permet de spécifier les 255 premiers caractères et utilisez à nouveau pour ajouter le reste de la note (pas plus de 255 caractères à la fois).</para>
+          <para>Pour ajouter une annotation qui contient plus de 255 caractères, utilisez cette méthode une première fois pour spécifier les 255 premiers caractères et une seconde fois pour ajouter le reste de l'annotation (pas plus de 255 caractères à la fois).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3959,8 +3978,8 @@
         <summary>Cette propriété renvoie ou définit le code du format de l'objet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété renvoie la <b>valeur Null</b> si toutes les cellules de la plage spécifiée n’ont pas le même format de nombre.</para>
-          <para>Le format de code est la même chaîne que l’option de Codes de Format dans la boîte de dialogue Format de cellule. La fonction <b>Format</b> utilise des chaînes de code de format différentes <b>NumberFormat</b> et <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> propriétés.</para>
+          <para>Cette propriété renvoie la valeur <b>Null</b> si toutes les cellules contenues dans la plage spécifiée n'ont pas le même format de nombres.</para>
+          <para>Le code de format est la même chaîne que l'option de Codes de Format dans la boîte de dialogue Format de cellule. La fonction <b>Format</b> utilise des chaînes de code de format différentes <b>NumberFormat</b> et <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> propriétés.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4062,8 +4081,10 @@
         <summary>Retourne l’orientation du texte.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette valeur retournée valeur orientation peut être une valeur entière comprise entre 90 et 90 degrés.</para> Sources de données 
-          <para>pour OLAP, définissez cette propriété pour un champ dans une hiérarchie définit l’orientation pour les autres champs dans la même hiérarchie. Les champs de dimension peuvent uniquement être orientés dans la ligne, colonne et zones de champ de page du rapport de tableau croisé dynamique. Les champs de mesure peuvent uniquement être orientés dans la zone de données. Si un champ de hiérarchie ou données <b>xlHidden</b> supprime la hiérarchie ou un champ à partir du rapport de tableau croisé dynamique.</para><para></para></remarks>
+          <para>Cette valeur renvoyée orientation peut être une valeur entière comprise entre 90 et 90 degrés.</para>
+          <para>Sources de données OLAP, la définition de cette propriété pour un champ dans une hiérarchie définit l’orientation pour les autres champs dans la même hiérarchie. Les champs de dimension peuvent uniquement être orientés dans la ligne, colonne et zones de champ de page du rapport de tableau croisé dynamique. Les champs de mesure peuvent uniquement être orientés dans la zone de données. Si un champ de hiérarchie ou données <b>xlHidden</b> supprime la hiérarchie ou un champ à partir du rapport de tableau croisé dynamique.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineLevel">
@@ -4095,7 +4116,7 @@
         <summary>Cette propriété renvoie ou définit le niveau hiérarchique actuel de la ligne spécifiée ou une colonne.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le niveau 1 est le niveau de synthèse extérieur.</para>
+          <para>Le niveau 1 est le niveau de synthèse le plus élevé.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4147,8 +4168,8 @@
               </description>
             </item>
           </list>
-          <para>cette propriété peut renvoyer l’emplacement de page automatiques ou manuels sauts, mais elle ne peut définir l’emplacement des sauts de page manuels (il peut être uniquement définie <b>xlPageBreakManual</b> ou <b>xlPageBreakNone</b>).</para>
-          <para>Pour supprimer tous les sauts de page manuels dans une feuille de calcul, définissez Cells.PageBreak sur <b>xlPageBreakNone</b>.</para>
+          <para>Cette propriété peut renvoyer l'emplacement des sauts de page automatiques ou manuels, mais elle ne peut définir l'emplacement que des sauts de page manuels ; la propriété ne peut recevoir que la valeur <b>xlPageBreakManual</b> ou <b>xlPageBreakNone</b>.</para>
+          <para>Pour supprimer tous les sauts de page manuels d'une feuille de calcul, définissez Cells.PageBreak sur <b>xlPageBreakNone</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4445,7 +4466,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object qui représente tous les antécédents d’une cellule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Il peut s’agir d’une sélection multiple (union d’objets <b>Range</b> ) s’il existe plusieurs antécédents.</para>
+          <para>Cela peut être une sélection multiple (union d’objets <b>Range</b> ) s’il existe plusieurs antécédents.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4507,8 +4528,8 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object qui représente la cellule précédente.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet est une plage, cette propriété revient à appuyer sur MAJ + TAB, contrairement à la combinaison de touches, toutefois, la propriété renvoie la cellule précédente sans la sélectionner it.</para>
-          <para>Dans une feuille de calcul protégée, cette propriété renvoie la cellule non verrouillée précédente. Dans une feuille non protégée, cette propriété renvoie toujours la cellule immédiatement à gauche de la cellule spécifiée.</para>
+          <para>Si l'objet est une plage, cette propriété simule la combinaison de touches MAJ+TAB mais, à l'inverse de celle-ci, renvoie la cellule précédente sans la sélectionner.</para>
+          <para>Dans le cas d'une feuille protégée, cette propriété renvoie la cellule précédente non verrouillée. Dans le cas d'une feuille non protégée, cette propriété renvoie toujours la cellule située immédiatement à gauche de la cellule spécifiée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4726,8 +4747,8 @@
         <summary>Cette propriété renvoie ou définit le sens de lecture de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La valeur de retour peut être une des constantes suivantes : <b>xlRTL</b> (de droite à gauche), <b>xlLTR</b> (de gauche à droite) ou <b>xlContext</b>.</para>
-          <para>Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para>La valeur de retour peut être une des constantes suivantes : <b>xlContext</b>, <b>xlLTR</b> (de gauche à droite) ou <b>xlRTL</b> (de droite à gauche).</para>
+          <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4829,7 +4850,7 @@
         <summary>Renvoie un <b>type Boolean</b> indiquant caractères dans les cellules de la plage spécifiée.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>à l’aide de cette méthode ne modifie pas la sélection ou la cellule active.</para>
+          <para>Cette méthode ne change pas la sélection ou la cellule active.</para>
           <para>Les paramètres de <paramref name="LookAt" />, <paramref name="SearchOrder" />, <paramref name="MatchCase" />, et <paramref name="MatchByte" /> sont enregistrés chaque fois que vous utilisez cette méthode. Si vous ne spécifiez des valeurs pour ces arguments la prochaine fois que vous appelez la méthode, les valeurs enregistrées sont utilisées. La définition de ces arguments modifie les paramètres de la boîte de dialogue Rechercher et modifier les paramètres dans la boîte de dialogue Rechercher modifie les valeurs enregistrées qui sont utilisées si vous omettez les arguments. Pour éviter les problèmes, définissez explicitement ces arguments chaque fois que vous utilisez cette méthode.</para>
           <para></para>
         </remarks>
@@ -4958,7 +4979,7 @@
         <remarks>
           <para>Cette propriété renvoie <b>Null</b> si les lignes de la plage spécifiée ne sont pas tous de la même hauteur.</para>
           <para>Pour une seule ligne, la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.Range.Height" /> propriété est égale à la valeur de la propriété <b>RowHeight</b> . Toutefois, vous pouvez également utiliser la propriété <b>Height</b> pour renvoyer la hauteur totale d’une plage de cellules.</para>
-          <para>Autres différences entre les <b>Propriétés RowHeight</b> et <b>Height</b> sont les suivants :</para>
+          <para>Autres différences entre les <b>Propriétés RowHeight</b> et <b>Height</b> sont les suivantes :</para>
           <list type="bullet">
             <item>
               <description>
@@ -5001,7 +5022,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object qui représente les lignes de la plage spécifiée.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Lorsqu’elle est appliquée à un objet <b>Range</b> qui est une sélection multiple, cette propriété renvoie les lignes de la première zone de la plage uniquement.</para>
+          <para>Lorsqu’elle est appliquée à un objet <b>Range</b> qui est une sélection multiple, cette propriété renvoie des lignes à partir de la première zone de la plage uniquement.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5091,8 +5112,8 @@
         <returns>To be added.</returns>
         <remarks>
           <para>La plage doit se trouver sur une feuille macro.</para>
-          <para>Vous ne pouvez pas utiliser les arguments nommés avec cette méthode. Les arguments doivent être passés par sa position.</para>
-          <para>La méthode <b>Run</b> renvoie ce que la macro appelée renvoie.</para>
+          <para>Vous ne pouvez pas utiliser d'arguments nommés avec cette méthode. Ils doivent être transmis par position.</para>
+          <para>La méthode <b>Run</b> renvoie ce que la macro appelée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5179,7 +5200,7 @@
       <Docs>
         <summary>Crée <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> objets pour toutes les cellules de la plage spécifiée.</summary>
         <remarks>
-          <para>Tous les objets <b>Phonetic</b> existants dans la plage spécifiée sont automatiquement remplacés (supprimés) par les nouveaux objets que vous ajoutez à l’aide de cette méthode.</para>
+          <para>Les éventuels objets <b>Phonetic</b> existant dans la plage spécifiée sont automatiquement remplacés (supprimés) par les nouveaux objets que vous ajoutez à l'aide de cette méthode.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5271,26 +5292,26 @@
         <value>To be added.</value>
         <remarks>
           <para>La plage spécifiée doit être une seule colonne de synthèse ou une ligne dans un plan.</para>
-          <para>Si la plage se trouve dans un rapport de tableau croisé dynamique, cette propriété est définie sur <b>True</b> si l’élément affiche les détails.</para>
-          <para>Si la plage spécifiée n’est pas dans un rapport de tableau croisé dynamique, les instructions suivantes sont vraies :</para>
+          <para>Si la plage se trouve dans un rapport de tableau croisé dynamique, cette propriété a la valeur <b>true</b> si l’élément affiche les détails.</para>
+          <para>Si la plage spécifiée ne se trouve pas dans un rapport de tableau croisé dynamique, les remarques suivantes s'appliquent :</para>
           <list type="bullet">
             <item>
-              <description>La plage doit être dans une seule ligne de synthèse ou une colonne.</description>
+              <description>La plage doit être contenue dans une seule ligne ou colonne de synthèse.</description>
             </item>
             <item>
-              <description>Cette propriété renvoie la <b>valeur False</b> si aucun des enfants de la ligne ou de colonne sont masquées.</description>
+              <description>Cette propriété renvoie la valeur <b>False</b> si aucun des enfants de la ligne ou de la colonne n'est masqué.</description>
             </item>
             <item>
-              <description>La définition de cette propriété sur <b>True</b> équivaut à afficher tous les enfants de la ligne de synthèse ou de la colonne.</description>
+              <description>Définir cette propriété sur <b>True</b> revient à afficher tous les enfants de la ligne de synthèse ou de la colonne.</description>
             </item>
             <item>
-              <description>Définir cette propriété sur <b>False</b> équivaut à masquer tous les enfants de la ligne de synthèse ou de la colonne.</description>
+              <description>Affecter la valeur <b>False</b> à cette propriété équivaut à masquer tous les enfants de la ligne ou colonne de synthèse.</description>
             </item>
             <item>
-              <description>Si la plage spécifiée se trouve dans un rapport de tableau croisé dynamique, il est possible de définir cette propriété pour plusieurs cellules à la fois si la plage est contiguë. Cette propriété peut être renvoyée uniquement si la plage est une cellule unique.</description>
+              <description>Si la plage spécifiée se trouve dans un rapport de tableau croisé dynamique, il est possible d'affecter cette propriété à plusieurs cellules à la fois si la plage est contiguë. Cette propriété peut être renvoyée seulement si la plage est une cellule seule.</description>
             </item>
           </list>
-          <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
+          <para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5468,9 +5489,9 @@
         <summary>Trie un rapport de tableau croisé dynamique, une plage ou la région active si la plage spécifiée ne contient qu’une seule cellule.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Les paramètres de <paramref name="Header" />, <paramref name="Order1" />, <paramref name="Order2" />, <paramref name="Order3" />, <paramref name="OrderCustom" />, et <paramref name="Orientation" /> sont enregistrés, pour la feuille de calcul particulière, chaque fois que vous utilisez cette méthode. Si vous ne spécifiez des valeurs pour ces arguments la prochaine fois que vous appelez la méthode, les valeurs enregistrées sont utilisées. Définissez explicitement ces arguments chaque fois que vous utilisez la méthode <b>Sort</b> si vous choisissez de ne pas utiliser les valeurs enregistrées.</para>
-          <para>Des chaînes de texte qui ne sont pas convertibles en données numériques sont triées normalement.</para>
-          <para>Si aucun argument n’est défini avec la méthode <b>Sort</b> , Microsoft Excel trie la sélection par ordre croissant.</para>
+          <para>Les paramètres de <paramref name="Header" />, <paramref name="Order1" />, <paramref name="Order2" />, <paramref name="Order3" />, <paramref name="OrderCustom" />, et <paramref name="Orientation" /> sont enregistrés, pour la feuille de calcul particulière, chaque fois que vous utilisez cette méthode. Si vous ne spécifiez des valeurs pour ces arguments la prochaine fois que vous appelez la méthode, les valeurs enregistrées sont utilisées. Définissez ces arguments explicitement chaque fois que vous utilisez la méthode <b>Sort</b> si vous choisissez de ne pas utiliser les valeurs enregistrées.</para>
+          <para>Chaînes de texte qui ne sont pas convertibles en données numériques sont triées normalement.</para>
+          <para>Si aucun argument n'est défini avec la méthode <b>Sort</b>, Microsoft Excel trie la sélection en ordre croissant.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5813,7 +5834,7 @@
         <summary>Cette méthode crée une table de données à partir des valeurs d'entrée et des formules que vous définissez dans une feuille de calcul.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Tables de données permet d’effectuer une analyse en modifiant certaines valeurs constantes dans votre feuille de calcul pour voir l’impact sur les valeurs d’autres cellules.</para>
+          <para>Utilisez des tables de données pour exécuter des analyses par simulation en modifiant certaines constantes de la feuille de calcul et constater ainsi l'effet engendré sur les valeurs contenues dans d'autres cellules.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5844,7 +5865,7 @@
         <summary>Cette propriété renvoie ou définit le texte de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour la <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> objet, cette propriété renvoie ou définit son texte phonétique. Vous ne pouvez pas définir cette propriété sur <b>Null</b>.</para>
+          <para>Pour le <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> objet, cette propriété renvoie ou définit son texte phonétique. Vous ne pouvez pas définir cette propriété sur <b>Null</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5902,46 +5923,46 @@
         <summary>Cette méthode redistribue sur plusieurs colonnes une colonne de cellules qui comportent du texte.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Le tableau suivant présente les résultats de l’importation de texte dans Excel pour divers paramètres d’importation. Les résultats numériques sont affichés dans la colonne la plus à droite.</para>
+          <para>Le tableau suivant contient les résultats de l'importation de texte dans Excel pour divers paramètres d'importation. Les résultats numériques sont affichés dans la colonne la plus à droite.</para>
           <list type="table">
             <item>
               <term>Point</term>
-              <description>virgule</description>
-              <description>virgule</description>
-              <description>période</description>
+              <description>Virgule</description>
+              <description>Virgule</description>
+              <description>Point</description>
               <description>123.123,45</description>
               <description>123,123.45 (numérique)</description>
             </item>
             <item>
-              <term>point</term>
-              <description>virgule</description>
-              <description>virgule</description>
-              <description>virgule</description>
+              <term>Point</term>
+              <description>Virgule</description>
+              <description>Virgule</description>
+              <description>Virgule</description>
               <description>123.123,45</description>
-              <description>123.123,45) texte)</description>
+              <description>123.123,45 (texte)</description>
             </item>
             <item>
-              <term>virgule</term>
-              <description>point</description>
-              <description>virgule</description>
-              <description>période</description>
-              <description>123,123.45</description>
+              <term>Virgule</term>
+              <description>Point</description>
+              <description>Virgule</description>
+              <description>Point</description>
+              <description>123.123,45</description>
               <description>123,123.45 (numérique)</description>
             </item>
             <item>
-              <term>point</term>
-              <description>virgule</description>
-              <description>point</description>
-              <description>virgule</description>
-              <description>123 123,45</description>
-              <description>123 123,45 (texte)</description>
+              <term>Point</term>
+              <description>Virgule</description>
+              <description>Point</description>
+              <description>Virgule</description>
+              <description>123.123,45</description>
+              <description>123 123.45 (texte)</description>
             </item>
             <item>
-              <term>point</term>
-              <description>virgule</description>
-              <description>période</description>
-              <description>espace</description>
-              <description>123 123,45</description>
+              <term>Point</term>
+              <description>Virgule</description>
+              <description>Point</description>
+              <description>Espace</description>
+              <description>123.123,45</description>
               <description>123,123.45 (numérique)</description>
             </item>
           </list>
@@ -6005,7 +6026,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>La plage spécifiée doit être une ligne, colonne ou une plage de lignes ou colonnes. Si la plage se trouve dans un rapport de tableau croisé dynamique, cette méthode dissocie les éléments contenus dans la plage.</para>
-          <para>Si la cellule active se trouve dans un en-tête de champ parent, tous les groupes dans ce champ sont dissociés et le champ est supprimé du rapport de tableau croisé dynamique. Lorsque le dernier groupe d’un champ parent est dissocié, tout le champ est supprimé de l’état.</para>
+          <para>Si la cellule active se trouve dans un en-tête de champ parent, tous les groupes de ce champ sont dissociés et le champ est supprimé du rapport de tableau croisé dynamique. Lorsque le dernier groupe d'un champ parent est dissocié, tout le champ est ôté du rapport.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6098,7 +6119,7 @@
         <summary>Détermine si la largeur de colonne de la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet est égale à la largeur standard de la feuille.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si la largeur de colonne de l’objet <b>Range</b> est égale à la largeur standard de la feuille et la <b>valeur Null</b> si la plage contient plusieurs colonnes et les colonnes ne sont pas la même largeur.</para>
+          <para>Cette propriété renvoie <b>la valeur True</b> si la largeur de colonne de l’objet <b>Range</b> est égale à la largeur standard de la feuille et la <b>valeur Null</b> si la plage contient plusieurs colonnes et les colonnes suivantes ne sont pas la même largeur.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6164,7 +6185,7 @@
         <summary>Cette propriété renvoie ou définit la valeur de la plage spécifiée.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Lors de la définition d’une plage de cellules avec le contenu d’un fichier de feuille de calcul XML, seulement les valeurs de la première feuille du classeur sont utilisées. Vous ne pouvez pas définir ou obtenir une plage non contiguë de cellules dans le format de feuille de calcul XML.</para>
+          <para>Lors de la définition d’une plage de cellules avec le contenu d’un fichier de feuille de calcul XML, seules les valeurs de la première feuille du classeur sont utilisées. Vous ne pouvez pas définir ou obtenir une plage non contiguë de cellules dans le format de feuille de calcul XML.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6198,7 +6219,7 @@
         <summary>Cette propriété renvoie ou définit la valeur de cellule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La seule différence entre cette propriété et la <b>valeur de</b> propriété est que la propriété <b>Value2</b> n’utilise pas les types de données <b>Currency</b> et <b>Date</b> . Vous pouvez retourner les valeurs mises en forme avec les données types sous forme de nombres à virgule flottante en utilisant le type de données <b>Double</b> .</para>
+          <para>La seule différence entre cette propriété et la propriété <b>Value</b> est que la propriété <b>Value2</b> n’utilise pas les types de données <b>Currency</b> et <b>Date</b> . Vous pouvez retourner les valeurs mises en forme avec ces types de données sous forme de nombres à virgule flottante en utilisant le type de données <b>Double</b> .</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6236,6 +6257,16 @@
           <list type="bullet">
             <item>
               <description>
+                <b>xlBottom</b>
+              </description>
+            </item>
+            <item>
+              <description>
+                <b>xlCenter</b>
+              </description>
+            </item>
+            <item>
+              <description>
                 <b>xlDistributed</b>
               </description>
             </item>
@@ -6247,16 +6278,6 @@
             <item>
               <description>
                 <b>xlTop</b>
-              </description>
-            </item>
-            <item>
-              <description>
-                <b>xlBottom</b>
-              </description>
-            </item>
-            <item>
-              <description>
-                <b>xlCenter</b>
               </description>
             </item>
           </list>
@@ -6349,8 +6370,8 @@
         <summary>Détermine si Microsoft Excel renvoie le texte à la ligne dans l’objet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si Microsoft Excel renvoie le texte à la ligne dans l’objet et la <b>valeur Null</b> si la plage spécifiée contient certaines cellules habiller avec du texte et d’autres cellules qui ne.</para>
-          <para>Microsoft Excel modifie la hauteur de ligne de la plage, si nécessaire, pour prendre en charge le texte de la plage.</para>
+          <para>Cette propriété renvoie <b>la valeur True</b> si Microsoft Excel à la ligne le texte de l’objet et la <b>valeur Null</b> si la plage spécifiée contient des cellules qui habiller avec du texte et autres cellules qui ne.</para>
+          <para>Microsoft Excel modifie éventuellement la hauteur de ligne de la plage pour, le cas échéant, afficher le texte dans celle-ci.</para>
           <para></para>
         </remarks>
       </Docs>

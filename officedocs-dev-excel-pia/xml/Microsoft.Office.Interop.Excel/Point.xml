@@ -1,10 +1,10 @@
 <Type Name="Point" FullName="Microsoft.Office.Interop.Excel.Point">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7e25b0218180f3970a9efba6f581a14516fdea82" />
+    <Meta Name="ms.openlocfilehash" Value="41d76d059050993a028c8b26b1795b64c3e70e33" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587681" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Point" />
@@ -31,8 +31,10 @@
   <Docs>
     <summary>Cet objet représente un point dans une série d’un graphique.</summary>
     <remarks>
-      <para>L’objet <b>Point</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Points" /> collection. La collection <b>Points</b> contient tous les points d’une série.</para> Utiliser les <b>Points</b>de 
-      <para>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du point, pour renvoyer un seul objet <b>Point</b> . Points sont numérotées de gauche à droite dans la série. Points (1) est le point le plus à gauche et points (points.Count) est le point le plus à droite.</para><para></para></remarks>
+      <para>L’objet <b>Point</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Points" /> collection. La collection <b>Points</b> contient tous les points dans une série.</para>
+      <para>Utilisez <b>Points</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du point, pour renvoyer un seul objet <b>Point</b> . Points sont numérotées de gauche à droite dans la série. Points (1) est le point le plus à gauche et points (points.Count) est le point le plus à droite.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_ApplyDataLabels">
@@ -357,8 +359,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -542,8 +546,8 @@
         <summary>Cette propriété renvoie et définit une valeur qui indique si un point a une apparence tridimensionnelle. En lecture-écriture.</summary>
         <value>Boolean</value>
         <remarks>
-          <para>Renvoie la valeur True si un point a une apparence tridimensionnelle.</para>
-          <para>Cette propriété s’applique aux graphiques en bulles uniquement.</para>
+          <para>Renvoie la valeur True si un point a une apparence tridimensionnelle. </para>
+          <para>Cette propriété s'applique uniquement aux graphiques en bulles.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -891,29 +895,29 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />peut être une des constantes <b>XlMarkerStyle</b> suivantes :</para>
           <para>
-            <b>xlMarkerStyleAutomatic</b>. Marqueurs automatiques</para>
+            <b>xlMarkerStyleAutomatic</b>. Automatic markers</para>
           <para>
-            <b>xlMarkerStyleCircle</b>. Marques circulaires</para>
+            <b>xlMarkerStyleCircle</b>. Circular markers</para>
           <para>
-            <b>xlMarkerStyleDash</b>. Marques en forme de tiret long</para>
+            <b>xlMarkerStyleDash</b>. Long bar markers</para>
           <para>
-            <b>xlMarkerStyleDiamond</b>. Marques en forme de losange</para>
+            <b>xlMarkerStyleDiamond</b>. Diamond-shaped markers</para>
           <para>
-            <b>xlMarkerStyleDot</b>. Marqueurs court</para>
+            <b>xlMarkerStyleDot</b>. Short bar markers</para>
           <para>
-            <b>xlMarkerStyleNone</b>. Aucune marque</para>
+            <b>xlMarkerStyleNone</b>. No markers</para>
           <para>
-            <b>xlMarkerStylePicture</b>. Marqueurs d’image</para>
+            <b>xlMarkerStylePicture</b>. Picture markers</para>
           <para>
-            <b>xlMarkerStylePlus</b>. Marques carrées avec un signe plus</para>
+            <b>xlMarkerStylePlus</b>. Square markers with a plus sign</para>
           <para>
-            <b>xlMarkerStyleSquare</b>. Marques carrées</para>
+            <b>xlMarkerStyleSquare</b>. Square markers</para>
           <para>
-            <b>xlMarkerStyleStar</b>. Marques carrées avec un astérisque</para>
+            <b>xlMarkerStyleStar</b>. Square markers with an asterisk</para>
           <para>
-            <b>xlMarkerStyleTriangle</b>. Marqueurs triangulaires</para>
+            <b>xlMarkerStyleTriangle</b>. Triangular markers</para>
           <para>
-            <b>xlMarkerStyleX</b>. Marques carrées avec un X</para>
+            <b>xlMarkerStyleX</b>. Square markers with an X</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1149,7 +1153,7 @@
         <summary>Renvoie la position verticale ou horizontale d'un point sur un élément de graphique, en points, entre le bord supérieur ou gauche de l'objet et le bord supérieur ou gauche de la zone de graphique.</summary>
         <returns>Position verticale ou horizontale d’un point sur un élément de graphique, en points, entre le bord gauche ou supérieur de l’objet et le bord gauche ou supérieur de la zone de graphique.</returns>
         <remarks>
-          <para>Cette propriété s’applique uniquement aux types de graphiques en secteurs ou en anneau.</para>
+          <para>Cette propriété ne s’applique qu’aux graphiques en secteurs ou en anneau.</para>
           <para></para>
         </remarks>
       </Docs>

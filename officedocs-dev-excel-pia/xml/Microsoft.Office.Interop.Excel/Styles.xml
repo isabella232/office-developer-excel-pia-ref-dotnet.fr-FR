@@ -1,10 +1,10 @@
 <Type Name="Styles" FullName="Microsoft.Office.Interop.Excel.Styles">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d5b16d0cbfdec51d146c93cd55fc38ef3293d37f" />
+    <Meta Name="ms.openlocfilehash" Value="e553a7598a3f9ae8e05db8f343f51fd6b194d460" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587247" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
@@ -38,7 +38,7 @@
       <para>Chaque objet <b>Style</b> représente une description de style pour une plage. L’objet <b>Style</b> contient tous les attributs de style (police, format numérique, alignement, etc.) en tant que propriétés. Il existe plusieurs styles prédéfinis, y compris Normal, monétaire et pourcentage, qui sont répertorié dans la zone Nom de Style dans la boîte de dialogue Style (menu Format).</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" /> propriété permet de renvoyer la collection <b>Styles</b> .</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Styles.Add(System.String,System.Object)" /> méthode pour créer un nouveau style et l’ajouter à la collection.</para>
-      <para>Utilisent des <b>Styles</b>(<paramref name="index" />), où <paramref name="index" /> est le nom, pour renvoyer un seul objet <b>Style</b> à partir de la collection <b>Styles</b> du classeur ou un numéro d’index du style.</para>
+      <para>Utiliser <b>des Styles</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du style ou le nom, pour renvoyer un seul objet <b>Style</b> à partir de la collection <b>Styles</b> du classeur.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -194,8 +194,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -291,7 +293,7 @@
         <summary>Fusionne les styles d’un autre classeur dans la <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> collection.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>La valeur d’une plage fusionnée est spécifiée dans la cellule du coin supérieur gauche de la plage.</para>
+          <para>La valeur d'une plage fusionnée est spécifiée dans la cellule du coin supérieur gauche de la plage.</para>
           <para></para>
         </remarks>
       </Docs>

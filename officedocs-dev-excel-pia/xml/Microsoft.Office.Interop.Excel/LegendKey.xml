@@ -1,10 +1,10 @@
 <Type Name="LegendKey" FullName="Microsoft.Office.Interop.Excel.LegendKey">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e97e2c6b2812c0c27e94200204837ef948711b2c" />
+    <Meta Name="ms.openlocfilehash" Value="5c0f463a642ccce4a5ea924e670fcd78c73fdfeb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580730" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LegendKey" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Représente un symbole de légende dans une légende de graphique.</summary>
     <remarks>
-      <para>Chaque symbole de légende est un graphique qui lie visuellement une entrée de légende avec la courbe de tendance dans le graphique ou la série associée. Le symbole de légende est lié à la courbe de tendance de manière à ce que la mise en forme d’un simultanément si vous modifiez la mise en forme de l’autre ou la série associée.</para>
+      <para>Chaque symbole de légende est un graphique reliant visuellement une entrée de légende à la courbe de tendance ou la série associée dans le graphique. Le symbole de légende est lié à la courbe de tendance ou à la série associée de sorte que toute modification de la mise en forme de l'un affecte simultanément l'autre.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.LegendEntry.LegendKey" /> propriété permet de renvoyer la <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objet.</para>
       <para></para>
     </remarks>
@@ -148,8 +148,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -548,29 +550,29 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />peut être une de ces constantes <b>XlMarkerStyle</b> :</para>
           <para>
-            <b>xlMarkerStyleAutomatic</b>. Marqueurs automatiques</para>
+            <b>xlMarkerStyleAutomatic</b>. Automatic markers</para>
           <para>
-            <b>xlMarkerStyleCircle</b>. Marques circulaires</para>
+            <b>xlMarkerStyleCircle</b>. Circular markers</para>
           <para>
-            <b>xlMarkerStyleDash</b>. Marques en forme de tiret long</para>
+            <b>xlMarkerStyleDash</b>. Long bar markers</para>
           <para>
-            <b>xlMarkerStyleDiamond</b>. Marques en forme de losange</para>
+            <b>xlMarkerStyleDiamond</b>. Diamond-shaped markers</para>
           <para>
-            <b>xlMarkerStyleDot</b>. Marqueurs court</para>
+            <b>xlMarkerStyleDot</b>. Short bar markers</para>
           <para>
-            <b>xlMarkerStyleNone</b>. Aucune marque</para>
+            <b>xlMarkerStyleNone</b>. No markers</para>
           <para>
-            <b>xlMarkerStylePicture</b>. Marqueurs d’image</para>
+            <b>xlMarkerStylePicture</b>. Picture markers</para>
           <para>
-            <b>xlMarkerStylePlus</b>. Marques carrées avec un signe plus</para>
+            <b>xlMarkerStylePlus</b>. Square markers with a plus sign</para>
           <para>
-            <b>xlMarkerStyleSquare</b>. Marques carrées</para>
+            <b>xlMarkerStyleSquare</b>. Square markers</para>
           <para>
-            <b>xlMarkerStyleStar</b>. Marques carrées avec un astérisque</para>
+            <b>xlMarkerStyleStar</b>. Square markers with an asterisk</para>
           <para>
-            <b>xlMarkerStyleTriangle</b>. Marqueurs triangulaires</para>
+            <b>xlMarkerStyleTriangle</b>. Triangular markers</para>
           <para>
-            <b>xlMarkerStyleX</b>. Marques carrées avec un X</para>
+            <b>xlMarkerStyleX</b>. Square markers with an X</para>
           <para></para>
         </remarks>
       </Docs>

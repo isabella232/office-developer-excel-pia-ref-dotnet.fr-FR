@@ -1,10 +1,10 @@
 <Type Name="Scenarios" FullName="Microsoft.Office.Interop.Excel.Scenarios">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="643f9e1ff16bc3d2d264dd9c590ffbf0e6a728ad" />
+    <Meta Name="ms.openlocfilehash" Value="ae2d83b0cebf35ca68c44e96b1d08c3bd0e82529" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584678" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Scenarios : System.Collections.IEnumerable" />
@@ -38,7 +38,7 @@
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Scenarios(System.Object)" /> méthode pour renvoyer la collection <b>Scenarios</b> .</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Scenarios.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour créer un nouveau scénario et l’ajouter à la collection.</para>
       <para>
-        <b>Des scénarios</b>d’utilisation (<paramref name="index" />), où <paramref name="index" /> est le nom du scénario ou le numéro d’index, pour renvoyer un seul objet <b>Scenario</b> .</para>
+        <b>Scénarios</b>d’utilisation (<paramref name="index" />), où <paramref name="index" /> est le nom du scénario ou le numéro d’index, pour renvoyer un seul objet <b>Scenario</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -81,7 +81,7 @@
         <summary>Cette méthode crée un nouveau scénario et l’ajoute à la liste des scénarios disponibles pour la feuille de calcul active.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Un nom de scénario doit être unique ; Microsoft Excel génère une erreur si vous essayez de créer un scénario dont le nom est déjà en cours d’utilisation.</para>
+          <para>Le nom d'un scénario doit être unique ; Microsoft Excel produit une erreur si vous essayez de créer un scénario dont le nom est déjà utilisé.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -198,8 +198,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -292,7 +294,7 @@
         <summary>Fusionne les scénarios issus d’une autre feuille dans la <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> collection.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>La valeur d’une plage fusionnée est spécifiée dans la cellule du coin supérieur gauche de la plage.</para>
+          <para>La valeur d'une plage fusionnée est spécifiée dans la cellule du coin supérieur gauche de la plage.</para>
           <para></para>
         </remarks>
       </Docs>

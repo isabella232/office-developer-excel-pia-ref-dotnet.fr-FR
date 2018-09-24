@@ -1,10 +1,10 @@
 <Type Name="PivotFormulas" FullName="Microsoft.Office.Interop.Excel.PivotFormulas">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2ee42ffdcba76dcc9edf39321b65ceaeb9559d69" />
+    <Meta Name="ms.openlocfilehash" Value="883ef67197cacd07662fdeaa82dbd82051f41c92" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574696" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotFormulas : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Représente la collection de formules d’un rapport de tableau croisé dynamique. Chaque formule est représentée par une <see cref="T:Microsoft.Office.Interop.Excel.PivotFormula" /> objet.</summary>
     <remarks>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotFormulas" /> méthode pour renvoyer la collection <b>PivotFormulas</b> .</para>
-      <para>Cet objet et ses propriétés et méthodes associées ne sont pas disponibles pour les sources de données OLAP, car les champs calculés et les éléments ne sont pas pris en charge.</para>
+      <para>Cet objet ainsi que les propriétés et méthodes qui lui sont associées ne sont pas disponibles pour les sources de données OLAP, car les champs et les éléments calculés ne sont pas pris en charge.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -221,8 +221,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

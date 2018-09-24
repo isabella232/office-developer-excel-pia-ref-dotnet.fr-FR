@@ -1,10 +1,10 @@
 <Type Name="Databar" FullName="Microsoft.Office.Interop.Excel.Databar">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1299f035e734d223e0829374140c99bc36cf85ae" />
+    <Meta Name="ms.openlocfilehash" Value="5af0ef6023d3a14611c655e4cb96ffc4b3bf17c5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587415" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Databar" />
@@ -32,7 +32,7 @@
     <summary>Cet objet représente une règle de mise en forme conditionnelle de barre de données. L’utilisation d’une barre de données sur une plage vous permet de distinguer la valeur d’une cellule par rapport aux autres cellules.</summary>
     <remarks>
       <para>Tous les objets de mise en forme conditionnelle sont contenues dans un <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection d’objets, qui est un enfant d’un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection. Vous pouvez créer une barre de la règle de mise en forme à l’aide de données du <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddDatabar" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection.</para>
-      <para>Que vous utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> et <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> propriétés de la <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> objet pour définir les valeurs de la barre la plus courte et barre la plus longue d’une plage de données. Ces propriétés renvoient un <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> objet, dans laquelle vous pouvez spécifier comment les seuils sont évalués.</para>
+      <para>Vous utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> et <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> propriétés de la <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> objet pour définir les valeurs de la barre la plus courte et barre la plus longue d’une plage de données. Ces propriétés renvoient un <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> objet, dans laquelle vous pouvez spécifier comment les seuils sont évalués.</para>
       <para></para>
     </remarks>
     <example>
@@ -67,7 +67,7 @@
         <value>
           <b>Application</b> (voir ci-dessus)</value>
         <remarks>
-          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet.</para>
+          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -162,7 +162,7 @@
         <summary>Obtient ou définit la position de l’axe des barres de données spécifié par une règle de mise en forme conditionnelle.</summary>
         <value>La position de l’axe des barres de données spécifié par une règle de mise en forme conditionnelle.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>L’axe des barres de données s’affiche uniquement lorsque la <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> propriété est <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" /> ou <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisMidpoint" />, et quand il y a des valeurs négatives dans la plage de valeurs spécifiée avec une règle de mise en forme conditionnelle de la barre de données. La valeur par défaut pour le <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> propriété est <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" />.</para>
           <para></para>
         </remarks>
@@ -258,7 +258,7 @@
         <summary>Obtient ou définit la façon dont une barre de données est remplie avec la couleur.</summary>
         <value>Indique la façon dont une barre de données est remplie de couleur.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>La valeur par défaut de la <see cref="P:Microsoft.Office.Interop.Excel.Databar.BarFillType" /> propriété est <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarFillType.xlDataBarFillGradient" />.</para>
           <para></para>
         </remarks>
@@ -351,7 +351,7 @@
         <summary>Obtient ou définit la direction que du databar est affiché.</summary>
         <value>Le sens du databar s’affiche.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.Constants" />: <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlContext" />, <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlLTR" /> (gauche à droite), ou <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlRTL" /> (de droite à gauche).</para>
           <para></para>
         </remarks>
@@ -388,7 +388,7 @@
           <b>Chaîne</b>
         </value>
         <remarks>
-          <para>Cette propriété est utile pour limiter la plage de valeurs qui affichera le format conditionnel. Un scénario classique est lorsque vous avez une plage de numéros contenant les valeurs positives et négatives. Vous souhaiterez peut-être créer plus d’un format conditionnel pour cette plage de numéros — une des valeurs positives et un autre pour les valeurs négatives.</para>
+          <para>Cette propriété permet de limiter la plage de valeurs affichant le format conditionnel. C'est utile par exemple lorsqu'une plage de nombres contient à la fois des valeurs positives et négatives. Vous pouvez créer plus d'un format conditionnel pour cette plage, un pour les valeurs positives et un autre pour les valeurs négatives.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -485,7 +485,7 @@
         <summary>Définit la plage de cellules à laquelle cette règle de mise en forme s’applique.</summary>
         <remarks>
           <para>La plage doit se trouver dans le style de référence A1 et être entièrement dans la feuille qui est le parent de le <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. Il peut inclure l’opérateur de plage (le signe deux-points), l’opérateur d’intersection (un espace) ou l’opérateur union (une virgule). Signe dollar peut également être utilisé, mais ils sont ignorés.</para>
-          <para>Vous pouvez également utiliser un nom local défini dans n’importe quelle partie de la plage, mais le nom doit être dans la langue de la macro.</para>
+          <para>Vous pouvez également utiliser un nom défini en local à n'importe quel endroit de la plage, mais le nom doit appartenir au langage de la macro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -654,7 +654,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Lors de la définition de la priorité, la valeur doit être un nombre entier compris entre 1 et le nombre total de règles conditionnelles de mise en forme sur la feuille de calcul. La priorité doit être une valeur unique pour toutes les règles de la feuille de calcul, donc si vous modifiez la priorité de la règle de mise en forme conditionnelle spécifiée risque la valeur de priorité des autres règles dans la feuille de calcul.</para>
+          <para>La valeur de priorité que vous définissez doit être un entier positif compris entre 1 et le nombre total de règles de mise en forme conditionnelle contenues dans la feuille de calcul. Dans la mesure où la valeur de priorité doit être unique pour toutes les règles de la feuille de calcul, le fait de modifier la priorité d'une règle de mise en forme conditionnelle donnée risque d'entraîner la modification de la valeur de priorité des autres règles de la feuille de calcul.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -748,9 +748,9 @@
       <Docs>
         <summary>Attribue à la règle de mise en forme conditionnelle en question la valeur de priorité « 1 » de sorte qu’elle soit évaluée avant toutes les autres règles présentes dans la feuille de calcul.</summary>
         <remarks>
-          <para>Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, si la règle n’a pas été précédemment définie à priorité « 1 », cette méthode provoque la priorité de toutes les autres règles existantes sur la feuille de calcul est augmenté de 1.</para>
+          <para>Si la feuille de calcul contient plusieurs règles de mise en forme conditionnelle et que la règle n'était pas auparavant associée à la priorité « 1 », cette méthode augmente d'une unité la valeur de priorité de toutes les autres règles figurant dans la feuille de calcul.</para>
           <para>
-            <b>Remarque</b>: niveaux de priorité concernant les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
+            <b>Remarque</b>: les niveaux de priorité pour les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -780,7 +780,7 @@
         <remarks>
           <para>La valeur réelle de la priorité est égale au nombre total de règles conditionnelles de mise en forme sur la feuille de calcul. Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, cette méthode provoque la priorité des règles qui a une valeur de priorité supérieure à cette règle doit être augmenté d’une unité.</para>
           <para>
-            <b>Remarque</b>: niveaux de priorité concernant les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
+            <b>Remarque</b>: les niveaux de priorité pour les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -846,7 +846,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Pour prendre en charge la compatibilité descendante, la valeur par défaut de cette propriété est <b>False</b>, ce qui correspond au comportement contraire à celui d’une mise en forme créée dans l’interface utilisateur de règle.</para>
+          <para>Pour assurer une compatibilité descendante, la valeur par défaut de cette propriété est <b>False</b>, ce qui correspond au comportement contraire à celui d'une règle de mise en forme créée dans l'interface utilisateur.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="FormatCondition" FullName="Microsoft.Office.Interop.Excel.FormatCondition">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a635d52289eab8b27e83a83f54b3afc26b142b07" />
+    <Meta Name="ms.openlocfilehash" Value="06db90663108615d83dc620b65e7671be2f3d791" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584412" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FormatCondition" />
@@ -32,10 +32,48 @@
     <summary>Cet objet représente une mise en forme conditionnelle.</summary>
     <remarks>
       <para>L’objet <b>FormatCondition</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. La collection <b>FormatConditions</b> peut contenir jusqu'à trois mises en forme conditionnelles pour une plage donnée.</para>
-      <para>Utiliser <b>FormatConditions</b>(<paramref name="index" />), où index est le numéro d’index du format conditionnel, pour renvoyer un objet <b>FormatCondition</b> .</para> Utilisation de 
-      <para>les <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour créer un nouveau format conditionnel. Si vous essayez de créer plus de trois mises en forme conditionnelles d’une plage, la méthode <b>Add</b> échoue. Si une plage comporte trois mises en forme, vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour modifier un des formats ou vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> méthode pour supprimer une mise en forme et puis utiliser la méthode <b>Add</b> pour créer un nouveau format.</para><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />, <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />, et <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" /> propriétés de la <b>FormatCondition</b> pour contrôler l’apparence des cellules mis en forme d’objet. Certaines propriétés de ces objets ne sont pas pris en charge par le modèle objet de mise en forme conditionnelle. Les propriétés qui peuvent être utilisées avec la mise en forme conditionnelle sont répertoriées dans le tableau suivant.</para><list type="table"><item><term><b>Police</b></term><description><b>gras</b><b>ColorIndex</b><b>FontStyle</b><b>italique</b><b>Barré</b><b>couleurs</b><b>souligné</b>les styles de soulignement Comptabilité ne peut pas être utilisés.</description></item> Styles de bordure 
-        <item><term><b>bordure</b></term><description><b>inférieur</b><b>gauche</b><b>droite</b>de
-            <b>couleur</b><b>Style</b>suivants peuvent être utilisés (tous les autres utilisateurs ne sont pas pris en charge) : <b>xlNone</b>, <b>xlSolid</b>, <b>xlDash</b>, <b>xlDot</b>, <b>xlDashDot</b>, <b>xlDashDotDot</b>, <b>xlGray50</b>, <b>xlGray75</b>et <b>xlGray25</b>. <b>Haut</b><b>Poids</b> Les épaisseurs de bordure suivantes peuvent être utilisées (tous les autres utilisateurs ne sont pas pris en charge) : <b>xlWeightHairline</b> et <b>xlWeightThin</b>.</description></item><item><term><b>Intérieur</b></term><description><b>couleur</b><b>ColorIndex</b><b>motif</b><b>PatternColorIndex</b></description></item></list><para></para></remarks>
+      <para>Utiliser <b>FormatConditions</b>(<paramref name="index" />), où index est le numéro d’index du format conditionnel, pour renvoyer un objet <b>FormatCondition</b> .</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour créer un nouveau format conditionnel. Si vous essayez de créer plus de trois mises en forme conditionnelles d’une plage, la méthode <b>Add</b> échoue. Si une plage comporte trois mises en forme, vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> méthode pour modifier un des formats ou vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> méthode pour supprimer une mise en forme et puis utiliser la méthode <b>Add</b> pour créer un nouveau format.</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />, <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />, et <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" /> propriétés de la <b>FormatCondition</b> pour contrôler l’apparence des cellules mis en forme d’objet. Certaines propriétés de ces objets ne sont pas pris en charge par le modèle objet de mise en forme conditionnelle. Les propriétés qui peuvent être utilisées avec la mise en forme conditionnelle sont répertoriées dans le tableau suivant.</para>
+      <list type="table">
+        <item>
+          <term>
+            <b>Police</b>
+          </term>
+          <description>
+            <b>Gras</b>
+            <b>Couleur</b>
+            <b>ColorIndex</b>
+            <b>FontStyle</b>
+            <b>Italique</b>
+            <b>Barré</b>
+            <b>Soulignement</b> Les styles de soulignement Comptabilité ne peut pas être utilisés.</description>
+        </item>
+        <item>
+          <term>
+            <b>Bordure</b>
+          </term>
+          <description>
+            <b>Bas</b>
+            <b>Couleur</b>
+            <b>Gauche</b>
+            <b>Droite</b>
+            <b>Style</b> Les styles de bordure suivants peuvent être utilisés (tous les autres utilisateurs ne sont pas pris en charge) : <b>xlNone</b>, <b>xlSolid</b>, <b>xlDash</b>, <b>xlDot</b>, <b>xlDashDot</b>, <b>xlDashDotDot</b>, <b>xlGray50</b>, <b>xlGray75</b>et <b>xlGray25 </b>. <b>Haut</b><b>Poids</b> Les épaisseurs de bordure suivantes peuvent être utilisées (tous les autres utilisateurs ne sont pas pris en charge) : <b>xlWeightHairline</b> et <b>xlWeightThin</b>.</description>
+        </item>
+        <item>
+          <term>
+            <b>Intérieur</b>
+          </term>
+          <description>
+            <b>Couleur</b>
+            <b>ColorIndex</b>
+            <b>Motif</b>
+            <b>PatternColorIndex</b>
+          </description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -150,8 +188,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateOperator">
@@ -296,7 +336,10 @@
       <Docs>
         <summary>Renvoie la valeur ou une expression associée à la seconde partie d’un format conditionnel.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>Formula2</b> est uniquement utilisée lors de format conditionnel de validation de données <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" /> propriété est <b>xlBetween</b> ou <b>xlNotBetween</b>. Peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Formula2</b> est uniquement utilisée lors de format conditionnel de validation de données <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" /> propriété est <b>xlBetween</b> ou <b>xlNotBetween</b>. Peut être une constante, une valeur de chaîne, une référence de cellule ou une formule.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -389,7 +432,7 @@
         <summary>Définit la plage de cellules à laquelle cette règle de mise en forme s’applique.</summary>
         <remarks>
           <para>La plage doit se trouver dans le style de référence A1 et être entièrement dans la feuille qui est le parent de le <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. Il peut inclure l’opérateur de plage (le signe deux-points), l’opérateur d’intersection (un espace) ou l’opérateur union (une virgule). Signe dollar peut également être utilisé, mais ils sont ignorés.</para>
-          <para>Vous pouvez également utiliser un nom local défini dans n’importe quelle partie de la plage, mais le nom doit être dans la langue de la macro.</para>
+          <para>Vous pouvez également utiliser un nom défini en local à n'importe quel endroit de la plage, mais le nom doit appartenir au langage de la macro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -462,7 +505,7 @@
           <b>Objet</b>
         </value>
         <remarks>
-          <para>Le format de nombre est spécifié en utilisant les mêmes codes de format affichées sous l’onglet numéro de la boîte de dialogue Format de cellule. Vous pouvez utiliser un format numérique intégré, par exemple « General », ou créer un format numérique personnalisé.</para>
+          <para>Le format numérique est spécifié à l'aide des mêmes codes de format que ceux affichés dans la boîte de dialogue Format de cellule, sous l'onglet Nombre. Vous pouvez utiliser un format numérique intégré, par exemple "General" ou créer un format numérique personnalisé.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -554,7 +597,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Lors de la définition de la priorité, la valeur doit être un nombre entier compris entre 1 et le nombre total de règles conditionnelles de mise en forme sur la feuille de calcul. La priorité doit être une valeur unique pour toutes les règles de la feuille de calcul, donc si vous modifiez la priorité de la règle de mise en forme conditionnelle spécifiée risque la valeur de priorité des autres règles dans la feuille de calcul.</para>
+          <para>La valeur de priorité que vous définissez doit être un entier positif compris entre 1 et le nombre total de règles de mise en forme conditionnelle contenues dans la feuille de calcul. Dans la mesure où la valeur de priorité doit être unique pour toutes les règles de la feuille de calcul, le fait de modifier la priorité d'une règle de mise en forme conditionnelle donnée risque d'entraîner la modification de la valeur de priorité des autres règles de la feuille de calcul.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -648,9 +691,9 @@
       <Docs>
         <summary>Attribue à la règle de mise en forme conditionnelle en question la valeur de priorité « 1 » de sorte qu’elle soit évaluée avant toutes les autres règles présentes dans la feuille de calcul.</summary>
         <remarks>
-          <para>Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, si la règle n’a pas été précédemment définie à priorité « 1 », cette méthode provoque la priorité de toutes les autres règles existantes sur la feuille de calcul est augmenté de 1.</para>
+          <para>Si la feuille de calcul contient plusieurs règles de mise en forme conditionnelle et que la règle n'était pas auparavant associée à la priorité « 1 », cette méthode augmente d'une unité la valeur de priorité de toutes les autres règles figurant dans la feuille de calcul.</para>
           <para>
-            <b>Remarque</b>: niveaux de priorité concernant les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
+            <b>Remarque</b>: les niveaux de priorité pour les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -678,9 +721,9 @@
       <Docs>
         <summary>Définit l'ordre d'évaluation de la règle de mise en forme conditionnelle de sorte qu'elle soit évaluée après toutes les autres règles présentes dans la feuille de calcul.</summary>
         <remarks>
-          <para>La valeur effective de la priorité est égale au nombre total de règles conditionnelles de mise en forme sur la feuille de calcul. Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, cette méthode provoque la priorité des règles qui a une valeur de priorité supérieure à cette règle doit être augmenté d’une unité.</para>
+          <para>La valeur effective de la priorité est égale au nombre total de règles de mise en forme conditionnelle présentes dans la feuille de calcul. Si la feuille de calcul contient plusieurs règles de mise en forme conditionnelle, cette méthode augmente d'une unité la priorité des règles dont la valeur était supérieure à celle de la règle en question.</para>
           <para>
-            <b>Remarque</b>: niveaux de priorité concernant les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
+            <b>Remarque</b>: les niveaux de priorité pour les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -716,7 +759,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Pour prendre en charge la compatibilité descendante, la valeur par défaut de cette propriété est <b>True</b>, ce qui correspond au comportement contraire à celui d’une mise en forme créée dans l’interface utilisateur de règle.</para>
+          <para>Pour assurer une compatibilité en amont, la valeur par défaut de cette propriété est <b>True</b>, ce qui correspond au comportement contraire à celui d'une règle de mise en forme créée dans l'interface utilisateur.</para>
           <para></para>
         </remarks>
       </Docs>

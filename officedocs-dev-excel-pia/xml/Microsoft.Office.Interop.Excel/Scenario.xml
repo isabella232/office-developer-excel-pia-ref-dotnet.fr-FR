@@ -1,10 +1,10 @@
 <Type Name="Scenario" FullName="Microsoft.Office.Interop.Excel.Scenario">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1c33d8a6332b27a6cdd7779fffe2b51eb2eef6c2" />
+    <Meta Name="ms.openlocfilehash" Value="86d8d02ae441f3ac07255a45ae9cd0cf278fe5fe" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575221" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Scenario" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>L’objet <b>Scenario</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> collection. La collection <b>Scenarios</b> contient tous les scénarios définis dans une feuille de calcul.</para>
       <para>
-        <b>Des scénarios</b>d’utilisation (<paramref name="index" />), où <paramref name="index" /> est le nom du scénario ou le numéro d’index, pour renvoyer un seul objet <b>Scenario</b> .</para>
+        <b>Scénarios</b>d’utilisation (<paramref name="index" />), où <paramref name="index" /> est le nom du scénario ou le numéro d’index, pour renvoyer un seul objet <b>Scenario</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -95,7 +95,7 @@
         <summary>Modifie le scénario afin d’obtenir un nouveau jeu de cellules variables et (éventuellement) de valeurs de scénario.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Si vous spécifiez v<paramref name="alues" />, le tableau doit contenir un élément pour chaque cellule de la <paramref name="ChangingCells" /> plage ; sinon, Microsoft Excel génère une erreur.</para>
+          <para>Si vous spécifiez v<paramref name="alues" />, le tableau doit contenir un élément pour chaque cellule de la <paramref name="ChangingCells" /> plage ; dans le cas contraire, Microsoft Excel génère une erreur.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -185,8 +185,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

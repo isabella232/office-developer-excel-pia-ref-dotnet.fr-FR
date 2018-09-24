@@ -1,10 +1,10 @@
 <Type Name="CalculatedItems" FullName="Microsoft.Office.Interop.Excel.CalculatedItems">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="236c2e7a52552d9fa2fe650a19294ed8aa767e12" />
+    <Meta Name="ms.openlocfilehash" Value="803d3690114439928c366959ebf02ca6bbb754d4" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578735" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedItems : System.Collections.IEnumerable" />
@@ -35,9 +35,9 @@
   <Docs>
     <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> objets qui représentent tous les éléments calculés du rapport de tableau croisé dynamique spécifié.</summary>
     <remarks>
-      <para>Par exemple, un rapport de tableau croisé dynamique qui contient des éléments janvier, février et mars pourrait avoir un élément calculé nommé « FirstQuarter », qui est définie comme la somme des montants en janvier, février et March.</para>
+      <para>Par exemple, un rapport de tableau croisé dynamique qui contient des éléments janvier, février et mars pourrait avoir un élément calculé appelé « FirstQuarter » qui est définie comme la somme des montants janvier, février et mars.</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.PivotField.CalculatedItems" /> méthode pour renvoyer la collection <b>CalculatedItems</b> .</para>
-      <para>Utiliser <b>CalculatedItems</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou le numéro d’index du champ, pour renvoyer un seul objet <b>PivotItem</b> à partir de la collection <b>CalculatedItems</b> .</para>
+      <para>Utilisez <b>CalculatedItems</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou le numéro d’index du champ, pour renvoyer un seul objet <b>PivotItem</b> à partir de la collection <b>CalculatedItems</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -227,8 +227,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

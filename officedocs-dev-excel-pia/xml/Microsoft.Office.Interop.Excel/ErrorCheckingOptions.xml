@@ -1,10 +1,10 @@
 <Type Name="ErrorCheckingOptions" FullName="Microsoft.Office.Interop.Excel.ErrorCheckingOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9e4747600167fd2eed7dd64b83d8c7d1cb5b951d" />
+    <Meta Name="ms.openlocfilehash" Value="fcbc54c7e67e1b8642a95dec50c04ef275b48f27" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585637" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ErrorCheckingOptions" />
@@ -32,7 +32,7 @@
     <summary>Cet objet représente les options de vérification des erreurs pour une application.</summary>
     <remarks>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.ErrorCheckingOptions" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet pour renvoyer un objet <b>ErrorCheckingOptions</b> .</para>
-      <para>Référence le <see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> objet pour afficher la liste des valeurs d’index associées de vérification des erreurs options.</para>
+      <para>Référence du <see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> objet pour afficher la liste des valeurs d’index associées de vérification des erreurs options.</para>
       <para>Vous pouvez utiliser les propriétés suivantes, qui sont membres de l’objet <b>ErrorCheckingOptions</b> , pour définir ou renvoyer des options de vérification des erreurs.</para>
       <list type="bullet">
         <item>
@@ -73,6 +73,11 @@
         <item>
           <description>
             <see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.TextDate" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.UnlockedFormulaCells" />
           </description>
         </item>
       </list>
@@ -138,7 +143,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Lorsque la <b>BackgroundChecking,</b> propriété est définie sur <b>True</b> (valeur par défaut), le bouton Options de correction automatique apparaît près de toutes les cellules enfreignant. <b>La valeur False</b> désactive la vérification des erreurs en arrière-plan.</para>
-          <para>Faire référence à la <see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" /> objet pour afficher la liste des membres qui peuvent être activés.</para>
+          <para>Reportez-vous à la <see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" /> objet pour afficher la liste des membres qui peuvent être activés.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -169,8 +174,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EmptyCellReferences">
@@ -264,7 +271,7 @@
         <summary>Lorsque la valeur <b>True</b> (valeur par défaut), Microsoft Excel identifie les cellules contenant une formule incohérente dans une zone. <b>La valeur False</b> désactive la vérification des formules incohérentes.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Les formules cohérentes contenues dans la zone doivent se trouver à gauche et à droite ou au-dessus et au-dessous de la cellule contenant la formule incohérente pour que la propriété <b>InconsistentFormula</b> fonctionne correctement.</para>
+          <para>Les formules cohérentes contenues dans la zone doivent figurer à gauche et à droite ou au-dessus et au-dessous de la cellule contenant la formule incohérente pour que la propriété <b>InconsistentFormula</b> fonctionne correctement.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -334,9 +341,9 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />peut être une des constantes <b>XlColorIndex</b> suivantes :</para>
           <para>
-            <b>xlColorIndexAutomatic</b> couleur système par défaut.</para>
+            <b>xlColorIndexAutomatic</b> La couleur système par défaut.</para>
           <para>
-            <b>xlColorIndexNone</b> non utilisée avec cette propriété.</para>
+            <b>xlColorIndexNone</b> Non utilisé avec cette propriété.</para>
           <para>Vous pouvez spécifier une couleur particulière pour l’indicateur en entrant la valeur d’index correspondante. Vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Colors(System.Object)" /> propriété permet de renvoyer la palette de couleurs en cours.</para>
           <para>L’illustration suivante montre les valeurs d’index des couleurs dans la palette de couleurs par défaut.</para>
           <para></para>
@@ -372,7 +379,7 @@
         <summary>Une valeur de <b>type Boolean</b> qui a la <b>valeur True</b> si la validation des données est activée dans une liste.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La validation des données pour une liste peut également activer ou désactiver par l’interface utilisateur en activant ou désactivant la case à cocher Erreur de validation de données liste sous l’onglet Vérification des erreurs de la boîte de dialogue Options.</para>
+          <para>Validation des données pour une liste peut également être activée ou de désactiver par dans l’interface utilisateur, activez ou désactivez la case à cocher Erreur de validation de données liste sous l’onglet Vérification des erreurs de la boîte de dialogue Options.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="CalloutFormat" FullName="Microsoft.Office.Interop.Excel.CalloutFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8003e3551e2fbe9bce8dc71b12944f8a23c902fd" />
+    <Meta Name="ms.openlocfilehash" Value="144c12a51fd945c3e61defd5702f0c40849afc21" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582074" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalloutFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -67,7 +67,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>MsoTriState</b> peut être une de ces constantes <b>MsoTriState</b> :</para>
+            <b>MsoTriState</b> peut être une de ces constantes <b>MsoTriState</b> suivantes :</para>
           <para>
             <b>msoCTrue</b>
           </para>
@@ -81,7 +81,7 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> une barre d’accentuation verticale sépare le texte à partir de la ligne de légende.</para>
+            <b>msoTrue</b> Une barre d’accentuation verticale sépare le texte de légende de la ligne de légende.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -115,7 +115,7 @@
         <summary>Cette propriété renvoie ou définit l'angle de la ligne de légende.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la ligne de légende contient plusieurs segments de ligne, la propriété <b>Angle</b> cette propriété renvoie ou définit l’angle du segment plus éloigné de la zone de texte de légende.</para>
+          <para>Si la ligne de légende contient plusieurs segments de ligne, la propriété <b>Angle</b> renvoie ou définit l’angle du segment plus éloigné de la zone de texte de légende.</para>
           <para>
             <b>MsoCalloutAngleType</b> peut être une de ces constantes <b>MsoCalloutAngleType</b> :</para>
           <para>
@@ -203,7 +203,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>MsoTriState</b> peut être une de ces constantes <b>MsoTriState</b> :</para>
+            <b>MsoTriState</b> peut être une de ces constantes <b>MsoTriState</b> suivantes :</para>
           <para>
             <b>msoCTrue</b>
           </para>
@@ -217,9 +217,9 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> l’endroit où la ligne de légende rejoint la légende zone de texte change selon que l’origine de la ligne de légende (emplacement désigné par la légende) est à gauche ou à droite de la zone de texte de légende.</para>
-          <para>Lorsque la valeur de cette propriété est <b>True</b>, la valeur de projection (la distance verticale entre le bord de la zone de texte de légende et la jonction de la ligne de légende) est mesurée à partir du haut de la zone de texte lorsque la zone de texte est à droite de l’origine , et elle est mesurée à partir du bas de la zone de texte lorsque la zone de texte est à gauche de l’origine. Lorsque la valeur de cette propriété est <b>False</b>, la valeur de projection est mesurée à partir du haut de la zone de texte, quelle que soit la position relative de la zone de texte et l’origine. Utilisez le <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> méthode pour définir la valeur de déroulement et la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> propriété permet de renvoyer la valeur de projection.</para>
-          <para>Définition de cette propriété n’affecte une légende uniquement si elle est définie de manière explicite drop valeur — autrement dit, si la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> propriété est <b>DropType</b>. Par défaut, légendes ont explicitement défini les valeurs de dépôt lorsqu’elles sont créées.</para>
+            <b>msoTrue</b> L’emplacement où la ligne de légende rejoint la zone de texte de légende change selon que l’origine de la ligne de légende (emplacement désigné par la légende) est à gauche ou à droite de la zone de texte de légende.</para>
+          <para>Lorsque la valeur de cette propriété est <b>True</b>, la valeur de projection (la distance verticale entre le bord de la zone de texte de légende et la jonction de la ligne de légende) est mesurée à partir du haut de la zone de texte lorsque la zone de texte est à droite de l’origine , et elle est mesurée à partir du bas de la zone de texte lorsque la zone de texte est à gauche de l’origine. Lorsque la valeur de cette propriété est <b>False</b>, la valeur de projection est mesurée à partir du haut de la zone de texte, quelle que soit la position relative de la zone de texte et l’origine. Utilisez le <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> méthode pour définir la valeur de déroulement et la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> propriété pour renvoyer la valeur.</para>
+          <para>Définir cette propriété affecte une légende uniquement si elle est définie de manière explicite drop valeur — autrement dit, si la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> propriété est <b>DropType</b>. Par défaut, les légendes possèdent des valeurs de déplacement définies explicitement lorsqu’elles sont créées.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -251,12 +251,12 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>MsoTriState</b> peut être une de ces constantes <b>MsoTriState</b> :</para>
+            <b>MsoTriState</b> peut être une de ces constantes <b>MsoTriState</b> suivantes :</para>
           <para>
             <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse</b> le premier segment du trait de légende conserve la longueur fixe spécifiée par la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> propriété chaque fois que la légende est déplacée.</para>
+            <b>msoFalse</b> Le premier segment du trait de légende conserve la longueur fixe spécifiée par la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> propriété chaque fois que la légende est déplacée.</para>
           <para>
             <b>msoTriStateMixed</b>
           </para>
@@ -264,8 +264,8 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> le premier segment de la ligne de légende (le segment attaché à la zone de légende) est mis à l’échelle automatiquement lorsque la légende est déplacée.</para>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> méthode pour définir cette propriété <b>a la valeur msoTrue</b>et utiliser le <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> pour définir cette propriété <b>a la valeur msoFalse</b>.</para>
+            <b>msoTrue</b> Le premier segment de la ligne de légende (le segment attaché à la zone de légende) est mis à l’échelle automatiquement lorsque la légende est déplacée.</para>
+          <para>Utilisez le <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> méthode pour définir cette propriété <b>a la valeur msoTrue</b>et utiliser le <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> pour définir cette propriété <b>a la valeur msoFalse</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -295,7 +295,7 @@
         <remarks>
           <para>La méthode <b>AutomaticLength</b> s’applique uniquement aux légendes dont les lignes sont constituées de plusieurs segments (types <b>msoCalloutThree</b> et <b>msoCalloutFour</b>).</para>
           <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> méthode pour spécifier que le premier segment du trait de légende conserve la longueur fixe renvoyée par la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> propriété chaque fois que la légende est déplacée.</para>
-          <para>Application, cette méthode définit la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> propriété la <b>valeur True</b>.</para>
+          <para>L’application de cette méthode affecte la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> propriété la <b>valeur True</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -330,17 +330,17 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>MsoTriState</b> peut être une de ces constantes <b>MsoTriState</b> :</para>
+            <b>MsoTriState</b> peut être une de ces constantes <b>MsoTriState</b> suivantes :</para>
           <para>
-            <b>msoCTrue</b> ne s’applique pas à cet objet.</para>
+            <b>msoCTrue</b> Ne s’applique pas à cet objet.</para>
           <para>
-            <b>msoFalse la bordure invisible</b> .</para>
+            <b>msoFalse</b> Définit la bordure invisible.</para>
           <para>
-            <b>msoTriStateMixed</b> ne s’applique pas à cet objet.</para>
+            <b>msoTriStateMixed</b> Ne s’applique pas à cet objet.</para>
           <para>
-            <b>msoTriStateToggle</b> permet à l’utilisateur de passer d’une bordure visible à invisible et inversement.</para>
+            <b>msoTriStateToggle</b> Permet à l’utilisateur de passer d’une bordure visible à invisible et inversement.</para>
           <para>
-            <b>msoTrue</b> par défaut. Définit la bordure visible.</para>
+            <b>msoTrue</b> Valeur par défaut. Définit la bordure visible.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -374,8 +374,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDrop">
@@ -405,7 +407,7 @@
           <b>Single</b>obligatoire. Distance du point de jonction, mesurée en points.</param>
         <summary>Cette méthode détermine la distance verticale (en points) séparant le bord de la zone de texte du point de jonction de la ligne de légende avec cette zone.</summary>
         <remarks>
-          <para>Cette distance est mesurée à partir du haut de la zone de texte, sauf si la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> propriété est définie sur <b>True</b> et la zone de texte est à gauche de l’origine de la ligne de légende (endroit sur lequel la légende), auquel cas la distance de déroulement est mesurée à partir du robot la zone de texte : Tom.</para>
+          <para>Cette distance est mesurée à partir du haut de la zone de texte, sauf si la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> propriété est définie sur <b>True</b> et la zone de texte se trouve à gauche de l’origine de la ligne de légende (endroit sur lequel la légende), auquel cas la distance de déroulement est mesurée à partir du bas la zone de texte.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -439,7 +441,7 @@
         <remarks>
           <para>La méthode <b>CustomLength</b> s’applique uniquement aux légendes dont les lignes sont constituées de plusieurs segments (types <b>msoCalloutThree</b> et <b>msoCalloutFour</b>).</para>
           <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> méthode pour indiquer que le premier segment du trait de légende est redimensionné automatiquement lorsque la légende est déplacée.</para>
-          <para>Application, cette méthode définit la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> propriété <b>False</b> et la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> propriété à la valeur spécifiée pour l’argument <b>longueur</b> .</para>
+          <para>L’application de cette méthode affecte la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> propriété <b>False</b> et la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> propriété à la valeur spécifiée pour l’argument <b>longueur</b> .</para>
           <para></para>
         </remarks>
       </Docs>
@@ -470,7 +472,7 @@
         <summary>Pour les légendes explicitement affectée drop valeur, cette propriété renvoie la distance verticale (en points) entre le bord du cadre zone à l’endroit où la ligne de légende rejoint la zone de texte.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La distance est mesurée à partir du haut de la zone de texte, sauf si la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> propriété est définie sur <b>True</b> et la zone de texte se trouve à gauche de l’origine de la ligne de légende (endroit sur lequel la légende), auquel cas la distance de déroulement est mesurée à partir de o bas la zone de texte de f.</para>
+          <para>La distance est mesurée à partir du haut de la zone de texte, sauf si la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> propriété est définie sur <b>True</b> et la zone de texte se trouve à gauche de l’origine de la ligne de légende (endroit sur lequel la légende), auquel cas la distance de déroulement est mesurée à partir de o bas f la zone de texte.</para>
           <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> pour définir la valeur de cette propriété.</para>
           <para>La valeur de cette propriété reflète précisément la position de la pièce jointe trait de légende à la zone de texte uniquement si la légende est définie de manière explicite drop valeur — autrement dit, si la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> propriété est <b>DropType</b>.</para>
           <para></para>
@@ -518,9 +520,9 @@
             <b>DropType</b>
           </para>
           <para>
-            <b>msoCalloutDropTop </b>
+            <b>msoCalloutDropTop</b>
           </para>
-          <para>Si le type de déplacement est <b>DropType</b>, les valeurs de la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> et <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> propriétés et la position de la zone de texte de légende et le trait de légende (endroit sur lequel la légende) est utilisée pour déterminer où la ligne de légende rejoint la zone de texte.</para>
+          <para>Si le type de déplacement est <b>DropType</b>, les valeurs de la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> et <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> propriétés et la position de la zone de texte de légende et le trait de légende (endroit sur lequel la légende) est utilisée pour déterminer où la légende attache de la ligne à la zone de texte.</para>
           <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> pour définir la valeur de cette propriété.</para>
           <para></para>
         </remarks>

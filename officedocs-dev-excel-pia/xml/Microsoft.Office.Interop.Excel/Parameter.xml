@@ -1,10 +1,10 @@
 <Type Name="Parameter" FullName="Microsoft.Office.Interop.Excel.Parameter">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="95a1514921d1b94e70c3a6054d10d4aeb557513f" />
+    <Meta Name="ms.openlocfilehash" Value="4cb6832911d3c4a327d4bf9eea8ec30d60695a98" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581703" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Parameter" />
@@ -86,7 +86,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataType">
@@ -236,7 +239,7 @@
         <summary>Cette propriété a la valeur <b>True</b> si la table de requête spécifiée est actualisée chaque fois que vous modifiez la valeur de paramètre d'une requête paramètre. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous pouvez définir cette propriété sur <b>True</b> uniquement si vous utilisez des paramètres du type <b>xlRange</b> et si la valeur du paramètre référencé se trouve dans une cellule unique. L’actualisation se produit lorsque vous modifiez la valeur de la cellule.</para>
+          <para>Vous ne pouvez définir cette propriété sur <b>True</b> que si vous utilisez des paramètres du type <b>xlRange</b> et si la valeur du paramètre référencé se situe dans une seule cellule. L'actualisation a lieu lorsque vous modifiez la valeur de la cellule.</para>
           <para></para>
         </remarks>
       </Docs>

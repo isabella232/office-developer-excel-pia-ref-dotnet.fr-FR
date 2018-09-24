@@ -1,10 +1,10 @@
 <Type Name="Walls" FullName="Microsoft.Office.Interop.Excel.Walls">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a799677b46bf969b126a84541e7f118b6dcbcf47" />
+    <Meta Name="ms.openlocfilehash" Value="694e055e0616d70a2ab7c59205f377db0e237a53" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576047" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Walls" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Représente les murs d’un graphique 3D.</summary>
     <remarks>
-      <para>Cet objet n’est pas une collection. Il n’existe aucun objet qui représente un seul mur. Vous devez renvoyer tous les murs comme une unité.</para>
+      <para>Cet objet n’est pas une collection. Il n’existe aucun objet qui représente un seul mur. Vous devez renvoyer tous les panneaux en tant qu’unité.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Chart.Walls" /> propriété permet de renvoyer l’objet <b>Walls</b> .</para>
       <para></para>
     </remarks>
@@ -148,8 +148,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -270,7 +272,7 @@
         <summary>Renvoie le nom de l'objet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le tableau suivant indique les valeurs de l’exemple de la propriété <b>Name</b> et les propriétés associées en fonction d’une source de données OLAP dont le nom unique « [Europe]. [France]. [Paris] » et « Paris » du nom de source de données non-OLAP avec l’élément.</para>
+          <para>Le tableau suivant contient des valeurs d’exemple de la propriété <b>Name</b> et des propriétés liées affectées d’une source de données OLAP dotée du nom unique "[Europe].[France].[Paris]" et d’une source de données autre que OLAP dotée du nom "Paris".</para>
           <list type="table">
             <item>
               <term>
@@ -281,28 +283,35 @@
             </item>
             <item>
               <term>
-                <b>nom</b>
+                <b>Nom</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
-              <description>(Identique à la valeur de propriété SQL en lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
+              <description>(Valeur identique à celle de la propriété SQL ; en lecture seule)</description>
             </item>
             <item>
               <term>
                 <b>Valeur</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Lors de la spécification d’index dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para> expression 
-          <list type="table"><item><term>. PivotItems (« [Europe]. [ France]. [Paris] »)</term><description>expression. PivotItems("Paris")</description></item></list><para></para></remarks>
+          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <list type="table">
+            <item>
+              <term>expression. PivotItems (« [Europe]. [ France]. [Paris] »)</term>
+              <description>expression. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -356,7 +365,7 @@
       <Docs>
         <summary>Cette méthode colle une image du Presse-papiers sur les panneaux du graphique spécifié.</summary>
         <remarks>
-          <para>Cette méthode peut être utilisée sur des graphiques en radar, en barres, ligne ou colonne. Définit <b>xlMarkerStylePicture</b>à la propriété <b>MarkerStyle</b> .</para>
+          <para>Cette méthode peut être utilisée sur des graphiques en histogrammes, en barres, en courbes ou en radar. Il définit la propriété <b>MarkerStyle</b><b>xlMarkerStylePicture</b>à.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -482,7 +491,10 @@
         <value>
           <b>Integer</b>
         </value>
-        <remarks>Utilisez cette propriété pour définir l’épaisseur de la paroi <para>.  L’épaisseur par défaut est 0.</para><para></para></remarks>
+        <remarks>
+          <para>Utilisez cette propriété pour définir l'épaisseur du panneau. La valeur par défaut est 0.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

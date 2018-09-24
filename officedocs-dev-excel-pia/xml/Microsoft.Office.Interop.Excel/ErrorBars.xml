@@ -1,10 +1,10 @@
 <Type Name="ErrorBars" FullName="Microsoft.Office.Interop.Excel.ErrorBars">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6184f44146a0a3b987edb9aaee7576a2b9ce0177" />
+    <Meta Name="ms.openlocfilehash" Value="60889c6b8ce84452540bb212c8f4d70d23f454da" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581346" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ErrorBars" />
@@ -30,7 +30,11 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente les barres d’erreur d’une série de graphique.</summary>
-    <remarks>Barres d’erreur <para>indiquent le degré d’incertitude des données du graphique. Seules les séries dans la zone de barre, colonne, ligne et groupes en nuages de points dans un graphique 2D peuvent avoir des barres d’erreur. Seules les séries de groupes en nuages de points peuvent avoir x et y barres d’erreur. Cet objet n’est pas une collection. Il n’existe aucun objet qui représente une barre d’erreur unique ; sont soit x barres d’erreur ou des barres d’erreur y activées pour tous les points d’une série, soit désactivés.</para><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Series.ErrorBars" /> propriété permet de renvoyer l’objet <b>ErrorBars</b> .</para><para></para></remarks>
+    <remarks>
+      <para>Les barres d'erreur indiquent le degré d'incertitude sur les données graphiques. Seules les séries appartenant à des groupes de graphiques en aires, en barres, en histogrammes, en courbes et en nuages de points d'un graphique 2D peuvent utiliser des barres d'erreur. Seules les séries appartenant à des groupes de graphiques en nuages de points peuvent utiliser des barres d'erreur X et Y. Cet objet n'est pas une collection. Il n'existe aucun objet représentant une seule barre d'erreur. Les barres d'erreur X ou Y sont soit activées, soit désactivées, pour tous les points d'une série.</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Series.ErrorBars" /> propriété permet de renvoyer l’objet <b>ErrorBars</b> .</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -141,8 +145,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

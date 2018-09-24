@@ -1,10 +1,10 @@
 <Type Name="ShadowFormat" FullName="Microsoft.Office.Interop.Excel.ShadowFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="09d808183dd11068f3bb29e58ab558271621e063" />
+    <Meta Name="ms.openlocfilehash" Value="5eeac5f0fb754a2bafeb2c032994726f97c18d68" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584433" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ShadowFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -130,8 +130,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -290,7 +292,7 @@
         <summary>Cette propriété renvoie ou définit le décalage horizontal de l’ombre de la forme spécifiée en points.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Une valeur positive décale l’ombre vers la droite de la forme, une valeur négative la décale vers la gauche.</para>
+          <para>Une valeur positive décale l'ombre vers la droite de la forme ; une valeur négative la décale vers la gauche.</para>
           <para>Si vous voulez décaler une ombre horizontalement ou verticalement sans avoir à spécifier une position absolue, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> méthode.</para>
           <para></para>
         </remarks>
@@ -325,7 +327,7 @@
         <summary>Cette propriété renvoie ou définit le décalage vertical de l’ombre de la forme spécifiée en points.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Une valeur positive décale l’ombre vers la droite de la forme, une valeur négative la décale vers la gauche.</para>
+          <para>Une valeur positive décale l'ombre vers la droite de la forme ; une valeur négative la décale vers la gauche.</para>
           <para>Si vous voulez décaler une ombre horizontalement ou verticalement sans avoir à spécifier une position absolue, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> méthode.</para>
           <para></para>
         </remarks>
@@ -468,6 +470,11 @@
                 <see cref="F:Microsoft.Office.Core.MsoShadowStyle.msoShadowStyleMixed" />
               </term>
             </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Core.MsoShadowStyle.msoShadowStyleOuterShadow" />
+              </term>
+            </item>
           </list>
           <para></para>
         </remarks>
@@ -502,7 +509,7 @@
         <summary>Cette propriété renvoie ou définit le degré de transparence du remplissage spécifié comme une valeur comprise entre 0.0 (opaque) et 1.0 (clair).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La valeur de cette propriété affecte l’apparence des remplissages de couleur unie et lignes uniquement ; il n’a aucun effet sur l’apparence des lignes à motif ou avec motif, dégradé, image ou textures.</para>
+          <para>La valeur de cette propriété affecte uniquement l'aspect des remplissages et traits pleins ; elle n'a aucun effet sur l'aspect des traits avec motif ou sur les remplissages dégradés, texturés, contenant un motif ou une image.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="CubeFields" FullName="Microsoft.Office.Interop.Excel.CubeFields">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4f88d867148057cb495ff350a393ab29f603f5d5" />
+    <Meta Name="ms.openlocfilehash" Value="b43cd9331b37889c562364401c8dc346d0d623b2" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572750" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CubeFields : System.Collections.IEnumerable" />
@@ -34,7 +34,7 @@
     <remarks>
       <para>Chaque objet <b>CubeField</b> représente un champ de hiérarchie ou de mesure à partir du cube.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CubeFields" /> propriété pour renvoyer la collection <b>CubeFields</b> .</para>
-      <para>Utiliser <b>CubeFields</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du champ de cube pour renvoyer un seul objet <b>CubeField</b> .</para>
+      <para>Utilisez <b>CubeFields</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du champ de cube pour renvoyer un seul objet <b>CubeField</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -105,7 +105,7 @@
         <summary>Ajoute un nouveau <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objet dans le <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> collection.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>L’objet <b>CubeField</b> correspond à un ensemble défini sur le traitement OLAP (Online Analytical) d’un fournisseur pour le cube.</para>
+          <para>L’objet <b>CubeField</b> correspond à un ensemble défini sur le traitement OLAP (Online Analytical) à un fournisseur pour le cube.</para>
           <para>Si un ensemble avec un nom donné dans l’argument <paramref name="Name" /> n’existe pas, la méthode <b>AddSet</b> renvoie une erreur d’exécution.</para>
           <para></para>
         </remarks>
@@ -193,8 +193,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

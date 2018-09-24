@@ -1,10 +1,10 @@
 <Type Name="Shapes" FullName="Microsoft.Office.Interop.Excel.Shapes">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="423f6ba80e99833cf649d465fd4e782f1fb41192" />
+    <Meta Name="ms.openlocfilehash" Value="7d8f4259d10e89624f92628ba847b174395cf289" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581815" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
@@ -34,7 +34,12 @@
   </Attributes>
   <Docs>
     <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objets dans la feuille spécifiée.</summary>
-    <remarks>&lt;b0&gt;Chaque &lt;b1&gt;&lt;/b1&gt; objet représente un objet dans la couche dessin, comme une forme automatique, une forme libre, un objet OLE ou une image.&lt;/b0&gt; &lt;b2&gt; &lt;b3&gt;Remarque&lt;/b3&gt;: Si vous souhaitez travailler avec un sous-ensemble des formes d’un document — par exemple, pour effectuer une opération uniquement sur les formes automatiques du document ou les formes sélectionnées, vous construisez un &lt;b4&gt;&lt;/b4&gt; collection contenant les formes que vous souhaitez utiliser avec. &lt; /C2 &gt;&lt;b5&gt; &lt;/b5&gt;&lt;/b2&gt;</remarks>
+    <remarks>
+      <para>Chaque <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objet représente un objet dans la couche dessin, comme une forme automatique, une forme libre, un objet OLE ou une image.</para>
+      <para>
+        <b>Remarque</b>: Si vous souhaitez travailler avec un sous-ensemble des formes d’un document — par exemple, pour effectuer une opération uniquement sur les formes automatiques du document ou les formes sélectionnées, vous construisez un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> collection contenant les formes que vous souhaitez utiliser avec.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -270,7 +275,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Lorsqu’un connecteur est ajouté, il n’est pas connecté à rien. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> et <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> méthodes pour attacher le début et la fin d’un connecteur à d’autres formes du document.</para>
-          <para>Lorsque vous attachez un connecteur à une forme, la taille et la position du connecteur sont automatiquement ajustées, si nécessaire. Par conséquent, si vous souhaitez attacher un connecteur à d’autres formes, la position et les dimensions que vous spécifiez lors de l’ajout du connecteur sont sans effet.</para>
+          <para>Quand vous attachez un connecteur à une forme, la taille et la position du connecteur sont ajustées automatiquement, si nécessaire. Par conséquent, si vous attachez un connecteur à d'autres formes, la position et les dimensions que vous spécifiez lors de l'ajout du connecteur sont sans effet.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -638,7 +643,7 @@
         <summary>Crée une polyligne ouverte ou un polygone fermé. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object qui représente la nouvelle polyligne ou polygone.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Pour former un polygone fermé, affectez les mêmes coordonnées aux premier et derniers sommets dans le dessin de polylignes.</para>
+          <para>Pour former un polygone fermé, affectez les mêmes coordonnées aux premier et dernier sommets dans le dessin en forme de polyligne.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -810,7 +815,7 @@
         <summary>Crée un objet WordArt. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object qui représente le nouvel objet WordArt.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Lorsque vous ajoutez un objet WordArt à un document, la hauteur et la largeur de l’objet sont définies automatiquement selon la taille et la quantité de texte que vous spécifiez.</para>
+          <para>Quand vous ajoutez un objet WordArt à un document, la hauteur et largeur de l'objet sont définies automatiquement selon la taille et quantité de texte que vous spécifiez.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -935,8 +940,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

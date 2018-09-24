@@ -1,10 +1,10 @@
 <Type Name="Comment" FullName="Microsoft.Office.Interop.Excel.Comment">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7623036514119839c00f2d3d08991f073ef618c8" />
+    <Meta Name="ms.openlocfilehash" Value="aee055e9a2656dedc02e66bab44aba17d315d4f9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585847" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Comment" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>L’objet <b>Comment</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Comments" /> collection.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Range.Comment" /> propriété permet de renvoyer un objet <b>Comment</b> .</para>
-      <para>Utilisez des <b>commentaires</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro de commentaire, pour renvoyer un seul commentaire de la collection <b>Comments</b> .</para>
+      <para>Utiliser des <b>commentaires</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro de commentaire, pour renvoyer un seul commentaire de la collection <b>Comments</b> .</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" /> pour ajouter un commentaire à une plage.</para>
       <para></para>
     </remarks>
@@ -121,8 +121,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -174,7 +176,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> object qui représente le commentaire suivant.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Cette méthode fonctionne uniquement sur une seule feuille. À l’aide de cette méthode sur le dernier commentaire d’une feuille renvoie <b>Null</b> (pas le premier commentaire de la feuille suivante).</para>
+          <para>Cette méthode ne fonctionne que sur une seule feuille. L'utilisation de cette méthode sur le dernier commentaire d'une feuille renvoie la valeur <b>Null</b> et pas le premier commentaire de la feuille suivante.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -231,7 +233,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> object qui représente le commentaire précédent.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Cette méthode fonctionne uniquement sur une seule feuille. L’utilisation de cette méthode sur le premier commentaire d’une feuille renvoie <b>Null</b> (pas le dernier commentaire de la feuille précédente).</para>
+          <para>Cette méthode ne fonctionne que sur une seule feuille. L'utilisation de cette méthode sur le premier commentaire d'une feuille renvoie la valeur <b>Null</b> et pas le dernier commentaire de la feuille précédente.</para>
           <para></para>
         </remarks>
       </Docs>

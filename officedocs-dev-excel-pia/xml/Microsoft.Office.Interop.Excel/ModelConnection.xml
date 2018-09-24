@@ -1,10 +1,10 @@
 <Type Name="ModelConnection" FullName="Microsoft.Office.Interop.Excel.ModelConnection">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c0e55c0f06c4fad20e998db4373fbb8f95bf211d" />
+    <Meta Name="ms.openlocfilehash" Value="fd5c31aae4d45548f7153f5488725dde8ae8c9ee" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587492" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ModelConnection" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Contiennent des informations pour le nouveau Type de connexion de modèle introduites dans Excel 2013 pour interagir avec le modèle de données intégrée.</summary>
     <remarks>
-      <para>à utiliser pour tous les tableaux croisés dynamiques connectés au modèle, il y aura une nouvelle connexion de classeur « spécial » qui existe toujours (et ne peut pas être supprimée) dans les classeurs qui ont un modèle de données. Il est créé lorsque le modèle de création d’un classeur. Toutes les propriétés de cette connexion de classeur spéciaux sont en lecture seule. Son nom est : modèle de données de classeur.</para>
+      <para>Pour utiliser tous les tableaux croisés dynamiques connectés au modèle, il aura une nouvelle connexion de classeur « spécial » qui existe toujours (et ne peut pas être supprimée) dans les classeurs qui ont un modèle de données. Il est créé lorsque le modèle de création d’un classeur. Toutes les propriétés de cette connexion de classeur spéciaux sont en lecture seule. Son nom est : modèle de données de classeur.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -183,7 +183,7 @@
         <summary>Cette propriété renvoie ou définit une de la <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> constantes. Lecture/Écriture</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour un objet <b>ModelConnection</b> , ce type sera défini sur <b>xlCmdTable</b> ou <b>xlCmdDAX</b>. La connexion isolée <b>ThisWorkbookDataModel</b> au modèle de données doit être de type <b>xlCmdCube</b>.</para>
+          <para>Pour un objet <b>ModelConnection</b> , ce type définira <b>xlCmdTable</b> ou <b>xlCmdDAX</b>. La connexion isolée <b>ThisWorkbookDataModel</b> au modèle de données doit être de type <b>xlCmdCube</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -214,7 +214,7 @@
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. En lecture seule <b>entier</b> (<b>int</b> en c#).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>, Car l’objet a été créé dans Excel, cette propriété renvoie la valeur hexadécimale, 5843454C, qui représente la chaîne « XCEL ».</para>
+          <para>Étant donné que l’objet a été créé dans Excel, cette propriété renvoie la valeur hexadécimale, 5843454C, qui représente la chaîne « XCEL ».</para>
           <para></para>
         </remarks>
       </Docs>

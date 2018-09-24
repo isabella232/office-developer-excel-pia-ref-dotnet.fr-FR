@@ -1,10 +1,10 @@
 <Type Name="Workbooks" FullName="Microsoft.Office.Interop.Excel.Workbooks">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b12eeb1525d59a72dc56c31e86d541cd2b6125d0" />
+    <Meta Name="ms.openlocfilehash" Value="e216142f85071dc6b33c9b1eb3c9ddffaa7369de" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574934" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Workbooks : System.Collections.IEnumerable" />
@@ -32,7 +32,7 @@
   <Docs>
     <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> les objets qui sont actuellement ouverts dans l’application Microsoft Excel.</summary>
     <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> propriété permet de renvoyer la collection <b>Workbooks</b> .</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> propriété pour renvoyer la collection des <b>classeurs</b> .</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Add(System.Object)" /> méthode pour créer un nouveau classeur vide et l’ajouter à la collection.</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode afin d’ouvrir un fichier.</para>
       <para>Pour plus d’informations sur l’utilisation d’un objet <b>Workbook</b> , voir la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet.</para>
@@ -317,7 +317,7 @@
         <summary>Crée un nouveau classeur. Le nouveau classeur devient le classeur actif. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Si le <paramref name="Template" /> argument spécifie un fichier, le nom de fichier peut inclure un chemin</para>
+          <para>Si le <paramref name="Template" /> argument spécifie un fichier, le nom de fichier peut inclure un chemin d’accès.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -436,7 +436,7 @@
       <Docs>
         <summary>Ferme l’objet.</summary>
         <remarks>
-          <para>Fermeture d’un classeur à l’aide de la méthode <b>Close</b> ne s’exécute pas toutes les macros Auto_Close du classeur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour l’exécuter.</para>
+          <para>Fermeture d’un classeur à l’aide de la méthode <b>Close</b> n’exécute aucune macro Auto_Close du classeur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour l’exécuter.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -494,7 +494,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

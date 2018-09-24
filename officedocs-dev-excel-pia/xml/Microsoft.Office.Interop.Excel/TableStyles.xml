@@ -1,10 +1,10 @@
 <Type Name="TableStyles" FullName="Microsoft.Office.Interop.Excel.TableStyles">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="03e47761cb02c3ab6b4ff2d4f2536bdbb8cc8a76" />
+    <Meta Name="ms.openlocfilehash" Value="70d5a69d0e4e826dda6e82f38beab66614060a9a" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579596" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TableStyles : System.Collections.IEnumerable" />
@@ -34,8 +34,32 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente les styles applicables à un tableau.</summary>
-    <remarks>Styles de tableau <para>permettent de mettre en forme un tableau entier ou un tableau croisé dynamique. Styles de tableau remplace la fonctionnalité de format automatique existante pour la mise en forme d’un tableau entier.</para><para>Les styles de tableau diffèrent de mise en forme automatique de la manière suivante :</para><para></para><list type="bullet"><item><description>Vous pouvez créer et réutiliser vos propres styles de tableau personnalisés.</description></item><item><description>Les styles de tableau fonctionnent avec les thèmes.  </description></item><item><description>Modification du jeu de couleurs et/ou le jeu de polices du thème de document va changer l’apparence des styles de tableau intégrés.</description></item> Styles de tableau 
-        <item><description>pouvant réappliquer les styles d’objets comme les tableaux croisés dynamiques et des tableaux en tant que les modifications de l’objet.  Les tableaux Mémoriser le style qui leur sont appliqué et se réaffiche correctement lorsque cellules sont ajoutés, supprimés, masqués et affichés.</description></item><item><description>Les styles de tableau ont une interface utilisateur dans le ruban.</description></item></list><para></para><para></para></remarks>
+    <remarks>
+      <para>Les styles de tableau permettent de mettre en forme la totalité d’un tableau ou d’un tableau croisé dynamique. Les styles de tableau remplacent la fonction de mise en forme automatique.</para>
+      <para>Les styles de tableau présentent quelques différences par rapport à la fonction de mise en forme automatique :</para>
+      <para></para>
+      <list type="bullet">
+        <item>
+          <description>Vous pouvez créer et réutiliser vos propres styles de tableau personnalisés.
+</description>
+        </item>
+        <item>
+          <description>Les styles de tableau fonctionnent avec les thèmes.  </description>
+        </item>
+        <item>
+          <description>Jeu de couleurs et/ou le jeu de polices du thème de document modification affecte l’aspect des styles de tableau intégrés. </description>
+        </item>
+        <item>
+          <description>Les styles de tableau peuvent réappliquer des styles à des objets tels que des tableaux croisés dynamiques et des tableaux lorsque l’objet change. Les tableaux mémorisent le style qui lui est appliqué se réaffiche correctement lorsque des cellules sont ajoutées, supprimées, masquées et affichées.</description>
+        </item>
+        <item>
+          <description>Styles de tableau ont une interface utilisateur dans le ruban.
+</description>
+        </item>
+      </list>
+      <para></para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -130,7 +154,7 @@
           <b>Objet</b>
         </value>
         <remarks>
-          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet.</para>
+          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -193,7 +217,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
           <para></para>
         </remarks>
       </Docs>

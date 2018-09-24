@@ -1,10 +1,10 @@
 <Type Name="Worksheet" FullName="Microsoft.Office.Interop.Excel.Worksheet">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="092a8bd086f190725e346add1ff9bd88a61c6ee6" />
+    <Meta Name="ms.openlocfilehash" Value="f8af3c130d8cd9b8102e484a18e8b5c0f9ce9942" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577734" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Worksheet : Microsoft.Office.Interop.Excel._Worksheet, Microsoft.Office.Interop.Excel.DocEvents_Event" />
@@ -35,9 +35,28 @@
   <Docs>
     <summary>Représente une feuille de calcul.</summary>
     <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Excel._Worksheet" />.</para> Objet 
-      <para>la <b>feuille de calcul</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Worksheets" /> collection. La collection de <b>feuilles de calcul</b> contient tous les objets de <b>feuille de calcul</b> dans un classeur.</para><para>Les propriétés suivantes pour renvoyer un objet de <b>feuille de calcul</b> sont décrites dans cette section :</para><list type="bullet"><item><description><see cref="P:Microsoft.Office.Interop.Excel._Workbook.Worksheets" /> propriété</description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> propriété</description></item></list><para>Worksheets, propriété</para><para>Utilisation <b>des feuilles de calcul</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de feuille de calcul ou le nom, pour renvoyer un seul objet <b>Worksheet</b> .</para><para>Le numéro d’index de feuille de calcul indique la position de la feuille de calcul dans la barre d’onglets du classeur. Worksheets (1) est la première feuille du classeur (la plus à gauche) et Worksheets (Worksheets.Count) est la dernière. Toutes les feuilles de calcul sont incluses dans le comptage d’index, même si elles sont masquées.</para><para>Le nom de la feuille de calcul s’affiche sous l’onglet de la feuille de calcul. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Name" /> propriété pour définir ou renvoyer le nom de la feuille de calcul.</para> Objet 
-      <para>la <b>feuille de calcul</b> est également un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection. La collection <b>Sheets </b>contient toutes les feuilles du classeur (feuilles de calcul et les feuilles de graphique).</para><para>Propriété ActiveSheet</para><para>Lorsqu’une feuille de calcul est la feuille active, vous pouvez utiliser la propriété <b>ActiveSheet</b> pour faire référence multidimentionnelle.</para><para></para></remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Excel._Worksheet" />.</para>
+      <para>L’objet <b>Worksheet</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Worksheets" /> collection. La collection de <b>feuilles de calcul</b> contient tous les objets de la <b>feuille de calcul</b> dans un classeur.</para>
+      <para>Les propriétés suivantes pour renvoyer un objet de <b>feuille de calcul</b> sont décrites dans cette section :</para>
+      <list type="bullet">
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Worksheets" />propriété</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" />propriété</description>
+        </item>
+      </list>
+      <para>Worksheets, propriété</para>
+      <para>Utilisez les <b>feuilles de calcul</b>(<paramref name="index" />), où <paramref name="index" /> est le nom, pour renvoyer un seul objet de <b>feuille de calcul</b> ou le numéro d’index de feuille de calcul.</para>
+      <para>Le numéro d'index de la feuille de calcul indique la position de celle-ci dans la barre d'onglets du classeur. Worksheets(1) est la première feuille de calcul (la plus à gauche) du classeur, et Worksheets(Worksheets.Count) est la dernière. Toutes les feuilles de calcul, même masquées, sont incluses dans le compte d'index.</para>
+      <para>Le nom de la feuille de calcul s’affiche sous l’onglet de la feuille de calcul. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Name" /> propriété pour définir ou renvoyer le nom de la feuille de calcul.</para>
+      <para>L’objet <b>Worksheet</b> est également un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection. La collection <b>Sheets </b>contient toutes les feuilles du classeur (feuilles de calcul et les feuilles de graphique).</para>
+      <para>ActiveSheet, propriété</para>
+      <para>Lorsqu’une feuille de calcul est la feuille active, vous pouvez utiliser la propriété <b>ActiveSheet</b> pour faire référence à celui-ci.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members />
 </Type>

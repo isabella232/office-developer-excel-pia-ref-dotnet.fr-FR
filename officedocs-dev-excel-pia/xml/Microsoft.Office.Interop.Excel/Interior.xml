@@ -1,10 +1,10 @@
 <Type Name="Interior" FullName="Microsoft.Office.Interop.Excel.Interior">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="84509cfb8129326d031763fb72114f30f66959dd" />
+    <Meta Name="ms.openlocfilehash" Value="c71701c9d8836ca465988c9e2fec16d9b1bf8ddb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582256" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Interior" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Cet objet représente l'intérieur d'un objet.</summary>
     <remarks>
-      <para>Utiliser la propriété <b>Interior</b> pour renvoyer l’objet <b>Interior</b> .</para>
+      <para>Utilisez la propriété <b>Interior</b> pour renvoyer l’objet <b>Interior</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -128,7 +128,7 @@
           <para>
             <b>xlColorIndexAutomatic</b>. Permet de spécifier le remplissage automatique pour les objets de dessin.</para>
           <para>
-            <b>xlColorIndexNone</b>. Permet de spécifier sans remplissage.</para>
+            <b>xlColorIndexNone</b>. Permet de ne spécifier aucun remplissage.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -159,8 +159,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Gradient">
@@ -504,7 +506,7 @@
         <summary>Obtient ou définit la couleur de thème dans le jeu de couleurs appliqué qui est associé à l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Tente d’accéder à une couleur de thème pour un objet dont la couleur n’est pas actuellement à thème génère une erreur d’exécution de requête non valide.</para>
+          <para>Toute tentative d'accès à une couleur de thème pour un objet auquel aucun thème n'est appliqué provoquera une erreur de requête non valide à l'exécution.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -539,7 +541,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Vous pouvez entrer un nombre compris entre -1 (sombre) et 1 (le plus clair) pour la propriété <b>TintAndShade</b> . Zéro (0) est neutre.</para>
-          <para>Tentative de définir cette propriété sur une valeur inférieure à -1 ou supérieure à 1 n’entraîne une erreur d’exécution : « la valeur spécifiée est en dehors des limites ». Cette propriété ne fonctionne pour les couleurs de thème et les couleurs hors thème.</para>
+          <para>Toute tentative de définition de cette propriété sur une valeur inférieure à -1 ou supérieure à +1 provoquera une erreur d'exécution et l'affichage du message « La valeur tapée est en dehors des limites ». Cette propriété fonctionne pour les couleurs de thème et les couleurs hors thème.</para>
           <para></para>
         </remarks>
       </Docs>

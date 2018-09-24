@@ -1,10 +1,10 @@
 <Type Name="Series" FullName="Microsoft.Office.Interop.Excel.Series">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3bf5d873dc8f258078c4b08af2de06bdc1a91315" />
+    <Meta Name="ms.openlocfilehash" Value="3a8cc36d1324ac7595cb7a40f82c526876f56ea7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574829" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Series" />
@@ -297,7 +297,7 @@
         <summary>Renvoie le groupe pour la série ou le groupe de graphiques spécifié. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour les graphiques 3D, seul <b>xlPrimary</b> est valide.</para>
+          <para>Pour les graphiques 3D, seule la constante <b>xlPrimary</b> est valide.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -427,7 +427,7 @@
         <summary>Renvoie ou définit le type de graphique. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Certains types de graphiques ne sont pas disponibles pour les rapports de graphique croisé dynamique.</para>
+          <para>Certains types de graphique ne sont pas disponibles pour les rapports de graphique croisé dynamique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -509,7 +509,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabels">
@@ -538,8 +541,8 @@
         <summary>Renvoie un objet qui représente soit une seule étiquette de données (un <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> objet), soit une collection de toutes les étiquettes de données de la série (un <see cref="T:Microsoft.Office.Interop.Excel.DataLabels" /> collection).</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Si la série possède l’option <b>Afficher la valeur</b> est activée pour les étiquettes de données, la collection retournée peut contenir jusqu'à une étiquette pour chaque point. Étiquettes de données peuvent être activées ou désactivée pour les différents points de la série.</para>
-          <para>Si la série est dans un graphique en aires et que l’option <b>Afficher l’étiquette</b> est activée pour les étiquettes de données, la collection retournée contient uniquement une seule étiquette, qui est l’étiquette de la série de zone.</para>
+          <para>Si l'option <b>Afficher la valeur</b> de la série est activée pour les étiquettes de données, la collection renvoyée pourra contenir jusqu'à une étiquette pour chaque point. Les étiquettes de données peuvent être activées ou désactivées pour des points individuels dans la série.</para>
+          <para>Si la série est dans un graphique en aires et que l'option <b>Afficher l'étiquette</b> est activée pour les étiquettes de données, la collection renvoyée contient seulement l'étiquette de la série en aires.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -568,7 +571,7 @@
         <summary>Supprime l'objet.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Suppression d’un objet <b>Point</b> ou <b>LegendKey</b> supprime toute la série.</para>
+          <para>La suppression d'un objet <b>Point</b> ou <b>LegendKey</b> supprime toute la série.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -758,11 +761,11 @@
         <summary>Cette propriété renvoie ou définit la formule de l’objet dans une notation de style A1. Valeur <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
-          <para>Si la cellule contient une constante, cette propriété renvoie la constante. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule sous forme de chaîne dans le même format qui s’affiche dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Excel vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, Microsoft Excel lui affecte le format pour le format de date courte par défaut.</para>
-          <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule pour un tableau Visual Basic des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau Visual Basic.</para>
-          <para>En définissant la formule pour une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
+          <para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
+          <para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule en tant que chaîne dans le même format que celui qui doit s'afficher dans la barre de formule (y compris le signe égal).</para>
+          <para>Si vous affectez une date à la formule d'une cellule, Microsoft Excel vérifie si la cellule est déjà dotée de l'un des formats numériques ou de date. Si tel n'est pas le cas, Microsoft Excel lui affecte le format de date numérique par défaut.</para>
+          <para>S'il s'agit d'une plage à une ou deux dimensions, vous pouvez désigner la formule comme un tableau Visual Basic possédant les mêmes dimensions. De même, vous pouvez inclure la formule dans un tableau Visual Basic.</para>
+          <para>Le fait de définir la formule pour une plage comprenant plusieurs cellules insère cette formule dans la totalité des cellules de la plage.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -796,10 +799,10 @@
         <summary>Cette propriété renvoie ou définit la formule de l’objet à l’aide de références de style A1 dans la langue de l’utilisateur. En lecture/écriture, <b>chaîne</b></summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la cellule contient une constante, cette propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété renvoie la formule sous forme de chaîne, dans le même format dans lequel il doit être affiché dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Excel vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, le format de nombre est remplacé par le format de date courte par défaut.</para>
-          <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule pour un tableau Visual Basic des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau Visual Basic.</para>
-          <para>En définissant la formule d’une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
+          <para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété la renvoie sous forme de chaîne, dans le format affiché dans la barre de formule (signe égal inclus).</para>
+          <para>Si vous définissez une date comme valeur ou formule d'une cellule, Microsoft Excel vérifie si la cellule est déjà mise en forme avec un des formats de nombre Date ou Heure. Si ce n'est pas le cas, Microsoft Excel applique le format Date court par défaut.</para>
+          <para>S'il s'agit d'une plage à une ou deux dimensions, vous pouvez désigner la formule comme un tableau Visual Basic possédant les mêmes dimensions. De même, vous pouvez inclure la formule dans un tableau Visual Basic.</para>
+          <para>En définissant la formule d'une plage à cellules multiples, toutes les cellules de la plage sont remplies par la formule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -833,10 +836,10 @@
         <summary>Cette propriété renvoie ou définit la formule de l’objet en utilisant la notation de style R1C1. Valeur <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la cellule contient une constante, cette propriété renvoie la constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété renvoie la formule sous forme de chaîne, dans le même format dans lequel il doit être affiché dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Excel vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, le format de nombre est remplacé par le format de date courte par défaut.</para>
-          <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule pour un tableau Visual Basic des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau Visual Basic.</para>
-          <para>En définissant la formule d’une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
+          <para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété la renvoie sous forme de chaîne, dans le format affiché dans la barre de formule (signe égal inclus).</para>
+          <para>Si vous définissez une date comme valeur ou formule d'une cellule, Microsoft Excel vérifie si la cellule est déjà mise en forme avec un des formats de nombre Date ou Heure. Si ce n'est pas le cas, Microsoft Excel applique le format Date court par défaut.</para>
+          <para>S'il s'agit d'une plage à une ou deux dimensions, vous pouvez désigner la formule comme un tableau Visual Basic possédant les mêmes dimensions. De même, vous pouvez inclure la formule dans un tableau Visual Basic.</para>
+          <para>En définissant la formule d'une plage à cellules multiples, toutes les cellules de la plage sont remplies par la formule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -870,10 +873,10 @@
         <summary>Cette propriété renvoie ou définit la formule de l'objet, en utilisant la notation R1C1 dans la langue de l'utilisateur. En lecture/écriture, <b>chaîne</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la cellule contient une constante, cette propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété renvoie la formule sous forme de chaîne, dans le même format dans lequel il doit être affiché dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Excel vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, le format de nombre est remplacé par le format de date courte par défaut.</para>
-          <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule pour un tableau Visual Basic des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau Visual Basic.</para>
-          <para>En définissant la formule d’une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
+          <para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété la renvoie sous forme de chaîne, dans le format affiché dans la barre de formule (signe égal inclus).</para>
+          <para>Si vous définissez une date comme valeur ou formule d'une cellule, Microsoft Excel vérifie si la cellule est déjà mise en forme avec un des formats de nombre Date ou Heure. Si ce n'est pas le cas, Microsoft Excel applique le format Date court par défaut.</para>
+          <para>S'il s'agit d'une plage à une ou deux dimensions, vous pouvez désigner la formule comme un tableau Visual Basic possédant les mêmes dimensions. De même, vous pouvez inclure la formule dans un tableau Visual Basic.</para>
+          <para>En définissant la formule d'une plage à cellules multiples, toutes les cellules de la plage sont remplies par la formule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1063,9 +1066,9 @@
         <summary>Obtient ou définit la couleur de remplissage des points de données négatifs dans une série.</summary>
         <value>La couleur de remplissage pour les points de données négatifs dans une série.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriété permet de définir la couleur de remplissage des points de données négatives comme valeur de couleur RVB, hexadécimal, octal ou numérique spécifique. Pour définir la valeur comme une valeur RVB, utilisez la fonction Visual Basic <b>RVB</b> . Au lieu d’utiliser la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriété, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriété, qui utilise un ensemble de valeurs de type integer à partir de la palette de couleurs actuelle simple.</para>
-          <para>Pour la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />propriété ait un effet, la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objet doit également être défini sur <b>true</b>.</para>
+          <para>Lecture/écriture.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriété permet de définir la couleur de remplissage des points de données négatives comme valeur de couleur RVB, hexadécimal, octal ou numérique spécifique. Pour définir la valeur comme une valeur RVB, utilisez la fonction Visual Basic <b>RVB</b> . Au lieu d’utiliser la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriété, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriété, qui utilise un ensemble de valeurs entières à partir de la palette de couleurs actuelle plus simple.</para>
+          <para>Pour le <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />propriété ait un effet, la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objet doit également être défini sur <b>true</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1099,9 +1102,9 @@
         <summary>Obtient ou définit la couleur de remplissage des points de données négatifs dans une série.</summary>
         <value>La couleur de remplissage pour les points de données négatifs dans une série.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriété permet de définir la couleur de remplissage des points de données négatives comme une valeur d’index de couleur de 0 à 56. Au lieu d’utiliser la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriété, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriété, qui vous permet de définir la couleur comme un hexadécimal numérique, spécifique, octal ou valeur RVB.</para>
-          <para>Pour la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriété ait un effet, la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objet doit également être défini sur <b>true</b>.</para>
+          <para>Lecture/écriture.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriété permet de définir la couleur de remplissage des points de données négatives comme une valeur d’index de couleur de 0 à 56. Au lieu d’utiliser la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriété, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" /> propriété, qui vous permet de définir la couleur comme un hexadécimal numérique, spécifique, octal ou valeur RVB.</para>
+          <para>Pour le <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" /> propriété ait un effet, la <see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objet doit également être défini sur <b>true</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1166,7 +1169,7 @@
         <summary>Ce paramètre détermine si la série a été éliminée du graphique. <b>False</b> est la valeur par défaut. <b>Boolean</b> (<b>bool</b> en c#) En lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Lors de la série, la série commutateurs de propriété <b>IsFiltered</b><b>true</b>et une série de filtres un utilisateur est transféré en dehors de son parent <b>SeriesCollection</b>. Toutefois, cette série conserve son parent <b>FullSeriesCollection</b>. Lorsqu’un filtre utilisateur de nouveau la série, il est inséré dans son emplacement d’origine dans le <b>SeriesCollection</b>.</para>
+          <para>Quand un utilisateur filtre une série, la propriété <b>IsFiltered</b> série bascule sur <b>True</b>et la série est transférée en dehors de son parent <b>SeriesCollection</b>. Toutefois, cette série conserve son parent <b>FullSeriesCollection</b>. Lorsqu’un filtre utilisateur de nouveau la série, il est inséré dans son emplacement d’origine dans le <b>SeriesCollection</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1414,7 +1417,7 @@
         <summary>Cette propriété renvoie ou définit le nom de l'objet. Type de données <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le tableau suivant indique les valeurs de l’exemple de la propriété <b>Name</b> et les propriétés associées en fonction d’une source de données OLAP dont le nom unique « [Europe]. [France]. [Paris] » et « Paris » du nom de source de données non-OLAP avec l’élément.</para>
+          <para>Le tableau suivant contient des valeurs d’exemple de la propriété <b>Name</b> et des propriétés liées affectées d’une source de données OLAP dotée du nom unique "[Europe].[France].[Paris]" et d’une source de données autre que OLAP dotée du nom "Paris".</para>
           <list type="table">
             <item>
               <term>
@@ -1425,28 +1428,42 @@
             </item>
             <item>
               <term>
-                <b>nom</b>
+                <b>Nom</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
-              <description>(Identique à la valeur de propriété SQL en lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
+              <description>(Valeur identique à celle de la propriété SQL ; en lecture seule)</description>
             </item>
             <item>
               <term>
                 <b>Valeur</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Lors de la spécification d’index dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para> expression 
-          <list type="table"><item><term>. PivotItems (« [Europe]. [ France]. [Paris] »)</term><description>expression. PivotItems("Paris")</description></item></list><para>lors de l’utilisation du <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para><list type="table"><item><term>[Europe]. [ France]. [Paris]</term><description>Paris</description></item></list><para></para></remarks>
+          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <list type="table">
+            <item>
+              <term>expression. PivotItems (« [Europe]. [ France]. [Paris] »)</term>
+              <description>expression. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para>Lorsque vous utilisez la <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para>
+          <list type="table">
+            <item>
+              <term>[Europe]. [France]. [Paris]</term>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1631,7 +1648,7 @@
         <value>Une valeur d’index qui est utilisée en interne pour associer série mise en forme des éléments de graphique.</value>
         <remarks>
           <para>En lecture seule.</para>
-          <para>Cette propriété est utilisée en interne par Excel et n’est pas destinée à être appelée à partir de votre code.</para>
+          <para>Cette propriété est utilisée en interne par Excel et ne doit pas être appelée à partir de votre code.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1665,8 +1682,8 @@
         <summary>Cette propriété renvoie ou définit l'ordre de traçage de la série sélectionnée au sein du groupe de graphique. Type de données <b>Integer</b> en lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>, Vous pouvez définir l’ordre de traçage uniquement dans un groupe de graphiques (vous ne pouvez pas définir l’ordre de traçage du graphique entier si vous avez plusieurs types de graphique). Un groupe de graphiques est une collection de séries avec le même type de graphique.</para>
-          <para>Modification de l’ordre de traçage d’une série entraîne le traçage des autres séries du groupe de graphiques à ajuster comme il convient.</para>
+          <para>L'ordre de traçage ne peut être défini qu'au sein d'un groupe de graphiques (vous ne pouvez pas définir l'ordre de traçage pour la totalité du graphique en présence de plusieurs types de graphique). Par groupe de graphiques, il faut entendre un ensemble de séries de données qui possèdent le même type de graphique.</para>
+          <para>Modification de l’ordre de traçage d’une série entraîne le traçage des autres séries du groupe de graphiques à ajuster que nécessaire.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1880,7 +1897,7 @@
         <summary>Cette propriété renvoie ou définit une collection de toutes les valeurs de la série. Il peut s’agir d’une plage d’une feuille de calcul ou un tableau de valeurs de constantes, mais pas une combinaison des deux. <b>Objet</b> en lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Les rapports de graphique croisé dynamique, cette propriété est en lecture seule.</para>
+          <para>Pour les rapports de graphique croisé dynamique, cette propriété est en lecture seule.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1914,7 +1931,7 @@
         <summary>Cette propriété renvoie ou définit un tableau de valeurs x pour une série de graphique. La propriété <b>XValues</b> peut être définie sur une plage dans une feuille de calcul ou d’un tableau de valeurs, mais elle ne peut pas être une combinaison des deux. <b>Objet</b> en lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Les rapports de graphique croisé dynamique pour cette propriété est en lecture seule.</para>
+          <para>Pour les rapports de graphique croisé dynamique de cette propriété est en lecture seule.</para>
           <para></para>
         </remarks>
       </Docs>

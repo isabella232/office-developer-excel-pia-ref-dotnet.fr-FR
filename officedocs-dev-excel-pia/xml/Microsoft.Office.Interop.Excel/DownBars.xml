@@ -1,10 +1,10 @@
 <Type Name="DownBars" FullName="Microsoft.Office.Interop.Excel.DownBars">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="86b025151902b86185c6a47185ca8e79c9861e63" />
+    <Meta Name="ms.openlocfilehash" Value="8a11ccac0189762102efaa1f69baea1cafc3ed8e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587534" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DownBars" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Cet objet représente les barres Baisse d'un groupe de graphiques.</summary>
     <remarks>
-      <para>Des barres baisse relient les points de la première série contenue dans le groupe de graphiques avec les valeurs inférieures à la dernière série (la ligne vers le bas à partir de la première série). Uniquement les groupes de ligne 2D contenant au moins deux séries peuvent comporter des barres baisse. Cet objet n’est pas une collection. Il n’existe aucun objet qui représente un seul vers le bas de la barre ; sont soit barres haut et bas barres activées pour tous les points d’un groupe de graphiques ou que vous les avez désactivés.</para>
+      <para>Les barres Baisse relient les points de la première série du groupe de graphiques avec les points inférieurs de la dernière série (lignes descendantes, partant de la première série). Seuls les groupes de graphiques en courbes 2D contenant au minimum deux séries peuvent comporter des barres Baisse. Cet objet n'est pas une collection. Il n'existe pas d'objet représentant une seule barre Baisse. Les barres Hausse et les barres Baisse sont soit activées, soit désactivées pour tous les points du groupe de graphiques.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.DownBars" /> propriété permet de renvoyer l’objet <b>DownBars</b> .</para>
       <para>Si le <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasUpDownBars" /> propriété a la <b>valeur False</b>, la plupart des propriétés de l’objet <b>DownBars</b> sont désactivées.</para>
       <para></para>
@@ -123,8 +123,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

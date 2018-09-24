@@ -1,10 +1,10 @@
 <Type Name="SmartTagOptions" FullName="Microsoft.Office.Interop.Excel.SmartTagOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c56b52fc5575c4410dbfda5ac1c7f7b98b1d6b52" />
+    <Meta Name="ms.openlocfilehash" Value="08e6c64d1c42348903ffb92e85b1dbbff6eb03f3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581794" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SmartTagOptions" />
@@ -32,11 +32,16 @@
     <summary>Cet objet représente les options qui peuvent être effectuées avec des balises actives.</summary>
     <remarks>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.SmartTagOptions" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object pour renvoyer un objet <b>SmartTagOptions</b> .</para>
-      <para>Une fois qu’un objet <b>SmartTagOptions</b> est renvoyé, vous pouvez utiliser les propriétés suivantes pour déterminer les options d’affichage des balises actives et s’il faut ont des balises actives incorporées dans le classeur actif.</para>
+      <para>Une fois qu’un objet <b>SmartTagOptions</b> est renvoyé, vous pouvez utiliser les propriétés suivantes pour déterminer les options d’affichage des balises actives et les balises actives incorporées dans le classeur actif ou non.</para>
       <list type="bullet">
         <item>
           <description>
             <see cref="P:Microsoft.Office.Interop.Excel.SmartTagOptions.EmbedSmartTags" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.SmartTagOptions.DisplaySmartTags" />
           </description>
         </item>
       </list>
@@ -98,8 +103,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplaySmartTags">
@@ -134,11 +141,11 @@
           <para>
             <b>XlSmartTagDisplayMode</b> peut être une des constantes suivantes :</para>
           <para>
-            <b>xlButtonOnly</b> affiche uniquement le bouton pour les balises actives.</para>
+            <b>xlButtonOnly</b> Affiche uniquement le bouton pour les balises actives.</para>
           <para>
-            <b>xlDisplayNone</b> rien n’est affiché pour les balises actives.</para>
+            <b>xlDisplayNone</b> Rien n’est affiché pour les balises actives.</para>
           <para>
-            <b>xlIndicatorAndButton</b> affiche l’indicateur et le bouton pour les balises actives.</para>
+            <b>xlIndicatorAndButton</b> Afficher l’indicateur et le bouton pour les balises actives.</para>
           <para></para>
         </remarks>
       </Docs>

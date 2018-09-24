@@ -1,10 +1,10 @@
 <Type Name="Shape" FullName="Microsoft.Office.Interop.Excel.Shape">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fbb7ccfce4b3641da65d4d7f598e5099a4404460" />
+    <Meta Name="ms.openlocfilehash" Value="79407cc874dc91aaa0bdd4a827ab38f1c0fb6b0b" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585084" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Shape" />
@@ -32,40 +32,40 @@
     <summary>Représente un objet dans la couche dessin, tel qu’une forme automatique, une forme libre, un objet OLE ou une image. L’objet <b>Shape</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection. La collection <b>Shapes</b> contient toutes les formes sur une diapositive.</summary>
     <remarks>
       <para>Il existe trois objets qui représentent des formes : la collection <b>Shapes</b> , qui représente toutes les formes d’un document ; le <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> collection, qui représente un sous-ensemble des formes d’un document spécifique (par exemple, un objet <b>ShapeRange</b> peut représenter les formes un et quatre sur le document ou toutes les formes sélectionnées dans le document) ; et l’objet <b>Shape</b> qui représente une seule forme d’un document. Si vous souhaitez travailler avec plusieurs formes en même temps ou avec des formes dans la sélection, utilisez une collection <b>ShapeRange</b> .</para>
-      <para>Cette section décrit comment :</para>
+      <para>Cette section décrit comment :</para>
       <list type="bullet">
         <item>
-          <description>Renvoyer une forme existante.</description>
+          <description>renvoyer une forme existante ;</description>
         </item>
         <item>
-          <description>Renvoyer une forme de la sélection.</description>
+          <description>renvoyer une forme de la sélection.</description>
         </item>
         <item>
-          <description>Renvoyer les formes attachées aux extrémités d’un connecteur.</description>
+          <description>renvoyer les formes attachées aux extrémités d’un connecteur ;</description>
         </item>
         <item>
-          <description>Renvoyer une nouvelle forme libre.</description>
+          <description>renvoyer une nouvelle forme libre ;</description>
         </item>
         <item>
-          <description>Renvoyer une seule forme d’un groupe.</description>
+          <description>Renvoyer une forme individuelle d’un groupe</description>
         </item>
         <item>
-          <description>Renvoyer un nouveau groupe de formes.</description>
+          <description>Renvoyer un nouveau groupe de formes</description>
         </item>
       </list>
       <para>Renvoi d’une forme existante</para>
-      <para>Utiliser des <b>formes</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la forme ou le numéro d’index, pour renvoyer un objet <b>Shape</b> qui représente une forme.</para>
+      <para>Utiliser les <b>formes</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la forme ou le numéro d’index, pour renvoyer un objet <b>Shape</b> qui représente une forme.</para>
       <para>Chaque forme reçoit un nom par défaut lorsque vous l’ajoutez à la collection <b>Shapes</b> . Pour donner à la forme un nom plus explicite, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" /> propriété.</para>
-      <para>Renvoi d’une forme dans la sélection</para>
+      <para>Renvoi d’une forme au sein de la sélection</para>
       <para>Utilisez <b>Selection.ShapeRange</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la forme ou le numéro d’index, pour renvoyer un objet <b>Shape</b> qui représente une forme dans la sélection.</para>
-      <para>Renvoi des formes attachées aux extrémités d’un connecteur</para>
+      <para>Renvoi des formes attachées aux extrémités d’un connecteur.</para>
       <para>Pour renvoyer un objet <b>Shape</b> qui représente une des formes attachées par un connecteur, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> ou <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> propriété.</para>
-      <para>Renvoi d’une forme libre nouvellement créée</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> et <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> méthodes pour définir la géométrie d’une nouvelle forme libre et utilisez la <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> méthode pour créer la forme libre et renvoyer l’objet <b>Shape</b> qui représente la it.</para>
-      <para>Renvoi d’une seule forme d’un groupe</para>
+      <para>Renvoi d’une nouvelle forme libre</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> et <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> méthodes pour définir la géométrie d’une nouvelle forme libre et utilisez la <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> pour créer la forme libre et renvoyer l’objet <b>Shape</b> qui la représente.</para>
+      <para>Renvoi d’une seule forme au sein d’un groupe</para>
       <para>Utilisez <b>GroupItems</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la forme ou le numéro d’index dans le groupe, pour renvoyer un objet <b>Shape</b> qui représente une seule forme d’une forme groupée.</para>
-      <para>Renvoi d’un groupe de formes nouvellement créé</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> ou <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> méthode à une plage de formes de groupe et renvoyer un seul objet <b>Shape</b> qui représente le nouveau groupe. Une fois un groupe a été créé, vous pouvez travailler avec le groupe de la même façon que vous travaillez avec une autre forme.</para>
+      <para>Renvoi d’un groupe de formes nouvellement constitué</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> ou <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> méthode à une plage de formes de groupe et renvoyer un seul objet <b>Shape</b> qui représente le nouveau groupe. Une fois un groupe a été créé, vous pouvez travailler avec le groupe de la même façon que vous travaillez avec n'importe quel autre forme.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -130,7 +130,7 @@
         <summary>Cette propriété renvoie ou définit la chaîne de texte descriptif (de remplacement) d’un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objet lorsque l’objet est enregistré dans une page Web. Valeur <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le texte de remplacement peut être affiché soit à la place d’image de la forme dans le navigateur Web ou directement sur l’image lorsque le pointeur de la souris se trouve au-dessus de l’image (dans les navigateurs qui prennent en charge ces fonctionnalités).</para>
+          <para>Le texte de remplacement peut être affiché à la place d’image de la forme dans le navigateur Web ou directement sur l’image lorsque le pointeur de la souris se trouve au-dessus de l’image (dans les navigateurs qui prennent en charge ces fonctionnalités).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -217,7 +217,7 @@
         <summary>Cette propriété renvoie ou définit le type de forme spécifié <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object, qui doit représenter une forme automatique autre qu’une ligne, une forme libre ou un connecteur. En lecture/écriture <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Lorsque vous modifiez le type d’une forme, celle-ci conserve sa taille, couleur et autres attributs.</para>
+          <para>Quand vous modifiez le type d'une forme, celle-ci conserve sa taille, sa couleur et autres attributs.</para>
           <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> objet pour définir ou renvoyer le type de connecteur.</para>
           <para></para>
         </remarks>
@@ -748,7 +748,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -775,7 +778,7 @@
         <summary>Cette méthode coupe l'objet et le place dans le Presse-papiers ou colle l'objet à l'emplacement spécifié.</summary>
         <remarks>
           <para>La plage coupée doit être constituée de cellules adjacentes.</para>
-          <para>Pouvant couper que des graphiques incorporés.</para>
+          <para>Vous ne pouvez couper que des graphiques incorporés.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1039,7 +1042,7 @@
           <see cref="T:Microsoft.Office.Core.GlowFormat" />
         </value>
         <remarks>
-          <para>L’effet de lumière ajoute une côté très attrayant aux graphiques.  </para>
+          <para>L'effet de lumière ajoute un côté très attrayant aux graphiques.  </para>
           <para></para>
         </remarks>
       </Docs>
@@ -1311,7 +1314,7 @@
         <summary>Renvoie le type de l’objet spécifié. Valeur <b>Integer</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Vous pouvez utiliser une étiquette d’identification en tant que référence de lien hypertexte dans d’autres documents HTML ou sur la même page Web.</para>
+          <para>Vous pouvez utiliser une étiquette d'identification en tant que référence de lien hypertexte dans d'autres documents HTML ou sur la même page Web.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1463,7 +1466,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> objet qui contient les propriétés de la forme spécifiée la mise en forme du trait. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour un trait, l’objet <b>LineFormat</b> représente le trait proprement dit ; pour une forme avec une bordure, l’objet <b>LineFormat</b> représente la bordure.</para>
+          <para>Pour un trait, l'objet <b>LineFormat</b> représente le trait lui-même ; pour une forme avec une bordure, l'objet <b>LineFormat</b> représente la bordure.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1589,7 +1592,7 @@
         <summary>Cette propriété renvoie ou définit le nom de l'objet. Type de données <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le tableau suivant indique les valeurs de l’exemple de la propriété <b>Name</b> et les propriétés associées en fonction d’une source de données OLAP dont le nom unique « [Europe]. [France]. [Paris] » et « Paris » du nom de source de données non-OLAP avec l’élément.</para>
+          <para>Le tableau suivant contient des valeurs d’exemple de la propriété <b>Name</b> et des propriétés liées affectées d’une source de données OLAP dotée du nom unique "[Europe].[France].[Paris]" et d’une source de données autre que OLAP dotée du nom "Paris".</para>
           <list type="table">
             <item>
               <term>
@@ -1600,28 +1603,42 @@
             </item>
             <item>
               <term>
-                <b>nom</b>
+                <b>Nom</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
-              <description>(Identique à la valeur de propriété SQL en lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
+              <description>(Valeur identique à celle de la propriété SQL ; en lecture seule)</description>
             </item>
             <item>
               <term>
                 <b>Valeur</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Lors de la spécification d’index dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para> expression 
-          <list type="table"><item><term>. PivotItems (« [Europe]. [ France]. [Paris] »)</term><description>Expression.PivotItems("Paris")</description></item></list><para>lors de l’utilisation du <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para><list type="table"><item><term>[Europe]. [ France]. [Paris]</term><description>Paris</description></item></list><para></para></remarks>
+          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <list type="table">
+            <item>
+              <term>expression. PivotItems (« [Europe]. [ France]. [Paris] »)</term>
+              <description>Expression.PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para>Lorsque vous utilisez la <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para>
+          <list type="table">
+            <item>
+              <term>[Europe]. [France]. [Paris]</term>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -1709,7 +1726,7 @@
         <summary>Cette propriété renvoie ou définit le nom d’une macro qui s’exécute lorsque l’utilisateur clique sur l’objet spécifié. Valeur <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définition de cette propriété pour un élément de menu remplace l’aide personnalisée définie pour l’élément de menu avec les informations de paramétrer les informations de la macro affectée.</para>
+          <para>Définir cette propriété pour un élément de menu remplace toutes les informations d'aide personnalisées de cet élément par les informations de la macro affectée.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1907,7 +1924,7 @@
       <Docs>
         <summary>Redirige les connecteurs afin qu'ils prennent le chemin le plus court possible entre les formes qu'ils se connectent.</summary>
         <remarks>
-          <para>Pour utiliser le chemin d’accès plus court, la méthode <b>RerouteConnections</b> peut détacher les extrémités d’un connecteur et les rattacher à différents points de connexion sur les formes connectées. Cette méthode redirige tous les connecteurs rattachés à la forme spécifiée ; Si la forme spécifiée est un connecteur, elle est redirigée.</para>
+          <para>Pour utiliser le chemin d’accès plus court, la méthode <b>RerouteConnections</b> peut détacher les extrémités d’un connecteur et les rattacher à différents points de connexion sur les formes connectées. Cette méthode redirige tous les connecteurs rattachés à la forme spécifiée ; si la forme spécifiée est un connecteur, elle est redirigée.</para>
           <para>Si cette méthode est appliquée à un connecteur, seul ce connecteur sera redirigé. Si cette méthode est appliquée à une forme connectée, tous les connecteurs de cette forme seront redirigés.</para>
           <para></para>
         </remarks>
@@ -1974,7 +1991,7 @@
         <param name="Scale">Facultatif <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. Spécifie la partie de la forme qui conserve sa position lorsque le forme est mise à l'échelle.</param>
         <summary>Redimensionne la hauteur de la forme en fonction d'un facteur défini.</summary>
         <remarks>
-          <para>Pour les images et objets OLE, vous pouvez indiquer si vous souhaitez mettre à l’échelle de la forme par rapport à l’original ou la taille actuelle. Les formes autres que les images et objets OLE sont toujours mises à l’échelle par rapport à leur hauteur actuelle.</para>
+          <para>Pour les images et objets OLE, vous pouvez indiquer si vous souhaitez mettre à l’échelle de la forme par rapport à l’original ou la taille actuelle. Les autres formes sont toujours mises à l'échelle par rapport à leur taille actuelle.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2009,7 +2026,7 @@
         <param name="Scale">Facultatif <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. Spécifie la partie de la forme qui conserve sa position lorsque le forme est mise à l'échelle.</param>
         <summary>Redimensionne la largeur de la forme en fonction d'un facteur défini.</summary>
         <remarks>
-          <para>Pour les images et objets OLE, vous pouvez indiquer si vous souhaitez mettre à l’échelle de la forme par rapport à l’original ou la taille actuelle. Les formes autres que les images et objets OLE sont toujours redimensionnées en fonction de leur largeur actuelle.</para>
+          <para>Pour les images et objets OLE, vous pouvez indiquer si vous souhaitez mettre à l’échelle de la forme par rapport à l’original ou la taille actuelle. Les autres formes sont toujours mises à l'échelle par rapport à leur largeur actuelle.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2366,7 +2383,7 @@
         <summary>Obtient ou définit le titre du texte de remplacement associé à la forme spécifiée.</summary>
         <value>Titre du texte de remplacement associé à la forme spécifiée.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>Pour définir la chaîne de texte descriptive du texte de remplacement pour une forme, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> propriété.</para>
           <para></para>
         </remarks>
@@ -2483,7 +2500,7 @@
         <summary>Dissocie les formes groupées dans la forme spécifiée ou la plage de formes. Dissocie les images et objets OLE dans la forme spécifiée. Renvoie les formes dissociées en tant qu’un seul <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objet.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Comme un groupe de formes est considéré comme un seul objet, groupement et dissociation des formes modifie le nombre d’éléments dans la collection <b>Shapes</b> et change les numéros d’index des éléments qui suivent les éléments modifiés de la collection.</para>
+          <para>Comme un groupe de formes est traité comme un objet unique, grouper et dissocier des formes modifie le nombre d'éléments dans la collection <b>Shapes</b> et change les numéros d'index des éléments qui suivent les éléments concernés dans la collection.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2544,31 +2561,31 @@
         <value>To be added.</value>
         <remarks>
           <para>Vous pouvez utiliser le tableau renvoyé par cette propriété comme argument pour la <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> méthode.</para>
-          <para>Le tableau suivant montre comment la propriété <b>Vertices</b> associe les valeurs du tableau vertArray() aux coordonnées des sommets d’un triangle.</para>
+          <para>Le tableau suivant montre comment la propriété <b>Vertices</b> associe les valeurs du tableau vertArray() avec les coordonnées des sommets d’un triangle.</para>
           <list type="table">
             <item>
               <term>vertArray (1, 1)</term>
-              <description>l’horizontale de la distance entre le premier sommet et le côté gauche du document</description>
+              <description>La distance horizontale entre le premier sommet et le côté gauche du document</description>
             </item>
             <item>
               <term>vertArray (1, 2)</term>
-              <description>la distance verticale entre le premier sommet en haut du document</description>
+              <description>La distance verticale entre le premier sommet et la partie supérieure du document</description>
             </item>
             <item>
-              <term> vertArray (2, 1)</term>
-              <description>la distance horizontale entre le deuxième sommet et le côté gauche du document</description>
+              <term>vertArray (2, 1)</term>
+              <description>La distance horizontale entre le deuxième sommet et le côté gauche du document</description>
             </item>
             <item>
               <term>vertArray (2, 2)</term>
-              <description>la distance verticale entre le deuxième sommet en haut du document</description>
+              <description>La distance verticale entre le deuxième sommet et la partie supérieure du document</description>
             </item>
             <item>
-              <term> vertArray (3, 1)</term>
-              <description>la distance horizontale entre le troisième sommet et le côté gauche du document</description>
+              <term>vertArray (3, 1)</term>
+              <description>La distance horizontale entre le troisième sommet et le côté gauche du document</description>
             </item>
             <item>
               <term>vertArray (3, 2)</term>
-              <description>la distance verticale entre le troisième sommet en haut du document</description>
+              <description>La distance verticale entre le troisième sommet et la partie supérieure du document</description>
             </item>
           </list>
           <para></para>
@@ -2663,7 +2680,7 @@
         <param name="ZOrderCmd">Requis <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />. Indique à quel endroit déplacer la forme spécifiée par rapport aux autres formes.</param>
         <summary>Déplace la forme spécifiée devant ou derrière les autres formes de la collection (autrement dit, change la position de la forme dans l'ordre décroissant).</summary>
         <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" /> propriété pour déterminer la position actuelle d’une forme dans l’ordre z.</para>
+          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" /> propriété pour déterminer la position actuelle d’une forme dans l’ordre de plan.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2694,8 +2711,11 @@
         <summary>Renvoie la position de la forme spécifiée dans l’ordre de plan. Valeur <b>Integer</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Pour définir la position de la forme dans l’ordre de superposition, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> méthode.</para> Position de la forme de 
-          <para>A dans l’ordre z correspond au numéro d’index de la forme dans le <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection. Par exemple, Shapes (1) renvoie la forme à l’axe z, et Shapes (4) renvoie la forme à l’avant de l’axe z.</para><para>Chaque fois que vous ajoutez une nouvelle forme à une collection, elle est ajoutée au début de l’ordre de plan par défaut.</para><para></para></remarks>
+          <para>Pour définir la position de la forme dans l’ordre de superposition, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> méthode.</para>
+          <para>Position d’une forme dans l’ordre z correspond au numéro d’index de la forme dans le <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection. Par exemple, Shapes (1) renvoie la forme à l’axe z, et Shapes (4) renvoie la forme au début de l’ordre de plan.</para>
+          <para>Si vous ajoutez une nouvelle forme à une collection, elle s'ajoute par défaut en première position dans l'ordre de superposition.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

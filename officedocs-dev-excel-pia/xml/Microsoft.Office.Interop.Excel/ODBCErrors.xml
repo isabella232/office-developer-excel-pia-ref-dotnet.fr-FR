@@ -1,10 +1,10 @@
 <Type Name="ODBCErrors" FullName="Microsoft.Office.Interop.Excel.ODBCErrors">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0f844c796a70c14415067d4c36b48a7720fd6ff4" />
+    <Meta Name="ms.openlocfilehash" Value="52d0d4d031e74de46f05c8341dc3f30a9dd6d4e1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577433" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ODBCErrors : System.Collections.IEnumerable" />
@@ -35,7 +35,7 @@
   <Docs>
     <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Excel.ODBCError" /> objets.</summary>
     <remarks>
-      <para>Chaque objet <b>ODBCError</b> représente une erreur renvoyée par la requête ODBC la plus récente. Si la requête ODBC spécifiée s’exécute sans erreur, la collection ODBCErrors est vide. Les erreurs de la collection sont indexées dans l’ordre dans lequel elles sont générées par la source de données ODBC. Vous ne pouvez pas ajouter des membres à la collection.</para>
+      <para>Chaque objet <b>ODBCError</b> représente une erreur renvoyée par la requête ODBC la plus récente. Si la requête ODBC spécifiée s'exécute sans erreur, la collection ODBCErrors est vide. Les erreurs de la collection sont indexées dans l'ordre où elles sont produites par la source de données ODBC. Vous ne pouvez pas ajouter de membre à la collection.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.ODBCErrors" /> propriété pour renvoyer la collection <b>ODBCErrors</b> .</para>
       <para></para>
     </remarks>
@@ -158,8 +158,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

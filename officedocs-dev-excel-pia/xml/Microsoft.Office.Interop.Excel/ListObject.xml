@@ -1,10 +1,10 @@
 <Type Name="ListObject" FullName="Microsoft.Office.Interop.Excel.ListObject">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e5db05498474766473e84216636995014a7a4d11" />
+    <Meta Name="ms.openlocfilehash" Value="1bb3f266b1d484c480fc364acfdb40b99ff98c94" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583019" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ListObject" />
@@ -94,7 +94,7 @@
         <summary>Renvoie une valeur <b>Boolean</b> indiquant si une <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet dans une feuille de calcul est actif, c'est-à-dire, si la cellule active est à l’intérieur de la plage de l’objet <b>ListObject</b> .</summary>
         <value>To be added.</value>
         <remarks>
-          <para>, Car il n’existe pas de méthode <b>Activate</b> pour l’objet <b>ListObject</b> , vous pouvez activer un objet <b>ListObject</b> uniquement en activant une plage de cellules dans la liste.</para>
+          <para>Car il n’existe pas de méthode <b>Activate</b> pour l’objet <b>ListObject</b> , vous pouvez activer un objet <b>ListObject</b> uniquement en activant une plage de cellules dans la liste.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -128,7 +128,7 @@
         <summary>Obtient ou définit la chaîne de texte descriptif (de remplacement) pour la table spécifiée.</summary>
         <value>La chaîne de texte descriptif (de remplacement) pour la table spécifiée.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>La valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ListObject.AlternativeText" /> propriété correspond à la valeur de la zone de titre dans la boîte de dialogue texte de remplacement qui s’affiche en double-cliquant sur un tableau, en pointant sur le tableau, puis en cliquant sur texte de remplacement.</para>
           <para></para>
         </remarks>
@@ -225,7 +225,7 @@
           <b>Chaîne</b>
         </value>
         <remarks>
-          <para>Le texte de commentaire ne peut pas dépasser 255 caractères.</para>
+          <para>Le texte de commentaire ne doit pas dépasser 255 caractères.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -256,8 +256,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBodyRange">
@@ -459,7 +461,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> représentant l’insertion de ligne, le cas échéant, d’un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la ligne d’insertion n’est pas visible, car la liste est inactive, l’objet <b>Nothing</b> est renvoyé.</para>
+          <para>Si l'option Insérer une ligne n'est pas visible, car la liste est inactive, l'objet <b>Nothing</b> est renvoyé.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1148,7 +1150,7 @@
         <summary>Obtient ou définit la description associée à la chaîne de texte de remplacement pour la table spécifiée.</summary>
         <value>La description associée à la chaîne de texte de remplacement pour la table spécifiée.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>La valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ListObject.Summary" /> propriété correspond à la valeur de la zone Description dans la boîte de dialogue texte de remplacement qui s’affiche en double-cliquant sur un tableau, en pointant sur le tableau, puis en cliquant sur texte de remplacement.</para>
           <para></para>
         </remarks>
@@ -1270,7 +1272,7 @@
         <summary>Supprime le lien vers un site Microsoft Windows SharePoint Services à partir d’une liste.</summary>
         <remarks>
           <para>Cette propriété renvoie la <b>valeur Nothing</b>.</para>
-          <para>Cette méthode est appelée et la liste est supprimée, il ne peut pas être annulée.</para>
+          <para>Le résultat de cette méthode est irréversible.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1298,9 +1300,9 @@
       <Docs>
         <summary>Supprime la fonctionnalité de liste d’un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet.</summary>
         <remarks>
-          <para>Une fois que vous utilisez cette méthode, la plage de cellules constituant la liste sera une plage de données ordinaire.</para>
+          <para>Une fois que vous utilisez cette méthode, la plage de cellules constituant la liste sera une plage de données normale.</para>
           <para>Cette propriété renvoie la <b>valeur Nothing</b>.</para>
-          <para>L’exécution de cette méthode laisse les données des cellules, la mise en forme et les formules dans la feuille de calcul. La ligne des totaux est également inchangée. Cette méthode supprime tout lien vers un site Microsoft Windows SharePoint Services. Filtre automatique et la ligne d’insertion sont également supprimés de la liste.</para>
+          <para>Cette méthode conserve les données des cellules, la mise en forme et les formules dans la feuille de calcul. La ligne des totaux est également inchangée. Cette méthode supprime tout lien vers un site Microsoft Windows SharePoint Services. Filtre automatique et la ligne d’insertion sont également supprimés de la liste.</para>
           <para></para>
         </remarks>
       </Docs>

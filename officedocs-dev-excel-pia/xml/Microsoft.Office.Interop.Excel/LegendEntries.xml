@@ -1,10 +1,10 @@
 <Type Name="LegendEntries" FullName="Microsoft.Office.Interop.Excel.LegendEntries">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9f439456cc13f822ef976d853af582329ce32bfe" />
+    <Meta Name="ms.openlocfilehash" Value="8e175f39321b99a7e8cc5297856cd4932c8371cc" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579337" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LegendEntries : System.Collections.IEnumerable" />
@@ -37,8 +37,10 @@
     <remarks>
       <para>Chaque entrée de légende est composée de deux parties : le texte de l’entrée, qui est le nom de la série ou la courbe de tendance associée à l’entrée de légende ; le marqueur d’entrée et qui relie visuellement l’entrée de légende avec la courbe de tendance dans le graphique ou la série associée. Les propriétés de mise en forme pour la marque d’entrée et sa courbe de tendance ou la série associée sont contenues dans le <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objet.</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Legend.LegendEntries(System.Object)" /> méthode pour renvoyer la collection <b>LegendEntries</b> .</para>
-      <para>Utilisez <b>LegendEntries</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de l’entrée de légende, pour renvoyer un seul objet <b>LegendEntry</b> . Vous ne peut pas renvoyer des entrées de légende par un nom.</para> Nombre de 
-      <para>l’index représente la position de l’entrée de légende dans la légende. LegendEntries(1) se trouve en haut de la légende ; LegendEntries.Count se trouve en bas.</para><para></para></remarks>
+      <para>Utilisez <b>LegendEntries</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de l’entrée de légende, pour renvoyer un seul objet <b>LegendEntry</b> . Vous ne peut pas renvoyer des entrées de légende par un nom.</para>
+      <para>Le numéro d'index représente la position de l'entrée de légende dans la légende. LegendEntries(1) se trouve en haut de la légende ; LegendEntries.Count se trouve en bas.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -155,8 +157,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

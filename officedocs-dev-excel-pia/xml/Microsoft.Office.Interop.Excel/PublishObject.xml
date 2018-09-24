@@ -1,10 +1,10 @@
 <Type Name="PublishObject" FullName="Microsoft.Office.Interop.Excel.PublishObject">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b96f660c297a7de8cbf9fee33cb4e9de84d52863" />
+    <Meta Name="ms.openlocfilehash" Value="fcc61ded7b33a1797bd24a5447641b388b7f9f14" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574745" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PublishObject" />
@@ -119,8 +119,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -241,7 +243,11 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le type de code HTML généré par Microsoft Excel lorsque vous enregistrez l’élément spécifié dans une page Web.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>TypeHTML</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> constantes spécifiant si l’élément est statique ou interactif dans la page Web. La valeur par défaut est <b>xlHtmlStatic</b>.</para><para></para></remarks>
+        <remarks>
+          <para>
+            <b>HtmlType</b> , la propriété peut être une de le <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> constantes spécifiant si l’élément est statique ou interactif dans la page Web. La valeur par défaut est <b>xlHtmlStatic</b>.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -297,7 +303,7 @@
         <param name="Create">Facultatif <b>Object</b>. Si le fichier HTML existe et cet argument <b>la valeur True</b> remplace le fichier, et la valeur <b>false</b> insère l’ou les éléments à la fin du fichier. Si le fichier n’existe pas, le fichier est créé quel que soit la valeur de la <paramref name="Create" /> argument.</param>
         <summary>Cette méthode enregistre dans une page Web un élément ou une collection d'éléments contenus dans un document.</summary>
         <remarks>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> propriété renvoie ou définit l’emplacement et le nom du fichier HTML.</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> propriété renvoie ou définit l’emplacement et le nom du fichier HTML.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -356,7 +362,7 @@
         <summary>Renvoie le nom unique identifiant les éléments qui ont un <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.SourceType" /> propriété pour valeur <b>xlSourceRange</b>, <b>xlSourceChart</b>, <b>xlSourcePrintArea</b>, <b>xlSourceAutoFilter</b>, <b>xlSourcePivotTable</b>ou <b>xlSourceQuery</b> .</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la propriété <b>SourceType</b> a pour <b>valeur xlSourceRange</b>, cette propriété renvoie une plage, qui peut être un nom défini. Si la propriété <b>SourceType</b> a la valeur <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>ou <b>xlSourceQuery</b>, cette propriété renvoie le nom de l’objet, comme un nom de graphique, un nom de rapport de tableau croisé dynamique ou un nom de table de requête.</para>
+          <para>Si la propriété <b>SourceType</b> a la valeur <b>xlSourceRange</b>, cette propriété renvoie une plage, qui peut être un nom défini. Si la propriété <b>SourceType</b> a la valeur <b>xlSourceChart</b>, <b>xlSourcePivotTable</b> ou <b>xlSourceQuery</b>, cette propriété renvoie le nom de l'objet, tel qu'un nom de graphique, un nom de rapport de tableau croisé dynamique ou un nom de table de requête.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -418,7 +424,7 @@
         <summary>Cette propriété renvoie ou définit le titre de la page Web lorsque le document est enregistré en tant que page Web.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Le titre est généralement affiché dans le titre de la fenêtre lorsque le document est affiché dans le navigateur Web de la barre.</para>
+          <para>Le titre est généralement affiché dans la barre de titre de la fenêtre lorsque le document est visualisé dans le navigateur Web.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="LinearGradient" FullName="Microsoft.Office.Interop.Excel.LinearGradient">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="250babde04104bda95819ab5ffb2aca0cc58b39e" />
+    <Meta Name="ms.openlocfilehash" Value="82c4b43f65abfbbe4c1e37be6fcbcaa9b08edec1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20573814" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LinearGradient" />
@@ -32,10 +32,10 @@
     <summary>Le <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objet transitions à travers une série de couleurs d’une manière linéaire le long d’un angle spécifique.</summary>
     <remarks>
       <para>
-        <b>Remarque</b>: quelques éléments à prendre en compte lors de l’utilisation de <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objets</para>
+        <b>Remarque</b>: certains éléments à prendre en compte lorsque vous travaillez avec <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objets</para>
       <list type="bullet">
         <item>
-          <description>tente d’accéder à un <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> propriété d’un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objet qui n’a pas un remplissage en dégradé existant entraîne une erreur d’exécution.  À l’esprit les <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> propriété avant d’accéder à la propriété Gradient.</description>
+          <description>Lors de l’accès un <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> propriété d’un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objet qui n’a pas un remplissage en dégradé existant entraîne une erreur d’exécution.  À l’esprit les <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> propriété avant d’accéder à la propriété de dégradé.</description>
         </item>
         <item>
           <description>Si <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> est modifiée à partir d’un type de dégradé en type non dégradé, le <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objet remplira avec les valeurs par défaut.</description>
@@ -132,7 +132,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. La propriété Creator est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL. </para>
+          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété Creator est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -168,7 +168,7 @@
           <b>Double</b>
         </value>
         <remarks>
-          <para>Utilise les valeurs comprises entre 0 - 360.</para>
+          <para>Utilise les valeurs étant compris entre 0 - 360.</para>
           <para></para>
         </remarks>
       </Docs>

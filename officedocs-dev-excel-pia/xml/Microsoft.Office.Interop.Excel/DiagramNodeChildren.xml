@@ -1,10 +1,10 @@
 <Type Name="DiagramNodeChildren" FullName="Microsoft.Office.Interop.Excel.DiagramNodeChildren">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="400abd43bd6a9f21fbbd69dbd9ad5dc5baf8bf44" />
+    <Meta Name="ms.openlocfilehash" Value="c37b83ec609da17fbc1f54f6970e5d09d6941f16" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20573541" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DiagramNodeChildren : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
@@ -34,7 +34,10 @@
   </Attributes>
   <Docs>
     <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objets représentant les nœuds enfants d’un diagramme.</summary>
-    <remarks>Utilisation de <para>les <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> propriété de l’objet <b>DiagramNode</b> pour renvoyer une collection <b>DiagamNodeChildren</b> . Pour ajouter un nœud de diagramme enfant individuel à la collection, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> méthode. Pour renvoyer des nœuds de diagramme enfants individuels dans la collection, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> ou <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> propriétés, ou <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> méthode.</para><para></para></remarks>
+    <remarks>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> propriété de l’objet <b>DiagramNode</b> pour renvoyer une collection <b>DiagamNodeChildren</b> . Pour ajouter un nœud de diagramme enfant individuel à la collection, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> méthode. Pour renvoyer des nœuds de diagramme enfants individuels dans la collection, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> ou <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> propriétés, ou <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> méthode.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -155,8 +158,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstChild">

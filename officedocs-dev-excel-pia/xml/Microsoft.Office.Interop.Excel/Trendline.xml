@@ -1,10 +1,10 @@
 <Type Name="Trendline" FullName="Microsoft.Office.Interop.Excel.Trendline">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c9024644c20463eaf6b1c272ed45234658b8e5de" />
+    <Meta Name="ms.openlocfilehash" Value="43cabd68ae83576c2d2f307683fffd5d099fc7d7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575732" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Trendline" />
@@ -31,9 +31,9 @@
   <Docs>
     <summary>Représente une courbe de tendance dans un graphique. Une courbe de tendance indique la tendance, ou sens, des données d'une série.</summary>
     <remarks>
-      <para>L’objet <b>Trendline</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> collection. La collection <b>Trendlines</b> contient tous les objets <b>Trendline</b> pour une seule série.</para>
+      <para>L’objet <b>Trendline</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> collection. La collection <b>Trendlines</b> contient tous les objets <b>Trendline</b> d'une série donnée.</para>
       <para>Utilisez <b>Trendlines</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de la courbe de tendance, pour renvoyer un seul objet <b>Trendline</b> .</para>
-      <para>Le numéro d’index indique l’ordre dans lequel les courbes de tendance ont été ajoutées à la série. Trendlines (1) est la première courbe de tendance ajoutée à la série et Trendlines (Trendlines.Count) est la dernière série ajoutée.</para>
+      <para>Le numéro d’index indique l’ordre dans lequel les courbes de tendance ont été ajoutées à la série. Trendlines(1) est la première courbe de tendance ajoutée à la série et Trendlines(Trendlines.Count), la dernière.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -216,8 +216,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -533,7 +535,7 @@
           <b>La valeur true</b> si le point d’intersection de la courbe de tendance et de l’axe des ordonnées est automatiquement déterminé par la régression.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Définissant le <see cref="P:Microsoft.Office.Interop.Excel.Trendline.Intercept" /> propriété définit cette propriété sur <b>False</b>.</para>
+          <para>Définition de la <see cref="P:Microsoft.Office.Interop.Excel.Trendline.Intercept" /> propriété définit cette propriété sur <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>

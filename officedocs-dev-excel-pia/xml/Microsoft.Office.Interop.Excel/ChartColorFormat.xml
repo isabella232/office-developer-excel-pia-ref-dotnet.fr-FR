@@ -1,10 +1,10 @@
 <Type Name="ChartColorFormat" FullName="Microsoft.Office.Interop.Excel.ChartColorFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fc25a7018dd0e9e1de00d846f891570157c61e7" />
+    <Meta Name="ms.openlocfilehash" Value="deb6994bf1703cd29b935ef38c58228a26d6f7d9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582305" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartColorFormat" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Cet objet n'est utilisé qu'avec des graphiques. Représente la couleur d'un objet d'une seule couleur ou la couleur de premier plan ou d'arrière-plan d'un objet avec un dégradé ou un remplissage avec motif.</summary>
     <remarks>
-      <para>Utilisez une des propriétés répertoriées dans le tableau suivant pour renvoyer un objet <b>ChartColorFormat</b> .</para>
+      <para>Utilisez l’une des propriétés présentées dans tableau ci-après pour renvoyer un objet <b>ChartColorFormat</b>.</para>
       <list type="table">
         <item>
           <term>
@@ -39,16 +39,18 @@
           </term>
           <description>
             <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" />
-          </description>Couleur de remplissage d’arrière-plan (utilisée dans un remplissage ombré ou à motif)
+          </description>
+          <description>La couleur de remplissage d'arrière-plan (utilisée dans un remplissage ombré ou avec motif)</description>
         </item>
         <item>
           <term>
             <see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.ForeColor" />
           </term>
           <description>
-            <b>ChartFillFormat </b>
-          </description>de 
-          <description>remplissage du premier plan couleur (ou simplement la couleur de remplissage d’un remplissage uniforme)</description></item>
+            <b>ChartFillFormat</b>
+          </description>
+          <description>Couleur de remplissage du premier plan (ou simplement la couleur d'un remplissage uniforme)</description>
+        </item>
       </list>
       <para></para>
     </remarks>
@@ -139,8 +141,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

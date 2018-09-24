@@ -1,10 +1,10 @@
 <Type Name="Legend" FullName="Microsoft.Office.Interop.Excel.Legend">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1be48c9d0d19cc48ee0a2813dac8b8828be4fbf" />
+    <Meta Name="ms.openlocfilehash" Value="67108bf0496a38e9f989b18082d38d2c41e4a563" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587618" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Legend" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>Chaque graphique peut avoir qu’une seule légende. L’objet <b>Legend</b> contient un ou plusieurs <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objets ; chaque <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objet contient un <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objet.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" /> propriété permet de renvoyer l’objet <b>Legend</b> .</para>
-      <para>La légende du graphique n’est pas visible, sauf si la <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> propriété a la <b>valeur True</b>. Si cette propriété a la <b>valeur False</b>, propriétés et méthodes de l’objet <b>Legend</b> échouent.</para>
+      <para>La légende du graphique n’est pas visible, sauf si la <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> propriété a la <b>valeur True</b>. Si cette propriété a la <b>valeur False</b>, les propriétés et méthodes de l’objet <b>Legend</b> échouera.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -187,8 +187,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -372,7 +374,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Cette propriété n’affecte pas si un graphique est en mode de mise en forme automatique ou non.  Si l’utilisateur ajoute un titre à l’aide de la commande au-dessus du graphique, le graphique devient plus petit, comme dans Microsoft Office Excel 2003.  Si l’utilisateur supprime le titre ou sélectionne une des options de titre de superposition, le graphique s’agrandit, comme si le titre n’était pas dans le graphique.</para>
+          <para>Cette propriété n'a pas d'influence sur le fait que le graphique soit ou non en mode de disposition automatique.  Si l’utilisateur ajoute un titre à l’aide de la commande au-dessus du graphique, le graphique devient plus petit, comme dans Microsoft Office Excel 2003.  S'il supprime ensuite le titre ou sélectionne une ou plusieurs des options de titre avec superposition, le graphique s'agrandit, comme si le titre n'y était plus.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -497,35 +499,42 @@
           <list type="table">
             <item>
               <term>
-                <b>légende</b>
+                <b>Légende</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
-                <b>nom</b>
+                <b>Nom</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
-              <description>(Identique à la valeur de propriété SQL en lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
+              <description>(Valeur identique à celle de la propriété SQL ; en lecture seule)</description>
             </item>
             <item>
               <term>
                 <b>Valeur</b>
               </term>
-              <description>[Europe]. [ France]. [Paris] (lecture seule)</description>
+              <description>[Europe].[France].[Paris] (en lecture seule)</description>
               <description>Paris</description>
             </item>
           </list>
-          <para>Lors de la spécification d’index dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para> expression 
-          <list type="table"><item><term>. PivotItems (« [Europe]. [ France]. [Paris] »)</term><description>expression. PivotItems("Paris")</description></item></list><para></para></remarks>
+          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <list type="table">
+            <item>
+              <term>expression. PivotItems (« [Europe]. [ France]. [Paris] »)</term>
+              <description>expression. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

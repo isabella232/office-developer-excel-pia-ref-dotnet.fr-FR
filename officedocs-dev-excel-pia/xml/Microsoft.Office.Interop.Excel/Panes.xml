@@ -1,10 +1,10 @@
 <Type Name="Panes" FullName="Microsoft.Office.Interop.Excel.Panes">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="366e9975d23f2f4766d04e9edb84c85c24c04024" />
+    <Meta Name="ms.openlocfilehash" Value="7d60437390854068b5400256a6be386c545e5280" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578091" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Panes" />
@@ -32,9 +32,9 @@
     <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> les objets dans la fenêtre spécifiée.</summary>
     <remarks>
       <para>Les objets 
-        <b>Pane</b> existent uniquement dans les feuilles de calcul et les feuilles macro Microsoft Excel 4.0.</para>
+        <b>Pane</b> existent uniquement dans les feuilles de calculs et les feuilles macro Microsoft Excel 4.0.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.Panes" /> propriété permet de renvoyer la collection <b>Panes</b> .</para>
-      <para>Pour utiliser des <b>volets</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index volet, pour renvoyer un seul objet <b>Pane</b> .</para>
+      <para>Utilisez <b>Panes</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index volet, pour renvoyer un seul objet <b>Pane</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -156,8 +156,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">

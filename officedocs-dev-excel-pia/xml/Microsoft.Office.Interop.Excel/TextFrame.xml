@@ -1,10 +1,10 @@
 <Type Name="TextFrame" FullName="Microsoft.Office.Interop.Excel.TextFrame">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5f65a001e332b0d729e68b7d8047a3dbe72260fc" />
+    <Meta Name="ms.openlocfilehash" Value="2d1bfd568b124e87a7cc39c702d6b945df65ab68" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577062" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TextFrame" />
@@ -188,8 +188,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -222,7 +224,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propriété <b>HorizontalAlignment</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> constantes.</para>
-          <para>Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -256,7 +258,7 @@
         <summary>Obtient ou définit le paramètre de dépassement horizontal de l’objet spécifié.</summary>
         <value>Le paramètre de dépassement horizontal de l’objet spécifié.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>Cette propriété n’a d’effet lors de la <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.WordWrap" /> propriété a la valeur <b>msoFalse</b> (0).</para>
           <para></para>
         </remarks>
@@ -415,7 +417,7 @@
         <summary>L’orientation du cadre de texte.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>Orientation</b> peut être une valeur entière comprise entre -90 et 90 degrés ou une des constantes <b>MsoTextOrientation</b> .</para>
+          <para>La propriété <b>Orientation</b> peut être une valeur entière comprise entre -90 et 90 degrés ou une des constantes <b>MsoTextOrientation suivantes</b> .</para>
           <para></para>
         </remarks>
       </Docs>
@@ -477,8 +479,8 @@
         <summary>Cette propriété renvoie ou définit le sens de lecture de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>ReadingOrder</b> peut être une des constantes suivantes : <b>xlRTL</b> (de droite à gauche), <b>xlLTR</b> (de gauche à droite) ou <b>xlContext</b>.</para>
-          <para>Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para>La propriété <b>ReadingOrder</b> peut être une des constantes suivantes : <b>xlContext</b>, <b>xlLTR</b> (de gauche à droite) ou <b>xlRTL</b> (de droite à gauche).</para>
+          <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -513,7 +515,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propriété <b>VerticalAlignment</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Excel.XlVAlign" /> constantes.</para>
-          <para>Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -547,7 +549,7 @@
         <summary>Obtient ou définit le paramètre de dépassement vertical de l’objet spécifié.</summary>
         <value>Le paramètre de dépassement vertical de l’objet spécifié.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>Cette propriété n’a d’effet lors de la <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.AutoSize" /> propriété a la <b>valeur false</b>.</para>
           <para></para>
         </remarks>

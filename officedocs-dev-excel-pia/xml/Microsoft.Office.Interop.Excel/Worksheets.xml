@@ -1,10 +1,10 @@
 <Type Name="Worksheets" FullName="Microsoft.Office.Interop.Excel.Worksheets">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="62181a586d545e1a026f86bd8ec84b25d6e092ad" />
+    <Meta Name="ms.openlocfilehash" Value="a754235a311170e13d0d4825decb297f28a9fa27" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581500" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
@@ -37,8 +37,10 @@
     <remarks>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.Worksheets" /> propriété pour renvoyer la collection de <b>feuilles de calcul</b> .</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> méthode pour créer une nouvelle feuille de calcul et l’ajouter à la collection.</para>
-      <para>Utilisation <b>des feuilles de calcul</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de feuille de calcul ou le nom, pour renvoyer un seul objet <b>Worksheet</b> .</para> Objet 
-      <para>la <b>feuille de calcul</b> est également un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection. La collection <b>Sheets</b> contient toutes les feuilles du classeur (feuilles de calcul et les feuilles de graphique).</para><para></para></remarks>
+      <para>Utilisez les <b>feuilles de calcul</b>(<paramref name="index" />), où <paramref name="index" /> est le nom, pour renvoyer un seul objet de <b>feuille de calcul</b> ou le numéro d’index de feuille de calcul.</para>
+      <para>L’objet <b>Worksheet</b> est également un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection. La collection <b>Sheets</b> contient toutes les feuilles du classeur (feuilles de calcul et les feuilles de graphique).</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -305,7 +307,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -422,7 +427,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> sauts de collection qui représente la page horizontale sur la feuille. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Est une limite de 1026 sauts de page horizontaux par feuille.</para>
+          <para>Une feuille ne peut pas contenir plus de 1 026 sauts de page horizontaux.</para>
           <para></para>
         </remarks>
       </Docs>

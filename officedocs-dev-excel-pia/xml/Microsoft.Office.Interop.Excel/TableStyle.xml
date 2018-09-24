@@ -1,10 +1,10 @@
 <Type Name="TableStyle" FullName="Microsoft.Office.Interop.Excel.TableStyle">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9a5ba00962b5e6ee8160258b4d7d906bd9a5362c" />
+    <Meta Name="ms.openlocfilehash" Value="4195e3f6ef14d553a26ff7dba570149f82c6b4a9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583523" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TableStyle" />
@@ -30,7 +30,10 @@
   </Attributes>
   <Docs>
     <summary>Représente un style donné qui peut être appliqué à un tableau.</summary>
-    <remarks>Style de tableau <para>A définit la mise en forme pour un ou plusieurs des éléments d’une table ou d’un tableau croisé dynamique. Par exemple, une colonne est un élément d’un tableau. Un style de tableau peut définir que les colonnes d’un tableau sont mis en forme avec remplacement de la mise en forme (également appelé bandes ou bandes).  </para><para></para></remarks>
+    <remarks>
+      <para>Un style de tableau définit la mise en forme pour un ou plusieurs des éléments d’une table ou d’un tableau croisé dynamique. Par exemple, une colonne est un élément d’un tableau. Un style de tableau peut définir que les colonnes d’un tableau sont mis en forme avec remplacement de la mise en forme (également appelé bandes ou bandes).  </para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -92,7 +95,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
-          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet.</para>
+          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -277,7 +280,7 @@
           <b>Chaîne</b>
         </value>
         <remarks>
-          <para>Si le style est un style prédéfini, cette propriété renvoie le nom du style dans la langue des paramètres régionaux.</para>
+          <para>S'il s'agit d'un style prédéfini, cette propriété renvoie le nom du style dans la langue définie au niveau des paramètres régionaux.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -380,7 +383,7 @@
         <value>
           <b>la valeur true</b> si le style de tableau spécifié est affiché comme disponible dans la galerie de styles de segment ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -416,8 +419,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Si <b>la valeur True</b>, ce style est affiché dans la galerie de styles de tableau.</para>
-          <para>Vous pouvez définir cette propriété sur <b>False</b> même lorsque le style est déjà appliqué à un tableau.  Dans ce cas la galerie n’affiche pas le style et lorsque la cellule active est dans cette table, aucun style n’est indiqué comme étant sélectionnée.</para>
+          <para>Si la valeur est <b>True</b>, ce style est affiché dans la galerie des styles de tableau.</para>
+          <para>Vous pouvez affecter la valeur <b>False</b> à cette propriété même lorsque le style est déjà appliqué à un tableau. Dans ce cas, la galerie ne montrera pas le style et, quand la cellule active se trouve dans la table, aucun style n'apparaît sélectionné.</para>
           <para></para>
         </remarks>
       </Docs>

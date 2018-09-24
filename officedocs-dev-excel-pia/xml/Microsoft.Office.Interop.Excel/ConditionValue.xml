@@ -1,10 +1,10 @@
 <Type Name="ConditionValue" FullName="Microsoft.Office.Interop.Excel.ConditionValue">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a502761111afad4e3e8a449a28ce61efad23c0b4" />
+    <Meta Name="ms.openlocfilehash" Value="81c793a0733604f15df8956de448166bd0681dac" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587310" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ConditionValue" />
@@ -64,7 +64,7 @@
         <value>
           <b>Application</b> (voir ci-dessus)</value>
         <remarks>
-          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet.</para>
+          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -129,37 +129,43 @@
         <param name="newvalue">La valeur attribuée à la barre de données plus courte ou la plus longue. En fonction de la <paramref name="newtype" /> argument, cela peut être un nombre ou une formule qui calcule un nombre.</param>
         <summary>Modifie l’évaluation de la barre la plus longue ou la plus courte pour une règle de mise en forme conditionnelle de barre de données.</summary>
         <remarks>
-          <para>Le tableau suivant décrit les valeurs de seuil acceptables pour chaque type d’évaluation.</para>
+          <para>Le tableau suivant décrit les valeurs de seuil acceptables pour chaque type d'évaluation.</para>
           <list type="table">
             <item>
               <term>
                 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionLowestValue" />
-              </term>argument est ignoré
+              </term>
+              <description>L'argument est ignoré</description>
             </item>
             <item>
               <term>
                 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionHighestValue" />
-              </term>argument est ignoré
+              </term>
+              <description>L'argument est ignoré</description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />
-              </term>n’importe quel nombre
+              </term>
+              <description>N'importe quel nombre</description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />
-              </term>n’importe quel nombre entre 0 et 100 
+              </term>
+              <description>N'importe quel nombre entre 0 et 100 </description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />
-              </term>n’importe quel nombre entre 0 et 100
+              </term>
+              <description>N'importe quel nombre entre 0 et 100</description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />
-              </term>une formule qui Renvoie un seul numéro
+              </term>
+              <description>Formule qui renvoie un seul nombre</description>
             </item>
           </list>
           <para></para>
@@ -255,7 +261,7 @@
         </value>
         <remarks>
           <para>Vous pouvez définir la valeur que si le <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> propriété pour le format conditionnel est définie sur une des constantes suivantes : <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />, ou <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />.</para>
-          <para>Si le type de seuil est une formule, vous pouvez définir la formule en tant que <b>chaîne</b>. La formule doit renvoyer un seul numéro.</para>
+          <para>Si le seuil est une formule, vous pouvez définir celle-ci sous la forme d'une valeur de type <b>String</b>. La formule doit renvoyer un seul nombre.</para>
           <para></para>
         </remarks>
       </Docs>

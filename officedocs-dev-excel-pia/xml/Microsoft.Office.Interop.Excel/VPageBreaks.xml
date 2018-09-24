@@ -1,10 +1,10 @@
 <Type Name="VPageBreaks" FullName="Microsoft.Office.Interop.Excel.VPageBreaks">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="40747211c0a9bc6951867f60f1e99349accca4af" />
+    <Meta Name="ms.openlocfilehash" Value="9f1ccf11f0bbaf483e28c650605da8bce1726a26" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581955" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface VPageBreaks : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Collection de sauts de page verticaux au sein de la zone d'impression. Chaque saut de page vertical est représenté par un <see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" /> objet.</summary>
     <remarks>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.VPageBreaks" /> propriété pour renvoyer la collection <b>VPageBreaks</b> . Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> pour ajouter un saut de page vertical.</para>
-      <para>Si vous ajoutez un saut de page qui ne croise pas la zone d’impression, puis l’objet <b>VPageBreak</b> nouvellement ajouté n’apparaît pas dans la collection <b>VPageBreaks</b> de la zone d’impression. Le contenu de la collection peut changer si la zone d’impression est redimensionnée ou redéfinie.</para>
+      <para>Si vous ajoutez un saut de page qui ne croise pas la zone d’impression, le nouvel objet <b>VPageBreak</b> n’apparaît pas dans la collection <b>VPageBreaks</b> de la zone d’impression. Le contenu de la collection peut changer si la zone d’impression est redimensionnée ou redéfinie.</para>
       <para>Lors de la <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Application" /> propriété, <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Count" /> propriété, <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Creator" /> propriété, <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Item(System.Int32)" /> propriété, <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Parent" /> propriété ou <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> méthode est utilisée conjointement avec la propriété <b>VPageBreaks</b> :</para>
       <para>Pour une zone d’impression automatique, la propriété <b>VPageBreaks</b> s’applique uniquement aux sauts de page de la zone d’impression.</para>
       <para>Pour une zone d’impression définies par l’utilisateur de la même plage, la propriété <b>VPageBreaks</b> s’applique à tous les sauts de page.</para>
@@ -191,8 +191,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

@@ -1,10 +1,10 @@
 <Type Name="Characters" FullName="Microsoft.Office.Interop.Excel.Characters">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="af8c5c7adc42aa94b514bcaf0612a241b196dc71" />
+    <Meta Name="ms.openlocfilehash" Value="175d99118aa50595e1cd1bb6597be66d75d3d559" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582361" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Characters" />
@@ -31,8 +31,10 @@
   <Docs>
     <summary>Cet objet représente les caractères d'un objet contenant du texte. L’objet <b>Characters</b> permet de modifier toute séquence de caractères contenue dans une chaîne de texte.</summary>
     <remarks>
-      <para>Utiliser des <b>caractères</b>(<paramref name="start" />, <paramref name="length" />), où <paramref name="start" /> est le nombre de caractères de début et <paramref name="length" /> est le nombre de caractères, pour renvoyer un objet <b>Characters</b> .</para> Méthode 
-      <para>les <b>caractères</b> est nécessaire uniquement lorsque vous devez modifier une partie du texte d’un objet sans affecter le reste (vous ne pouvez pas utiliser la méthode <b>Characters</b> pour mettre en forme une partie du texte si l’objet ne gère pas le texte enrichi). Pour modifier tout le texte en même temps, vous pouvez généralement appliquer la méthode appropriée ou la propriété directement dans l’objet.</para><para></para></remarks>
+      <para>Utiliser des <b>caractères</b>(<paramref name="start" />, <paramref name="length" />), où <paramref name="start" /> est le nombre de caractères de début et <paramref name="length" /> est le nombre de caractères, pour renvoyer un objet <b>Characters</b> .</para>
+      <para>La méthode <b>Characters</b> est nécessaire uniquement lorsque vous devez modifier une partie du texte d’un objet sans affecter le reste (vous ne pouvez pas utiliser la méthode <b>Characters</b> pour mettre en forme une partie du texte si l’objet ne gère pas le texte enrichi). Pour modifier tout le texte en même temps, vous pouvez généralement appliquer la méthode appropriée ou la propriété directement dans l'objet.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -148,8 +150,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

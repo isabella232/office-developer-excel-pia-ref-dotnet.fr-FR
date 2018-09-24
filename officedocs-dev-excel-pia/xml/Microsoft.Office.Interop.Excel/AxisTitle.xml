@@ -1,10 +1,10 @@
 <Type Name="AxisTitle" FullName="Microsoft.Office.Interop.Excel.AxisTitle">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c9ac598409b33e578c8408b206c866b6c7a47a68" />
+    <Meta Name="ms.openlocfilehash" Value="a15f79446668c559f53e688a0b4742e909d6504f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578742" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AxisTitle" />
@@ -198,7 +198,7 @@
         <value>To be added.</value>
         <remarks>
           <para>L’objet <b>Characters</b> n’est pas une collection.</para>
-          <para>Pour la <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> objet, <see cref="M:Microsoft.Office.Interop.Excel.TextFrame.Characters(System.Object,System.Object)" /> est une méthode.</para>
+          <para>Pour le <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> objet, <see cref="M:Microsoft.Office.Interop.Excel.TextFrame.Characters(System.Object,System.Object)" /> est une méthode.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -229,8 +229,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -380,7 +382,7 @@
         <summary>Obtient ou définit une valeur qui représente la formule de l’objet en utilisant la notation de style A1, en anglais.</summary>
         <value>La formule de l’objet en utilisant la notation de style A1, en anglais.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -414,7 +416,7 @@
         <summary>Obtient ou définit une valeur qui représente la formule de l’objet en utilisant la notation de style A1, dans la langue de l’utilisateur.</summary>
         <value>La formule de l’objet en utilisant la notation de style A1, dans la langue de l’utilisateur.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -448,7 +450,7 @@
         <summary>Obtient ou définit une valeur qui représente la formule de l’objet à l’aide de la notation de type R1C1, en anglais.</summary>
         <value>La formule de l’objet à l’aide de la notation de type R1C1, en anglais.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -482,7 +484,7 @@
         <summary>Obtient ou définit une valeur qui représente la formule de l’objet à l’aide de la notation de type R1C1, dans la langue de l’utilisateur.</summary>
         <value>La formule de l’objet à l’aide de la notation de type R1C1, dans la langue de l’utilisateur.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -563,7 +565,7 @@
           <para>
             <b>xlRight</b>
           </para>
-          <para>Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -600,7 +602,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Cette propriété n’affecte pas si un graphique est en mode de mise en forme automatique ou non.  Si l’utilisateur ajoute un titre à l’aide de la commande au-dessus du graphique, le graphique devient plus petit, comme dans Microsoft Office Excel 2003.  Si l’utilisateur supprime le titre ou sélectionne une des options de titre de superposition, le graphique s’agrandit, comme si le titre n’était pas dans le graphique.</para>
+          <para>Cette propriété n'a pas d'influence sur le fait que le graphique soit ou non en mode de disposition automatique. Si l'utilisateur ajoute un titre à l'aide de la commande Au-dessus du graphique, le graphique devient plus petit, comme dans Microsoft Office Excel 2003. S'il supprime ensuite le titre ou sélectionne une ou plusieurs des options de titre avec superposition, le graphique s'agrandit, comme si le titre n'y était plus.
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -737,7 +740,7 @@
           <para>
             <b>xlVertical</b>
           </para>
-          <para>pour les sources de données OLAP, définissez cette propriété pour un champ dans une hiérarchie définit la orientation pour les autres champs dans la même hiérarchie. Les champs de dimension peuvent uniquement être orientés dans la ligne, colonne et zones de champ de page du rapport de tableau croisé dynamique. Les champs de mesure peuvent uniquement être orientés dans la zone de données. Si un champ de hiérarchie ou données <b>xlHidden</b> supprime la hiérarchie ou un champ à partir du rapport de tableau croisé dynamique.</para>
+          <para>Sources de données OLAP, la définition de cette propriété pour un champ dans une hiérarchie définit l’orientation pour les autres champs dans la même hiérarchie. Les champs de dimension peuvent uniquement être orientés dans la ligne, colonne et zones de champ de page du rapport de tableau croisé dynamique. Les champs de mesure peuvent uniquement être orientés dans la zone de données. Si un champ de hiérarchie ou données <b>xlHidden</b> supprime la hiérarchie ou un champ à partir du rapport de tableau croisé dynamique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -832,8 +835,8 @@
         <summary>Cette propriété renvoie ou définit le sens de lecture de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propriété <b>ReadingOrder</b> peut être une des constantes suivantes : <b>xlRTL</b> (de droite à gauche), <b>xlLTR</b> (de gauche à droite) ou <b>xlContext</b>.</para>
-          <para>Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para>La propriété <b>ReadingOrder</b> peut être une des constantes suivantes : <b>xlContext</b>, <b>xlLTR</b> (de gauche à droite) ou <b>xlRTL</b> (de droite à gauche).</para>
+          <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -989,6 +992,12 @@
         <remarks>
           <para>La propriété <b>VerticalAlignment</b> peut être une des constantes suivantes :</para>
           <para>
+            <b>xlBottom</b>
+          </para>
+          <para>
+            <b>xlCenter</b>
+          </para>
+          <para>
             <b>xlDistributed</b>
           </para>
           <para>
@@ -996,12 +1005,6 @@
           </para>
           <para>
             <b>xlTop</b>
-          </para>
-          <para>
-            <b>xlBottom</b>
-          </para>
-          <para>
-            <b>xlCenter</b>
           </para>
           <para></para>
         </remarks>

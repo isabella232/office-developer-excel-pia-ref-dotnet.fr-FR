@@ -1,10 +1,10 @@
 <Type Name="PivotTables" FullName="Microsoft.Office.Interop.Excel.PivotTables">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fec2de78dcf640219cb44f66becd0a0dbc77878e" />
+    <Meta Name="ms.openlocfilehash" Value="b1b870f7e0d404abd82b95ed4e0d3df8f815f25c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578021" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTables : System.Collections.IEnumerable" />
@@ -35,10 +35,12 @@
   <Docs>
     <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objets sur la feuille de calcul spécifiée.</summary>
     <remarks>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /> méthode pour renvoyer la collection <b>PivotTables</b> .</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /> méthode pour renvoyer la collection de <b>tableaux croisés dynamiques</b> .</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour créer un nouveau rapport de tableau croisé dynamique et l’ajouter à la collection.</para>
-      <para>Utiliser <b>les tableaux croisés dynamiques</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de tableau croisé dynamique ou le nom, pour renvoyer un seul objet <b>PivotTable</b> .</para> Programmation d’un rapport 
-      <para>car tableau croisé dynamique peut être complexe, il est généralement plus pratique d’enregistrer les actions de rapport de tableau croisé dynamique, puis de réviser le code enregistré. Pour enregistrer une macro, pointez sur Macro dans le menu Outils, cliquez sur nouvelle Macro.</para><para></para></remarks>
+      <para>Utiliser des <b>tableaux croisés dynamiques</b>(<paramref name="index" />), où <paramref name="index" /> est le nom, pour renvoyer un seul objet de <b>tableau croisé dynamique</b> ou le numéro d’index de tableau croisé dynamique.</para>
+      <para>La programmation d'un rapport de tableau croisé dynamique pouvant être complexe, il est généralement plus pratique d'enregistrer les opérations effectuées avec le rapport tableau croisé dynamique, puis de vérifier le code enregistré. Pour enregistrer une macro, pointez sur Macro dans le menu Outils, cliquez sur nouvelle Macro.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -158,7 +160,10 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

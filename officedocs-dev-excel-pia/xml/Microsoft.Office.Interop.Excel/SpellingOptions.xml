@@ -1,10 +1,10 @@
 <Type Name="SpellingOptions" FullName="Microsoft.Office.Interop.Excel.SpellingOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="680281cf8f7bfb5111026034cee31a35884676c8" />
+    <Meta Name="ms.openlocfilehash" Value="b664c52434f8d93eb47ce0675a7bb457e2c7098f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576082" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SpellingOptions" />
@@ -89,6 +89,11 @@
             <see cref="P:Microsoft.Office.Interop.Excel.SpellingOptions.SuggestMainOnly" />
           </description>
         </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.SpellingOptions.UserDict" />
+          </description>
+        </item>
       </list>
       <para></para>
     </remarks>
@@ -155,9 +160,9 @@
         <value>
           <b>la valeur true</b> si le vérificateur d’orthographe utilise les règles concernant les arabe mots commençant par un signe alef hamza ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>
-            <b>la valeur true</b> si le vérificateur d’orthographe utilise les règles orthographiques concernant les mots arabes commençant par un signe alef hamza ; sinon, <b>false</b>.</para>
+            <b>la valeur true</b> si le vérificateur d’orthographe utilise les règles d’orthographe arabe mots commençant par un signe alef hamza ; Sinon, <b>false</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -192,9 +197,9 @@
         <value>
           <b>la valeur true</b> si le vérificateur d’orthographe utilise les règles relatives aux mots arabes se terminant par la lettre yaa ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>
-            <b>la valeur true</b> si le vérificateur d’orthographe utilise les règles relatives aux mots arabes se terminant par la lettre yaa ; sinon, <b>false</b>.</para>
+            <b>la valeur true</b> si le vérificateur d’orthographe utilise les règles relatives aux mots arabes se terminant par la lettre yaa ; Sinon, <b>false</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -229,9 +234,9 @@
         <value>
           <b>la valeur true</b> si le vérificateur d’orthographe utilise les règles pour marquer les mots arabes se terminant par haa au lieu de taa marboota ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>
-            <b>la valeur true</b> si le vérificateur d’orthographe utilise les règles pour marquer les mots arabes se terminant par haa au lieu de taa marboota ; sinon, <b>false</b>.</para>
+            <b>la valeur true</b> si le vérificateur d’orthographe utilise les règles pour marquer les mots arabes se terminant par haa au lieu de taa marboota ; Sinon, <b>false</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -265,7 +270,7 @@
         <summary>Obtient ou définit le mode de vérification de l’orthographe du portugais (Brésil).</summary>
         <value>Le mode de vérification de l’orthographe du portugais (Brésil).</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>
             <b>Remarque</b>: cette propriété ne définit pas le mode de vérification de l’orthographe du portugais (Europe). Pour ce faire, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.SpellingOptions.PortugalReform" /> propriété.</para>
           <para></para>
@@ -364,7 +369,7 @@
         <summary>Cette propriété renvoie ou définit le mode du vérificateur d'orthographe hébraïque.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Un mot hébreu authentique peut être une entrée de dictionnaire de base ou n’importe quelle inflexion.</para>
+          <para>Un mot hébreu authentique peut être une entrée de dictionnaire de base ou n'importe quelle inflexion.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -587,7 +592,7 @@
         <summary>Obtient ou définit le mode de vérification de l’orthographe du portugais (Europe).</summary>
         <value>Le mode de vérification de l’orthographe du portugais (Europe).</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>
             <b>Remarque</b>: cette propriété ne définit pas le mode de vérification de l’orthographe du portugais (Brésil). Pour ce faire, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.SpellingOptions.BrazilReform" /> propriété.</para>
           <para></para>
@@ -624,9 +629,9 @@
         <value>
           <b>la valeur true</b> si le vérificateur d’orthographe utilise les règles concernant les mots russes contenant le caractère ë ; Sinon, <b>false</b>.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para>
-            <b>la valeur true</b> si le vérificateur d’orthographe utilise les règles concernant les mots russes contenant le caractère ë ; sinon, <b>false</b>.</para>
+            <b>la valeur true</b> si le vérificateur d’orthographe utilise les règles concernant les mots russes contenant le caractère ë ; Sinon, <b>false</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -660,7 +665,7 @@
         <summary>Obtient ou définit le mode de vérification de l’orthographe de l’espagnol.</summary>
         <value>Le mode de vérification de l’orthographe de l’espagnol.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>

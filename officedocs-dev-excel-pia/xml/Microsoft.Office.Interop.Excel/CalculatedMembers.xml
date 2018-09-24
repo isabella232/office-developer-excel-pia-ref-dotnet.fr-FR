@@ -1,10 +1,10 @@
 <Type Name="CalculatedMembers" FullName="Microsoft.Office.Interop.Excel.CalculatedMembers">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="953e871a40c21fce56f87ab1a7241017eaeb4ca0" />
+    <Meta Name="ms.openlocfilehash" Value="2ef237f29eff8550f0d57ac22a72517d08855192" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572834" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedMembers : System.Collections.IEnumerable" />
@@ -201,11 +201,11 @@
         <summary>Ajoute un champ calculé ou un élément calculé à un tableau croisé dynamique.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>L’argument <b>Formula</b> doit avoir une instruction de syntaxe MDX (multidimensional expression) valide. L’argument <b>nom</b> doit pouvoir être accepté par le fournisseur de traitement analytique en ligne (OLAP).</para>
+          <para>L’argument <b>Formula</b> doit avoir une instruction de syntaxe MDX (multidimensional expression) valide. L’argument <b>Name</b> doit être accepté par le fournisseur de traitement analytique en ligne (OLAP).</para>
           <list type="bullet">
             <item>
               <description>
-                <b>DisplayFolder</b>: afficher les dossiers ne sont valides pour les mesures calculées. Ils ne sont pas valides pour les membres calculés. La chaîne peut avoir des points-virgules ; Dans ce cas. Des points-virgules désignent plusieurs dossiers d’affichage. Par exemple, si vous utilisez la chaîne de mon folder1 ; MonDossier2 puis la mesure calculée indiquera dans deux affichage dossiers un nommé mon dossier 1 autres nommé « MonDossier2 ». La chaîne peut avoir des barres obliques inverses \. désigne un chemin d’accès hiérarchique pour le dossier d’affichage. Par exemple, si vous utilisez le welcome\to\seattle chaîne sera un dossier d’affichage appelé bienvenue qui contient un dossier d’affichage appelée pour qui contient un dossier d’affichage nommé seattle. Affichage dossiers sont virtuels.  Ils n’existent pas vraiment dans le même sens que nous pensons que des dossiers système. Ils existent uniquement à des fins d’afficher les mesures calculées.</description>
+                <b>DisplayFolder</b>: afficher les dossiers ne sont valides pour les mesures calculées. Ils ne sont pas valides pour les membres calculés. La chaîne peut avoir des points-virgules ; Dans ce cas. Des points-virgules désignent plusieurs dossiers d’affichage. Par exemple, si vous utilisez la chaîne de mon folder1 ; MonDossier2 puis la mesure calculée indiquera dans deux affichage dossiers un nommé mon dossier 1 autres nommé « MonDossier2 ». La chaîne peut avoir des barres obliques inverses \. Il s’agit d’un chemin d’accès hiérarchique pour le dossier d’affichage. Par exemple, si vous utilisez le welcome\to\seattle chaîne sera un dossier d’affichage appelé bienvenue qui contient un dossier d’affichage appelée pour qui contient un dossier d’affichage nommé seattle. Affichage dossiers sont virtuels.  Ils n’existent pas vraiment dans le même sens que nous pensons que des dossiers système. Ils existent uniquement à des fins d’afficher les mesures calculées.</description>
             </item>
             <item>
               <description>
@@ -213,7 +213,7 @@
             </item>
             <item>
               <description>
-                <b>ParentHierarchy</b>: la hiérarchie parent peut être n’importe quelle hiérarchie MDX valide. Hiérarchies parent ne sont valides pour les membres calculés. Ils ne sont pas valides pour des mesures calculées. Si un membre parent est choisi qui se trouve dans une hiérarchie parent différent, la hiérarchie parent est remplacée automatiquement en fonction de la hiérarchie parent du membre parent.</description>
+                <b>ParentHierarchy</b>: la hiérarchie parent peut être n’importe quelle hiérarchie MDX valide. Hiérarchies parent ne sont valides pour les membres calculés. Ils ne sont pas valides pour des mesures calculées. Si un membre parent est sélectionné qui se trouve dans une hiérarchie parent différent, la hiérarchie parent sera automatiquement modifiée pour faire correspondre la hiérarchie parent du membre parent.</description>
             </item>
           </list>
           <para></para>
@@ -302,8 +302,10 @@
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, ce qui équivaut à la c 5843454 nombre hexadécimal</para> Propriété 
-          <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

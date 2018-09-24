@@ -1,10 +1,10 @@
 <Type Name="ChartTitle" FullName="Microsoft.Office.Interop.Excel.ChartTitle">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fd15703f57031a773ff1789f012ce5a108f36a64" />
+    <Meta Name="ms.openlocfilehash" Value="afb7795a68830e3b601b5cd96bed04591a26e206" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572862" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartTitle" />
@@ -231,7 +231,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>Propriété <para>le <b>créateur</b> est conçue pour être utilisé dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -350,7 +353,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
         </value>
         <remarks>
-          <para>La <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objet contient la ligne, de remplissage, effet et mise en forme de la zone graphique.</para>
+          <para>Le <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objet contient la ligne, de remplissage, effet et mise en forme de la zone graphique.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -384,7 +387,7 @@
         <summary>Obtient ou définit une valeur qui représente la formule de l’objet en utilisant la notation de style A1, en anglais.</summary>
         <value>La formule de l’objet en utilisant la notation de style A1, en anglais.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -418,7 +421,7 @@
         <summary>Obtient ou définit une valeur qui représente la formule de l’objet en utilisant la notation de style A1, dans la langue de l’utilisateur.</summary>
         <value>La formule de l’objet en utilisant la notation de style A1, dans la langue de l’utilisateur.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -452,7 +455,7 @@
         <summary>Obtient ou définit une valeur qui représente la formule de l’objet à l’aide de la notation de type R1C1, en anglais.</summary>
         <value>La formule de l’objet à l’aide de la notation de type R1C1, en anglais.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -486,7 +489,7 @@
         <summary>Obtient ou définit une valeur qui représente la formule de l’objet à l’aide de la notation de type R1C1, dans la langue de l’utilisateur.</summary>
         <value>La formule de l’objet à l’aide de la notation de type R1C1, dans la langue de l’utilisateur.</value>
         <remarks>
-          <para>En lecture-écriture.</para>
+          <para>Lecture/écriture.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -567,7 +570,7 @@
           <para>
             <b>xlRight</b>
           </para>
-          <para>Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -604,7 +607,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Cette propriété n’affecte pas si un graphique est en mode de mise en forme automatique ou non.  Si l’utilisateur ajoute un titre à l’aide de la commande au-dessus du graphique, le graphique devient plus petit, comme dans Microsoft Office Excel 2003.  Si l’utilisateur supprime le titre ou sélectionne une des options de titre de superposition, le graphique s’agrandit, comme si le titre n’était pas dans le graphique.</para>
+          <para>Cette propriété n'a pas d'influence sur le fait que le graphique soit ou non en mode de disposition automatique. Si l'utilisateur ajoute un titre à l'aide de la commande Au-dessus du graphique, le graphique devient plus petit, comme dans Microsoft Office Excel 2003. S'il supprime ensuite le titre ou sélectionne une ou plusieurs des options de titre avec superposition, le graphique s'agrandit, comme si le titre n'y était plus.
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -669,7 +673,7 @@
         <summary>Distance, en points, du bord gauche de l'objet au bord gauche de la colonne A (dans une feuille de calcul) ou au bord gauche de la zone de graphique (dans un graphique).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la fenêtre est agrandie, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Définir cette propriété sur 0 (zéro) rend la fenêtre un petit peu plus petite qu’il serait si la fenêtre d’application avait été agrandie. En d’autres termes, si cette propriété est 0 (zéro), la bordure gauche de la fenêtre Microsoft Excel principale peine sera visible à l’écran.</para>
+          <para>Si la fenêtre est réduite, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Définir cette propriété sur 0 (zéro) rend la fenêtre un petit peu plus petite qu’il serait si la fenêtre d’application avait été agrandie. En d’autres termes, si cette propriété est 0 (zéro), la bordure gauche de la fenêtre Microsoft Excel principale sera peine visible à l’écran.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -840,7 +844,7 @@
         <summary>Cette propriété renvoie ou définit le sens de lecture de l’objet spécifié. Peut être une des constantes suivantes : <b>xlContext</b>, <b>xlLTR</b> (de gauche à droite) ou <b>xlRTL</b> (de droite à gauche).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
           <para></para>
         </remarks>
       </Docs>
