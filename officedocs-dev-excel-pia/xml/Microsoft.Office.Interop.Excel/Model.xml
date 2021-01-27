@@ -1,13 +1,5 @@
 <Type Name="Model" FullName="Microsoft.Office.Interop.Excel.Model">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="828748126cb216cd88900a55932d3ae0cccf6925" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577538" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Model" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="828748126cb216cd88900a55932d3ae0cccf6925" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011752" /></Metadata><TypeSignature Language="C#" Value="public interface Model" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Model" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Model" />
   <TypeSignature Language="VB.NET" Value="Public Interface Model" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Stocke les références à des informations sur les tables et les relations contenues dans le modèle de données et les connexions du classeur.</summary>
+    <summary>Stocke des références à des connexions de workbook et des informations sur les tables et les relations contenues dans le modèle de données.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,8 +48,8 @@
         <Parameter Name="ConnectionToDataSource" Type="Microsoft.Office.Interop.Excel.WorkbookConnection" />
       </Parameters>
       <Docs>
-        <param name="ConnectionToDataSource">La connexion de classeur.</param>
-        <summary>Ajoute une nouvelle connexion de classeur sur le modèle avec les propriétés de même que celui fourni en tant qu’argument.</summary>
+        <param name="ConnectionToDataSource">Connexion au workbook.</param>
+        <summary>Ajoute une nouvelle connexion de workbook au modèle avec les mêmes propriétés que celle fournie en tant qu’argument.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Excel. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,7 +106,7 @@
       </Parameters>
       <Docs>
         <param name="ModelTable">Nom de table du modèle ou objet de table du modèle.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objet de type <see cref="T:Microsoft.Office.Interop.Excel.ModelConnection" />.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objet de type <see cref="T:Microsoft.Office.Interop.Excel.ModelConnection" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,12 +134,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. En lecture seule <b>entier</b> (<b>int</b> en c#).</summary>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Integer en lecture seule</b> (<b>int</b> en C#).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Étant donné que l’objet a été créé dans Excel, cette propriété renvoie la valeur hexadécimale, 5843454C, qui représente la chaîne « XCEL ».</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Étant donné que l’objet a été créé dans Excel, cette propriété renvoie la valeur hexadécimale 5843454C, qui représente la chaîne « XCEL ».</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataModelConnection">
@@ -199,7 +189,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initialise le modèle de données du classeur. Il s’agit par défaut de la première fois que le modèle est utilisé.</summary>
+        <summary>Initialise le modèle de données du workbook. Il s'agit de la méthode appelée par défaut lors de la première utilisation du modèle.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,7 +216,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelRelationships</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une collection de relations entre les tables du modèle de données. Lecture seule</summary>
+        <summary>Renvoie une collection de relations entre les tables de modèle de données. Lecture seule</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,7 +244,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retourne une collection de tables dans le modèle de données. Lecture seule</summary>
+        <summary>Renvoie une collection de tableaux à l’intérieur du modèle de données. Lecture seule</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -282,7 +272,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur de <b>chaîne</b> (string en c#) représentant le nom de l’objet de <b>modèle</b> . Lecture seule</summary>
+        <summary>Renvoie une <b>valeur de</b> chaîne (chaîne en C#) qui représente le nom de l’objet <b>Model.</b> Lecture seule</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -310,7 +300,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>objet</b> qui représente l’objet parent de l’objet de <b>modèle</b> spécifié. En lecture seule.</summary>
+        <summary>Renvoie un <b>Object</b> qui représente l’objet parent de l’objet <b>Model</b> spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -336,7 +326,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Actualise toutes les sources de données associées au modèle, entièrement recycle le modèle et met à jour toutes les fonctionnalités de données Excel associées au modèle.</summary>
+        <summary>Actualise toutes les sources de données associées au modèle, retrait entièrement le modèle et met à jour toutes les fonctionnalités de données Excel associées au modèle.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

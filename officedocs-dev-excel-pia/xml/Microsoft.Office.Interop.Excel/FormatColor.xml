@@ -1,13 +1,5 @@
 <Type Name="FormatColor" FullName="Microsoft.Office.Interop.Excel.FormatColor">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f57d49748d62286fafce20d40a1880d5eeb2e6ca" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580828" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FormatColor" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f57d49748d62286fafce20d40a1880d5eeb2e6ca" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012207" /></Metadata><TypeSignature Language="C#" Value="public interface FormatColor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormatColor" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FormatColor" />
   <TypeSignature Language="VB.NET" Value="Public Interface FormatColor" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Cet objet représente la couleur de remplissage spécifiée pour un seuil d'une mise en forme conditionnelle d'échelle de couleur ou la couleur de la barre dans un format conditionnel de barre de données.</summary>
-    <remarks>
-      <para>Vous pouvez choisir une couleur en transmettant une valeur RVB de la <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> propriété ou désigner la couleur en indexant dans la palette de couleurs de thème à l’aide du <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> propriété.</para>
-      <para></para>
-    </remarks>
+    <summary>Cet objet représente la couleur de remplissage spécifiée pour un seuil d’une mise en forme conditionnelle d’échelle de couleur ou la couleur de la barre dans un format conditionnel de barre de données.</summary>
+    <remarks><para>Vous pouvez choisir une couleur en passant une valeur RVB dans la propriété ou désigner la couleur en indexant dans la palette de couleurs de thème <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> propriété.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,13 +49,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente l’application Microsoft Office Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Application</b> (voir ci-dessus)</value>
-        <remarks>
-          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
-          <para></para>
-        </remarks>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> représente Microsoft Office’application Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, elle renvoie un objet <b>Application</b> qui représente l’auteur de l’objet spécifié. En lecture seule.</summary>
+        <value><b>Application</b> (voir ci-dessus)</value>
+        <remarks><para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -94,14 +81,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur de remplissage associée à un seuil pour une barre de données ou une règle de mise en forme conditionnelle d'échelle de couleur.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>Le format de couleur est exprimé en un <see cref="P:Microsoft.Office.Core.ColorFormat.RGB" />fonction. Par exemple, pour définir la couleur rouge, utilisez RGB (255,0,0).</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie ou définit la couleur de remplissage associée à un seuil pour une barre de données ou une règle de mise en forme conditionnelle d’échelle de couleur.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>La couleur du format est exprimée sous forme de <see cref="P:Microsoft.Office.Core.ColorFormat.RGB" /> fonction. Par exemple, pour choisir la couleur rouge, utilisez RGB(255,0,0).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorIndex">
@@ -130,14 +113,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> énumération qui spécifie si la couleur de remplissage est exprimée comme une valeur d’index dans la palette de couleurs en cours.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />
-        </value>
-        <remarks>
-          <para>Cette propriété est utilisée pour chaque seuil d'une règle de mise en forme conditionnelle d'échelle de couleur ou de barre de données.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie ou définit l’une des constantes de l’éumération, en spécifiant si la couleur de remplissage est exprimée sous forme de valeur d’index dans la <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> palette de couleurs actuelle.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /></value>
+        <remarks><para>Cette propriété est utilisée pour chaque seuil d'une règle de mise en forme conditionnelle d'échelle de couleur ou de barre de données.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -163,14 +142,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Valeur <b>Integer</b> en lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.  Le <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Creator" /> propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. <b>Entier</b> en lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code créateur à <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Creator" /> quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -196,10 +171,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,10 +202,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlThemeColor" /> énumération qui spécifie la couleur de thème utilisée dans un seuil d’une barre de données ou la couleur de mise en forme conditionnelle à l’échelle.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie ou définit l’une des constantes de l’éumération, en spécifiant la couleur de thème utilisée dans un seuil d’une barre de données ou d’un format conditionnel d’échelle <see cref="T:Microsoft.Office.Interop.Excel.XlThemeColor" /> de couleur.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,14 +233,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit une valeur <b>Single</b> qui éclaircit ou assombrit la couleur de remplissage d'une cellule pour un seuil de barre de données ou la mise en forme conditionnelle de l'échelle de couleurs.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>Vous pouvez entrer un nombre compris entre -1 (sombre) et 1 (clair) pour la <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.TintAndShade" /> propriété. Zéro (0) est neutre.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie ou définit une valeur de type <b>Single</b> qui éclaircit ou assombrit la couleur de remplissage d’une cellule pour un seuil de barre de données ou la mise en forme conditionnelle de l’échelle de couleurs.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Vous pouvez entrer un nombre de -1 (le plus sombre) à 1 (le plus clair) pour la <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.TintAndShade" /> propriété. Zéro (0) est neutre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

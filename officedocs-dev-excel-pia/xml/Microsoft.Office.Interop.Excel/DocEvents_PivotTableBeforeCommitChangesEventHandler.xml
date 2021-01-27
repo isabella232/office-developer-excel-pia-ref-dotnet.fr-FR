@@ -1,13 +1,5 @@
 <Type Name="DocEvents_PivotTableBeforeCommitChangesEventHandler" FullName="Microsoft.Office.Interop.Excel.DocEvents_PivotTableBeforeCommitChangesEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6686618a6a49df380d5d92722fd1d8bd84c6439c" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20573436" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void DocEvents_PivotTableBeforeCommitChangesEventHandler(PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6686618a6a49df380d5d92722fd1d8bd84c6439c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012396" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocEvents_PivotTableBeforeCommitChangesEventHandler(PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocEvents_PivotTableBeforeCommitChangesEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DocEvents_PivotTableBeforeCommitChangesEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocEvents_PivotTableBeforeCommitChangesEventHandler(TargetPivotTable As PivotTable, ValueChangeStart As Integer, ValueChangeEnd As Integer, ByRef Cancel As Boolean)" />
@@ -37,12 +29,11 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="TargetPivotTable">Le tableau croisé dynamique qui contient les modifications à valider</param>
-    <param name="ValueChangeStart">L’index de la première modification dans associé <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> objet. L’index est spécifiée par le <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objet dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection.</param>
-    <param name="ValueChangeEnd">L’index de la dernière modification dans associé <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> objet. L’index est spécifiée par le <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objet dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection.</param>
-    <param name="Cancel">
-      <b>false</b> lorsque l’événement se produit. Si la procédure événementielle définit ce paramètre sur <b>true</b>, les modifications ne sont pas validées par rapport à la source de données OLAP du tableau croisé dynamique.</param>
-    <summary>Un type de <b>délégué</b> utilisé pour ajouter un gestionnaire d’événements pour le <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeCommitChanges" /> événement. L’événement <b>PivotTableBeforeCommitChanges</b> se produit avant que les modifications sont validées par rapport à la source de données OLAP pour un tableau croisé dynamique.</summary>
+    <param name="TargetPivotTable">Tableau croisé dynamique qui contient les modifications à valider</param>
+    <param name="ValueChangeStart">Index de la première modification de l’objet <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> associé. L’index est spécifié par la <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> propriété de <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> l’objet dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection.</param>
+    <param name="ValueChangeEnd">Index de la dernière modification de l’objet <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> associé. L’index est spécifié par la <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> propriété de <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> l’objet dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection.</param>
+    <param name="Cancel"><b>false</b> lorsque l’événement se produit. Si la procédure événement elle-même définit ce paramètre sur <b>true,</b>les modifications ne sont pas apportées à la source de données OLAP du tableau croisé dynamique.</param>
+    <summary>Type <b>Delegate</b> utilisé pour ajouter un handler d’événement pour <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeCommitChanges" /> l’événement. <b>L’événement PivotTableBeforeCommitChanges</b> se produit avant que des modifications ne soient apportées à la source de données OLAP d’un tableau croisé dynamique.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -1,13 +1,5 @@
 <Type Name="Filter" FullName="Microsoft.Office.Interop.Excel.Filter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0a55068feedec78d62f267ca39e674ead9d7d9f3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576327" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Filter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0a55068feedec78d62f267ca39e674ead9d7d9f3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012242" /></Metadata><TypeSignature Language="C#" Value="public interface Filter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Filter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Filter" />
   <TypeSignature Language="VB.NET" Value="Public Interface Filter" />
@@ -29,12 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Cet objet représente un filtre d’une seule colonne. L’objet <b>Filter</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Filters" /> collection. La collection <b>Filters</b> contient tous les filtres d’une plage filtrée automatiquement.</summary>
-    <remarks>
-      <para>Utiliser des <b>filtres</b>(<paramref name="index" />), où <paramref name="index" /> est le titre du filtre ou le numéro d’index, pour renvoyer un seul objet <b>Filter</b> .</para>
-      <para>Notez que toutes les propriétés de l’objet <b>Filter</b> sont en lecture seule. Pour définir ces propriétés, appliquez manuellement ou à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet.</para>
-      <para></para>
-    </remarks>
+    <summary>Cet objet représente un filtre d'une seule colonne. <b>L’objet Filter</b> est membre de la <see cref="T:Microsoft.Office.Interop.Excel.Filters" /> collection. La collection <b>Filters</b> contient tous les filtres d'une plage filtrée automatiquement.</summary>
+    <remarks><para>Utilisez <b>Filters</b>( ), où est le titre du filtre ou le numéro d’index, pour <paramref name="index" /> <paramref name="index" /> renvoyer un seul objet <b>Filter.</b></para>
+      <para>Toutes les propriétés de l'objet <b>Filter</b> sont en lecture seule. Pour définir ces propriétés, appliquez le filtre automatique manuellement ou à l’aide <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> de la méthode de l’objet. <see cref="T:Microsoft.Office.Interop.Excel.Range" /></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Operator">
@@ -91,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,10 +109,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nombre d'objets dans la collection. Valeur <b>Integer</b> en lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Renvoie le nombre d'objets dans la collection. <b>Entier</b> en lecture seule.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,12 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</summary>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Creator </b>est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>propriété Creator </b>est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Criteria1">
@@ -180,7 +166,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la première valeur filtrée de la colonne spécifiée d’une plage filtrée.</summary>
+        <summary>Cette propriété renvoie la première valeur filtrée de la colonne spécifiée d'une plage filtrée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,12 +194,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la deuxième valeur filtrée de la colonne spécifiée d’une plage filtrée.</summary>
+        <summary>Cette propriété renvoie la deuxième valeur filtrée de la colonne spécifiée d'une plage filtrée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si vous essayez d’accéder à la propriété <b>Criteria2</b> pour un filtre qui n’utilise pas les deux critères, une erreur se produit. Vérifiez que le <see cref="P:Microsoft.Office.Interop.Excel.Filter.Operator" /> propriété d’une <see cref="T:Microsoft.Office.Interop.Excel.Filter" /> objet est différent de zéro (0) avant d’essayer d’accéder à la propriété <b>Criteria2</b> .</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si vous tentez d'accéder à la propriété <b>Criteria2</b> pour un filtre n'utilisant pas deux critères, une erreur survient. Vérifiez que la <see cref="P:Microsoft.Office.Interop.Excel.Filter.Operator" /> propriété <see cref="T:Microsoft.Office.Interop.Excel.Filter" /> d’un objet n’est pas égale à zéro (0) avant d’essayer d’accéder à la <b>propriété Criteria2.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="On">
@@ -239,8 +223,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le filtre spécifié est activé.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le filtre spécifié est activé.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

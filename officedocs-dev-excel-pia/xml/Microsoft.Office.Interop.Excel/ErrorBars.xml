@@ -1,13 +1,5 @@
 <Type Name="ErrorBars" FullName="Microsoft.Office.Interop.Excel.ErrorBars">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="60889c6b8ce84452540bb212c8f4d70d23f454da" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581346" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ErrorBars" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="60889c6b8ce84452540bb212c8f4d70d23f454da" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012277" /></Metadata><TypeSignature Language="C#" Value="public interface ErrorBars" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ErrorBars" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ErrorBars" />
   <TypeSignature Language="VB.NET" Value="Public Interface ErrorBars" />
@@ -29,12 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Cet objet représente les barres d’erreur d’une série de graphique.</summary>
-    <remarks>
-      <para>Les barres d'erreur indiquent le degré d'incertitude sur les données graphiques. Seules les séries appartenant à des groupes de graphiques en aires, en barres, en histogrammes, en courbes et en nuages de points d'un graphique 2D peuvent utiliser des barres d'erreur. Seules les séries appartenant à des groupes de graphiques en nuages de points peuvent utiliser des barres d'erreur X et Y. Cet objet n'est pas une collection. Il n'existe aucun objet représentant une seule barre d'erreur. Les barres d'erreur X ou Y sont soit activées, soit désactivées, pour tous les points d'une série.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Series.ErrorBars" /> propriété permet de renvoyer l’objet <b>ErrorBars</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Cet objet représente les barres d'erreur d'une série de graphique.</summary>
+    <remarks><para>Les barres d'erreur indiquent le degré d'incertitude sur les données graphiques. Seules les séries appartenant à des groupes de graphiques en aires, en barres, en histogrammes, en courbes et en nuages de points d'un graphique 2D peuvent utiliser des barres d'erreur. Seules les séries appartenant à des groupes de graphiques en nuages de points peuvent utiliser des barres d'erreur X et Y. Cet objet n'est pas une collection. Il n'existe aucun objet représentant une seule barre d'erreur. Les barres d'erreur X ou Y sont soit activées, soit désactivées, pour tous les points d'une série.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Series.ErrorBars" /> propriété pour renvoyer <b>l’objet ErrorBars.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,11 +134,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -203,12 +191,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlEndStyleCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le style de fin des barres d’erreur.</summary>
+        <summary>Renvoie ou définit le style de l’extrémité des barres d’erreur.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>EndStyle</b> peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlEndStyleCap" /> constantes : <b>xlCap</b> ou <b>xlNoCap</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>propriété EndStyle</b> peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlEndStyleCap" /> constantes suivantes : <b>xlCap</b> ou <b>xlNoCap</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -234,10 +220,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,7 +276,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

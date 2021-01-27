@@ -1,13 +1,5 @@
 <Type Name="MultiThreadedCalculation" FullName="Microsoft.Office.Interop.Excel.MultiThreadedCalculation">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6303c87efd1fdc778df51bbbfeccb07abc3c42b4" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575613" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MultiThreadedCalculation" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6303c87efd1fdc778df51bbbfeccb07abc3c42b4" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011472" /></Metadata><TypeSignature Language="C#" Value="public interface MultiThreadedCalculation" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MultiThreadedCalculation" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" />
   <TypeSignature Language="VB.NET" Value="Public Interface MultiThreadedCalculation" />
@@ -56,9 +48,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente l’application Microsoft Office Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Application</b> (voir ci-dessus)</value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> représente Microsoft Office’application Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, elle renvoie un objet <b>Application</b> qui représente l’auteur de l’objet spécifié. En lecture seule.</summary>
+        <value><b>Application</b> (voir ci-dessus)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,14 +76,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits correspondant à une constante dans <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.  Le <see cref="P:Microsoft.Office.Interop.Excel.MultiThreadedCalculation.Creator" /> propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie un nombre integer 32 bits correspondant à une constante qui indique l’application dans laquelle cet objet a <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> été créé. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code créateur <see cref="P:Microsoft.Office.Interop.Excel.MultiThreadedCalculation.Creator" /> à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -121,7 +108,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La propriété <b>Enabled</b> permet aux objets <b>MultiThreadedCalculation</b> d’être activés ou désactivés à l’exécution. En lecture-écriture.</summary>
+        <summary>La propriété <b>Enabled</b> permet aux objets <b>MultiThreadedCalculation</b> d’être activés ou désactivés à l’exécution. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,10 +136,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,10 +167,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient le nombre total de threads du processus qui font partie de l’objet <see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" /> objet.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Obtient le nombre total de threads de processus qui font partie de l’objet <see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" /> spécifié.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,14 +198,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlThreadMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le mode de thread spécifié <see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" /> objet. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlThreadMode" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlThreadMode" />
-        </value>
-        <remarks>
-          <para>Vous pouvez définir le mode de thread soit <see cref="F:Microsoft.Office.Interop.Excel.XlThreadMode.xlThreadModeAutomatic" /> ou <see cref="F:Microsoft.Office.Interop.Excel.XlThreadMode.xlThreadModeManual" />.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie ou définit le mode thread de l’objet <see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" /> spécifié. En <see cref="T:Microsoft.Office.Interop.Excel.XlThreadMode" /> lecture/écriture.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlThreadMode" /></value>
+        <remarks><para>Vous pouvez définir le mode thread sur l’une ou <see cref="F:Microsoft.Office.Interop.Excel.XlThreadMode.xlThreadModeAutomatic" /> l’autre des <see cref="F:Microsoft.Office.Interop.Excel.XlThreadMode.xlThreadModeManual" /> deux.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

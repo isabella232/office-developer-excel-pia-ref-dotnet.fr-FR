@@ -1,13 +1,5 @@
 <Type Name="OLEFormat" FullName="Microsoft.Office.Interop.Excel.OLEFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="61a7c8fcda1ae1bb96bf7ac4ce6f4954d1baef24" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584370" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="61a7c8fcda1ae1bb96bf7ac4ce6f4954d1baef24" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011332" /></Metadata><TypeSignature Language="C#" Value="public interface OLEFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEFormat" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet contient les propriétés d'un objet OLE.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Shape.OLEFormat" /> propriété permet de renvoyer l’objet <b>OLEFormat</b> .</para>
-      <para>Si le <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objet ne représente pas un objet lié ou incorporé, la propriété <b>OLEFormat</b> échoue.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Shape.OLEFormat" /> propriété pour renvoyer <b>l’objet OLEFormat.</b></para>
+      <para>Si l’objet ne représente pas un objet lié ou <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> incorporé, la <b>propriété OLEFormat</b> échoue.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -85,7 +75,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,11 +105,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -145,7 +133,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet OLE Automation associé à cet objet OLE.</summary>
+        <summary>Cette propriété renvoie l'objet Automation OLE associé à cet objet OLE.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,7 +161,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,7 +189,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie les identificateurs de programmation pour l’objet.</summary>
+        <summary>Cette propriété renvoie les identificateurs de programmation de l'objet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,8 +216,8 @@
         <Parameter Name="Verb" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Verb">Facultatif <b>Object</b>. Le serveur de l’objet OLE doit agir sur le verbe. Si cet argument est omis, le verbe par défaut est envoyé. Les verbes disponibles sont déterminés par application de l’objet source. Les verbes habituels pour un objet OLE sont Open et Primary (représenté par la <see cref="T:Microsoft.Office.Interop.Excel.XlOLEVerb" /> constantes <b>xlOpen</b> et <b>xlPrimary</b>).</param>
-        <summary>Envoie un verbe au serveur de l’objet OLE spécifié.</summary>
+        <param name="Verb">Objet <b>facultatif</b>. Le verbe sur lequel doit s'effectuer l'action du serveur de l'objet OLE. Si cet argument est omis, le verbe par défaut est envoyé. Les verbes disponibles sont déterminés par l'application source de l'objet. Les verbes classiques pour un objet OLE sont Open et Primary (représentés par les <see cref="T:Microsoft.Office.Interop.Excel.XlOLEVerb" /> constantes <b>xlOpen</b> et <b>xlPrimary</b>).</param>
+        <summary>Cette méthode envoie un verbe au serveur de l'objet OLE spécifié.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="OLEDBError" FullName="Microsoft.Office.Interop.Excel.OLEDBError">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a18ac30019f24f95aff6f5894f53852a7d6cfb61" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581507" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEDBError" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a18ac30019f24f95aff6f5894f53852a7d6cfb61" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011353" /></Metadata><TypeSignature Language="C#" Value="public interface OLEDBError" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEDBError" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEDBError" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEDBError" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente une erreur OLE DB renvoyée par la requête OLE DB la plus récente.</summary>
-    <remarks>
-      <para>L’objet <b>OLEDBError</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.OLEDBErrors" /> collection. Si la requête OLE DB spécifiée s’exécute sans erreur, la collection <b>OLEDBErrors</b> est vide. Les erreurs de la collection sont indexées dans l’ordre dans lequel elles sont générées par le fournisseur OLE DB.</para>
-      <para>Utilisez <b>OLEDBErrors</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de l’erreur OLE DB, pour renvoyer un seul objet <b>OLEDBError</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>L’objet OLEDBError</b> est membre de la <see cref="T:Microsoft.Office.Interop.Excel.OLEDBErrors" /> collection. Si la requête ODBC spécifiée s'exécute sans erreur, la collection <b>OLEDBErrors</b> est vide. Les erreurs de la collection sont indexées dans l'ordre où elles sont produites par le fournisseur OLE DB.</para>
+      <para>Utilisez <b>OLEDBErrors</b>( ), où est le numéro d’index de l’erreur OLE DB, pour renvoyer un seul <paramref name="index" /> objet <paramref name="index" /> <b>OLEDBError.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,11 +80,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorString">
@@ -148,7 +136,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur numérique spécifique au fournisseur qui indique une erreur. Le numéro d’erreur correspond à une condition d’erreur survenue après la requête OLE DB la plus récente.</summary>
+        <summary>Cette propriété renvoie une valeur numérique, spécifique au fournisseur, précisant une erreur. Le numéro d'erreur correspond à celle survenue après la requête OLE DB la plus récente.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,7 +164,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur numérique spécifiant une erreur. Le numéro d’erreur correspond à un numéro d’interruption unique correspondant à une condition d’erreur survenue après la requête OLE DB la plus récente.</summary>
+        <summary>Renvoie une valeur numérique qui spécifie une erreur. Le numéro d’erreur correspond à un numéro d’erreur unique correspondant à une condition d’erreur qui s’est produite après la requête OLE DB la plus récente.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,7 +192,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -232,12 +220,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’erreur d’état SQL.</summary>
+        <summary>Cette propriété renvoie l’erreur de l’état SQL.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour obtenir une explication de l’erreur spécifique, voir la documentation SQL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Pour obtenir une explication de l’erreur spécifique, consultez SQL documentation.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Stage">
@@ -263,7 +249,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur numérique indiquant l’état d’une erreur survenue après la requête OLE DB la plus récente.</summary>
+        <summary>Cette propriété renvoie une valeur numérique indiquant l'étape d'une erreur survenue à la suite de la dernière requête de base de données OLE.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

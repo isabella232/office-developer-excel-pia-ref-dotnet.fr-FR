@@ -1,13 +1,5 @@
 <Type Name="XmlNamespaces" FullName="Microsoft.Office.Interop.Excel.XmlNamespaces">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ac6aaff6a7a94436f8945b52b3a9d34e20f3ae1c" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574087" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XmlNamespaces : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ac6aaff6a7a94436f8945b52b3a9d34e20f3ae1c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012718" /></Metadata><TypeSignature Language="C#" Value="public interface XmlNamespaces : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XmlNamespaces implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XmlNamespaces" />
   <TypeSignature Language="VB.NET" Value="Public Interface XmlNamespaces&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente la collection de <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" /> objets dans un classeur.</summary>
-    <remarks>
-      <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Item(System.Object)" /> propriété pour accéder à un objet <b>XmlNamespace</b> particulier.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Value" /> propriété permet de renvoyer une <b>chaîne</b> qui répertorie les espaces de noms qui ont été ajoutés à un classeur.</para>
-      <para></para>
-    </remarks>
+    <summary>Représente la collection <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" /> d’objets dans un workbook.</summary>
+    <remarks><para>Les fonctionnalités XML, à l’exception de l’enregistrement de fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professional Edition 2003 et Microsoft Office Excel 2003.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Item(System.Object)" /> propriété pour accéder à un objet <b>XmlNamespace</b> particulier.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Value" /> propriété pour renvoyer une <b>chaîne</b> qui répertorie les espaces de noms qui ont été ajoutés à un classer.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,7 +118,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nombre d'objets dans la collection. Valeur <b>Integer</b> en lecture seule.</summary>
+        <summary>Renvoie le nombre d'objets dans la collection. <b>Entier</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,12 +146,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C. En lecture <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -219,16 +207,12 @@
         <Parameter Name="InstallForAllUsers" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>String</b>obligatoire. Chemin d'accès et nom de fichier du kit d'extension XML.</param>
-        <param name="InstallForAllUsers">
-          <b>Boolean</b> facultatif. <b>La valeur True</b> installe le Kit d’extension XML et la rend accessible à tous les utilisateurs sur un ordinateur. <b>False</b> rend le Kit d’extension XML disponible pour l’utilisateur actuel uniquement. Valeur par défaut est <b>False</b>.</param>
+        <param name="Path">Argument de type <b>String</b> obligatoire. Chemin d'accès et nom de fichier du kit d'extension XML.</param>
+        <param name="InstallForAllUsers">Facultatif <b>Boolean</b>. La valeur <b>True</b> installe le kit d'extension XML et le met à la disposition de tous les utilisateurs sur un ordinateur. La valeur <b>False</b> rend le kit d'extension XML disponible pour l'utilisateur actuel uniquement. Valeur par défaut est <b>False</b>.</param>
         <summary>Installe le kit d'extension XML spécifié sur l'ordinateur d'un utilisateur, en mettant la solution de document dynamique XML à la disposition d'au moins un utilisateur.</summary>
-        <remarks>
-          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
+        <remarks><para>Les fonctionnalités XML, à l’exception de l’enregistrement de fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professional Edition 2003 et Microsoft Office Excel 2003.</para>
           <para>Pour des raisons de sécurité, vous ne pouvez pas installer un manifeste non signé. Pour plus d'informations sur les manifestes, consultez le kit de développement pour les documents dynamiques sur le site Web Microsoft Developer Network (MSDN).</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -257,9 +241,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b>obligatoire. Nom ou numéro d'index de l'objet.</param>
-        <summary>Renvoie un seul objet d'une collection.</summary>
+        <param name="Index">Required, <b>objet</b>. Nom ou numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d’une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,7 +270,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -315,12 +298,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> qui représente les espaces de noms XML qui ont été ajoutés au classeur.</summary>
+        <summary>Renvoie une <b>chaîne</b> qui représente les espaces de noms XML qui ont été ajoutés au classer.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si le classeur contient plus d’un espace de noms, les espaces de noms sont séparés par un espace vide dans la chaîne renvoyée par la propriété <b>Value</b> .</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si le classez contient plusieurs espaces de noms, les espaces de noms sont séparés par un espace vide dans la chaîne renvoyée par la <b>propriété Value.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
