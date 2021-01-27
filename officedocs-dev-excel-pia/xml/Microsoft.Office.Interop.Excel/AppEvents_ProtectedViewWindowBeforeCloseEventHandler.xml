@@ -1,13 +1,5 @@
 <Type Name="AppEvents_ProtectedViewWindowBeforeCloseEventHandler" FullName="Microsoft.Office.Interop.Excel.AppEvents_ProtectedViewWindowBeforeCloseEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f6770db538522765ee8ce8845416a64151f90f38" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580261" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void AppEvents_ProtectedViewWindowBeforeCloseEventHandler(ProtectedViewWindow Pvw, XlProtectedViewCloseReason Reason, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f6770db538522765ee8ce8845416a64151f90f38" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50002289" /></Metadata><TypeSignature Language="C#" Value="public delegate void AppEvents_ProtectedViewWindowBeforeCloseEventHandler(ProtectedViewWindow Pvw, XlProtectedViewCloseReason Reason, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AppEvents_ProtectedViewWindowBeforeCloseEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AppEvents_ProtectedViewWindowBeforeCloseEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AppEvents_ProtectedViewWindowBeforeCloseEventHandler(Pvw As ProtectedViewWindow, Reason As XlProtectedViewCloseReason, ByRef Cancel As Boolean)" />
@@ -37,10 +29,9 @@
   </ReturnValue>
   <Docs>
     <param name="Pvw">Objet qui représente la fenêtre Mode protégé fermée.</param>
-    <param name="Reason">Constante qui spécifie la raison pour laquelle la fenêtre mode protégé est fermée.</param>
-    <param name="Cancel">
-      <b>false</b> lorsque l’événement se produit. Si la procédure événementielle définit ce paramètre sur <b>true</b>, la fenêtre ne ferme pas lorsque la procédure est terminée.</param>
-    <summary>Un type de <b>délégué</b> utilisé pour ajouter un gestionnaire d’événements pour le <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.ProtectedViewWindowBeforeClose" /> événement. <b>Protectedviewwindowbeforeclose,</b> de l’événement se produit immédiatement avant une fenêtre mode protégé ou d’un classeur dans une fenêtre mode protégé se ferme.</summary>
+    <param name="Reason">Constante qui spécifie la raison pour laquelle la fenêtre en affichage protégé est fermée.</param>
+    <param name="Cancel"><b>false</b> lorsque l’événement se produit. Si la procédure événement elle-même définit ce paramètre sur <b>true,</b>la fenêtre ne se ferme pas lorsque la procédure est terminée.</param>
+    <summary>Type <b>Delegate</b> utilisé pour ajouter un handler d’événements pour <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.ProtectedViewWindowBeforeClose" /> l’événement. <b>L’événement ProtectedViewWindowBeforeClose</b> se produit immédiatement avant la fermeture d’une fenêtre en affichage protégé ou d’un workbook dans une fenêtre en affichage protégé.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>
