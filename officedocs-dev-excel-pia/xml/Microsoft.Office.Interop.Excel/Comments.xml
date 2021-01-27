@@ -1,13 +1,5 @@
 <Type Name="Comments" FullName="Microsoft.Office.Interop.Excel.Comments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="53a0a01123cb73fe971527fcb47fe1d9e130a582" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20583411" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Comments : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="53a0a01123cb73fe971527fcb47fe1d9e130a582" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005718" /></Metadata><TypeSignature Language="C#" Value="public interface Comments : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Comments implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Comments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Comments&#xA;Implements IEnumerable" />
@@ -34,12 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Collection de commentaires de cellules. Chaque commentaire est représenté par un <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> objet.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Comments" /> propriété permet de renvoyer la collection <b>Comments</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" /> pour ajouter un commentaire à une plage.</para>
-      <para>Utiliser des <b>commentaires</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro de commentaire, pour renvoyer un seul commentaire de la collection <b>Comments</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Comments" /> propriété pour renvoyer la collection <b>Comments.</b></para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" /> méthode pour ajouter un commentaire à une plage.</para>
+      <para>Utilisez <b>Comments</b>( ), où est le numéro de commentaire, pour <paramref name="index" /> <paramref name="index" /> renvoyer un seul commentaire à partir de la collection <b>Comments.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -158,11 +148,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -220,9 +208,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire. Numéro d'index de l'objet.</param>
-        <summary>Renvoie un seul objet d'une collection.</summary>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire. Numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d’une collection.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

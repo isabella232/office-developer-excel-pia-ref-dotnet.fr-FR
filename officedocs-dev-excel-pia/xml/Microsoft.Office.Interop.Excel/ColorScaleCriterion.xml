@@ -1,13 +1,5 @@
 <Type Name="ColorScaleCriterion" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriterion">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="71a5a3fdaa7d1393ccedac6ff867343c7fd8ae11" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580541" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="71a5a3fdaa7d1393ccedac6ff867343c7fd8ae11" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005746" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScaleCriterion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorScaleCriterion" />
@@ -30,14 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente les critères pour les seuils minimum, intermédiaire ou maximum d'un format conditionnel de format de couleur.</summary>
-    <remarks>
-      <para>Chaque <b>ColorScaleCriterion</b> fait partie de la <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> collection. Utilisez <b>ColorScaleCriteria</b>(<paramref name="index" />), pour renvoyer un critère individuel.</para>
-      <para>Vous pouvez définir la <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />, <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" />, et <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" /> de chaque seuil pour l’échelle de couleur.</para>
-      <para></para>
-    </remarks>
-    <example>
-      <para>L’exemple de code suivant crée une plage de numéros et puis comment appliquer une règle de mise en forme conditionnelle d’échelle de deux couleurs à cette plage. La couleur du seuil minimum est ensuite assignée sur rouge et le seuil maximum au bleu en indexant dans la <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />collection pour définir des critères spécifiques.</para>
-    </example>
+    <remarks><para>Chaque <b>ColorScaleCriterion fait</b> partie de la <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> collection. Utilisez <b>ColorScaleCriteria</b>( <paramref name="index" /> ), pour renvoyer un critère individuel.</para>
+      <para>Vous pouvez définir <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> le , et de chaque seuil pour <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" /> <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" /> l’échelle de couleur.</para>
+      <para> </para></remarks>
+    <example><para>L'exemple de code suivant crée une plage de nombres et lui applique une règle de mise en forme conditionnelle d'échelle de deux couleurs. La couleur du seuil minimum est ensuite affectée au rouge et le seuil maximal au bleu en indexant dans la collection pour définir des <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> critères individuels.</para></example>
   </Docs>
   <Members>
     <Member MemberName="FormatColor">
@@ -63,14 +51,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.FormatColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> object, qui spécifie la couleur attribuée à la valeur de seuil d’un format conditionnel de l’échelle de couleur. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />
-        </value>
-        <remarks>
-          <para>Vous pouvez définir la couleur de la minimum, intermédiaire ou maximum seuils à une couleur personnalisée à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> propriété ; ou utilisez le <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> propriété.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie un objet, qui spécifie la couleur affectée au seuil d’une mise en forme conditionnelle <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> d’échelle de couleur. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /></value>
+        <remarks><para>Vous pouvez définir la couleur des seuils minimum, intermédiaire ou maximal sur n’importe quelle couleur personnalisée à l’aide de la propriété <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> ou utiliser la <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -96,14 +80,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur <b>entière</b> indiquant le seuil représente les critères. En lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Pour une règle de format conditionnel d'échelle de deux couleurs, cette propriété renvoie la valeur « 1 » pour le seuil minimum et « 2 » pour le seuil maximum. Pour une règle d'échelle de trois couleurs, les valeurs sont « 1 » pour le seuil minimum, « 2 » pour le seuil intermédiaire et « 3 » pour le seuil maximum.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie une <b>valeur de nombres integer</b> indiquant le seuil que représente le critère. En lecture seule.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Pour une règle de format conditionnel d'échelle de deux couleurs, cette propriété renvoie la valeur « 1 » pour le seuil minimum et « 2 » pour le seuil maximum. Pour une règle d'échelle de trois couleurs, les valeurs sont « 1 » pour le seuil minimum, « 2 » pour le seuil intermédiaire et « 3 » pour le seuil maximum.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -132,14 +112,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConditionValueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> énumération qui spécifie comment les valeurs de seuil pour une barre de données ou la couleur de l’échelle de mise en forme conditionnelle sont déterminées. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />
-        </value>
-        <remarks>
-          <para>Le type de valeur de seuil pour une barre de données ou la couleur à l’échelle peut être un nombre, %, une formule ou centile. Si le type centile utilise la fonction Percentile dans Excel pour déterminer la valeur de seuil.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie l’une des constantes de l’éumération, qui spécifie comment sont déterminées les valeurs de seuil d’une barre de données ou d’un format conditionnel d’échelle <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> de couleur. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /></value>
+        <remarks><para>Le type de valeur de seuil d'une barre de données ou d'une échelle de couleurs peut être un nombre, un pourcentage, une formule ou un centile. Si le type défini est le centile, la fonction Percentile sera utilisée dans Excel pour déterminer la valeur de seuil.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -168,15 +144,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le minimum, intermédiaire ou maximum de seuil d’un format conditionnel d’échelle de couleur. Lecture/écriture.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>Vous pouvez définir la valeur que si le <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> propriété pour le format conditionnel est définie sur une des constantes suivantes : <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />, ou <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />.</para>
+        <summary>Renvoie ou définit le minimum, le milieu ou la valeur de seuil maximal pour un format d'échelle de couleur conditionnel. En lecture/écriture</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Vous pouvez définir la valeur uniquement si la propriété du format conditionnel est définie sur l’une des <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> constantes suivantes : <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" /> , , ou <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" /> .</para>
           <para>Si le type de seuil est une formule, vous pouvez définir la formule en tant que  <b>String</b>. La formule doit renvoyer un seul nombre.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

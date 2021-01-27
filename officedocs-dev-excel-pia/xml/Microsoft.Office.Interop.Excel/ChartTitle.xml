@@ -1,13 +1,5 @@
 <Type Name="ChartTitle" FullName="Microsoft.Office.Interop.Excel.ChartTitle">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="afb7795a68830e3b601b5cd96bed04591a26e206" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572862" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartTitle" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="afb7795a68830e3b601b5cd96bed04591a26e206" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005837" /></Metadata><TypeSignature Language="C#" Value="public interface ChartTitle" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartTitle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartTitle" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartTitle" />
@@ -29,12 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente le titre du graphique.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartTitle" /> propriété permet de renvoyer l’objet <b>ChartTitle</b> .</para>
-      <para>L’objet <b>ChartTitle</b> n’existe pas et ne peut pas être utilisé sauf si le <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasTitle" /> propriété du graphique a la <b>valeur True</b>.</para>
-      <para></para>
-    </remarks>
+    <summary>Cet objet représente le titre du graphique.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartTitle" /> propriété pour renvoyer <b>l’objet ChartTitle.</b></para>
+      <para><b>L’objet ChartTitle</b> n’existe pas et ne peut pas être utilisé, sauf si la propriété <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasTitle" /> du graphique a la valeur <b>True</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,10 +50,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Application" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +87,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le texte de l’objet modifie la taille de police lorsque la taille de l’objet change. La valeur par défaut est <b>True</b>.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la taille de la police du texte situé dans l'objet change lorsque l'objet est redimensionné. La valeur par défaut est <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -194,14 +181,12 @@
         <Parameter Name="Length" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Start">Facultatif <b>Object</b>. Premier caractère à renvoyer. Si vous ne spécifiez pas cet argument ou s'il a la valeur 1, cette propriété renvoie une plage de caractères débutant par le premier caractère.</param>
-        <param name="Length">Facultatif <b>Object</b>. Nombre de caractères à renvoyer. Si cet argument est omis, cette propriété renvoie le reste de la chaîne (tout ce qui suit le <paramref name="Start" /> caractères).</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> objet qui représente une plage de caractères dans le texte de l’objet. Vous pouvez utiliser l’objet <b>Characters</b> format caractères au sein d’une chaîne de texte.</summary>
+        <param name="Start">Objet <b>facultatif</b>. Premier caractère à renvoyer. Si vous ne spécifiez pas cet argument ou s'il a la valeur 1, cette propriété renvoie une plage de caractères débutant par le premier caractère.</param>
+        <param name="Length">Objet <b>facultatif</b>. Nombre de caractères à renvoyer. Si cet argument est omis, cette propriété renvoie le reste de la chaîne (tout ce qui se trouve après le <paramref name="Start" /> caractère).</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> objet qui représente une plage de caractères dans le texte de l’objet. Vous pouvez utiliser l'objet <b>Characters</b> pour mettre en forme les caractères d'une chaîne de texte.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’objet <b>Characters</b> n’est pas une collection.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>L’objet <b>Characters</b> n’est pas une collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -227,14 +212,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -289,7 +270,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objet pour une forme spécifiée ou un <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> objet pour un graphique spécifié qui contient les propriétés de la forme ou le graphique de la mise en forme du remplissage.</summary>
+        <summary>Renvoie un objet pour une forme spécifiée ou un objet pour un graphique spécifié qui contient les propriétés de mise en forme de remplissage pour la forme <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> ou le graphique.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -348,14 +329,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
-        <remarks>
-          <para>Le <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objet contient la ligne, de remplissage, effet et mise en forme de la zone graphique.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />L’objet contient la ligne, le remplissage, l’effet et la mise en forme du texte pour la zone de graphique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Formula">
@@ -384,12 +361,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient ou définit une valeur qui représente la formule de l’objet en utilisant la notation de style A1, en anglais.</summary>
-        <value>La formule de l’objet en utilisant la notation de style A1, en anglais.</value>
-        <remarks>
-          <para>Lecture/écriture.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtient ou définit une valeur qui représente la formule de l’objet à l’aide de la notation de style A1, en anglais.</summary>
+        <value>Formule de l’objet utilisant la notation de style A1, en anglais.</value>
+        <remarks><para>En lecture/écriture</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaLocal">
@@ -418,12 +393,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient ou définit une valeur qui représente la formule de l’objet en utilisant la notation de style A1, dans la langue de l’utilisateur.</summary>
-        <value>La formule de l’objet en utilisant la notation de style A1, dans la langue de l’utilisateur.</value>
-        <remarks>
-          <para>Lecture/écriture.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtient ou définit une valeur qui représente la formule de l’objet à l’aide de la notation de style A1, dans la langue de l’utilisateur.</summary>
+        <value>Formule de l’objet utilisant la notation de style A1, dans la langue de l’utilisateur.</value>
+        <remarks><para>En lecture/écriture</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1">
@@ -452,12 +425,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient ou définit une valeur qui représente la formule de l’objet à l’aide de la notation de type R1C1, en anglais.</summary>
-        <value>La formule de l’objet à l’aide de la notation de type R1C1, en anglais.</value>
-        <remarks>
-          <para>Lecture/écriture.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtient ou définit une valeur qui représente la formule de l’objet à l’aide de la notation de style R1C1, en anglais.</summary>
+        <value>Formule de l’objet utilisant la notation de style R1C1, en anglais.</value>
+        <remarks><para>En lecture/écriture</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1Local">
@@ -486,12 +457,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient ou définit une valeur qui représente la formule de l’objet à l’aide de la notation de type R1C1, dans la langue de l’utilisateur.</summary>
-        <value>La formule de l’objet à l’aide de la notation de type R1C1, dans la langue de l’utilisateur.</value>
-        <remarks>
-          <para>Lecture/écriture.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtient ou définit une valeur qui représente la formule de l’objet à l’aide de la notation de style R1C1, dans la langue de l’utilisateur.</summary>
+        <value>Formule de l’objet utilisant la notation de style R1C1, dans la langue de l’utilisateur.</value>
+        <remarks><para>En lecture/écriture</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -519,10 +488,8 @@
       <Docs>
         <summary>Obtient la hauteur, en points, de l’objet.</summary>
         <value>Hauteur de l'objet en points.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -553,8 +520,7 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l'alignement horizontal de l'objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les constantes suivantes peuvent être utilisées :</para>
+        <remarks><para>Les constantes suivantes peuvent être utilisées :</para>
           <para>
             <b>xlCenter</b>
           </para>
@@ -571,8 +537,7 @@
             <b>xlRight</b>
           </para>
           <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeInLayout">
@@ -601,16 +566,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si un titre de graphique doit occuper l'espace du graphique lors de la spécification d'une disposition de graphique. <b>True</b> par défaut. <b>Boolean</b> en lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Cette propriété n'a pas d'influence sur le fait que le graphique soit ou non en mode de disposition automatique. Si l'utilisateur ajoute un titre à l'aide de la commande Au-dessus du graphique, le graphique devient plus petit, comme dans Microsoft Office Excel 2003. S'il supprime ensuite le titre ou sélectionne une ou plusieurs des options de titre avec superposition, le graphique s'agrandit, comme si le titre n'y était plus.
-</para>
-          <para></para>
-        </remarks>
+        <summary><b>True</b> si le titre d'un graphique occupera l'espace du graphique lors d'une disposition de graphique est déterminée. La valeur par défaut est <b>True</b>. En lecture/écriture <b>booléen</b>.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Cette propriété n'a pas d'influence sur le fait que le graphique soit ou non en mode de disposition automatique.  Si l'utilisateur ajoute un titre à l'aide de la commande Au-dessus du graphique, le graphique devient plus petit, comme dans Microsoft Office Excel 2003.  S'il supprime ensuite le titre ou sélectionne une ou plusieurs des options de titre avec superposition, le graphique s'agrandit, comme si le titre n'y était plus.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -639,7 +598,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object qui représente l’intérieur de l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objet qui représente l’intérieur de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -672,10 +631,8 @@
       <Docs>
         <summary>Distance, en points, du bord gauche de l'objet au bord gauche de la colonne A (dans une feuille de calcul) ou au bord gauche de la zone de graphique (dans un graphique).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la fenêtre est réduite, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Définir cette propriété sur 0 (zéro) rend la fenêtre un petit peu plus petite qu’il serait si la fenêtre d’application avait été agrandie. En d’autres termes, si cette propriété est 0 (zéro), la bordure gauche de la fenêtre Microsoft Excel principale sera peine visible à l’écran.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si la fenêtre est agrandie, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Si cette propriété est 0 (zéro), la fenêtre sera légèrement plus petite que si elle était agrandie. En d’autres termes, si cette propriété a la valeur 0 (zéro), la bordure gauche de la fenêtre principale de Microsoft Excel sera à peine visible à l’écran.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -732,10 +689,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Orientation du texte. Peut être une valeur entière comprise entre -90 et 90 degrés.</summary>
+        <summary>Orientation du texte. Il peut s’agit d’une valeur de -90 à 90 degrés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les constantes suivantes peuvent être utilisées :</para>
+        <remarks><para>Les constantes suivantes peuvent être utilisées :</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -748,8 +704,7 @@
           <para>
             <b>xlVertical</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -775,10 +730,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -808,10 +761,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlChartElementPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la position du titre du graphique dans le graphique. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlChartElementPosition" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlChartElementPosition" />
-        </value>
+        <summary>Renvoie ou définit la position du titre du graphique dans le graphique. En <see cref="T:Microsoft.Office.Interop.Excel.XlChartElementPosition" /> lecture/écriture.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlChartElementPosition" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -841,12 +792,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le sens de lecture de l’objet spécifié. Peut être une des constantes suivantes : <b>xlContext</b>, <b>xlLTR</b> (de gauche à droite) ou <b>xlRTL</b> (de droite à gauche).</summary>
+        <summary>Renvoie ou définit l’ordre de lecture pour l’objet spécifié. Il peut s’agir de l’une des constantes suivantes : <b>xlRTL</b> (droite à gauche), <b>xlLTR</b> (gauche à droite) ou <b>xlContext</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -901,8 +850,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si l’objet est ombré.</summary>
+        <summary><b>True</b> si l’objet a une ombre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -964,7 +912,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Distance, en points, entre le bord supérieur de l’objet en haut de la ligne 1 (sur une feuille de calcul) ou à la partie supérieure de la zone de graphique (sur un graphique).</summary>
+        <summary>Distance, en points, entre le bord supérieur de l’objet et le haut de la ligne 1 (dans une feuille de calcul) ou le haut de la zone de graphique (sur un graphique).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -997,8 +945,7 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l'alignement vertical de l'objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les constantes suivantes peuvent être utilisées :</para>
+        <remarks><para>Les constantes suivantes peuvent être utilisées :</para>
           <para>
             <b>xlBottom</b>
           </para>
@@ -1014,8 +961,7 @@
           <para>
             <b>xlTop</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1043,10 +989,8 @@
       <Docs>
         <summary>Obtient la largeur, en points, de l’objet.</summary>
         <value>Largeur de l’objet en points.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

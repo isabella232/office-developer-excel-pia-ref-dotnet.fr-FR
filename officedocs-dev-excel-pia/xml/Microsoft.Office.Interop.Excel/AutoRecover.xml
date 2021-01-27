@@ -1,13 +1,5 @@
 <Type Name="AutoRecover" FullName="Microsoft.Office.Interop.Excel.AutoRecover">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cd09f7ea28f0544739412fc8f1a64ac1370cadc1" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576747" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoRecover" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cd09f7ea28f0544739412fc8f1a64ac1370cadc1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006194" /></Metadata><TypeSignature Language="C#" Value="public interface AutoRecover" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoRecover" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AutoRecover" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoRecover" />
@@ -30,14 +22,12 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente les fonctionnalités de récupération automatique d’un classeur.</summary>
-    <remarks>
-      <para>Les propriétés de l'objet AutoRecover déterminent le chemin et l'intervalle de temps requis pour la sauvegarde de tous les fichiers.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoRecover" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objet pour renvoyer un objet <b>AutoRecover</b> .</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Path" /> propriété de l’objet <b>AutoRecover</b> pour définir le chemin d’accès où le fichier de récupération automatique sera enregistré.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Time" /> propriété de l’objet <b>AutoRecover</b> pour définir l’intervalle de temps pour la sauvegarde de tous les fichiers.</para>
-      <para>Unités de note de la propriété <b>Time</b> sont les minutes.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Les propriétés de l'objet AutoRecover déterminent le chemin et l'intervalle de temps requis pour la sauvegarde de tous les fichiers.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoRecover" /> propriété de <see cref="T:Microsoft.Office.Interop.Excel._Application" /> l’objet pour renvoyer un objet <b>AutoRecover.</b></para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Path" /> propriété de <b>l’objet AutoRecover</b> pour définir le chemin d’accès de l’endroit où le fichier de autorecover sera enregistré.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Time" /> propriété de <b>l’objet AutoRecover</b> pour définir l’intervalle de temps pour la mise en service de tous les fichiers.</para>
+      <para>Note Units for the <b>Time</b> property are in minutes.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,11 +83,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -126,8 +114,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si l’objet est activé.</summary>
+        <summary>Cette propriété renvoie la valeur <b>True</b> si l'objet est activé.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,7 +142,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,7 +173,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit ou renvoie le chemin d’accès complet à l’emplacement où Microsoft Excel enregistre les fichiers temporaires de récupération automatique.</summary>
+        <summary>Définit ou renvoie le chemin d’accès complet à l’endroit où Microsoft Excel stockera les fichiers temporaires de mise à niveau automatique.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -217,14 +204,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit ou renvoie l’intervalle de temps pour le <see cref="T:Microsoft.Office.Interop.Excel.AutoRecover" /> objet.</summary>
+        <summary>Définit ou renvoie l’intervalle de temps pour <see cref="T:Microsoft.Office.Interop.Excel.AutoRecover" /> l’objet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les valeurs autorisées sont des entiers compris entre 1 et 120 minutes. La valeur par défaut est 10 minutes.</para>
+        <remarks><para>Les valeurs autorisées sont des nombres entiers compris entre 1 et 120 minutes. La valeur par défaut est 10 minutes.</para>
           <para>Si vous entrez une valeur décimale, elle est arrondie au nombre entier le plus proche. Par exemple, la valeur 5,5 est arrondie à 6.</para>
-          <para>Si les valeurs de temps en dehors de la plage valide sont entrées, Microsoft Excel restaure la valeur utilisée auparavant.</para>
-          <para></para>
-        </remarks>
+          <para>Si des valeurs d’heure en dehors de la plage valide sont entrées, Microsoft Excel revient à la valeur d’heure précédente utilisée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

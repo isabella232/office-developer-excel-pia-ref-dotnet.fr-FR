@@ -1,13 +1,5 @@
 <Type Name="Diagram" FullName="Microsoft.Office.Interop.Excel.Diagram">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9a421c6b190452977e49a87c2df60fb4cf93d756" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572666" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Diagram" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9a421c6b190452977e49a87c2df60fb4cf93d756" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005627" /></Metadata><TypeSignature Language="C#" Value="public interface Diagram" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Diagram" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Diagram" />
   <TypeSignature Language="VB.NET" Value="Public Interface Diagram" />
@@ -30,14 +22,12 @@
   </Attributes>
   <Docs>
     <summary>Représente un diagramme.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>diagramme</b> de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objet ou <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> collection pour renvoyer un objet <b>Diagram</b> .</para>
-      <para>Vous pouvez également convertir le diagramme en cours en un diagramme différent à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> méthode.</para>
+    <remarks><para>Utilisez la <b>propriété Diagram</b> de l’objet ou de la collection <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> pour <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> renvoyer un objet <b>Diagram.</b></para>
+      <para>Vous pouvez également convertir le diagramme actuel en un autre diagramme à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> méthode.</para>
       <para>
-        <b>Remarque</b>   Si le diagramme en cours est un organigramme hiérarchique (<b>msoDiagramOrgChart</b>), une erreur d’exécution se produit.</para>
-      <para>Il existe plusieurs types de diagrammes lors de l’utilisation de l’objet de <b>schéma</b> . Reportez-vous à la <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" /> méthode pour afficher la liste des types de diagrammes disponibles.</para>
-      <para></para>
-    </remarks>
+        <b>Remarque</b>   Si le diagramme actuel est un organigramme<b>(msoDiagramOrgChart</b>), une erreur d’exécuter se produit.</para>
+      <para>Il existe plusieurs types de diagrammes à choisir lors de l’utilisation de <b>l’objet Diagram.</b> Reportez-vous <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" /> à la méthode pour afficher la liste des types de diagrammes disponibles.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,11 +86,9 @@
       <Docs>
         <summary>Définit ou renvoie une constante indiquant l’état de mise en forme automatique d’un diagramme.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Définition de <b>mise en forme automatique</b><b>a la valeur msoFalse</b> désactive la mise en forme automatique pour le diagramme. Définition de <b>mise en forme automatique</b><b>a la valeur msoTrue</b> permet la mise en forme automatique pour le diagramme.</para>
-          <para>L’une des constantes <b>MsoTriState</b> suivantes ne s’applique ne pas à cette propriété : <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>définition de la mise en forme automatique</b> sur <b>msoFalse</b> désactive la mise en forme automatique pour le diagramme. La <b>définition de la mise en forme automatique</b> sur <b>msoTrue</b> active la mise en forme automatique pour le diagramme.</para>
+          <para>Les <b>constantes MsoTriState</b> suivantes à ne pas appliquer à cette propriété : <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoLayout">
@@ -129,13 +117,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une constante qui détermine le positionnement automatique des nœuds et connecteurs dans un diagramme.</summary>
+        <summary>Renvoie ou définit une constante qui détermine le positionnement automatique des connecteurs et des nodes dans un diagramme.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Définition de <b>mise en forme automatique</b><b>a la valeur msoFalse</b> désactive la mise en forme automatique pour le diagramme. Définition de <b>mise en forme automatique</b><b>a la valeur msoTrue</b> permet la mise en forme automatique pour le diagramme.</para>
-          <para>L’une des constantes <b>MsoTriState</b> suivantes ne s’applique ne pas à cette propriété : <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>définition de la superposition automatique</b> sur <b>msoFalse</b> désactive la mise en forme automatique pour le diagramme. La <b>définition de la superposition automatique</b> sur <b>msoTrue</b> active la mise en forme automatique pour le diagramme.</para>
+          <para>Les <b>constantes MsoTriState</b> suivantes à ne pas appliquer à cette propriété : <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Convert">
@@ -161,8 +147,8 @@
         <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
       </Parameters>
       <Docs>
-        <param name="Type">Requis <see cref="T:Microsoft.Office.Core.MsoDiagramType" />. Le type de diagramme à convertir. <b>MsoDiagramType</b> peut être une de ces constantes. <b>msoDiagramCycle</b> Diagramme de processus avec un type de diagramme cycle continu. <b>msoDiagramMixed</b> Type de diagramme mixte. <b>msoDiagramOrgChart</b> Type de diagramme relation hiérarchique. <b>msoDiagramPyramid</b> Type de diagramme relationnel en fonction de base. <b>msoDiagramRadial</b> Type de diagramme montrant les relations d’un élément principal. <b>msoDiagramTarget</b> Type de diagramme indiquant les étapes vers un objectif. <b>msoDiagramVenn</b> Type de diagramme indiquant les zones de chevauchement des éléments.</param>
-        <summary>Convertit le diagramme en cours en un diagramme différent.</summary>
+        <param name="Type">Obligatoire <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> . Type de diagramme en conversion. <b>MsoDiagramType</b> peut être l’une de ces constantes. <b>msoDiagramCycle</b> Diagramme de processus avec un type de diagramme de cycle continu. <b>msoDiagramMixed</b> Type de diagramme mixte. <b>msoDiagramOrgChart</b> Type de diagramme de relation hiérarchique. <b>msoDiagramPyramid</b> Type de diagramme de relations basées sur la base de la base. <b>msoDiagramRadial</b> Type de diagramme montrant les relations d’un élément principal. <b>msoDiagramTarget</b> Type de diagramme montrant les étapes à suivre pour atteindre un objectif. <b>msoDiagramVenn</b> Type de diagramme montrant les zones de chevauchement entre les éléments.</param>
+        <summary>Convertit le diagramme actuel en un autre diagramme.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,11 +177,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FitText">
@@ -219,11 +203,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ajuste la taille du texte dans les nœuds dans un diagramme à s’intégrer dans les limites des nœuds.</summary>
-        <remarks>
-          <para>Cette méthode fonctionne uniquement dans Microsoft Office PowerPoint 2003.</para>
-          <para></para>
-        </remarks>
+        <summary>Ajuste la taille du texte dans les nodes d’un diagramme pour qu’il s’adapte aux limites des deux.</summary>
+        <remarks><para>Cette méthode fonctionne uniquement dans Microsoft Office PowerPoint 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -249,7 +231,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> objet qui contient la liste de tous les nœuds dans le diagramme spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> objet qui contient une liste plate de tous les nodes dans le diagramme spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -277,7 +259,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -308,13 +290,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Inverse les nœuds dans un diagramme.</summary>
+        <summary>Inverse les nodes dans un diagramme.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Définition <b>inverse</b><b>a la valeur msoFalse</b> laisse les nœuds de diagramme en tant qu’ils reçoivent. <b>Inverse</b><b>a la valeur msoTrue</b> inverse les nœuds dans un diagramme.</para>
-          <para>L’une des constantes <b>MsoTriState</b> suivantes ne s’applique ne pas à cette propriété : <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La définition de <b>l’inverse sur msoFalse laisse</b> les nodes de diagramme tels qu’ils sont. <b></b> La définition de <b>l’inverse sur msoTrue</b> inverse les nodes dans un diagramme. <b></b></para>
+          <para>Les <b>constantes MsoTriState</b> suivantes à ne pas appliquer à cette propriété : <b>msoCTrue</b>, <b>msoTriStateMixed</b>, <b>msoTriStateToggle</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -340,11 +320,10 @@
         <ReturnType>Microsoft.Office.Core.MsoDiagramType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type de diagramme.</summary>
+        <summary>Renvoie ou définit le type de diagramme.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Core.MsoDiagramType" />peut être une de ces constantes <b>MsoDiagramType</b> :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> peut être l’une de <b>ces constantes MsoDiagramType</b> :</para>
           <para>
             <b>msoDiagramCycle</b>
           </para>
@@ -366,8 +345,7 @@
           <para>
             <b>msoDiagramVenn</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

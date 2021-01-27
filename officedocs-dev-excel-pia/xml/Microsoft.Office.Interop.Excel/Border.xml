@@ -1,13 +1,5 @@
 <Type Name="Border" FullName="Microsoft.Office.Interop.Excel.Border">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="615b6d793dd88e23d55febf94b9549b59f9d20c5" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576782" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Border" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="615b6d793dd88e23d55febf94b9549b59f9d20c5" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006145" /></Metadata><TypeSignature Language="C#" Value="public interface Border" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Border" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Border" />
   <TypeSignature Language="VB.NET" Value="Public Interface Border" />
@@ -29,16 +21,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Cet objet représente la bordure d’un objet.</summary>
-    <remarks>
-      <para>Plus délimité objets (tout à l’exception de la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> et <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objets) ont une bordure qui est traitée comme une seule entité, quel que soit le nombre de côtés il a. La bordure entière doit être renvoyée en tant qu’unité. Utilisez la propriété <b>Border</b> pour renvoyer l’objet <b>Border</b> pour ce type d’objet.</para>
-      <para>Les objets 
-        <b>Range</b> et <b>Style</b> dotés de quatre bordures discrètes : gauche, droite, haut et bas, qui peuvent être renvoyées individuellement ou en tant que groupe. Utilisez la propriété <b>bordures</b> d’un objet <b>Range</b> ou <b>Style</b> pour renvoyer la collection <b>Borders</b> contenant les quatre bordures et les bordures de la traite comme une unité.</para>
-      <para>Utiliser des <b>bordures</b>(<paramref name="index" />), où <paramref name="index" /> identifie la bordure, pour renvoyer un objet <b>Border</b> .</para>
+    <summary>Cet objet représente la bordure d'un objet.</summary>
+    <remarks><para>La plupart des objets à bordures (à l’exception des objets et des objets) ont une bordure qui est traitée comme une entité unique, quel que soit le nombre de côtés <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <see cref="T:Microsoft.Office.Interop.Excel.Style" /> qu’elle possède. La bordure entière doit être renvoyée en un tout. Utilisez la <b>propriété Border</b> pour renvoyer l’objet <b>Border</b> pour ce type d’objet.</para>
       <para>
-        <paramref name="Index" />peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes : <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>ou <b>xlInsideVertical</b>.</para>
-      <para></para>
-    </remarks>
+        <b>Les</b> objets Range et <b>Style</b> ont quatre bordures discrètes (gauche, droite, haut et bas) qui peuvent être renvoyées individuellement ou en tant que groupe. Utilisez la <b>propriété Borders</b> d’un objet <b>Range</b> ou <b>Style</b> pour renvoyer la collection <b>Borders,</b> qui contient les quatre bordures et traite les bordures comme une unité.</para>
+      <para>Utilisez <b>Borders</b>( <paramref name="index" /> ), où identifie la <paramref name="index" /> bordure, pour renvoyer un seul <b>objet Border.</b></para>
+      <para>
+        <paramref name="Index" /> peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes suivantes : <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>ou <b>xlInsideVertical</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,12 +85,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur principale de la bordure.</summary>
+        <summary>Renvoie ou définit la couleur principale de la bordure.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utilisez la fonction <b>RGB</b> pour créer une valeur de couleur.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Utilisez la fonction <b>RGB</b> pour créer une valeur de couleur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorIndex">
@@ -129,18 +117,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur de la bordure.</summary>
+        <summary>Renvoie ou définit la couleur de la bordure.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La couleur est spécifiée sous la forme d’une valeur d’index dans la palette de couleurs actuelle ou comme une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes :</para>
+        <remarks><para>La couleur est spécifiée sous forme de valeur d’index dans la palette de couleurs actuelle ou sous la forme d’une des <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes suivantes :</para>
           <para>
             <b>xlColorIndexAutomatic</b>
           </para>
           <para>
             <b>xlColorIndexNone</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -168,11 +154,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineStyle">
@@ -201,11 +185,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le style de trait pour la bordure.</summary>
+        <summary>Renvoie ou définit le style de ligne de la bordure.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" />peut être une de ces constantes <b>XlLineStyle</b> :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" /> peut être l’une de <b>ces constantes XlLineStyle</b> :</para>
           <para>
             <b>xlContinuous</b>
           </para>
@@ -230,8 +213,7 @@
           <para>
             <b>xlLineStyleNone</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -257,7 +239,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -288,14 +270,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur de thème dans le jeu de couleurs appliqué qui est associé à l’objet spécifié.  <b>Objet</b> en lecture/écriture.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>Toute tentative d'accès à une couleur de thème pour un objet auquel aucun thème n'est appliqué provoquera une erreur de requête non valide à l'exécution.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie ou définit la couleur du thème dans le jeu de couleurs appliquées qui est associé à l'objet spécifié.  <b>Objet</b> en lecture/écriture.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Toute tentative d'accès à une couleur de thème pour un objet auquel aucun thème n'est appliqué provoquera une erreur de requête non valide à l'exécution.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TintAndShade">
@@ -324,15 +302,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>unique</b> qui éclaircit ou assombrit une couleur.</summary>
-        <value>
-          <b>Unique</b>
-        </value>
-        <remarks>
-          <para>Vous pouvez entrer un nombre compris entre -1 (sombre) et 1 (clair) pour la <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> propriété. Zéro (0) est neutre.</para>
+        <summary>Renvoie ou définit un <b>Single</b> qui éclaircit ou assombrit une couleur.</summary>
+        <value><b>Single</b></value>
+        <remarks><para>Vous pouvez entrer un nombre de -1 (le plus sombre) à 1 (le plus clair) pour la <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> propriété. Zéro (0) est neutre.</para>
           <para>Toute tentative de définition de cette propriété sur une valeur inférieure à -1 ou supérieure à +1 provoquera une erreur d'exécution et l'affichage du message « La valeur tapée est en dehors des limites ». Cette propriété fonctionne pour les couleurs de thème et les couleurs hors thème.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Weight">
@@ -361,11 +335,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’épaisseur de la bordure.</summary>
+        <summary>Cette propriété renvoie ou définit la largeur de la bordure.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" />peut être une de ces constantes <b>XlBorderWeight</b> :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" /> peut être l’une de <b>ces constantes XlBorderWeight</b> :</para>
           <para>
             <b>xlHairline</b>
           </para>
@@ -378,8 +351,7 @@
           <para>
             <b>xlThick</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="AutoCorrect" FullName="Microsoft.Office.Interop.Excel.AutoCorrect">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="782c79cfc9bebcca05b2fc4c4e554571d4077391" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572722" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoCorrect" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="782c79cfc9bebcca05b2fc4c4e554571d4077391" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006229" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrect" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrect" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AutoCorrect" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrect" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Cet objet contient les attributs de Correction automatique Microsoft Excel (correction des majuscules doublées en début de mot, liste de corrections automatiques, etc.).</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> propriété permet de renvoyer l’objet <b>AutoCorrect</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> propriété pour renvoyer <b>l’objet AutoCorrect.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddReplacement">
@@ -60,10 +50,8 @@
         <Parameter Name="Replacement" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="What">
-          <b>String</b>obligatoire. Texte à remplacer. Si cette chaîne existe déjà dans le tableau des remplacements de correction automatique, le texte de remplacement existant est remplacé par le nouveau texte.</param>
-        <param name="Replacement">
-          <b>String</b>obligatoire. Texte de remplacement.</param>
+        <param name="What">Argument de type <b>String</b> obligatoire. Texte à remplacer. Si cette chaîne existe déjà dans le tableau des remplacements de la correction automatique, le texte de substitution existant est remplacé par le nouveau texte.</param>
+        <param name="Replacement">Argument de type <b>String</b> obligatoire. Texte de remplacement.</param>
         <summary>Ajoute une entrée au tableau des remplacements de la Correction automatique.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -92,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,12 +111,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Une valeur <b>booléenne</b> indiquant si l’extension automatique est activée pour les listes.</summary>
+        <summary>Valeur <b>boolé</b> européenne indiquant si l’extension automatique est activée pour les listes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Lorsque vous tapez dans une cellule d’une colonne en regard d’une liste ou une ligne vide, la liste se développe pour inclure cette ligne ou colonne si l’extension automatique est activée.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Lorsque vous tapez dans une cellule d’une ligne ou d’une colonne vide à côté d’une liste, la liste est étendue pour inclure cette ligne ou colonne si l’extension automatique est activée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFillFormulasInLists">
@@ -157,14 +143,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Affecte la création de colonnes calculées créées par des listes à remplissage automatique. Type de données <b>Boolean</b> en lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>La propriété n'affecte pas les colonnes calculées existantes ni les colonnes calculées créées sans remplissage automatique.</para>
-          <para></para>
-        </remarks>
+        <summary>Affecte la création de colonnes calculées créées par des listes à remplissage automatique. <b>Boolean</b> (en lecture/écriture).</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>La propriété n'affecte pas les colonnes calculées existantes ni les colonnes calculées créées sans remplissage automatique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CapitalizeNamesOfDays">
@@ -193,8 +175,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la première lettre des noms de jours est automatiquement mise en majuscule.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la première lettre des noms de jours est automatiquement mise en majuscule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -225,8 +206,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si Microsoft Excel corrige automatiquement l’utilisation accidentelle de la touche VERR.MAJ.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel corrige automatiquement l'utilisation accidentelle de la touche VERR.MAJ.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,8 +237,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si Microsoft Excel corrige automatiquement la phrase (premier mot) mise en majuscules.</summary>
+        <summary><b>True</b> si Microsoft Excel corrige automatiquement la mise en majuscules des phrases (premier mot).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -288,11 +267,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteReplacement">
@@ -318,8 +295,7 @@
         <Parameter Name="What" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="What">
-          <b>String</b>obligatoire. Texte à remplacer, tel qu’il apparaît dans la ligne à supprimer dans le tableau des remplacements de correction automatique. Si cette chaîne n’existe pas dans le tableau des remplacements de correction automatique, cette méthode échoue.</param>
+        <param name="What">Argument de type <b>String</b> obligatoire. Texte à remplacer tel qu'il apparaît dans la ligne à supprimer dans le tableau des remplacements de la Correction automatique. Si cette chaîne n'existe pas dans le tableau, cette méthode échoue.</param>
         <summary>Supprime une entrée du tableau des remplacements de la Correction automatique.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -351,13 +327,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Permet à l’utilisateur afficher ou masquer le bouton Options de correction automatique. La valeur par défaut est <b>True</b>.</summary>
+        <summary>Cette propriété permet à l'utilisateur d'afficher ou de masquer le bouton Options de correction automatique. La valeur par défaut est <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>DisplayAutoCorrectOptions</b> est un paramètre Microsoft Office. La modification de cette propriété dans Microsoft Excel affecte également les autres applications Office.</para>
+        <remarks><para>La propriété <b>DisplayAutoCorrectOptions</b> est un paramètre propre à Microsoft Office. La modification de cette propriété dans Microsoft Excel affecte également les autres applications Office.</para>
           <para>Dans Excel, le bouton Options de correction automatique s'affiche uniquement lorsqu'un lien hypertexte est automatiquement créé.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -383,7 +357,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -417,24 +391,22 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Facultatif <b>Object</b>. L’index de ligne du tableau des remplacements de correction automatique à renvoyer. La ligne est renvoyée comme un tableau unidimensionnel avec deux éléments : le premier élément est le texte dans la colonne 1 et le deuxième élément est le texte dans la colonne 2.</param>
+        <param name="Index">Objet <b>facultatif</b>. Index de la ligne du tableau des remplacements de la fonctionnalité Correction automatique à renvoyer. La ligne est renvoyée sous la forme d’un tableau unidimensionnel à deux éléments : Le premier élément est le texte contenu dans la colonne 1 et le deuxième élément est le texte contenu dans la colonne 2.</param>
         <summary>Renvoie le tableau des remplacements de la fonctionnalité Correction automatique.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si <paramref name="Index" /> n’est pas spécifié, cette méthode renvoie un tableau à deux dimensions. Chaque ligne du tableau contient un remplacement comme indiqué dans le tableau suivant.</para>
+        <remarks><para>Si <paramref name="Index" /> elle n’est pas spécifiée, cette méthode renvoie un tableau à deux dimensions. Chaque ligne du tableau contient un remplacement comme indiqué ci-dessous.</para>
           <list type="table">
             <item>
-              <term>1</term>
+              <term>1 </term>
               <description>Texte à remplacer</description>
             </item>
             <item>
-              <term>2</term>
+              <term>2 </term>
               <description>Texte de remplacement</description>
             </item>
           </list>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> pour ajouter une entrée à la liste des remplacements.</para>
-          <para></para>
-        </remarks>
+          <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> méthode pour ajouter une entrée à la liste de remplacement.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplaceText">
@@ -463,8 +435,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le texte dans la liste des remplacements de correction automatique est remplacé automatiquement.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le texte de la liste des remplacements de la correction automatique est remplacé automatiquement.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -495,8 +466,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si les mots commençant par deux majuscules sont automatiquement corrigés.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les mots commençant par deux lettres en majuscules sont automatiquement corrigés.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="DataLabels" FullName="Microsoft.Office.Interop.Excel.DataLabels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="59a0db665b8a81c22e071c0c60a0f23b4492e55a" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584552" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="59a0db665b8a81c22e071c0c60a0f23b4492e55a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005662" /></Metadata><TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataLabels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DataLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataLabels&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> les objets de la série spécifiée. Chaque objet <b>DataLabel</b> représente une étiquette de données pour une courbe de tendance ou un point. Pour une série sans point définissable (par exemple une série en aires), la collection <b>DataLabels</b> contient une seule étiquette de données.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Series.DataLabels(System.Object)" /> méthode pour renvoyer la collection <b>DataLabels</b> .</para>
-      <para>Utilisez <b>DataLabels</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’étiquette de données, pour renvoyer un seul objet <b>DataLabel</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> objets de la série spécifiée. Chaque objet <b>DataLabel</b> représente une étiquette de données pour une courbe de tendance ou un point. Pour une série sans point définissable (par exemple une série en aires), la collection <b>DataLabels</b> contient une seule étiquette de données.</summary>
+    <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.Series.DataLabels(System.Object)" /> méthode pour renvoyer la collection <b>DataLabels.</b></para>
+      <para>Utilisez <b>DataLabels</b>( ), où est le numéro d’index de l’étiquette de données, pour <paramref name="index" /> <paramref name="index" /> renvoyer un seul objet <b>DataLabel.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -68,7 +58,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +87,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,7 +115,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,7 +143,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,7 +171,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,7 +199,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,7 +226,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -273,11 +263,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le texte de l’objet modifie la taille de police lorsque la taille de l’objet change. La valeur par défaut est <b>True</b>. <b>Objet</b> en lecture/écriture.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Cette propriété a la valeur <b>True</b> si la taille de la police du texte situé dans l'objet change lorsque l'objet est redimensionné. La valeur par défaut est <b>True</b>. <b>Objet</b> en lecture/écriture.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,8 +294,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si l’objet génère automatiquement le texte approprié en fonction du contexte. Type de données <b>Boolean</b> en lecture-écriture.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si l'objet génère automatiquement le texte approprié en fonction du contexte. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -340,9 +326,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objet qui représente la bordure de l’objet.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Border" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Border" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,7 +353,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nombre d'objets dans la collection. Valeur <b>Integer</b> en lecture seule.</summary>
+        <summary>Renvoie le nombre d'objets dans la collection. <b>Entier</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -397,12 +381,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C. En lecture <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -457,10 +439,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objet pour une forme spécifiée ou un <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> objet pour un graphique spécifié qui contient les propriétés de la forme ou le graphique de la mise en forme du remplissage. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" />
-        </value>
+        <summary>Renvoie un objet pour une forme spécifiée ou un objet pour un graphique spécifié qui contient les propriétés de mise en forme de remplissage pour la forme <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> ou le graphique. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -491,9 +471,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objet qui représente la police de l’objet spécifié.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Font" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Font" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,10 +498,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,8 +563,7 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l'alignement horizontal de l'objet spécifié. <b>Objet</b> en lecture/écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les constantes suivantes peuvent être utilisées :</para>
+        <remarks><para>Les constantes suivantes peuvent être utilisées :</para>
           <para>
             <b>xlCenter</b>
           </para>
@@ -598,14 +573,13 @@
           <para>
             <b>xlJustify</b>
           </para>
-          <para>t 
-            <b>xlLef</b></para>
+          <para>
+            <b>xlLef</b>t</para>
           <para>
             <b>xlRight</b>
           </para>
           <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -634,10 +608,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object qui représente l’intérieur de l’objet spécifié.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Interior" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objet qui représente l’intérieur de l’objet spécifié.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -664,12 +636,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b>obligatoire. Nom ou numéro d'index de l'objet.</param>
+        <param name="Index">Required, <b>objet</b>. Nom ou numéro d'index de l'objet.</param>
         <summary>Renvoie un seul objet de la collection.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" />
-        </returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -729,10 +698,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le code du format de l'objet. En lecture/écriture, <b>chaîne</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le code de format est la même chaîne que l'option de Codes de Format dans la boîte de dialogue Format de cellule. La fonction <b>Format</b> utilise des chaînes de code de format différentes <b>NumberFormat</b> et <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> propriétés.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le code de format est la même chaîne que l'option de Codes de Format dans la boîte de dialogue Format de cellule. La <b>fonction Format</b> utilise des chaînes de code de format différentes de <b>numberFormat</b> et des <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> propriétés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -761,8 +728,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si le format numérique est lié aux cellules (de sorte que le format de nombre est modifié dans les étiquettes lorsqu'il est modifié dans les cellules). En lecture/écriture <b>booléen</b>.</summary>
+        <summary><b>True</b> si le format numérique est lié aux cellules (de sorte que le format de nombre est modifié dans les étiquettes lorsqu'il est modifié dans les cellules). En lecture/écriture <b>booléen</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -795,10 +761,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le code du format de l'objet sous forme de chaîne dans la langue de l'utilisateur. <b>Objet</b> en lecture/écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La fonction <b>Format</b> utilise des chaînes de code de format différentes que la <see cref="P:Microsoft.Office.Interop.Excel.DataLabels.NumberFormat" /> et propriétés <b>NumberFormatLocal</b> .</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>fonction Format</b> utilise des chaînes de code de format différentes de celles des propriétés <see cref="P:Microsoft.Office.Interop.Excel.DataLabels.NumberFormat" /> <b>NumberFormatLocal.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -827,24 +791,22 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Orientation du texte. Peut être une valeur entière comprise entre -90 et 90 degrés.</summary>
+        <summary>Orientation du texte. Il peut s’agit d’une valeur de -90 à 90 degrés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les constantes suivantes peuvent être utilisées :</para>
+        <remarks><para>Les constantes suivantes peuvent être utilisées :</para>
           <para>
-            <b>xlDownward</b>
+            <b>xlDownward </b>
           </para>
           <para>
-            <b>xlHorizontal</b>
+            <b>xlHorizontal </b>
           </para>
           <para>
-            <b>xlUpward</b>
+            <b>xlUpward </b>
           </para>
           <para>
             <b>xlVertical</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -870,7 +832,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -901,7 +863,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlDataLabelPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit la position de l'étiquette de données. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelPosition" />.</summary>
+        <summary>Renvoie ou définit la position de l'étiquette de données. En <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelPosition" /> lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -929,14 +891,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Numéro d’index de l’étiquette de données pour propager.</param>
-        <summary>Vous permet de prendre le contenu et la mise en forme d’une seule étiquette de données et s’appliquent à chaque étiquette de données dans la série.</summary>
-        <remarks>
-          <para>Si l’étiquette de données source prend en charge les champs qui sont incompatibles avec l’étiquette de données de destination, ces champs seront insérés en tant que leurs [nom du champ]. Par exemple, si une étiquette de données sur une série de graphique en secteurs avec un champ pourcentage est propagée dans une étiquette de données sur un graphique en histogrammes, ce champ Pourcentage devient un champ affichant [pourcentage].</para>
+        <param name="Index">Numéro d’index de l’étiquette de données à propager.</param>
+        <summary>Permet de prendre le contenu et la mise en forme d’une seule étiquette de données et de l’appliquer à toutes les autres étiquettes de données de la série.</summary>
+        <remarks><para>Si l’étiquette de données source prend en charge les champs incompatibles avec l’étiquette de données de destination, ces champs sont insérés en tant que [NOM DU CHAMP]. Par exemple, si une étiquette de données sur une série de secteurs avec un champ de pourcentage est propagée à une étiquette de données dans un graphique en colonnes, ce champ de pourcentage devient un champ non résolu affichant [POURCENTAGE].</para>
           <para>
-            <b>Remarque</b>: passage d’un argument de zéro (0) réinitialise les étiquettes de données pour votre prototype en cours.</para>
-          <para></para>
-        </remarks>
+            <b>Remarque</b>: la transmission d’un argument de zéro (0) réinitialise les étiquettes de données à votre prototype actuel.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingOrder">
@@ -965,12 +925,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le sens de lecture de l’objet spécifié. Peut être une des constantes suivantes : <b>xlContext</b>, <b>xlLTR</b> (de gauche à droite) ou <b>xlRTL</b> (de droite à gauche). Type de données <b>Integer</b> en lecture/écriture.</summary>
+        <summary>Renvoie ou définit l’ordre de lecture pour l’objet spécifié. Il peut s’agir de l’une des constantes suivantes : <b>xlRTL</b> (droite à gauche), <b>xlLTR</b> (gauche à droite) ou <b>xlContext</b>. <b>Entier</b> en lecture/écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1025,12 +983,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit ou renvoie un <b>objet</b> représentant le séparateur utilisé pour les étiquettes de données dans un graphique. Lecture/écriture.</summary>
+        <summary>Définit ou renvoie un <b>Object</b> qui représente le séparateur utilisé pour les étiquettes de données d’un graphique. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le graphique doit d'abord être actif avant que vous pouvez accéder par programmation ; les étiquettes de données dans le cas contraire, une erreur d'exécution se produit.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le graphique doit d'abord être actif avant que vous pouvez accéder par programmation ; les étiquettes de données dans le cas contraire, une erreur d'exécution se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -1059,8 +1015,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la police est une police ombrée ou si l’objet est ombré. Type de données <b>Boolean</b> en lecture/écriture.</summary>
+        <summary><b>True</b> si la police est une police d’ombre ou si l’objet a une ombre. <b>Boolean</b> (en lecture/écriture).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1091,12 +1046,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie la valeur <b>True</b> pour afficher la taille des bulles pour les étiquettes de données sur un graphique et la valeur <b>False</b> pour la masquer. Type de données <b>Boolean</b> en lecture-écriture.</summary>
+        <summary><b>True</b> pour afficher la taille des bulles pour les étiquettes de données sur un graphique. La valeur <b>False</b> les masque. <b>Boolean</b> (en lecture/écriture).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCategoryName">
@@ -1125,12 +1078,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie la valeur <b>True</b> pour afficher le nom des catégories pour les étiquettes de données dans un graphique. Elle renvoie la valeur <b>False</b> pour le masquer. Type de données <b>Boolean</b> en lecture-écriture.</summary>
+        <summary><b>True</b> pour afficher le nom de catégorie pour les étiquettes de données dans un graphique. La valeur <b>False</b> les masque. <b>Boolean</b> (en lecture/écriture).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowLegendKey">
@@ -1190,12 +1141,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie la valeur <b>True</b> pour afficher la valeur de pourcentage pour les étiquettes de données dans un graphique. Elle renvoie la valeur <b>False</b> pour la masquer. Type de données <b>Boolean</b> en lecture-écriture.</summary>
+        <summary><b>True</b> pour afficher la valeur du pourcentage pour les étiquettes de données dans un graphique. La valeur <b>False</b> les masque. <b>Boolean</b> (en lecture/écriture).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowRange">
@@ -1224,12 +1173,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Permet de basculer entre le champ de <b>tranche</b> s’il existe sur la plage d’étiquette de données. <b>Boolean</b> (<b>bool</b> en c#) En lecture/écriture</summary>
+        <summary>Utilisé pour faire bascule le champ <b>Plage</b> s’il existe sur la plage d’étiquettes de données. <b>Booléen</b> <b>(booléen</b> en C#) En lecture-écriture</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’objet <b>Range</b> mappe une plage de cellules arbitraire à une plage d’étiquettes de données, afin que chaque étiquette de données correspond à l’une des cellules de la plage.</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>L’objet Range</b> map une plage arbitraire de cellules à une plage d’étiquettes de données, afin que chaque étiquette de données corresponde à l’une des cellules de la plage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowSeriesName">
@@ -1258,12 +1205,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un objet de type <b>Boolean</b> pour indiquer le comportement d'affichage du nom de la série pour les étiquettes de données dans un graphique. Cette propriété a la valeur <b>True</b> pour afficher le nom de la série. Elle a la valeur <b>False</b> pour le masquer. En lecture-écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un objet de type <b>Boolean</b> pour indiquer le comportement d'affichage du nom de la série pour les étiquettes de données dans un graphique. Cette propriété a la valeur <b>True</b> pour afficher le nom de la série. La valeur <b>False</b> les masque. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowValue">
@@ -1292,12 +1237,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un objet de type <b>Boolean</b> correspondant à un comportement d'affichage des valeurs d'étiquettes de données d'un graphique spécifié. La valeur <b>True</b> affiche les valeurs. La valeur <b>False</b> les masque. En lecture-écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un objet de type <b>Boolean</b> correspondant à un comportement d'affichage des valeurs d'étiquettes de données d'un graphique spécifié. La valeur <b>True</b> affiche les valeurs. La valeur <b>False</b> les masque. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le graphique doit d'abord être actif avant que vous puissiez accéder aux étiquettes de données par programmation sinon, une erreur d'exécution se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -1332,10 +1275,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type d’étiquette. <b>Objet</b> en lecture/écriture.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie ou définit le type d’étiquette. <b>Objet</b> en lecture/écriture.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1367,8 +1308,7 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l'alignement vertical de l'objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les constantes suivantes peuvent être utilisées :</para>
+        <remarks><para>Les constantes suivantes peuvent être utilisées :</para>
           <para>
             <b>xlBottom</b>
           </para>
@@ -1384,8 +1324,7 @@
           <para>
             <b>xlTop</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
