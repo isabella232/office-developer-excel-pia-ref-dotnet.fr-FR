@@ -1,13 +1,5 @@
 <Type Name="WorkbookEvents_Event" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2c6690aaaabf5f77b79d72b8fb4094774b86969d" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586260" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c6690aaaabf5f77b79d72b8fb4094774b86969d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009015" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface WorkbookEvents_Event" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Événements de l’interface pour Excel<see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet des événements.</summary>
+    <summary>Interface d’événements pour les <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> événements d’objet Excel.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,12 +40,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_ActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsqu’un classeur est activé.</summary>
-        <remarks>
-          <para>Lorsque vous basculez entre deux fenêtres affichant le même classeur, l’événement <b>WindowActivate</b> se produit mais l’événement <b>Activate</b> pour le classeur ne se produit pas.</para>
+        <summary>Se produit lorsqu’un workbook est activé.</summary>
+        <remarks><para>Lorsque vous basculez entre deux fenêtres affichant le même workbook, l’événement <b>WindowActivate</b> se produit, mais l’événement <b>Activate</b> pour le workbook ne se produit pas.</para>
           <para>Cet événement ne se produit pas lorsque vous créez une nouvelle fenêtre.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddinInstall">
@@ -71,7 +61,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AddinInstallEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsque le classeur est installé comme un complément.</summary>
+        <summary>Se produit lorsque le workbook est installé en tant que add-in.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,11 +80,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AddinUninstallEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsque le classeur est désinstallé sous la forme d’une macro complémentaire.</summary>
-        <remarks>
-          <para>La macro n'est pas fermée automatiquement lorsqu'elle est désinstallée.</para>
-          <para></para>
-        </remarks>
+        <summary>Cet événement se produit lorsque le classeur est désinstallé sous la forme d'une macro complémentaire.</summary>
+        <remarks><para>La macro n'est pas fermée automatiquement lorsqu'elle est désinstallée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AfterSave">
@@ -131,11 +119,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AfterXmlExportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cet événement se produit une fois que Excel n’enregistre ou exporte les données vers un fichier de données XML du classeur spécifié.</summary>
-        <remarks>
-          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produit après qu’Excel enregistre ou exporte des données du classeur spécifié dans un fichier de données XML.</summary>
+        <remarks><para>Les fonctionnalités XML, à l’exception de l’enregistrement de fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professional Edition 2003 et Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AfterXmlImport">
@@ -153,11 +139,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AfterXmlImportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cet événement se produit après l’actualisation d’une connexion de données XML existante ou importation de nouvelles données XML dans le classeur Excel spécifié.</summary>
-        <remarks>
-          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produit après l’actualisation d’une connexion de données XML existante ou après l’importation de nouvelles données XML dans le manuel Excel spécifié.</summary>
+        <remarks><para>Les fonctionnalités XML, à l’exception de l’enregistrement de fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professional Edition 2003 et Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeClose">
@@ -194,7 +178,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforePrintEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit avant l’impression du classeur (ou de tout élément de celui-ci).</summary>
+        <summary>Cet événement se produit avant l'impression du classeur (ou de tout élément de celui-ci).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,11 +216,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlExportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit avant qu’Excel n’enregistre ou exporte les données vers un fichier de données XML du classeur spécifié.</summary>
-        <remarks>
-          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produit avant qu’Excel enregistre ou exporte les données du classeur spécifié dans un fichier de données XML.</summary>
+        <remarks><para>Les fonctionnalités XML, à l’exception de l’enregistrement de fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professional Edition 2003 et Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeXmlImport">
@@ -254,11 +236,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit avant l’actualisation d’une connexion de données XML existante ou l’importation de données avant le nouveau code XML dans un classeur Excel.</summary>
-        <remarks>
-          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produit avant l’actualisation d’une connexion de données XML existante ou avant l’importation de nouvelles données XML dans un workbook Excel.</summary>
+        <remarks><para>Les fonctionnalités XML, à l’exception de l’enregistrement de fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professional Edition 2003 et Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Deactivate">
@@ -276,7 +256,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_DeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsque le classeur est désactivé.</summary>
+        <summary>Se produit lorsque le workbook est désactivé.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,7 +275,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_ModelChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cet événement se produit après la modification du modèle de données Excel.</summary>
+        <summary>Se produit après la changement du modèle de données Excel.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,12 +294,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_NewChartEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsqu’un nouveau graphique est créé dans le classeur.</summary>
-        <remarks>
-          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> événement se produit chaque fois qu’un nouveau graphique est inséré ou collé dans une feuille de calcul, une feuille de graphique ou d’autres types de feuille. Si plusieurs graphiques sont insérées ou collées, l’événement se produit pour chaque graphique dans l’ordre ils sont insérés ou collés. Si un objet graphique ou une feuille de graphique est déplacé d’un emplacement vers un autre, l’événement ne se produit pas. Toutefois, si le graphique est déplacé entre un objet graphique et une feuille de graphique, l’événement se produit, car un nouveau graphique doit être créé.</para>
-          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> événement ne se produit pas dans les scénarios suivants : copier ou coller une feuille de graphique, modification d’un type de graphique, modification d’une source de données du graphique, l’annulation ou au rétablissement d’insertion ou collage d’un graphique et le chargement d’un classeur qui contient un graphique.</para>
-          <para></para>
-        </remarks>
+        <summary>Cet événement se produit lorsqu’un nouveau graphique est créé dans le classeur.</summary>
+        <remarks><para>L’événement se produit chaque fois qu’un nouveau graphique est inséré ou passé dans une feuille de calcul, une feuille de graphique <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> ou d’autres types de feuille. Si plusieurs graphiques sont insérés ou collés, l’événement se produit pour chaque graphique dans l’ordre dans lequel ils sont insérés ou collés. Si un objet graphique ou une feuille de graphique est déplacé d’un emplacement à un autre, l’événement ne se produit pas. Toutefois, si le graphique est déplacé entre un objet graphique et une feuille de graphique, l’événement se produit car un nouveau graphique doit être créé.</para>
+          <para>L’événement ne se produit pas dans les scénarios suivants : copie ou coller une feuille de graphique, modification d’un type de graphique, modification d’une source de données de graphique, opération d’annuler ou de refaire l’insertion ou le coller d’un graphique, et chargement d’un workbook qui contient un <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> graphique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NewSheet">
@@ -337,7 +315,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_NewSheetEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsqu’une nouvelle feuille est créée dans le classeur.</summary>
+        <summary>Cet événement se produit lorsqu'une nouvelle feuille est créée dans le classeur.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,11 +391,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_RowsetCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>L’événement est déclenché lorsque l’utilisateur extrait le jeu d’enregistrements ou appelle l’action rowset sur un tableau croisé dynamique OLAP.</summary>
-        <remarks>
-          <para>Dans la mesure où le jeu d'enregistrements est créé de façon asynchrone, l'événement permet d'automatiser la détection de la fin de l'action. De plus, étant donné que le jeu d'enregistrements est créé dans une autre feuille, l'événement doit se situer au niveau du classeur.</para>
-          <para></para>
-        </remarks>
+        <summary>L’événement est élevé lorsque l’utilisateur pare le jeu d’enregistrements ou appelle l’action de jeu de lignes sur un tableau croisé dynamique OLAP.</summary>
+        <remarks><para>Dans la mesure où le jeu d'enregistrements est créé de façon asynchrone, l'événement permet d'automatiser la détection de la fin de l'action. De plus, étant donné que le jeu d'enregistrements est créé dans une autre feuille, l'événement doit se situer au niveau du classeur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetActivate">
@@ -454,7 +430,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetBeforeDeleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cet événement se produit avant la suppression de la feuille de calcul.</summary>
+        <summary>Se produit avant la suppression de la feuille de calcul.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,7 +449,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetBeforeDoubleClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsque l’utilisateur double-clique sur une feuille de calcul avant le double-clic par défaut.</summary>
+        <summary>Cet événement se produit lorsque l'utilisateur double-clique sur une feuille de calcul avant le double-clic par défaut.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -492,11 +468,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetBeforeRightClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsque l’utilisateur clique avec le bouton droit de la souris sur une feuille de calcul avant le clic par défaut avec le bouton droit de la souris.</summary>
-        <remarks>
-          <para>Cet événement ne se produit pas sur les feuilles de graphique.</para>
-          <para></para>
-        </remarks>
+        <summary>Cet événement se produit lorsque l'utilisateur clique avec le bouton droit de la souris sur une feuille de calcul avant le clic par défaut avec le bouton droit de la souris.</summary>
+        <remarks><para>Cet événement ne se produit pas sur les feuilles de graphique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetCalculate">
@@ -514,7 +488,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetCalculateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit après le recalcul de toute feuille de calcul ou après le traçage des données modifiées sur un graphique.</summary>
+        <summary>Cet événement se produit après le recalcul de toute feuille de calcul ou après le traçage des données modifiées sur un graphique.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,10 +508,8 @@
       </ReturnValue>
       <Docs>
         <summary>Cet événement se produit lorsque des cellules d'une feuille de calcul sont modifiées par l'utilisateur ou par un lien externe.</summary>
-        <remarks>
-          <para>Cet événement ne se produit pas sur les feuilles de graphique.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cet événement ne se produit pas sur les feuilles de graphique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetDeactivate">
@@ -555,7 +527,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetDeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsqu’une feuille de calcul est désactivée.</summary>
+        <summary>Cet événement se produit lorsqu'une feuille de calcul est désactivée.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -574,7 +546,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetFollowHyperlinkEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsque vous cliquez sur un lien hypertexte dans Microsoft Excel.</summary>
+        <summary>Cet événement se produit lorsque vous cliquez sur un lien hypertexte dans Microsoft Excel.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -593,11 +565,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetLensGalleryRenderCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsque les icônes de galerie légende (dynamiques et statiques) terminées rendu pour une feuille de calcul.</summary>
-        <remarks>
-          <para>Cet événement peut être utilisé pour indiquer quand affichage supplémentaire ou réactiver la mise à jour d’écran des boîtes de dialogue, par exemple.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produit lorsque les icônes d’une galerie de légendes (dynamiques et statiques) ont terminé le rendu d’une feuille de calcul.</summary>
+        <remarks><para>Cet événement peut être utilisé pour indiquer quand ré-activer la mise à jour de l’écran ou afficher des boîtes de dialogue supplémentaires, par exemple.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableAfterValueChange">
@@ -615,11 +585,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableAfterValueChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit après qu’une cellule ou une plage de cellules à l’intérieur d’un tableau croisé dynamique a été modifiée ou recalculée (pour les cellules contenant des formules).</summary>
-        <remarks>
-          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" /> événement ne se produit pas dans toutes les conditions autre que l’édition ou de recalcul de cellules. Par exemple, il sera se produit pas lorsque le tableau croisé dynamique est actualisé, trié, filtré ou analysé, même si ces opérations déplacement des cellules et potentiellement extraient de nouvelles valeurs à partir de la source de données OLAP.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produit après qu’une cellule ou une plage de cellules à l’intérieur d’un tableau croisé dynamique est modifiée ou recalculée (pour les cellules qui contiennent des formules).</summary>
+        <remarks><para>L’événement ne se produit dans aucune condition autre que la modification ou <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" /> le recalcul de cellules. Par exemple, il ne se produit lorsque le tableau croisé dynamique est actualisé, trié, filtré ou analysé, même si ces opérations déplacent des cellules et récupèrent potentiellement de nouvelles valeurs à partir de la source de données OLAP.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableBeforeAllocateChanges">
@@ -638,10 +606,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit avant qu’un tableau croisé dynamique ne soit modifié.</summary>
-        <remarks>
-          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> événement se produit immédiatement avant qu’Excel exécute une instruction UPDATE CUBE pour appliquer toutes les modifications apportées à la source de données OLAP du tableau croisé dynamique, et immédiatement après que l’utilisateur a choisi d’appliquer les modifications de l’interface utilisateur.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>L’événement se produit immédiatement avant qu’Excel exécute une instruction UPDATE CUBE pour appliquer toutes les modifications à la source de données OLAP du tableau croisé dynamique, et immédiatement après que l’utilisateur a choisi d’appliquer les modifications dans <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> l’interface utilisateur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableBeforeCommitChanges">
@@ -659,11 +625,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeCommitChangesEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit avant que les modifications ne soient validées dans la source de données OLAP d’un tableau croisé dynamique.</summary>
-        <remarks>
-          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> événement se produit immédiatement avant qu’Excel exécute une instruction COMMIT TRANSACTION par rapport à la source de données OLAP du tableau croisé dynamique, et immédiatement après que l’utilisateur a choisi d’enregistrer les modifications pour le tableau croisé dynamique entier.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produit lorsque des changements sont validés sur la source de données OLAP pour un tableau croisé dynamique.</summary>
+        <remarks><para>L’événement se produit immédiatement avant qu’Excel exécute une TRANSACTION COMMIT sur la source de données OLAP du tableau croisé dynamique, et immédiatement après que l’utilisateur a choisi d’enregistrer les modifications pour l’ensemble du tableau <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> croisé dynamique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableBeforeDiscardChanges">
@@ -681,11 +645,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit avant que les modifications apportées à un tableau croisé dynamique ne soient ignorées.</summary>
-        <remarks>
-          <para>Cet événement se produit immédiatement avant qu’Excel exécute une instruction ROLLBACK TRANSACTION par rapport à la source de données OLAP, si une transaction est toujours active, puis ignore toutes les valeurs modifiées dans le tableau croisé dynamique, une fois que l’utilisateur a choisi d’ignorer les modifications.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produit avant que les modifications apportées à un tableau croisé dynamique soient ignorées.</summary>
+        <remarks><para>Se produit immédiatement avant qu’Excel exécute une instruction ROLLBACK TRANSACTION sur la source de données OLAP, si une transaction est toujours active, puis rejette toutes les valeurs modifiées dans le tableau croisé dynamique, une fois que l’utilisateur a choisi d’ignorer les modifications.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableChangeSync">
@@ -703,11 +665,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableChangeSyncEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit après modification d’un tableau croisé dynamique.</summary>
-        <remarks>
-          <para>Le <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" />se produit au cours de la plupart des modifications à un tableau croisé dynamique, afin que vous pouvez écrire du code pour répondre aux actions de l’utilisateur, telles que l’effacement, le regroupement ou l’actualisation d’éléments dans le tableau croisé dynamique.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produit après les modifications à un tableau croisé dynamique.</summary>
+        <remarks><para>Cet événement se produit lors de la plupart des modifications apportées à un tableau croisé dynamique, de sorte que vous pouvez écrire du code pour répondre aux actions de l’utilisateur, telles que l’effacement, le regroupement ou l’actualisation d’éléments dans le tableau <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" /> croisé dynamique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableUpdate">
@@ -725,7 +685,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableUpdateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit une fois que la feuille du rapport de tableau croisé dynamique a été mise à jour.</summary>
+        <summary>Cet événement se produit une fois que la feuille du rapport de tableau croisé dynamique a été mise à jour.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -744,7 +704,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetSelectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Survient lorsque la sélection change sur une feuille de calcul quelconque (l’événement ne survient pas si la sélection est effectuée sur une feuille de graphique).</summary>
+        <summary>Cet événement survient lorsque la sélection change sur une feuille de calcul quelconque (l'événement ne survient pas si la sélection est effectuée sur une feuille de graphique).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -763,7 +723,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetTableUpdateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit après que le tableau de feuille a été mis à jour.</summary>
+        <summary>Se produit après la mise à jour de la table de feuilles.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -801,7 +761,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_WindowActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Survient lorsqu’un classeur est activé.</summary>
+        <summary>Cet événement survient lorsqu'un classeur est activé.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -820,7 +780,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_WindowDeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Survient lorsqu’un classeur est désactivé.</summary>
+        <summary>Cet événement survient lorsqu'un classeur est désactivé.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -839,7 +799,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_WindowResizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Survient dès que la fenêtre d’un classeur est redimensionnée.</summary>
+        <summary>Se produit lorsque la fenêtre d'un classeur est redimensionnée.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

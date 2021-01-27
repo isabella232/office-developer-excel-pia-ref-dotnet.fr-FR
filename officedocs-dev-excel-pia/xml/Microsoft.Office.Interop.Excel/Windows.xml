@@ -1,13 +1,5 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Excel.Windows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574920" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009253" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Windows" />
   <TypeSignature Language="VB.NET" Value="Public Interface Windows&#xA;Implements IEnumerable" />
@@ -34,13 +26,11 @@
   </Attributes>
   <Docs>
     <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objets dans Microsoft Excel.</summary>
-    <remarks>
-      <para>La collection <b>Windows</b> renvoyée par la <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet contient toutes les fenêtres dans l’application, alors que la collection <b>Windows</b> renvoyé par la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet contient uniquement les fenêtres dans le classeur spécifié.</para>
-      <para>Utilisez la méthode <b>NewWindow</b> d’un objet <b>Window</b> ou <b>Workbook</b> pour créer une nouvelle fenêtre et l’ajouter à la collection.</para>
-      <para>Utilisez <b>Windows</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la fenêtre ou le numéro d’index, pour renvoyer un seul objet <b>Window</b> .</para>
+    <remarks><para>La collection <b>Windows</b> renvoyée par la propriété de l’objet contient toutes les fenêtres de l’application, tandis que la collection Windows renvoyée par la propriété de l’objet contient uniquement les fenêtres du livre de <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> travail <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> spécifié.</para>
+      <para>Utilisez la <b>méthode NewWindow</b> d’un <b>objet Window</b> ou <b>Workbook</b> pour créer une fenêtre et l’ajouter à la collection.</para>
+      <para>Utilisez <b>Windows</b>( ), où est le nom de la fenêtre ou le numéro <paramref name="index" /> <paramref name="index" /> d’index, pour renvoyer un seul <b>objet Window.</b></para>
       <para>Notez que la fenêtre active est toujours Windows(1).</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -101,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,10 +121,10 @@
         <Parameter Name="SyncVertical" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ArrangeStyle">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlArrangeStyle" />.</param>
-        <param name="ActiveWorkbook">Facultatif <b>Object</b>. <b>True</b> pour disposer uniquement les fenêtres visibles du classeur actif. <b>False</b> pour disposer toutes les fenêtres. <b>False</b> est la valeur par défaut.</param>
-        <param name="SyncHorizontal">Facultatif <b>Object</b>. Ignoré si <paramref name="ActiveWorkbook" /> a la <b>valeur False</b> ou est omis. <b>La valeur true</b> pour synchroniser les fenêtres du classeur actif lors du défilement horizontal. <b>False</b> pour ne pas synchroniser les fenêtres. <b>False</b> est la valeur par défaut.</param>
-        <param name="SyncVertical">Facultatif <b>Object</b>. Ignoré si <paramref name="ActiveWorkbook" /> a la <b>valeur False</b> ou est omis. <b>La valeur true</b> pour synchroniser les fenêtres du classeur actif lors du défilement vertical. <b>False</b> pour ne pas synchroniser les fenêtres. <b>False</b> est la valeur par défaut.</param>
+        <param name="ArrangeStyle">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlArrangeStyle" /> .</param>
+        <param name="ActiveWorkbook">Objet <b>facultatif</b>. <b>True</b> pour disposer uniquement les fenêtres visibles du classeur actif. <b>False</b> pour disposer toutes les fenêtres. La valeur par défaut est <b>False</b>.</param>
+        <param name="SyncHorizontal">Objet <b>facultatif</b>. Ignoré si <paramref name="ActiveWorkbook" /> elle est False <b>ou</b> omise. <b>True</b> pour synchroniser les fenêtres du workbook actif lors du défilement horizontal. <b>False pour</b> ne pas synchroniser les fenêtres. La valeur par défaut est <b>False</b>.</param>
+        <param name="SyncVertical">Objet <b>facultatif</b>. Ignoré si <paramref name="ActiveWorkbook" /> elle est False <b>ou</b> omise. <b>True</b> pour synchroniser les fenêtres du workbook actif lors du défilement vertical. <b>False pour</b> ne pas synchroniser les fenêtres. La valeur par défaut est <b>False</b>.</param>
         <summary>Cette méthode dispose les fenêtres à l’écran.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -161,7 +151,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Met fin au mode côte à côte si deux fenêtres sont en mode côte à côte.</summary>
+        <summary>Cette méthode met fin au mode côte à côte lorsque deux fenêtres utilisent ce mode.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,13 +179,11 @@
         <Parameter Name="WindowName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="WindowName">Le nom d’une fenêtre s’ouvre.</param>
-        <summary>Ouvre deux fenêtres en mode côte à côte.</summary>
+        <param name="WindowName">Nom d’une fenêtre à ouvrir.</param>
+        <summary>Cette méthode ouvre deux fenêtres en mode côte à côte.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Vous ne pouvez pas utiliser la méthode <b>CompareSideBySideWith</b> avec le <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objet ou le <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> propriété.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Vous ne pouvez pas <b>utiliser la méthode CompareSideBySideWith</b> avec <see cref="T:Microsoft.Office.Interop.Excel._Application" /> l’objet ou la <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -251,11 +239,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -316,9 +302,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b>obligatoire. Nom ou numéro d'index de l'objet.</param>
-        <summary>Renvoie un seul objet d'une collection.</summary>
+        <param name="Index">Required, <b>objet</b>. Nom ou numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d’une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -346,7 +331,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -373,10 +358,8 @@
       <Parameters />
       <Docs>
         <summary>Cette méthode rétablit les positions de deux fenêtres de feuille de calcul comparées en côte à côte.</summary>
-        <remarks>
-          <para>Utilisez la méthode <b>ResetPositionsSideBySide</b> pour rétablir les positions de deux feuilles de calcul comparées en côte à côte. Par exemple, si un utilisateur réduit ou agrandit l’une des deux fenêtres de feuille de calcul comparées, la méthode <b>ResetPositionsSideBySide</b> rétablit l’affichage afin que les deux fenêtres sont affichent de nouveau côte à côte.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Utilisez la <b>méthode ResetPositionsSideBySide</b> pour réinitialiser la position de deux feuilles de calcul comparées côte à côte. Par exemple, si un utilisateur réduit ou agrandit une des deux fenêtres de feuille de calcul en cours de comparaison, la méthode <b>ResetPositionsSideBySide</b> rétablit l'affichage de manière à ce que les deux fenêtres apparaissent de nouveau côte à côte.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncScrollingSideBySide">
@@ -405,7 +388,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>			Attribuez à cette propriété la valeur <b>True</b> pour activer le défilement synchronisé des fenêtres de documents comparés côte à côte. Attribuez-lui la valeur <b>False</b> pour désactiver le défilement simultané des fenêtres.</summary>
+        <summary>Attribuez à cette propriété la valeur <b>True</b> pour activer le défilement synchronisé des fenêtres de documents comparés côte à côte. Attribuez-lui la valeur <b>False</b> pour désactiver le défilement simultané des fenêtres.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="WorksheetView" FullName="Microsoft.Office.Interop.Excel.WorksheetView">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6d639f6ce96c01d378daef71d514ccd7be53adeb" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577097" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WorksheetView" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6d639f6ce96c01d378daef71d514ccd7be53adeb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008518" /></Metadata><TypeSignature Language="C#" Value="public interface WorksheetView" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorksheetView" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorksheetView" />
   <TypeSignature Language="VB.NET" Value="Public Interface WorksheetView" />
@@ -31,10 +23,8 @@
   <Docs>
     <summary>Collection de tous les objets <b>WorksheetView</b> du classeur spécifié ou actif.
 </summary>
-    <remarks>
-      <para>Contrôle l’apparence de la vue de niveau application ou le classeur en travaillant avec des propriétés telles que <see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayFormulas" />, <see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayGridlines" />, et <see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayHeadings" />.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Contrôle l’apparence de l’affichage au niveau de l’application ou du classez en travaillant avec des propriétés telles <see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayFormulas" /> <see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayGridlines" /> que , et <see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayHeadings" /> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,14 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente l’application Microsoft Office Excel. Utilisée avec un qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente le créateur de l’objet spécifié. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
-          <para></para>
-        </remarks>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> représente Microsoft Office’application Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet qui représente le <see cref="T:Microsoft.Office.Interop.Excel._Application" /> créateur de l’objet spécifié. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -93,14 +79,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie l’application qui a créé cet objet, sous la forme d’un nombre entier de 32 bits. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayFormulas">
@@ -129,10 +111,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit si des formules doivent être affichés ou masqués dans l’affichage actuel de la feuille de calcul. Lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Renvoie ou définit si des formules doivent être affichées ou masquées dans la vue de la feuille de calcul active. En lecture/écriture</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,16 +142,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le quadrillage est affiché. Lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
-          <para>Cette propriété affecte uniquement le quadrillage affiché. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> propriété pour contrôler l’impression du quadrillage.</para>
-          <para></para>
-        </remarks>
+        <summary>Cette propriété a la valeur <b>True</b> si le quadrillage est affiché. En lecture/écriture</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.
+
+</para>
+          <para>Cette propriété affecte uniquement le quadrillage affiché. Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> propriété pour contrôler l’impression du quadrillage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHeadings">
@@ -200,16 +177,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si les en-têtes de ligne et de colonne sont affichés ; <b>False</b> si aucun en-tête n’est affichés. Lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
-          <para>Cette propriété affecte uniquement les en-têtes affichés. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> propriété pour contrôler l’impression des en-têtes.</para>
-          <para></para>
-        </remarks>
+        <summary>Cette propriété a la valeur <b>True</b> si les en-têtes de ligne et de colonne sont affichés et la valeur <b>False</b> s’ils sont masqués. En lecture/écriture</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.
+
+</para>
+          <para>Cette propriété affecte uniquement les en-têtes affichés. Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> propriété pour contrôler l’impression des titres.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayOutline">
@@ -238,15 +212,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si les symboles du plan sont affichés.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
-          <para></para>
-        </remarks>
+        <summary>Cette propriété a la valeur <b>True</b> si les symboles du plan sont affichés.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayZeros">
@@ -275,15 +244,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si les valeurs zéro sont affichées. En lecture/écriture <b />.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
-          <para></para>
-        </remarks>
+        <summary>Cette propriété a la valeur <b>True</b> si les valeurs zéro sont affichées. En <b /> lecture/écriture.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -309,10 +273,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,10 +301,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nom de la feuille spécifié <see cref="T:Microsoft.Office.Interop.Excel.WorksheetView" /> objet. En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie le nom de feuille de l’objet <see cref="T:Microsoft.Office.Interop.Excel.WorksheetView" /> spécifié. En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

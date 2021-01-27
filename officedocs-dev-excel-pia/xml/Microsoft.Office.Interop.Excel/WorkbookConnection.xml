@@ -1,13 +1,5 @@
 <Type Name="WorkbookConnection" FullName="Microsoft.Office.Interop.Excel.WorkbookConnection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6d1fef0add7e32139d0f7d1970c0354fbd328c7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581066" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a6d1fef0add7e32139d0f7d1970c0354fbd328c7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009211" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface WorkbookConnection" />
@@ -29,15 +21,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une connexion est un ensemble d’informations nécessaire pour obtenir des données à partir d’une source de données externe autre qu’un classeur 1st_Excel12.</summary>
-    <remarks>
-      <para>Les connexions peuvent être stockées à l'intérieur d'un classeur Excel. Lorsque le classeur est ouvert, Excel crée une copie en mémoire de la connexion auquel l'objet de connexion fait référence. Un objet de connexion contient des informations, telles que le nom du serveur et le nom de l'objet à ouvrir sur ce serveur. L'objet de connexion peut également éventuellement inclure les informations d'authentification et/ou une commande qui doit être transmise au serveur et exécutée ( exemple : une instruction SELECT que SQL Server doit exécuter).</para>
+    <summary>Une connexion est un ensemble d’informations nécessaires pour obtenir des données à partir d’une source de données externe autre qu’un 1st_Excel12 de travail.</summary>
+    <remarks><para>Les connexions peuvent être stockées à l'intérieur d'un classeur Excel. Lorsque le classeur est ouvert, Excel crée une copie en mémoire de la connexion auquel l'objet de connexion fait référence. Un objet de connexion contient des informations, telles que le nom du serveur et le nom de l'objet à ouvrir sur ce serveur. L'objet de connexion peut également éventuellement inclure les informations d'authentification et/ou une commande qui doit être transmise au serveur et exécutée ( exemple : une instruction SELECT que SQL Server doit exécuter).</para>
       <para>
-        <b>Remarque</b>: la forme exacte de la connexion dépend du mécanisme utilisé pour récupérer des données – connexions ODBC, les connexions OLEDB et les requêtes Web contiendront des informations différentes.</para>
+        <b>Remarque</b>: la forme exacte de la connexion dépend du mécanisme utilisé pour récupérer des données : les connexions ODBC, les connexions OLEDB et les requêtes Web contiennent des informations différentes.</para>
       <para>Une connexion peut également être enregistrée dans un fichier de connexion distinct. La plupart des connexions d'un classeur Excel incluent un pointeur vers un fichier de connexion externe. Les fichiers de connexion ont des extensions (*.ODC, *.IQY, etc.) qui les identifient clairement en tant que fichiers de connexion. Ils peuvent être stockés sur l'ordinateur local de l'utilisateur ou dans tout emplacement connu ou approuvé, tel que WSS (Bibliothèque de connexions de données), ou dans tout autre serveur de l'entreprise. Les fichiers de connexion permettent à plusieurs utilisateurs au sein de la même organisation de réutiliser des connexions. Les administrateurs réseau sont en mesure de changer la manière dont l'ensemble d'une organisation se connecte à une source de données principale en modifiant un seul fichier de connexion. Un fichier de connexion n'est pas toujours requis lors de la connexion à une source de données externe.</para>
       <para>Les noms de connexion sont des chaînes qui identifient de façon unique les connexions à l'intérieur du classeur dans lequel elles sont utilisées. Toutes les propriétés d'une connexion qui ne sont pas uniques. Chaque fois qu'une formule dans Excel prend un argument qui est une connexion, il sera suffisant de faire référence au nom de cette connexion, soit directement (sous forme de chaîne), soit indirectement (par référence à une cellule qui contient le nom de connexion sous forme de chaîne).</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,12 +90,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente l’application Microsoft Office Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié. En lecture seule.</summary>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> représente Microsoft Office’application Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, elle renvoie un objet <b>Application</b> qui représente l’auteur de l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -131,12 +119,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Valeur <b>Integer</b> en lecture seule.</summary>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. <b>Entier</b> en lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFeedConnection">
@@ -162,7 +148,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataFeedConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet <b>DataFeedConnection</b> qui contient les données et les fonctionnalités nécessaires pour se connecter à des sources de données. Lecture seule</summary>
+        <summary>Renvoie un <b>objet DataFeedConnection</b> qui contient les données et les fonctionnalités nécessaires pour se connecter aux flux de données. Lecture seule</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,14 +175,12 @@
       <Parameters />
       <Docs>
         <summary>Cette méthode supprime une connexion de classeur.</summary>
-        <remarks>
-          <para>Utilisez cette méthode pour supprimer une connexion de données externes. Cette méthode ne s'applique pas aux liens vers d'autres classeurs. </para>
-          <para>Suppression d’une connexion ne supprime ni supprimer tous les objets qui ont été à l’aide de cette connexion.
+        <remarks><para>Utilisez cette méthode pour supprimer une connexion de données externes. Cette méthode ne s'applique pas aux liens vers d'autres classeurs. </para>
+          <para>La suppression d'une connexion ne supprime ni n'annule aucun des objets qui utilisaient cette connexion.
 
-Suppression d’une connexion n’entraîne pas un des fichiers de connexion d’être supprimés du système de fichiers.  Si vous modifiez un de ces objets pour utiliser une autre connexion, tout démarre à nouveau de fonctionner.</para>
+Cela n'entraîne pas non plus la suppression des fichiers de connexion du système de fichiers.  Si vous modifiez un de ces objets pour utiliser une autre connexion, tout refonctionnera de nouveau.</para>
           <para>Les objets qui utilisent une connexion supprimée se comportent comme si la connexion ne pouvait pas être établie.  </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -225,13 +209,11 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une brève description pour une <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objet. Valeur <b>String</b> en lecture-écriture.</summary>
+        <summary>Renvoie ou définit une brève description <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> d’un objet. <b>String</b> en lecture/écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Dans la boîte de dialogue Propriétés de la connexion, l'utilisateur peut modifier le nom de la connexion et/ou sa description. La modification du nom et de la description dans cette boîte de dialogue modifie ces champs seulement dans l'objet de connexion Excel.</para>
+        <remarks><para>Dans la boîte de dialogue Propriétés de la connexion, l'utilisateur peut modifier le nom de la connexion et/ou sa description.  La modification du nom et de la description dans cette boîte de dialogue modifie ces champs seulement dans l'objet de connexion Excel.</para>
           <para>La taille maximale d'une description est de 255 caractères. Si l'utilisateur spécifie une description dans un fichier de connexion qui comporte plus que 255 caractères, la description est tronquée pour correspondre à la limite des 255 caractères.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InModel">
@@ -257,12 +239,10 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spécifie si l’objet <b>WorkbookConnection</b> a été ajouté au modèle. <b>Boolean</b> (<b>bool</b> en c#) En lecture seule.</summary>
+        <summary>Spécifie si l’objet <b>WorkbookConnection</b> a été ajouté au modèle ou non. <b>Booléen</b> <b>(booléen</b> en C#) En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Doit avoir la valeur false pour les connexions héritées.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Doit être false pour les connexions héritées.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModelConnection">
@@ -288,7 +268,7 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
         <ReturnType>Microsoft.Office.Interop.Excel.ModelConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui contient des informations pour le nouveau Type de connexion de modèle introduites dans Excel 2013 pour interagir avec le modèle de données intégrée. Lecture seule</summary>
+        <summary>Renvoie un objet qui contient des informations pour le nouveau type de connexion de modèle introduit dans Excel 2013 afin d’interagir avec le modèle de données intégré. Lecture seule</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,7 +296,7 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> objet associé à la connexion donnée. Lecture seule</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> objet associé à la connexion particulière. Lecture seule</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,7 +327,7 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nom de la connexion de classeur. <b>String</b> en lecture-écriture.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de la connexion de classeur. <b>String</b> en lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -375,7 +355,7 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
         <ReturnType>Microsoft.Office.Interop.Excel.ODBCConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la connexion ODBC décrit en détail spécifié <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objet. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />.</summary>
+        <summary>Retuns the ODBC Connection details for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object. En lecture <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" /> seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,7 +383,7 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
         <ReturnType>Microsoft.Office.Interop.Excel.OLEDBConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la connexion OLEDB détaille spécifié <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objet. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />.</summary>
+        <summary>Retuns the OLEDB Connection details for the specified <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object. En lecture <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -431,7 +411,7 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -459,7 +439,7 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
         <ReturnType>Microsoft.Office.Interop.Excel.Ranges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la plage de l’objet spécifié <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objet. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.Ranges" />.</summary>
+        <summary>Renvoie la plage d’objets pour l’objet <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> spécifié. En lecture <see cref="T:Microsoft.Office.Interop.Excel.Ranges" /> seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -485,13 +465,11 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Actualise la connexion d'un classeur.</summary>
-        <remarks>
-          <para>Si le <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propriété a la <b>valeur False</b>, les boîtes de dialogue ne s’affichent pas et la méthode <b>Refresh</b> échoue à l’exception des informations de connexion insuffisantes.</para>
+        <summary>Actualise la connexion d’un classeur.</summary>
+        <remarks><para>Si la propriété a la valeur False , les boîtes de dialogue ne sont pas affichées et la méthode Refresh échoue avec <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> l’exception Informations de connexion insuffisantes. <b></b> <b></b></para>
           <para>L'échec d'actualisation d'une connexion n'aura aucun impact sur les opérations d'actualisation des autres connexions. 
 </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshWithRefreshAll">
@@ -520,7 +498,7 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si la connexion doit être actualisée lorsque Actualiser toutes les est exécutée. <b>Boolean</b> (<b>bool</b> en c#). En lecture-écriture.</summary>
+        <summary>Détermine si la connexion doit être actualisée lors de l’exécution de l’ensemble de l’actualisation. <b>Booléen</b> <b>(booléen</b> en C#). Lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -548,7 +526,7 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
         <ReturnType>Microsoft.Office.Interop.Excel.TextConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> objet qui contient des informations sur une requête dans un fichier texte. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> objet qui contient les informations d’une requête dans un fichier texte. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -576,7 +554,7 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
         <ReturnType>Microsoft.Office.Interop.Excel.XlConnectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le type de connexion de classeur. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />.</summary>
+        <summary>Cette propriété renvoie le type de connexion de classeur. En lecture <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" /> seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -604,7 +582,7 @@ Suppression d’une connexion n’entraîne pas un des fichiers de connexion d�
         <ReturnType>Microsoft.Office.Interop.Excel.WorksheetDataConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui contient des informations pour une connexion à partir du modèle PowerPivot à des données dans le classeur comme une plage, une plage nommée ou un tableau. En lecture seule.</summary>
+        <summary>Renvoie un objet qui contient des informations pour une connexion entre le modèle PowerPivot et les données du manuel, telles qu’une plage, une plage nommée ou un tableau. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

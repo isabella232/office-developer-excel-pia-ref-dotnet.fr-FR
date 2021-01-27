@@ -1,13 +1,5 @@
 <Type Name="Window" FullName="Microsoft.Office.Interop.Excel.Window">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="628d319ce41e267cd4a082a94f976467ed8bebe1" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577769" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Window" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="628d319ce41e267cd4a082a94f976467ed8bebe1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009260" /></Metadata><TypeSignature Language="C#" Value="public interface Window" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Window" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Window" />
   <TypeSignature Language="VB.NET" Value="Public Interface Window" />
@@ -29,14 +21,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Cet objet représente une fenêtre. De nombreux éléments de feuille de calcul, telles que les barres de défilement et les quadrillages, sont en fait des propriétés de la fenêtre.</summary>
-    <remarks>
-      <para>L’objet <b>Window</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection. La collection <b>Windows</b> renvoyée par la <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet contient toutes les fenêtres dans l’application, alors que la collection <b>Windows</b> renvoyé par la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet contient uniquement les fenêtres dans le classeur spécifié.</para>
-      <para>Utilisez <b>Windows</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la fenêtre ou le numéro d’index, pour renvoyer un seul objet <b>Window</b> .</para>
+    <summary>Cet objet représente une fenêtre. Beaucoup de caractéristiques de feuilles de calcul, telles que les barres de défilement et les quadrillages, sont en réalité des propriétés de la fenêtre.</summary>
+    <remarks><para><b>L’objet Window</b> est membre de la <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection. La collection <b>Windows</b> renvoyée par la propriété de l’objet contient toutes les fenêtres de l’application, tandis que la collection Windows renvoyée par la propriété de l’objet contient uniquement les fenêtres du livre de <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> travail <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> spécifié.</para>
+      <para>Utilisez <b>Windows</b>( ), où est le nom de la fenêtre ou le numéro <paramref name="index" /> <paramref name="index" /> d’index, pour renvoyer un seul <b>objet Window.</b></para>
       <para>Notez que la fenêtre active est toujours Windows(1).</para>
-      <para>La légende de la fenêtre est le texte affiché dans la barre de titre en haut de la fenêtre lorsque la fenêtre n’est pas agrandie. La légende apparaît également dans la liste des fichiers ouverts au bas du menu fenêtre. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> propriété pour définir ou renvoyer la légende de la fenêtre. Modification de la légende de la fenêtre ne change pas le nom du classeur.</para>
-      <para></para>
-    </remarks>
+      <para>La légende de la fenêtre correspond au texte affiché dans la barre de titre en haut de la fenêtre lorsqu'elle n'est pas agrandie. La légende apparaît également dans la liste des fichiers ouverts située en bas du menu Fenêtre. Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> propriété pour définir ou renvoyer la légende de la fenêtre. Le fait de modifier la légende de la fenêtre ne change pas le nom du classeur.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_DisplayRightToLeft">
@@ -144,10 +134,8 @@
       <Docs>
         <summary>Cette méthode amène la fenêtre au premier plan de l'ordre de plan.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>La méthode <b>Activate</b> n’exécute aucune macro Auto_Activate ou Auto_Deactivate susceptibles d’être liées au classeur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour exécuter ces macros.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>méthode Activate</b> n’exécute aucune macro Auto_Activate ou Auto_Deactivate qui peuvent être attachées au workbook. Utilisez la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour exécuter ces macros.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivateNext">
@@ -171,7 +159,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Active la fenêtre spécifiée, puis l’envoie à l’arrière-plan de la superposition.</summary>
+        <summary>Active la fenêtre spécifiée, puis l’envoie à l’arrière-commande de la fenêtre.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -197,7 +185,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Active la fenêtre spécifiée, puis active la fenêtre située à l’arrière-plan de la superposition.</summary>
+        <summary>Active la fenêtre spécifiée, puis active la fenêtre située à l'arrière-plan de la superposition.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -225,13 +213,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object qui représente la cellule active dans la fenêtre active (la fenêtre en haut) ou dans la fenêtre spécifiée. Si la fenêtre n’est pas une feuille de calcul, cette propriété échoue.</summary>
+        <summary>Renvoie un objet qui représente la cellule active dans la fenêtre active (la fenêtre en haut) ou <see cref="T:Microsoft.Office.Interop.Excel.Range" /> dans la fenêtre spécifiée. Si la fenêtre n'affiche aucune feuille de calcul, cette propriété échoue.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si vous ne spécifiez aucun qualificateur d'objet, cette propriété renvoie la cellule active de la fenêtre active.</para>
-          <para>Veillez à bien différencier la cellule active de la sélection. La cellule active est une cellule unique située au sein de la sélection active. Celle-ci peut contenir plusieurs cellules, mais une seule d'entre elles est active.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si vous ne spécifiez aucun qualificateur d'objet, cette propriété renvoie la cellule active de la fenêtre active.</para>
+          <para>Veillez à bien différencier la cellule active de la sélection. La cellule active est une cellule unique située au sein de la sélection en cours. Celle-ci peut contenir plusieurs cellules, une seule d'entre elles est active.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveChart">
@@ -257,12 +243,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object qui représente le graphique actif (un graphique incorporé ou une feuille de graphique). Un graphique incorporé est considéré comme actif lorsqu’il est sélectionné ou activé. Lorsqu’aucun graphique n’est actif, cette propriété renvoie la <b>valeur Nothing</b>.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objet qui représente le graphique actif (soit un graphique incorporé, soit une feuille de graphique). Un graphique incorporé est considéré comme actif lorsqu'il est sélectionné ou activé. Lorsqu'aucun graphique n'est actif, cette propriété renvoie la valeur <b>Nothing</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si vous ne spécifiez aucun qualificateur d'objet, cette propriété renvoie le graphique actif du classeur actif.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si vous ne spécifiez aucun qualificateur d'objet, cette propriété renvoie le graphique actif du classeur actif.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivePane">
@@ -288,13 +272,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> object qui représente le volet actif dans la fenêtre.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> objet qui représente le volet actif dans la fenêtre.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété peut être utilisée uniquement pour les feuilles de calcul et les feuilles macro.</para>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> propriété pour obtenir l’index du volet actif.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété peut être utilisée uniquement pour les feuilles de calcul et les feuilles macro.</para>
+          <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> propriété pour obtenir l’index du volet actif.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSheet">
@@ -320,15 +302,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un object qui représente la feuille active (feuille au premier plan) dans le classeur actif ou dans la fenêtre spécifiée ou du classeur. Renvoie la <b>valeur Nothing</b> si aucune feuille n’est active.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>Si vous ne spécifiez pas d'identificateur d'objet, cette propriété renvoie la feuille active du classeur actif.</para>
-          <para>Dans le cas où un classeur apparaît dans plusieurs fenêtres, la propriété <b>ActiveSheet</b> peut être différente d'une fenêtre à l'autre.</para>
-          <para></para>
-        </remarks>
+        <summary>Cette propriété renvoie un objet qui représente la feuille active (feuille au premier plan) dans le classeur actif ou dans la fenêtre ou le classeur spécifié. Renvoie <b>Nothing</b> si aucune feuille n’est active.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Si vous ne spécifiez pas un identificateur d'objet, cette propriété renvoie la feuille active dans le classeur actif.</para>
+          <para>Dans le cas où un classeur apparaît dans plusieurs fenêtres, la propriété <b>ActiveSheet</b> peut être différente d’une fenêtre à l’autre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSheetView">
@@ -354,7 +332,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui représente l’affichage de la feuille active dans la fenêtre spécifiée. En lecture seule.</summary>
+        <summary>Cette propriété renvoie un objet qui représente l'affichage de la feuille active dans la fenêtre spécifiée. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -382,7 +360,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -413,11 +391,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le filtre automatique de regroupement de dates est actuellement affiché dans la fenêtre spécifiée. Lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si le filtre automatique de regroupement de dates est actuellement affiché dans la fenêtre spécifiée. En lecture/écriture</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -447,7 +422,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Le nom qui s’affiche dans la barre de titre de la fenêtre de document.</summary>
+        <summary>Nom qui apparaît dans la barre de titre de la fenêtre de document.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -476,15 +451,13 @@
         <Parameter Name="RouteWorkbook" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SaveChanges">Facultatif <b>Object</b>. S’il n’y a aucune modification au classeur, cet argument est ignoré. Si des modifications sont apportées au classeur et le classeur s’affiche dans d’autres fenêtres ouvertes, cet argument est ignoré. Si des modifications sont apportées au classeur, mais n’apparaît pas dans d’autres fenêtres ouvertes, cet argument spécifie si les modifications doivent être enregistrées, comme illustré dans le tableau suivant. ValueAction<b>True</b>enregistre les modifications apportées au classeur. S’il n’existe pas encore associé au classeur, puis un nom de fichier <paramref name="FileName" /> est utilisé. Si <paramref name="FileName" /> est omis, l’utilisateur est invité à fournir un nom de fichier. <b>False</b> N’enregistre pas les modifications apportées à ce fichier. OmittedDisplays une boîte de dialogue demandant à l’utilisateur s’il faut enregistrer les modifications.</param>
-        <param name="Filename">Facultatif <b>Object</b>. Enregistrer les modifications sous ce nom de fichier.</param>
-        <param name="RouteWorkbook">Facultatif <b>Object</b>. Si le classeur ne doit pas être routé au destinataire suivant (s’il n’a aucun bordereau de routage ou a déjà été acheminé), cet argument est ignoré. Dans le cas contraire, Microsoft Excel achemine le classeur comme indiqué dans le tableau suivant. <b>True</b>ValueMeaning envoie le classeur au destinataire suivant. <b>False</b> N’envoie pas le classeur. OmittedDisplays une boîte de dialogue demandant à l’utilisateur si le classeur doit être envoyé.</param>
-        <summary>Ferme l’objet.</summary>
+        <param name="SaveChanges">Objet <b>facultatif</b>. Si aucune modification n'a été apportée au classeur, cet argument est ignoré. Si des modifications ont été apportées au classeur et que celui-ci s'affiche dans d'autres fenêtres, cet argument est ignoré. S’il existe des modifications dans le workbook, mais qu’il n’apparaît dans aucune autre fenêtre ouverte, cet argument spécifie si les modifications doivent être enregistrées, comme indiqué dans le tableau suivant. ValueAction<b>True</b>Enregistre les modifications apportées au workbook. S’il n’existe pas encore de nom de fichier associé au classer, <paramref name="FileName" /> il est utilisé. <paramref name="FileName" />S’il est omis, l’utilisateur est invité à fournir un nom de fichier.<b> False</b>N’enregistre pas les modifications apportées à ce fichier. OmittedDisplays a dialog box asking the user whether or not to save changes.</param>
+        <param name="Filename">Objet <b>facultatif</b>. Enregistrer les modifications sous ce nom de fichier.</param>
+        <param name="RouteWorkbook">Objet <b>facultatif</b>. Si le classeur ne doit pas être routé vers le destinataire suivant (soit parce qu'il n'a pas de bordereau de routage, soit parce qu'il a déjà été routé), cet argument est ignoré. Dans le cas contraire, Microsoft Excel route le manuel comme indiqué dans le tableau suivant. ValueMeaning<b>True</b>Envoie le workbook au destinataire suivant. <b>False</b> N’envoie pas le workbook. OmittedDisplays a dialog box asking the user whether the workbook should be sent.</param>
+        <summary>Cette méthode ferme l'objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>La méthode <b>Close</b> n’exécute aucune macro Auto_Close du classeur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour l’exécuter.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>méthode Close</b> n’exécute aucune Auto_Close macros dans le workbook. Utilisez la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour exécuter les macros de fermeture automatique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -512,11 +485,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayFormulas">
@@ -545,13 +516,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la fenêtre affiche les formules ; <b>False</b> si la fenêtre affiche les valeurs.</summary>
+        <summary><b>True</b> si la fenêtre affiche des formules, <b>False</b> si elle affiche des valeurs.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayGridlines">
@@ -580,14 +548,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le quadrillage est affiché.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le quadrillage est affiché.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
-          <para>Cette propriété affecte uniquement le quadrillage affiché. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> propriété pour contrôler l’impression du quadrillage.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
+          <para>Cette propriété affecte uniquement le quadrillage affiché. Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> propriété pour contrôler l’impression du quadrillage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHeadings">
@@ -616,14 +581,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si les en-têtes de ligne et de colonne sont affichés ; <b>False</b> s’il n’existe aucun en-tête n’est affiché.</summary>
+        <summary><b>True si</b> les en-tête de ligne et de colonne sont affichés ; <b>False</b> si aucun titre n’est affiché.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
-          <para>Cette propriété affecte uniquement les en-têtes affichés. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> propriété pour contrôler l’impression des en-têtes.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
+          <para>Cette propriété affecte uniquement les en-têtes affichés. Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> propriété pour contrôler l’impression des titres.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHorizontalScrollBar">
@@ -652,8 +614,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la barre de défilement horizontale est affichée.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la barre de défilement horizontale est affichée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -684,13 +645,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si les symboles du plan sont affichés.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les symboles du plan sont affichés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayRightToLeft">
@@ -719,8 +677,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la fenêtre spécifiée est affichée de droite à gauche plutôt que de gauche à droite. <b>False</b> si l’objet est affiché de gauche à droite.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la fenêtre spécifiée s'affiche de droite à gauche plutôt que de gauche à droite. Elle a la valeur <b>False</b> si cet objet s'affiche de gauche à droite.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -751,11 +708,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la règle est affichée pour la fenêtre spécifiée. Lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si une règle est affichée pour la fenêtre spécifiée. En lecture/écriture</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -785,8 +739,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la barre de défilement verticale est affichée.</summary>
+        <summary>Cette propriété a la valeur 	<b>True</b> si la barre de défilement verticale est affichée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -817,11 +770,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si les espaces sont affichés. Lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si les espaces sont affichés. En lecture/écriture</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -851,8 +801,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si les onglets du classeur sont affichés.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les onglets de classeur sont affichés.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -883,13 +832,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si les valeurs zéro sont affichées.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les valeurs zéro sont affichées.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableResize">
@@ -918,8 +864,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la fenêtre peut être redimensionnée.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la fenêtre peut être redimensionnée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -950,14 +895,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si les volets fractionnés sont figés.</summary>
+        <summary>Cette propriété a la valeur  <b>True</b> si les volets fractionnés sont figés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Il est possible de <b>FreezePanes </b><b>true</b> et <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> à <b>False</b>, et inversement.</para>
+        <remarks><para>Il est possible que <b>FreezePanes </b>soit <b>True</b> et <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> <b>False,</b>ou inversement.</para>
           <para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GridlineColor">
@@ -986,7 +928,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur du quadrillage sous forme de valeur RVB.</summary>
+        <summary>Cette propriété renvoie ou définit la couleur du quadrillage avec une valeur RVB.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1017,12 +959,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur du quadrillage sous forme d’index dans la palette de couleurs actuelle ou sous un <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constante.</summary>
+        <summary>Renvoie ou définit la couleur du quadrillage sous forme d’index dans la palette de couleurs actuelle ou sous forme de <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constante.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Affectez la valeur <b>xlColorIndexAutomatic</b> à cette propriété pour spécifier la couleur automatique.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Affectez la valeur <b>xlColorIndexAutomatic</b> à cette propriété pour spécifier la couleur automatique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -1051,12 +991,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La hauteur de la fenêtre, estimée en points.</summary>
+        <summary>Hauteur de la fenêtre en points.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> propriété pour déterminer la taille maximale de la fenêtre. Vous ne pouvez pas définir cette propriété si la fenêtre est agrandie ou réduite. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propriété pour déterminer l’état de la fenêtre.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> propriété pour déterminer la taille maximale de la fenêtre. Vous ne pouvez pas définir cette propriété si la fenêtre est agrandie ou réduite. Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propriété pour déterminer l’état de la fenêtre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hwnd">
@@ -1082,8 +1020,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retourne le handle de fenêtre de la fenêtre spécifiée.</summary>
-        <value>Entier (int en c#)</value>
+        <summary>Renvoie le handle de fenêtre de la fenêtre spécifiée.</summary>
+        <value>Integer (int en C#)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1140,18 +1078,16 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">Facultatif <b>Object</b>. Nombre de pages à faire défiler vers le bas.</param>
-        <param name="Up">Facultatif <b>Object</b>. Nombre de pages à faire défiler vers le haut.</param>
-        <param name="ToRight">Facultatif <b>Object</b>. Nombre de pages à faire défiler vers la droite.</param>
-        <param name="ToLeft">Facultatif <b>Object</b>. Nombre de pages à faire défiler vers la gauche.</param>
+        <param name="Down">Objet <b>facultatif</b>. Nombre de pages à faire défiler vers le bas.</param>
+        <param name="Up">Objet <b>facultatif</b>. Nombre de pages à faire défiler vers le haut.</param>
+        <param name="ToRight">Objet <b>facultatif</b>. Nombre de pages à faire défiler vers la droite.</param>
+        <param name="ToLeft">Objet <b>facultatif</b>. Nombre de pages à faire défiler vers la gauche.</param>
         <summary>Cette méthode fait défiler le contenu de la fenêtre page par page.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Si <paramref name="Down" /> et <paramref name="Up" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="Down" /> est 3 et <paramref name="Up" /> est 6, le contenu défile de trois pages.</para>
-          <para>Si <paramref name="ToLeft" /> et <paramref name="ToRight" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="ToLeft" /> est 3 et <paramref name="ToRight" /> est 6, le contenu défile à droite de trois pages.</para>
-          <para>Chaque argument ci-dessus peut avoir une valeur négative.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si les deux sont spécifiés, le contenu de la fenêtre défile en raison de la <paramref name="Down" /> <paramref name="Up" /> différence des arguments. Par exemple, si la 3 est 6, le contenu <paramref name="Down" /> défile de trois pages vers le <paramref name="Up" /> haut.</para>
+          <para>Si les deux sont spécifiés, le contenu de la fenêtre défile en raison de la <paramref name="ToLeft" /> <paramref name="ToRight" /> différence des arguments. Par exemple, si <paramref name="ToLeft" /> la couleur est 3 et qu’elle est 6, le contenu défile <paramref name="ToRight" /> de trois pages vers la droite.</para>
+          <para>Tous ces arguments peuvent être des nombres négatifs.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -1180,7 +1116,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Distance en points entre le bord gauche de la zone client et le bord gauche de la fenêtre.</summary>
+        <summary>Distance en points entre le bord gauche de la zone cliente et le bord gauche de la fenêtre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1206,7 +1142,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Crée une nouvelle fenêtre ou une copie de la fenêtre spécifiée.</summary>
+        <summary>Cette méthode crée une nouvelle fenêtre ou une copie de la fenêtre spécifiée.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1237,13 +1173,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nom de la procédure exécutée lorsque vous activez une fenêtre.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de la procédure exécutée quand vous activez une fenêtre.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La procédure spécifiée par cette propriété n’est pas exécutée lorsque d’autres procédures basculent vers la fenêtre ou de la commande pour basculer vers une fenêtre est reçue via un canal DDE. Au lieu de cela, la procédure répond aux actions de l’utilisateur, par exemple cliquer sur une fenêtre avec la souris, cliquez sur Atteindre dans le menu Edition et ainsi de suite.</para>
+        <remarks><para>La procédure spécifiée par cette propriété n’est pas exécuté lorsque d’autres procédures basculent vers la fenêtre ou lorsqu’une commande de basculement vers une fenêtre est reçue via un canal DDE. Au lieu de cela, la procédure répond aux actions de l’utilisateur, telles que cliquer sur une fenêtre avec la souris, cliquer sur Aller à dans le menu Modifier, etc.</para>
           <para>Si une macro Auto_Activate ou Auto_Deactivate est définie pour une feuille de calcul ou une feuille macro, cette macro sera exécutée après la procédure spécifiée par la propriété <b>OnWindow</b>.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Panes">
@@ -1269,12 +1203,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Panes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> collection qui représente tous les volets de la fenêtre spécifiée.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> collection qui représente tous les volets de la fenêtre spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est disponible pour une fenêtre uniquement lorsque la fenêtre de <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> propriété peut être définie sur <b>True</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété est disponible pour une fenêtre uniquement si la propriété de la fenêtre peut <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> être définie sur <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1300,7 +1232,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1328,9 +1260,8 @@
         <Parameter Name="Points" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>Integer</b>obligatoire. Nombre de points comptés horizontalement le long de la partie supérieure de la fenêtre du document, en partant de la gauche.</param>
-        <summary>Convertit une mesure horizontale de points (coordonnées du document) en pixels (coordonnées à l’écran).</summary>
+        <param name="Points">Argument de type <b>Integer</b> obligatoire. Nombre de points comptés horizontalement le long de la partie supérieure de la fenêtre du document, en partant de la gauche.</param>
+        <summary>Cette méthode convertit une mesure horizontale de points (coordonnées du document) en pixels d'écran (coordonnées de l'écran).</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1358,9 +1289,8 @@
         <Parameter Name="Points" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>Integer</b>obligatoire. Nombre de points comptés verticalement le long du bord gauche de la fenêtre du document, en partant du haut.</param>
-        <summary>Convertit une mesure verticale de points (coordonnées du document) en pixels (coordonnées à l’écran).</summary>
+        <param name="Points">Argument de type <b>Integer</b> obligatoire. Nombre de points comptés verticalement le long du bord gauche de la fenêtre du document, en partant du haut.</param>
+        <summary>Cette méthode convertit une mesure verticale de points (coordonnées du document) en pixels d'écran (coordonnées de l'écran).</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1394,20 +1324,18 @@
         <Parameter Name="PrToFileName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="From">Facultatif <b>Object</b>. Le numéro de la page à laquelle commence l’impression. Si cet argument est omis, l’impression commence au début.</param>
-        <param name="To">Facultatif <b>Object</b>. Le numéro de la dernière page à imprimer. Si cet argument est omis, l’impression se termine par la dernière page.</param>
-        <param name="Copies">Facultatif <b>Object</b>. Le nombre de copies à imprimer. Si cet argument est omis, une seule copie est imprimée.</param>
-        <param name="Preview">Facultatif <b>Object</b>. <b>True</b> pour que Microsoft Excel affiche un aperçu avant impression de l’objet. <b>False</b> (ou omis) pour imprimer l’objet immédiatement.</param>
-        <param name="ActivePrinter">Facultatif <b>Object</b>. Définit le nom de l'imprimante active.</param>
-        <param name="PrintToFile">Facultatif <b>Object</b>. <b>True</b> pour imprimer dans un fichier. Si <paramref name="PrToFileName" /> n’est pas spécifié, Microsoft Excel invite l’utilisateur à entrer le nom du fichier de sortie.</param>
-        <param name="Collate">Facultatif <b>Object</b>. <b>True</b> pour assembler plusieurs copies.</param>
-        <param name="PrToFileName">Facultatif <b>Object</b>. Si <paramref name="PrintToFile" /> est définie sur <b>True</b>, cet argument spécifie le nom du fichier que vous souhaitez effectuer l’impression.</param>
-        <summary>Imprime l’objet.</summary>
+        <param name="From">Objet <b>facultatif</b>. Numéro de la page à partir de laquelle commence l'impression. Si cet argument est omis, l'impression commence à la première page.</param>
+        <param name="To">Objet <b>facultatif</b>. Numéro de la dernière page à imprimer. Si cet argument est omis, l'impression s'effectue jusqu'à la dernière page.</param>
+        <param name="Copies">Objet <b>facultatif</b>. Nombre de copies à imprimer. Si cet argument est omis, une seule copie est imprimée.</param>
+        <param name="Preview">Objet <b>facultatif</b>. <b>True</b> pour que Microsoft Excel affiche l'aperçu avant impression avant d'imprimer l'objet. <b>False</b> (ou non défini) pour imprimer l'objet immédiatement.</param>
+        <param name="ActivePrinter">Objet <b>facultatif</b>. Définit le nom de l'imprimante active.</param>
+        <param name="PrintToFile">Objet <b>facultatif</b>. <b>True</b>  pour imprimer dans un fichier. Si <paramref name="PrToFileName" /> ce n’est pas spécifié, Microsoft Excel invite l’utilisateur à entrer le nom du fichier de sortie.</param>
+        <param name="Collate">Objet <b>facultatif</b>. <b>True</b>  pour assembler plusieurs copies.</param>
+        <param name="PrToFileName">Objet <b>facultatif</b>. Si la valeur est True, cet argument spécifie le nom du fichier dans lequel <paramref name="PrintToFile" /> vous souhaitez <b></b>imprimer.</param>
+        <summary>Cette méthode imprime l'objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>« Pages » dans les descriptions de <paramref name="From" /> et <paramref name="To" /> fait référence aux pages imprimées, pas aux pages globales de la feuille ou du classeur.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>« Pages » dans les descriptions des pages imprimées et fait référence à ces pages, et non à l’ensemble des pages de la <paramref name="From" /> <paramref name="To" /> feuille ou du workbook.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintPreview">
@@ -1432,7 +1360,7 @@
         <Parameter Name="EnableChanges" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="EnableChanges">Permet des modifications lors de l’aperçu.</param>
+        <param name="EnableChanges">Active les modifications pendant la prévisualisation.</param>
         <summary>Cette méthode affiche un aperçu de l'objet tel qu'il apparaîtra une fois imprimé.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1462,11 +1390,9 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">
-          <b>Integer</b>obligatoire. Valeur (en pixels) représentant la distance horizontale par rapport au bord gauche de l'écran, en partant du haut.</param>
-        <param name="y">
-          <b>Integer</b>obligatoire. Valeur (en pixels) représentant la distance verticale par rapport à la partie supérieure de l'écran, en partant de la gauche.</param>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> ou <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet est placé au niveau de la paire spécifiée de coordonnées à l’écran. En l’absence d’une forme située aux coordonnées spécifiées, cette méthode renvoie la <b>valeur Nothing</b>.</summary>
+        <param name="x">Argument de type <b>Integer</b> obligatoire. Valeur (en pixels) représentant la distance horizontale par rapport au bord gauche de l'écran, en partant du haut.</param>
+        <param name="y">Argument de type <b>Integer</b> obligatoire. Valeur (en pixels) représentant la distance verticale par rapport à la partie supérieure de l'écran, en partant de la gauche.</param>
+        <summary>Renvoie le ou l’objet placé au niveau de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> paire spécifiée de coordonnées d’écran. Si aucune forme ne se trouve aux coordonnées spécifiées, cette méthode renvoie la valeur <b>Nothing</b>.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1494,14 +1420,12 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente les cellules sélectionnées dans la feuille de calcul dans la fenêtre spécifiée, même si un objet graphique est actif ou sélectionné dans la feuille de calcul.</summary>
+        <summary>Renvoie un objet qui représente les cellules sélectionnées dans la feuille de calcul de la fenêtre spécifiée, même si un objet graphique est actif ou sélectionné <see cref="T:Microsoft.Office.Interop.Excel.Range" /> dans la feuille de calcul.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Lorsqu’un objet graphique est sélectionné dans une feuille de calcul, la <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> propriété renvoie l’objet graphique au lieu d’un objet <b>Range</b> ; la propriété <b>RangeSelection</b> renvoie la plage de cellules sélectionnée avant l’objet graphique.</para>
+        <remarks><para>Lorsqu’un objet graphique est sélectionné dans une feuille de calcul, la propriété renvoie l’objet graphique au lieu d’un objet Range ; la propriété <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> <b>RangeSelection</b> renvoie la plage de cellules sélectionnée avant la sélection de l’objet graphique. <b></b></para>
           <para>Cette propriété et la propriété <b>Selection</b> renvoient des valeurs identiques lorsqu'une plage (et non un objet graphique) est sélectionnée dans la feuille de calcul.</para>
           <para>Si la feuille active dans la fenêtre spécifiée n'est pas une feuille de calcul, cette propriété échoue.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollColumn">
@@ -1530,12 +1454,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nombre de la colonne la plus à gauche dans la fenêtre ou le volet.</summary>
+        <summary>Cette propriété renvoie ou définit le numéro de la colonne de gauche du volet ou de la fenêtre.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la fenêtre est fractionnée, la propriété <b>ScrollColumn</b> de le <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objet fait référence au volet supérieur gauche. Si les volets sont figés, la propriété <b>ScrollColumn</b> de l’objet <b>Window</b> exclut les zones figées.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si la fenêtre est fractionée, la <b>propriété ScrollColumn</b> de l’objet fait référence au volet supérieur <see cref="T:Microsoft.Office.Interop.Excel.Window" /> gauche. Si les volets sont figés, la propriété <b>ScrollColumn</b> de l'objet <b>Window</b> exclut les zones figées.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollIntoView">
@@ -1564,21 +1486,14 @@
         <Parameter Name="Start" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Left">
-          <b>Integer</b>obligatoire. Position horizontale du rectangle (en points) par rapport au bord gauche de la fenêtre de document ou du volet.</param>
-        <param name="Top">
-          <b>Integer</b>obligatoire. Position verticale du rectangle (en points) par rapport au bord supérieur de la fenêtre de document ou du volet.</param>
-        <param name="Width">
-          <b>Integer</b>obligatoire. Largeur du rectangle, en points.</param>
-        <param name="Height">
-          <b>Integer</b>obligatoire. Hauteur du rectangle, en points.</param>
-        <param name="Start">
-          <b>Integer</b> facultatif. <b>True</b> pour que le coin supérieur gauche du rectangle s’affiche dans le coin supérieur gauche de la fenêtre de document ou du volet. <b>False</b> pour que le coin inférieur droit du rectangle s’affiche dans le coin inférieur droit de la fenêtre de document ou du volet. La valeur par défaut est <b>True</b>.</param>
-        <summary>Fait défiler la fenêtre de document afin que le contenu d’une zone rectangulaire spécifiée est affiché dans le coin supérieur gauche ou à droite de la fenêtre de document ou du volet.</summary>
-        <remarks>
-          <para>Le <paramref name="Start" /> argument est utile pour orienter l’affichage de l’écran lorsque le rectangle est plus grand que la fenêtre de document ou le volet.</para>
-          <para></para>
-        </remarks>
+        <param name="Left">Argument de type <b>Integer</b> obligatoire. Position horizontale du rectangle (en points) par rapport au bord gauche de la fenêtre de document ou du volet.</param>
+        <param name="Top">Argument de type <b>Integer</b> obligatoire. Position verticale du rectangle (en points) par rapport au bord supérieur de la fenêtre de document ou du volet.</param>
+        <param name="Width">Argument de type <b>Integer</b> obligatoire. Largeur du rectangle, en points.</param>
+        <param name="Height">Argument de type <b>Integer</b> obligatoire. Hauteur du rectangle, en points.</param>
+        <param name="Start"><b>Integer facultatif</b>. <b>True</b> pour que le coin supérieur gauche du rectangle s'affiche dans le coin supérieur gauche de la fenêtre de document ou du volet. <b>False</b> pour que le coin inférieur droit du rectangle s'affiche dans le coin inférieur droit de la fenêtre de document ou du volet. La valeur par défaut est <b>True</b>.</param>
+        <summary>Fait défiler la fenêtre de document de sorte que le contenu d’une zone rectangulaire spécifiée s’affiche dans le coin supérieur gauche ou inférieur droit de la fenêtre ou du volet du document.</summary>
+        <remarks><para>L’argument est utile pour orienter l’affichage de l’écran lorsque le rectangle est plus grand que la fenêtre ou <paramref name="Start" /> le volet du document.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollRow">
@@ -1607,12 +1522,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le numéro de la ligne qui s’affiche en haut de la fenêtre ou le volet.</summary>
+        <summary>Cette propriété renvoie ou définit le numéro de la ligne qui apparaît en haut du volet ou de la fenêtre.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la fenêtre est fractionnée, la propriété <b>ScrollRow</b> de le <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objet fait référence au volet supérieur gauche. Si les volets sont figés, la propriété <b>ScrollRow</b> de l’objet <b>Window</b> exclut les zones figées.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si la fenêtre est fractionée, la <b>propriété ScrollRow</b> de l’objet fait référence au volet supérieur <see cref="T:Microsoft.Office.Interop.Excel.Window" /> gauche. Si les volets sont figés, la propriété <b>ScrollRow</b> de l'objet <b>Window</b> exclut les zones figées.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollWorkbookTabs">
@@ -1638,14 +1551,12 @@
         <Parameter Name="Position" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Sheets">Facultatif <b>Object</b>. Le nombre de pages à faire défiler. Utilisez un nombre positif pour faire défiler vers l’avant, un nombre négatif à faire défiler vers le haut ou 0 (zéro), ne pas à faire défiler tout. Vous devez spécifier <paramref name="Sheets" /> si vous ne spécifiez pas <paramref name="Position" />.</param>
-        <param name="Position">Facultatif <b>Object</b>. Utilisez <b>xlFirst</b> pour faire défiler jusqu'à la première feuille ou <b>xlLast pour faire défiler jusqu'à la dernière feuille</b> . Vous devez spécifier <paramref name="Position" /> si vous ne spécifiez pas <paramref name="Sheets" />.</param>
-        <summary>Fait défiler les onglets du classeur en bas de la fenêtre.</summary>
+        <param name="Sheets">Objet <b>facultatif</b>. Nombre de feuilles à faire défiler. Utilisez un nombre positif pour faire défiler vers l’avant, un nombre négatif pour faire défiler vers l’arrière ou 0 (zéro) pour ne pas faire défiler du tout. Vous devez <paramref name="Sheets" /> spécifier si vous ne spécifiez pas <paramref name="Position" /> .</param>
+        <param name="Position">Objet <b>facultatif</b>. Utilisez <b>xlFirst</b> pour faire défiler les feuilles jusqu'à la première ou <b>xlLast</b> pour les faire défiler jusqu'à la dernière. Vous devez <paramref name="Position" /> spécifier si vous ne spécifiez pas <paramref name="Sheets" /> .</param>
+        <summary>Cette méthode fait défiler les onglets du classeur qui se trouvent au bas de la fenêtre.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>La méthode <b>ScrollWorkbookTabs</b> n’affecte pas la feuille active du classeur.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>méthode ScrollWorkbookTabs n’affecte</b> pas la feuille active dans le workbook.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedSheets">
@@ -1671,7 +1582,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection qui représente toutes les feuilles sélectionnées dans la fenêtre spécifiée.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection qui représente toutes les feuilles sélectionnées dans la fenêtre spécifiée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1701,11 +1612,9 @@
       <Docs>
         <summary>Renvoie l’objet sélectionné dans la fenêtre spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le type d’objet renvoyé dépend de la sélection en cours (par exemple, si une cellule est sélectionnée, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet). La propriété <b>Selection</b> renvoie <b>Nothing</b> si rien n’est sélectionné.</para>
-          <para>À l’aide de cette propriété sans qualificateur d’objet équivaut à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le type d’objet renvoyé dépend de la sélection actuelle (par exemple, si une cellule est sélectionnée, cette propriété renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet). La propriété <b>Selection</b> renvoie <b>Nothing</b> si rien n'est sélectionné.</para>
+          <para>L’utilisation de cette propriété sans qualificateur d’objet équivaut à utiliser <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> la propriété de <see cref="T:Microsoft.Office.Interop.Excel.Application" /> l’objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetViews">
@@ -1731,10 +1640,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SheetViews</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.SheetViews" /> objet de la fenêtre spécifiée. En lecture seule.</summary>
-        <value>
-          <b>SheetViews</b>
-        </value>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Excel.SheetViews" /> l’objet de la fenêtre spécifiée. En lecture seule.</summary>
+        <value><b>SheetViews</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1763,18 +1670,16 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">Facultatif <b>Object</b>. Nombre de lignes à faire défiler vers le bas.</param>
-        <param name="Up">Facultatif <b>Object</b>. Nombre de lignes à faire défiler vers le haut.</param>
-        <param name="ToRight">Facultatif <b>Object</b>. Nombre de colonnes à faire défiler vers la droite.</param>
-        <param name="ToLeft">Facultatif <b>Object</b>. Nombre de colonnes à faire défiler vers la gauche.</param>
+        <param name="Down">Objet <b>facultatif</b>. Nombre de lignes à faire défiler vers le bas.</param>
+        <param name="Up">Objet <b>facultatif</b>. Nombre de lignes à faire défiler vers le haut.</param>
+        <param name="ToRight">Objet <b>facultatif</b>. Nombre de colonnes à faire défiler vers la droite.</param>
+        <param name="ToLeft">Objet <b>facultatif</b>. Nombre de colonnes à faire défiler vers la gauche.</param>
         <summary>Cette méthode fait défiler le contenu de la fenêtre par ligne ou par colonne.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Si <paramref name="Down" /> et <paramref name="Up" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="Down" /> est 3 et <paramref name="Up" /> est 6, le contenu défile de trois lignes.</para>
-          <para>Si <paramref name="ToLeft" /> et <paramref name="ToRight" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="ToLeft" /> est 3 et <paramref name="ToRight" /> est 6, le contenu défile à droite de trois colonnes.</para>
+        <remarks><para>Si les deux sont spécifiés, le contenu de la fenêtre défile en raison de la <paramref name="Down" /> <paramref name="Up" /> différence des arguments. Par exemple, si la 3 est 6, le contenu <paramref name="Down" /> défile de trois lignes vers le <paramref name="Up" /> haut.</para>
+          <para>Si les deux sont spécifiés, le contenu de la fenêtre défile en raison de la <paramref name="ToLeft" /> <paramref name="ToRight" /> différence des arguments. Par exemple, si la 3 est 6, le contenu défile de trois <paramref name="ToLeft" /> <paramref name="ToRight" /> colonnes vers la droite.</para>
           <para>Ces arguments peuvent avoir une valeur négative.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Split">
@@ -1803,14 +1708,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la fenêtre est fractionnée.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la fenêtre est fractionnée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Il est possible de <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> à <b>True</b> et <b>Fractionné</b> à <b>False</b>, et inversement.</para>
+        <remarks><para>Il est possible que les <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> valeurs <b>True</b> et <b>Split</b> soient <b>False,</b>ou inversement.</para>
           <para>Cette propriété s'applique uniquement aux feuilles de calcul et aux feuilles macro.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SplitColumn">
@@ -1839,7 +1741,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le numéro de colonne dans laquelle la fenêtre est fractionnée en volets (le nombre de colonnes à gauche de la ligne de fractionnement).</summary>
+        <summary>Cette propriété renvoie ou définit le numéro de la colonne au niveau de laquelle la fenêtre est fractionnée en volets (correspondant au nombre de colonnes situées à gauche de la ligne de fractionnement).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1870,7 +1772,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’emplacement du fractionnement horizontal de la fenêtre en points.</summary>
+        <summary>Renvoie ou définit l’emplacement du fractionnement horizontal en points de la fenêtre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1901,7 +1803,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le numéro de la ligne où la fenêtre est fractionnée en volets (le nombre de lignes au-dessus du fractionnement).</summary>
+        <summary>Renvoie ou définit le numéro de la ligne au niveau de laquelle la fenêtre est fractionnée en volets (correspondant au nombre de lignes situées au-dessus de la ligne de fractionnement).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1932,7 +1834,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’emplacement du fractionnement de la fenêtre verticale en points.</summary>
+        <summary>Renvoie ou définit l’emplacement du fractionnement vertical de la fenêtre en points.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1963,12 +1865,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le rapport entre la largeur de la zone des onglets du classeur à la largeur de la barre de défilement horizontale de la fenêtre (en tant que nombre compris entre 0 (zéro) et 1 ; la valeur par défaut est 0,6).</summary>
+        <summary>Cette propriété renvoie ou définit le rapport entre la largeur de la zone dans laquelle se trouvent les onglets du classeur et la largeur de la barre de défilement horizontale (sous forme d'un nombre compris entre 0 (zéro) et 1 ; la valeur par défaut étant fixée à 0,6).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est sans effet lorsque <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> est défini sur <b>False</b> (sa valeur est conservée, mais n’a aucun effet sur l’écran).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété n’a aucun effet lorsqu’elle est définie sur False (sa valeur est conservée, mais elle n’a aucun effet <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> sur l’affichage). <b></b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -1997,12 +1897,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Distance en points entre le bord supérieur de la fenêtre et le bord supérieur de la zone utilisable (sous les menus, barres d’outils ancrées en haut et la barre de formule).</summary>
+        <summary>Distance en points entre le bord supérieur de la fenêtre et le bord supérieur de la zone utilisable (sous les menus, toutes les barres d’outils fixes en haut et la barre de formule).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous ne pouvez pas définir cette propriété pour une fenêtre agrandie. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propriété pour renvoyer ou définir l’état de la fenêtre.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété ne peut pas être utilisée avec une fenêtre agrandie. Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propriété pour renvoyer ou définir l’état de la fenêtre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -2028,7 +1926,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlWindowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type de fenêtre.</summary>
+        <summary>Renvoie ou définit le type de fenêtre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2056,7 +1954,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la hauteur en points de l’espace qu’une fenêtre peut occuper dans la zone de fenêtre d’application.</summary>
+        <summary>Renvoie la hauteur maximale en points de l’espace qu’une fenêtre peut occuper dans la zone de fenêtre de l’application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2084,7 +1982,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la largeur maximale exprimée en points, de l’espace qu’une fenêtre peut occuper dans la zone de fenêtre d’application.</summary>
+        <summary>Renvoie la largeur maximale en points de l’espace qu’une fenêtre peut occuper dans la zone de fenêtre de l’application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2115,7 +2013,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlWindowView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la vue active dans la fenêtre.</summary>
+        <summary>Cette propriété renvoie ou définit l'affichage qui apparaît dans la fenêtre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2146,7 +2044,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si l’objet est visible.</summary>
+        <summary>Cette propriété détermine si l'objet est visible.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2174,7 +2072,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object qui représente la plage de cellules qui sont visibles dans la fenêtre ou du volet. Si une colonne ou ligne est partiellement visible, il est inclus dans la plage.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente la plage de cellules visibles dans la fenêtre ou le volet. Si une colonne ou une ligne est partiellement affichée, elle est incluse dans la plage.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2205,12 +2103,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La largeur en points de la fenêtre.</summary>
+        <summary>Largeur en points de la fenêtre.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> propriété pour déterminer la taille maximale de la fenêtre. Vous ne pouvez pas définir cette propriété si la fenêtre est agrandie ou réduite. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propriété pour déterminer l’état de la fenêtre.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> propriété pour déterminer la taille maximale de la fenêtre. Vous ne pouvez pas définir cette propriété si la fenêtre est agrandie ou réduite. Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propriété pour déterminer l’état de la fenêtre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowNumber">
@@ -2236,12 +2132,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le numéro de la fenêtre. Par exemple, une fenêtre nommée « Book1.xls:2 » a 2 en tant que son numéro de la fenêtre. La plupart des fenêtres possèdent le numéro 1.</summary>
+        <summary>Cette propriété renvoie le numéro de la fenêtre. Par exemple, une fenêtre intitulée « Book1.xls:2 » est donc dotée du numéro 2. La plupart des fenêtres possèdent le numéro 1.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le numéro de la fenêtre n’est pas la même que l’index de la fenêtre (la valeur de retour de la <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> propriété), qui est la position de la fenêtre dans le <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le numéro de la fenêtre n’est pas identique à l’index de la fenêtre (valeur de retour de la propriété), qui est la position de la fenêtre dans <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> la <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowState">
@@ -2270,7 +2164,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’état de la fenêtre.</summary>
+        <summary>Cette propriété renvoie ou définit l'état de la fenêtre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2301,13 +2195,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la taille d’affichage de la fenêtre sous forme de pourcentage (100 est égal à sa taille normale, 200 est doublée, etc.).</summary>
+        <summary>Renvoie ou définit la taille d’affichage de la fenêtre sous la forme d’un pourcentage (100 est égal à la taille normale, 200 équivaut à la taille double, et ainsi de suite).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour ajuster la taille de la fenêtre à la sélection en cours, affectez la valeur <b>True</b> à cette propriété.</para>
+        <remarks><para>Pour ajuster la taille de la fenêtre à la sélection en cours, affectez la valeur <b>True</b> à cette propriété.</para>
           <para>Cette fonction n'affecte que la feuille active dans la fenêtre. Pour appliquer cette propriété à d'autres feuilles, vous devez d'abord les activer.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

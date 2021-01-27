@@ -1,13 +1,5 @@
 <Type Name="Workbooks" FullName="Microsoft.Office.Interop.Excel.Workbooks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e216142f85071dc6b33c9b1eb3c9ddffaa7369de" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574934" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Workbooks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e216142f85071dc6b33c9b1eb3c9ddffaa7369de" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008615" /></Metadata><TypeSignature Language="C#" Value="public interface Workbooks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Workbooks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Workbooks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Workbooks&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> les objets qui sont actuellement ouverts dans l’application Microsoft Excel.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> propriété pour renvoyer la collection des <b>classeurs</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Add(System.Object)" /> méthode pour créer un nouveau classeur vide et l’ajouter à la collection.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode afin d’ouvrir un fichier.</para>
-      <para>Pour plus d’informations sur l’utilisation d’un objet <b>Workbook</b> , voir la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet.</para>
-      <para></para>
-    </remarks>
+    <summary>Collection de tous les objets actuellement ouverts dans <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> l’application Microsoft Excel.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> propriété pour renvoyer la collection <b>Workbooks.</b></para>
+      <para>Utilisez la méthode pour créer un nouveau workbook vide et <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Add(System.Object)" /> l’ajouter à la collection.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour ouvrir un fichier.</para>
+      <para>Pour plus d’informations sur l’utilisation d’un seul objet <b>Workbook,</b> voir <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> l’objet.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="__OpenText">
@@ -95,7 +85,7 @@
         <param name="OtherChar">To be added.</param>
         <param name="FieldInfo">To be added.</param>
         <param name="TextVisualLayout">To be added.</param>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +119,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,7 +177,7 @@
         <param name="Notify">To be added.</param>
         <param name="Converter">To be added.</param>
         <param name="AddToMru">To be added.</param>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -283,7 +273,7 @@
       <Docs>
         <param name="Filename">To be added.</param>
         <param name="Stylesheets">To be added.</param>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -313,13 +303,11 @@
         <Parameter Name="Template" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Template">Facultatif <b>Object</b>. Détermine la façon dont le nouveau classeur est créé. Si cet argument est une chaîne spécifiant le nom d’un fichier Microsoft Excel existant, le nouveau classeur est créé avec le fichier spécifié en tant que modèle. Si cet argument est une constante, le nouveau classeur contient une seule feuille du type spécifié. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlWBATemplate" /> constantes : <b>xlWBATChart</b>, <b>xlWBATExcel4IntlMacroSheet</b>, <b>xlWBATExcel4MacroSheet</b>ou <b>xlWBATWorksheet</b>. Si cet argument est omis, Microsoft Excel crée un nouveau classeur avec un certain nombre de feuilles vierges (le nombre de feuilles est défini par la propriété <b>SheetsInNewWorkbook</b> ).</param>
-        <summary>Crée un nouveau classeur. Le nouveau classeur devient le classeur actif. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet.</summary>
+        <param name="Template">Objet <b>facultatif</b>. Détermine la façon dont le nouveau classeur est créé. Si cet argument est une chaîne spécifiant le nom d'un fichier Microsoft Excel existant, le nouveau classeur est créé d'après le modèle de ce fichier. Si cet argument est une constante, le nouveau classeur contient une seule feuille du type spécifié. Peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlWBATemplate" /> constantes suivantes : <b>xlWBATChart</b>, <b>xlWBATExcel4IntlMacroSheet</b>, <b>xlWBATExcel4MacroSheet</b>ou <b>xlWBATWorksheet</b>. Si cet argument est omis, Microsoft Excel crée un nouveau classeur avec un certain nombre de feuilles vierges (ce nombre est défini par la propriété <b>SheetsInNewWorkbook</b> ).</param>
+        <summary>Crée un classeur. Le nouveau classeur devient le classeur actif. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Si le <paramref name="Template" /> argument spécifie un fichier, le nom de fichier peut inclure un chemin d’accès.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si <paramref name="Template" /> l’argument spécifie un fichier, le nom du fichier peut inclure un chemin d’accès.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -345,7 +333,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -373,10 +361,8 @@
         <Parameter Name="Filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>String</b>obligatoire. Représente le nom du fichier à extraire.</param>
-        <summary>
-          <b>True</b> si Microsoft Excel peut extraire un classeur spécifié se trouvant sur un serveur. Type de données <b>Boolean</b> en lecture-écriture.</summary>
+        <param name="Filename">Argument de type <b>String</b> obligatoire. Représente le nom du fichier à extraire.</param>
+        <summary>Cette méthode a la valeur <b>True</b> si Microsoft Excel peut extraire un classeur spécifié se trouvant sur un serveur. <b>Boolean</b> (en lecture/écriture).</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -404,9 +390,8 @@
         <Parameter Name="Filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>String</b>obligatoire. Représente le nom du fichier à extraire.</param>
-        <summary>Copie du classeur spécifié à partir d’un serveur sur un ordinateur local pour modification.</summary>
+        <param name="Filename">Argument de type <b>String</b> obligatoire. Représente le nom du fichier à extraire.</param>
+        <summary>Copie le manuel spécifié à partir d’un serveur vers un ordinateur local pour modification.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -434,11 +419,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ferme l’objet.</summary>
-        <remarks>
-          <para>Fermeture d’un classeur à l’aide de la méthode <b>Close</b> n’exécute aucune macro Auto_Close du classeur. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour l’exécuter.</para>
-          <para></para>
-        </remarks>
+        <summary>Cette méthode ferme l'objet.</summary>
+        <remarks><para>La fermeture d’un workbook à l’aide de la méthode <b>Close</b> n’exécute Auto_Close macros dans le workbook. Utilisez la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour exécuter les macros de fermeture automatique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -464,7 +447,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nombre d'objets dans la collection. Valeur <b>Integer</b> en lecture seule.</summary>
+        <summary>Renvoie le nombre d'objets dans la collection. <b>Entier</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -492,12 +475,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C. En lecture <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -558,9 +539,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b>obligatoire. Nom ou numéro d'index de l'objet.</param>
-        <summary>Renvoie un seul objet d'une collection.</summary>
+        <param name="Index">Required, <b>objet</b>. Nom ou numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d’une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -604,28 +584,25 @@
         <Parameter Name="CorruptLoad" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>String</b>obligatoire. Nom de fichier du classeur à ouvrir.</param>
-        <param name="UpdateLinks">Facultatif <b>Object</b>. Spécifie que les façon dont les liens dans le fichier sont mis à jour. Si cet argument est omis, l’utilisateur est invité à spécifier la mise à jour des liens. Sinon, cet argument est une des valeurs répertoriées dans le tableau suivant. Si Microsoft Excel ouvre un fichier dans WKS, WK1 ou WK3 mettre en forme et la <paramref name="UpdateLinks" /> argument est 2, Microsoft Excel génère des graphiques à partir des diagrammes associés au fichier. Si l’argument est 0, aucun graphique n’est créés.</param>
-        <param name="ReadOnly">Facultatif <b>Object</b>. True pour ouvrir le classeur en mode lecture seule.</param>
-        <param name="Format">Facultatif <b>Object</b>. Si Microsoft Excel ouvre un fichier texte, cet argument spécifie le caractère séparateur, comme illustré dans le tableau suivant. Si cet argument est omis, le séparateur actuel est utilisé.</param>
-        <param name="Password">Facultatif <b>Object</b>. Chaîne qui contient le mot de passe requis pour ouvrir un classeur protégé. Si cet argument est omis et que le classeur requiert un mot de passe, l’utilisateur soit invité à entrer le mot de passe.</param>
-        <param name="WriteResPassword">Facultatif <b>Object</b>. Chaîne qui contient le mot de passe requis pour écrire dans un classeur protégé en écriture. Si cet argument est omis et que le classeur requiert un mot de passe, l’utilisateur sera invité pour le mot de passe.</param>
-        <param name="IgnoreReadOnlyRecommended">Facultatif <b>Object</b>. <b>True</b> pour que Microsoft Excel n'affiche pas le message en lecture seule recommandée (si le classeur a été enregistré avec l'option <b>Lecture seule recommandée</b>).</param>
-        <param name="Origin">Facultatif <b>Object</b>. Si le fichier est un fichier texte, cet argument indique sa provenance (afin que les pages de code et chariot retour/saut de ligne (CR/LF) puissent être mappés correctement). Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> constantes : <b>xlMacintosh</b>, <b>xlWindows</b>ou <b>xlMSDOS</b>. Si cet argument est omis, le système d’exploitation actuel est utilisé.</param>
-        <param name="Delimiter">Facultatif <b>Object</b>. Si le fichier est un fichier texte et l’argument <b>Format</b> est 6, cet argument est une chaîne qui spécifie le caractère à utiliser comme séparateur. Par exemple, utilisez Chr (9) pour les tabulations, «, » pour les virgules, « ; » pour points-virgules ou un caractère personnalisé. Seul le premier caractère de la chaîne est utilisé.</param>
-        <param name="Editable">Facultatif <b>Object</b>. Si le fichier est un complément Microsoft Excel 4.0, cet argument a <b>la valeur True</b> pour ouvrir le complément afin qu’il soit une fenêtre visible. Si cet argument a la <b>valeur False</b> ou omis, le complément est ouvert mais masqué et il ne peut pas être affichée. Cette option ne s’applique pas aux compléments créés dans Microsoft Excel 5.0 ou version ultérieure. Si le fichier est un modèle Excel, utilisez <b>la valeur True</b> pour ouvrir le modèle spécifié pour modification ou <b>False</b> pour ouvrir un nouveau classeur basé sur le modèle spécifié. <b>False</b> est la valeur par défaut.</param>
-        <param name="Notify">Facultatif <b>Object</b>. Si le fichier ne peut pas être ouvert en mode lecture/écriture, cet argument est <b>la valeur True</b> pour ajouter le fichier à la liste de notifications de fichier. Microsoft Excel sera ouvrir le fichier en lecture seule, interroge la liste de notification de fichier et avertit l’utilisateur lorsque le fichier est disponible. Si cet argument a la <b>valeur False</b> ou est omis, aucune notification n’est demandée et toute tentative d’ouvrir un fichier non disponible échoue.</param>
-        <param name="Converter">Facultatif <b>Object</b>. L’index du premier convertisseur de fichier à essayer lors de l’ouverture du fichier. Le convertisseur de fichier spécifié est essayé en premier ; Si ce convertisseur ne reconnaît pas le fichier, tous les autres convertisseurs sont testés. L’index du convertisseur se compose des numéros de ligne des convertisseurs renvoyés par la <see cref="P:Microsoft.Office.Interop.Excel._Application.FileConverters(System.Object,System.Object)" /> propriété.</param>
-        <param name="AddToMru">Facultatif <b>Object</b>. <b>True</b> pour ajouter ce classeur à la liste des derniers fichiers utilisés. <b>False</b> est la valeur par défaut.</param>
-        <param name="Local">Facultatif <b>Object</b>. <b>True</b> enregistre les fichiers en fonction de la langue de Microsoft Excel (y compris les paramètres du Panneau de configuration). <b>False</b> (valeur par défaut) enregistre les fichiers par rapport à la langue de Visual Basic pour Applications (VBA) (qui est généralement l’anglais (États-Unis), sauf si le projet VBA où Workbooks.Open est exécuté est un ancien projet VBA XL5/95).</param>
-        <param name="CorruptLoad">Facultatif <b>Object</b>. Peut être une des constantes suivantes : <b>xlNormalLoad</b>, <b>xlRepairFile</b>et <b>xlExtractData</b>. Le comportement par défaut si aucune valeur n’est spécifiée est habituellement normal, mais peut être approuvée récupération de données ou de chargement si Excel a déjà tenté d’ouvrir le fichier. La première tentative est normale. Si Excel cesse de fonctionner lors de l’ouverture du fichier, la deuxième tentative est charge fiable. Si Excel s’arrête à nouveau d’exploitation, la tentative suivante est la récupération des données.</param>
+        <param name="Filename">Argument de type <b>String</b> obligatoire. Nom de fichier du classeur à ouvrir.</param>
+        <param name="UpdateLinks">Objet <b>facultatif</b>. Spécifie la façon dont les liens dans le fichier sont mis à jour. Si cet argument est omis, l’utilisateur est invité à indiquer comment les liens doivent être mis à jour. Sinon, cet argument est l’une des valeurs répertoriées dans le tableau suivant. Si Microsoft Excel ouvre un fichier au format WKS, WK1 ou WK3 et que l’argument est 2, Microsoft Excel génère des graphiques à partir des <paramref name="UpdateLinks" /> graphiques attachés au fichier. Si l’argument est 0, aucun graphique n’est créé.</param>
+        <param name="ReadOnly">Objet <b>facultatif</b>. True pour ouvrir le classeur en mode lecture seule.</param>
+        <param name="Format">Objet <b>facultatif</b>. Si Microsoft Excel ouvre un fichier texte, cet argument spécifie le caractère de délimitation, comme indiqué dans le tableau suivant. Si cet argument n'est pas défini, le délimiteur en cours est utilisé.</param>
+        <param name="Password">Objet <b>facultatif</b>. Chaîne contenant le mot de passe requis pour ouvrir un classeur protégé. Si cet argument n'est pas défini et que le classeur requiert un mot de passe, l'utilisateur est invité à entrer le mot de passe</param>
+        <param name="WriteResPassword">Objet <b>facultatif</b>. Chaîne contenant le mot de passe requis pour écrire dans un classeur protégé en écriture. Si cet argument n'est pas défini et que le classeur requiert un mot de passe, l'utilisateur est invité à entrer le mot de passe</param>
+        <param name="IgnoreReadOnlyRecommended">Objet <b>facultatif</b>. <b>True</b> pour que Microsoft Excel n'affiche pas le message en lecture seule recommandée (si le classeur a été enregistré avec l'option <b>Lecture seule recommandée</b>).</param>
+        <param name="Origin">Objet <b>facultatif</b>. S’il s’agit d’un fichier texte, cet argument indique son origine (de sorte que les pages de code et les retours chariots/retours à la ligne (CR/LF) peuvent être correctement mappées). Peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> constantes suivantes : <b>xlMacintosh,</b> <b>xlWindows</b>ou <b>xlMSDOS</b>. Si cet argument n'est pas défini, le système d'exploitation en cours est utilisé.</param>
+        <param name="Delimiter">Objet <b>facultatif</b>. Si le fichier est un fichier texte et que l’argument <b>Format</b> est 6, cet argument est une chaîne qui spécifie le caractère à utiliser comme délimiteur. Par exemple, utilisez  Chr(9) pour les tabulations, « , » pour les virgules, « ; » pour les point-virgules, ou utilisez un caractère personnalisé. Seul le premier caractère de la chaîne est utilisé.</param>
+        <param name="Editable">Objet <b>facultatif</b>. Si le fichier est un add-in Microsoft Excel 4.0, cet argument a la valeur <b>True</b> pour ouvrir le module de sorte qu’il s’agit d’une fenêtre visible. Si cet argument a la valeur <b>False</b> ou n'est pas défini, la macro complémentaire est ouverte masquée, et ne peut pas être affichée. Cette option ne s’applique pas aux add-ins créés dans Microsoft Excel 5.0 ou une ultérieure. Si le fichier est un modèle Excel, utilisez <b>True</b> pour ouvrir le modèle spécifié pour modification ou <b>False</b> pour ouvrir un nouveau classeur basé sur le modèle spécifié. La valeur par défaut est <b>False</b>.</param>
+        <param name="Notify">Objet <b>facultatif</b>. Si le fichier ne peut pas être ouvert en mode lecture-écriture, cet argument a la valeur <b>True</b> pour ajouter le fichier à la liste de notification des fichiers. Microsoft Excel ouvre le fichier en lecture seule, interroge la liste de notification des fichiers, puis avertit l’utilisateur quand le fichier devient disponible. Si cet argument a la valeur <b>False</b> ou n'est pas défini, aucune notification n’est requise, et toute tentative d’ouverture d’un fichier indisponible échoue.</param>
+        <param name="Converter">Objet <b>facultatif</b>. Index du premier convertisseur de fichier à essayer lors de l’ouverture du fichier. Le convertisseur de fichier spécifié est testé en premier ; Si ce convertisseur ne reconnaît pas le fichier, tous les autres convertisseurs sont essayés. L’index du convertisseur se compose des numéros de ligne des convertisseurs renvoyés par la <see cref="P:Microsoft.Office.Interop.Excel._Application.FileConverters(System.Object,System.Object)" /> propriété.</param>
+        <param name="AddToMru">Objet <b>facultatif</b>. <b>True</b> pour ajouter ce classeur à la liste des derniers fichiers utilisés. La valeur par défaut est <b>False</b>.</param>
+        <param name="Local">Objet <b>facultatif</b>. <b>True</b> enregistre les fichiers par rapport à la langue de Microsoft Excel (y compris les paramètres du Panneau de configuration). <b>False</b> (par défaut) enregistre les fichiers dans la langue de Visual Basic pour Applications (VBA) (qui est généralement l’anglais américain, sauf si le projet VBA à partir duquel Workbooks.Open est exécuté est un ancien projet VBA XL5/95 internationalisé).</param>
+        <param name="CorruptLoad">Objet <b>facultatif</b>. Peut être l’une des constantes suivantes : <b>xlNormalLoad,</b> <b>xlRepairFile</b>et <b>xlExtractData</b>. Le comportement par défaut si aucune valeur n’est spécifiée est généralement normal, mais peut être une charge sécurisée ou une récupération de données si Excel a déjà tenté d’ouvrir le fichier. La première tentative est normale. Si Excel cesse de fonctionner pendant l’ouverture du fichier, la deuxième tentative est une charge sécurisée. Si Excel cesse de fonctionner à nouveau, la prochaine tentative consiste à récupérer des données.</param>
         <summary>Ouvre un classeur.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Par défaut, les macros sont activées lors de l’ouverture de fichiers par programme. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.AutomationSecurity" /> propriété à définir le mode de sécurité de macro utilisé lors de l’ouverture des fichiers par programme.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Par défaut, les macros sont activées lors de l'ouverture des fichiers par programmation. Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Application.AutomationSecurity" /> propriété pour définir le mode de sécurité des macros utilisé lors de l’ouverture des fichiers par programme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenDatabase">
@@ -654,13 +631,12 @@
         <Parameter Name="ImportDataAs" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>String</b>obligatoire. Chaîne de connexion.</param>
-        <param name="CommandText">Facultatif <b>Object</b>. Texte de commande de la requête.</param>
-        <param name="CommandType">Facultatif <b>Object</b>. Le type de commande de la requête. Les types de commande suivants sont disponibles : Default, SQL et Table.</param>
-        <param name="BackgroundQuery">Facultatif <b>Object</b>. Arrière-plan de la requête.</param>
-        <param name="ImportDataAs">Facultatif <b>Object</b>. Détermine le format de la requête.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> représentant une base de données.</summary>
+        <param name="Filename">Argument de type <b>String</b> obligatoire. Chaîne de connexion.</param>
+        <param name="CommandText">Objet <b>facultatif</b>. Texte de commande de la requête.</param>
+        <param name="CommandType">Objet <b>facultatif</b>. Type de commande de la requête. Les types de commandes suivants sont disponibles : Default, SQL et Table.</param>
+        <param name="BackgroundQuery">Objet <b>facultatif</b>. Arrière-plan de la requête.</param>
+        <param name="ImportDataAs">Objet <b>facultatif</b>. Détermine le format de la requête.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet représentant une base de données.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -707,26 +683,24 @@
         <Parameter Name="Local" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>String</b>obligatoire. Spécifie le nom du fichier texte à ouvrir et analyser.</param>
-        <param name="Origin">Facultatif <b>Object</b>. Spécifie l’origine du fichier texte. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> constantes : <b>xlMacintosh</b>, <b>xlWindows</b>ou <b>xlMSDOS</b>. En outre, il peut être un entier représentant le numéro de page de code de la page de code de votre choix. Par exemple, « 1256 » Spécifie que le codage du fichier texte source est arabe (Windows). Si cet argument est omis, la méthode utilise le paramètre actuel de l’option origine du fichier dans l' <b>Assistant Importation de texte</b>.</param>
-        <param name="StartRow">Facultatif <b>Object</b>. Numéro de ligne à partir duquel commencer l’analyse de texte. La valeur par défaut est 1 (un).</param>
-        <param name="DataType">Facultatif <b>Object</b>. Spécifie le format de colonne des données dans le fichier. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlTextParsingType" /> constantes : <b>xlDelimited</b> ou <b>xlFixedWidth</b>. Si cet argument n’est pas spécifié, Microsoft Excel tente de déterminer le format de colonne lors de l’ouverture du fichier.</param>
-        <param name="TextQualifier">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" />. Spécifie l'identificateur de texte. Peut être une de ces <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> constantes. <b>xlTextQualifierDoubleQuote</b><paramref name="default" /><b>xlTextQualifierNone</b><b>xlTextQualifierSingleQuote</b></param>
-        <param name="ConsecutiveDelimiter">Facultatif <b>Object</b>. <b>True</b> pour que les séparateurs consécutifs considéré comme un seul séparateur. La valeur par défaut est <b>False</b>.</param>
-        <param name="Tab">Facultatif <b>Object</b>. True pour que le caractère de tabulation soit le séparateur (<paramref name="DataType" /> doit avoir la <b>valeur xlDelimited</b>). <b>False</b> est la valeur par défaut.</param>
-        <param name="Semicolon">Facultatif <b>Object</b>. <b>True</b> pour que le point-virgule comme caractère séparateur (<paramref name="DataType" /> doit avoir la <b>valeur xlDelimited</b>). <b>False</b> est la valeur par défaut.</param>
-        <param name="Comma">Facultatif <b>Object</b>. <b>True</b> pour que la virgule soit le séparateur (<paramref name="DataType" /> doit avoir la <b>valeur xlDelimited</b>). <b>False</b> est la valeur par défaut.</param>
-        <param name="Space">Facultatif <b>Object</b>. <b>True</b> pour que le caractère d’espacement comme caractère séparateur (<paramref name="DataType" /> doit avoir la <b>valeur xlDelimited</b>). <b>False</b> est la valeur par défaut.</param>
-        <param name="Other">Facultatif <b>Object</b>. <b>True</b> pour que le caractère spécifié par le <paramref name="OtherChar" /> argument soit le séparateur (<paramref name="DataType" /> doit avoir la <b>valeur xlDelimited</b>). <b>False</b> est la valeur par défaut.</param>
-        <param name="OtherChar">
-          <b>Objet</b> de type facultatif (obligatoire si <paramref name="Other" /> a la <b>valeur True</b>). Spécifie le séparateur de caractères quand <paramref name="Other" /> a la <b>valeur True</b>. Si plus d’un caractère est spécifié, que seul le premier caractère de la chaîne est utilisé ; les caractères restants sont ignorés.</param>
-        <param name="FieldInfo">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" />. Tableau contenant des informations redistribuées pour des colonnes de données. L’interprétation dépend de la valeur de <paramref name="DataType" />. Lorsque les données sont délimitées, cet argument est un tableau de tableaux à deux éléments, avec chaque tableau à deux éléments spécifiant les options de conversion d’une colonne particulière. Le premier élément est le numéro de colonne (base 1) et le deuxième élément est une des constantes<b>XlColumnDataType</b> indiquant comment la colonne est analysée. <b>xlGeneralFormat</b> Général<b>xlTextFormat</b> texte<b>xlMDYFormat</b> MJA date<b>xlDMYFormat</b> JMA date<b>xlYMDFormat</b> AMJ date<b>xlMYDFormat</b> MAJ. date<b>xlDYMFormat</b> Jam date<b>xlYDMFormat</b> format date<b>xlEMDFormat</b> EMD <b>xlSkipColumn</b> Skip ColumnYou peut utiliser la constante <b>xlEMDFormat</b> uniquement si vous avez installé et sélectionné la prise en charge linguistique taïwanais. La constante <b>xlEMDFormat</b> Spécifie que les dates sont utilisés. Spécificateurs de colonne peuvent être dans n’importe quel ordre. S’il n’existe aucun spécificateur de colonne pour une colonne particulière dans les données d’entrée, la colonne est analysée avec le paramètre général. <b>Notes</b> Si vous spécifiez qu’une colonne doit être ignorée, vous devez indiquer explicitement le type de toutes les colonnes restantes ou les données ne seront pas redistribuées correctement. S’il existe une valeur de date dans les données, la cellule sera affichée sous une date dans la feuille de calcul même si la valeur de la colonne est général. En outre, si vous spécifiez un des formats de date ci-dessus pour une colonne et les données ne contient pas une date reconnue, le format des cellules dans la feuille de calcul est alors General.If la source de données a des colonnes de largeur fixe, le premier élément de chaque tableau à deux éléments Spécifie la position du premier caractère dans la colonne (sous forme d’entier ; le caractère 0 (zéro) est le premier caractère). Le deuxième élément dans le tableau à deux éléments spécifie l’option de redistribution pour la colonne en tant que nombre compris entre 0 et 9, comme indiqué dans le tableau précédent.</param>
-        <param name="TextVisualLayout">Facultatif <b>Object</b>. Mise en page visuelle du texte.</param>
-        <param name="DecimalSeparator">Facultatif <b>Object</b>. Séparateur décimal utilisé par Microsoft Excel lors de la reconnaissance des nombres. Le paramètre par défaut est le paramètre système.</param>
-        <param name="ThousandsSeparator">Facultatif <b>Object</b>. Les milliers séparateur Excel utilise pour la reconnaissance des nombres. Le paramètre par défaut est le paramètre système. Le tableau suivant indique les résultats de l’importation de texte dans Excel pour divers paramètres d’importation. Les résultats numériques sont affichés dans la colonne la plus à droite.</param>
-        <param name="TrailingMinusNumbers">Facultatif <b>Object</b>.</param>
-        <param name="Local">Facultatif <b>Object</b>.</param>
+        <param name="Filename">Argument de type <b>String</b> obligatoire. Spécifie le nom du fichier texte à ouvrir et analyser.</param>
+        <param name="Origin">Objet <b>facultatif</b>. Origine du fichier texte. Peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> constantes suivantes : <b>xlMacintosh,</b> <b>xlWindows</b>ou <b>xlMSDOS</b>. Il peut également s'agir d'un nombre entier représentant le numéro de la page de code souhaitée. Par exemple, « 1256 » spécifie que le codage du fichier texte source est arabe (Windows). Si cet argument n'est pas spécifié, la méthode utilise le paramètre actuel de l'option Origine du fichier dans l'<b>Assistant Importation de texte</b>.</param>
+        <param name="StartRow">Objet <b>facultatif</b>. Numéro de la ligne à partir de laquelle commencer l'analyse du texte. La valeur par défaut est 1.</param>
+        <param name="DataType">Objet <b>facultatif</b>. Format de colonne des données dans le fichier. Peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlTextParsingType" /> constantes suivantes : <b>xlDelimited</b> ou <b>xlFixedWidth</b>. Si cet argument n'est pas spécifié, Microsoft Excel tente de déterminer le format de colonne lors de l'ouverture du fichier.</param>
+        <param name="TextQualifier">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> . Spécifie l'identificateur de texte. Il peut s’y trouver <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> l’une de ces constantes.<b> xlTextQualifierDoubleQuote</b> <paramref name="default" /> <b>xlTextQualifierNone</b><b>xlTextQualifierSingleQuote</b></param>
+        <param name="ConsecutiveDelimiter">Objet <b>facultatif</b>. <b>True</b> pour que des délimiteurs identiques consécutifs soient considérés comme un seul délimiteur. La valeur par défaut est <b>False</b>.</param>
+        <param name="Tab">Objet <b>facultatif</b>. True pour que le caractère de tabulation soit le délimiteur ( <paramref name="DataType" /> doit être <b>xlDelimited</b>). La valeur par défaut est <b>False</b>.</param>
+        <param name="Semicolon">Objet <b>facultatif</b>. <b>True</b> pour que le point-virgule soit le délimiteur ( <paramref name="DataType" /> doit être <b>xlDelimited</b>). La valeur par défaut est <b>False</b>.</param>
+        <param name="Comma">Objet <b>facultatif</b>. <b>True</b> pour que la virgule soit le délimiteur ( <paramref name="DataType" /> doit être <b>xlDelimited</b>). La valeur par défaut est <b>False</b>.</param>
+        <param name="Space">Objet <b>facultatif</b>. <b>True</b> pour que le caractère d’espace soit le délimiteur ( <paramref name="DataType" /> doit être <b>xlDelimited</b>). La valeur par défaut est <b>False</b>.</param>
+        <param name="Other">Objet <b>facultatif</b>. <b>True</b> pour que le caractère spécifié par l’argument soit le délimiteur <paramref name="OtherChar" /> ( doit être <paramref name="DataType" /> <b>xlDelimited</b>). La valeur par défaut est <b>False</b>.</param>
+        <param name="OtherChar">Objet <b>facultatif</b> (obligatoire si <paramref name="Other" /> la valeur est <b>True</b>). Spécifie le caractère de délimitation <paramref name="Other" /> lorsqu’il a la valeur <b>True</b>. Si plusieurs caractères sont spécifiés, le premier est utilisé et les autres sont ignorés.</param>
+        <param name="FieldInfo">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" /> . Matrice contenant des informations d'analyse pour les différentes colonnes de données. L’interprétation dépend de la valeur de <paramref name="DataType" /> . Lorsque les données sont délimitées, cet argument est un tableau de tableaux à deux éléments, spécifiant les options de conversion pour une colonne particulière. Le premier élément est le numéro de colonne (base 1), et le deuxième élément est l’une des constantes<b>XlColumnDataType</b> spécifiant la façon dont la colonne est l’élément à l’aide de l’élément. <b>xlGeneralFormat</b> General<b>xlTextFormat</b> Text<b>xlMDYFormat</b> MDY date<b>xlDMYFormat</b> DMY date<b>xlYMDFormat</b> YMD date<b>xlMYDFormat</b> MYD date<b>xlDYMFormat</b> DYM date<b>xlYDMFormat</b> YDM date<b>xlEMDFormat</b> EMD date<b>xlSkipColumn</b> Skip ColumnYou can use <b>xlEMDFormat</b> only if you have installed and selected Taiwanese language support. La <b>constante xlEMDFormat</b> spécifie que les dates de l’ère taïwanais sont utilisées. Les spécifiés de colonne peuvent être dans n’importe quel ordre. S’il n’existe aucun spécifié de colonne pour une colonne particulière dans les données d’entrée, la colonne est analyse avec le paramètre Général. <b>Remarques</b> Si vous spécifiez qu’une colonne doit être ignorée, vous devez indiquer explicitement le type pour toutes les colonnes restantes, sinon les données ne seront pas analysent correctement. S’il existe une date reconnaissable dans les données, la cellule est mise en forme comme une date dans la feuille de calcul, même si le paramètre de la colonne est Général. En outre, si vous spécifiez l’un des formats de date ci-dessus pour une colonne et que les données ne contiennent pas de date reconnue, le format de cellule dans la feuille de calcul sera Général.Si les données sources ont des colonnes de largeur fixe, le premier élément de chaque tableau à deux éléments spécifie la position du caractère de départ dans la colonne (sous la forme d’un nombre integer ; le caractère 0 (zéro) est le premier caractère). Le second élément de la matrice définit l'option d'analyse de la colonne comme un chiffre compris entre 0 et 9 (inclus), comme illustré dans le tableau précédent.</param>
+        <param name="TextVisualLayout">Objet <b>facultatif</b>. Mise en page visuelle du texte.</param>
+        <param name="DecimalSeparator">Objet <b>facultatif</b>. Séparateur des milliers utilisé par Microsoft Excel lors de la reconnaissance des nombres. Le paramètre par défaut est le paramètre du système.</param>
+        <param name="ThousandsSeparator">Objet <b>facultatif</b>. Séparateur décimal utilisé par Microsoft Excel lors de la reconnaissance des nombres. Le paramètre par défaut est le paramètre système. Le tableau suivant présente les résultats de l’importation de texte dans Excel pour différents paramètres d’importation. Les résultats numériques sont affichés dans la colonne la plus à droite.</param>
+        <param name="TrailingMinusNumbers">Objet <b>facultatif</b>.</param>
+        <param name="Local">Objet <b>facultatif</b>.</param>
         <summary>Charge et analyse un fichier texte comme un nouveau classeur d'une seule feuille contenant des données d'un fichier texte analysé.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -755,16 +729,13 @@
         <Parameter Name="LoadOption" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>String</b>obligatoire. Nom du fichier à ouvrir.</param>
-        <param name="Stylesheets">Facultatif <b>Object</b>. Une valeur unique ou un tableau de valeurs indiquant quelles instructions de traitement de feuille de style XSLT (XSL Transformation) à appliquer.</param>
-        <param name="LoadOption">Facultatif <b>Object</b>. Cette énumération spécifie la façon dont Excel ouvre le fichier de données XML. Peut être une de ces <see cref="T:Microsoft.Office.Interop.Excel.XlXmlLoadOption" /> constantes :<b>xlXmlLoadImportToList</b> place le contenu du fichier de données XML dans une liste XML. <b>xlXmlLoadMapXml</b> Affiche le schéma du fichier de données XML dans le volet Office <b>Structure XML</b> . <b>xlXmlLoadOpenXml</b> Ouvre le fichier de données XML. Le contenu du fichier sera aplati. <b>xlXmlLoadPromptUser</b> Invite l’utilisateur à choisir comment ouvrir le fichier.</param>
-        <summary>Ouvre un fichier de données XML. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet.</summary>
+        <param name="Filename">Argument de type <b>String</b> obligatoire. Nom du fichier à ouvrir.</param>
+        <param name="Stylesheets">Objet <b>facultatif</b>. Valeur unique ou tableau de valeurs spécifiant les instructions de traitement de feuille de style XSLT (XSL Transformation) à appliquer.</param>
+        <param name="LoadOption">Objet <b>facultatif</b>. Spécifie la façon dont Excel ouvre le fichier de données XML. Il peut s’agit de l’une de ces constantes : <see cref="T:Microsoft.Office.Interop.Excel.XlXmlLoadOption" /> <b>xlXmlLoadImportToList</b> Place le contenu du fichier de données XML dans une liste XML.<b> xlXmlLoadMapXml</b> Affiche le schéma du fichier de données XML dans le volet Des tâches <b>structure XML.</b> <b>xlXmlLoadOpenXml</b> Ouvre le fichier de données XML. Le contenu du fichier est aplati. <b>xlXmlLoadPromptUser</b> Invite l’utilisateur à choisir comment ouvrir le fichier.</param>
+        <summary>Cette méthode ouvre un fichier de données XML. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Les fonctionnalités XML, à l’exception de l’enregistrement des fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professionnel 2003 et Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Les fonctionnalités XML, à l’exception de l’enregistrement de fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professional Edition 2003 et Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -790,7 +761,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent de l’objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
