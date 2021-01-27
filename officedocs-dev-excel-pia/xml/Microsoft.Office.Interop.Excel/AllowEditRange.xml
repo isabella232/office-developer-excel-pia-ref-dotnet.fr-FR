@@ -1,13 +1,5 @@
 <Type Name="AllowEditRange" FullName="Microsoft.Office.Interop.Excel.AllowEditRange">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5ed1c5d1b07edaa52f829f20631c74db61529a28" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580100" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AllowEditRange" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5ed1c5d1b07edaa52f829f20631c74db61529a28" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999734" /></Metadata><TypeSignature Language="C#" Value="public interface AllowEditRange" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AllowEditRange" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AllowEditRange" />
   <TypeSignature Language="VB.NET" Value="Public Interface AllowEditRange" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente les cellules qui peuvent être modifiées dans une feuille de calcul protégée.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRanges.Add(System.String,Microsoft.Office.Interop.Excel.Range,System.Object)" /> méthode ou <see cref="P:Microsoft.Office.Interop.Excel.AllowEditRanges.Item(System.Object)" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRanges" /> collection pour renvoyer un objet <b>AllowEditRange</b> .</para>
-      <para>Une fois qu’un objet <b>AllowEditRange</b> a été renvoyé, vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRange.ChangePassword(System.String)" /> méthode pour modifier le mot de passe pour accéder à une plage qui peut être modifiée dans une feuille de calcul protégée.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRanges.Add(System.String,Microsoft.Office.Interop.Excel.Range,System.Object)" /> méthode ou la propriété de la collection pour <see cref="P:Microsoft.Office.Interop.Excel.AllowEditRanges.Item(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRanges" /> renvoyer un objet <b>AllowEditRange.</b></para>
+      <para>Une fois <b>qu’un objet AllowEditRange</b> a été renvoyé, vous pouvez utiliser la méthode pour modifier le mot de passe pour accéder à une plage qui peut être modifiée dans une <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRange.ChangePassword(System.String)" /> feuille de calcul protégée.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ChangePassword">
@@ -60,8 +50,7 @@
         <Parameter Name="Password" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Password">
-          <b>String</b>obligatoire. Nouveau mot de passe.</param>
+        <param name="Password">Argument de type <b>String</b> obligatoire. Nouveau mot de passe.</param>
         <summary>Cette méthode change le mot de passe pour une plage qui peut être modifiée dans une feuille de calcul protégée.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente un sous-ensemble des plages qui peuvent être modifiées dans une feuille de calcul protégée.</summary>
+        <summary>Renvoie un objet qui représente un sous-ensemble des plages qui peuvent être <see cref="T:Microsoft.Office.Interop.Excel.Range" /> modifiées dans une feuille de calcul protégée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,12 +137,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le titre de la page Web lorsque le document est enregistré en tant que page Web.</summary>
+        <summary>Cette propriété renvoie ou définit le titre de la page Web lors de l'enregistrement du document sous la forme d'une page Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le titre est généralement affiché dans la barre de titre de la fenêtre lorsque le document est visualisé dans le navigateur Web.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le titre est généralement affiché dans la barre de titre de la fenêtre lorsque le document est visualisé dans le navigateur Web.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Unprotect">
@@ -178,13 +165,11 @@
         <Parameter Name="Password" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Password">Facultatif <b>Object</b>. Chaîne qui indique le mot de passe qui respecte la casse à utiliser pour ôter la protection de la feuille ou du classeur. Si la feuille ou du classeur n’est pas protégé par un mot de passe, cet argument est ignoré. Si vous omettez cet argument pour une feuille est protégée par un mot de passe, vous devrez le mot de passe. Si vous omettez cet argument pour un classeur est protégé par un mot de passe, la méthode échoue.</param>
-        <summary>Supprimer la protection d’une feuille ou du classeur.</summary>
-        <remarks>
-          <para>Cette méthode est sans effet si la feuille ou du classeur n’est pas protégé.</para>
-          <para>Si vous oubliez le mot de passe, vous ne pouvez pas ôter la protection de la feuille ou du classeur.</para>
-          <para></para>
-        </remarks>
+        <param name="Password">Objet <b>facultatif</b>. Chaîne qui contient le mot de passe qui respecte la casse à utiliser pour supprimer la protection de la feuille ou du classeur. Si la feuille ou le classeur n'est pas protégé par un mot de passe, cet argument est ignoré. Si vous omettez cet argument pour une feuille protégée par un mot de passe, vous serez invité à saisir ce dernier. Si vous omettez cet argument pour un classeur protégé par un mot de passe, la méthode échoue.</param>
+        <summary>Cette méthode supprime la protection d'une feuille ou d'un classeur.</summary>
+        <remarks><para>Elle est sans effet si la feuille ou le classeur n'est pas protégé.</para>
+          <para>Si vous oubliez le mot de passe, vous ne pourrez pas supprimer la protection de la feuille ou du classeur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Users">
@@ -210,7 +195,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.UserAccessList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" /> objet pour la plage protégée dans une feuille de calcul.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" /> objet pour la plage protégée d’une feuille de calcul.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

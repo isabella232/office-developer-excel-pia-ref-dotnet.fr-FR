@@ -1,13 +1,5 @@
 <Type Name="Legend" FullName="Microsoft.Office.Interop.Excel.Legend">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="67108bf0496a38e9f989b18082d38d2c41e4a563" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587618" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Legend" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="67108bf0496a38e9f989b18082d38d2c41e4a563" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000119" /></Metadata><TypeSignature Language="C#" Value="public interface Legend" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Legend" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Legend" />
   <TypeSignature Language="VB.NET" Value="Public Interface Legend" />
@@ -30,12 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Représente la légende d’un graphique.</summary>
-    <remarks>
-      <para>Chaque graphique peut avoir qu’une seule légende. L’objet <b>Legend</b> contient un ou plusieurs <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objets ; chaque <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objet contient un <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objet.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" /> propriété permet de renvoyer l’objet <b>Legend</b> .</para>
-      <para>La légende du graphique n’est pas visible, sauf si la <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> propriété a la <b>valeur True</b>. Si cette propriété a la <b>valeur False</b>, les propriétés et méthodes de l’objet <b>Legend</b> échouera.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Chaque graphique ne peut avoir qu’une seule légende. <b>L’objet Legend</b> contient un ou plusieurs <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objets ; chaque objet contient un <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objet.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" /> propriété pour renvoyer <b>l’objet Legend.</b></para>
+      <para>La légende du graphique n’est pas visible, sauf si <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> la propriété a la valeur <b>True</b>. Si vous lui affectez la valeur <b>False</b>, les propriétés et méthodes de l’objet <b>Legend</b> échouent.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,8 +88,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le texte de l’objet modifie la taille de police lorsque la taille de l’objet change. La valeur par défaut est <b>True</b>.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la taille de la police du texte situé dans l'objet change lorsque l'objet est redimensionné. La valeur par défaut est <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,11 +175,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -245,7 +232,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> objet qui contient les propriétés de la légende du graphique spécifié de la mise en forme du remplissage.</summary>
+        <summary>Renvoie un objet qui contient les propriétés de mise en forme <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> de remplissage pour la légende de graphique spécifiée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,10 +291,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -368,15 +353,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si une légende doit occuper l'espace du graphique lors de la spécification d'une disposition de graphique. <b>True</b> par défaut. <b>Boolean</b> en lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Cette propriété n'a pas d'influence sur le fait que le graphique soit ou non en mode de disposition automatique.  Si l’utilisateur ajoute un titre à l’aide de la commande au-dessus du graphique, le graphique devient plus petit, comme dans Microsoft Office Excel 2003.  S'il supprime ensuite le titre ou sélectionne une ou plusieurs des options de titre avec superposition, le graphique s'agrandit, comme si le titre n'y était plus.</para>
-          <para></para>
-        </remarks>
+        <summary><b>True</b> si une légende doit occuper l'espace du graphique lors de la spécification d'une disposition de graphique. La valeur par défaut est <b>True</b>. En lecture/écriture <b>booléen</b>.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Cette propriété n'a pas d'influence sur le fait que le graphique soit ou non en mode de disposition automatique.  Si l'utilisateur ajoute un titre à l'aide de la commande Au-dessus du graphique, le graphique devient plus petit, comme dans Microsoft Office Excel 2003.  S'il supprime ensuite le titre ou sélectionne une ou plusieurs des options de titre avec superposition, le graphique s'agrandit, comme si le titre n'y était plus.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -463,8 +443,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Facultatif <b>Object</b>. Numéro de l'élément de légende.</param>
-        <summary>Renvoie un objet qui représente soit une seule entrée de légende (un <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objet), soit une collection d’entrées de légende (un <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> objet) pour la légende.</summary>
+        <param name="Index">Objet <b>facultatif</b>. Numéro de l'élément de légende.</param>
+        <summary>Renvoie un objet qui représente soit une seule entrée de légende (un objet), soit une collection d’entrées de légende <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> (un <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> objet) pour la légende.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -494,12 +474,11 @@
       <Docs>
         <summary>Renvoie le nom de l'objet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le tableau suivant indique les valeurs de l’exemple de la propriété <b>Name</b> et les propriétés associées en fonction d’un <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a></para>
+        <remarks><para>Le tableau suivant montre des exemples de valeurs de la <b>propriété Name</b> et les propriétés associées d’un <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">olap</a></para>
           <list type="table">
             <item>
               <term>
-                <b>Légende</b>
+                <b>Caption</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
@@ -526,15 +505,14 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <para>Lorsque vous spécifiez un index dans la collection, vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> syntaxe indiquée dans le tableau suivant.</para>
           <list type="table">
             <item>
-              <term>expression. PivotItems (« [Europe]. [ France]. [Paris] »)</term>
-              <description>expression. PivotItems("Paris")</description>
+              <term>expression. PivotItems(« [Europe].[ France]. [Paris] »)</term>
+              <description>expression. PivotItems(« Paris »)</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -560,7 +538,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -593,9 +571,8 @@
       <Docs>
         <summary>Renvoie ou définit la position de la légende sur le graphique.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLegendPosition" />peut être une de ces constantes <b>XlLegendPosition</b> :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLegendPosition" /> peut être l’une de ces <b>constantes XlLegendPosition</b> :</para>
           <para>
             <b>xlLegendPositionCorner</b>
           </para>
@@ -611,8 +588,7 @@
           <para>
             <b>xlLegendPositionLeft</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -667,8 +643,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la police est une police ombrée ou si l’objet est ombré.</summary>
+        <summary><b>True</b> si la police est une police d’ombre ou si l’objet a une ombre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -699,7 +674,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Distance, en points, entre le bord supérieur de l’objet en haut de la zone de graphique.</summary>
+        <summary>Distance, en points, entre le bord supérieur de l’objet et le haut de la zone de graphique.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

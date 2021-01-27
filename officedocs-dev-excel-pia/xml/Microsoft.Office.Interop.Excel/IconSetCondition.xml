@@ -1,13 +1,5 @@
 <Type Name="IconSetCondition" FullName="Microsoft.Office.Interop.Excel.IconSetCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="60529c90129fadd3409df7f77d68bfab6f56e963" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580723" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface IconSetCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="60529c90129fadd3409df7f77d68bfab6f56e963" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000210" /></Metadata><TypeSignature Language="C#" Value="public interface IconSetCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IconSetCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IconSetCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface IconSetCondition" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente une règle de mise en forme conditionnelle de jeu d’icônes.</summary>
-    <remarks>
-      <para>Tous les objets de mise en forme conditionnelle sont contenues dans un <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection d’objets, qui est un enfant d’un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection. Vous pouvez créer un jeu d’icônes règle de mise en forme à l’aide du <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /> méthode de la collection <b>FormatConditions</b> .</para>
-      <para>Chaque jeu d’icônes contient trois, quatre ou cinq icônes. Vous utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objet à renvoyer un <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> objet pour spécifier un des jeux d’icônes intégrés. Chaque icône individuelle dans le jeu d’icônes est ensuite assigné à un sous-ensemble des valeurs de la plage par les membres de le <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> objet. Le type de seuil est également spécifié par cet objet.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Tous les objets de mise en forme conditionnelle sont contenus dans un objet de collection, qui <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> est un enfant d’une <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection. Vous pouvez créer une règle de mise en forme de jeu d’icônes à l’aide de la méthode ou de la <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode de la collection <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /> <b>FormatConditions.</b></para>
+      <para>Chaque jeu d’icônes contient trois, quatre ou cinq icônes. Vous utilisez la propriété de l’objet pour renvoyer un objet afin de spécifier l’un des jeux <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> d’icônes intégrés. Chaque icône individuelle du jeu d’icônes est ensuite affectée à un sous-ensemble des valeurs de la plage par les membres de <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> laobect. Le type de seuil est également spécifié par cet objet.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,13 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente l’application Microsoft Office Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Application</b> (voir ci-dessus)</value>
-        <remarks>
-          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
-          <para></para>
-        </remarks>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui représente  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Microsoft Office’application Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, elle renvoie un objet <b>Application</b> qui représente l’auteur de l’objet spécifié. En lecture seule.</summary>
+        <value><b>Application</b> (voir ci-dessus)</value>
+        <remarks><para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AppliesTo">
@@ -92,10 +79,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui spécifie la plage de cellules à laquelle la règle de mise en forme est appliquée.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet spécifiant la plage de cellules à laquelle la règle de mise en forme est appliquée.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,14 +107,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits équivalent à une <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> valeur qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie un nombre integer 32 bits équivalent à une valeur qui indique l’application dans laquelle cet objet a <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> été créé. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -184,13 +165,9 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit une valeur de type <b>String</b> représentant une formule qui détermine les valeurs auxquelles sera appliqué le jeu d'icônes.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
-        <remarks>
-          <para>Cette propriété permet de limiter la plage de valeurs affichant le format conditionnel. C'est utile par exemple lorsqu'une plage de nombres contient à la fois des valeurs positives et négatives. Vous pouvez créer plus d'un format conditionnel pour cette plage, un pour les valeurs positives et un autre pour les valeurs négatives.</para>
-          <para></para>
-        </remarks>
+        <value><b>String</b></value>
+        <remarks><para>Cette propriété permet de limiter la plage de valeurs affichant le format conditionnel. C'est utile par exemple lorsqu'une plage de nombres contient à la fois des valeurs positives et négatives. Vous pouvez créer plus d'un format conditionnel pour cette plage, un pour les valeurs positives et un autre pour les valeurs négatives.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IconCriteria">
@@ -216,14 +193,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.IconCriteria</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> collection, qui représente l’ensemble des critères d’une icône définissez une règle de mise en forme conditionnelle.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />
-        </value>
-        <remarks>
-          <para>Une fois que vous avez le <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />collection, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" /> propriété de la collection à renvoyer un <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objet. Le <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objet représente un critère d’un jeu d’icônes.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> collection, qui représente l’ensemble de critères d’une règle de mise en forme conditionnelle de jeu d’icônes.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /></value>
+        <remarks><para>Une fois que vous <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> avez la collection, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" /> propriété de la collection pour renvoyer un <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objet. <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />L’objet représente un critère unique d’un jeu d’icônes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IconSet">
@@ -252,14 +225,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> collection, qui spécifie le jeu d’icônes utilisé dans le format conditionnel.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>Vous pouvez attribuer l’icône définie à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objet. </para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> collection, qui spécifie le jeu d’icônes utilisé dans le format conditionnel.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Vous pouvez affecter le jeu d’icônes à l’aide <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> de la propriété de <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> l’objet. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModifyAppliesToRange">
@@ -286,11 +255,9 @@
       <Docs>
         <param name="Range">Plage à laquelle cette règle de mise en forme sera appliquée.</param>
         <summary>Définit la plage de cellules à laquelle cette règle de mise en forme s’applique.</summary>
-        <remarks>
-          <para>La plage doit se trouver dans le style de référence A1 et être entièrement dans la feuille qui est le parent de le <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. Il peut inclure l’opérateur de plage (le signe deux-points), l’opérateur d’intersection (un espace) ou l’opérateur union (une virgule). Signe dollar peut également être utilisé, mais ils sont ignorés.</para>
+        <remarks><para>La plage doit être dans le style de référence A1 et être entièrement contenue dans la feuille parent de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. Elle peut inclure l'opérateur de plage (le signe deux-points), l'opérateur d'intersection (un espace) ou l'opérateur de liaison (une virgule). Les signes dollar peuvent également être utilisés, mais ils sont ignorés.</para>
           <para>Vous pouvez également utiliser un nom défini en local à n'importe quel endroit de la plage, mais le nom doit appartenir au langage de la macro.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -316,10 +283,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,13 +315,9 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie ou définit une valeur de type <b>Boolean</b> qui indique si les seuils d’un format conditionnel de jeu d’icônes sont déterminés à l’aide de centiles.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Cette propriété renvoie <b>False</b> si tous les seuils ne sont pas définis pour utiliser les centiles. Attribuez-lui la valeur <b>True</b> pour utiliser systématiquement les centiles.</para>
-          <para></para>
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Cette propriété renvoie <b>False</b> si tous les seuils ne sont pas définis pour utiliser les centiles. Attribuez-lui la valeur <b>True</b> pour utiliser systématiquement les centiles.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -386,13 +347,9 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie ou définit la valeur de priorité de la règle de mise en forme conditionnelle. La priorité détermine l’ordre d’évaluation lorsqu’une feuille de calcul contient plusieurs règles de mise en forme conditionnelle.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>La valeur de priorité que vous définissez doit être un entier positif compris entre 1 et le nombre total de règles de mise en forme conditionnelle contenues dans la feuille de calcul. Dans la mesure où la valeur de priorité doit être unique pour toutes les règles de la feuille de calcul, le fait de modifier la priorité d'une règle de mise en forme conditionnelle donnée risque d'entraîner la modification de la valeur de priorité des autres règles de la feuille de calcul.</para>
-          <para></para>
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>La valeur de priorité que vous définissez doit être un entier positif compris entre 1 et le nombre total de règles de mise en forme conditionnelle contenues dans la feuille de calcul. Dans la mesure où la valeur de priorité doit être unique pour toutes les règles de la feuille de calcul, le fait de modifier la priorité d'une règle de mise en forme conditionnelle donnée risque d'entraîner la modification de la valeur de priorité des autres règles de la feuille de calcul.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PTCondition">
@@ -418,10 +375,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur de type <b>Boolean</b> indiquant si le format conditionnel est appliqué à un graphique de tableau croisé dynamique. Propriété en lecture seule.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Renvoie une valeur de type <b>Boolean</b> indiquant si le format conditionnel est appliqué à un graphique de tableau croisé dynamique. En lecture seule.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,13 +407,9 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie ou définit une valeur <b>Boolean</b> indiquant si l’ordre des icônes est inversé pour un jeu d’icônes.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Par défaut, la plupart des jeux d’icônes que vous pouvez utiliser associent des images positives avec des valeurs supérieures. Par exemple, le jeu d’icônes de « 3 Feux de circulation » applique un cercle vert au seuil de valeur supérieure et un cercle rouge aux valeurs plus petites de la plage. Si, pour vos données, des valeurs inférieures sont plus souhaitables, par exemple pour des résultats de marathon, vous souhaiterez peut-être inverser l’ordre d’application des icônes à la plage pour associer le cercle vert aux valeurs les plus petites petites.</para>
-          <para></para>
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Par défaut, la plupart des jeux d’icônes que vous pouvez utiliser associent des images positives avec des valeurs supérieures. Par exemple, le jeu d’icônes de « 3 Feux de circulation » applique un cercle vert au seuil de valeur supérieure et un cercle rouge aux valeurs plus petites de la plage. Si, pour vos données, des valeurs inférieures sont plus souhaitables, par exemple pour des résultats de marathon, vous souhaiterez peut-être inverser l’ordre d’application des icônes à la plage pour associer le cercle vert aux valeurs les plus petites petites.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScopeType">
@@ -487,14 +438,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> énumération qui détermine l’étendue du format conditionnel lorsqu’il est appliqué à un graphique de tableau croisé dynamique.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
-        </value>
-        <remarks>
-          <para>La valeur par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, qui définit l’étendue à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" /> propriété.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie ou définit l’une des constantes de l’éumération, qui détermine l’étendue de la mise en forme conditionnelle lorsqu’elle est appliquée à un graphique de tableau <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> croisé dynamique.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
+        <remarks><para>La valeur par défaut <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> est , qui définit l’étendue à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFirstPriority">
@@ -519,10 +466,8 @@
       <Parameters />
       <Docs>
         <summary>Attribue à la règle de mise en forme conditionnelle en question la valeur de priorité « 1 » de sorte qu’elle soit évaluée avant toutes les autres règles présentes dans la feuille de calcul.</summary>
-        <remarks>
-          <para>Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, si la règle n’a pas été précédemment définie à priorité « 1 », cette méthode provoque la priorité de toutes les autres règles existantes sur la feuille de calcul augmente d’un numéro.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, si la règle n’a pas été précédemment définie sur la priorité « 1 », cette méthode augmente d’une fois la priorité de toutes les autres règles existantes de la feuille de calcul.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetLastPriority">
@@ -546,11 +491,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Définit l'ordre d'évaluation de la règle de mise en forme conditionnelle de sorte qu'elle soit évaluée après toutes les autres règles présentes dans la feuille de calcul.</summary>
-        <remarks>
-          <para>La valeur réelle de la priorité est égale au nombre total de règles conditionnelles de mise en forme sur la feuille de calcul. Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, cette méthode provoque la priorité des règles qui a une valeur de priorité supérieure à cette règle doit être augmenté d’une unité.</para>
-          <para></para>
-        </remarks>
+        <summary>Définit l’ordre d’évaluation de la règle de mise en forme conditionnelle de sorte qu’elle soit évaluée après toutes les autres règles présentes dans la feuille de calcul.</summary>
+        <remarks><para>La valeur réelle de la priorité sera égale au nombre total de règles de mise en forme conditionnelle dans la feuille de calcul. Lorsque vous avez plusieurs règles de mise en forme conditionnelle dans une feuille de calcul, cette méthode augmente d’une fois la priorité des règles dont la valeur de priorité est supérieure à celle de cette règle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowIconOnly">
@@ -579,14 +522,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit une valeur de type <b>Boolean</b> qui indique si seule l’icône est affichée pour un format conditionnel de jeu d’icônes.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>La valeur par défaut de cette propriété est <b>False</b>.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie ou définit une valeur <b>Boolean</b> indiquant si seule l'icône est affichée pour un format conditionnel de jeu d'icônes.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>La valeur par défaut de cette propriété est <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StopIfTrue">
@@ -613,13 +552,9 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie ou définit une valeur de type <b>Boolean</b> qui détermine si les autres règles de mise en forme conditionnelle de la cellule doivent être évaluées lorsque la règle active renvoie la valeur <b>True</b>.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Pour assurer une compatibilité en amont, la valeur par défaut de cette propriété est <b>True</b>, ce qui correspond au comportement contraire à celui d'une règle de mise en forme créée dans l'interface utilisateur.</para>
-          <para></para>
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Pour assurer une compatibilité en amont, la valeur par défaut de cette propriété est <b>True</b>, ce qui correspond au comportement contraire à celui d'une règle de mise en forme créée dans l'interface utilisateur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -645,14 +580,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> énumération qui spécifie le type de mise en forme conditionnelle. En lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Cette propriété renvoie toujours une valeur de 6, qui est équivalente à <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" />.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie l’une des constantes de <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> l’éumération, qui spécifie le type de mise en forme conditionnelle. En lecture seule.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Cette propriété retourne toujours la valeur 6, ce qui équivaut à <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" /> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

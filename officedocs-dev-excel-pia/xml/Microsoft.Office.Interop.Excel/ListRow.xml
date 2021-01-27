@@ -1,13 +1,5 @@
 <Type Name="ListRow" FullName="Microsoft.Office.Interop.Excel.ListRow">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a347b1a99ddd22d2ed17b637064532ce272b9ffe" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572708" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListRow" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a347b1a99ddd22d2ed17b637064532ce272b9ffe" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999916" /></Metadata><TypeSignature Language="C#" Value="public interface ListRow" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListRow" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListRow" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListRow" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente une ligne dans un objet de liste. L’objet <b>ListRow</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.ListRows" /> collection. La collection <b>ListRows</b> contient toutes les lignes dans un objet de liste.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListRows" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet pour retourner une collection <b>ListRows </b>.</para>
-      <para></para>
-    </remarks>
+    <summary>Représente une ligne dans un objet List. <b>L’objet ListRow</b> est membre de la <see cref="T:Microsoft.Office.Interop.Excel.ListRows" /> collection. La collection <b>ListRows</b> contient toutes les lignes d’une liste.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListRows" /> propriété de <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> l’objet pour renvoyer une collection <b>ListRows. </b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,12 +77,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</summary>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -116,7 +104,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cette méthode supprime les cellules de la liste et décale vers le haut les cellules restantes situées sous la ligne supprimée. Vous pouvez supprimer des lignes de la liste même si cette dernière est liée à un site SharePoint. La liste sur le site SharePoint n'est pas mise à jour, mais vous pouvez synchroniser les modifications.</summary>
+        <summary>Cette méthode supprime les cellules de la liste et décale vers le haut les cellules restantes situées sous la ligne supprimée. Vous pouvez supprimer des lignes de la liste même si cette dernière est liée à un site SharePoint. La liste sur le site SharePoint n’est pas mise à jour, mais vous pouvez synchroniser les modifications.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,7 +131,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le numéro d’index de la <see cref="T:Microsoft.Office.Interop.Excel.ListRow" /> objet au sein de la <see cref="T:Microsoft.Office.Interop.Excel.ListRows" /> collection.</summary>
+        <summary>Renvoie le numéro d’index de <see cref="T:Microsoft.Office.Interop.Excel.ListRow" /> l’objet dans la <see cref="T:Microsoft.Office.Interop.Excel.ListRows" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,7 +162,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur de <b>type Boolean</b> qui indique si une ligne dans une liste contient les cellules qui ne pas passer la validation des données et doivent être résolus avant toute modification peut être validées dans le site Microsoft Windows SharePoint Services.</summary>
+        <summary>Renvoie une valeur <b>de</b> booléen qui indique si une ligne d’une liste contient des cellules qui ne sont pas validées et qui doivent être corrigées avant que des modifications ne soient validées sur le site Microsoft Windows SharePoint Services.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +190,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -230,7 +218,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente la plage à laquelle s’applique l’objet list spécifié.</summary>
+        <summary>Renvoie un objet qui représente la plage à laquelle s’applique <see cref="T:Microsoft.Office.Interop.Excel.Range" /> l’objet de liste spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

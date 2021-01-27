@@ -1,13 +1,5 @@
 <Type Name="AboveAverage" FullName="Microsoft.Office.Interop.Excel.AboveAverage">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1a21e926b51408a1d10155a1a8f623c34f2f9726" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584097" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AboveAverage" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1a21e926b51408a1d10155a1a8f623c34f2f9726" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999790" /></Metadata><TypeSignature Language="C#" Value="public interface AboveAverage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AboveAverage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AboveAverage" />
   <TypeSignature Language="VB.NET" Value="Public Interface AboveAverage" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Représente le visuel moyen précédent d'une règle de mise en forme conditionnelle. Appliquez une couleur ou remplissez une plage ou une sélection pour améliorer la visibilité de la valeur de certaines cellules par rapport à d'autres.</summary>
-    <remarks>
-      <para>Tous les objets de mise en forme conditionnelle sont contenues dans un <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection d’objets, qui est un enfant d’un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection. Vous pouvez créer une règle de mise en forme moyenne ci-dessus en utilisant le <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddAboveAverage" /> méthode de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />collection.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Tous les objets de mise en forme conditionnelle sont contenus dans un objet de collection, qui <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> est un enfant d’une <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection. Vous pouvez créer une règle de mise en forme supérieure à la moyenne à l’aide de la ou <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> des méthodes de la <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddAboveAverage" /> <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AboveBelow">
@@ -62,10 +52,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAboveBelow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlAboveBelow" /> énumération qui spécifie si la règle de mise en forme conditionnelle cherche les valeurs des cellules au-dessus ou en dessous de la moyenne de la plage ou l’écart-type.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlAboveBelow" />
-        </value>
+        <summary>Renvoie ou définit l’une des constantes de l’éumération, en spécifiant si la règle de mise en forme conditionnelle recherche des valeurs de cellule supérieures ou inférieures à la moyenne de la plage ou à l’écart <see cref="T:Microsoft.Office.Interop.Excel.XlAboveBelow" /> type.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlAboveBelow" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,13 +80,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente l’application Microsoft Office Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Application</b> (voir ci-dessus)</value>
-        <remarks>
-          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
-          <para></para>
-        </remarks>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui représente  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Microsoft Office’application Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, elle renvoie un objet <b>Application</b> qui représente l’auteur de l’objet spécifié. En lecture seule.</summary>
+        <value><b>Application</b> (voir ci-dessus)</value>
+        <remarks><para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AppliesTo">
@@ -124,10 +109,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui spécifie la plage de cellules à laquelle la règle de mise en forme est appliquée.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet spécifiant la plage de cellules à laquelle la règle de mise en forme est appliquée.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,14 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> collection qui spécifie la mise en forme des bordures de cellule si la règle de mise en forme conditionnelle renvoie <b>la valeur True</b>. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Borders" />
-        </value>
-        <remarks>
-          <para>Dans le cas d'un objet de mise en forme conditionnelle, vous pouvez uniquement définir les propriétés des bordures supérieure, inférieure et latérales de la cellule.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie une collection qui spécifie la mise en forme des bordures de cellule si la règle de mise en forme conditionnelle <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> a la valeur <b>True</b>. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Borders" /></value>
+        <remarks><para>Dans le cas d'un objet de mise en forme conditionnelle, vous pouvez uniquement définir les propriétés des bordures supérieure, inférieure et latérales de la cellule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CalcFor">
@@ -190,15 +169,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCalcFor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlCalcFor" /> énumération qui spécifie l’étendue des données à évaluer pour le format conditionnel dans un rapport de tableau croisé dynamique.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCalcFor" />
-        </value>
-        <remarks>
-          <para>Cette propriété ne s'applique que lorsque le format conditionnel est utilisé sur les données d'un rapport de tableau croisé dynamique.</para>
-          <para>Cette propriété peut être définie <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlAllValues" />, <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlColGroups" />, ou <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlRowGroups" />uniquement si la <see cref="P:Microsoft.Office.Interop.Excel.AboveAverage.ScopeType" /> propriété est définie sur <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlFieldsScope" />. </para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie ou définit l’une des constantes de l’éumération, qui spécifie l’étendue des données à évaluer pour la mise en forme conditionnelle dans un rapport de tableau <see cref="T:Microsoft.Office.Interop.Excel.XlCalcFor" /> croisé dynamique.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCalcFor" /></value>
+        <remarks><para>Cette propriété ne s'applique que lorsque le format conditionnel est utilisé sur les données d'un rapport de tableau croisé dynamique.</para>
+          <para>Cette propriété peut être définie sur , ou uniquement si la propriété <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlAllValues" /> <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlColGroups" /> est définie sur <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlRowGroups" /> <see cref="P:Microsoft.Office.Interop.Excel.AboveAverage.ScopeType" /> <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlFieldsScope" /> . </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -224,21 +199,13 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une constante dans la <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> énumération qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
-          <para></para>
-        </remarks>
-        <example>
-          <para>Cet exemple indique comment afficher un message relatif à l'application qui a créé un classeur Excel.
+        <summary>Renvoie une constante dans <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> l’éumération qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
+        <example><para>Cet exemple indique comment afficher un message relatif à l'application qui a créé un classeur Excel.
 
-
-
-</para>
-        </example>
+</para></example>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -289,14 +256,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objet qui spécifie la police, la mise en forme si la règle de mise en forme conditionnelle renvoie <b>la valeur True</b>. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Font" />
-        </value>
-        <remarks>
-          <para>Toutes les propriétés de l'objet <b>Font</b> ne sont pas prises en charge pour un objet de mise en forme conditionnelle. Vous pouvez définir les attributs de style, soulignement, couleur et barré pour la police.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie un objet qui spécifie la mise en forme de police si la règle de mise en forme conditionnelle <see cref="T:Microsoft.Office.Interop.Excel.Font" /> a la valeur <b>True</b>. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Font" /></value>
+        <remarks><para>Toutes les propriétés de l'objet <b>Font</b> ne sont pas prises en charge pour un objet de mise en forme conditionnelle. Vous pouvez définir les attributs de style, soulignement, couleur et barré pour la police.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -322,10 +285,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objet qui spécifie les attributs de l’intérieur d’une cellule pour une mise en forme conditionnelle de la règle qui prend la valeur <b>True</b>. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Interior" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objet qui spécifie les attributs intérieurs d’une cellule pour une règle de mise en forme conditionnelle évaluée à <b>True</b>. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -353,11 +314,9 @@
       <Docs>
         <param name="Range">Plage à laquelle cette règle de mise en forme sera appliquée.</param>
         <summary>Définit la plage de cellules à laquelle cette règle de mise en forme s’applique.</summary>
-        <remarks>
-          <para>La plage doit se trouver dans le style de référence A1 et être entièrement dans la feuille qui est le parent de le <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. Il peut inclure l’opérateur de plage (le signe deux-points), l’opérateur d’intersection (un espace) ou l’opérateur union (une virgule). Signe dollar peut également être utilisé, mais ils sont ignorés.</para>
+        <remarks><para>La plage doit être dans le style de référence A1 et être entièrement contenue dans la feuille qui est le parent de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. Elle peut inclure l'opérateur de plage (le signe deux-points), l'opérateur d'intersection (un espace) ou l'opérateur de liaison (une virgule). Les signes dollar peuvent également être utilisés, mais ils sont ignorés.</para>
           <para>Vous pouvez également utiliser un nom défini en local à n'importe quel endroit de la plage, mais le nom doit appartenir au langage de la macro.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormat">
@@ -386,14 +345,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le format de nombre appliqué à une cellule si la règle de mise en forme conditionnelle renvoie <b>la valeur True</b>. <b>Objet</b> en lecture/écriture.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>Le format numérique est spécifié à l’aide des mêmes codes affichées sous l’onglet numéro de la boîte de dialogue Format de cellule. Vous pouvez utiliser un format numérique intégré, par exemple « Général », ou <see cref="createacustomnumberformat#CrossCollection" />.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie ou définit le format numérique appliqué à une cellule si la règle de mise en forme conditionnelle renvoie <b>True</b>. <b>Objet</b> en lecture/écriture.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Le format numérique est spécifié à l'aide des mêmes codes de format que ceux affichés dans la boîte de dialogue Format de cellule, sous l'onglet Nombre. Vous pouvez utiliser un format numérique intégré, par exemple « Général » ou <see cref="createacustomnumberformat#CrossCollection" /> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumStdDev">
@@ -422,10 +377,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’écart-type numérique pour un objet <b>AboveAverage</b> . Type de données <b>Integer</b> en lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Renvoie ou définit l'écart-type numérique pour un objet <b>AboveAverage</b>. <b>Entier</b> en lecture/écriture.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,10 +405,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,13 +437,9 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie ou définit la valeur de priorité de la règle de mise en forme conditionnelle. La priorité détermine l’ordre d’évaluation lorsqu’une feuille de calcul contient plusieurs règles de mise en forme conditionnelle.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>La valeur de priorité que vous définissez doit être un entier positif compris entre 1 et le nombre total de règles de mise en forme conditionnelle contenues dans la feuille de calcul. Dans la mesure où la valeur de priorité doit être unique pour toutes les règles de la feuille de calcul, le fait de modifier la priorité d'une règle de mise en forme conditionnelle donnée risque d'entraîner la modification de la valeur de priorité des autres règles de la feuille de calcul.</para>
-          <para></para>
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>La valeur de priorité que vous définissez doit être un entier positif compris entre 1 et le nombre total de règles de mise en forme conditionnelle contenues dans la feuille de calcul. Dans la mesure où la valeur de priorité doit être unique pour toutes les règles de la feuille de calcul, le fait de modifier la priorité d'une règle de mise en forme conditionnelle donnée risque d'entraîner la modification de la valeur de priorité des autres règles de la feuille de calcul.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PTCondition">
@@ -518,10 +465,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur de type <b>Boolean</b> indiquant si le format conditionnel est appliqué à un graphique de tableau croisé dynamique. Propriété en lecture seule.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Renvoie une valeur de type <b>Boolean</b> indiquant si le format conditionnel est appliqué à un graphique de tableau croisé dynamique. En lecture seule.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -551,14 +496,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> énumération qui détermine l’étendue du format conditionnel lorsqu’il est appliqué à un graphique de tableau croisé dynamique.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
-        </value>
-        <remarks>
-          <para>La valeur par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, qui définit l’étendue à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.AboveAverage.AppliesTo" />propriété.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie ou définit l’une des constantes de l’éumération, qui détermine l’étendue de la mise en forme conditionnelle lorsqu’elle est appliquée à un graphique de tableau <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> croisé dynamique.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
+        <remarks><para>La valeur par défaut <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> est , qui définit l’étendue à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.AboveAverage.AppliesTo" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFirstPriority">
@@ -583,12 +524,10 @@
       <Parameters />
       <Docs>
         <summary>Attribue à la règle de mise en forme conditionnelle en question la valeur de priorité « 1 » de sorte qu’elle soit évaluée avant toutes les autres règles présentes dans la feuille de calcul.</summary>
-        <remarks>
-          <para>Si la feuille de calcul contient plusieurs règles de mise en forme conditionnelle et que la règle n'était pas auparavant associée à la priorité « 1 », cette méthode augmente d'une unité la valeur de priorité de toutes les autres règles figurant dans la feuille de calcul.</para>
+        <remarks><para>Si la feuille de calcul contient plusieurs règles de mise en forme conditionnelle et que la règle n'était pas auparavant associée à la priorité « 1 », cette méthode augmente d'une unité la valeur de priorité de toutes les autres règles figurant dans la feuille de calcul.</para>
           <para>
-            <b>Remarque</b>: les niveaux de priorité pour les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
-          <para></para>
-        </remarks>
+            <b>Remarque</b>: les niveaux de priorité pour les règles de mise en forme conditionnelle sont appliqués au niveau de la feuille de calcul.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetLastPriority">
@@ -612,13 +551,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Définit l'ordre d'évaluation de la règle de mise en forme conditionnelle de sorte qu'elle soit évaluée après toutes les autres règles présentes dans la feuille de calcul.</summary>
-        <remarks>
-          <para>La valeur effective de la priorité est égale au nombre total de règles de mise en forme conditionnelle présentes dans la feuille de calcul. Si la feuille de calcul contient plusieurs règles de mise en forme conditionnelle, cette méthode augmente d'une unité la priorité des règles dont la valeur était supérieure à celle de la règle en question.</para>
+        <summary>Définit l’ordre d’évaluation de la règle de mise en forme conditionnelle de sorte qu’elle soit évaluée après toutes les autres règles présentes dans la feuille de calcul.</summary>
+        <remarks><para>La valeur effective de la priorité est égale au nombre total de règles de mise en forme conditionnelle présentes dans la feuille de calcul. Si la feuille de calcul contient plusieurs règles de mise en forme conditionnelle, cette méthode augmente d'une unité la priorité des règles dont la valeur était supérieure à celle de la règle en question.</para>
           <para>
-            <b>Remarque</b>: les niveaux de priorité pour les règles de mise en forme conditionnelle sont appliquées au niveau de la feuille de calcul.</para>
-          <para></para>
-        </remarks>
+            <b>Remarque</b>: les niveaux de priorité pour les règles de mise en forme conditionnelle sont appliqués au niveau de la feuille de calcul.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StopIfTrue">
@@ -648,13 +585,9 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie ou définit une valeur de type <b>Boolean</b> qui détermine si les autres règles de mise en forme conditionnelle de la cellule doivent être évaluées lorsque la règle active renvoie la valeur <b>True</b>.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Pour assurer une compatibilité en amont, la valeur par défaut de cette propriété est <b>True</b>, ce qui correspond au comportement contraire à celui d'une règle de mise en forme créée dans l'interface utilisateur.</para>
-          <para></para>
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Pour assurer une compatibilité en amont, la valeur par défaut de cette propriété est <b>True</b>, ce qui correspond au comportement contraire à celui d'une règle de mise en forme créée dans l'interface utilisateur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -680,14 +613,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une des constantes de le <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> énumération qui spécifie le type de mise en forme conditionnelle. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />
-        </value>
-        <remarks>
-          <para>Cette propriété renvoie toujours une valeur <b>entière</b> « 12 », ce qui équivaut à <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlAboveAverageCondition" />.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie l’une des constantes de <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> l’éumération, qui spécifie le type de mise en forme conditionnelle. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /></value>
+        <remarks><para>Cette propriété retourne toujours une valeur de nombres <b>integer</b> de « 12 », ce qui équivaut à <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlAboveAverageCondition" /> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

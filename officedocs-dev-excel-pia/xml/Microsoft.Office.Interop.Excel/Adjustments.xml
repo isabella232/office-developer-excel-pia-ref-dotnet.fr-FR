@@ -1,13 +1,5 @@
 <Type Name="Adjustments" FullName="Microsoft.Office.Interop.Excel.Adjustments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5fbb3122486169cf5cb93352c3646bc1cdd1c0b4" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584139" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Adjustments : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5fbb3122486169cf5cb93352c3646bc1cdd1c0b4" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999741" /></Metadata><TypeSignature Language="C#" Value="public interface Adjustments : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Adjustments implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Adjustments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Adjustments&#xA;Implements _IMsoDispObj" />
@@ -31,15 +23,14 @@
   </Attributes>
   <Docs>
     <summary>Cet objet contient des valeurs de réglage pour la forme automatique, l'objet WordArt ou le connecteur spécifié.</summary>
-    <remarks>
-      <para>Chaque valeur de réglage représente une manière dont une poignée de réglage peut être manipulée. Comme certaines peuvent subir deux types de réglage, par exemple horizontalement et verticalement, une forme peut avoir plus de valeurs de réglage qu'elle n'a de poignées de réglage. Elle peut ainsi avoir jusqu'à huit réglages.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" /> propriété permet de renvoyer un objet <b>Adjustments</b> . Utilisez <b>des ajustements</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de la valeur d’ajustement, pour renvoyer une seule valeur de réglage.</para>
+    <remarks><para>Chaque valeur de réglage représente une manière dont une poignée de réglage peut être manipulée. Comme certaines peuvent subir deux types de réglage, par exemple horizontalement et verticalement, une forme peut avoir plus de valeurs de réglage qu'elle n'a de poignées de réglage. Elle peut ainsi avoir jusqu'à huit réglages.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" /> propriété pour renvoyer un <b>objet Adjustments.</b> Utilisez <b>Adjustments</b>( ), où est le numéro d’index de la valeur <paramref name="index" /> <paramref name="index" /> d’ajustement, pour renvoyer une valeur d’ajustement unique.</para>
       <para>Les différentes formes possèdent différents nombres de valeurs d'ajustement et les différents types d'ajustements changent la géométrie d'une forme de plusieurs façons et présentent des plages de valeurs valides différentes.</para>
       <para>Le tableau suivant présente les plages de valeurs de réglage correspondant à chaque type de réglage. Dans la plupart des cas, si vous indiquez une valeur située au-delà de la plage autorisée, c'est la valeur autorisée la plus proche qui sera retenue.</para>
       <list type="table">
         <item>
           <term>Linéaire (horizontal ou vertical)</term>
-          <description>Généralement la valeur 0,0 représente le bord gauche ou supérieur de la forme et la valeur 1,0 représente le bord droit ou inférieur de la forme. Les valeurs valides correspondent aux réglages valides que vous pouvez effectuer manuellement sur la forme. Par exemple, si vous pouvez tirer uniquement une poignée de réglage manuellement à la moitié de la longueur de la forme, la valeur maximale pour l'ajustement correspondant sera de 0,5. Pour les formes telles que les connecteurs et les légendes, où les valeurs 0,0 et 1,0 représentent les limites du rectangle défini par les points de début et de fin du connecteur ou du trait de légende, les nombres négatifs et les nombres supérieurs à 1,0 sont des valeurs valides.</description>
+          <description>En règle générale, la valeur 0.0 représente le bord gauche ou supérieur de la forme, et la valeur 1.0 représente le bord droit ou inférieur de la forme. Les valeurs valides correspondent aux réglages valides que vous pouvez effectuer manuellement sur la forme. Par exemple, si vous ne pouvez tirer une poignée de réglage que jusqu'à la moitié de la forme, la valeur maximale du réglage correspondant sera de 0,5. Pour des formes telles que les légendes ou les connecteurs, pour lesquelles les valeurs 0,0 et 1,0 représentent les limites du rectangle définies par les extrémités du connecteur ou du trait de légende, les nombres négatifs et les nombres supérieurs à 1,0 sont des valeurs autorisées.</description>
         </item>
         <item>
           <term>Radial</term>
@@ -47,11 +38,10 @@
         </item>
         <item>
           <term>Angle</term>
-          <description>Les valeurs sont exprimées en degrés. Si vous spécifiez une valeur en dehors de la plage -180 et 180, elle sera normalisée à l’intérieur de cette plage.</description>
+          <description>Les valeurs sont exprimées en degrés. Si vous spécifiez une valeur en dehors de la plage –180 à 180, elle sera normalisée pour être dans cette plage.</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -80,7 +70,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,11 +131,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -177,15 +165,12 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire. Numéro d'index de l'ajustement.</param>
-        <summary>Cette propriété renvoie ou définit la valeur de réglage spécifié.</summary>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire. Numéro d'index de l'ajustement.</param>
+        <summary>Renvoie ou définit la valeur d’ajustement spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>S’il s’agit de réglages linéaires, une valeur de réglage de 0,0 correspond généralement au bord gauche ou supérieur de la forme, tandis qu’une valeur de 1,0 correspond généralement à son bord droit ou inférieur. Pour certaines formes, il peut cependant arriver que ces réglages dépassent les limites de la forme. En ce qui concerne les réglages radiaux, une valeur de réglage de 1,0 correspond à la largeur de la forme. Pour les réglages angulaires, la valeur de réglage est spécifiée en degrés. La propriété <b>Item</b> s’applique uniquement aux formes avec des réglages.</para>
+        <remarks><para>Pour des ajustements linéaires, une valeur de réglage de 0,0 correspond généralement sur le bord gauche ou supérieur de la forme et une valeur de 1.0 correspond généralement sur le bord droit ou inférieur de la forme. Toutefois, les ajustements peuvent passer au-delà des limites de la forme pour certaines formes. Pour les ajustements radiales, une valeur de réglage de 1,0 correspond à la largeur de la forme. Pour les ajustements angulaires, la valeur de réglage est spécifiée en degrés. La propriété <b>Item</b> s'applique uniquement à des formes possédant des ajustements.</para>
           <para>Les formes automatiques, les connecteurs et les objets WordArt peuvent avoir jusqu'à huit ajustements.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

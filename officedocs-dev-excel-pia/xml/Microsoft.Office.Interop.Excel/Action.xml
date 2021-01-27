@@ -1,13 +1,5 @@
 <Type Name="Action" FullName="Microsoft.Office.Interop.Excel.Action">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2161b566bfd02a2bafb42673b2e765964172c1df" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584090" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Action" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2161b566bfd02a2bafb42673b2e765964172c1df" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999783" /></Metadata><TypeSignature Language="C#" Value="public interface Action" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Action" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Action" />
   <TypeSignature Language="VB.NET" Value="Public Interface Action" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente une action à exécuter dans <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> ou <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />données.</summary>
+    <summary>Représente une action à exécuter dans ou <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> des <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> données.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,13 +48,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente l’application Microsoft Office Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Application</b> (voir ci-dessus)</value>
-        <remarks>
-          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
-          <para></para>
-        </remarks>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> représente Microsoft Office’application Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, elle renvoie un objet <b>Application</b> qui représente l’auteur de l’objet spécifié. En lecture seule.</summary>
+        <value><b>Application</b> (voir ci-dessus)</value>
+        <remarks><para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -88,10 +77,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la légende attribuée à la <see cref="P:Microsoft.Office.Interop.Excel.Action" />objet. Valeur <b>String</b> en lecture seule.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
+        <summary>Renvoie la légende affectée à <see cref="P:Microsoft.Office.Interop.Excel.Action" /> l’objet. <b>String</b> en lecture seule.</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,10 +105,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le contenu associé à la <see cref="P:Microsoft.Office.Interop.Excel.Action" /> objet. Valeur <b>String</b> en lecture seule.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
+        <summary>Renvoie le contenu associé à <see cref="P:Microsoft.Office.Interop.Excel.Action" /> l’objet. <b>String</b> en lecture seule.</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,10 +133,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la propriété coordinate de le <see cref="P:Microsoft.Office.Interop.Excel.Action" /> objet. Lecture seule</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <summary>Renvoie la propriété de coordonnées de <see cref="P:Microsoft.Office.Interop.Excel.Action" /> l’objet. Lecture seule</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,14 +161,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une constante dans la <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> énumération qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C et décimal 1480803660. Le <see cref="P:Microsoft.Office.Interop.Excel.Action.Creator" /> propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie une constante dans <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> l’éumération qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C et à la décimale 1480803660. La propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code créateur à <see cref="P:Microsoft.Office.Interop.Excel.Action.Creator" /> quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -209,7 +188,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exécute l’action spécifiée.</summary>
+        <summary>Exécute l'action spécifiée.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,9 +216,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie le nom de l'objet. En lecture seule <b>chaîne</b>.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,10 +243,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,10 +271,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlActionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le type d’action. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlActionType" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlActionType" />
-        </value>
+        <summary>Cette propriété renvoie le type d'action. En lecture <see cref="T:Microsoft.Office.Interop.Excel.XlActionType" /> seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlActionType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="ListObjects" FullName="Microsoft.Office.Interop.Excel.ListObjects">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="297eaae8b8252f38795243645194d97dbacd5ca5" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580940" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="297eaae8b8252f38795243645194d97dbacd5ca5" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999923" /></Metadata><TypeSignature Language="C#" Value="public interface ListObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListObjects&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objets sur une feuille de calcul. Chaque <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet représente une liste dans la feuille de calcul.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objet pour renvoyer la collection <b>ListObjects</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objets d’une feuille de calcul. Chaque <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet représente une liste dans la feuille de calcul.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> propriété de <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> l’objet pour renvoyer la collection <b>ListObjects.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -104,18 +94,15 @@
         <Parameter Name="Destination" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">Facultatif <b>XlListObjectSourceType</b>. Indique le type de source pour la requête. Peut être une des constantes <b>XlListObjectSourceType</b> suivantes : <b>xlSrcExternal</b> ou <b>xlSrcRange</b>. Si tous deux omis, la <paramref name="SourceType" /> sera par défaut <b>xlSrcRange</b>.</param>
-        <param name="Source">Facultatif lorsque <paramref name="SourceType" /> a la <b>valeur xlSrcRange</b>. A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> représentant la source de données. Si tous deux omis, la <paramref name="Source" /> sera par défaut à la plage renvoyée par le code de détection de plage. Requis lorsque <paramref name="SourceType" /> a la <b>valeur xlSrcExternal</b>. Tableau de valeurs <b>String</b> spécifiant une connexion à la source. Élément #Contents0URL à 2ViewGUID de 1ListName de site SharePoint</param>
-        <param name="LinkSource">
-          <b>Boolean</b> facultatif. Indique si une source de données externe doit être liée à l’objet <b>ListObject</b> . Si <paramref name="SourceType" /> est <b>xlSrcExternal</b>, par défaut est <b>True</b>. Si non valide <paramref name="SourceType" /> a la <b>valeur xlSrcRange</b>et renvoie une erreur si vous ne spécifiez pas ne pas.</param>
-        <param name="XlListObjectHasHeaders">Facultatif <b>Object</b>. Un <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> constante qui indique si les données importées ont des étiquettes de colonne. Si la Source ne contient pas d’en-têtes, Excel les génère automatiquement.</param>
-        <param name="Destination">Facultatif <b>Object</b>. Un objet <b>Range</b> spécifiant une référence à une cellule unique comme destination pour le coin supérieur gauche du nouvel objet liste. Si l’objet <b>Range</b> fait référence à plusieurs cellules, une erreur est générée. Le <paramref name="Destination" /> l’argument doit être spécifié lorsque <paramref name="SourceType" /> a la valeur <b>xlSrcExternal</b>. Le <paramref name="Destination" /> argument est ignoré si <paramref name="SourceType" /> a la valeur <b>xlSrcRange</b>. La plage de destination doit se trouver sur la feuille de calcul qui contient le texte spécifié <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> collection. Nouvelles colonnes seront insérées à la <paramref name="Destination" /> pour s’ajuster à la nouvelle liste. Par conséquent, les données existantes ne sont pas remplacées.</param>
+        <param name="SourceType"><b>XlListObjectSourceType facultatif.</b> Indique le type de source pour la requête. Peut être l’une des constantes <b>XlListObjectSourceType</b> suivantes : <b>xlSrcExternal</b> ou <b>xlSrcRange</b>. S’il est <paramref name="SourceType" /> omis, la valeur par défaut <b>est xlSrcRange</b>.</param>
+        <param name="Source">Facultatif <paramref name="SourceType" /> lorsqu’il <b>s’agit de xlSrcRange</b>. Objet <see cref="T:Microsoft.Office.Interop.Excel.Range" /> représentant la source de données. S’il est omis, la plage est renvoyée par défaut par le code de détection <paramref name="Source" /> de plage de liste. Obligatoire <paramref name="SourceType" /> <b>lorsqu’est xlSrcExternal</b>. Tableau de <b>valeurs de</b> chaîne spécifiant une connexion à la source. Element#Contents0URL to SharePoint site 1ListName 2ViewGUID</param>
+        <param name="LinkSource">Facultatif <b>Boolean</b>. Indique si une source de données externe doit être liée à l'objet <b>ListObject</b>. Si <paramref name="SourceType" /> la valeur est <b>xlSrcExternal</b>, la valeur par défaut est <b>True</b>. Non valide <paramref name="SourceType" /> <b>s’il s’agit de xlSrcRange</b>et retourne une erreur si elle n’est pas omise.</param>
+        <param name="XlListObjectHasHeaders">Objet <b>facultatif</b>. Constante qui indique si les données importées ont des <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> étiquettes de colonne. Si la Source ne contient pas d'en-têtes, Excel les génère automatiquement.</param>
+        <param name="Destination">Objet <b>facultatif</b>. Objet <b>Plage</b> spécifiant une référence de cellule unique en tant que destination pour l'angle supérieur gauche du nouvel objet de liste. Si <b>l’objet Range</b> fait référence à plusieurs cellules, une erreur est générée. <paramref name="Destination" />L’argument doit être spécifié <paramref name="SourceType" /> lorsqu’il est définie sur <b>xlSrcExternal</b>. <paramref name="Destination" />L’argument est ignoré si est définie sur <paramref name="SourceType" /> <b>xlSrcRange</b>. La plage de destination doit se trouver sur la feuille de calcul qui contient la <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> collection spécifiée. Les nouvelles colonnes sont insérées à <paramref name="Destination" /> l’en-tête pour s’adapter à la nouvelle liste. Par conséquent, les données existantes ne sont pas supprimées.</param>
         <summary>Cette méthode crée un nouvel objet Liste. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Si la liste comporte des en-têtes, la première ligne de cellules est convertie en <b>texte</b>, si n’est pas déjà faite. La conversion sera basée sur le texte de la cellule. Cela signifie que s’il existe une valeur de date avec un format de <b>Date</b> qui modifie les paramètres régionaux, la conversion en liste peut produire des résultats différents en fonction des paramètres régionaux du système. En outre, s’il existe deux cellules dans la ligne d’en-tête qui ont le même texte, un <b>entier</b> incrémenté sera ajouté pour rendre chaque en-tête de colonne unique.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si la liste comporte des en-têtes, la première ligne de cellules est convertie en <b>Texte</b> si ce n’est pas déjà le cas. Cette conversion est basée sur le texte visible pour la cellule. Cela signifie que, si une valeur de date avec un format <b>Date</b> est modifiée par les paramètres régionaux, la conversion en liste peut produire des résultats différents selon les paramètres régionaux du système. De plus, si deux cellules de la ligne d’en-têtes contiennent le même texte, un <b>Entier</b> incrémentiel y est ajouté de façon à ce que chaque en-tête soit unique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddEx">
@@ -179,7 +166,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,7 +194,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nombre d'objets dans la collection. Valeur <b>Integer</b> en lecture seule.</summary>
+        <summary>Renvoie le nombre d'objets dans la collection. <b>Entier</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -235,12 +222,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C. En lecture <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -301,9 +286,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b>obligatoire. Nom ou numéro d'index de l'objet.</param>
-        <summary>Renvoie un seul objet d'une collection.</summary>
+        <param name="Index">Required, <b>objet</b>. Nom ou numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d’une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -331,7 +315,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent de l’objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

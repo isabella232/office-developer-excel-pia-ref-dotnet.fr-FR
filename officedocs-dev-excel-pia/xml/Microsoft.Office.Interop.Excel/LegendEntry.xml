@@ -1,13 +1,5 @@
 <Type Name="LegendEntry" FullName="Microsoft.Office.Interop.Excel.LegendEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="983427dff3c6cf28781fdc671025f8966ca21207" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576943" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LegendEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="983427dff3c6cf28781fdc671025f8966ca21207" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000091" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.LegendEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendEntry" />
@@ -30,16 +22,14 @@
   </Attributes>
   <Docs>
     <summary>Représente une entrée de légende dans une légende de graphique.</summary>
-    <remarks>
-      <para>L’objet <b>LegendEntry</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> collection. La collection <b>LegendEntries</b> contient tous les objets <b>LegendEntry</b> de la légende.</para>
-      <para>Chaque entrée de légende est composée de deux parties : le texte de l’entrée, qui est le nom de la série associée à l’entrée de légende et du marqueur d’entrée qui relie visuellement l’entrée de légende avec la courbe de tendance dans le graphique ou la série associée. Propriétés de mise en forme pour la marque d’entrée et sa courbe de tendance ou la série associée sont contenues dans le <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objet.</para>
+    <remarks><para><b>L’objet LegendEntry</b> est membre de la <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> collection. La collection <b>LegendEntries</b> contient tous les objets <b>LegendEntry</b> de la légende.</para>
+      <para>Chaque entrée de légende possède deux parties : le texte de l’entrée, qui est le nom de la série associée à l’entrée de légende, et un marqueur d’entrée, qui lie visuellement l’entrée de légende à la série ou à la courbe de tendance associée dans le graphique. Les propriétés de mise en forme de la marque d’entrée et de la série ou de la courbe de tendance associée sont contenues dans <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> l’objet.</para>
       <para>Impossible de modifier le texte d'une entrée de légende. Les objets <b>LegendEntry</b> gèrent la mise en forme de police, et ils peuvent être supprimés. Aucun motif de mise en forme n'est prise en charge pour les entrées de légende. La position et la taille des entrées est fixe.</para>
-      <para>Utilisez <b>LegendEntries</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de l’entrée de légende, pour renvoyer un seul objet <b>LegendEntry</b> . Vous ne peut pas renvoyer des entrées de légende par un nom.</para>
-      <para>Le numéro d'index représente la position de l'entrée de légende dans la légende. LegendEntries(1) se trouve en haut de la légende et LegendEntries.Count se trouve en bas.</para>
+      <para>Utilisez <b>LegendEntries</b>( ), où est le numéro d’index de l’entrée de légende, pour <paramref name="index" /> <paramref name="index" /> renvoyer un seul objet <b>LegendEntry.</b> Vous ne peut pas renvoyer des entrées de légende par un nom.</para>
+      <para>Le numéro d'index représente la position de l'entrée de légende dans la légende. LegendEntries(1) se trouve en haut de la légende et LegendEntries(LegendEntries.Count) en bas.</para>
       <para>Il n'existe aucun moyen direct de renvoyer la série ou la courbe de tendance correspondant à l'entrée de légende.</para>
-      <para>Après la suppression des entrées de légende, la seule façon de les restaurer consiste à supprimer et recréer la légende en définissant la <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> propriété pour le graphique sur <b>False</b> , puis <b>la valeur True</b>.</para>
-      <para></para>
-    </remarks>
+      <para>Une fois que les entrées de légende ont été supprimées, la seule façon de les restaurer consiste à supprimer et à recréer la légende qui les contenait en fixant la propriété du graphique sur <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> <b>False,</b> puis sur <b>True</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -65,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,8 +92,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le texte de l’objet modifie la taille de police lorsque la taille de l’objet change. La valeur par défaut est <b>True</b>.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la taille de la police du texte situé dans l'objet change lorsque l'objet est redimensionné. La valeur par défaut est <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,11 +122,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -217,10 +204,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,7 +316,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.LegendKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> object qui représente le symbole de légende associé à l’entrée.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objet qui représente le clé de légende associé à l’entrée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,7 +344,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -413,7 +398,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Distance, en points, entre le bord supérieur de l’objet en haut de la zone de graphique.</summary>
+        <summary>Distance, en points, entre le bord supérieur de l’objet et le haut de la zone de graphique.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
