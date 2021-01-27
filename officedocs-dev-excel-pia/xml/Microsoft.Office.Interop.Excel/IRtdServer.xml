@@ -1,13 +1,5 @@
 <Type Name="IRtdServer" FullName="Microsoft.Office.Interop.Excel.IRtdServer">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="91b1868ee8a3354dc6036654d8402e4aad54ba45" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579127" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface IRtdServer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="91b1868ee8a3354dc6036654d8402e4aad54ba45" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997655" /></Metadata><TypeSignature Language="C#" Value="public interface IRtdServer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRtdServer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IRtdServer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRtdServer" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente une interface pour un serveur de données en temps réel.</summary>
-    <remarks>
-      <para>L'objet <b>IRTDServer</b> ne peut être instancié ou créé qu'en implémentant l'interface <b>IRTDServer</b> en utilisant le mot clé <b>Implements</b>.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>L'objet <b>IRTDServer</b> ne peut être instancié ou créé qu'en implémentant l'interface <b>IRTDServer</b> en utilisant le mot clé <b>Implements</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ConnectData">
@@ -58,13 +48,10 @@
         <Parameter Name="GetNewValues" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TopicID">
-          <b>Integer</b>obligatoire. Valeur unique, affectée par Microsoft Excel, qui identifie la rubrique.</param>
-        <param name="Strings">
-          <b>Objet</b>obligatoire. Tableau de chaînes à une seule dimension identifiant la rubrique.</param>
-        <param name="GetNewValues">
-          <b>Boolean</b>obligatoire. <b>True</b> pour déterminer si de nouvelles valeurs doivent être acquises.</param>
-        <summary>Ajoute de nouvelles rubriques à partir d’un serveur de données en temps réel. La méthode <b>ConnectData</b> est appelée lors de l’ouverture d’un fichier qui contient les fonctions de données en temps réel ou lorsqu’un utilisateur tape une nouvelle formule contenant la fonction <b>RTD</b> .</summary>
+        <param name="TopicID">Argument de type <b>Integer</b> obligatoire. Valeur unique, affectée par Microsoft Excel, qui identifie la rubrique.</param>
+        <param name="Strings">Required, <b>objet</b>. Tableau de chaînes à une seule dimension identifiant la rubrique.</param>
+        <param name="GetNewValues"><b>Boolean</b> obligatoire. <b>True</b> pour déterminer si de nouvelles valeurs doivent être acquises.</param>
+        <summary>Ajoute de nouvelles rubriques issues d’un serveur de données en temps réel. La <b>méthode ConnectData</b> est appelée lors de l’ouverture d’un fichier qui contient des fonctions de données en temps réel ou lorsqu’un utilisateur tape dans une nouvelle formule qui contient la <b>fonction RTD.</b></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,8 +79,7 @@
         <Parameter Name="TopicID" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="TopicID">
-          <b>Integer</b>obligatoire. Valeur unique de la rubrique affectée par Microsoft Excel.</param>
+        <param name="TopicID">Argument de type <b>Integer</b> obligatoire. Valeur unique de la rubrique affectée par Microsoft Excel.</param>
         <summary>Indique à l’application serveur de données en temps réel (RTD) qu’une rubrique n’est plus utilisée.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,12 +105,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Détermine si le serveur de données en temps réel est toujours actif. Zéro ou un nombre négatif indique un échec ; un nombre positif indique que le serveur est actif.</summary>
+        <summary>Cette méthode détermine si le serveur de données en temps réel est toujours actif. La valeur zéro ou un nombre négatif indiquent un échec ; un nombre positif indique que le serveur est actif.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>La méthode Heartbeat est appelée par Microsoft Excel si la <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> propriété s’est écoulé depuis le dernier appel Excel avec la <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> méthode.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La méthode Heartbeat est appelée par Microsoft Excel si la propriété s’est écoulée depuis le dernier appel <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> d’Excel avec la <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshData">
@@ -150,14 +134,11 @@
         <Parameter Name="TopicCount" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TopicCount">
-          <b>Integer</b>obligatoire. Le serveur RTD doit changer la valeur de la <paramref name="TopicCount" /> pour le nombre d’éléments dans le tableau renvoyé.</param>
+        <param name="TopicCount">Argument de type <b>Integer</b> obligatoire. Le serveur RTD doit modifier la valeur du nombre d’éléments <paramref name="TopicCount" /> dans le tableau renvoyé.</param>
         <summary>Cette méthode est appelée par Microsoft Excel pour obtenir de nouvelles données.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Les données renvoyées à Excel sont un <b>objet</b> contenant un tableau à deux dimensions. La première dimension représente la liste des ID de rubrique. La deuxième dimension représente les valeurs associées à l’ID de la rubrique.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Les données renvoyées à Excel sont un <b>objet</b> contenant un tableau à deux dimensions. La première dimension représente la liste des identificateurs de rubriques. La deuxième dimension représente les valeurs associées aux identificateurs de rubriques.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ServerStart">
@@ -183,8 +164,8 @@
         <Parameter Name="CallbackObject" Type="Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />
       </Parameters>
       <Docs>
-        <param name="CallbackObject">Requis <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> objet. Objet de rappel.</param>
-        <summary>La méthode <b>ServerStart</b> est appelée immédiatement après l’instanciation d’un serveur de données en temps réel. Valeur négative ou zéro indique l’échec de démarrage du serveur ; valeur positive indique la réussite.</summary>
+        <param name="CallbackObject">Objet <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> obligatoire. Objet de rappel.</param>
+        <summary>La méthode <b>ServerStart</b> est appelée immédiatement après qu’un serveur de données en temps réel est instancié. Une valeur négative ou zéro indique l’échec du démarrage du serveur . une valeur positive indique la réussite.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

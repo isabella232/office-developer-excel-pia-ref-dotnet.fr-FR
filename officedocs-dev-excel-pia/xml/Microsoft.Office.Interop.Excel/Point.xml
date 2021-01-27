@@ -1,13 +1,5 @@
 <Type Name="Point" FullName="Microsoft.Office.Interop.Excel.Point">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="41d76d059050993a028c8b26b1795b64c3e70e33" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587681" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Point" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="41d76d059050993a028c8b26b1795b64c3e70e33" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997207" /></Metadata><TypeSignature Language="C#" Value="public interface Point" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Point" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Point" />
   <TypeSignature Language="VB.NET" Value="Public Interface Point" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente un point dans une série d’un graphique.</summary>
-    <remarks>
-      <para>L’objet <b>Point</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Points" /> collection. La collection <b>Points</b> contient tous les points dans une série.</para>
-      <para>Utilisez <b>Points</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du point, pour renvoyer un seul objet <b>Point</b> . Points sont numérotées de gauche à droite dans la série. Points (1) est le point le plus à gauche et points (points.Count) est le point le plus à droite.</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>L’objet Point</b> est membre de la <see cref="T:Microsoft.Office.Interop.Excel.Points" /> collection. La collection <b>Points</b> contient tous les points dans une série.</para>
+      <para>Utilisez <b>points</b>( <paramref name="index" /> ), où est le numéro <paramref name="index" /> d’index de point, pour renvoyer un seul <b>objet Point.</b> Points sont numérotées de gauche à droite dans la série. Points(1) représente le point le plus à gauche et Points(Points.Count) le point le plus à droite.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_ApplyDataLabels">
@@ -97,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,16 +123,16 @@
         <Parameter Name="Separator" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelsType" />. Type d'étiquette de données à appliquer. Peut être une des constantes <b>XlDataLabelsType</b> suivantes :<b>xlDataLabelsShowBubbleSizes</b><b>xlDataLabelsShowLabelAndPercent</b> pourcentage du total et abscisse du point. Disponible uniquement pour les graphiques en secteurs et en anneau. <b>xlDataLabelsShowPercent</b> Pourcentage du total. Disponible uniquement pour les graphiques en secteurs et en anneau. <b>xlDataLabelsShowLabel</b> Abscisse du point. <b>xlDataLabelsShowNone</b> Aucune étiquette de données. <b>xlDataLabelsShowValue</b> Valeur par défaut. Valeur du point (déterminée automatiquement si cet argument n’est pas spécifié).</param>
-        <param name="LegendKey">Facultatif <b>Object</b>. <b>True</b> pour afficher le symbole de légende à côté du point. <b>False</b> est la valeur par défaut.</param>
-        <param name="AutoText">Facultatif <b>Object</b>. <b>True</b> si l'objet génère automatiquement un texte approprié d'après le contenu.</param>
-        <param name="HasLeaderLines">Facultatif <b>Object</b>. Pour le <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> et <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objets, <b>la valeur True</b> si la série possède des lignes d’étiquettes.</param>
-        <param name="ShowSeriesName">Facultatif <b>Object</b>. Le nom de série pour l’étiquette de données.</param>
-        <param name="ShowCategoryName">Facultatif <b>Object</b>. Le nom de catégorie pour l’étiquette de données.</param>
-        <param name="ShowValue">Facultatif <b>Object</b>. La valeur de l’étiquette de données.</param>
-        <param name="ShowPercentage">Facultatif <b>Object</b>. Le pourcentage pour l’étiquette de données.</param>
-        <param name="ShowBubbleSize">Facultatif <b>Object</b>. La taille des bulles pour l’étiquette de données.</param>
-        <param name="Separator">Facultatif <b>Object</b>. Séparateur pour l'étiquette de données.</param>
+        <param name="Type">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelsType" /> . Type d'étiquette de données à appliquer. Peut être l’une des <b>constantes XlDataLabelsType</b> suivantes :<b>xlDataLabelsShowBubbleSizes</b><b>xlDataLabelsShowLabelAndPercent</b> Percentage of the total and category for the point. Disponible uniquement pour les graphiques en secteurs et en anneau. <b>xlDataLabelsShowPercent</b> Pourcentage du total. Disponible uniquement pour les graphiques en secteurs et en anneau. <b>xlDataLabelsShowLabel</b> Catégorie du point. <b>xlDataLabelsShowNone</b> Aucune étiquette de données. <b>xlDataLabelsShowValue</b> Valeur par défaut. Ordonnée du point (déterminée automatiquement si cet argument n'est pas spécifié).</param>
+        <param name="LegendKey">Objet <b>facultatif</b>. <b>True</b> pour afficher le symbole de légende à côté du point. La valeur par défaut est <b>False</b>.</param>
+        <param name="AutoText">Objet <b>facultatif</b>. <b>True</b> si l'objet génère automatiquement un texte approprié d'après le contenu.</param>
+        <param name="HasLeaderLines">Objet <b>facultatif</b>. Pour les <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objets et les <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objets, <b>true</b> si la série possède des lignes d’en-tête.</param>
+        <param name="ShowSeriesName">Objet <b>facultatif</b>. Nom de la série pour l’étiquette de données.</param>
+        <param name="ShowCategoryName">Objet <b>facultatif</b>. Nom de l’abscisse pour l’étiquette de données.</param>
+        <param name="ShowValue">Objet <b>facultatif</b>. Ordonnée pour l’étiquette de données.</param>
+        <param name="ShowPercentage">Objet <b>facultatif</b>. Pourcentage pour l’étiquette de données.</param>
+        <param name="ShowBubbleSize">Objet <b>facultatif</b>. Taille de la bulle pour l'étiquette de données.</param>
+        <param name="Separator">Objet <b>facultatif</b>. Séparateur pour l'étiquette de données.</param>
         <summary>Applique des étiquettes de données à un point dans un graphique.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -176,10 +166,8 @@
       <Docs>
         <summary>Cette propriété a la valeur <b>True</b> si une image est appliquée à l'extrémité du point ou de tous les points de la série.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété s’applique uniquement aux graphiques 3D.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété s’applique uniquement aux graphiques 3D.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyPictToFront">
@@ -210,10 +198,8 @@
       <Docs>
         <summary>Cette propriété a la valeur <b>True</b> si une image est appliquée devant le point ou tous les points de la série.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété s’applique uniquement aux graphiques 3D.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété s’applique uniquement aux graphiques 3D.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyPictToSides">
@@ -244,10 +230,8 @@
       <Docs>
         <summary>Cette propriété a la valeur <b>True</b> si une image est appliquée aux côtés du point ou de tous les points de la série.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété s’applique uniquement aux graphiques 3D.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété s’applique uniquement aux graphiques 3D.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -328,7 +312,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Si le point ou la série possède une image de remplissage, cette méthode copie l’image dans le Presse-papiers.</summary>
+        <summary>Si le point ou la série possède un remplissage d’image, copie l’image dans le Presse-papiers.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -358,11 +342,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -388,12 +370,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> object qui représente l’étiquette de données associée à la courbe de tendance ou un point.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> objet qui représente l’étiquette de données associée au point ou à la courbe de tendance.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour activer les étiquettes de données pour une courbe de tendance que vous devez définir la <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> propriété ou la <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> propriété la <b>valeur True</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Pour activer les étiquettes de données pour une courbe de tendance, vous devez définir la propriété ou la propriété <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> sur <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -419,10 +399,8 @@
       <Docs>
         <summary>Supprime l'objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Suppression d’un <see cref="T:Microsoft.Office.Interop.Excel.Point" /> objet supprime toute la série.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La suppression <see cref="T:Microsoft.Office.Interop.Excel.Point" /> d’un objet supprime toute la série.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Explosion">
@@ -451,7 +429,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur d’un secteur-graphique en secteurs ou de graphique en anneau explosion. Renvoie la valeur 0 (zéro) s’il n’existe pas d’explosion (la pointe de la tranche est au centre du graphique en secteurs).</summary>
+        <summary>Renvoie ou définit la valeur d’explosion pour une coupe de graphique en secteurs ou de graphique en anneaux. Renvoie 0 (zéro) s’il n’y a aucune explosion (la pointe de la coupe est dans le centre du graphique).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -482,7 +460,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objet pour une forme spécifiée ou un <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> objet pour un graphique spécifié qui contient les propriétés de la forme ou le graphique de la mise en forme du remplissage.</summary>
+        <summary>Renvoie un objet pour une forme spécifiée ou un objet pour un graphique spécifié qui contient les propriétés de mise en forme de remplissage pour la forme <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> ou le graphique.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -510,10 +488,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -543,13 +519,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie et définit une valeur qui indique si un point a une apparence tridimensionnelle. En lecture-écriture.</summary>
+        <summary>Renvoie et définit une valeur qui indique si un point a une apparence en trois dimensions. Lecture/écriture.</summary>
         <value>Boolean</value>
-        <remarks>
-          <para>Renvoie la valeur True si un point a une apparence tridimensionnelle. </para>
+        <remarks><para>Renvoie la valeur True si un point a une apparence en trois dimensions. </para>
           <para>Cette propriété s'applique uniquement aux graphiques en bulles.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDataLabel">
@@ -608,10 +582,8 @@
       <Docs>
         <summary>Obtient la hauteur, en points, de l’objet.</summary>
         <value>Hauteur de l'objet en points.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -640,7 +612,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object qui représente l’intérieur de l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objet qui représente l’intérieur de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -671,8 +643,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si Microsoft Excel inverse le motif dans l’élément lorsque celui-ci correspond à un nombre négatif.</summary>
+        <summary><b>True</b> si Microsoft Excel inverse le modèle dans l’élément lorsqu’il correspond à un nombre négatif.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -702,10 +673,8 @@
       <Docs>
         <summary>Obtient une valeur qui représente la distance, en points, entre le bord gauche de l’objet et le bord gauche de la zone de graphique.</summary>
         <value>Distance, en points, entre le bord gauche de l’objet et le bord gauche de la zone de graphique.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkerBackgroundColor">
@@ -734,7 +703,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit la couleur d'arrière-plan de marque comme une valeur RVB ou renvoie la valeur d'index de couleur correspondante. S’applique uniquement aux graphiques en courbes, en nuages de points et en radar.</summary>
+        <summary>Définit la couleur d’arrière-plan de la marque sous la forme d’une couleur RVB ou renvoie la valeur de l’index de couleur correspondante. Ne s’applique qu’aux graphiques en courbes, en nuages de points et en radar.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -765,7 +734,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur d’arrière-plan marqueur sous la forme d’index dans la palette de couleurs actuelle ou en tant qu’une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes : <b>xlColorIndexAutomatic</b> ou <b>xlColorIndexNone</b>. S’applique uniquement aux graphiques en courbes, en nuages de points et en radar.</summary>
+        <summary>Renvoie ou définit la couleur d’arrière-plan de la marque sous la forme d’un index dans la palette de couleurs actuelle ou sous la forme de l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes suivantes : <b>xlColorIndexAutomatic</b> ou <b>xlColorIndexNone</b>. Ne s'applique qu'aux graphiques en courbes, nuages de points ou radar.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -796,7 +765,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit la couleur d'arrière-plan de marque comme une valeur RVB ou renvoie la valeur d'index de couleur correspondante. S’applique uniquement aux graphiques en courbes, en nuages de points et en radar.</summary>
+        <summary>Définit la couleur d’arrière-plan de la marque sous la forme d’une couleur RVB ou renvoie la valeur de l’index de couleur correspondante. Ne s’applique qu’aux graphiques en courbes, en nuages de points et en radar.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -827,7 +796,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur de premier plan sous la forme d’index dans la palette de couleurs actuelle ou en tant qu’une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes : <b>xlColorIndexAutomatic</b> ou <b>xlColorIndexNone</b>. S’applique uniquement aux graphiques en courbes, en nuages de points et en radar.</summary>
+        <summary>Renvoie ou définit la couleur de premier plan de la marque sous la forme d’un index dans la palette de couleurs actuelle ou sous la forme de l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes suivantes : <b>xlColorIndexAutomatic</b> ou <b>xlColorIndexNone</b>. Ne s'applique qu'aux graphiques en courbes, nuages de points ou radar.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -858,7 +827,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la taille de marqueur de données en points.</summary>
+        <summary>Renvoie ou définit la taille des marqueurs de données en points.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -891,9 +860,8 @@
       <Docs>
         <summary>Renvoie ou définit le style de marqueur pour un point ou une série dans un graphique en courbes, à nuages de points ou en radar.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />peut être une des constantes <b>XlMarkerStyle</b> suivantes :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" /> peut être l’une des constantes <b>XlMarkerStyle</b> suivantes :</para>
           <para>
             <b>xlMarkerStyleAutomatic</b>. Automatic markers</para>
           <para>
@@ -918,8 +886,7 @@
             <b>xlMarkerStyleTriangle</b>. Triangular markers</para>
           <para>
             <b>xlMarkerStyleX</b>. Square markers with an X</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -946,12 +913,10 @@
       </ReturnValue>
       <Docs>
         <summary>Obtient le nom de l’objet.</summary>
-        <value>Le nom de l’objet.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para>Cette propriété correspond au nom d’un point de données sur un graphique. Le nom est représenté en utilisant le format suivant : S&lt;numéro de série&gt;P&lt;nombre à virgule&gt;.</para>
-          <para></para>
-        </remarks>
+        <value>Nom de l’objet.</value>
+        <remarks><para>En lecture seule.</para>
+          <para>This property corresponds to the name of a data point on a chart. Le nom est représenté au format suivant : Numéro de série S &lt; &gt; numéro &lt; P. &gt;</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -977,7 +942,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1005,10 +970,8 @@
       <Docs>
         <summary>Colle une image du Presse-papiers en tant que marqueur sur le point sélectionné.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>La méthode <b>Paste</b> peut être utilisée dans la colonne, barre, ligne ou en radar, et il définit les <see cref="P:Microsoft.Office.Interop.Excel.Point.MarkerStyle" /> propriété <b>MarkerStyle</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>méthode Paste</b> peut être utilisée sur des graphiques en colonne, en barres, en courbes ou en radar, et elle définit la propriété sur <see cref="P:Microsoft.Office.Interop.Excel.Point.MarkerStyle" /> <b>xlMarkerStylePicture</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureType">
@@ -1037,11 +1000,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlChartPictureType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le mode d’affichage des images sur une colonne ou barre d’un graphique.</summary>
+        <summary>Renvoie ou définit la façon dont les images sont affichées dans un graphique en barres ou en colonnes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlChartPictureType" />peut être une des constantes <b>XlChartPictureType</b> suivantes :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlChartPictureType" /> peut être l’une des constantes <b>XlChartPictureType</b> suivantes :</para>
           <para>
             <b>xlStack</b>
           </para>
@@ -1051,8 +1013,7 @@
           <para>
             <b>xlStretch</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureUnit">
@@ -1087,7 +1048,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si le <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> propriété est définie sur <b>xlStackScale</b> (dans le cas contraire, cette propriété est ignorée).</summary>
+        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si la propriété est définie sur <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> <b>xlStackScale</b> (si ce n’est pas le cas, cette propriété est ignorée).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1118,10 +1079,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si le <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> propriété est définie sur <b>xlStackScale</b> (dans le cas contraire, cette propriété est ignorée). Lecture/écriture.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si la propriété est définie sur <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> <b>xlStackScale</b> (si ce n’est pas le cas, cette propriété est ignorée). En lecture/écriture</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1151,11 +1110,9 @@
         <param name="loc">Spécifie une coordonnée horizontale ou verticale.</param>
         <param name="Index">Spécifie les coordonnées de position en secteurs secteur pour renvoyer. La valeur par défaut est <see cref="F:Microsoft.Office.Interop.Excel.XlPieSliceIndex.xlOuterCenterPoint" />.</param>
         <summary>Renvoie la position verticale ou horizontale d'un point sur un élément de graphique, en points, entre le bord supérieur ou gauche de l'objet et le bord supérieur ou gauche de la zone de graphique.</summary>
-        <returns>Position verticale ou horizontale d’un point sur un élément de graphique, en points, entre le bord gauche ou supérieur de l’objet et le bord gauche ou supérieur de la zone de graphique.</returns>
-        <remarks>
-          <para>Cette propriété ne s’applique qu’aux graphiques en secteurs ou en anneau.</para>
-          <para></para>
-        </remarks>
+        <returns>Position verticale ou horizontale d’un point sur un élément de graphique, en points, du bord supérieur ou gauche de l’objet au bord supérieur ou gauche de la zone de graphique.</returns>
+        <remarks><para>Cette propriété ne s’applique qu’aux graphiques en secteurs ou en anneau.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SecondaryPlot">
@@ -1184,8 +1141,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le point se trouve dans la section secondaire d’un graphique en secteurs de secteur ou de barre d’un graphique en secteurs. S’applique uniquement aux points sur les secteurs de graphiques en secteurs ou en barres de graphiques en secteurs.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le point se situe dans la section secondaire d'un graphique en secteur de secteur ou en barre de secteur. S'applique uniquement aux points dans les graphiques en secteur de secteur ou en barre de secteur.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1242,8 +1198,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la police est une police ombrée ou si l’objet est ombré.</summary>
+        <summary><b>True</b> si la police est une police d’ombre ou si l’objet a une ombre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1273,10 +1228,8 @@
       <Docs>
         <summary>Obtient une valeur qui représente la distance, en points, entre le bord supérieur de l’objet et le bord supérieur de la zone de graphique.</summary>
         <value>Distance, en points, entre le bord supérieur de l’objet et le bord supérieur de la zone de graphique.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1304,10 +1257,8 @@
       <Docs>
         <summary>Obtient la largeur, en points, de l’objet.</summary>
         <value>Largeur de l’objet en points.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
