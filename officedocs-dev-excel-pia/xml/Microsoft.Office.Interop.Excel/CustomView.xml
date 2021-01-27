@@ -1,13 +1,5 @@
 <Type Name="CustomView" FullName="Microsoft.Office.Interop.Excel.CustomView">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="182293052e1d394361c3727427d11e41a3a372bd" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576054" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CustomView" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="182293052e1d394361c3727427d11e41a3a372bd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003877" /></Metadata><TypeSignature Language="C#" Value="public interface CustomView" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomView" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CustomView" />
   <TypeSignature Language="VB.NET" Value="Public Interface CustomView" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente une vue personnalisée d'un classeur.</summary>
-    <remarks>
-      <para>L’objet <b>CustomView</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.CustomViews" /> collection.</para>
-      <para>Utilisez <b>CustomViews</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou le numéro d’index de la vue personnalisée, pour renvoyer un objet <b>CustomView</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>L’objet CustomView</b> est membre de la <see cref="T:Microsoft.Office.Interop.Excel.CustomViews" /> collection.</para>
+      <para>Utilisez <b>CustomViews</b>( ), où est le nom ou le numéro d’index de l’affichage personnalisé, pour <paramref name="index" /> <paramref name="index" /> renvoyer un objet <b>CustomView.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,11 +80,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -147,12 +135,11 @@
       <Docs>
         <summary>Renvoie le nom de l'objet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le tableau suivant indique les valeurs de l’exemple de la propriété <b>Name</b> et les propriétés associées en fonction d’un <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a></para>
+        <remarks><para>Le tableau suivant montre des exemples de valeurs de la <b>propriété Name</b> et les propriétés associées d’un <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">olap</a></para>
           <list type="table">
             <item>
               <term>
-                <b>Légende</b>
+                <b>Caption</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
@@ -179,15 +166,14 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <para>Lorsque vous spécifiez un index dans la collection, vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> syntaxe indiquée dans le tableau suivant.</para>
           <list type="table">
             <item>
-              <term>expression. PivotItems (« [Europe]. [ France]. [Paris] »)</term>
-              <description>expression. PivotItems("Paris")</description>
+              <term>expression. PivotItems(« [Europe].[ France]. [Paris] »)</term>
+              <description>expression. PivotItems(« Paris »)</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -213,7 +199,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -241,8 +227,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si les paramètres d’impression sont inclus dans la vue personnalisée.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les paramètres d'impression sont inclus dans la vue personnalisée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,8 +255,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la vue personnalisée inclut les paramètres pour les lignes masquées et les colonnes (y compris les informations de filtre).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la vue personnalisée inclut les paramètres des lignes et des colonnes masquées (y compris les informations de filtrage).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

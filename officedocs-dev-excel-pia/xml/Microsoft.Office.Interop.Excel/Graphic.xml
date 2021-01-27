@@ -1,13 +1,5 @@
 <Type Name="Graphic" FullName="Microsoft.Office.Interop.Excel.Graphic">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="557d2313e5eee89f3ea3d42e9d0eca09addf2bb5" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585651" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Graphic" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="557d2313e5eee89f3ea3d42e9d0eca09addf2bb5" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003499" /></Metadata><TypeSignature Language="C#" Value="public interface Graphic" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Graphic" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Graphic" />
   <TypeSignature Language="VB.NET" Value="Public Interface Graphic" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet contient des propriétés qui s’appliquent aux images d’en-têtes et de pieds de page.</summary>
-    <remarks>
-      <para>Il existe plusieurs propriétés de la <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> objet qui renvoient l’objet <b>Graphic</b> .</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.CenterFooterPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.CenterHeaderPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.LeftFooterPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.LeftHeaderPicture" />, <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.RightFooterPicture" />, ou <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.RightHeaderPicture" /> propriétés pour renvoyer un objet <b>Graphic</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Plusieurs propriétés de <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> l’objet retournent <b>l’objet Graphic.</b></para>
+      <para>Utilisez les propriétés , , , , ou pour <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.CenterFooterPicture" /> <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.CenterHeaderPicture" /> <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.LeftFooterPicture" /> <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.LeftHeaderPicture" /> <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.RightFooterPicture" /> <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.RightHeaderPicture" /> renvoyer un <b>objet Graphic.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,10 +83,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la luminosité de l'image spécifiée ou l'objet OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Brightness</b> doit être un nombre compris entre 0.0 (le plus sombre) et 1.0 (le plus clair).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>propriété Brightness</b> doit être un nombre entre 0.0 (le plus sombre) et 1.0 (plus clair).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorType">
@@ -125,11 +113,10 @@
         <ReturnType>Microsoft.Office.Core.MsoPictureColorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type de transformation de couleur appliquée à l’image spécifiée ou l’objet OLE.</summary>
+        <summary>Renvoie ou définit le type de transformation de couleur appliquée à l’image ou à l’objet OLE spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Core.MsoPictureColorType" />peut être une des constantes <b>MsoPictureColorType</b> suivantes :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoPictureColorType" /> peut être l’une des <b>constantes MsoPictureColorType</b> suivantes :</para>
           <para>
             <b>msoPictureAutomatic</b>
           </para>
@@ -143,10 +130,9 @@
             <b>msoPictureMixed</b>
           </para>
           <para>
-            <b>msoPictureWatermark</b>
+            <b>msoPictureMark</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Contrast">
@@ -177,10 +163,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le contraste de l'image spécifiée ou l'objet OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Contrast</b> doit être un nombre compris entre 0.0 (contraste minimum) et 1,0 (contraste maximum).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>propriété Contrast</b> doit être un nombre entre 0,0 (contraste le moins élevé) et 1,0 (contraste le plus élevé).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -208,11 +192,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropBottom">
@@ -241,12 +223,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nombre de points qui sont retirés du bas de l’image spécifiée ou l’objet OLE.</summary>
+        <summary>Renvoie ou définit le nombre de points qui sont rognés de la partie inférieure de l’image ou de l’objet OLE spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le rognage est calculé selon la taille d'origine de l'image. Par exemple, si vous insérez une image ayant une hauteur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une hauteur de 200 points et affectez ensuite la valeur 50 à la propriété <b>CropBottom</b>, 100 points (et non 50) seront rognés de la partie inférieure de votre image.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le rognage est calculé par rapport à la taille d'origine de l'image. Par exemple, si vous insérez une image ayant une hauteur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une hauteur de 200 points et affectez ensuite la valeur 50 à la propriété <b>CropBottom</b>, 100 points (et non 50) seront rognés de la partie inférieure de votre image.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropLeft">
@@ -277,10 +257,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le nombre de points qui sont rognés du côté gauche de l'image spécifiée ou l'objet OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le rognage est calculé selon la taille d'origine de l'image. Par exemple, si vous insérez une image ayant une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une largeur de 200 points, et affectez la valeur 50 à la propriété <b>CropLeft</b>, 100 points (et non 50) seront rognés du côté gauche de votre image.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le rognage est calculé par rapport à la taille d'origine de l'image. Par exemple, si vous insérez une image ayant une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une largeur de 200 points, et affectez la valeur 50 à la propriété <b>CropLeft</b>, 100 points (et non 50) seront rognés du côté gauche de votre image.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropRight">
@@ -311,10 +289,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le nombre de points qui sont retirés de la partie droite de l'image spécifiée ou l'objet OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le rognage est calculé selon la taille d'origine de l'image. Par exemple, si vous insérez une image avec une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une largeur de 200 points et affectez la valeur 50 à la propriété <b>CropRight</b>, 100 points (et non 50) seront rognés du côté droit de votre image.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le rognage est calculé par rapport à la taille d'origine de l'image. Par exemple, si vous insérez une image avec une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une largeur de 200 points et affectez la valeur 50 à la propriété <b>CropRight</b>, 100 points (et non 50) seront rognés du côté droit de votre image.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropTop">
@@ -345,10 +321,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le nombre de points qui sont retirés du haut de l'image spécifiée ou l'objet OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le rognage est calculé selon la taille d'origine de l'image. Par exemple, si vous insérez une image avec une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une hauteur de 200 points et affectez la valeur 50 à la propriété <b>CropTop</b>, 100 points (et non 50) seront rognés de la partie supérieure de votre image.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le rognage est calculé par rapport à la taille d'origine de l'image. Par exemple, si vous insérez une image avec une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une hauteur de 200 points et affectez la valeur 50 à la propriété <b>CropTop</b>, 100 points (et non 50) seront rognés de la partie supérieure de votre image.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Filename">
@@ -377,12 +351,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’URL (sur l’intranet ou le Web) ou le chemin d’accès (local ou réseau) à l’emplacement où l’objet source spécifié a été enregistré.</summary>
+        <summary>Cette propriété renvoie ou définit l’URL (intranet ou Web) ou le chemin (local ou réseau) correspondant à l’emplacement où l’objet source spécifié a été enregistré.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>FileName</b> génère une erreur si un dossier mentionné dans le chemin d'accès n'existe pas.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propriété <b>FileName</b> génère une erreur si un dossier mentionné dans le chemin d'accès n'existe pas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -442,17 +414,15 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la forme spécifiée conserve ses proportions d’origine lorsque vous la redimensionnez. <b>False</b> si vous pouvez modifier la hauteur et la largeur de la forme indépendamment de l’autre lorsque vous la redimensionnez.</summary>
+        <summary>Cette propriété renvoie la valeur <b>True</b> si la forme spécifiée conserve ses proportions d'origine lorsque vous la redimensionnez. Elle renvoie la valeur <b>False</b> si vous pouvez modifier la hauteur et la largeur de la forme indépendamment l'une de l'autre lorsque vous la redimensionnez.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />peut être une des constantes <b>MsoTriState</b> suivantes :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" /> peut être l’une des <b>constantes MsoTriState</b> suivantes :</para>
           <para>
             <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse</b> Vous pouvez modifier la hauteur et la largeur de la forme indépendamment de l’autre lorsque vous la redimensionnez.</para>
+            <b>msoFalse</b> Vous pouvez modifier la hauteur et la largeur de la forme indépendamment l’une de l’autre lorsque vous la re taillez.</para>
           <para>
             <b>msoTriStateMixed</b>
           </para>
@@ -460,9 +430,8 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> La forme spécifiée conserve ses proportions d’origine lorsque vous la redimensionnez.</para>
-          <para></para>
-        </remarks>
+            <b>msoTrue</b> La forme spécifiée conserve ses proportions d’origine lorsque vous la resizez.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -488,7 +457,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

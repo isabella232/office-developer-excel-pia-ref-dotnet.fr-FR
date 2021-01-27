@@ -1,13 +1,5 @@
 <Type Name="ChartEvents_SelectEventHandler" FullName="Microsoft.Office.Interop.Excel.ChartEvents_SelectEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d908c92015694a838a0f3791d629e86b7417d344" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580618" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void ChartEvents_SelectEventHandler(int ElementID, int Arg1, int Arg2);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d908c92015694a838a0f3791d629e86b7417d344" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004031" /></Metadata><TypeSignature Language="C#" Value="public delegate void ChartEvents_SelectEventHandler(int ElementID, int Arg1, int Arg2);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChartEvents_SelectEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartEvents_SelectEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ChartEvents_SelectEventHandler(ElementID As Integer, Arg1 As Integer, Arg2 As Integer)" />
@@ -36,12 +28,11 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="ElementID">Obligatoire. L’utilisateur double-clique sur objet.</param>
-    <param name="Arg1">Dépend de <paramref name="ElementID" />.</param>
-    <param name="Arg2">Dépend de <paramref name="ElementID" />.</param>
-    <summary>Un type de <b>délégué</b> utilisé pour ajouter un gestionnaire d’événements pour le <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Select" /> événement. L’événement <b>Sélectionnez</b> se produit lorsqu’un élément de graphique est sélectionné.</summary>
-    <remarks>
-      <para>Le tableau suivant présente les arguments associées à chaque <paramref name="ElementID" />.</para>
+    <param name="ElementID">Obligatoire. L'objet sur lequel l'utilisateur a double-cliqué.</param>
+    <param name="Arg1">Dépend de <paramref name="ElementID" /> .</param>
+    <param name="Arg2">Dépend de <paramref name="ElementID" /> .</param>
+    <summary>Type <b>Delegate</b> utilisé pour ajouter un handler d’événements pour <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Select" /> l’événement. <b>L’événement Select</b> se produit lorsqu’un élément de graphique est sélectionné.</summary>
+    <remarks><para>Le tableau suivant indique les arguments associés à chacun <paramref name="ElementID" /> d’eux.</para>
       <list type="table">
         <item>
           <term>xlAxis</term>
@@ -110,48 +101,48 @@
         </item>
         <item>
           <term>xlChartArea</term>
-          <description>Aucune</description>
-          <description>Aucune</description>
+          <description>Aucun</description>
+          <description>Aucun</description>
         </item>
         <item>
           <term>xlChartTitle</term>
-          <description>Aucune</description>
-          <description>Aucune</description>
+          <description>Aucun</description>
+          <description>Aucun</description>
         </item>
         <item>
           <term>xlCorners</term>
-          <description>Aucune</description>
-          <description>Aucune</description>
+          <description>Aucun</description>
+          <description>Aucun</description>
         </item>
         <item>
           <term>xlDataTable</term>
-          <description>Aucune</description>
-          <description>Aucune</description>
+          <description>Aucun</description>
+          <description>Aucun</description>
         </item>
         <item>
           <term>xlFloor</term>
-          <description>Aucune</description>
-          <description>Aucune</description>
+          <description>Aucun</description>
+          <description>Aucun</description>
         </item>
         <item>
           <term>xlLegend</term>
-          <description>Aucune</description>
-          <description>Aucune</description>
+          <description>Aucun</description>
+          <description>Aucun</description>
         </item>
         <item>
           <term>xlNothing</term>
-          <description>Aucune</description>
-          <description>Aucune</description>
+          <description>Aucun</description>
+          <description>Aucun</description>
         </item>
         <item>
           <term>xlPlotArea</term>
-          <description>Aucune</description>
-          <description>Aucune</description>
+          <description>Aucun</description>
+          <description>Aucun</description>
         </item>
         <item>
           <term>xlWalls</term>
-          <description>Aucune</description>
-          <description>Aucune</description>
+          <description>Aucun</description>
+          <description>Aucun</description>
         </item>
         <item>
           <term>xlDataLabel</term>
@@ -203,42 +194,41 @@
       <list type="table">
         <item>
           <term>AxisIndex</term>
-          <description>Spécifie si l’axe est principal ou secondaire. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> constantes : <b>xlPrimary</b> ou <b>xlSecondary</b>.</description>
+          <description>Spécifie s’il s’agit d’un axe principal ou secondaire. Il peut s’agisse de l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> constantes suivantes : <b>xlPrimary</b> ou <b>xlSecondary</b>.</description>
         </item>
         <item>
           <term>AxisType</term>
-          <description>Spécifie le type d’axe. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> constantes : <b>xlCategory</b>, <b>xlSeriesAxis</b>ou <b>xlValue</b>.</description>
+          <description>Spécifie le type d’axe. Peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> constantes suivantes : <b>xlCategory,</b> <b>xlSeriesAxis</b>ou <b>xlValue</b>.</description>
         </item>
         <item>
           <term>DropZoneType</term>
-          <description>Spécifie le type de zone de dépôt : colonne, données, page ou champ de ligne. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" /> constantes : <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>ou <b>xlRowField</b>. Les constantes de champ de colonne et de ligne spécifient les champs de série et de catégorie, respectivement.</description>
+          <description>Spécifie le type de zone de projection : champ de colonne, de données, de page ou de ligne. Peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" /> constantes suivantes : <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>ou <b>xlRowField</b>. Les constantes de champ de colonne et de ligne définissent respectivement les champs de série et de catégorie.</description>
         </item>
         <item>
           <term>GroupIndex</term>
-          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> collection pour un groupe de graphiques particulier.</description>
+          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> collection pour un groupe de graphiques spécifique.</description>
         </item>
         <item>
           <term>PivotFieldIndex</term>
-          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> collection pour une colonne (série), des données, page ou champ de ligne (catégorie).</description>
+          <description>Spécifie le décalage dans la collection pour un champ de colonne <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> (série), de données, de page ou de ligne (catégorie) spécifique.</description>
         </item>
         <item>
           <term>PointIndex</term>
-          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.Points" /> collection pour un point spécifique dans une série. La valeur – 1 indique que tous les points de données sont sélectionnés.</description>
+          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.Points" /> collection pour un point spécifique d’une série. La valeur –1 indique que tous les points de données sont sélectionnés.</description>
         </item>
         <item>
           <term>SeriesIndex</term>
-          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.Series" /> collection d’une série particulière.</description>
+          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.Series" /> collection pour une série spécifique.</description>
         </item>
         <item>
           <term>ShapeIndex</term>
-          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection d’une forme particulière.</description>
+          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection pour une forme spécifique.</description>
         </item>
         <item>
           <term>TrendlineIndex</term>
-          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> collection pour une courbe de tendance particulière d’une série.</description>
+          <description>Spécifie le décalage dans la <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> collection pour une courbe de tendance spécifique dans une série.</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
 </Type>

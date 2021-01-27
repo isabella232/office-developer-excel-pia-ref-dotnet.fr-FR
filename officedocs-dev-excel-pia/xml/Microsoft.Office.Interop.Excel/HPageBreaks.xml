@@ -1,13 +1,5 @@
 <Type Name="HPageBreaks" FullName="Microsoft.Office.Interop.Excel.HPageBreaks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0624b974810397b893a61eed52c425b38d116dad" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585728" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HPageBreaks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0624b974810397b893a61eed52c425b38d116dad" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003450" /></Metadata><TypeSignature Language="C#" Value="public interface HPageBreaks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HPageBreaks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.HPageBreaks" />
   <TypeSignature Language="VB.NET" Value="Public Interface HPageBreaks&#xA;Implements IEnumerable" />
@@ -33,11 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Collection des sauts de page horizontaux situés dans la zone d’impression. Chaque saut de page horizontal est représenté par un <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> objet.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>HPageBreaks</b> pour renvoyer la collection <b>HPageBreaks</b> . Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> pour ajouter un saut de page horizontal.</para>
-      <para>Si vous ajoutez un saut de page qui ne croise pas la zone d’impression, le nouvel objet <b>HPageBreak</b> n’apparaît pas dans la collection <b>HPageBreaks</b> de la zone d’impression.</para>
-      <para>Lors de la <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> propriété, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> propriété, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> propriété, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> propriété, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> propriété, ou <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> méthode est utilisée conjointement avec la propriété <b>HPageBreaks</b> :</para>
+    <summary>Collection des sauts de page horizontaux situés dans la zone d’impression. Chaque coupure de page horizontale est représentée par un <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> objet.</summary>
+    <remarks><para>Utilisez la propriété <b>HPageBreaks</b> pour renvoyer la collection <b>HPageBreaks</b>. Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> méthode pour ajouter un pause de page horizontal.</para>
+      <para>Si vous ajoutez un saut de page qui ne coupe pas la zone d'impression, le nouvel objet <b>HPageBreak</b> n'apparaît pas dans la collection <b>HPageBreaks</b> de la zone d'impression.</para>
+      <para>Lorsque la propriété, la propriété, la propriété, la propriété, la propriété ou la méthode est utilisée conjointement avec la <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> propriété <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> <b>HPageBreaks</b> :</para>
       <list type="bullet">
         <item>
           <description>Pour une zone d'impression automatique, la propriété <b>HPageBreaks</b> s'applique uniquement aux sauts de page de la zone d'impression.</description>
@@ -47,9 +38,8 @@
         </item>
       </list>
       <para>
-        <b>Remarque</b>  Il existe une limite de 1026 sauts de page horizontaux par feuille.</para>
-      <para></para>
-    </remarks>
+        <b>Remarque</b>  Il existe une limite de 1 026 coupures de page horizontales par feuille.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -110,8 +100,7 @@
         <Parameter Name="Before" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">
-          <b>Objet</b>obligatoire. A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet. Plage au-dessus de laquelle le nouveau saut de page sera ajouté.</param>
+        <param name="Before">Required, <b>objet</b>. Objet <see cref="T:Microsoft.Office.Interop.Excel.Range" />. Plage au-dessus de laquelle le nouveau saut de page sera ajouté.</param>
         <summary>Cette méthode ajoute un saut de page horizontal. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> objet.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -140,7 +129,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,11 +187,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -264,7 +251,7 @@
       </Parameters>
       <Docs>
         <param name="Index">Integer obligatoire. Numéro d'index de l'objet.</param>
-        <summary>Renvoie un seul objet d'une collection.</summary>
+        <summary>Renvoie un seul objet d’une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

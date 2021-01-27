@@ -1,13 +1,5 @@
 <Type Name="Font" FullName="Microsoft.Office.Interop.Excel.Font">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a8ba6992514b1438faa9fc74351cb46d6d8e0551" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585693" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Font" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a8ba6992514b1438faa9fc74351cb46d6d8e0551" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003576" /></Metadata><TypeSignature Language="C#" Value="public interface Font" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Font" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Font" />
   <TypeSignature Language="VB.NET" Value="Public Interface Font" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet contient les attributs de police (nom, taille, couleur, etc.) d'un objet.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>Font</b> pour renvoyer l'objet <b>Font</b>.</para>
-      <para>Si vous ne souhaitez pas mettre en forme tout le texte dans une cellule ou un graphique de la même manière, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Range.Characters(System.Object,System.Object)" /> propriété pour renvoyer un sous-ensemble du texte.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilisez la propriété <b>Font</b> pour renvoyer l’objet <b>Font</b>.</para>
+      <para>Si vous ne souhaitez pas mettre en forme tout le texte d’une cellule ou d’un graphique de la même manière, utilisez la propriété pour renvoyer un sous-ensemble <see cref="P:Microsoft.Office.Interop.Excel.Range.Characters(System.Object,System.Object)" /> du texte.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,10 +81,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type d'arrière-plan du texte utilisé dans les graphiques. Peut être une de le <see cref="T:Microsoft.Office.Interop.Excel.XlBackground" /> constantes.</summary>
+        <summary>Cette propriété renvoie ou définit le type d'arrière-plan du texte utilisé dans les graphiques. Il peut s’y trouver dans <see cref="T:Microsoft.Office.Interop.Excel.XlBackground" /> l’une des constantes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <list type="table">
+        <remarks><list type="table">
             <item>
               <term>
                 <b>xlBackgroundAutomatic</b>
@@ -105,7 +94,7 @@
               <term>
                 <b>xlBackgroundOpaque</b>
               </term>
-              <description>La police d’arrière-plan définit la police d’arrière-plan noir si la couleur du texte et la couleur de remplissage sous le texte soient proches ou de la même couleur, telles que le texte n’apparaître pas</description>
+              <description>L’arrière-plan de police définira l’arrière-plan de police sur noir si la couleur de texte et la couleur de remplissage sous le texte sont très proches ou de la même couleur, de telle façon que le texte n’apparaît pas</description>
             </item>
             <item>
               <term>
@@ -114,8 +103,7 @@
               <description>La police d'arrière-plan est définie à transparente de sorte que le texte d'arrière-plan ne change pas si la couleur du texte est proche de celle sous le texte.</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Bold">
@@ -144,7 +132,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la valeur <b>True</b> si la police est en caractères gras.</summary>
+        <summary><b>True</b> si la police est en caractères gras.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,7 +163,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur principale de la police.</summary>
+        <summary>Renvoie ou définit la couleur principale de la police.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,14 +196,12 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la couleur de la police.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La couleur est spécifiée sous la forme d’une valeur d’index dans la palette de couleurs actuelle ou comme une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes :</para>
+        <remarks><para>La couleur est spécifiée sous la forme d’une valeur d’index dans la palette de couleurs actuelle ou sous la forme d’une des <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes suivantes :</para>
           <para>
-            <b>xlColorIndexAutomatic</b>. Permet de spécifier la couleur automatique.</para>
+            <b>xlColorIndexAutomatic</b>. Utilisez cette fonction pour spécifier la couleur automatique.</para>
           <para>
             <b>xlColorIndexNone</b>.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -243,11 +229,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontStyle">
@@ -276,12 +260,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le style de police.</summary>
+        <summary>Cette propriété renvoie ou définit le style de la police.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Modification de cette propriété peut affecter d’autres <see cref="T:Microsoft.Office.Interop.Excel.Font" /> propriétés de l’objet (tel que <see cref="P:Microsoft.Office.Interop.Excel.Font.Bold" /> et <see cref="P:Microsoft.Office.Interop.Excel.Font.Italic" />).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La modification de cette propriété peut affecter <see cref="T:Microsoft.Office.Interop.Excel.Font" /> d’autres propriétés d’objet (telles que <see cref="P:Microsoft.Office.Interop.Excel.Font.Bold" /> et <see cref="P:Microsoft.Office.Interop.Excel.Font.Italic" /> ).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -310,8 +292,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la police est en italique.</summary>
+        <summary><b>True</b> si la police est en italique.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -344,12 +325,11 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le nom de l'objet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le tableau suivant indique les valeurs de l’exemple de la propriété <b>Name</b> et les propriétés associées en fonction d’un <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a></para>
+        <remarks><para>Le tableau suivant montre des exemples de valeurs de la <b>propriété Name</b> et les propriétés associées d’un <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">olap</a></para>
           <list type="table">
             <item>
               <term>
-                <b>Légende</b>
+                <b>Caption</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
@@ -376,15 +356,14 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <para>Lorsque vous spécifiez un index dans la collection, vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> syntaxe indiquée dans le tableau suivant.</para>
           <list type="table">
             <item>
-              <term>expression. PivotItems (« [Europe]. [ France]. [Paris] »)</term>
-              <description>expression. PivotItems("Paris")</description>
+              <term>expression. PivotItems(« [Europe].[ France]. [Paris] »)</term>
+              <description>expression. PivotItems(« Paris »)</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineFont">
@@ -419,12 +398,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True si la police est une police vectorielle.</summary>
+        <summary>Cette propriété a la valeur True si la police est une police vectorielle.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est sans effet sous Windows, mais sa valeur est conservée (elle peut être définie et renvoyée).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété est sans effet sous Windows, mais sa valeur est conservée (elle peut être définie et renvoyée).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -450,7 +427,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -487,13 +464,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la police est une police ombrée ou si l’objet est ombré.</summary>
+        <summary><b>True</b> si la police est une police d’ombre ou si l’objet a une ombre.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété n’a aucun effet dans Microsoft Windows, mais sa valeur est conservée (elle pouvant être définie et renvoyée).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette propriété n’a aucun effet dans Microsoft Windows, mais sa valeur est conservée (elle peut être définie et renvoyée).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -553,8 +527,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la police est barrée d'une ligne horizontale.</summary>
+        <summary><b>True</b> si la police est barrée d'une ligne horizontale.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -585,8 +558,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la police est en indice. <b>False</b> par défaut.</summary>
+        <summary><b>True</b> si la police est en indice. Elle a la valeur <b>False</b> par défaut.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -617,8 +589,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la police est en exposant. <b>False</b> par défaut.</summary>
+        <summary><b>True</b> si la police est en exposant. Elle a la valeur <b>False</b> par défaut.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -649,14 +620,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur de thème dans le jeu de couleurs appliqué qui est associé à l’objet spécifié.  <b>Objet</b> en lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Toute tentative d'accès à une couleur de thème pour un objet auquel aucun thème n'est appliqué provoquera une erreur de requête non valide à l'exécution.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie ou définit la couleur du thème dans le jeu de couleurs appliquées qui est associé à l'objet spécifié.  <b>Objet</b> en lecture/écriture.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Toute tentative d'accès à une couleur de thème pour un objet auquel aucun thème n'est appliqué provoquera une erreur de requête non valide à l'exécution.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ThemeFont">
@@ -685,10 +652,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlThemeFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la police de thème dans le jeu de polices appliqué qui est associé à l’objet spécifié.  En lecture/écriture <see cref="T:Microsoft.Office.Interop.Excel.XlThemeFont" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlThemeFont" />
-        </value>
+        <summary>Cette propriété renvoie ou définit la police de thème dans le jeu de polices appliqué qui est associé à l'objet spécifié.  En <see cref="T:Microsoft.Office.Interop.Excel.XlThemeFont" /> lecture/écriture.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlThemeFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -718,15 +683,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>unique</b> qui éclaircit ou assombrit une couleur.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>Vous pouvez entrer un nombre compris entre -1 (sombre) et 1 (clair) pour la <see cref="P:Microsoft.Office.Interop.Excel.Font.TintAndShade" /> propriété. Zéro (0) est neutre.</para>
+        <summary>Renvoie ou définit un <b>Single</b> qui éclaircit ou assombrit une couleur.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Vous pouvez entrer un nombre de -1 (le plus sombre) à 1 (le plus clair) pour la <see cref="P:Microsoft.Office.Interop.Excel.Font.TintAndShade" /> propriété. Zéro (0) est neutre.</para>
           <para>Toute tentative de définition de cette propriété sur une valeur inférieure à -1 ou supérieure à +1 provoquera une erreur d'exécution et l'affichage du message « La valeur tapée est en dehors des limites ». Cette propriété fonctionne pour les couleurs de thème et les couleurs hors thème.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Underline">
@@ -755,10 +716,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type de soulignement appliqué à la police.</summary>
+        <summary>Renvoie ou définit le type de soulignement appliqué à la police.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlUnderlineStyle" /> constantes.</para>
+        <remarks><para>Il peut s’y trouver dans l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlUnderlineStyle" /> constantes suivantes.</para>
           <para>
             <b>xlUnderlineStyleNone</b>
           </para>
@@ -774,8 +734,7 @@
           <para>
             <b>xlUnderlineStyleDoubleAccounting</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

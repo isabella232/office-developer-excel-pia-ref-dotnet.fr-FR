@@ -1,13 +1,5 @@
 <Type Name="Error" FullName="Microsoft.Office.Interop.Excel.Error">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5da1e5642e0d519cf74c6409887c59d10a124fad" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580870" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Error" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5da1e5642e0d519cf74c6409887c59d10a124fad" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003618" /></Metadata><TypeSignature Language="C#" Value="public interface Error" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Error" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Error" />
   <TypeSignature Language="VB.NET" Value="Public Interface Error" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente une erreur de feuille de calcul pour une plage.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> objet pour renvoyer un objet <b>Error</b> .</para>
-      <para>Une fois qu’un objet <b>Error</b> est renvoyé, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.Error.Value" /> propriété, conjointement avec la <see cref="P:Microsoft.Office.Interop.Excel.Range.Errors" /> propriété, pour vérifier si une option de vérification des erreurs particulière sont activée.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" /> propriété de <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> l’objet pour renvoyer un objet <b>Error.</b></para>
+      <para>Une fois <b>qu’un</b> objet Error est renvoyé, vous pouvez utiliser la propriété, conjointement avec la propriété, pour vérifier si une option de vérification des erreurs particulière <see cref="P:Microsoft.Office.Interop.Excel.Error.Value" /> est <see cref="P:Microsoft.Office.Interop.Excel.Range.Errors" /> activée.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,12 +78,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</summary>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Ignore">
@@ -122,12 +110,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Permet à l’utilisateur définir ou renvoyer l’état d’une option pour une plage de vérification des erreurs. <b>La valeur False</b> Active une option pour une plage de vérification des erreurs. <b>La valeur True</b> désactive l’option pour une plage.</summary>
+        <summary>Cette propriété permet à l’utilisateur de définir ou de renvoyer l’état de l’option de vérification d’une erreur pour une plage. La valeur <b>False</b> active une option de vérification des erreurs pour une plage. La valeur <b>True</b> désactive l’option de vérification d’une erreur pour une plage.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Référence du <see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" /> objet pour afficher la liste des valeurs d’index associées aux options de vérification des erreurs.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Référencez <see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" /> l’objet pour afficher la liste des valeurs d’index associées aux options de vérification des erreurs.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -153,7 +139,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,8 +167,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si tous les critères de validation sont satisfaits (autrement dit, si la plage contient des données valides).</summary>
+        <summary><b>True</b> si tous les critères de validation sont satisfaits (autrement dit, si la plage contient des données valides).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

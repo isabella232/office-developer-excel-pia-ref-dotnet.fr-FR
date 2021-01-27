@@ -1,13 +1,5 @@
 <Type Name="Dialogs" FullName="Microsoft.Office.Interop.Excel.Dialogs">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="65b059ad8c2b31f5ebb0e015a1b9611b6b82e3e3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582347" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Dialogs : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="65b059ad8c2b31f5ebb0e015a1b9611b6b82e3e3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003828" /></Metadata><TypeSignature Language="C#" Value="public interface Dialogs : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dialogs implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Dialogs" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dialogs&#xA;Implements IEnumerable" />
@@ -34,13 +26,11 @@
   </Attributes>
   <Docs>
     <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.Dialog" /> objets dans Microsoft Excel.</summary>
-    <remarks>
-      <para>Chaque objet <b>Dialog</b> représente une boîte de dialogue intégrée. Vous ne pouvez pas créer une boîte de dialogue intégrée ou ajoutez une à la collection. La chose utile seulement vous pouvez faire avec un objet <b>Dialog</b> est l’utiliser avec la <see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour afficher la boîte de dialogue correspondante.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.Dialogs" /> propriété pour renvoyer la collection <b>Dialogs</b> .</para>
-      <para>Utiliser <b>les boîtes de dialogue</b>(<paramref name="index" />), où <paramref name="index" /> est une constante intégrée identifiant la boîte de dialogue, pour renvoyer un seul objet <b>Dialog</b> .</para>
-      <para>Microsoft Excel contient des constantes intégrées pour la plupart des boîtes de dialogue intégrée. Chaque constante est constituée du préfixe « xlDialog » suivi du nom de la boîte de dialogue. Par exemple, la constante de la boîte de dialogue affecter un nom est <b>xlDialogApplyNames</b>, et la constante de la boîte de dialogue Chercher est <b>xlDialogFindFile</b>. Ces constantes sont membres de le <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> type énuméré.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Chaque objet  <b>Dialog</b> représente une boîte de dialogue intégrée. Vous ne pouvez pas en créer de nouvelles ni en ajouter à la collection. La seule chose utile que vous pouvez faire avec un objet <b>Dialog</b> est de l’utiliser avec la méthode pour afficher la boîte de dialogue <see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> correspondante.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Application.Dialogs" /> propriété pour renvoyer la collection <b>Dialogs.</b></para>
+      <para>Utilisez <b>Dialogs</b>( ), où est une constante intégrée identifiant la boîte de dialogue, pour <paramref name="index" /> <paramref name="index" /> renvoyer un seul <b>objet Dialog.</b></para>
+      <para>Microsoft Excel inclut des constantes intégrées pour de nombreuses boîtes de dialogue intégrées. Chaque constante est constituée du préfixe « xlDialog », suivi du nom de la boîte de dialogue. Par exemple, la constante de la boîte de dialogue Appliquer des noms est <b>xlDialogApplyNames</b>et la constante de la boîte de dialogue Rechercher un fichier est <b>xlDialogFindFile</b>. Ces constantes sont membres du <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> type éumé.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -101,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,11 +149,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -224,9 +212,8 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Excel.XlBuiltInDialog" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b>obligatoire. Nom ou numéro d'index de l'objet.</param>
-        <summary>Renvoie un seul objet d'une collection.</summary>
+        <param name="Index">Required, <b>objet</b>. Nom ou numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d’une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

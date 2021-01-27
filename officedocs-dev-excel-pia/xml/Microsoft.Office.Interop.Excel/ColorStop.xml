@@ -1,13 +1,5 @@
 <Type Name="ColorStop" FullName="Microsoft.Office.Interop.Excel.ColorStop">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="67429240a1c19e773a20f35e2f6194267fff416e" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586085" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorStop" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="67429240a1c19e773a20f35e2f6194267fff416e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003996" /></Metadata><TypeSignature Language="C#" Value="public interface ColorStop" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorStop" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorStop" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorStop" />
@@ -29,14 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente le point d’arrêt couleur d’un remplissage dégradé dans une plage ou une sélection.</summary>
-    <remarks>
-      <para>La collection ColorStop vous permet de définir les propriétés pour le remplissage de la cellule, y compris <see cref="P:Microsoft.Office.Interop.Excel.Border.Color" />, <see cref="P:Microsoft.Office.Interop.Excel.Border.ThemeColor" />, <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" />.</para>
-      <para></para>
-    </remarks>
-    <example>
-      <para>L’exemple suivant montre comment appliquer des propriétés à l’objet ColorStop.</para>
-    </example>
+    <summary>Représente le point d’arrêt de couleur d’un dégradé de remplissage dans une plage ou une sélection.</summary>
+    <remarks><para>La collection ColorStop vous permet de définir les propriétés du remplissage de cellule, y compris <see cref="P:Microsoft.Office.Interop.Excel.Border.Color" /> , <see cref="P:Microsoft.Office.Interop.Excel.Border.ThemeColor" /> . <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /></para>
+      <para> </para></remarks>
+    <example><para>L’exemple suivant montre comment appliquer des propriétés au ColorStop.</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,9 +50,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" />object qui représente l’application Microsoft Excel. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <b>Application</b> (voir ci-dessus)</value>
+        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui <see cref="T:Microsoft.Office.Interop.Excel._Application" /> représente l’application Microsoft Excel. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><b>Application</b> (voir ci-dessus)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,10 +81,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit la couleur de l’objet représenté. En lecture-écriture</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie ou définit la couleur de l'objet représenté. Lecture/écriture</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,14 +109,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une constante dans la <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> énumération qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété Creator est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL. </para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie une constante dans <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> l’éumération qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété Creator est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -155,7 +136,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cette méthode supprime l’objet représenté.</summary>
+        <summary>Cette méthode supprime l'objet représenté.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,9 +164,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie l’objet parent pour l’objet spécifié. Lecture seule</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,10 +194,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la position de la <see cref="T:Microsoft.Office.Interop.Excel.ColorStop" />. En lecture-écriture.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Cette fonction renvoie ou définit la position du <see cref="T:Microsoft.Office.Interop.Excel.ColorStop" /> . Lecture/écriture</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,14 +225,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit la couleur de thème de l'objet représenté. En lecture/écriture</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Renvoie ou définit la couleur de thème de l'objet représenté. Lecture/écriture</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Applique la couleur de thème à la sélection active.</para>
-        </example>
+        <example><para>Applique la couleur de thème à la sélection active.</para></example>
       </Docs>
     </Member>
     <Member MemberName="TintAndShade">
@@ -284,14 +257,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie  ou définit la teinte et l’ombre de l’objet représenté. En lecture-écriture</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie  ou définit la teinte et l’ombre de l’objet représenté. Lecture/écriture</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Applique la teinte et l'ombre à la sélection active.</para>
-        </example>
+        <example><para>Applique la teinte et l'ombre à la sélection active.</para></example>
       </Docs>
     </Member>
   </Members>

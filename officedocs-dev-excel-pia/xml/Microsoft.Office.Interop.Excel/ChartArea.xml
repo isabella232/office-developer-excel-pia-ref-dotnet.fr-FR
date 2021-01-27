@@ -1,13 +1,5 @@
 <Type Name="ChartArea" FullName="Microsoft.Office.Interop.Excel.ChartArea">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8707be5e24dec82e4b5526b2fd741c4c8a846d77" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582375" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartArea" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8707be5e24dec82e4b5526b2fd741c4c8a846d77" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004227" /></Metadata><TypeSignature Language="C#" Value="public interface ChartArea" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartArea" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartArea" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartArea" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Cet objet représente la zone de graphique d'un graphique. Dans un graphique 2D, la zone de graphique contient les axes, le titre du graphique, les titres des axes et la légende. La zone de graphique sur un graphique 3D contient le titre du graphique et la légende ; Il n’inclut pas la zone de traçage (dans la zone de graphique où les données sont tracées). Pour plus d’informations sur la mise en forme de la zone de traçage, consultez le <see cref="T:Microsoft.Office.Interop.Excel.PlotArea" /> objet.</summary>
-    <remarks>
-      <para>Utiliser l’arrondi<see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartArea" /> propriété permet de renvoyer l’objet <b>ChartArea</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Cet objet représente la zone de graphique d'un graphique. Dans un graphique 2D, la zone de graphique contient les axes, le titre du graphique, les titres des axes et la légende. La zone de graphique d’un graphique 3D contient le titre du graphique et la légende . il n’inclut pas la zone de traçage (la zone dans la zone de graphique où les données sont tracées). Pour plus d’informations sur la mise en forme de la zone de traçage, voir <see cref="T:Microsoft.Office.Interop.Excel.PlotArea" /> l’objet.</summary>
+    <remarks><para>Utilisez la propriété Rounded <see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartArea" /> pour renvoyer <b>l’objet ChartArea.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet).</summary>
+        <summary>Renvoie un objet qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer <see cref="T:Microsoft.Office.Interop.Excel.Application" /> l’application de cet objet).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,8 +86,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le texte de l’objet modifie la taille de police lorsque la taille de l’objet change. La valeur par défaut est <b>True</b>.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la taille de la police du texte situé dans l'objet change lorsque l'objet est redimensionné. La valeur par défaut est <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,11 +251,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -295,7 +282,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objet pour une forme spécifiée ou un <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> objet pour un graphique spécifié qui contient les propriétés de la forme ou le graphique de la mise en forme du remplissage.</summary>
+        <summary>Renvoie un objet pour une forme spécifiée ou un objet pour un graphique spécifié qui contient les propriétés de mise en forme de remplissage pour la forme <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> ou le graphique.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -354,14 +341,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
-        <remarks>
-          <para>Le <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objet contient la ligne, le remplissage et l’effet de la mise en forme de la zone graphique.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />L’objet contient la mise en forme des traits, des remplissages et des effets de la zone de graphique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -421,7 +404,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object qui représente l’intérieur de l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objet qui représente l’intérieur de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -454,10 +437,8 @@
       <Docs>
         <summary>Distance, en points, entre le bord gauche de l’objet et le bord gauche de la zone de graphique.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la fenêtre est réduite, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Définir cette propriété sur 0 (zéro) rend la fenêtre un petit peu plus petite qu’il serait si la fenêtre d’application avait été agrandie. En d’autres termes, si cette propriété est 0 (zéro), la bordure gauche de la fenêtre Microsoft Excel principale sera peine visible à l’écran.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si la fenêtre est agrandie, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Si cette propriété est 0 (zéro), la fenêtre sera légèrement plus petite que si elle était agrandie. En d’autres termes, si cette propriété a la valeur 0 (zéro), la bordure gauche de la fenêtre principale de Microsoft Excel sera à peine visible à l’écran.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -511,7 +492,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -542,9 +523,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True si le graphique incorporé possède des coins arrondis. Type de données <b>Boolean</b> en lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>.</value>
+        <summary>Cette propriété renvoie la valeur True si le graphique incorporé possède des coins arrondis. <b>Boolean</b> (en lecture/écriture).</summary>
+        <value><b>Boolean</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -600,8 +580,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la police est une police ombrée ou si l’objet est ombré.</summary>
+        <summary><b>True</b> si la police est une police d’ombre ou si l’objet a une ombre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -632,7 +611,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Distance, en points, entre le bord supérieur de l’objet en haut de la ligne 1 (sur une feuille de calcul) ou à la partie supérieure de la zone de graphique (sur un graphique).</summary>
+        <summary>Distance, en points, entre le bord supérieur de l’objet et le haut de la ligne 1 (dans une feuille de calcul) ou le haut de la zone de graphique (sur un graphique).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

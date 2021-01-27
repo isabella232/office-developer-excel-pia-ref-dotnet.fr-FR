@@ -1,13 +1,5 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Excel.ColorFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584475" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004010" /></Metadata><TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorFormat&#xA;Implements _IMsoDispObj" />
@@ -31,8 +23,7 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente la couleur d'un objet unicolore, la couleur d'arrière-plan ou de premier plan d'un objet doté d'un remplissage en dégradé ou à motifs, ou la couleur du pointeur.</summary>
-    <remarks>
-      <para>Vous pouvez définir les couleurs à une valeur rouge-vert-bleu explicite (à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> propriété) ou à une couleur du jeu de couleurs (à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> propriété).</para>
+    <remarks><para>Vous pouvez définir les couleurs sur une valeur explicite rouge-vert-bleu (à l’aide de la propriété) ou sur une couleur dans le jeu de couleurs (à l’aide <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> de la <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> propriété).</para>
       <para>Utilisez l'une des propriétés du tableau ci-dessous pour renvoyer un objet <b>ColorFormat</b>.</para>
       <list type="table">
         <item>
@@ -90,8 +81,7 @@
           <description>Couleur des parois d'un objet extrudé</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -120,7 +110,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,12 +142,10 @@
       </ReturnValue>
       <Docs>
         <summary>Obtient ou définit la luminosité de l’objet spécifié.</summary>
-        <value>La luminosité de l’objet spécifié.</value>
-        <remarks>
-          <para>Lecture/écriture.</para>
+        <value>Luminosité de l’objet spécifié.</value>
+        <remarks><para>En lecture/écriture</para>
           <para>La valeur de cette propriété doit être un nombre compris entre 0.0 (le plus sombre) et 1 (le plus clair).</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -187,14 +175,10 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL. Voir aussi <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</para>
-          <para></para>
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code créateur à <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL. Voir aussi <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ObjectThemeColor">
@@ -223,10 +207,8 @@
         <ReturnType>Microsoft.Office.Core.MsoThemeColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une couleur qui est mappée sur le jeu de couleurs de thème. En lecture/écriture <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />
-        </value>
+        <summary>Cette propriété renvoie ou définit une couleur qui est mappée au jeu de couleurs du thème. En <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" /> lecture/écriture.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,10 +235,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,7 +269,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur rouge-vert-bleu de la couleur spécifiée.</summary>
+        <summary>Renvoie ou définit la valeur rouge-vert-bleu de la couleur spécifiée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -320,7 +300,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur d’un objet color sous forme d’index dans le jeu de couleurs en cours.</summary>
+        <summary>Renvoie ou définit la couleur d’un objet de couleur sous la forme d’un index dans le modèle de couleurs actuel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -351,12 +331,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>unique</b> qui éclaircit ou assombrit la couleur d’une forme spécifiée.</summary>
+        <summary>Renvoie ou définit <b>une</b> seule qui s’éclaircit ou assombrit la couleur d’une forme spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez entrer un nombre compris entre -1 (sombre) et 1 (le plus clair) pour la propriété <b>TintAndShade</b>, 0 (zéro) est neutre.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Vous pouvez entrer un nombre compris entre -1 (sombre) et 1 (le plus clair) pour la propriété <b>TintAndShade</b>, 0 (zéro) est neutre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -382,10 +360,9 @@
         <ReturnType>Microsoft.Office.Core.MsoColorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type de format de légende.</summary>
+        <summary>Renvoie ou définit le type de format de la callout.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>MsoCalloutType</b> peut être l'une des constantes <b>MsoCalloutType</b> suivantes :</para>
           <para>
             <b>msoCalloutFour</b>
@@ -402,8 +379,7 @@
           <para>
             <b>msoCalloutTwo</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

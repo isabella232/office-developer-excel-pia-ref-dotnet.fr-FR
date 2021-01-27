@@ -1,13 +1,5 @@
 <Type Name="AppEvents_WorkbookBeforeXmlImportEventHandler" FullName="Microsoft.Office.Interop.Excel.AppEvents_WorkbookBeforeXmlImportEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f90389f86fa49c46f8484bb870e4db187dc8cf28" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584321" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void AppEvents_WorkbookBeforeXmlImportEventHandler(Workbook Wb, XmlMap Map, string Url, bool IsRefresh, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f90389f86fa49c46f8484bb870e4db187dc8cf28" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004430" /></Metadata><TypeSignature Language="C#" Value="public delegate void AppEvents_WorkbookBeforeXmlImportEventHandler(Workbook Wb, XmlMap Map, string Url, bool IsRefresh, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AppEvents_WorkbookBeforeXmlImportEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AppEvents_WorkbookBeforeXmlImportEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AppEvents_WorkbookBeforeXmlImportEventHandler(Wb As Workbook, Map As XmlMap, Url As String, IsRefresh As Boolean, ByRef Cancel As Boolean)" />
@@ -38,15 +30,12 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="Wb">Requis <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />. Classeur cible.</param>
-    <param name="Map">Requis <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />. Mappage XML utilisé pour importer des données.</param>
-    <param name="Url">
-      <b>String</b>obligatoire. Emplacement du fichier XML à importer.</param>
-    <param name="IsRefresh">
-      <b>Boolean</b>obligatoire. <b>True</b> si l’événement a été déclenché par l’actualisation d’une connexion existante aux données XML ; <b>False</b> si un nouveau mappage sera créé.</param>
-    <param name="Cancel">
-      <b>Boolean</b>obligatoire. Définir à <b>True</b> pour annuler l'opération d'importation ou d'actualisation.</param>
-    <summary>Un type de <b>délégué</b> utilisé pour ajouter un gestionnaire d’événements pour le <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeXmlImport" /> événement. L’événement <b>WorkbookBeforeXmlImport</b> se produit avant l’actualisation d’une connexion de données XML existante ou l’importation de nouvelles données XML dans un classeur Microsoft Excel ouvert.</summary>
+    <param name="Wb">Obligatoire <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> . Classeur cible.</param>
+    <param name="Map">Obligatoire <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> . Mappage XML qui sera utilisé pour importer des données.</param>
+    <param name="Url">Argument de type <b>String</b> obligatoire. Emplacement du fichier XML à importer.</param>
+    <param name="IsRefresh"><b>Boolean</b> obligatoire. <b>True</b> si l’événement a été déclenché par l’actualisation d’une connexion existante aux données XML ; <b>False</b> si un nouveau mappage est créé.</param>
+    <param name="Cancel"><b>Boolean</b> obligatoire. Définir à <b>True</b> pour annuler l'opération d'importation ou d'actualisation.</param>
+    <summary>Type <b>Delegate</b> utilisé pour ajouter un handler d’événements pour <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeXmlImport" /> l’événement. <b>L’événement WorkbookBeforeXmlImport</b> se produit avant l’actualisation d’une connexion de données XML existante, ou lorsque de nouvelles données XML sont importées dans un workbook Microsoft Excel ouvert.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>
