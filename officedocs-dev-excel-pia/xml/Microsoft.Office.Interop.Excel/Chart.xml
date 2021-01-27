@@ -1,13 +1,5 @@
 <Type Name="Chart" FullName="Microsoft.Office.Interop.Excel.Chart">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="27bd453c5b6413f47df900780ebfd03d3cabd7c6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577153" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Chart : Microsoft.Office.Interop.Excel._Chart, Microsoft.Office.Interop.Excel.ChartEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="27bd453c5b6413f47df900780ebfd03d3cabd7c6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004255" /></Metadata><TypeSignature Language="C#" Value="public interface Chart : Microsoft.Office.Interop.Excel._Chart, Microsoft.Office.Interop.Excel.ChartEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Chart implements class Microsoft.Office.Interop.Excel._Chart, class Microsoft.Office.Interop.Excel.ChartEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Chart" />
   <TypeSignature Language="VB.NET" Value="Public Interface Chart&#xA;Implements _Chart, ChartEvents_Event" />
@@ -33,183 +25,43 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="86c1f-101">Représente un graphique dans un classeur.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="86c1f-101">Represents a chart in a workbook.</span>
-      </span>
-      <span data-ttu-id="86c1f-102">Le graphique peut être soit incorporé (contenu dans un <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />) ou une feuille graphique distincte.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="86c1f-102">The chart can be either an embedded chart (contained in a <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />) or a separate chart sheet.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="86c1f-103">Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-103">This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span>
-        </span>
-        <span data-ttu-id="86c1f-104">Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-104">Use this derived interface to access all method, property, and event members of the COM object.</span>
-        </span>
-        <span data-ttu-id="86c1f-105">Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-105">However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event.</span>
-        </span>
-        <span data-ttu-id="86c1f-106">Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-106">Refer to this topic for information about the COM object.</span>
-        </span>
-        <span data-ttu-id="86c1f-107">Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Excel._Chart" />.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-107">For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Excel._Chart" />.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="86c1f-108">Les propriétés suivantes pour le renvoi d’un <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objet sont décrites dans cette section :</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-108">The following properties for returning a <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object are described in this section:</span>
-        </span>
-      </para>
+    <summary><span data-ttu-id="47e4e-101">Représente un graphique dans un classeur.</span><span class="sxs-lookup"><span data-stu-id="47e4e-101">Represents a chart in a workbook.</span></span> <span data-ttu-id="47e4e-102">Le graphique peut être un graphique incorporé (contenu dans un ) ou <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> une feuille de graphique distincte.</span><span class="sxs-lookup"><span data-stu-id="47e4e-102">The chart can be either an embedded chart (contained in a <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />) or a separate chart sheet.</span></span></summary>
+    <remarks><para><span data-ttu-id="47e4e-103">Il s’agit d’une interface .NET dérivée d’une coclasse COM requise par le code managé pour l’interopérabilité avec l’objet COM correspondant.</span><span class="sxs-lookup"><span data-stu-id="47e4e-103">This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="47e4e-104">Utilisez cette interface dérivée pour accéder à tous les membres de méthode, de propriété et d’événement de l’objet COM.</span><span class="sxs-lookup"><span data-stu-id="47e4e-104">Use this derived interface to access all method, property, and event members of the COM object.</span></span> <span data-ttu-id="47e4e-105">Toutefois, si la méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, vous devez effectuer une conversion de type (transtypage) vers l’interface principale correspondante pour appeler la méthode, puis effectuer une conversion de type (transtypage) vers l’interface d’événements les plus récents pour vous connecter à l’événement.</span><span class="sxs-lookup"><span data-stu-id="47e4e-105">However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="47e4e-106">Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM.</span><span class="sxs-lookup"><span data-stu-id="47e4e-106">Refer to this topic for information about the COM object.</span></span> <span data-ttu-id="47e4e-107">Pour plus d’informations sur les membres de méthode et de propriété de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> .</span><span class="sxs-lookup"><span data-stu-id="47e4e-107">For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Excel._Chart" />.</span></span></para>
+      <para><span data-ttu-id="47e4e-108">Les propriétés suivantes pour renvoyer <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> un objet sont décrites dans cette section :</span><span class="sxs-lookup"><span data-stu-id="47e4e-108">The following properties for returning a <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object are described in this section:</span></span></para>
       <list type="bullet">
         <item>
-          <description>
-            <span data-ttu-id="86c1f-109">
-              <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" />propriété</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="86c1f-109">
-                <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" /> property</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="47e4e-109">
+            <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" /> property</span><span class="sxs-lookup"><span data-stu-id="47e4e-109">
+            <see cref="P:Microsoft.Office.Interop.Excel.ChartObject.Chart" /> property</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="86c1f-110">
-              <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" />propriété</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="86c1f-110">
-                <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> property</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="47e4e-110">
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> property</span><span class="sxs-lookup"><span data-stu-id="47e4e-110">
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> property</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="86c1f-111">
-              <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />propriété</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="86c1f-111">
-                <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> property</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="47e4e-111">
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> property</span><span class="sxs-lookup"><span data-stu-id="47e4e-111">
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> property</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="86c1f-112">
-              <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" />propriété</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="86c1f-112">
-                <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> property</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="47e4e-112">
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> property</span><span class="sxs-lookup"><span data-stu-id="47e4e-112">
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> property</span></span></description>
         </item>
       </list>
-      <para>
-        <span data-ttu-id="86c1f-113">Chart, propriété</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-113">Chart Property</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="86c1f-114">Utilisez la propriété <b>Chart</b> pour renvoyer un objet <b>Chart</b> qui représente le graphique contenu dans un objet <b>ChartObject</b> .</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-114">Use the <b>Chart</b> property to return a <b>Chart</b> object that represents the chart contained in a <b>ChartObject</b> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="86c1f-115">Charts, propriété</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-115">Charts Property</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="86c1f-116">Le <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> collection contient un objet <b>Chart</b> pour chaque feuille de graphique dans un classeur.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-116">The <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> collection contains a <b>Chart</b> object for each chart sheet in a workbook.</span>
-        </span>
-        <span data-ttu-id="86c1f-117">Utilisation de <b>graphiques</b>(<paramref name="index" />), où <paramref name="index" /> est le nom, pour renvoyer un seul objet <b>Chart</b> ou le numéro d’index-feuille de graphique.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-117">Use <b>Charts</b>(<paramref name="index" />), where <paramref name="index" /> is the chart-sheet index number or name, to return a single <b>Chart</b> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="86c1f-118">Le numéro d’index du graphique représente la position de la feuille de graphique dans la barre d’onglets de classeur.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-118">The chart index number represents the position of the chart sheet on the workbook tab bar.</span>
-        </span>
-        <span data-ttu-id="86c1f-119">Toutes les feuilles graphiques sont incluses dans le comptage d’index, même si elles sont masquées.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-119">All chart sheets are included in the index count, even if they’re hidden.</span>
-        </span>
-        <span data-ttu-id="86c1f-120">Le nom de la feuille graphique est indiqué sous l’onglet du classeur du graphique.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-120">The chart sheet name is shown on the workbook tab for the chart.</span>
-        </span>
-        <span data-ttu-id="86c1f-121">Vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel._Chart.Name" /> propriété pour définir ou renvoyer le nom du graphique.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-121">You can use the <see cref="P:Microsoft.Office.Interop.Excel._Chart.Name" /> property to set or return the chart name.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="86c1f-122">L’objet <b>Chart</b> est également un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-122">The <b>Chart</b> object is also a member of the <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection.</span>
-        </span>
-        <span data-ttu-id="86c1f-123">La collection <b>Sheets</b> contient toutes les feuilles du classeur (feuilles de calcul et les feuilles de graphique).</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-123">The <b>Sheets</b> collection contains all the sheets in the workbook (both chart sheets and worksheets).</span>
-        </span>
-        <span data-ttu-id="86c1f-124">Utiliser des <b>feuilles</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index feuille ou le nom, pour renvoyer une seule feuille.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-124">Use <b>Sheets</b>(<paramref name="index" />), where <paramref name="index" /> is the sheet index number or name, to return a single sheet.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="86c1f-125">ActiveChart, propriété</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-125">ActiveChart Property</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="86c1f-126">Lorsqu’un graphique est l’objet actif, vous pouvez utiliser la propriété <b>ActiveChart</b> y faire référence.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-126">When a chart is the active object, you can use the <b>ActiveChart</b> property to refer to it.</span>
-        </span>
-        <span data-ttu-id="86c1f-127">Une feuille de graphique est active si l’utilisateur a sélectionné ou est activée avec le <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> méthode.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-127">A chart sheet is active if the user has selected it or it’s been activated with the <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> method.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="86c1f-128">Un graphique incorporé est actif si l’utilisateur a sélectionné ou <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> objet contenue dans a été activé avec la méthode <b>Activate</b> .</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-128">An embedded chart is active if the user has selected it or the <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> object that it’s contained in has been activated with the <b>Activate</b> method.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="86c1f-129">ActiveSheet, propriété</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-129">ActiveSheet Property</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="86c1f-130">Lorsqu’une feuille de graphique est la feuille active, vous pouvez utiliser la propriété <b>ActiveSheet</b> pour faire référence à celui-ci.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="86c1f-130">When a chart sheet is the active sheet, you can use the <b>ActiveSheet</b> property to refer to it.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+      <para><span data-ttu-id="47e4e-113">Chart, propriété</span><span class="sxs-lookup"><span data-stu-id="47e4e-113">Chart Property</span></span></para>
+      <para><span data-ttu-id="47e4e-114">Utilisez la <b>propriété Chart</b> pour renvoyer un objet <b>Chart</b> qui représente le graphique contenu dans un <b>objet ChartObject.</b></span><span class="sxs-lookup"><span data-stu-id="47e4e-114">Use the <b>Chart</b> property to return a <b>Chart</b> object that represents the chart contained in a <b>ChartObject</b> object.</span></span></para>
+      <para><span data-ttu-id="47e4e-115">Charts, propriété</span><span class="sxs-lookup"><span data-stu-id="47e4e-115">Charts Property</span></span></para>
+      <para><span data-ttu-id="47e4e-116">La <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> collection contient un objet <b>Chart</b> pour chaque feuille de graphique d’un workbook.</span><span class="sxs-lookup"><span data-stu-id="47e4e-116">The <see cref="T:Microsoft.Office.Interop.Excel.Charts" /> collection contains a <b>Chart</b> object for each chart sheet in a workbook.</span></span> <span data-ttu-id="47e4e-117">Utilisez <b>Charts</b>( ), où est le nom ou le numéro d’index de la feuille graphique, pour <paramref name="index" /> <paramref name="index" /> renvoyer un seul objet <b>Chart.</b></span><span class="sxs-lookup"><span data-stu-id="47e4e-117">Use <b>Charts</b>(<paramref name="index" />), where <paramref name="index" /> is the chart-sheet index number or name, to return a single <b>Chart</b> object.</span></span></para>
+      <para><span data-ttu-id="47e4e-118">Le numéro d'index indique la position de la feuille de graphique dans la barre d'onglets du classeur.</span><span class="sxs-lookup"><span data-stu-id="47e4e-118">The chart index number represents the position of the chart sheet on the workbook tab bar.</span></span> <span data-ttu-id="47e4e-119">Toutes les feuilles de graphique sont incluses dans le nombre d’index, même si elles sont masquées.</span><span class="sxs-lookup"><span data-stu-id="47e4e-119">All chart sheets are included in the index count, even if they’re hidden.</span></span> <span data-ttu-id="47e4e-120">Le nom de la feuille de graphique s’affiche sous l’onglet de la feuille de travail du graphique.</span><span class="sxs-lookup"><span data-stu-id="47e4e-120">The chart sheet name is shown on the workbook tab for the chart.</span></span> <span data-ttu-id="47e4e-121">Vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel._Chart.Name" /> propriété pour définir ou renvoyer le nom du graphique.</span><span class="sxs-lookup"><span data-stu-id="47e4e-121">You can use the <see cref="P:Microsoft.Office.Interop.Excel._Chart.Name" /> property to set or return the chart name.</span></span></para>
+      <para><span data-ttu-id="47e4e-122"><b>L’objet Chart</b> est également membre de la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection.</span><span class="sxs-lookup"><span data-stu-id="47e4e-122">The <b>Chart</b> object is also a member of the <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection.</span></span> <span data-ttu-id="47e4e-123">La collection  <b>Sheets</b> contient toutes les feuilles (feuilles de graphique et feuilles de calcul) du classeur.</span><span class="sxs-lookup"><span data-stu-id="47e4e-123">The <b>Sheets</b> collection contains all the sheets in the workbook (both chart sheets and worksheets).</span></span> <span data-ttu-id="47e4e-124">Utilisez <b>Sheets</b>( ), où est le nom ou le numéro d’index de la <paramref name="index" /> <paramref name="index" /> feuille, pour renvoyer une seule feuille.</span><span class="sxs-lookup"><span data-stu-id="47e4e-124">Use <b>Sheets</b>(<paramref name="index" />), where <paramref name="index" /> is the sheet index number or name, to return a single sheet.</span></span></para>
+      <para><span data-ttu-id="47e4e-125">ActiveChart, propriété</span><span class="sxs-lookup"><span data-stu-id="47e4e-125">ActiveChart Property</span></span></para>
+      <para><span data-ttu-id="47e4e-126">Lorsqu’un graphique est l’objet actif, vous pouvez utiliser la propriété <b>ActiveChart</b> pour faire référence à celui-ci.</span><span class="sxs-lookup"><span data-stu-id="47e4e-126">When a chart is the active object, you can use the <b>ActiveChart</b> property to refer to it.</span></span> <span data-ttu-id="47e4e-127">Une feuille de graphique est active si l’utilisateur l’a sélectionnée ou si elle a été activée avec la <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> méthode.</span><span class="sxs-lookup"><span data-stu-id="47e4e-127">A chart sheet is active if the user has selected it or it’s been activated with the <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> method.</span></span></para>
+      <para><span data-ttu-id="47e4e-128">Un graphique incorporé est actif si l’utilisateur l’a sélectionné ou si l’objet qu’il contient a été activé avec <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> <b>la méthode Activate.</b></span><span class="sxs-lookup"><span data-stu-id="47e4e-128">An embedded chart is active if the user has selected it or the <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> object that it’s contained in has been activated with the <b>Activate</b> method.</span></span></para>
+      <para><span data-ttu-id="47e4e-129">ActiveSheet, propriété</span><span class="sxs-lookup"><span data-stu-id="47e4e-129">ActiveSheet Property</span></span></para>
+      <para><span data-ttu-id="47e4e-130">Lorsqu’une feuille de graphique est la feuille active, vous pouvez utiliser la propriété <b>ActiveSheet</b> pour faire référence à celle-ci.</span><span class="sxs-lookup"><span data-stu-id="47e4e-130">When a chart sheet is the active sheet, you can use the <b>ActiveSheet</b> property to refer to it.</span></span> </para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>
