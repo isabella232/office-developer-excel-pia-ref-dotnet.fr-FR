@@ -1,13 +1,5 @@
 <Type Name="ControlFormat" FullName="Microsoft.Office.Interop.Excel.ControlFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d88e80486b6e3c8db83afbc148105146372d3b01" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578280" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ControlFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d88e80486b6e3c8db83afbc148105146372d3b01" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003919" /></Metadata><TypeSignature Language="C#" Value="public interface ControlFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ControlFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ControlFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ControlFormat" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet contient les propriétés de contrôle Microsoft Excel.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Shape.ControlFormat" /> propriété pour renvoyer un objet <b>ControlFormat</b> .</para>
-      <para>Si la forme n’est pas un contrôle, la propriété <b>ControlFormat</b> échoue, et si le contrôle n’est pas une zone de liste, les <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> propriété échoue.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Shape.ControlFormat" /> propriété pour renvoyer un <b>objet ControlFormat.</b></para>
+      <para>Si la forme n’est pas un contrôle, la <b>propriété ControlFormat</b> échoue et si le contrôle n’est pas une zone de liste, la propriété <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> échoue.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,14 +87,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Text">
-          <b>String</b>obligatoire. Le texte à ajouter</param>
-        <param name="Index">Facultatif <b>Object</b>. La position de la nouvelle entrée. Si la liste a moins d’entrées que l’index spécifié, les éléments vides de la fin de la liste sont ajoutés à la position spécifiée. Si cet argument est omis, l’élément est ajouté à la liste existante.</param>
+        <param name="Text">Argument de type <b>String</b> obligatoire. Texte à ajouter</param>
+        <param name="Index">Objet <b>facultatif</b>. Emplacement de la nouvelle entrée. Si la liste compte moins d'entrées que l'index spécifié, les éléments vides de la fin de la liste sont ajoutés à l'emplacement spécifié. Si vous ne spécifiez pas cet argument, l'élément est ajouté à la liste existante.</param>
         <summary>Cette méthode ajoute un élément à une zone de liste ou à une zone de liste modifiable.</summary>
-        <remarks>
-          <para>Cette méthode supprime toute plage spécifiée par la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> propriété.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>L’utilisation de cette méthode permet d’effacer toute plage spécifiée par la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -130,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,11 +147,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownLines">
@@ -193,7 +178,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nombre de lignes de la liste affichée dans la partie déroulante d’une zone de liste déroulante.</summary>
+        <summary>Cette propriété renvoie ou définit le nombre de lignes d'une liste affichées dans la partie déroulante d'une zone de liste modifiable.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,8 +209,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si l’objet est activé.</summary>
+        <summary>Cette propriété renvoie la valeur <b>True</b> si l'objet est activé.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,7 +240,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la hauteur du défilement ou le bas d’une page vers (lorsque l’utilisateur clique dans la région du corps de la barre de défilement).</summary>
+        <summary>Cette propriété renvoie ou définit la hauteur du défilement d'une page vers le haut ou vers le bas (effectué lorsque l'utilisateur clique dans la région du corps de la barre de défilement).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -289,11 +273,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la plage de feuille de calcul liée à la valeur du contrôle.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si vous placez une valeur dans la cellule, le contrôle prend cette valeur. De même, si vous modifiez la valeur du contrôle, cette valeur est également placée dans la cellule.</para>
+        <remarks><para>Si vous placez une valeur dans la cellule, le contrôle la prend. De même, si vous modifiez la valeur du contrôle, la valeur modifiée est également placée dans la cellule.</para>
           <para>Il est impossible d'utiliser cette propriété avec des zones de liste à sélection multiple.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -322,13 +304,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Facultatif <b>Object</b>. Numéro d’index d’une entrée de texte à définir ou à retourner. Si cet argument est omis, la liste entière est renvoyée ou définie en tant que tableau de chaînes.</param>
-        <summary>Renvoie ou définit les entrées de texte dans la zone de liste ou la zone de liste modifiable spécifiée sous la forme d’un tableau de chaînes, ou bien renvoie ou définit un seul élément de texte. L’absence d’entrée dans la liste génère une erreur.</summary>
+        <param name="Index">Objet <b>facultatif</b>. Numéro d'index d'un élément de texte à définir ou renvoyer. Si vous ne spécifiez pas cet argument, la liste entière est renvoyée ou définie sous forme d'un tableau de chaînes.</param>
+        <summary>Cette méthode renvoie ou définit les entrées de texte dans la zone de liste ou la zone de liste modifiable spécifiées sous forme d'un tableau de chaînes ou bien renvoie ou définit un seul élément de texte. L'absence d'entrée dans la liste génère une erreur.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Définir cette propriété efface toute plage spécifiée par la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> propriété.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La définition de cette propriété permet d’effacer toute plage spécifiée par <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> la propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListCount">
@@ -357,7 +337,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nombre d’entrées dans une zone de liste ou une zone de liste déroulante. Renvoie la valeur 0 (zéro) s’il n’y a aucune entrée dans la liste.</summary>
+        <summary>Cette propriété renvoie le nombre d'entrées d'une zone de liste ou d'une zone de liste modifiable. Elle renvoie 0 (zéro) si la liste ne compte aucune entrée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -388,14 +368,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la plage de feuille de calcul utilisée pour remplir la zone de liste spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit la plage de feuille de calcul utilisée pour remplir la zone de liste spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Définir cette propriété supprime toute liste existante dans la zone de liste.</para>
+        <remarks><para>Définir cette propriété supprime toute liste existant dans la zone de liste.</para>
           <para>Microsoft Excel lit le contenu de chaque cellule de la plage et insère les valeurs des cellules dans la zone de liste. La liste assure le suivi des modifications effectuées dans les cellules de la plage.</para>
-          <para>Si la liste dans la zone de liste a été créée avec le <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> méthode, cette propriété renvoie une chaîne vide (« »).</para>
-          <para></para>
-        </remarks>
+          <para>Si la liste de la zone de liste a été créée avec la méthode, cette propriété <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> renvoie une chaîne vide («  »).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListIndex">
@@ -424,7 +402,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le numéro d’index de l’élément actuellement sélectionné dans une zone de liste ou une zone de liste déroulante.</summary>
+        <summary>Cette propriété renvoie ou définit le numéro d'index de l'élément actuellement sélectionné dans une zone de liste ou une zone de liste modifiable.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -455,8 +433,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le texte de l’objet spécifié doit être verrouillé pour empêcher les modifications si le classeur est protégé.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le texte de l'objet spécifié doit être verrouillé pour empêcher les modifications si le classeur est protégé.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -487,12 +464,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur maximale d’une barre de défilement ou la zone de sélection numérique plage. La barre de défilement ou le compteur ne prendre pas de valeurs supérieures à cette valeur maximale.</summary>
+        <summary>Cette propriété renvoie ou définit la valeur maximale d'une barre de défilement ou d'une plage de compteur. La barre de défilement ou le compteur ne prendront pas de valeurs supérieures à ce maximum.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de la propriété <b>Max</b> doit être supérieure à la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Min" /> propriété.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La valeur de la <b>propriété Max</b> doit être supérieure à la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Min" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -521,12 +496,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur minimale d’une barre de défilement ou le compteur plage. La barre de défilement ou le compteur ne prendre pas de valeurs inférieures à cette valeur minimale.</summary>
+        <summary>Cette propriété renvoie ou définit la valeur minimale d'une barre de défilement ou d'une plage de compteur. La barre de défilement ou le compteur ne prendront pas de valeurs inférieures à ce minimum.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de la propriété <b>Min</b> doit être inférieure à la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Max" /> propriété.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La valeur de la <b>propriété Min</b> doit être inférieure à la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Max" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiSelect">
@@ -555,16 +528,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le mode de sélection de la zone de liste spécifié. Peut être une des constantes suivantes : <b>xlNone</b>, <b>xlSimple</b>ou <b>xlExtended</b>.</summary>
+        <summary>Cette propriété renvoie ou définit le mode de sélection dans la zone de liste spécifiée. Il peut s'agir de l'une des constantes suivantes : <b>xlNone</b>, <b>xlSimple</b> ou <b>xlExtended</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La sélection unique (<b>xlNone</b>) ne permet de sélectionner qu'un seul élément à la fois. Appuyer sur Espace ou cliquer avec la souris sur un autre élément permet d'annuler la sélection précédente et de sélectionner le dernier élément cliqué.</para>
-          <para>Multiple simple (<b>xlSimple</b>) fait basculer la sélection sur un élément dans la liste vous cliquez dessus avec la souris ou appuyez sur espace lorsque le focus est sur l’élément. Ce mode est approprié pour les listes de choix, qui sont souvent plusieurs éléments sélectionnés.</para>
-          <para>Étendue multiple (<b>xlExtended</b>) généralement se comporte comme une zone de liste à sélection unique. Lorsque vous cliquez sur un élément, vous annulez toutes les autres sélections. Quand vous maintenez la touche MAJ ENFONCÉE tout en cliquant sur la souris ou en appuyant sur une touche de direction, vous sélectionnez éléments dans l’ordre dans l’élément actuel. Lorsque vous maintenez la touche CTRL ENFONCÉE tout en cliquant sur la souris, vous ajoutez éléments uniques à la liste. Ce mode est approprié lorsque plusieurs éléments sont autorisés, mais pas souvent utilisés.</para>
-          <para>Vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" /> ou <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" /> propriété pour renvoyer et définir l’élément sélectionné dans une zone de liste à sélection unique.</para>
-          <para>Vous ne pouvez pas lier des zones de liste à sélection multiple à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" /> propriété.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La sélection unique (<b>xlNone</b>) ne permet de sélectionner qu'un seul élément à la fois. Appuyer sur Espace ou cliquer avec la souris sur un autre élément permet d'annuler la sélection précédente et de sélectionner le dernier élément cliqué.</para>
+          <para>Une sélection multiple simple<b>(xlSimple)</b>fait bascule la sélection d’un élément de la liste en cliquant dessus avec la souris ou en appuyant sur la barre d’espace lorsque l’élément est sélectionné. Cette méthode convient particulièrement aux listes dans lesquelles plusieurs éléments doivent souvent être sélectionnés.</para>
+          <para>La sélection multiple étendue<b>(xlExtended)</b>agit généralement comme une zone de liste à sélection unique. Lorsque vous cliquez sur un élément, vous annulez toutes les autres sélections. Quand vous maintenez la touche Maj enfoncée tout en cliquant ou en appuyant sur une touche de direction, vous sélectionnez ainsi les éléments contigus à partir de l'élément actif. Quand vous maintenez la touche Ctrl enfoncée tout en cliquant, vous ajoutez alors des éléments seuls à la liste. Cette méthode est recommandée dans les cas où des éléments multiples sont autorisés, mais ne sont pas souvent utilisés.</para>
+          <para>Vous pouvez utiliser la ou la propriété pour renvoyer et définir l’élément sélectionné dans une zone de <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" /> <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" /> liste à sélection unique.</para>
+          <para>Vous ne pouvez pas lier plusieurs zones de liste à l’aide de la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -590,7 +561,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -621,8 +592,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si l’objet est imprimée lors de l’impression du document.</summary>
+        <summary>Cette propriété renvoie la valeur <b>True</b> si l'objet est imprimé en même temps que le document.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -675,15 +645,12 @@
         <Parameter Name="Count" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire. Le numéro du premier élément à supprimer. Valeurs valides sont compris entre 1 et le nombre d’éléments dans la liste (renvoyé par la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListCount" /> propriété).</param>
-        <param name="Count">Facultatif <b>Object</b>. Le nombre d’éléments à supprimer en commençant par l’élément <paramref name="Index" />. Si cet argument est omis, un élément est supprimé. Si <paramref name="Index" />  +  <paramref name="Count" /> dépasse le nombre d’éléments dans la liste, tous les éléments de <paramref name="Index" /> par le biais de la fin de la liste sont supprimés sans erreur.</param>
-        <summary>Supprime un ou plusieurs éléments d’une zone de liste ou d’une zone de liste modifiable.</summary>
-        <remarks>
-          <para>Si l'objet spécifié possède sa plage de remplissage, cette méthode échoue.</para>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> méthode pour supprimer toutes les entrées d’une zone de liste déroulante ou de zone de liste Microsoft Excel.</para>
-          <para></para>
-        </remarks>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire. Numéro du premier élément à supprimer. Les valeurs valides sont entre 1 et le nombre d’éléments de la liste (renvoyé par la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListCount" /> propriété).</param>
+        <param name="Count">Objet <b>facultatif</b>. Nombre d’éléments à supprimer, en commençant à <paramref name="Index" /> l’élément. Si vous ne spécifiez pas cet argument, un seul élément est supprimé. Si <paramref name="Index" />  +  <paramref name="Count" /> le nombre d’éléments de la liste est dépassé, tous les éléments de la fin de la liste sont supprimés <paramref name="Index" /> sans erreur.</param>
+        <summary>Cette méthode supprime un ou plusieurs éléments d'une zone de liste ou d'une zone de liste modifiable.</summary>
+        <remarks><para>Si l'objet spécifié possède sa plage de remplissage, cette méthode échoue.</para>
+          <para>Utilisez la méthode pour supprimer toutes les entrées d’une zone de liste ou d’une zone de <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> liste déroulante Microsoft Excel.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallChange">
@@ -712,7 +679,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la durée que la barre de défilement ou le compteur est incrémentée ou soustraite pour une ligne de défilement (lorsque l’utilisateur clique sur une flèche).</summary>
+        <summary>Cette propriété renvoie ou définit l'incrémentation ou la décrémentation de la barre de défilement ou du compteur pour le défilement d'une ligne (quand l'utilisateur clique sur une flèche).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -743,7 +710,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Le nom du format de contrôle spécifié.</summary>
+        <summary>Nom du format de contrôle spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
