@@ -1,13 +1,5 @@
 <Type Name="SmartTagOptions" FullName="Microsoft.Office.Interop.Excel.SmartTagOptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="08e6c64d1c42348903ffb92e85b1dbbff6eb03f3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581794" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="08e6c64d1c42348903ffb92e85b1dbbff6eb03f3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010086" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SmartTagOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagOptions" />
@@ -30,9 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente les options qui peuvent être effectuées avec des balises actives.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.SmartTagOptions" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object pour renvoyer un objet <b>SmartTagOptions</b> .</para>
-      <para>Une fois qu’un objet <b>SmartTagOptions</b> est renvoyé, vous pouvez utiliser les propriétés suivantes pour déterminer les options d’affichage des balises actives et les balises actives incorporées dans le classeur actif ou non.</para>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.SmartTagOptions" /> propriété de <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> l’objet pour renvoyer un objet <b>SmartTagOptions.</b></para>
+      <para>Une fois qu’un objet <b>SmartTagOptions</b> est renvoyé, vous pouvez utiliser les propriétés suivantes pour déterminer les options d’affichage des balises actives et déterminer si des balises actives doivent être incorporées ou non dans le manuel actif.</para>
       <list type="bullet">
         <item>
           <description>
@@ -45,8 +36,7 @@
           </description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -72,7 +62,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,11 +92,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplaySmartTags">
@@ -135,19 +123,17 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSmartTagDisplayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagDisplayMode" /> constante indiquant les fonctionnalités d’affichage pour les balises actives.</summary>
+        <summary>Renvoie ou définit une constante <see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagDisplayMode" /> indiquant les fonctionnalités d’affichage des balises intelligentes.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <b>XlSmartTagDisplayMode</b> peut être l’une des constantes suivantes :</para>
           <para>
-            <b>XlSmartTagDisplayMode</b> peut être une des constantes suivantes :</para>
+            <b>xlButtonOnly</b> Affiche uniquement le bouton pour les balises intelligentes.</para>
           <para>
-            <b>xlButtonOnly</b> Affiche uniquement le bouton pour les balises actives.</para>
+            <b>xlDisplayNone</b> Rien n’est affiché pour les balises intelligentes.</para>
           <para>
-            <b>xlDisplayNone</b> Rien n’est affiché pour les balises actives.</para>
-          <para>
-            <b>xlIndicatorAndButton</b> Afficher l’indicateur et le bouton pour les balises actives.</para>
-          <para></para>
-        </remarks>
+            <b>xlIndicatorAndButton</b> Affichez l’indicateur et le bouton pour les balises intelligentes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EmbedSmartTags">
@@ -176,8 +162,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> pour incorporer des balises actives dans le classeur spécifié.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> pour incorporer des balises actives dans le classeur spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

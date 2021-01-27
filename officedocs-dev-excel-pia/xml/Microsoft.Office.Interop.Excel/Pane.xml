@@ -1,13 +1,5 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Excel.Pane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="88411cce6007dd3bdb19bfe1fbfa29a798d89eed" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586904" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Pane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="88411cce6007dd3bdb19bfe1fbfa29a798d89eed" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011087" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Pane" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
@@ -30,12 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente un volet de fenêtre.</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.Pane" />objets existent uniquement dans les feuilles de calcul et les feuilles macro Microsoft Excel 4.0. Le <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> collection. Le <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> collection contient tous les volets affichés dans une fenêtre unique.</para>
-      <para>Utilisez <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> (<paramref name="index" />), où <paramref name="index" /> est le numéro d’index volet, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> objet.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>
+        <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> existent uniquement pour les feuilles de calcul et les feuilles de macro Microsoft Excel 4.0. <see cref="T:Microsoft.Office.Interop.Excel.Pane" />L’objet est membre de la <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> collection. La <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> collection contient tous les volets affichés dans une seule fenêtre.</para>
+      <para>Utilisez <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> ( ), où est le numéro d’index du <paramref name="index" /> <paramref name="index" /> volet, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> objet.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -59,12 +49,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cette méthode active le volet.</summary>
+        <summary>Active le volet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Si le volet ne se trouve pas dans la fenêtre active, celle à laquelle il appartient est également activée. Vous ne pouvez pas activer un volet figé.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si le volet ne se trouve pas dans la fenêtre active, celle à laquelle il appartient est également activée. Vous ne pouvez pas activer un volet figé.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -90,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,11 +108,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -180,18 +166,16 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">Facultatif <b>Object</b>. Nombre de pages à faire défiler vers le bas.</param>
-        <param name="Up">Facultatif <b>Object</b>. Nombre de pages à faire défiler vers le haut.</param>
-        <param name="ToRight">Facultatif <b>Object</b>. Nombre de pages à faire défiler vers la droite.</param>
-        <param name="ToLeft">Facultatif <b>Object</b>. Nombre de pages à faire défiler vers la gauche.</param>
+        <param name="Down">Objet <b>facultatif</b>. Nombre de pages à faire défiler vers le bas.</param>
+        <param name="Up">Objet <b>facultatif</b>. Nombre de pages à faire défiler vers le haut.</param>
+        <param name="ToRight">Objet <b>facultatif</b>. Nombre de pages à faire défiler vers la droite.</param>
+        <param name="ToLeft">Objet <b>facultatif</b>. Nombre de pages à faire défiler vers la gauche.</param>
         <summary>Cette méthode fait défiler le contenu de la fenêtre page par page.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Si <paramref name="Down" /> et <paramref name="Up" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="Down" /> est 3 et <paramref name="Up" /> est 6, le contenu défile de trois pages.</para>
-          <para>Si <paramref name="ToLeft" /> et <paramref name="ToRight" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="ToLeft" /> est 3 et <paramref name="ToRight" /> est 6, le contenu défile à droite de trois pages.</para>
-          <para>Chaque argument ci-dessus peut avoir une valeur négative.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si les deux sont spécifiés, le contenu de la fenêtre défile en raison de la <paramref name="Down" /> <paramref name="Up" /> différence des arguments. Par exemple, si la 3 est 6, le contenu <paramref name="Down" /> défile de trois pages vers le <paramref name="Up" /> haut.</para>
+          <para>Si les deux sont spécifiés, le contenu de la fenêtre défile en raison de la <paramref name="ToLeft" /> <paramref name="ToRight" /> différence des arguments. Par exemple, si <paramref name="ToLeft" /> la couleur est 3 et qu’elle est 6, le contenu défile <paramref name="ToRight" /> de trois pages vers la droite.</para>
+          <para>Tous ces arguments peuvent être des nombres négatifs.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -217,7 +201,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,10 +230,8 @@
       </Parameters>
       <Docs>
         <param name="Points">Emplacement du pixel à l'écran.</param>
-        <summary>Retourne ou définit un point de pixel sur l’écran.</summary>
-        <returns>
-          <b>Integer</b>
-        </returns>
+        <summary>Retourne ou définit un point de pixel sur l'écran.</summary>
+        <returns><b>Integer</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,9 +260,7 @@
       <Docs>
         <param name="Points">Emplacement du point de départ.</param>
         <summary>Renvoie ou définit la position du pixel à l'écran.</summary>
-        <returns>
-          <b>Integer</b>
-        </returns>
+        <returns><b>Integer</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,7 +290,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nombre de la colonne la plus à gauche dans le volet.</summary>
+        <summary>Renvoie ou définit le numéro de la colonne la plus à gauche dans le volet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -341,20 +321,14 @@
         <Parameter Name="Start" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Left">
-          <b>Integer</b>obligatoire. La position horizontale du rectangle (en points) entre le bord gauche du volet.</param>
-        <param name="Top">
-          <b>Integer</b>obligatoire. La position verticale du rectangle (en points) entre le haut du volet.</param>
-        <param name="Width">
-          <b>Integer</b>obligatoire. La largeur du rectangle, en points.</param>
-        <param name="Height">
-          <b>Integer</b>obligatoire. Hauteur du rectangle, en points.</param>
-        <param name="Start">Facultatif <b>Object</b>. <b>True</b> pour que le coin supérieur gauche du rectangle s’affiche dans le coin supérieur gauche du volet. <b>False</b> pour que le coin inférieur droit du rectangle s’affiche dans le coin inférieur droit du volet. La valeur par défaut est <b>True</b>.</param>
-        <summary>Fait défiler le volet afin que le contenu d’une zone rectangulaire spécifiée est affiché dans le coin supérieur gauche ou à droite du volet.</summary>
-        <remarks>
-          <para>Le <paramref name="Start" /> argument est utile pour orienter l’affichage de l’écran lorsque le rectangle est plus grand que le volet.</para>
-          <para></para>
-        </remarks>
+        <param name="Left">Argument de type <b>Integer</b> obligatoire. Position horizontale du rectangle (en points) à partir du bord gauche du volet.</param>
+        <param name="Top">Argument de type <b>Integer</b> obligatoire. Position verticale du rectangle (en points) à partir du haut du volet.</param>
+        <param name="Width">Argument de type <b>Integer</b> obligatoire. Largeur du rectangle en points.</param>
+        <param name="Height">Argument de type <b>Integer</b> obligatoire. Hauteur du rectangle en points.</param>
+        <param name="Start">Objet <b>facultatif</b>. <b>True</b> pour que le coin supérieur gauche du rectangle apparaisse dans le coin supérieur gauche du volet. <b>False</b> pour que le coin inférieur droit du rectangle apparaisse dans le coin inférieur droit du volet. La valeur par défaut est <b>True</b>.</param>
+        <summary>Fait défiler le volet de sorte que le contenu d’une zone rectangulaire spécifiée s’affiche dans le coin supérieur gauche ou inférieur droit du volet.</summary>
+        <remarks><para><paramref name="Start" />L’argument est utile pour orienter l’affichage de l’écran lorsque le rectangle est plus grand que le volet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollRow">
@@ -383,7 +357,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le numéro de la ligne qui s’affiche en haut du volet.</summary>
+        <summary>Renvoie ou définit le numéro de la ligne qui apparaît en haut du volet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -413,18 +387,16 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">Facultatif <b>Object</b>. Nombre de lignes à faire défiler vers le bas.</param>
-        <param name="Up">Facultatif <b>Object</b>. Nombre de lignes à faire défiler vers le haut.</param>
-        <param name="ToRight">Facultatif <b>Object</b>. Nombre de colonnes à faire défiler vers la droite.</param>
-        <param name="ToLeft">Facultatif <b>Object</b>. Nombre de colonnes à faire défiler vers la gauche.</param>
+        <param name="Down">Objet <b>facultatif</b>. Nombre de lignes à faire défiler vers le bas.</param>
+        <param name="Up">Objet <b>facultatif</b>. Nombre de lignes à faire défiler vers le haut.</param>
+        <param name="ToRight">Objet <b>facultatif</b>. Nombre de colonnes à faire défiler vers la droite.</param>
+        <param name="ToLeft">Objet <b>facultatif</b>. Nombre de colonnes à faire défiler vers la gauche.</param>
         <summary>Cette méthode fait défiler le contenu de la fenêtre par ligne ou par colonne.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Si <paramref name="Down" /> et <paramref name="Up" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="Down" /> est 3 et <paramref name="Up" /> est 6, le contenu défile de trois lignes.</para>
-          <para>Si <paramref name="ToLeft" /> et <paramref name="ToRight" /> sont spécifiés, le contenu de la fenêtre défile de la différence des arguments. Par exemple, si <paramref name="ToLeft" /> est 3 et <paramref name="ToRight" /> est 6, le contenu défile à droite de trois colonnes.</para>
+        <remarks><para>Si les deux sont spécifiés, le contenu de la fenêtre défile en raison de la <paramref name="Down" /> <paramref name="Up" /> différence des arguments. Par exemple, si la 3 est 6, le contenu <paramref name="Down" /> défile de trois lignes vers le <paramref name="Up" /> haut.</para>
+          <para>Si les deux sont spécifiés, le contenu de la fenêtre défile en raison de la <paramref name="ToLeft" /> <paramref name="ToRight" /> différence des arguments. Par exemple, si la 3 est 6, le contenu défile de trois <paramref name="ToLeft" /> <paramref name="ToRight" /> colonnes vers la droite.</para>
           <para>Ces arguments peuvent avoir une valeur négative.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleRange">
@@ -450,7 +422,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente la plage de cellules qui sont visibles dans le volet. Si une colonne ou ligne est partiellement visible, il est inclus dans la plage.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente la plage de cellules visibles dans le volet. Si une colonne ou une ligne est partiellement affichée, elle est incluse dans la plage.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

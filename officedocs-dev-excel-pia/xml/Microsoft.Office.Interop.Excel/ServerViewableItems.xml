@@ -1,13 +1,5 @@
 <Type Name="ServerViewableItems" FullName="Microsoft.Office.Interop.Excel.ServerViewableItems">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6a49378a5a672e109bb0d1469a510a5d3faf8153" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579449" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6a49378a5a672e109bb0d1469a510a5d3faf8153" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010387" /></Metadata><TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ServerViewableItems implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />
   <TypeSignature Language="VB.NET" Value="Public Interface ServerViewableItems&#xA;Implements IEnumerable" />
@@ -34,12 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Collection d'objets qui a été marquée aussi visible sur le serveur.</summary>
-    <remarks>
-      <para>Il s’agit d’une collection de références à des objets dans le <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Seuls les objets de cette collection seront affichera sur le serveur.  Par défaut, l’intégralité du classeur (y compris toutes les feuilles de calcul) est affiché.  </para>
-      <para>Seul <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> objet peut exister par <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.  Cette collection n’est pas indexable par nom car il n’existe aucune garantie que les noms des objets qui sont marqués comme visibles sur le serveur sont uniques.</para>
-      <para>Dans l’interface utilisateur d’Excel, vous pouvez afficher la collection d’objets qui sont marqués comme visibles sur le serveur dans la boîte de dialogue Options Excel Services.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Il s’agit d’une collection de références à des objets dans <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> le . Seuls les objets de cette collection seront affichés sur le serveur.  Par défaut, le classeur entier (y compris toutes les feuilles de calcul) est affiché.  </para>
+      <para>Un seul <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> objet peut exister par <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> .  Cette collection n’est pas indexable par son nom, car il n’existe aucune garantie que les noms des objets marqués comme étant consultables sur le serveur soient uniques.</para>
+      <para>Dans l’interface utilisateur Excel, vous pouvez afficher la collection d’objets marqués comme étant consultables sur le serveur dans la boîte de dialogue Options Excel Services.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,16 +90,11 @@
         <Parameter Name="Obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Obj">
-          <b>Objet</b> obligatoire<paramref name="Obj" /> peut être une référence à des feuilles ou des éléments nommés (par exemple, nommé <see cref="T:Microsoft.Office.Interop.Excel.Range" />s, des graphiques, des tableaux et <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s). Vous ne pouvez pas les feuilles et éléments nommés dans la même collection.</param>
+        <param name="Obj"><b>L’objet obligatoire</b> peut être une référence à des feuilles ou à des éléments <paramref name="Obj" /> nommés (par exemple, <see cref="T:Microsoft.Office.Interop.Excel.Range" /> s, graphiques, tableaux <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> et s). Vous ne pouvez pas avoir à la fois des feuilles et des éléments nommés dans la même collection.</param>
         <summary>Ajoute une référence à la <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> collection.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
-        <remarks>
-          <para>Si vous essayez d’ajouter une combinaison de feuilles et d’éléments nommés à la <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> collection, une erreur est renvoyée.  Le <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> collection peut contenir que des références à des feuilles ou des références à des éléments nommés, mais pas les deux dans le même appel.  </para>
-          <para></para>
-        </remarks>
+        <returns><b>Object</b></returns>
+        <remarks><para>Si vous essayez d’ajouter un mélange de feuilles et d’éléments nommés à la <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> collection, une erreur est renvoyée.  La collection peut contenir des références uniquement à des feuilles, ou des références uniquement à des éléments nommés, mais pas les deux dans <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> le même appel.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -136,13 +121,9 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>Utilisée sans qualificateur d’objet, cette propriété renvoie l’application Microsoft Office Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié.</para>
-          <para></para>
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>Utilisée sans qualificateur d’objet, cette propriété renvoie l’Microsoft Office’application Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, elle renvoie un objet <b>Application</b> qui représente l’auteur de l’objet spécifié.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -169,9 +150,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie le nombre d’objets de la collection. En lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,14 +177,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un 32 bits <b>entier</b> qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie un <b>integer</b> 32 bits qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -231,13 +206,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Entier</b> de l’index de l’objet que vous souhaitez supprimer obligatoire.</param>
-        <summary>Supprime une référence à un objet dans le <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> collection dans le <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.</summary>
-        <remarks>
-          <para>Si vous ne souhaitez pas qu'un objet particulier soit visible dans Excel Services, utilisez cette méthode pour le supprimer.</para>
-          <para></para>
-        </remarks>
+        <param name="Index">Nombre <b>integer obligatoire</b> L’index de l’objet que vous souhaitez supprimer.</param>
+        <summary>Supprime une référence à un objet dans la <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> collection dans <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> le .</summary>
+        <remarks><para>Si vous ne souhaitez pas qu'un objet particulier soit visible dans Excel Services, utilisez cette méthode pour le supprimer.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteAll">
@@ -261,13 +233,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Supprime les références à tous les objets de la <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> collection dans le <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.</summary>
-        <remarks>
-          <para>Si vous ne souhaitez pas tous les objets dans le <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> collection soit visible sur le serveur, utilisez cette méthode pour les supprimer en une seule fois.</para>
+        <summary>Supprime les références à tous les objets de la <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> collection dans <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> le .</summary>
+        <remarks><para>Si vous ne souhaitez pas que les objets de la collection soient consultables sur le serveur, utilisez cette méthode pour les supprimer tous <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> en même temps.</para>
           <para>
-            <b>Remarque</b>: si le <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> collection ne contient pas au moins un <b>objet</b>, vous verrez le message « Impossible d’affichage spécifié nommé plage ou l’élément de » lors de l’affichage du <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> dans Excel Services.</para>
-          <para></para>
-        </remarks>
+            <b>Remarque</b>: si la collection ne contient pas au moins un Objet, le message « Impossible d’afficher la plage ou l’élément nommé spécifié » s’affiche dans <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> Excel <b></b> <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> Services.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -325,11 +295,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Requis en <b>entier</b> l’index de l' <b>objet</b> à renvoyer.</param>
-        <summary>Renvoie un seul <b>objet</b> à partir de la <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> collection.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <param name="Index">Nombre <b>integer obligatoire</b> L’index de <b>l’objet</b> à retourner.</param>
+        <summary>Renvoie un objet <b>unique à</b> partir de la <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> collection.</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,9 +325,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

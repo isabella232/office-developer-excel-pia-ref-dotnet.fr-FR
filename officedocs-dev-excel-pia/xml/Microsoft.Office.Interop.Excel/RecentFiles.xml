@@ -1,13 +1,5 @@
 <Type Name="RecentFiles" FullName="Microsoft.Office.Interop.Excel.RecentFiles">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eac9303553b69e60ab643237117f65490de6e748" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585231" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RecentFiles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eac9303553b69e60ab643237117f65490de6e748" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010632" /></Metadata><TypeSignature Language="C#" Value="public interface RecentFiles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RecentFiles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.RecentFiles" />
   <TypeSignature Language="VB.NET" Value="Public Interface RecentFiles&#xA;Implements IEnumerable" />
@@ -34,10 +26,8 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente la liste des derniers fichiers utilisés. Chaque fichier est représenté par un <see cref="T:Microsoft.Office.Interop.Excel.RecentFile" /> objet.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Application.RecentFiles" /> propriété pour renvoyer la collection <b>RecentFiles</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Application.RecentFiles" /> propriété pour renvoyer la collection <b>RecentFiles.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -98,8 +88,7 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b>obligatoire. Nom du fichier.</param>
+        <param name="Name">Argument de type <b>String</b> obligatoire. Nom du fichier.</param>
         <summary>Cette méthode ajoute un fichier à la liste des derniers fichiers utilisés. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.RecentFile" /> objet.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -128,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,11 +175,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -251,9 +238,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire. Numéro d'index de l'objet.</param>
-        <summary>Renvoie un seul objet d'une collection.</summary>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire. Numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d’une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -284,7 +270,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nombre maximal de fichiers dans la liste des derniers fichiers utilisés. Peut être une valeur comprise entre 0 (zéro) et 9.</summary>
+        <summary>Cette propriété renvoie ou définit le nombre maximal de fichiers pouvant figurer dans la liste de fichiers récemment utilisés. Il peut s’agit d’une valeur entre 0 (zéro) et 9.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

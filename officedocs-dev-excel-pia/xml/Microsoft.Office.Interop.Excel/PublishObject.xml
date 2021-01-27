@@ -1,13 +1,5 @@
 <Type Name="PublishObject" FullName="Microsoft.Office.Interop.Excel.PublishObject">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fcc61ded7b33a1797bd24a5447641b388b7f9f14" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574745" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PublishObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fcc61ded7b33a1797bd24a5447641b388b7f9f14" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010779" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PublishObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PublishObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface PublishObject" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente un élément d'un classeur qui a été enregistré dans une page Web et qui peut être actualisé en fonction des valeurs spécifiées par les propriétés et méthodes de l'objet <b>PublishObject</b>.</summary>
-    <remarks>
-      <para>L’objet <b>PublishObject</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> collection.</para>
-      <para>Utilisez <b>PublishObjects</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de l’élément spécifié dans le classeur, pour renvoyer un seul objet <b>PublishObject</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>L’objet PublishObject</b> est membre de la <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> collection.</para>
+      <para>Utilisez <b>PublishObjects</b>( ), où est le numéro d’index de l’élément spécifié dans le workbook, pour renvoyer un <paramref name="index" /> seul objet <paramref name="index" /> <b>PublishObject.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +78,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Lorsqu’un classeur est enregistré, Microsoft Excel détermine si un élément contenu dans le <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> collection <b>AutoRepublish</b> la propriété a la valeur <b>True</b> et, dans ce cas, le republie. <b>False</b> est la valeur par défaut.</summary>
+        <summary>Lorsqu’un workbook est enregistré, Microsoft Excel détermine si la propriété <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> <b>AutoRepublish</b> d’un élément de la collection a la valeur <b>True</b> et, si c’est le cas, le republier. La valeur par défaut est <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,11 +108,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -173,12 +161,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’identificateur unique utilisé pour identifier un élément HTML &lt;DIV&gt; sur une page Web.</summary>
+        <summary>Renvoie l’identificateur unique utilisé pour identifier une balise DIV HTML &lt; sur une page &gt; Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La balise est associée à un élément dans un document que vous avez enregistré dans une page Web. Un élément peut être un classeur entier, une feuille de calcul, une plage d’impression sélectionnée, une plage de filtre automatique, une plage de cellules, un graphique, un rapport de tableau croisé dynamique ou une table de requête.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La balise est associée à un élément d’un document que vous avez enregistré dans une page Web. Il peut s’agir d’un classeur entier, d’une feuille de calcul, d’une plage d’impression sélectionnée, d’une plage de filtre automatique, d’une plage de cellules, d’un graphique, d’un rapport de tableau croisé dynamique ou d’une table de requête.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Filename">
@@ -207,12 +193,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’URL (sur l’intranet ou le Web) ou le chemin d’accès (local ou réseau) à l’emplacement où l’objet source spécifié a été enregistré.</summary>
+        <summary>Cette propriété renvoie ou définit l’URL (intranet ou Web) ou le chemin (local ou réseau) correspondant à l’emplacement où l’objet source spécifié a été enregistré.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Filename</b> génère une erreur si un dossier dans le chemin d’accès spécifié n’existe pas.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>propriété Filename</b> génère une erreur si un dossier dans le chemin d’accès spécifié n’existe pas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HtmlType">
@@ -241,13 +225,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlHtmlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type de code HTML généré par Microsoft Excel lorsque vous enregistrez l’élément spécifié dans une page Web.</summary>
+        <summary>Renvoie ou définit le type de langage HTML généré par Microsoft Excel lorsque vous enregistrez l’élément spécifié dans une page Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>HtmlType</b> , la propriété peut être une de le <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> constantes spécifiant si l’élément est statique ou interactif dans la page Web. La valeur par défaut est <b>xlHtmlStatic</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>propriété HtmlType</b> peut être l’une des constantes spécifiant si l’élément est statique ou <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> interactif dans la page Web. La valeur par défaut est <b>xlHtmlStatic</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -273,7 +254,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -300,12 +281,10 @@
         <Parameter Name="Create" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Create">Facultatif <b>Object</b>. Si le fichier HTML existe et cet argument <b>la valeur True</b> remplace le fichier, et la valeur <b>false</b> insère l’ou les éléments à la fin du fichier. Si le fichier n’existe pas, le fichier est créé quel que soit la valeur de la <paramref name="Create" /> argument.</param>
+        <param name="Create">Objet <b>facultatif</b>. Si le fichier HTML existe, l'attribution de la valeur <b>True</b> à cet argument remplace le fichier, tandis que la valeur <b>False</b> insère l'élément ou les éléments à la fin du fichier. Si le fichier n’existe pas, il est créé quelle que soit la valeur de <paramref name="Create" /> l’argument.</param>
         <summary>Cette méthode enregistre dans une page Web un élément ou une collection d'éléments contenus dans un document.</summary>
-        <remarks>
-          <para>Le <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> propriété renvoie ou définit l’emplacement et le nom du fichier HTML.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> propriété renvoie ou définit l’emplacement et le nom du fichier HTML.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sheet">
@@ -331,7 +310,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nom de la feuille spécifié <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> objet.</summary>
+        <summary>Renvoie le nom de feuille de l’objet <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,12 +338,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nom unique identifiant les éléments qui ont un <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.SourceType" /> propriété pour valeur <b>xlSourceRange</b>, <b>xlSourceChart</b>, <b>xlSourcePrintArea</b>, <b>xlSourceAutoFilter</b>, <b>xlSourcePivotTable</b>ou <b>xlSourceQuery</b> .</summary>
+        <summary>Renvoie le nom unique qui identifie les éléments qui ont une valeur de propriété <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.SourceType" /> <b>xlSourceRange</b>, <b>xlSourceChart</b>, <b>xlSourcePrintArea</b>, <b>xlSourceAutoFilter</b>, <b>xlSourcePivotTable</b>ou <b>xlSourceQuery</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la propriété <b>SourceType</b> a la valeur <b>xlSourceRange</b>, cette propriété renvoie une plage, qui peut être un nom défini. Si la propriété <b>SourceType</b> a la valeur <b>xlSourceChart</b>, <b>xlSourcePivotTable</b> ou <b>xlSourceQuery</b>, cette propriété renvoie le nom de l'objet, tel qu'un nom de graphique, un nom de rapport de tableau croisé dynamique ou un nom de table de requête.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si la propriété <b>SourceType</b> a la valeur <b>xlSourceRange</b>, cette propriété renvoie une plage, qui peut être un nom défini. Si la propriété <b>SourceType</b> a la valeur <b>xlSourceChart</b>, <b>xlSourcePivotTable</b> ou <b>xlSourceQuery</b>, cette propriété renvoie le nom de l'objet, tel qu'un nom de graphique, un nom de rapport de tableau croisé dynamique ou un nom de table de requête.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceType">
@@ -421,12 +398,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le titre de la page Web lorsque le document est enregistré en tant que page Web.</summary>
+        <summary>Cette propriété renvoie ou définit le titre de la page Web lors de l'enregistrement du document sous la forme d'une page Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le titre est généralement affiché dans la barre de titre de la fenêtre lorsque le document est visualisé dans le navigateur Web.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le titre est généralement affiché dans la barre de titre de la fenêtre lorsque le document est visualisé dans le navigateur Web.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

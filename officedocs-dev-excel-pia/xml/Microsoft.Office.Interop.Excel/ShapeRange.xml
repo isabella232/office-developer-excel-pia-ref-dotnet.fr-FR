@@ -1,13 +1,5 @@
 <Type Name="ShapeRange" FullName="Microsoft.Office.Interop.Excel.ShapeRange">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ffea79e6ef3bb0175b91650070af45326d337d7f" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582900" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShapeRange : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ffea79e6ef3bb0175b91650070af45326d337d7f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010317" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeRange : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeRange implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ShapeRange" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeRange&#xA;Implements IEnumerable" />
@@ -34,10 +26,8 @@
   </Attributes>
   <Docs>
     <summary>Représente une plage de formes, qui correspond à un ensemble de formes dans un document.</summary>
-    <remarks>
-      <para>Une plage de formes peut contenir une seule forme ou toutes les formes du document. Vous pouvez inclure les formes de votre choix, parmi toutes les formes du document ou toutes les formes de la sélection — pour construire une plage de formes. Par exemple, vous pouvez construire un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> collection qui contient les trois premières formes d’un document, toutes les formes sélectionnées d’un document ou toutes les formes libres d’un document.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Une plage de formes peut contenir une seule forme, plusieurs formes ou toutes les formes du document. Vous pouvez inclure les formes de votre choix (parmi toutes les formes du document ou de la sélection) pour générer une plage de formes. Par exemple, vous pouvez construire une collection qui contient les trois premières formes d’un document, toutes les formes sélectionnées d’un document ou toutes les formes libres <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> d’un document.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -95,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Adjustments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> objet qui contient les valeurs d’ajustement pour tous les ajustements dans la forme spécifiée. S’applique à n’importe lequel <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objet qui représente une forme automatique, un objet WordArt ou un connecteur. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> objet qui contient des valeurs d’ajustement pour tous les ajustements dans la forme spécifiée. S’applique <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> à tout objet qui représente une forme automatique, un objet WordArt ou un connecteur. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,8 +114,8 @@
         <Parameter Name="RelativeTo" Type="Microsoft.Office.Core.MsoTriState" />
       </Parameters>
       <Docs>
-        <param name="AlignCmd">Requis <see cref="T:Microsoft.Office.Core.MsoAlignCmd" />. Indique comment aligner les formes de la plage.</param>
-        <param name="RelativeTo">Requis <see cref="T:Microsoft.Office.Core.MsoTriState" />. Pas utilisée dans Microsoft Excel. Doit avoir la <b>valeur False</b>.</param>
+        <param name="AlignCmd">Obligatoire <see cref="T:Microsoft.Office.Core.MsoAlignCmd" /> . Indique comment aligner les formes de la plage.</param>
+        <param name="RelativeTo">Obligatoire <see cref="T:Microsoft.Office.Core.MsoTriState" /> . Non utilisé dans Microsoft Excel. Doit avoir la valeur <b>False</b>.</param>
         <summary>Aligne les formes contenues dans la plage de formes spécifiée.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,12 +146,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la chaîne de texte descriptif (de remplacement) d’un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objet lorsque l’objet est enregistré dans une page Web. Valeur <b>String</b> en lecture-écriture.</summary>
+        <summary>Renvoie ou définit la chaîne de texte descriptive (de remplacement) d’un objet lorsque l’objet <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> est enregistré dans une page Web. <b>String</b> en lecture/écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le texte de remplacement peut être affiché à la place d’image de la forme dans le navigateur Web ou directement sur l’image lorsque le pointeur de la souris se trouve au-dessus de l’image (dans les navigateurs qui prennent en charge ces fonctionnalités).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le texte de remplacement peut être affiché à la place de l’image de la forme dans le navigateur Web ou directement sur l’image lorsque le pointeur de la souris pointe sur l’image (dans les navigateurs qui prend en charge ces fonctionnalités).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -187,7 +175,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -213,7 +201,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>S’applique à la mise en forme de la forme spécifiée qui a été copiée à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.PickUp" /> méthode.</summary>
+        <summary>S’applique à la mise en forme de forme spécifiée qui a été copiée à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.PickUp" /> méthode.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,13 +231,11 @@
         <ReturnType>Microsoft.Office.Core.MsoAutoShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type de forme spécifié <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object, qui doit représenter une forme automatique autre qu’une ligne, une forme libre ou un connecteur. En lecture/écriture <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />.</summary>
+        <summary>Renvoie ou définit le type de forme de l’objet spécifié, qui doit représenter une forme automatique autre qu’un trait, une forme libre ou <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> un connecteur. En <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> lecture/écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Quand vous modifiez le type d'une forme, celle-ci conserve sa taille, sa couleur et autres attributs.</para>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> objet pour définir ou renvoyer le type de connecteur.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Quand vous modifiez le type d'une forme, celle-ci conserve sa taille, sa couleur et autres attributs.</para>
+          <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> propriété de <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> l’objet pour définir ou renvoyer le type de connecteur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundStyle">
@@ -278,10 +264,8 @@
         <ReturnType>Microsoft.Office.Core.MsoBackgroundStyleIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le style d’arrière-plan. Lecture/écriture.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" />
-        </value>
+        <summary>Cette propriété renvoie ou définit le style d'arrière-plan. En lecture/écriture</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -311,7 +295,7 @@
         <ReturnType>Microsoft.Office.Core.MsoBlackWhiteMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique comment la forme spécifiée s’affiche lorsque la présentation est en mode noir et blanc. En lecture/écriture <see cref="T:Microsoft.Office.Core.MsoBlackWhiteMode" />.</summary>
+        <summary>Renvoie ou définit une valeur qui indique comment la forme spécifiée s’affiche lorsque la présentation est affichée en mode noir et blanc. En <see cref="T:Microsoft.Office.Core.MsoBlackWhiteMode" /> lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -339,7 +323,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CalloutFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> objet qui contient les propriétés de la forme spécifiée la mise en forme de légende. S’applique aux <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objets qui représentent des légendes encadrées. En lecture seule.</summary>
+        <summary>Renvoie un objet qui contient les propriétés de mise en <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> forme de la forme spécifiée. S’applique <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> aux objets qui représentent des traits de ligne. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -371,7 +355,7 @@
       </Parameters>
       <Docs>
         <param name="Increment">To be added.</param>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,7 +386,7 @@
       </Parameters>
       <Docs>
         <param name="Increment">To be added.</param>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,7 +417,7 @@
       </Parameters>
       <Docs>
         <param name="Increment">To be added.</param>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -464,7 +448,7 @@
       </Parameters>
       <Docs>
         <param name="Increment">To be added.</param>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -494,7 +478,7 @@
         <ReturnType>Microsoft.Office.Core.CanvasShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -522,10 +506,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un object qui représente le graphique contenu dans la plage de formes. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Chart" />
-        </value>
+        <summary>Renvoie un objet qui représente le graphique contenu dans la plage de formes. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Chart" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -552,7 +534,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la <b>valeur msoTrue</b> si la forme spécifiée est une forme enfant ou si toutes les formes dans une plage de formes sont des formes enfants du même parent. En lecture seule <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <summary>Cette propriété renvoie la valeur <b>msoTrue</b> si la forme spécifiée est une forme enfant ou si toutes les formes contenues dans une plage de formes sont des formes enfants du même parent. En lecture <see cref="T:Microsoft.Office.Core.MsoTriState" /> seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -580,7 +562,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nombre de points de connexion sur la forme spécifiée. Valeur <b>Integer</b> en lecture seule.</summary>
+        <summary>Renvoie le nombre de sites de connexion sur la forme spécifiée. <b>Entier</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -608,8 +590,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la forme spécifiée est un connecteur. En lecture seule <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la forme spécifiée est un connecteur. En lecture <see cref="T:Microsoft.Office.Core.MsoTriState" /> seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -637,7 +618,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ConnectorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> objet qui contient les propriétés de mise en forme du connecteur. S’applique aux <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objets qui représentent des connecteurs. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> objet qui contient les propriétés de mise en forme du connecteur. <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />S’applique aux objets qui représentent des connecteurs. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -665,7 +646,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nombre d'objets dans la collection. Valeur <b>Integer</b> en lecture seule.</summary>
+        <summary>Renvoie le nombre d'objets dans la collection. <b>Entier</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -693,12 +674,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C. En lecture <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -812,8 +791,8 @@
         <Parameter Name="RelativeTo" Type="Microsoft.Office.Core.MsoTriState" />
       </Parameters>
       <Docs>
-        <param name="DistributeCmd">Requis <see cref="T:Microsoft.Office.Core.MsoDistributeCmd" />. Indique si les formes dans la plage doivent être distribuées horizontalement ou verticalement.</param>
-        <param name="RelativeTo">Requis <see cref="T:Microsoft.Office.Core.MsoTriState" />. Pas utilisée dans Microsoft Excel. Doit avoir la <b>valeur False</b>.</param>
+        <param name="DistributeCmd">Obligatoire <see cref="T:Microsoft.Office.Core.MsoDistributeCmd" /> . Indique si les formes dans la plage doivent être distribuées horizontalement ou verticalement.</param>
+        <param name="RelativeTo">Obligatoire <see cref="T:Microsoft.Office.Core.MsoTriState" /> . Non utilisé dans Microsoft Excel. Doit avoir la valeur <b>False</b>.</param>
         <summary>Cette méthode distribue les formes horizontalement ou verticalement dans la plage des formes spécifiée.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -839,7 +818,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Duplique l’objet et renvoie une référence à la nouvelle copie.</summary>
+        <summary>Cette méthode duplique l'objet et renvoie une référence à la nouvelle copie.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -867,7 +846,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objet qui contient les propriétés pour le graphique spécifié ou de la forme mise en forme du remplissage. En lecture seule.</summary>
+        <summary>Renvoie un objet qui contient les propriétés de mise en <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> forme de remplissage pour le graphique ou la forme spécifiée. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -895,7 +874,7 @@
         <Parameter Name="FlipCmd" Type="Microsoft.Office.Core.MsoFlipCmd" />
       </Parameters>
       <Docs>
-        <param name="FlipCmd">Requis <see cref="T:Microsoft.Office.Core.MsoFlipCmd" />. Indique si la forme doit être retournée horizontalement ou verticalement.</param>
+        <param name="FlipCmd">Obligatoire <see cref="T:Microsoft.Office.Core.MsoFlipCmd" /> . Spécifie si la forme doit être retournée horizontalement ou verticalement.</param>
         <summary>Cette méthode retourne la forme spécifiée horizontalement ou verticalement.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -956,13 +935,9 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un objet qui contient les propriétés de mise en forme de lumière pour la plage de formes. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.GlowFormat" />
-        </value>
-        <remarks>
-          <para>L'effet de lumière ajoute un côté très attrayant aux graphiques.  </para>
-          <para></para>
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Core.GlowFormat" /></value>
+        <remarks><para>L'effet de lumière ajoute un côté très attrayant aux graphiques.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Group">
@@ -986,12 +961,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cette méthode groupe les formes dans la plage spécifiée. Renvoie les formes groupées sous la forme d’un seul <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objet.</summary>
+        <summary>Regroupe les formes dans la plage spécifiée. Renvoie les formes groupées sous la forme d’un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> seul objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Du fait qu'un groupe de formes est traité comme une forme seule, grouper et dissocier des formes modifie le nombre d'éléments dans la collection <b>Shapes</b> et change les numéros d'index des éléments qui suivent les éléments modifiés de la collection.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Du fait qu'un groupe de formes est traité comme une forme seule, grouper et dissocier des formes modifie le nombre d'éléments dans la collection <b>Shapes</b> et change les numéros d'index des éléments qui suivent les éléments modifiés de la collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupItems">
@@ -1017,12 +990,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.GroupShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> object qui représente les formes individuelles dans le groupe spécifié. S’applique aux <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objets qui représentent des formes groupées. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> objet qui représente les formes individuelles dans le groupe spécifié. S’applique <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> aux objets qui représentent des formes groupées. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> méthode de l’objet <b>GroupShapes</b> pour renvoyer une seule forme du groupe.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> méthode de <b>l’objet GroupShapes</b> pour renvoyer une seule forme du groupe.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasChart">
@@ -1048,10 +1019,8 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie des informations sur if un <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange" /> contient un graphique. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoTriState" />
-        </value>
+        <summary>Renvoie des informations sur le cas <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange" /> où un graphique est contenu. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1081,7 +1050,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indique si une forme ou une plage de formes contient un diagramme. En lecture seule <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <summary>Renvoie si une forme ou une plage de formes contient un diagramme. En lecture <see cref="T:Microsoft.Office.Core.MsoTriState" /> seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1112,7 +1081,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur qui indique si un nœud de diagramme existe dans une forme donnée ou une plage de formes. En lecture seule <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <summary>Renvoie une valeur indiquant si un nœud de diagramme existe dans une forme ou une plage de formes donnée. En lecture <see cref="T:Microsoft.Office.Core.MsoTriState" /> seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1143,7 +1112,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La hauteur de l’objet. En lecture/écriture <b>unique</b>.</summary>
+        <summary>Hauteur de l’objet. En lecture/écriture <b>unique</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1171,8 +1140,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la forme spécifiée est retournée autour de l’axe horizontal. En lecture seule <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la forme spécifiée est retournée autour de l'axe horizontal. En lecture <see cref="T:Microsoft.Office.Core.MsoTriState" /> seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1200,12 +1168,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le type de l’objet spécifié. Valeur <b>Integer</b> en lecture seule.</summary>
+        <summary>Renvoie le type de l’objet spécifié. <b>Entier</b> en lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez utiliser une étiquette d'identification en tant que référence de lien hypertexte dans d'autres documents HTML ou sur la même page Web.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Vous pouvez utiliser une étiquette d'identification en tant que référence de lien hypertexte dans d'autres documents HTML ou sur la même page Web.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementLeft">
@@ -1231,8 +1197,7 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>obligatoire. Indique comment la forme déplacement horizontal, en points. Spécifiez une valeur positive pour effectuer un déplacement vers la droite, ou inversement, une valeur négative pour procéder à un déplacement vers la gauche.</param>
+        <param name="Increment">Argument de type <b>Single</b> obligatoire. Spécifie la distance de déplacement horizontal en points de la forme. Spécifiez une valeur positive pour effectuer un déplacement vers la droite, ou inversement, une valeur négative pour procéder à un déplacement vers la gauche.</param>
         <summary>Déplace horizontalement la forme spécifiée selon le nombre de points indiqué.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1260,13 +1225,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>obligatoire. Indique comment la forme doit pivoter horizontalement en degrés. Une valeur positive fait pivoter la forme vers la droite ; une valeur négative fait pivoter dans le sens inverse.</param>
-        <summary>Fait pivoter la forme spécifiée, selon le nombre de degrés spécifié, autour de l'axe z. Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.Rotation" /> propriété pour définir la rotation absolue de la forme.</summary>
-        <remarks>
-          <para>Pour faire pivoter une forme en trois dimensions autour de l’axe x ou y, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> méthode.</para>
-          <para></para>
-        </remarks>
+        <param name="Increment">Argument de type <b>Single</b> obligatoire. Spécifie la distance de rotation horizontale en degrés de la forme. Spécifiez une valeur positive pour faire pivoter la forme dans le sens des aiguilles d'une montre, ou inversement, une valeur négative pour la faire pivoter dans le sens inverse.</param>
+        <summary>Cette méthode modifie la rotation de la forme spécifiée autour de l’axe z selon le nombre de degrés spécifiés. Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.Rotation" /> propriété pour définir la rotation absolue de la forme.</summary>
+        <remarks><para>Pour faire pivoter une forme en trois dimensions autour de l’axe des x ou des y, utilisez la méthode ou <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementTop">
@@ -1292,8 +1254,7 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>obligatoire. Spécifie l’objet shape est surtout d’être déplacée verticalement en points. Spécifiez une valeur positive pour décaler la forme vers le bas, ou inversement, une valeur négative pour la décaler vers le haut.</param>
+        <param name="Increment">Argument de type <b>Single</b> obligatoire. Spécifie la distance de l’objet de forme à déplacer verticalement en points. Spécifiez une valeur positive pour décaler la forme vers le bas, ou inversement, une valeur négative pour la décaler vers le haut.</param>
         <summary>Décale vers le haut la forme spécifiée selon le nombre de points spécifié.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1321,14 +1282,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b>obligatoire. Nom ou numéro d'index de l'objet.</param>
-        <summary>Renvoie un seul objet d'une collection.</summary>
+        <param name="Index">Required, <b>objet</b>. Nom ou numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d’une collection.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Le nom de l’objet est la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.Name" /> et <see cref="P:Microsoft.Office.Interop.Excel.Range.Value(System.Object)" /> propriétés.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le nom de texte de l’objet est la valeur des <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.Name" /> <see cref="P:Microsoft.Office.Interop.Excel.Range.Value(System.Object)" /> propriétés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -1357,7 +1315,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Distance entre le bord gauche de l’objet et le bord gauche de la colonne A (sur une feuille de calcul) ou le bord gauche de la zone de graphique (sur un graphique). En lecture/écriture <b>unique</b>.</summary>
+        <summary>Distance entre le bord gauche de l’objet et le bord gauche de la colonne A (dans une feuille de calcul) ou le bord gauche de la zone de graphique (sur un graphique). En lecture/écriture <b>unique</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1385,12 +1343,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> objet qui contient les propriétés de la forme spécifiée la mise en forme du trait. En lecture seule.</summary>
+        <summary>Renvoie un objet qui contient les propriétés de mise en forme <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> de trait pour la forme spécifiée. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour un trait, l'objet <b>LineFormat</b> représente le trait lui-même ; pour une forme avec une bordure, l'objet <b>LineFormat</b> représente la bordure.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Pour un trait, l'objet <b>LineFormat</b> représente le trait lui-même ; pour une forme avec une bordure, l'objet <b>LineFormat</b> représente la bordure.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockAspectRatio">
@@ -1419,8 +1375,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la forme spécifiée conserve ses proportions d’origine lorsque vous la redimensionnez. <b>False</b> si vous pouvez modifier la hauteur et la largeur de la forme indépendamment de l’autre lorsque vous la redimensionnez. En lecture/écriture <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <summary>Cette propriété renvoie la valeur <b>True</b> si la forme spécifiée conserve ses proportions d'origine lorsque vous la redimensionnez. Elle renvoie la valeur <b>False</b> si vous pouvez modifier la hauteur et la largeur de la forme indépendamment l'une de l'autre lorsque vous la redimensionnez. En <see cref="T:Microsoft.Office.Core.MsoTriState" /> lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1453,12 +1408,11 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le nom de l'objet. Type de données <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le tableau suivant contient des valeurs d’exemple de la propriété <b>Name</b> et des propriétés liées affectées d’une source de données OLAP dotée du nom unique "[Europe].[France].[Paris]" et d’une source de données autre que OLAP dotée du nom "Paris".</para>
+        <remarks><para>Le tableau suivant contient des valeurs d’exemple de la propriété <b>Name</b> et des propriétés liées affectées d’une source de données OLAP dotée du nom unique "[Europe].[France].[Paris]" et d’une source de données autre que OLAP dotée du nom "Paris".</para>
           <list type="table">
             <item>
               <term>
-                <b>Légende</b>
+                <b>Caption</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
@@ -1485,22 +1439,21 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <para>Lorsque vous spécifiez un index dans la collection, vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> syntaxe indiquée dans le tableau suivant.</para>
           <list type="table">
             <item>
-              <term>expression. PivotItems (« [Europe]. [ France]. [Paris] »)</term>
-              <description>expression. PivotItems("Paris")</description>
+              <term>expression. PivotItems(« [Europe].[ France]. [Paris] »)</term>
+              <description>expression. PivotItems(« Paris »)</description>
             </item>
           </list>
-          <para>Lorsque vous utilisez la <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para>
+          <para>Lorsque vous utilisez la propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom de l’index de texte comme <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> indiqué dans le tableau suivant.</para>
           <list type="table">
             <item>
               <term>[Europe]. [France]. [Paris]</term>
               <description>Paris</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -1526,7 +1479,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> collection qui représente la description géométrique de la forme spécifiée. S’applique aux <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objets qui représentent des dessins de forme libre.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> collection qui représente la description géométrique de la forme spécifiée. <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />S’applique aux objets qui représentent des dessins de forme libre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1554,7 +1507,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1582,7 +1535,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object qui représente la forme parente commune d’une forme enfant ou d’une plage de formes enfants.</summary>
+        <summary>Renvoie un objet qui représente la forme parente commune d’une forme enfant ou <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> d’une plage de formes enfants.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1608,7 +1561,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Copie la mise en forme de la forme indiquée. Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Apply" /> méthode pour appliquer la mise en forme copiée à une autre forme.</summary>
+        <summary>Copie la mise en forme de la forme indiquée. Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Apply" /> méthode pour appliquer la mise en forme copiée à une autre forme.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1635,7 +1588,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PictureFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> objet qui contient les propriétés de la forme spécifiée la mise en forme de l’image. S’applique aux <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objets qui représentent des images ou les objets OLE. En lecture seule.</summary>
+        <summary>Renvoie un objet qui contient les propriétés de mise en forme <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> d’image pour la forme spécifiée. <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />S’applique aux objets qui représentent des images ou des objets OLE. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1663,10 +1616,8 @@
         <ReturnType>Microsoft.Office.Core.ReflectionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Core.ReflectionFormat" /> objet pour une plage de formes spécifiée qui contient les propriétés de la plage de formes de la mise en forme de réflexion. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.ReflectionFormat" />
-        </value>
+        <summary>Renvoie un objet pour une plage de formes spécifiée qui contient les propriétés de mise en forme de réflexion <see cref="T:Microsoft.Office.Core.ReflectionFormat" /> pour la plage de formes. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Core.ReflectionFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1691,13 +1642,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cette méthode reforme le groupe auquel la plage de formes spécifiée appartenait auparavant. Renvoie les formes regroupées comme un seul <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objet.</summary>
+        <summary>Cette méthode reforme le groupe auquel la plage de formes spécifiée appartenait auparavant. Renvoie les formes regroupées sous la forme d’un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> seul objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>La méthode <b>Regroup</b> restaure uniquement le groupe pour la première forme qu’il trouve dans le texte spécifié précédemment groupée <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> collection. Par conséquent, si la plage de formes spécifiée contient des formes appartenant précédemment pour différents groupes, une seule des groupes est restaurée.</para>
-          <para>Notez que, comme un groupe de formes est considéré comme une seule forme, groupement et dissociation des formes modifie le nombre d’éléments dans les <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection et change les numéros d’index des éléments qui suivent les éléments modifiés de la collection.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>méthode Regroup</b> restaure uniquement le groupe de la première forme précédemment groupée qu’elle trouve dans la <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> collection spécifiée. Par conséquent, si la plage de formes spécifiée contient des formes appartenant précédemment pour différents groupes, une seule des groupes est restaurée.</para>
+          <para>Notez qu’étant donné qu’un groupe de formes est traité comme une seule forme, le regroupement et le regroupement de formes modifient le nombre d’éléments de la collection et modifient les numéros d’index des éléments qui s’en sviennent après les éléments affectés dans la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RerouteConnections">
@@ -1722,11 +1671,9 @@
       <Parameters />
       <Docs>
         <summary>Redirige les connecteurs afin qu'ils prennent le chemin le plus court possible entre les formes qu'ils se connectent.</summary>
-        <remarks>
-          <para>Pour rediriger les connecteurs, la méthode <b>RerouteConnections</b> peut détacher les extrémités d’un connecteur et les rattacher à différents points de connexion sur les formes connectées. Cette méthode redirige tous les connecteurs rattachés à la forme spécifiée ; si la forme spécifiée est un connecteur, elle est redirigée.</para>
+        <remarks><para>Pour réacheminer les connecteurs, la méthode <b>RerouteConnections</b> peut détacher les extrémités d’un connecteur et les rattacher à différents sites de connexion sur les formes connectées. Cette méthode redirige tous les connecteurs rattachés à la forme spécifiée ; si la forme spécifiée est un connecteur, elle est redirigée.</para>
           <para>Si cette méthode est appliquée à un connecteur, seul ce connecteur sera redirigé. Si cette méthode est appliquée à une forme connectée, tous les connecteurs de cette forme seront redirigés.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rotation">
@@ -1755,7 +1702,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la rotation de la forme en degrés. En lecture/écriture <b>unique</b>.</summary>
+        <summary>Renvoie ou définit la rotation de la forme en degrés. En lecture/écriture <b>unique</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1784,15 +1731,12 @@
         <Parameter Name="Scale" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Factor">
-          <b>Single</b>obligatoire. Indique le rapport entre la hauteur de la forme après son redimensionnement et sa hauteur initiale ou actuelle. À titre d'exemple, pour agrandir un rectangle de 50 %, indiquez 1,5 comme argument.</param>
-        <param name="RelativeToOriginalSize">Requis <see cref="T:Microsoft.Office.Core.MsoTriState" />. <b>la valeur msoTrue</b> à l’échelle par rapport à sa taille initiale. <b>msoFalse</b> pour mettre à l’échelle par rapport à sa taille actuelle. Vous pouvez spécifier <b>msoTrue</b> pour cet argument que si la forme spécifiée est une image ou un objet OLE.</param>
-        <param name="Scale">Facultatif <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. Spécifie la partie de la forme qui conserve sa position lorsque le forme est mise à l'échelle.</param>
-        <summary>Redimensionne la hauteur de la forme en fonction d'un facteur défini.</summary>
-        <remarks>
-          <para>Pour les images et objets OLE, vous pouvez indiquer si vous souhaitez mettre à l’échelle de la forme par rapport à l’original ou la taille actuelle. Les autres formes sont toujours mises à l'échelle par rapport à leur taille actuelle.</para>
-          <para></para>
-        </remarks>
+        <param name="Factor">Argument de type <b>Single</b> obligatoire. Indique le rapport entre la hauteur de la forme redimensionnée et sa hauteur actuelle ou originale. Par exemple, pour élargir un rectangle de 50 %, indiquez un facteur de 1,5.</param>
+        <param name="RelativeToOriginalSize">Obligatoire <see cref="T:Microsoft.Office.Core.MsoTriState" /> . <b>msoTrue</b> pour mettre la forme à l'échelle par rapport à sa taille initiale. <b>msoFalse</b> pour la mettre à l'échelle par rapport à sa taille actuelle. Vous ne pouvez spécifier <b>msoTrue</b> pour cet argument que si la forme concernée est une image ou un objet OLE.</param>
+        <param name="Scale">Facultatif <see cref="T:Microsoft.Office.Core.MsoScaleFrom" /> . Spécifie la partie de la forme qui conserve sa position lorsque le forme est mise à l'échelle.</param>
+        <summary>Met la hauteur de la forme à l’échelle en utilisant un facteur spécifié.</summary>
+        <remarks><para>Pour les images et les objets OLE, vous pouvez indiquer si vous souhaitez mettre la forme à l'échelle par rapport à la taille d'origine ou actuelle. Les formes qui ne sont ni des images ni des objets OLE sont toujours mises à l'échelle par rapport à leur hauteur actuelle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleWidth">
@@ -1819,15 +1763,12 @@
         <Parameter Name="Scale" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Factor">
-          <b>Single</b>obligatoire. Indique le rapport entre la largeur de la forme après son redimensionnement et sa largeur initiale ou actuelle. À titre d'exemple, pour agrandir un rectangle de 50 %, indiquez 1,5 comme argument.</param>
-        <param name="RelativeToOriginalSize">Requis <see cref="T:Microsoft.Office.Core.MsoTriState" />. <b>False</b> pour mettre à l'échelle par rapport à sa taille actuelle. Vous pouvez spécifier <b>la valeur True</b> à cet argument que si la forme spécifiée est une image ou un objet OLE.</param>
-        <param name="Scale">Facultatif <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. Spécifie la partie de la forme qui conserve sa position lorsque le forme est mise à l'échelle.</param>
-        <summary>Redimensionne la largeur de la forme en fonction d'un facteur défini.</summary>
-        <remarks>
-          <para>Pour les images et objets OLE, vous pouvez indiquer si vous souhaitez mettre à l’échelle de la forme par rapport à l’original ou la taille actuelle. Les autres formes sont toujours mises à l'échelle par rapport à leur largeur actuelle.</para>
-          <para></para>
-        </remarks>
+        <param name="Factor">Argument de type <b>Single</b> obligatoire. Indique le rapport de la largeur de la forme redimensionnée sur sa largeur actuelle ou originale. Par exemple, pour élargir un rectangle de 50 %, indiquez un facteur de 1,5.</param>
+        <param name="RelativeToOriginalSize">Obligatoire <see cref="T:Microsoft.Office.Core.MsoTriState" /> . <b>False</b> pour mettre à l'échelle par rapport à sa taille actuelle. Vous pouvez spécifier <b>la valeur True</b> à cet argument que si la forme spécifiée est une image ou un objet OLE.</param>
+        <param name="Scale">Facultatif <see cref="T:Microsoft.Office.Core.MsoScaleFrom" /> . Spécifie la partie de la forme qui conserve sa position lorsque le forme est mise à l'échelle.</param>
+        <summary>Met la largeur de la forme à l’échelle en utilisant un facteur spécifié.</summary>
+        <remarks><para>Pour les images et les objets OLE, vous pouvez indiquer si vous souhaitez mettre la forme à l'échelle par rapport à la taille d'origine ou la taille actuelle. Les formes qui ne sont ni des images ni des objets OLE sont toujours mises à l'échelle par rapport à la largeur actuelle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1852,7 +1793,7 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">Facultatif <b>Object</b>. Objet à remplacer.</param>
+        <param name="Replace">Objet <b>facultatif</b>. Objet à remplacer.</param>
         <summary>Sélectionne l'objet.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1905,8 +1846,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la police est une police ombrée ou si l’objet est ombré. Type de données <b>Boolean</b> en lecture/écriture.</summary>
+        <summary><b>True</b> si la police est une police d’ombre ou si l’objet a une ombre. <b>Boolean</b> (en lecture/écriture).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1937,10 +1877,8 @@
         <ReturnType>Microsoft.Office.Core.MsoShapeStyleIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> que représente la forme style pour une plage de formes. Lecture/écriture.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />
-        </value>
+        <summary>Renvoie ou définit une chaîne <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> qui représente le style de forme d’une plage de formes. En lecture/écriture</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1967,10 +1905,8 @@
         <ReturnType>Microsoft.Office.Core.SoftEdgeFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui contient la bordure arrondie mise en forme des propriétés d’une plage de formes spécifiée. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" />
-        </value>
+        <summary>Renvoie un objet qui contient les propriétés de mise en forme de bordures souples pour une plage de formes spécifiée. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1997,7 +1933,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextEffectFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> objet qui contient les propriétés de mise en forme du texte de la forme spécifiée. S’applique aux <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objets qui représentent des objets WordArt. En lecture seule.</summary>
+        <summary>Renvoie un objet qui contient les propriétés de mise en forme <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> d’effet de texte pour la forme spécifiée. <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />S’applique aux objets qui représentent des objets WordArt. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2025,10 +1961,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> objet qui contient l’alignement et l’ancrage des propriétés de la plage de formes spécifiée. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" />
-        </value>
+        <summary>Renvoie un objet qui contient les propriétés d’alignement et d’ancrage <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> de la plage de formes spécifiée. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2055,10 +1989,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextFrame2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui contient le texte de la mise en forme pour la plage de formes spécifiée. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" />
-        </value>
+        <summary>Renvoie un objet qui contient la mise en forme du texte pour la plage de formes spécifiée. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2085,7 +2017,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objet qui contient les propriétés de la forme spécifiée la mise en forme des effets 3D. En lecture seule.</summary>
+        <summary>Renvoie un objet qui contient des propriétés de mise en forme <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> d’effet 3D pour la forme spécifiée. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2118,11 +2050,9 @@
       <Docs>
         <summary>Obtient ou définit le titre du texte de remplacement associé à la plage de formes spécifiée.</summary>
         <value>Titre du texte de remplacement associé à la plage de formes spécifiée.</value>
-        <remarks>
-          <para>Lecture/écriture.</para>
-          <para>Pour définir la chaîne de texte descriptive du texte de remplacement pour une plage de formes, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.AlternativeText" /> propriété.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>En lecture/écriture</para>
+          <para>Pour définir la chaîne de texte descriptive du texte de remplacement d’une plage de formes, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.AlternativeText" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -2151,7 +2081,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La distance entre le bord supérieur de la forme la plus haute dans la plage de formes et le bord supérieur de la feuille de calcul. En lecture/écriture <b>unique</b>.</summary>
+        <summary>Distance entre le bord supérieur de la forme la plus haute de la plage de formes et le bord supérieur de la feuille de calcul. En lecture/écriture <b>unique</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2179,7 +2109,7 @@
         <ReturnType>Microsoft.Office.Core.MsoShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type de forme. En lecture seule <see cref="T:Microsoft.Office.Core.MsoShapeType" />.</summary>
+        <summary>Renvoie ou définit le type de forme. En lecture <see cref="T:Microsoft.Office.Core.MsoShapeType" /> seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2205,12 +2135,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Dissocie les formes groupées dans la forme spécifiée ou la plage de formes. Dissocie les images et objets OLE dans la plage de formes spécifiée. Renvoie les formes dissociées en tant qu’un seul <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objet.</summary>
+        <summary>Dissocie toutes les formes groupées dans la forme ou la plage de formes spécifiée. Sépare les images et les objets OLE dans la forme ou plage de formes spécifiée. Renvoie les formes non groupées sous la forme d’un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> seul objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Comme un groupe de formes est considéré comme un objet unique, grouper et dissocier des formes modifie le nombre d’éléments dans les <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection et change les numéros d’index des éléments qui suivent les éléments modifiés de la collection.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Étant donné qu’un groupe de formes est traité comme un seul objet, le regroupement et le regroupement de formes modifient le nombre d’éléments de la collection et modifient les numéros d’index des éléments qui s’en sviennent après les éléments affectés dans la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalFlip">
@@ -2236,8 +2164,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la forme spécifiée est retournée autour de l’axe vertical. En lecture seule <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la forme spécifiée est retournée autour de l’axe vertical. En lecture <see cref="T:Microsoft.Office.Core.MsoTriState" /> seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2265,39 +2192,37 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie les coordonnées des sommets de la forme libre spécifiée (et les points de contrôle pour les courbes Bézier) sous forme d’une série de paires de coordonnées. En lecture seule <b>Object</b>.</summary>
+        <summary>Renvoie les coordonnées des sommets du dessin de la forme libre spécifiée (et les points de contrôle pour les courbes de Bézier) sous forme de paires de coordonnées. En lecture seule <b>Object</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez utiliser le tableau renvoyé par cette propriété comme argument pour la <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> méthode.</para>
-          <para>Le tableau suivant montre comment la propriété <b>Vertices</b> associe les valeurs du tableau vertArray() avec les coordonnées des sommets d’un triangle.</para>
+        <remarks><para>Vous pouvez utiliser le tableau renvoyé par cette propriété comme argument de <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> la méthode ou de la <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> méthode.</para>
+          <para>Le tableau suivant indique comment la propriété <b>Vertices</b> associe les valeurs du tableau vertArray() aux coordonnées des sommets d’un triangle.</para>
           <list type="table">
             <item>
-              <term>vertArray (1, 1)</term>
+              <term>vertArray(1, 1)</term>
               <description>La distance horizontale entre le premier sommet et le côté gauche du document</description>
             </item>
             <item>
-              <term>vertArray (1, 2)</term>
+              <term>vertArray(1, 2)</term>
               <description>La distance verticale entre le premier sommet et la partie supérieure du document</description>
             </item>
             <item>
-              <term>vertArray (2, 1)</term>
+              <term>vertArray(2, 1)</term>
               <description>La distance horizontale entre le deuxième sommet et le côté gauche du document</description>
             </item>
             <item>
-              <term>vertArray (2, 2)</term>
+              <term>vertArray(2, 2)</term>
               <description>La distance verticale entre le deuxième sommet et la partie supérieure du document</description>
             </item>
             <item>
-              <term>vertArray (3, 1)</term>
+              <term>vertArray(3, 1)</term>
               <description>La distance horizontale entre le troisième sommet et le côté gauche du document</description>
             </item>
             <item>
-              <term>vertArray (3, 2)</term>
+              <term>vertArray(3, 2)</term>
               <description>La distance verticale entre le troisième sommet et la partie supérieure du document</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -2326,7 +2251,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si l’objet est visible. En lecture/écriture <see cref="T:Microsoft.Office.Core.MsoTriState" />.</summary>
+        <summary>Cette propriété détermine si l'objet est visible. En <see cref="T:Microsoft.Office.Core.MsoTriState" /> lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2357,7 +2282,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La largeur de l’objet. En lecture/écriture <b>unique</b>.</summary>
+        <summary>Largeur de l’objet. En lecture/écriture <b>unique</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2385,12 +2310,10 @@
         <Parameter Name="ZOrderCmd" Type="Microsoft.Office.Core.MsoZOrderCmd" />
       </Parameters>
       <Docs>
-        <param name="ZOrderCmd">Requis <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />. Indique à quel endroit déplacer la forme spécifiée par rapport aux autres formes.</param>
-        <summary>Déplace la forme spécifiée devant ou derrière les autres formes de la collection (autrement dit, change la position de la forme dans l'ordre décroissant).</summary>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.ZOrderPosition" /> propriété pour déterminer la position actuelle d’une forme dans l’ordre de plan.</para>
-          <para></para>
-        </remarks>
+        <param name="ZOrderCmd">Obligatoire <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" /> . Indique où déplacer la forme par rapport aux autres.</param>
+        <summary>Déplace la forme spécifiée devant ou derrière les autres formes dans la collection de (autrement dit, modifie position de la forme dans l’ordre z).</summary>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.ZOrderPosition" /> propriété pour déterminer la position actuelle d’une forme dans l’ordre de z.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ZOrderPosition">
@@ -2416,14 +2339,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la position de la forme spécifiée dans l’ordre de plan. Valeur <b>Integer</b> en lecture seule.</summary>
+        <summary>Cette propriété renvoie la position de la forme spécifiée dans l'ordre de superposition. <b>Entier</b> en lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour définir la position de la forme dans l’ordre de superposition, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> méthode.</para>
-          <para>Position d’une forme dans l’ordre z correspond au numéro d’index de la forme dans le <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection. Par exemple, s’il existe quatre formes dans myDocument, les myDocument.Shapes (1) l’expression renvoie la forme à l’ordre de plan et la myDocument.Shapes (4) expression renvoie la forme au début de l’ordre de plan.</para>
+        <remarks><para>Pour définir la position de la forme dans l’ordre de z, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> méthode.</para>
+          <para>La position d’une forme dans l’ordre z correspond au numéro d’index de la forme dans la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection. Si, par exemple, quatre formes figurent dans myDocument, l'expression myDocument.Shapes(1) renvoie la forme placée en dernier dans l'ordre de superposition, tandis que l'expression myDocument.Shapes(4) renvoie celle placée en premier dans l'ordre de superposition.</para>
           <para>Si vous ajoutez une nouvelle forme à une collection, elle s'ajoute par défaut en première position dans l'ordre de superposition.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

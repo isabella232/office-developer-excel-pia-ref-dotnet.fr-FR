@@ -1,13 +1,5 @@
 <Type Name="VPageBreak" FullName="Microsoft.Office.Interop.Excel.VPageBreak">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="65c80ebf5b3756b2bfa8393565d0d99bd3d8cc23" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574766" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface VPageBreak" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="65c80ebf5b3756b2bfa8393565d0d99bd3d8cc23" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009379" /></Metadata><TypeSignature Language="C#" Value="public interface VPageBreak" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract VPageBreak" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.VPageBreak" />
   <TypeSignature Language="VB.NET" Value="Public Interface VPageBreak" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente un saut de page vertical.</summary>
-    <remarks>
-      <para>L’objet <b>VPageBreak</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> collection.</para>
-      <para>Utilisez <b>VPageBreaks</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index du saut de page, pour renvoyer un objet <b>VPageBreak</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>L’objet VPageBreak</b> est membre de la <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> collection.</para>
+      <para>Utilisez <b>VPageBreaks</b>( ), où est le numéro d’index de la coupure de page, pour renvoyer <paramref name="index" /> un objet <paramref name="index" /> <b>VPageBreak.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,11 +80,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -146,14 +134,11 @@
         <Parameter Name="RegionIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Direction">Requis <see cref="T:Microsoft.Office.Interop.Excel.XlDirection" />. Direction dans laquelle le saut de page est déplacé.</param>
-        <param name="RegionIndex">
-          <b>Integer</b>obligatoire. L’index de la zone d’impression pour le saut de page (la région où le pointeur de la souris se trouve lorsque le bouton de la souris est enfoncé si l’utilisateur fait glisser le saut de page). Si la zone d’impression est contiguë, il n’existe qu’une seule zone d’impression. Si la zone d’impression est non contigue, il n’existe plus d’une zone d’impression.</param>
+        <param name="Direction">Obligatoire <see cref="T:Microsoft.Office.Interop.Excel.XlDirection" /> . Direction dans laquelle le saut de page est déplacé.</param>
+        <param name="RegionIndex">Argument de type <b>Integer</b> obligatoire. Index de la zone d'impression pour le saut de page (zone où le pointeur de la souris se trouve lorsque le bouton de la souris est enfoncé si l'utilisateur fait glisser le saut de page). Si la zone d'impression est continue, il n'y a qu'une seule zone d'impression. Si la zone d’impression n’est pasigue, il existe plusieurs régions d’impression.</param>
         <summary>Cette méthode fait glisser un saut de page hors de la zone d’impression.</summary>
-        <remarks>
-          <para>Cette méthode existe principalement pour l’enregistreur de macros. Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.VPageBreak.Delete" /> méthode pour supprimer un saut de page.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette méthode concerne principalement l'enregistrement d'une macro. Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.VPageBreak.Delete" /> méthode pour supprimer un pause de page.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Extent">
@@ -179,12 +164,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPageBreakExtent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le type du saut de page spécifié : plein écran ou seulement sur une zone d’impression.</summary>
+        <summary>Cette propriété renvoie le type du saut de page spécifié : plein écran ou exclusivement situé dans une zone d’impression.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>étendue</b> peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreakExtent" /> constantes : <b>xlPageBreakFull</b> ou <b>xlPageBreakPartial</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>propriété Extent</b> peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreakExtent" /> constantes suivantes : <b>xlPageBreakFull</b> ou <b>xlPageBreakPartial</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -213,12 +196,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la cellule (un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet) qui définit l’emplacement du saut de page.</summary>
+        <summary>Renvoie ou définit la cellule (un objet) qui <see cref="T:Microsoft.Office.Interop.Excel.Range" /> définit l’emplacement du pause-page.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sauts de page horizontaux sont alignés avec le bord supérieur de la cellule. sauts de page verticaux sont alignés avec le bord gauche de la cellule.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Les sauts de page horizontaux sont alignés sur l’angle supérieur de la cellule ; les sauts de page verticaux sont alignés sur l’angle gauche de la cellule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -244,7 +225,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Worksheet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,7 +256,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPageBreak</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type de saut de page.</summary>
+        <summary>Renvoie ou définit le type de coupure de page.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

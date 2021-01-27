@@ -1,13 +1,5 @@
 <Type Name="Walls" FullName="Microsoft.Office.Interop.Excel.Walls">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="694e055e0616d70a2ab7c59205f377db0e237a53" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576047" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Walls" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="694e055e0616d70a2ab7c59205f377db0e237a53" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009330" /></Metadata><TypeSignature Language="C#" Value="public interface Walls" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Walls" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Walls" />
   <TypeSignature Language="VB.NET" Value="Public Interface Walls" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Représente les murs d’un graphique 3D.</summary>
-    <remarks>
-      <para>Cet objet n’est pas une collection. Il n’existe aucun objet qui représente un seul mur. Vous devez renvoyer tous les panneaux en tant qu’unité.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Chart.Walls" /> propriété permet de renvoyer l’objet <b>Walls</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Il n'existe pas d'objet représentant une seule ligne de projection. Il n’existe aucun objet qui représente un seul mur ; vous devez renvoyer tous les murs en tant qu’unité.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Chart.Walls" /> propriété pour renvoyer <b>l’objet Walls.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,11 +137,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -180,7 +168,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> objet pour un graphique spécifié qui contient les propriétés pour le graphique de la mise en forme du remplissage.</summary>
+        <summary>Renvoie un objet pour un graphique spécifié qui contient les propriétés de mise en <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> forme de remplissage du graphique.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,10 +196,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objet. En lecture seule.</summary>
-        <value>
-          <b>ChartFormat</b>
-        </value>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> l’objet. En lecture seule.</summary>
+        <value><b>ChartFormat</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,7 +227,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object qui représente l’intérieur de l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objet qui représente l’intérieur de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -271,12 +257,11 @@
       <Docs>
         <summary>Renvoie le nom de l'objet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le tableau suivant contient des valeurs d’exemple de la propriété <b>Name</b> et des propriétés liées affectées d’une source de données OLAP dotée du nom unique "[Europe].[France].[Paris]" et d’une source de données autre que OLAP dotée du nom "Paris".</para>
+        <remarks><para>Le tableau suivant contient des valeurs d’exemple de la propriété <b>Name</b> et des propriétés liées affectées d’une source de données OLAP dotée du nom unique "[Europe].[France].[Paris]" et d’une source de données autre que OLAP dotée du nom "Paris".</para>
           <list type="table">
             <item>
               <term>
-                <b>Légende</b>
+                <b>Caption</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
@@ -303,15 +288,14 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <para>Lorsque vous spécifiez un index dans la collection, vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> syntaxe indiquée dans le tableau suivant.</para>
           <list type="table">
             <item>
-              <term>expression. PivotItems (« [Europe]. [ France]. [Paris] »)</term>
-              <description>expression. PivotItems("Paris")</description>
+              <term>expression. PivotItems(« [Europe].[ France]. [Paris] »)</term>
+              <description>expression. PivotItems(« Paris »)</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -337,7 +321,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -364,10 +348,8 @@
       <Parameters />
       <Docs>
         <summary>Cette méthode colle une image du Presse-papiers sur les panneaux du graphique spécifié.</summary>
-        <remarks>
-          <para>Cette méthode peut être utilisée sur des graphiques en histogrammes, en barres, en courbes ou en radar. Il définit la propriété <b>MarkerStyle</b><b>xlMarkerStylePicture</b>à.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cette méthode peut être utilisée sur des graphiques en histogrammes, en barres, en courbes ou en radar. Il définit la <b>propriété MarkerStyle</b> sur <b>xlMarkerStylePicture</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureType">
@@ -396,12 +378,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le mode d’affichage des images sur les murs et les faces d’un graphique 3D.</summary>
+        <summary>Renvoie ou définit la façon dont les images sont affichées sur les murs et les faces d’un graphique 3D.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>PictureType (TypeImage)</b> peut être une des constantes suivantes : <b>xlStack</b> ou <b>xlStretch</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La <b>propriété PictureType</b> peut être l’une des constantes suivantes : <b>xlStack</b> ou <b>xlStretch</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureUnit">
@@ -430,7 +410,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si le <see cref="P:Microsoft.Office.Interop.Excel.Walls.PictureType" /> propriété est définie sur <b>xlStackScale</b> (dans le cas contraire, cette propriété est ignorée).</summary>
+        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si la propriété est définie sur <see cref="P:Microsoft.Office.Interop.Excel.Walls.PictureType" /> <b>xlStackScale</b> (si ce n’est pas le cas, cette propriété est ignorée).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -487,14 +467,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l'épaisseur du mur. Lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Utilisez cette propriété pour définir l'épaisseur du panneau. La valeur par défaut est 0.</para>
-          <para></para>
-        </remarks>
+        <summary>Cette propriété renvoie ou définit l'épaisseur du mur. En lecture/écriture</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Utilisez cette propriété pour définir l'épaisseur du panneau.  La valeur par défaut est 0.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

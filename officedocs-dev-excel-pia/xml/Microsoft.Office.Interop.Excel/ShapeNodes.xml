@@ -1,13 +1,5 @@
 <Type Name="ShapeNodes" FullName="Microsoft.Office.Interop.Excel.ShapeNodes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fcefaa651f73c2e96e8b51711d14e2e3ee8df786" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578098" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShapeNodes : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fcefaa651f73c2e96e8b51711d14e2e3ee8df786" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010324" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNodes : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNodes implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ShapeNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeNodes&#xA;Implements _IMsoDispObj, IEnumerable" />
@@ -33,14 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.ShapeNode" /> objets dans la forme libre.</summary>
-    <remarks>
-      <para>Chaque objet <b>ShapeNode</b> représente soit un noeud entre des segments dans une forme libre ou d'un point de contrôle pour un segment courbé d'une forme libre. Vous pouvez créer une forme libre manuellement ou à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> et <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> méthodes.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Shape.Nodes" /> propriété pour renvoyer la collection <b>ShapeNodes</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> méthode pour créer un nouveau nœud et l’ajouter à la collection <b>ShapeNodes</b> .</para>
-      <para>Utiliser des <b>nœuds</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index nœud, pour renvoyer un seul objet <b>ShapeNode</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.ShapeNode" /> objets de la forme libre spécifiée.</summary>
+    <remarks><para>Chaque objet <b>ShapeNode</b> représente soit un noeud entre des segments dans une forme libre ou d'un point de contrôle pour un segment courbé d'une forme libre. Vous pouvez créer une forme libre manuellement ou à l’aide <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> des méthodes et des <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> méthodes.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Nodes" /> propriété pour renvoyer la collection <b>ShapeNodes.</b></para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> méthode pour créer un nœud et l’ajouter à la collection <b>ShapeNodes.</b></para>
+      <para>Utilisez <b>Nodes</b>( ), où est le numéro d’index du nœud, pour <paramref name="index" /> <paramref name="index" /> renvoyer un seul objet <b>ShapeNode.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -69,7 +59,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +87,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nombre d'objets dans la collection. Valeur <b>Integer</b> en lecture seule.</summary>
+        <summary>Renvoie le nombre d'objets dans la collection. <b>Entier</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,12 +118,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. Valeur <b>Integer</b> en lecture seule.</summary>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C. <b>Entier</b> en lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -159,8 +147,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire.</param>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire.</param>
         <summary>Supprime l'objet.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,18 +214,15 @@
         <Parameter Name="Y3" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire. Numéro du nœud de forme après lequel le nouveau nœud doit être inséré.</param>
-        <param name="SegmentType">Requis <see cref="T:Microsoft.Office.Core.MsoSegmentType" />. Type de segment.</param>
-        <param name="EditingType">Requis <see cref="T:Microsoft.Office.Core.MsoEditingType" />. Type de modification.</param>
-        <param name="X1">
-          <b>Single</b>obligatoire. Si la <paramref name="EditingType" /> du nouveau segment est <b>msoEditingAuto</b>, cet argument spécifie la distance horizontale, exprimée en points, entre le coin supérieur gauche du document et le point de terminaison du nouveau segment. Si la <paramref name="EditingType" /> du nouveau nœud est <b>msoEditingCorner</b>, cet argument spécifie la distance horizontale, exprimée en points, entre le coin supérieur gauche du document et le premier point de contrôle pour le nouveau segment.</param>
-        <param name="Y1">
-          <b>Single</b>obligatoire. Si la <paramref name="EditingType" /> du nouveau segment est <b>msoEditingAuto</b>, cet argument spécifie la distance verticale, exprimée en points, entre le coin supérieur gauche du document et la fin du nouveau segment. Si la <paramref name="EditingType" /> du nouveau nœud est <b>msoEditingCorner</b>, cet argument spécifie la distance verticale, exprimée en points, entre le coin supérieur gauche du document et le premier point de contrôle pour le nouveau segment.</param>
-        <param name="X2">Facultatif <b>unique</b>. Si la <paramref name="EditingType" /> du nouveau segment est <b>msoEditingCorner</b>, cet argument spécifie la distance horizontale, exprimée en points, entre le coin supérieur gauche du document et le deuxième point de contrôle pour le nouveau segment. Si la <paramref name="EditingType" /> du nouveau segment est <b>msoEditingAuto</b>, ne spécifiez aucune valeur pour cet argument.</param>
-        <param name="Y2">Facultatif <b>unique</b>. Si la <paramref name="EditingType" /> du nouveau segment est <b>msoEditingCorner</b>, cet argument spécifie la distance verticale, exprimée en points, entre le coin supérieur gauche du document et le deuxième point de contrôle pour le nouveau segment. Si la <paramref name="EditingType" /> du nouveau segment est <b>msoEditingAuto</b>, ne spécifiez aucune valeur pour cet argument.</param>
-        <param name="X3">Facultatif <b>unique</b>. Si la <paramref name="EditingType" /> du nouveau segment est <b>msoEditingCorner</b>, cet argument spécifie la distance horizontale, exprimée en points, entre le coin supérieur gauche du document et la fin du nouveau segment. Si la <paramref name="EditingType" /> du nouveau segment est <b>msoEditingAuto</b>, ne spécifiez aucune valeur pour cet argument.</param>
-        <param name="Y3">Facultatif <b>unique</b>. Si la <paramref name="EditingType" /> du nouveau segment est <b>msoEditingCorner</b>, cet argument spécifie la distance verticale, exprimée en points, entre le coin supérieur gauche du document et la fin du nouveau segment. Si la <paramref name="EditingType" /> du nouveau segment est <b>msoEditingAuto</b>, ne spécifiez aucune valeur pour cet argument.</param>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire. Numéro du nœud de forme après lequel le nouveau nœud doit être inséré.</param>
+        <param name="SegmentType">Obligatoire <see cref="T:Microsoft.Office.Core.MsoSegmentType" /> . Type de segment.</param>
+        <param name="EditingType">Obligatoire <see cref="T:Microsoft.Office.Core.MsoEditingType" /> . Type de modification.</param>
+        <param name="X1">Argument de type <b>Single</b> obligatoire. Si le nouveau segment est <paramref name="EditingType" /> <b>msoEditingAuto,</b>cet argument spécifie la distance horizontale, mesurée en points, entre le coin supérieur gauche du document et le point de fin du nouveau segment. Si le nouveau nœud est <paramref name="EditingType" /> <b>msoEditingCorner,</b>cet argument spécifie la distance horizontale mesurée en points entre le coin supérieur gauche du document et le premier point de contrôle du nouveau segment.</param>
+        <param name="Y1">Argument de type <b>Single</b> obligatoire. Si le nouveau segment est <paramref name="EditingType" /> <b>msoEditingAuto,</b>cet argument spécifie la distance verticale mesurée en points entre le coin supérieur gauche du document et le point de fin du nouveau segment. Si le nouveau nœud est <paramref name="EditingType" /> <b>msoEditingCorner,</b>cet argument spécifie la distance verticale mesurée en points entre le coin supérieur gauche du document et le premier point de contrôle du nouveau segment.</param>
+        <param name="X2">Facultatif <b>unique</b>. Si le nouveau segment est <paramref name="EditingType" /> <b>msoEditingCorner,</b>cet argument spécifie la distance horizontale mesurée en points entre le coin supérieur gauche du document et le deuxième point de contrôle du nouveau segment. Si le <paramref name="EditingType" /> nouveau segment est <b>msoEditingAuto</b>, ne spécifiez pas de valeur pour cet argument.</param>
+        <param name="Y2">Facultatif <b>unique</b>. Si le nouveau segment est <paramref name="EditingType" /> <b>msoEditingCorner,</b>cet argument spécifie la distance verticale mesurée en points entre le coin supérieur gauche du document et le deuxième point de contrôle pour le nouveau segment. Si le <paramref name="EditingType" /> nouveau segment est <b>msoEditingAuto</b>, ne spécifiez pas de valeur pour cet argument.</param>
+        <param name="X3">Facultatif <b>unique</b>. Si le nouveau segment est <paramref name="EditingType" /> <b>msoEditingCorner,</b>cet argument spécifie la distance horizontale mesurée en points entre le coin supérieur gauche du document et le point de fin du nouveau segment. Si le <paramref name="EditingType" /> nouveau segment est <b>msoEditingAuto</b>, ne spécifiez pas de valeur pour cet argument.</param>
+        <param name="Y3">Facultatif <b>unique</b>. Si le nouveau segment est <paramref name="EditingType" /> <b>msoEditingCorner,</b>cet argument spécifie la distance verticale mesurée en points entre le coin supérieur gauche du document et le point de fin du nouveau segment. Si le <paramref name="EditingType" /> nouveau segment est <b>msoEditingAuto</b>, ne spécifiez pas de valeur pour cet argument.</param>
         <summary>Insère un nœud dans une forme libre.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -266,9 +250,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b>obligatoire. Nom ou numéro d'index de l'objet.</param>
-        <summary>Renvoie un seul objet d'une collection.</summary>
+        <param name="Index">Required, <b>objet</b>. Nom ou numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d’une collection.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -296,7 +279,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -325,14 +308,11 @@
         <Parameter Name="EditingType" Type="Microsoft.Office.Core.MsoEditingType" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire. Indique le nœud dont le type de modification doit être défini.</param>
-        <param name="EditingType">Requis <see cref="T:Microsoft.Office.Core.MsoEditingType" />. La propriété d'édition du sommet.</param>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire. Indique le nœud dont le type de modification doit être défini.</param>
+        <param name="EditingType">Obligatoire <see cref="T:Microsoft.Office.Core.MsoEditingType" /> . Indique le type de modification prévu pour le sommet.</param>
         <summary>Définit le type de modification du nœud spécifié.</summary>
-        <remarks>
-          <para>Si celui-ci est un point de contrôle d'un segment courbé, cette méthode définit le type de modification du nœud adjacent à celui qui joint deux segments. Notez que, selon le type de modification, cette méthode peut affecter la position des nœuds adjacents.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si celui-ci est un point de contrôle d'un segment courbé, cette méthode définit le type de modification du nœud adjacent à celui qui joint deux segments. Notez que, selon le type de modification, cette méthode peut modifier la position des nœuds adjacents.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPosition">
@@ -360,17 +340,12 @@
         <Parameter Name="Y1" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire. Indique le nœud à positionner.</param>
-        <param name="X1">
-          <b>Single</b>obligatoire. Position du nouveau nœud (en points) par rapport au coin supérieur gauche du document.</param>
-        <param name="Y1">
-          <b>Single</b>obligatoire. Position du nouveau nœud (en points) par rapport au coin supérieur gauche du document.</param>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire. Indique le nœud à positionner.</param>
+        <param name="X1">Argument de type <b>Single</b> obligatoire. Position du nouveau nœud (en points) par rapport au coin supérieur gauche du document.</param>
+        <param name="Y1">Argument de type <b>Single</b> obligatoire. Position du nouveau nœud (en points) par rapport au coin supérieur gauche du document.</param>
         <summary>Définit l’emplacement du nœud spécifié.</summary>
-        <remarks>
-          <para>Notez que, selon le type de modification du nœud, cette méthode peut affecter la position des nœuds adjacents.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Remarquez que, selon le type de modification du nœud, cette méthode peut modifier la position des nœuds adjacents.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSegmentType">
@@ -397,14 +372,11 @@
         <Parameter Name="SegmentType" Type="Microsoft.Office.Core.MsoSegmentType" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire. Indique le nœud dont le type de segment doit être déterminé.</param>
-        <param name="SegmentType">Requis <see cref="T:Microsoft.Office.Core.MsoSegmentType" />. Indique s'il s'agit d'un segment de droite ou de courbe. Peut être une de ces constantes <b>MsoSegmentType</b> :<b>MsoSegmentType</b><b>msoSegmentCurve</b><b>msoSegmentLine</b></param>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire. Indique le nœud dont le type de segment doit être déterminé.</param>
+        <param name="SegmentType">Obligatoire <see cref="T:Microsoft.Office.Core.MsoSegmentType" /> . Indique s'il s'agit d'un segment de droite ou de courbe. Peut être l’une de ces <b>constantes MsoSegmentType</b> :<b>MsoSegmentType</b><b>msoSegmentCurve</b><b>msoSegmentLine</b></param>
         <summary>Définit le type de segment qui suit le nœud spécifié.</summary>
-        <remarks>
-          <para>S'il s'agit d'un point de contrôle d'un segment de courbe, la méthode détermine le type de segment pour ce segment de courbe. Notez que le nombre de nœuds peut changer en raison de l'insertion et de l'effacement automatiques des nœuds adjacents.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>S'il s'agit d'un point de contrôle d'un segment de courbe, la méthode détermine le type de segment pour ce segment de courbe. Notez que le nombre de nœuds peut changer en raison de l'insertion et de l'effacement automatiques des nœuds adjacents.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

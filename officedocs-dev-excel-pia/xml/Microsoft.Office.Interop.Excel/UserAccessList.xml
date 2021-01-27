@@ -1,13 +1,5 @@
 <Type Name="UserAccessList" FullName="Microsoft.Office.Interop.Excel.UserAccessList">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="71430eea5453407e668e836ef8751c08d9fe2160" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577615" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UserAccessList : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="71430eea5453407e668e836ef8751c08d9fe2160" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009400" /></Metadata><TypeSignature Language="C#" Value="public interface UserAccessList : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UserAccessList implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.UserAccessList" />
   <TypeSignature Language="VB.NET" Value="Public Interface UserAccessList&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Excel.UserAccess" /> objets qui représentent l’accès des utilisateurs pour les plages protégées.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.AllowEditRange.Users" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRange" /> object pour renvoyer une collection <b>UserAccessList</b> .</para>
-      <para>Une fois qu’une collection <b>UserAccessList</b> est renvoyée, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Count" /> propriété pour déterminer le nombre d’utilisateurs qui ont accès à une plage protégée.</para>
-      <para></para>
-    </remarks>
+    <summary>Collection <see cref="T:Microsoft.Office.Interop.Excel.UserAccess" /> d’objets qui représentent l’accès utilisateur pour les plages protégées.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.AllowEditRange.Users" /> propriété de <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRange" /> l’objet pour renvoyer une collection <b>UserAccessList.</b></para>
+      <para>Une fois <b>qu’une collection UserAccessList</b> est renvoyée, vous pouvez utiliser la propriété pour déterminer le nombre d’utilisateurs qui ont accès à <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Count" /> une plage protégée.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,10 +90,8 @@
         <Parameter Name="AllowEdit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b>obligatoire. Nom de la liste d'accès des utilisateurs.</param>
-        <param name="AllowEdit">
-          <b>Boolean</b>obligatoire. <b>True</b> permet aux utilisateurs figurant dans la liste d'accès de modifier les plages modifiables d'une feuille de calcul protégée.</param>
+        <param name="Name">Argument de type <b>String</b> obligatoire. Nom de la liste d'accès des utilisateurs.</param>
+        <param name="AllowEdit"><b>Boolean</b> obligatoire. <b>True</b> permet aux utilisateurs figurant dans la liste d'accès de modifier les plages modifiables d'une feuille de calcul protégée.</param>
         <summary>Cette méthode ajoute une liste d'accès des utilisateurs. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.UserAccess" /> objet.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -158,7 +146,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Supprime tous les utilisateurs ayant accès à une plage protégée dans une feuille de calcul.</summary>
+        <summary>Supprime tous les utilisateurs associés à l’accès à une plage protégée dans une feuille de calcul.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,8 +208,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b>obligatoire. Nom ou numéro d'index de l'objet.</param>
+        <param name="Index">Required, <b>objet</b>. Nom ou numéro d'index de l'objet.</param>
         <summary>Cette propriété renvoie un seul objet d’une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

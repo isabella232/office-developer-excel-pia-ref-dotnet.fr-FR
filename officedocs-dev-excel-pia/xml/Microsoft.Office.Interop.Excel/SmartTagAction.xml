@@ -1,13 +1,5 @@
 <Type Name="SmartTagAction" FullName="Microsoft.Office.Interop.Excel.SmartTagAction">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0a10fef880f7ed0c7daae5414a8fa44a05aefdd9" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578077" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagAction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0a10fef880f7ed0c7daae5414a8fa44a05aefdd9" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010114" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagAction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagAction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SmartTagAction" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagAction" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente les actions qui peuvent être effectuées avec des balises actives.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.SmartTagActions.Item(System.Object)" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.SmartTagActions" /> collection pour renvoyer un objet <b>SmartTagAction</b> .</para>
-      <para>Une fois qu’un objet <b>SmartTagAction</b> a été renvoyé, vous pouvez activer une balise active pour annoter automatiquement des données à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.SmartTagAction.Execute" /> méthode.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.SmartTagActions.Item(System.Object)" /> propriété de la collection pour <see cref="T:Microsoft.Office.Interop.Excel.SmartTagActions" /> renvoyer un objet <b>SmartTagAction.</b></para>
+      <para>Une fois <b>qu’un objet SmartTagAction</b> a été renvoyé, vous pouvez activer une balise active pour annoter automatiquement les données à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.SmartTagAction.Execute" /> méthode.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -91,7 +81,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>objet</b> qui représente un contrôle ActiveX affiché dans le volet Office Actions de Document.</summary>
+        <summary>Renvoie un <b>Object</b> qui représente un contrôle ActiveX affiché dans le volet Des actions de document.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,7 +109,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,12 +140,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>type Boolean</b> qui indique si une case à cocher dans un document dynamique est sélectionnée.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de type <b>Boolean</b> qui indique si une case à cocher d'un document dynamique est sélectionnée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Définition de <b>CheckBoxState,</b> de la propriété sur <b>True</b> sélectionne la case à cocher. Définir cette propriété sur <b>False</b> désactive la case à cocher.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si la <b>propriété CheckboxState</b> a la valeur <b>True,</b> cochez la case. L'affectation de la valeur <b>False</b> à cette propriété désactive la case à cocher.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -183,11 +171,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -211,7 +197,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Active une action de balise active qui est associée au type de balise active dans une cellule.</summary>
+        <summary>Active une action de balise active associée au type de balise active sur une cellule.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,7 +227,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété définit ou renvoie une valeur de type <b>Boolean</b> qui indique si le contrôle de texte d'aide du document dynamique spécifié est développé ou réduit dans le volet Office Actions de document. La valeur <b>True</b> indique que le contrôle est développé. La valeur <b>False</b> indique que le contrôle est réduit.</summary>
+        <summary>Définit ou renvoie une valeur <b>de</b> booléen qui indique si le contrôle de texte d’aide du document intelligent spécifié est développé ou réduire dans le volet Des actions de document. La valeur <b>True</b> indique que le contrôle est développé. La valeur <b>False</b> indique que le contrôle est réduit.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -272,7 +258,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit ou renvoie une valeur <b>entière</b> qui représente le numéro d’index de l’élément sélectionné dans un contrôle de zone de liste de document dynamique.</summary>
+        <summary>Définit ou renvoie une <b>valeur de nombre integer</b> qui représente le numéro d’index de l’élément sélectionné dans un contrôle de zone de liste de document intelligent.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -302,12 +288,11 @@
       <Docs>
         <summary>Renvoie le nom de l'objet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le tableau suivant indique les valeurs de l’exemple de la propriété <b>Name</b> et les propriétés associées en fonction d’une source de données dont le nom unique « [Europe]. [France]. [Paris] » et « Paris » du nom de source de données non-OLAP avec l’élément.</para>
+        <remarks><para>Le tableau suivant montre des exemples de valeurs de la propriété <b>Name</b> et les propriétés associées d’une source de données avec le nom unique « [Europe]. [France]. [Paris] » et une source de données non-OLAP avec le nom d’élément « Paris ».</para>
           <list type="table">
             <item>
               <term>
-                <b>Légende</b>
+                <b>Caption</b>
               </term>
               <description>Paris</description>
               <description>Paris</description>
@@ -334,22 +319,21 @@
               <description>Paris</description>
             </item>
           </list>
-          <para>Lorsque vous spécifiez un index dans la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, vous pouvez utiliser la syntaxe présentée dans le tableau suivant.</para>
+          <para>Lorsque vous spécifiez un index dans la collection, vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> syntaxe indiquée dans le tableau suivant.</para>
           <list type="table">
             <item>
-              <term>Expression.PivotItems (« [Europe]. [ France]. [Paris] »)</term>
-              <description>expression. PivotItems("Paris")</description>
+              <term>Expression.PivotItems(« [Europe].[ France]. [Paris] »)</term>
+              <description>expression. PivotItems(« Paris »)</description>
             </item>
           </list>
-          <para>Lorsque vous utilisez la <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom d’index de texte comme indiqué dans le tableau suivant.</para>
+          <para>Lorsque vous utilisez la propriété pour référencer un membre spécifique d’une collection, vous pouvez utiliser le nom de l’index de texte comme <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> indiqué dans le tableau suivant.</para>
           <list type="table">
             <item>
               <term>[Europe]. [France]. [Paris]</term>
               <description>Paris</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -375,7 +359,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,7 +387,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur de <b>type Boolean</b> qui indique si un contrôle de document dynamique est actuellement affiché dans le volet Office Actions de Document.</summary>
+        <summary>Renvoie une <b>valeur de valeur</b> boolé générale qui indique si un contrôle de document intelligent est actuellement affiché dans le volet Des actions de document.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -434,7 +418,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit ou renvoie un <b>entier</b> qui représente le numéro d’index de l’élément sélectionné dans un groupe de contrôles de bouton de case d’option dans un document dynamique.</summary>
+        <summary>Définit ou renvoie un <b>nombre integer</b> qui représente le numéro d’index de l’élément sélectionné dans un groupe de contrôles de bouton d’radio dans un document intelligent.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -465,7 +449,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit ou renvoie une <b>chaîne</b> qui représente le texte dans un contrôle de zone de texte de document dynamique.</summary>
+        <summary>Définit ou renvoie une <b>chaîne</b> qui représente le texte dans un contrôle de la boîte de texte d’un document intelligent.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -493,11 +477,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSmartTagControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagControlType" /> qui représente le type de contrôle de Document dynamique affiché dans le volet Office Actions de Document.</summary>
+        <summary>Renvoie un type qui représente le type de contrôle Document intelligent affiché dans le <see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagControlType" /> volet Des actions de document.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagControlType" />peut être une des constantes <b>XlSmartTagControlType</b> suivantes :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlSmartTagControlType" /> peut être l’une des constantes <b>XlSmartTagControlType</b> suivantes :</para>
           <para>
             <b>xlSmartTagControlActiveX</b>
           </para>
@@ -540,8 +523,7 @@
           <para>
             <b>xlSmartTagControlTextbox</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Research" FullName="Microsoft.Office.Interop.Excel.Research">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9be1c3837417559efad8122d95ed57c6ba7ef60e" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584748" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Research" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9be1c3837417559efad8122d95ed57c6ba7ef60e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010513" /></Metadata><TypeSignature Language="C#" Value="public interface Research" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Research" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Research" />
   <TypeSignature Language="VB.NET" Value="Public Interface Research" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Représente les contrôles d'une requête de <b>Recherche</b>.</summary>
-    <remarks>
-      <para>Lorsque vous travaillez avec des requêtes de <b>recherche</b> , vous devez disposer d’un <b>GUID</b> existant qui correspond à une source de données en temps réel.  Si la source de données n’est pas disponible ou n’existe pas, une erreur d’exécution se produit.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Lorsque vous travaillez <b>avec des</b> requêtes de recherche, vous devez avoir un <b>GUID</b> existant qui correspond à une source de données en direct.  Si cette source de données est indisponible ou inexistante, une erreur d'exécution se produit.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,14 +49,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object qui représente l’application Microsoft Office Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
-          <para></para>
-        </remarks>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui représente  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> Microsoft Office’application Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de l’objet spécifié. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -92,14 +78,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un 32 bits <b>entier</b> qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Renvoie un <b>integer</b> 32 bits qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsResearchService">
@@ -125,9 +107,8 @@
         <Parameter Name="ServiceID" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ServiceID">
-          <b>Chaîne</b> qui spécifie le <b>GUID</b> qui identifie le service de recherche un objet obligatoire.</param>
-        <summary>Indique si le <b>GUID</b> spécifié dans le paramètre ServiceID correspond à un service actuellement configuré.</summary>
+        <param name="ServiceID">Chaîne <b>obligatoire</b> un objet qui spécifie le <b>GUID</b> qui identifie le service de recherche.</param>
+        <summary>Indique si le <b>GUID spécifié</b> dans le paramètre ServiceID correspond à un service actuellement configuré.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,9 +137,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,15 +167,13 @@
         <Parameter Name="LaunchQuery" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ServiceID">Requis en <b>chaîne</b> spécifie un <b>GUID</b> qui identifie le service de recherche.</param>
-        <param name="QueryString">Facultatif <b>objet</b> spécifie la chaîne de requête.</param>
-        <param name="QueryLanguage">Facultatif <b>objet</b> Spécifie le langage de requête de la chaîne de requête.</param>
-        <param name="UseSelection">Facultatif <b>Boolean</b><b>True</b> pour utiliser la sélection actuelle en tant que la chaîne de requête.  Ce paramètre remplace la <paramref name="QueryString" /> paramètre si la valeur. Valeur par défaut est <b>False</b>.</param>
-        <param name="LaunchQuery">Facultatif <b>Boolean</b><b>True</b> lance la requête. <b>False</b> affiche le volet Office recherche étendu pour la recherche du service de recherche.</param>
+        <param name="ServiceID">Chaîne <b>requise</b> Spécifie un <b>GUID</b> qui identifie le service de recherche.</param>
+        <param name="QueryString">Optional <b>Object</b> Spécifie la chaîne de requête.</param>
+        <param name="QueryLanguage">Optional <b>Object</b> Spécifie le langage de requête de la chaîne de requête.</param>
+        <param name="UseSelection">Valeur <b>Boolean</b><b>True facultative</b> pour utiliser la sélection actuelle comme chaîne de requête.  Cette valeur remplace le <paramref name="QueryString" /> paramètre s’il est paramétrable. Valeur par défaut est <b>False</b>.</param>
+        <param name="LaunchQuery">La <b>valeur Boolean</b><b>True</b> facultative lance la requête. <b>False</b> affiche le volet Des tâches recherche pour effectuer une recherche dans le service de recherche spécifié.</param>
         <summary>Spécifie une requête de recherche.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,12 +201,10 @@
         <Parameter Name="LanguageTo" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="LanguageFrom">Requis en <b>entier</b> spécifie la langue source à traduire.</param>
-        <param name="LanguageTo">Requis en <b>entier</b> spécifie la langue de la langue.</param>
+        <param name="LanguageFrom"><b>L’integer obligatoire</b> spécifie la langue à partir de la langue à traduire.</param>
+        <param name="LanguageTo"><b>L’integer obligatoire</b> spécifie la langauge vers qui traduire.</param>
         <summary>Définit les langues pour le service de traduction.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

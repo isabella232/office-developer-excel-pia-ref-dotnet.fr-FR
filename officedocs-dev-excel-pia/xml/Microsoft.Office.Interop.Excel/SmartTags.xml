@@ -1,13 +1,5 @@
 <Type Name="SmartTags" FullName="Microsoft.Office.Interop.Excel.SmartTags">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="aaa76f9e7acdca38792b61dc402b75d554b2ac7a" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579470" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTags : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="aaa76f9e7acdca38792b61dc402b75d554b2ac7a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010051" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTags : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTags implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SmartTags" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTags&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Excel.SmartTag" /> objets représentant les identificateurs assignés à chaque cellule.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>SmartTags</b> de la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection ou <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objet pour retourner une collection <b>SmartTag</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Collection <see cref="T:Microsoft.Office.Interop.Excel.SmartTag" /> d’objets qui représentent les identificateurs affectés à chaque cellule.</summary>
+    <remarks><para>Utilisez la <b>propriété SmartTags de</b> la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection ou de <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> l’objet pour renvoyer une collection <b>SmartTag.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -98,9 +88,8 @@
         <Parameter Name="SmartTagType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="SmartTagType">
-          <b>String</b>obligatoire. Type de balise active.</param>
-        <summary>Ajoute une balise active. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.SmartTag" /> objet.</summary>
+        <param name="SmartTagType">Argument de type <b>String</b> obligatoire. Type de balise active.</param>
+        <summary>Cette méthode ajoute une balise active. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.SmartTag" /> objet.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,11 +175,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

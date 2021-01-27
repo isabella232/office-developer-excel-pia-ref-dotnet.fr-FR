@@ -1,13 +1,5 @@
 <Type Name="Watch" FullName="Microsoft.Office.Interop.Excel.Watch">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="02fb5dd92bbc159aef8ba059d280b188213a0ab7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577608" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Watch" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="02fb5dd92bbc159aef8ba059d280b188213a0ab7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009302" /></Metadata><TypeSignature Language="C#" Value="public interface Watch" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Watch" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Watch" />
   <TypeSignature Language="VB.NET" Value="Public Interface Watch" />
@@ -29,14 +21,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente une plage qui est suivie lorsque la feuille de calcul est recalculée.</summary>
-    <remarks>
-      <para>L’objet <b>Watch</b> permet aux utilisateurs de vérifier la précision de leurs modèles et de résoudre les problèmes qu’ils rencontrent. L’objet <b>Watch</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Excel.Watches" /> collection.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.Watches.Add(System.Object)" /> méthode ou <see cref="P:Microsoft.Office.Interop.Excel.Watches.Item(System.Object)" /> propriété de la collection <b>Watches</b> pour renvoyer un objet <b>Watch</b> .</para>
-      <para>Vous pouvez spécifier pour supprimer des cellules de la fonctionnalité de suivi à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.Watches.Delete" /> méthode de la collection <b>Watches</b> .</para>
-      <para>Vous pouvez également spécifier pour supprimer toutes les cellules de la fenêtre Espion à l’aide de la méthode <b>Delete</b> de la collection <b>Watches</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Cet objet représente une plage qui est suivie lorsque la feuille de calcul est recalculée.</summary>
+    <remarks><para>L’objet <b>Watch</b> permet aux utilisateurs de vérifier la précision de leurs modèles et de résoudre les problèmes qu’ils rencontrent. <b>L’objet Watch</b> est membre de la <see cref="T:Microsoft.Office.Interop.Excel.Watches" /> collection.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.Watches.Add(System.Object)" /> méthode ou la propriété de la collection <see cref="P:Microsoft.Office.Interop.Excel.Watches.Item(System.Object)" /> <b>Watches</b> pour renvoyer un <b>objet Watch.</b></para>
+      <para>Vous pouvez spécifier de supprimer des cellules individuelles de l’installation d’observation à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.Watches.Delete" /> méthode de la collection <b>Watches.</b></para>
+      <para>Vous pouvez également spécifier de supprimer toutes les cellules de la fenêtre Watch à l’aide de la méthode <b>Delete</b> de la collection <b>Watches.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,11 +82,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -147,7 +135,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,7 +163,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nom unique qui identifie la plage qui est suivie lorsque la feuille de calcul est recalculée.</summary>
+        <summary>Renvoie le nom unique qui identifie la plage qui est suivi lorsque la feuille de calcul est recalculée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

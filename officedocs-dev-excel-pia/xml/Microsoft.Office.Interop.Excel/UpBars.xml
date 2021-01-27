@@ -1,13 +1,5 @@
 <Type Name="UpBars" FullName="Microsoft.Office.Interop.Excel.UpBars">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1799535564fd8f2becbda2fb64ca5ee08b7a5a44" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577587" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UpBars" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1799535564fd8f2becbda2fb64ca5ee08b7a5a44" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009435" /></Metadata><TypeSignature Language="C#" Value="public interface UpBars" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UpBars" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.UpBars" />
   <TypeSignature Language="VB.NET" Value="Public Interface UpBars" />
@@ -29,13 +21,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Cet objet représente les barres Hausse d’un groupe de graphiques. Les barres hausse connectent les points de la série 1 avec des valeurs supérieures de la dernière série du groupe de graphiques (lignes croissantes à partir de la série 1).</summary>
-    <remarks>
-      <para>Uniquement les groupes de ligne 2D contenant au moins deux séries peuvent posséder des barres. Cet objet n’est pas une collection. Il n’existe aucun objet qui représente un seul haut de la barre ; vous avez des barres activé pour tous les points d’un groupe de graphiques ou vous avez activées.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.UpBars" /> propriété permet de renvoyer l’objet <b>UpBars</b> .</para>
-      <para>Si le <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasUpDownBars" /> propriété a la <b>valeur False</b>, la plupart des propriétés de l’objet <b>UpBars</b> sont désactivées.</para>
-      <para></para>
-    </remarks>
+    <summary>Cet objet représente les barres Hausse d'un groupe de graphiques. Les barres haut relient les points de la série 1 avec des valeurs plus élevées sur la dernière série du groupe de graphiques (les lignes s’viennent de la série 1).</summary>
+    <remarks><para>Seuls les groupes graphiques en courbes 2D contenant au moins deux séries peuvent avoir des barres de différence Haut. Il n'existe pas d'objet représentant une seule ligne de projection. Il n’existe aucun objet qui représente une seule barre haut ; Les barres hausse sont soit désactivées pour tous les points d’un groupe de graphiques, soit désactivées.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.UpBars" /> propriété pour renvoyer <b>l’objet UpBars.</b></para>
+      <para>Si la <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasUpDownBars" /> propriété a la valeur <b>False,</b>la plupart des propriétés de <b>l’objet UpBars</b> sont désactivées.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,11 +112,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -181,7 +169,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> objet pour un graphique spécifié qui contient les propriétés pour le graphique de la mise en forme du remplissage.</summary>
+        <summary>Renvoie un objet pour un graphique spécifié qui contient les propriétés de mise en <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> forme de remplissage pour le graphique.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,10 +197,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objet. En lecture seule.</summary>
-        <value>
-          <b>ChartFormat</b>
-        </value>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> l’objet. En lecture seule.</summary>
+        <value><b>ChartFormat</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,7 +228,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object qui représente l’intérieur de l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objet qui représente l’intérieur de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -298,7 +284,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

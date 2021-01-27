@@ -1,13 +1,5 @@
 <Type Name="TableObject" FullName="Microsoft.Office.Interop.Excel.TableObject">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0e083aa43c5aa4dac5d58ee3a90f965dfd50e41a" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579582" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0e083aa43c5aa4dac5d58ee3a90f965dfd50e41a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009771" /></Metadata><TypeSignature Language="C#" Value="public interface TableObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TableObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableObject" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente un tableau de feuille de calcul établi à partir des données renvoyées à partir d’un modèle de PowerPivot.</summary>
+    <summary>Représente un tableau de feuille de calcul créé à partir de données renvoyées par un PowerPivot modèle.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -59,7 +51,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spécifie si les largeurs de colonne sont automatiquement ajustées pour l’ajuster au mieux chaque fois que vous actualisez la table de requête spécifiée. La valeur par défaut est <b>True</b>. <b>Boolean</b> (<b>bool</b> en c#) En lecture/écriture</summary>
+        <summary>Spécifie si la largeur des colonnes est automatiquement ajustée pour s’ajuster au mieux chaque fois que vous actualisez la table de requête spécifiée. La valeur par défaut est <b>True</b>. <b>Booléen</b> <b>(booléen</b> en C#) En lecture-écriture</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Excel. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,12 +107,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. En lecture seule <b>entier</b> (<b>int</b> en c#).</summary>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Integer en lecture seule</b> (<b>int</b> en C#).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Étant donné que l’objet a été créé dans Excel, cette propriété renvoie la valeur hexadécimale, 5843454C, qui représente la chaîne « XCEL ».</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Étant donné que l’objet a été créé dans Excel, cette propriété renvoie la valeur hexadécimale 5843454C, qui représente la chaîne « XCEL ».</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -144,7 +134,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Supprime l’objet <b>TableObject</b> .</summary>
+        <summary>Supprime <b>l’objet TableObject.</b></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,7 +161,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la cellule dans le coin supérieur gauche de la plage de destination de table de requête (plage où la table de requête qui en résulte sera passée). La plage de destination doit se trouver sur la feuille de calcul qui contient l’objet <b>TableObject</b> . <b>Plage</b>. Lecture seule</summary>
+        <summary>Renvoie la cellule située dans le coin supérieur gauche de la plage de destination de la table de requête (plage où sera placée la table de requête résultante). La plage de destination doit se trouver sur la feuille de calcul qui contient <b>l’objet TableObject.</b> <b>Plage</b>. Lecture seule</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,8 +192,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si l’utilisateur peut modifier la table de requête spécifiée. <b>False</b> si l’utilisateur ne peut actualiser la table de requête. <b>Boolean</b> (<b>bool</b> en c#) En lecture/écriture</summary>
+        <summary><b>True</b> si l’utilisateur peut modifier la table de requête spécifiée. <b>False</b> si l’utilisateur peut uniquement actualiser la table de requête. <b>Booléen</b> <b>(booléen</b> en C#) En lecture-écriture</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,7 +223,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spécifie si la table de requête peut être actualisée par l’utilisateur. <b>Boolean</b> (<b>bool</b> en c#) En lecture/écriture</summary>
+        <summary>Spécifie si la table de requête peut être actualisée par l’utilisateur. <b>Booléen</b> <b>(booléen</b> en C#) En lecture-écriture</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,7 +251,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spécifie si le nombre de lignes renvoyées par la dernière utilisation de la méthode Refresh est supérieur au nombre de lignes disponibles sur la feuille de calcul. <b>Boolean</b> (<b>bool</b> en c#) En lecture seule</summary>
+        <summary>Spécifie si le nombre de lignes renvoyées par la dernière utilisation de la méthode Refresh est supérieur au nombre de lignes disponibles dans la feuille de calcul. <b>Booléen</b> <b>(booléen</b> en C#) En lecture seule</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -290,7 +279,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet pour le <see cref="T:Microsoft.Office.Interop.Excel.TableObject" /> objet. Lecture seule</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet pour <see cref="T:Microsoft.Office.Interop.Excel.TableObject" /> l’objet. Lecture seule</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -318,7 +307,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>objet</b> qui représente l’objet parent de l’objet <b>TableObject</b> spécifié. En lecture seule.</summary>
+        <summary>Renvoie un <b>Object</b> qui représente l’objet parent de l’objet <b>TableObject</b> spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -349,7 +338,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spécifie si les informations de tri, filtrage et de disposition de colonne sont conservées lors de l’actualisation d’une table de requête. <b>False</b> est la valeur par défaut. <b>Boolean</b> (<b>bool</b> en c#) En lecture/écriture</summary>
+        <summary>Spécifie si les informations de tri, de filtrage et de disposition des colonnes sont conservées chaque fois qu’une table de requête est actualisée. La valeur par défaut est <b>False</b>. <b>Booléen</b> <b>(booléen</b> en C#) En lecture-écriture</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -380,8 +369,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si toute mise en forme communes aux cinq premières lignes de données est appliquée aux nouvelles lignes de données dans la table de requête. Mise en forme des cellules inutilisées. La propriété est <b>False</b> si la dernière mise en forme automatique appliquée à la table de requête est appliqué aux nouvelles lignes de données. La valeur par défaut est <b>True</b>. <b>Boolean</b> (<b>bool</b> en c#) En lecture/écriture</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si une mise en forme commune aux cinq premières lignes de données est appliquée aux nouvelles lignes de données de la table de requête. La mise en forme n'est pas appliquée aux cellules inutilisées. La propriété a la valeur <b>False</b> si la dernière mise en forme automatique, appliquée à la table de requête, est appliquée aux nouvelles lignes de données. La valeur par défaut est <b>True</b>. <b>Booléen</b> <b>(booléen</b> en C#) En lecture-écriture</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -407,7 +395,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cette méthode met à jour l’objet <b>TableObject</b> .</summary>
+        <summary>Cette méthode met à jour <b>l’objet TableObject.</b></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -438,7 +426,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCellInsertionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la manière dont les lignes sur la feuille de calcul spécifiée sont ajoutées ou supprimées pour recevoir le nombre de lignes dans un jeu d’enregistrements renvoyés par une requête. <see cref="T:Microsoft.Office.Interop.Excel.XlCellInsertionMode" />En lecture/écriture</summary>
+        <summary>Renvoie ou définit la façon dont les lignes de la feuille de calcul spécifiée sont ajoutées ou supprimées pour prendre en charge le nombre de lignes dans un jeu d’enregistrement renvoyé par une requête. <see cref="T:Microsoft.Office.Interop.Excel.XlCellInsertionMode" /> Lecture/écriture</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -466,7 +454,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente la zone de la feuille de calcul occupée par la table de requête spécifiée. Lecture seule</summary>
+        <summary>Renvoie un objet qui représente la zone de la feuille de calcul <see cref="T:Microsoft.Office.Interop.Excel.Range" /> occupée par la table de requête spécifiée. Lecture seule</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -497,7 +485,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spécifie si les numéros de ligne sont ajoutés en tant que la première colonne de la table de requête spécifiée. <b>Boolean</b> (<b>bool</b> en c#) En lecture/écriture</summary>
+        <summary>Spécifie si les numéros de ligne sont ajoutés en tant que première colonne de la table de requête spécifiée. <b>Booléen</b> <b>(booléen</b> en C#) En lecture-écriture</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -525,7 +513,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> utilisé par le <b>TableObject</b> pour se connecter au modèle. Le <see cref="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelConnection" /> propriété sur l’objet <b>WorkbookConnection</b> puis peut être utilisée que pour obtenir et modifier les DAX etc.. En lecture seule</summary>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> l’objet <b>tableObject</b> utilisé pour la connexion au modèle. La <see cref="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelConnection" /> propriété de <b>l’objet WorkbookConnection</b> peut ensuite être utilisée pour obtenir et modifier DAX, etc. En lecture seule</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

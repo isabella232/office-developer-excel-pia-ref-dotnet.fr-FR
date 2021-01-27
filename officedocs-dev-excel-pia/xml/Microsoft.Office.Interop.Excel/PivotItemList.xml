@@ -1,13 +1,5 @@
 <Type Name="PivotItemList" FullName="Microsoft.Office.Interop.Excel.PivotItemList">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="262aa442811c81a69cf1d71e4b2a4d52c05f86c0" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585161" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotItemList : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="262aa442811c81a69cf1d71e4b2a4d52c05f86c0" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010800" /></Metadata><TypeSignature Language="C#" Value="public interface PivotItemList : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotItemList implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotItemList" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotItemList&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> des objets dans le tableau croisé dynamique spécifié. Chaque objet <b>PivotItem</b> représente un élément dans un champ de tableau croisé dynamique.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> ou <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> object pour renvoyer une collection <b>PivotItemList</b> .</para>
-      <para>Une fois qu’une collection <b>PivotItemList</b> est renvoyée, vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Excel.PivotItemList.Item(System.Object)" /> méthode pour identifier une liste <b>PivotItem</b> particulière.</para>
-      <para></para>
-    </remarks>
+    <summary>Collection de tous les objets du tableau croisé <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> dynamique spécifié. Chaque objet <b>PivotItem</b> représente un élément dans un champ de tableau croisé dynamique.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> ou la propriété de <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> l’objet pour renvoyer une collection <b>PivotItemList.</b></para>
+      <para>Une fois <b>qu’une collection PivotItemList</b> est renvoyée, vous pouvez utiliser la méthode pour <see cref="M:Microsoft.Office.Interop.Excel.PivotItemList.Item(System.Object)" /> identifier une liste <b>PivotItem</b> particulière.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -99,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,7 +117,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nombre d'objets dans la collection. Valeur <b>Integer</b> en lecture seule.</summary>
+        <summary>Renvoie le nombre d'objets dans la collection. <b>Entier</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,12 +145,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C. En lecture seule <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé. Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C. En lecture <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -218,14 +206,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b>obligatoire. Nom ou numéro d'index de l'objet.</param>
-        <summary>Renvoie un seul objet d'une collection.</summary>
+        <param name="Index">Required, <b>objet</b>. Nom ou numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d’une collection.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Le nom de l’objet est la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" /> et <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" /> propriétés. Pour une source de données de traitement analytique en ligne (OLAP), la valeur est égale à la valeur de la <see cref="P:Microsoft.Office.Interop.Excel._OLEObject.SourceName" /> propriété. Autres sources de données, la valeur est égale à la valeur de la <see cref="P:Microsoft.Office.Interop.Excel._Application.Caption" /> propriété.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le nom de texte de l’objet est la valeur des <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" /> propriétés. Pour une source de données OLAP (Online Analytical Processing), la valeur est égale à la valeur de la <see cref="P:Microsoft.Office.Interop.Excel._OLEObject.SourceName" /> propriété. Pour les autres sources de données, la valeur est égale à la valeur de la <see cref="P:Microsoft.Office.Interop.Excel._Application.Caption" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -251,7 +236,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent de l’objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

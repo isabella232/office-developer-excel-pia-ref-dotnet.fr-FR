@@ -1,13 +1,5 @@
 <Type Name="RoutingSlip" FullName="Microsoft.Office.Interop.Excel.RoutingSlip">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572701" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RoutingSlip" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010492" /></Metadata><TypeSignature Language="C#" Value="public interface RoutingSlip" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RoutingSlip" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.RoutingSlip" />
   <TypeSignature Language="VB.NET" Value="Public Interface RoutingSlip" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente le bordereau de routage d’un classeur. Le bordereau de routage est utilisé pour envoyer un classeur via un système de courrier électronique.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> propriété permet de renvoyer l’objet <b>RoutingSlip</b> .</para>
-      <para>L’objet <b>RoutingSlip</b> n’existe pas et ne peut pas être renvoyé si la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> propriété pour le classeur a la <b>valeur True</b>.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> propriété pour renvoyer <b>l’objet RoutingSlip.</b></para>
+      <para><b>L’objet RoutingSlip</b> n’existe pas et ne peut pas être renvoyé, sauf si la propriété du <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> manuel a la valeur <b>True</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,11 +80,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delivery">
@@ -123,12 +111,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la méthode de remise de routage. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> constantes : <b>xlOneAfterAnother</b> ou <b>xlAllAtOnce</b>.</summary>
+        <summary>Renvoie ou définit la méthode de distribution utilisée pour le routage. Peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> constantes suivantes : <b>xlOneAfterAnother</b> ou <b>xlAllAtOnce</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous ne pouvez pas définir cette propriété pendant la procédure de routage.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Vous ne pouvez pas définir cette propriété pendant la procédure de routage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -157,7 +143,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le texte du message du bordereau de routage. Ce texte est utilisé comme corps de texte des messages électroniques qui sont utilisés pour router le classeur.</summary>
+        <summary>Cette propriété renvoie ou définit le texte du message relatif au bordereau de routage. Ce texte sert de corps textuel des messages électroniques utilisés pour distribuer le classeur.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,7 +171,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,14 +205,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Facultatif <b>Object</b>. Le destinataire. Si cet argument n’est pas spécifié, la propriété <b>Recipients</b> renvoie (ou peut être défini sur) un tableau qui contient tous les destinataires.</param>
-        <summary>Cette propriété renvoie ou définit les destinataires du bordereau de routage.</summary>
+        <param name="Index">Objet <b>facultatif</b>. Destinataire. Si cet argument n'est pas spécifié, la propriété <b>Recipients</b> renvoie (ou peut être définie pour renvoyer) un tableau qui contient tous les destinataires.</param>
+        <summary>Renvoie ou définit les destinataires du bordereau de routage.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L'ordre de la liste des destinataires définit l'ordre de distribution si l'option de distribution de routage a la valeur <b>xlOneAfterAnother</b>.</para>
+        <remarks><para>L'ordre de la liste des destinataires définit l'ordre de distribution si l'option de distribution de routage a la valeur <b>xlOneAfterAnother</b>.</para>
           <para>Si un bordereau de routage est en cours de traitement, seuls les destinataires qui n'ont pas encore reçu et routé le document sont renvoyés ou définis.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -250,12 +234,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Rétablit le bordereau de routage afin qu’une nouvelle règle de routage peut être lancée avec le même bordereau (en utilisant les mêmes informations liste destinataires de remise).</summary>
+        <summary>Cette méthode rétablit le bordereau de routage de façon à ce qu'une nouvelle distribution puisse commencer avec le même bordereau (en utilisant la même liste de destinataires et les mêmes informations de distribution).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Le routage doit être effectué avant d’utiliser cette méthode. À un autre moment à l’aide de cette méthode provoque une erreur.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Vous ne pouvez utiliser cette méthode que lorsque la distribution est terminée. En d'autres circonstances, elle génère une erreur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnWhenDone">
@@ -284,8 +266,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le classeur est renvoyé à l’expéditeur lorsque le routage est terminé.</summary>
+        <summary><b>True</b> si le classeur est renvoyé à l’expéditeur au terme du routage.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -313,7 +294,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlRoutingSlipStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indique l’état du bordereau de routage.</summary>
+        <summary>Cette propriété indique l'état du bordereau de routage.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -344,12 +325,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le sujet pour l’enveloppe ou le bordereau de routage.</summary>
+        <summary>Cette propriété renvoie ou définit le sujet pour l'enveloppe ou le bordereau de routage.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’objet de la <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> objet est utilisé comme objet pour les messages électroniques employés pour router le classeur.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>L’objet de <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> l’objet est utilisé comme objet pour les messages électroniques utilisés pour router le workbook.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackStatus">
@@ -378,13 +357,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le suivi est activé pour le bordereau de routage.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le suivi du bordereau de routage est activé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous ne pouvez pas définir cette propriété pendant la procédure de routage.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Vous ne pouvez pas définir cette propriété pendant la procédure de routage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="VPageBreaks" FullName="Microsoft.Office.Interop.Excel.VPageBreaks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9f1ccf11f0bbaf483e28c650605da8bce1726a26" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581955" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface VPageBreaks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9f1ccf11f0bbaf483e28c650605da8bce1726a26" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009365" /></Metadata><TypeSignature Language="C#" Value="public interface VPageBreaks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract VPageBreaks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.VPageBreaks" />
   <TypeSignature Language="VB.NET" Value="Public Interface VPageBreaks&#xA;Implements IEnumerable" />
@@ -34,14 +26,12 @@
   </Attributes>
   <Docs>
     <summary>Collection de sauts de page verticaux au sein de la zone d'impression. Chaque saut de page vertical est représenté par un <see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" /> objet.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.VPageBreaks" /> propriété pour renvoyer la collection <b>VPageBreaks</b> . Utiliser le <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> pour ajouter un saut de page vertical.</para>
-      <para>Si vous ajoutez un saut de page qui ne croise pas la zone d’impression, le nouvel objet <b>VPageBreak</b> n’apparaît pas dans la collection <b>VPageBreaks</b> de la zone d’impression. Le contenu de la collection peut changer si la zone d’impression est redimensionnée ou redéfinie.</para>
-      <para>Lors de la <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Application" /> propriété, <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Count" /> propriété, <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Creator" /> propriété, <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Item(System.Int32)" /> propriété, <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Parent" /> propriété ou <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> méthode est utilisée conjointement avec la propriété <b>VPageBreaks</b> :</para>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.VPageBreaks" /> propriété pour renvoyer la collection <b>VPageBreaks.</b> Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> méthode pour ajouter un saut de page vertical.</para>
+      <para>Si vous ajoutez un saut de page qui ne coupe pas la zone d’impression, le nouvel objet <b>VPageBreak</b> n’apparaît pas dans la collection <b>VPageBreaks</b> de la zone d’impression. Le contenu de la collection est susceptible d’être modifié si vous redimensionnez ou redéfinissez la zone d’impression.</para>
+      <para>Lorsque la propriété, la propriété, la propriété, la propriété, la propriété ou la méthode est utilisée conjointement avec la <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Application" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Count" /> propriété <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Creator" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Item(System.Int32)" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Parent" /> <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> <b>VPageBreaks</b> :</para>
       <para>Pour une zone d’impression automatique, la propriété <b>VPageBreaks</b> s’applique uniquement aux sauts de page de la zone d’impression.</para>
-      <para>Pour une zone d’impression définies par l’utilisateur de la même plage, la propriété <b>VPageBreaks</b> s’applique à tous les sauts de page.</para>
-      <para></para>
-    </remarks>
+      <para>Pour une zone d’impression personnalisée de la même plage, la propriété <b>VPageBreaks</b> s’applique à tous les sauts de page.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,8 +92,7 @@
         <Parameter Name="Before" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">
-          <b>Objet</b>obligatoire. A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet. La plage vers la gauche de laquelle le nouveau saut de page sera ajouté.</param>
+        <param name="Before">Required, <b>objet</b>. Objet <see cref="T:Microsoft.Office.Interop.Excel.Range" />. Plage à gauche de laquelle le nouveau saut de page sera ajouté.</param>
         <summary>Cette méthode ajoute un saut de page vertical. Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" /> objet.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -132,7 +121,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -190,11 +179,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -255,9 +242,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b>obligatoire. Nom ou numéro d'index de l'objet.</param>
-        <summary>Renvoie un seul objet d'une collection.</summary>
+        <param name="Index">Required, <b>objet</b>. Nom ou numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d’une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

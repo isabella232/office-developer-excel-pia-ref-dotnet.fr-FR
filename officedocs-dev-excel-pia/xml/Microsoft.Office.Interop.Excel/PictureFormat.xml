@@ -1,13 +1,5 @@
 <Type Name="PictureFormat" FullName="Microsoft.Office.Interop.Excel.PictureFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="87aeae7792de72516fdcdfd36f8f7269365bfbb4" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576229" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PictureFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="87aeae7792de72516fdcdfd36f8f7269365bfbb4" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010996" /></Metadata><TypeSignature Language="C#" Value="public interface PictureFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PictureFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PictureFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface PictureFormat&#xA;Implements _IMsoDispObj" />
@@ -31,11 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet contient les propriétés et méthodes qui s’appliquent aux images et aux objets OLE.</summary>
-    <remarks>
-      <para>Le <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> objet contient les propriétés et méthodes qui s’appliquent aux objets OLE liés uniquement. Le <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> objet contient les propriétés et méthodes qui s’appliquent aux objets OLE liés ou non.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Shape.PictureFormat" /> propriété pour renvoyer un objet <b>PictureFormat</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" />L’objet contient des propriétés et des méthodes qui s’appliquent uniquement aux objets OLE liés. L’objet contient des propriétés et des méthodes qui s’appliquent aux objets <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> OLE, qu’ils soient liés ou non.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Shape.PictureFormat" /> propriété pour renvoyer un <b>objet PictureFormat.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,7 +116,7 @@
         <ReturnType>Microsoft.Office.Core.MsoPictureColorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type de transformation de couleur appliquée à l’image spécifiée ou l’objet OLE.</summary>
+        <summary>Renvoie ou définit le type de transformation de couleur appliquée à l’image ou à l’objet OLE spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -190,11 +180,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Crop">
@@ -220,12 +208,10 @@
         <ReturnType>Microsoft.Office.Core.Crop</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un <see cref="T:Microsoft.Office.Core.Crop" /> objet qui représente les paramètres de rognage spécifié <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> objet.</summary>
-        <value>A <see cref="T:Microsoft.Office.Core.Crop" /> objet qui représente les paramètres de rognage spécifié <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> objet.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtient <see cref="T:Microsoft.Office.Core.Crop" /> un objet qui représente les paramètres de rognage de l’objet <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> spécifié.</summary>
+        <value>Objet <see cref="T:Microsoft.Office.Core.Crop" /> qui représente les paramètres de rognage de l’objet <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> spécifié.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropBottom">
@@ -254,12 +240,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nombre de points qui sont retirés du bas de l’image spécifiée ou l’objet OLE.</summary>
+        <summary>Renvoie ou définit le nombre de points qui sont rognés de la partie inférieure de l’image ou de l’objet OLE spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le rognage est calculé selon la taille d'origine de l'image. Par exemple, si vous insérez une image ayant une hauteur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une hauteur de 200 points et affectez ensuite la valeur 50 à la propriété <b>CropBottom</b>, 100 points (et non 50) seront rognés de la partie inférieure de votre image.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le rognage est calculé par rapport à la taille d'origine de l'image. Par exemple, si vous insérez une image ayant une hauteur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une hauteur de 200 points et affectez ensuite la valeur 50 à la propriété <b>CropBottom</b>, 100 points (et non 50) seront rognés de la partie inférieure de votre image.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropLeft">
@@ -290,10 +274,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le nombre de points qui sont rognés du côté gauche de l'image spécifiée ou l'objet OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le rognage est calculé selon la taille d'origine de l'image. Par exemple, si vous insérez une image ayant une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une largeur de 200 points, et affectez la valeur 50 à la propriété <b>CropLeft</b>, 100 points (et non 50) seront rognés du côté gauche de votre image.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le rognage est calculé par rapport à la taille d'origine de l'image. Par exemple, si vous insérez une image ayant une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une largeur de 200 points, et affectez la valeur 50 à la propriété <b>CropLeft</b>, 100 points (et non 50) seront rognés du côté gauche de votre image.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropRight">
@@ -324,10 +306,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le nombre de points qui sont retirés de la partie droite de l'image spécifiée ou l'objet OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le rognage est calculé selon la taille d'origine de l'image. Par exemple, si vous insérez une image avec une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une largeur de 200 points et affectez la valeur 50 à la propriété <b>CropRight</b>, 100 points (et non 50) seront rognés du côté droit de votre image.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le rognage est calculé par rapport à la taille d'origine de l'image. Par exemple, si vous insérez une image avec une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une largeur de 200 points et affectez la valeur 50 à la propriété <b>CropRight</b>, 100 points (et non 50) seront rognés du côté droit de votre image.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropTop">
@@ -358,10 +338,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le nombre de points qui sont retirés du haut de l'image spécifiée ou l'objet OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le rognage est calculé selon la taille d'origine de l'image. Par exemple, si vous insérez une image avec une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une hauteur de 200 points et affectez la valeur 50 à la propriété <b>CropTop</b>, 100 points (et non 50) seront rognés de la partie supérieure de votre image.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Le rognage est calculé par rapport à la taille d'origine de l'image. Par exemple, si vous insérez une image avec une largeur d'origine de 100 points, redimensionnez-la de façon à ce qu'elle atteigne une hauteur de 200 points et affectez la valeur 50 à la propriété <b>CropTop</b>, 100 points (et non 50) seront rognés de la partie supérieure de votre image.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementBrightness">
@@ -387,14 +365,11 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>obligatoire. Spécifie dans quelle mesure pour modifier la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Brightness" /> propriété de l’image. Une valeur positive rend l’image plus sombre. une valeur négative rend l’image plus sombre.</param>
-        <summary>Modifie la luminosité de l'image en fonction de la valeur indiquée.</summary>
-        <remarks>
-          <para>Pour définir la luminosité absolue d'une image, utilisez la propriété <b>Brightness</b>.</para>
-          <para>Vous ne pouvez pas régler la luminosité d'une image au-delà de la limite supérieure ou inférieure de la propriété <b>Brightness</b>. Par exemple, si la propriété <b>Brightness</b> est initialement définie à 0,9 et que vous spécifiez 0,3 pour le <paramref name="Increment" /> argument, le niveau de luminosité résultant sera 1.0, qui est la limite supérieure de la propriété <b>Brightness</b> , au lieu de 1,2.</para>
-          <para></para>
-        </remarks>
+        <param name="Increment">Argument de type <b>Single</b> obligatoire. Spécifie la valeur à modifier pour la propriété <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Brightness" /> de l’image. Une valeur positive rend l’image plus claire et inversement, une valeur négative la rend plus sombre.</param>
+        <summary>Modifie la luminosité de l'image selon la valeur spécifiée.</summary>
+        <remarks><para>Pour définir la luminosité absolue d'une image, utilisez la propriété <b>Brightness</b>.</para>
+          <para>Vous ne pouvez pas régler la luminosité d'une image au-delà de la limite supérieure ou inférieure de la propriété <b>Brightness</b>. Par exemple, si la propriété <b>Brightness</b> est initialement définie sur 0,9 et que vous spécifiez 0,3 pour l’argument, le niveau de luminosité résultant sera 1,0, qui est la limite supérieure de la propriété Brightness, au lieu de <paramref name="Increment" /> 1,2. <b></b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementContrast">
@@ -420,14 +395,11 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>obligatoire. Spécifie dans quelle mesure pour modifier la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Contrast" /> propriété de l’image. Une valeur positive augmente le contraste ; une valeur négative réduit le contraste.</param>
-        <summary>Modifie le contraste de l'image en fonction de la valeur indiquée.</summary>
-        <remarks>
-          <para>Utilisez la propriété <b>Contrast</b> pour définir le contraste absolu de l'image.</para>
-          <para>Vous ne pouvez pas ajuster le contraste d'une image au-delà de la limite supérieure ou inférieure de la propriété <b>Contrast</b>. Par exemple, si la propriété <b>Contrast</b> est initialement définie à 0,9 et que vous spécifiez 0,3 pour le <paramref name="Increment" /> argument, le niveau de contraste qui en résulte sera 1.0, qui est la limite supérieure de la propriété <b>Contrast</b> , au lieu de 1,2.</para>
-          <para></para>
-        </remarks>
+        <param name="Increment">Argument de type <b>Single</b> obligatoire. Spécifie la valeur à modifier pour la propriété <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Contrast" /> de l’image. Une valeur positive augmente le contraste ; une valeur négative réduit le contraste.</param>
+        <summary>Modifie le contraste de l'image selon la valeur spécifiée.</summary>
+        <remarks><para>Utilisez la propriété <b>Contrast</b> pour définir le contraste absolu de l'image.</para>
+          <para>Vous ne pouvez pas ajuster le contraste d'une image au-delà de la limite supérieure ou inférieure de la propriété <b>Contrast</b>. Par exemple, si la propriété <b>Contrast</b> est initialement définie sur 0,9 et que vous spécifiez 0,3 pour l’argument, le niveau de contraste résultant sera 1,0, qui est la limite supérieure de la propriété Contrast, au lieu de <paramref name="Increment" /> 1,2. <b></b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -453,7 +425,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
+        <summary>Renvoie l’objet parent pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -489,11 +461,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la couleur transparente de l'image spécifiée comme une valeur rouge-vert-bleu (RVB). S'applique uniquement aux bitmaps.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour cette propriété prenne effet, la <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparentBackground" /> propriété doit être définie sur <b>True</b>.</para>
-          <para>Si vous souhaitez être en mesure de voir, à travers les parties transparentes de l’image, tous les objets situés derrière l’image, vous devez définir la <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> propriété de l’image <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objet sur <b>False</b>. Si votre image a une couleur transparente et que la propriété <b>Visible</b> de l'objet <b>FillFormat</b> a la valeur <b>True</b>, remplissage de l'image sera visible à travers la couleur transparente, mais les objets situés derrière l'image sont obscurcis.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Pour que cette propriété prenne effet, la <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparentBackground" /> propriété doit être définie sur <b>True</b>.</para>
+          <para>Si vous souhaitez être en mesure de voir à travers les parties transparentes de l’image jusqu’aux objets derrière l’image, vous devez définir la propriété de <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> l’objet de l’image <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> sur <b>False</b>. Si votre image a une couleur transparente et que la propriété <b>Visible</b> de l'objet <b>FillFormat</b> a la valeur <b>True</b>, remplissage de l'image sera visible à travers la couleur transparente, mais les objets situés derrière l'image sont obscurcis.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TransparentBackground">
@@ -522,13 +492,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit si le format de l’image spécifiée utilise un arrière-plan transparent.</summary>
+        <summary>Renvoie ou définit si le format d’image spécifié utilise un arrière-plan transparent.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparencyColor" /> propriété pour définir la couleur transparente. S'applique uniquement aux bitmaps.</para>
-          <para>Si vous souhaitez être en mesure de voir, à travers les parties transparentes de l’image, tous les objets situés derrière l’image, vous devez définir la <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> propriété de l’image <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objet sur <b>False</b>. Si votre image a une couleur transparente et que la propriété <b>Visible</b> de l'objet <b>FillFormat</b> a la valeur <b>True</b>, remplissage de l'image sera visible à travers la couleur transparente, mais les objets situés derrière l'image sont obscurcis.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparencyColor" /> propriété pour définir la couleur transparente. S'applique uniquement aux bitmaps.</para>
+          <para>Si vous souhaitez être en mesure de voir à travers les parties transparentes de l’image jusqu’aux objets derrière l’image, vous devez définir la propriété de <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> l’objet de l’image <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> sur <b>False</b>. Si votre image a une couleur transparente et que la propriété <b>Visible</b> de l'objet <b>FillFormat</b> a la valeur <b>True</b>, remplissage de l'image sera visible à travers la couleur transparente, mais les objets situés derrière l'image sont obscurcis.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

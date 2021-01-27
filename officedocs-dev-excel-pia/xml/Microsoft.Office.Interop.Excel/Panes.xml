@@ -1,13 +1,5 @@
 <Type Name="Panes" FullName="Microsoft.Office.Interop.Excel.Panes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7d60437390854068b5400256a6be386c545e5280" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578091" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Panes" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7d60437390854068b5400256a6be386c545e5280" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011073" /></Metadata><TypeSignature Language="C#" Value="public interface Panes" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Panes" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Panes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Panes" />
@@ -29,14 +21,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> les objets dans la fenêtre spécifiée.</summary>
-    <remarks>
-      <para>Les objets 
+    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> objets affichés dans la fenêtre spécifiée.</summary>
+    <remarks><para>Les objets 
         <b>Pane</b> existent uniquement dans les feuilles de calculs et les feuilles macro Microsoft Excel 4.0.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Excel.Window.Panes" /> propriété permet de renvoyer la collection <b>Panes</b> .</para>
-      <para>Utilisez <b>Panes</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index volet, pour renvoyer un seul objet <b>Pane</b> .</para>
-      <para></para>
-    </remarks>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Window.Panes" /> propriété pour renvoyer la collection <b>Panes.</b></para>
+      <para>Utilisez <b>Panes</b>( ), où est le numéro d’index du volet, pour <paramref name="index" /> <paramref name="index" /> renvoyer un <b>seul objet Pane.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,11 +145,9 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL qui équivaut au nombre hexadécimal 5843454C.</para>
-          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Excel possède le code créateur XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
+          <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -188,9 +176,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire. Numéro d'index de l'objet.</param>
-        <summary>Renvoie un seul objet d'une collection.</summary>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire. Numéro d'index de l'objet.</param>
+        <summary>Renvoie un seul objet d’une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
