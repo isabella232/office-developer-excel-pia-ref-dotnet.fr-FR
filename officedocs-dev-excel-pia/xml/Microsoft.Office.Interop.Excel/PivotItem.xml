@@ -1,5 +1,5 @@
 <Type Name="PivotItem" FullName="Microsoft.Office.Interop.Excel.PivotItem">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fb2cfd5e547820789be4ff24b8428ca8e43d853e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010821" /></Metadata><TypeSignature Language="C#" Value="public interface PivotItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0fa60cb05f910409bcb09c3e775c691e4c677edac055a0249427c92272003293" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508950" /></Metadata><TypeSignature Language="C#" Value="public interface PivotItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotItem" />
@@ -86,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -249,7 +249,7 @@
       <Parameters />
       <Docs>
         <summary>Supprime l'objet.</summary>
-        <remarks><para>Vous pouvez supprimer des champs de cube uniquement si vous avez créé les champs de cube vous-même à l’aide de <see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" /> la méthode avec <paramref name="xlCalculatedSet" /> l’argument.</para>
+        <remarks><para>Vous pouvez supprimer des champs de cube uniquement si vous avez créé vous-même les champs de cube à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" /> méthode avec <paramref name="xlCalculatedSet" /> l’argument.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -279,7 +279,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si l’indicateur du champ de tableau croisé dynamique ou de l’élément de tableau croisé dynamique spécifié présente un état développé (ou visible). <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary><b>True</b> si l’indicateur du champ de tableau croisé dynamique ou de l’élément de tableau croisé dynamique spécifié présente un état développé (ou visible). Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Vous ne pouvez utiliser cette propriété que pour les sources de données OLAP.</para>
           <para>Vous ne pouvez pas définir cette propriété si le champ ou l'élément est masqué.</para>
@@ -311,7 +311,7 @@
       <Docs>
         <param name="Field">To be added.</param>
         <summary>La <see cref="M:Microsoft.Office.Interop.Excel.PivotItem.DrillTo(System.String)" /> méthode prend en charge l’exploration vers un . <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /></summary>
-        <remarks><para>Pour les sources de données OLAP, l’analyse doit se trouver dans la même hiérarchie que la hiérarchie en cours d’analyse ou, si plusieurs hiérarchies d’attributs sont placées les unes à côté des autres sur des lignes ou des colonnes, l’analyse doit être l’une des hiérarchies d’attributs les unes à côté des autres ; aucune hiérarchie d’utilisateurs ne peut être placée entre l’objet d’analyse et <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> l’analyse. <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />  Si ces conditions ne sont pas remplies, une erreur d'exécution est renvoyée.</para>
+        <remarks><para>Pour les sources de données OLAP, l’analyse doit se trouver dans la même hiérarchie que la hiérarchie en cours d’analyse ou, si plusieurs hiérarchies d’attributs sont placées les unes à côté des autres sur des lignes ou des colonnes, l’analyse doit être l’une des hiérarchies d’attributs les unes à côté des autres ; aucune hiérarchie utilisateur ne peut être placée entre l’objet d’analyse et <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> l’analyse. <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />  Si ces conditions ne sont pas remplies, une erreur d'exécution est renvoyée.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -344,7 +344,7 @@
         <summary>Cette propriété renvoie ou définit la formule de l'objet dans une notation de style A1 et dans la langue de la macro. En lecture/écriture, <b>chaîne</b>.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
-          <para>Si la cellule contient une constante, la propriété la renvoie. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule en tant que chaîne dans le même format que celui qui doit s'afficher dans la barre de formule (y compris le signe égal).</para>
+          <para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule en tant que chaîne dans le même format que celui qui doit s'afficher dans la barre de formule (y compris le signe égal).</para>
           <para>Si vous affectez une date à la formule d'une cellule, Microsoft Excel vérifie si la cellule est déjà dotée de l'un des formats numériques ou de date. Si tel n'est pas le cas, Microsoft Excel lui affecte le format de date numérique par défaut.</para>
           <para>S'il s'agit d'une plage à une ou deux dimensions, vous pouvez désigner la formule comme un tableau Visual Basic possédant les mêmes dimensions. De même, vous pouvez inclure la formule dans un tableau Visual Basic.</para>
           <para>Le fait de définir la formule pour une plage comprenant plusieurs cellules insère cette formule dans la totalité des cellules de la plage.</para>
@@ -462,7 +462,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -519,7 +519,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si l’élément spécifié est visible parce qu’un de ses parents affiche les détails. <b>False</b> si l’élément spécifié n’est pas visible car un de ses parents masque les détails. Cette propriété n’est disponible que si l’élément est groupé. <b>Boolean</b> (en lecture seule).</summary>
+        <summary><b>True</b> si l’élément spécifié est visible parce qu’un de ses parents affiche les détails. <b>False</b> si l’élément spécifié n’est pas visible car un de ses parents masque les détails. Cette propriété n’est disponible que si l’élément est groupé. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
           <para> </para></remarks>
@@ -718,7 +718,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit une valeur de type <b>String</b> qui spécifie des formules avec une mise en forme Anglais standard (États-Unis). En lecture/écriture</summary>
+        <summary>Renvoie ou définit une valeur de type <b>String</b> qui spécifie des formules avec une mise en forme Anglais standard (États-Unis). En lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>La propriété <b>StandardFormula</b> affecte principalement les noms d'éléments avec un format de date ou de nombre. Elle offre un moyen de spécifier ou de demander une formule pour un élément calculé donné.</para>
           <para>La <b>propriété StandardFormula</b> est « internationale », contrairement à <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Formula" /> la propriété.</para>
@@ -785,7 +785,7 @@
         <summary>Cette propriété détermine si l'objet est visible. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>La propriété <b>Visible</b> d'un élément de tableau croisé dynamique a la valeur <b>True</b> si cet élément apparaît actuellement dans le tableau.</para>
-          <para>Si vous définissez la <b>propriété Visible</b> d’un nom sur <b>False,</b>ce nom n’apparaîtra pas dans la boîte de dialogue Définir le nom.</para>
+          <para>Si vous définissez la <b>propriété Visible</b> d’un nom sur <b>False</b>, ce nom n’apparaîtra pas dans la boîte de dialogue Définir le nom.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

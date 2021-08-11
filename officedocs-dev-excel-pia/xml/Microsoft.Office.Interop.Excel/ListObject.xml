@@ -1,5 +1,5 @@
 <Type Name="ListObject" FullName="Microsoft.Office.Interop.Excel.ListObject">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1bb3f266b1d484c480fc364acfdb40b99ff98c94" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999930" /></Metadata><TypeSignature Language="C#" Value="public interface ListObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="12f6472b6bd5b554fef2d2f68d007059b90fb9312a991dd2c24941d07c7f55f8" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506406" /></Metadata><TypeSignature Language="C#" Value="public interface ListObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListObject" />
@@ -143,7 +143,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +202,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le commentaire associé à l'objet liste. <b>String</b> en lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit le commentaire associé à l'objet liste. Type de données <b>String</b> en lecture-écriture.
+
+</summary>
         <value><b>String</b></value>
         <remarks><para>Le texte de commentaire ne doit pas dépasser 255 caractères.</para>
           <para> </para></remarks>
@@ -346,7 +348,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si la fenêtre, la feuille de calcul ou l’objet spécifié est affiché de droite à gauche plutôt que de <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> gauche à droite.</summary>
+        <summary>Détermine si la fenêtre, la feuille de calcul ou l’objet spécifié est affiché de droite à gauche et non <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> de gauche à droite.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété renvoie la valeur <b>True</b> si la fenêtre, la feuille de calcul ou l’objet <b>ListObject</b> spécifié est affiché de droite à gauche plutôt que de gauche à droite et <b>False</b> si l’objet est affiché de gauche à droite.</para>
           <para> </para></remarks>
@@ -428,7 +430,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui représente la ligne Insert, le <see cref="T:Microsoft.Office.Interop.Excel.Range" /> caser, d’un objet <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente la ligne Insert, le caser, d’un objet <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> spécifié.</summary>
         <value>To be added.</value>
         <remarks><para>Si l'option Insérer une ligne n'est pas visible, car la liste est inactive, l'objet <b>Nothing</b> est renvoyé.</para>
           <para> </para></remarks>
@@ -576,10 +578,10 @@
       <Docs>
         <param name="Target">Required, <b>objet</b>. Contient un <b>tableau de</b> <b>chaînes.</b> Le tableau suivant décrit les éléments de ce tableau :Element#Contents0URL de SharePoint server1ListName (Nom complet)2Description de la liste. Facultatif.</param>
         <param name="LinkSource"><b>Boolean</b> obligatoire.</param>
-        <summary>Publie <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> l’objet sur un serveur exécutant Microsoft Windows SharePoint Services.</summary>
+        <summary>Publie l’objet sur un serveur qui exécute <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Microsoft Windows SharePoint Services.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Cette propriété renvoie une valeur S<b>tring</b> qui est l’URL de la liste publiée sur le site SharePoint.</para>
-          <para>Si l’objet n’est pas actuellement lié à une liste sur un site SharePoint, la définition sur True crée une liste sur le <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> <paramref name="LinkSource" /> site SharePoint spécifié. <b></b> Si <b>l’objet ListObject</b> est actuellement lié à un site SharePoint, la définition de l’argument Sur True remplacera le lien existant (vous ne pouvez lier la liste qu’à un <paramref name="LinkSource" /> site SharePoint). <b></b> Si <b>l’objet ListObject</b> n’est pas lié actuellement, la définition sur False permet de ne pas lier l’objet <paramref name="LinkSource" /> <b>ListObject.</b> <b></b> Si <b>l’objet ListObject</b> est actuellement lié à un site SharePoint, la définition sur False conserve l’objet <paramref name="LinkSource" /> <b>ListObject</b> lié au site SharePoint actuel. <b></b></para>
+        <remarks><para>Cette propriété renvoie une valeur S<b>tring</b> qui est l’URL de la liste publiée sur SharePoint site.</para>
+          <para>Si l’objet n’est pas actuellement lié à une liste sur un site SharePoint, la définition sur True crée une liste sur le site SharePoint <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> <paramref name="LinkSource" /> spécifié. <b></b> Si l’objet <b>ListObject</b> est actuellement lié à un site SharePoint, la définition de l’argument Sur True remplace le lien existant (vous ne pouvez lier la liste qu’à SharePoint <paramref name="LinkSource" /> <b></b> site). Si <b>l’objet ListObject</b> n’est pas lié actuellement, la définition sur False permet de ne pas lier l’objet <paramref name="LinkSource" /> <b>ListObject.</b> <b></b> Si <b>l’objet ListObject</b> est actuellement lié à un site SharePoint, la définition sur False conserve l’objet <paramref name="LinkSource" /> <b>ListObject</b> lié au site SharePoint actuel. <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -688,11 +690,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Excel.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Plage <b>obligatoire</b>.</param>
+        <param name="Range">Plage <b>requise</b>.</param>
         <summary>La <b>méthode Resize</b> permet à un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet d’être re taille sur une nouvelle plage.</summary>
         <remarks><para>Aucune cellule n’est insérée ou déplacée par cette propriété.</para>
           <para>Cette propriété renvoie la <b>valeur Nothing</b>.</para>
-          <para>Pour les listes liées à un serveur qui exécute Microsoft Windows SharePoint Services, vous pouvez resize la liste à l’aide de cette méthode en fournissant un argument qui diffère de la plage actuelle de ListObject uniquement dans le nombre de lignes qu’elle <paramref name="Range" /> contient. Si vous tentez de re tailler des listes liées à Windows SharePoint Services en ajoutant ou en supprimant des colonnes (dans l’argument), une erreur <paramref name="Range" /> d’run-time est produite.</para>
+          <para>Pour les listes liées à un serveur qui exécute Microsoft Windows SharePoint Services, vous pouvez resize la liste à l’aide de cette méthode en fournissant un argument qui diffère de la plage actuelle de ListObject uniquement dans le nombre de lignes qu’il <paramref name="Range" /> contient. Si vous tentez de re tailler des listes liées à Windows SharePoint Services en ajoutant ou en supprimant des colonnes (dans l’argument), une erreur <paramref name="Range" /> d’run-time est produite.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -719,9 +721,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une<b>tring</b> S représentant l’URL de la liste SharePoint pour un objet <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> donné.</summary>
+        <summary>Renvoie un S<b>tring</b> représentant l’URL de la liste SharePoint pour un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet donné.</summary>
         <value>To be added.</value>
-        <remarks><para>L’accès à cette propriété génère une erreur d’run-time si la liste n’est pas liée à un site SharePoint.</para>
+        <remarks><para>L’accès à cette propriété génère une erreur d’run-time si la liste n’est pas liée à SharePoint site.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -783,7 +785,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> lorsque le filtre automatique de l’objet <b>ListObject</b> est affiché. <b>Booléen</b> <b>(booléen</b> en C#) En lecture-écriture</summary>
+        <summary><b>True</b> lorsque le filtre automatique de l’objet <b>ListObject</b> est affiché. <b>Booléen</b> <b>(booléen</b> C#) En lecture-écriture</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1117,7 +1119,7 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.TableObject" /> objet. Lecture seule</summary>
         <value>To be added.</value>
-        <remarks><para><b>L’objet TableObject</b> est un tableau de feuille de calcul créé à partir de données renvoyées par un PowerPivot modèle.</para>
+        <remarks><para><b>L’objet TableObject</b> est un tableau de feuille de calcul créé à partir de données renvoyées par PowerPivot modèle.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1201,7 +1203,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Supprime le lien vers un site microsoft Windows SharePoint Services d’une liste.</summary>
+        <summary>Supprime le lien vers un site Microsoft Windows SharePoint Services d’une liste.</summary>
         <remarks><para>Cette propriété renvoie la <b>valeur Nothing</b>.</para>
           <para>Le résultat de cette méthode est irréversible.</para>
           <para> </para></remarks>
@@ -1231,7 +1233,7 @@
         <summary>Supprime la fonctionnalité de liste d’un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objet.</summary>
         <remarks><para>Après avoir utilisé cette méthode, la plage de cellules qui a composé la liste sera une plage régulière de données.</para>
           <para>Cette propriété renvoie la <b>valeur Nothing</b>.</para>
-          <para>Cette méthode conserve les données, le format et les formules des cellules de la feuille de calcul. La Ligne totaux reste elle aussi intacte. Cette méthode supprime tout lien vers un site Windows SharePoint Services Microsoft. Le filtre automatique et la ligne Insérer sont également supprimés de la liste.</para>
+          <para>Cette méthode conserve les données, le format et les formules des cellules de la feuille de calcul. La Ligne totaux reste elle aussi intacte. Cette méthode supprime tout lien vers un site Microsoft Windows SharePoint Services site. Le filtre automatique et la ligne Insérer sont également supprimés de la liste.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1261,9 +1263,9 @@
       </Parameters>
       <Docs>
         <param name="iConflictType">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlListConflict" /> . Options de résolution des conflits.</param>
-        <summary>Met à jour la liste sur un site Windows SharePoint Services Microsoft avec les modifications apportées à la liste dans la feuille de calcul.</summary>
+        <summary>Met à jour la liste sur un site Microsoft Windows SharePoint Services avec les modifications apportées à la liste dans la feuille de calcul.</summary>
         <remarks><para>Cette propriété renvoie la <b>valeur Nothing</b>.</para>
-          <para>Cette méthode s’applique uniquement aux listes liées à un site SharePoint. Si le site SharePoint n’est pas disponible, une erreur est générée.</para>
+          <para>Cette méthode s’applique uniquement aux listes liées à SharePoint site web. Si le site SharePoint n’est pas disponible, une erreur est générée.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
