@@ -1,5 +1,5 @@
 <Type Name="_Workbook" FullName="Microsoft.Office.Interop.Excel._Workbook">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0dc241801e29cd7a9aa2098f883cf029f3c40f54" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012676" /></Metadata><TypeSignature Language="C#" Value="public interface _Workbook" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="525b0c0643ce97e370c33ada053f45415ea85b7d79474f154008ca03e7904ba1" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54515604" /></Metadata><TypeSignature Language="C#" Value="public interface _Workbook" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Workbook" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel._Workbook" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Workbook" />
@@ -319,22 +319,22 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient ou définit si certaines fonctions de feuille de calcul utilisent les algorithmes de précision les plus récents pour calculer leurs résultats.</summary>
+        <summary>Obtient ou définit si certaines fonctions de feuille de calcul utilisent les derniers algorithmes de précision pour calculer leurs résultats.</summary>
         <value>Spécifie la version des algorithmes à utiliser pour certaines fonctions de feuille de calcul.</value>
         <remarks><para>Lecture/écriture</para>
-          <para>Par défaut, certaines fonctions de feuille de calcul Microsoft Office Excel 2007 et les versions antérieures de Microsoft Excel utilisent de nouveaux algorithmes qui augmentent leur précision. Toutefois, dans certains cas, les nouveaux algorithmes diminuent les performances de ces fonctions par rapport à leurs performances dans Microsoft Office Excel 2007 et les versions antérieures d’Excel. Pour spécifier que ces fonctions de feuille de calcul utilisent les anciens algorithmes pour améliorer leurs performances, définissez la propriété <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> sur 1. Le tableau suivant décrit les paramètres possibles pour la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propriété.</para>
+          <para>Par défaut, certaines fonctions de feuille de calcul de Microsoft Office Excel 2007 et des versions antérieures de Microsoft Excel utilisent de nouveaux algorithmes qui augmentent leur précision. Toutefois, dans certains cas, les nouveaux algorithmes diminuent les performances de ces fonctions par rapport à leurs performances dans Microsoft Office Excel 2007 et les versions antérieures de Excel. Pour spécifier que ces fonctions de feuille de calcul utilisent les anciens algorithmes pour améliorer leurs performances, définissez la propriété <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> sur 1. Le tableau suivant décrit les paramètres possibles pour la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propriété.</para>
           <list type="table">
             <item>
               <term>0</term>
               <description>Utiliser les algorithmes plus précis les plus récents (par défaut)</description>
             </item>
             <item>
-              <term>1 </term>
-              <description>Utiliser Microsoft Office excel 2007 ou version antérieure</description>
+              <term>1</term>
+              <description>Utiliser Microsoft Office Excel 2007 ou des algorithmes de version antérieure</description>
             </item>
             <item>
-              <term>2 </term>
-              <description>Utiliser des algorithmes Microsoft Excel 2010</description>
+              <term>2</term>
+              <description>Utiliser Microsoft Excel 2010 algorithmes</description>
             </item>
           </list>
           <para>
@@ -807,7 +807,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui <see cref="T:Microsoft.Office.Interop.Excel.Application" /> représente l’application Microsoft Excel. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui représente <see cref="T:Microsoft.Office.Interop.Excel.Application" /> l’application Microsoft Excel’objet. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -878,7 +878,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’auteur du commentaire. <b>String</b> en lecture seule.</summary>
+        <summary>Cette propriété renvoie ou définit l’auteur du commentaire. Type de données <b>String</b> en lecture seule.</summary>
         <value>Renvoie <see cref="T:System.String" /> .</value>
         <remarks>To be added.</remarks>
         <example><para>Cet exemple montre comment supprimer tous les commentaires ajoutés par Jean Selva dans la feuille active.</para>
@@ -953,7 +953,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si les modifications apportées au classeur partagé sont transmises aux autres utilisateurs dès que le classeur est mis à jour automatiquement. <b>False</b> si les modifications ne sont pas transmises (ce classeur demeure synchronisé avec les modifications effectuées par d'autres utilisateurs). La valeur par défaut est <b>True</b>. En lecture/écriture <b>booléen</b>.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les modifications apportées au classeur partagé sont transmises aux autres utilisateurs dès que le classeur est mis à jour automatiquement. <b>False</b> si les modifications ne sont pas transmises (ce classeur demeure synchronisé avec les modifications effectuées par d'autres utilisateurs). La valeur par défaut est <b>True</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>La propriété doit être définie sur une valeur de 5 à 1 440 pour que cette propriété <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AutoUpdateFrequency" /> prenne effet.</para>
           <para> </para></remarks>
@@ -1017,9 +1017,9 @@
         <remarks><para>Cette propriété renvoie la collection entière des propriétés de document prédéfinies. Utilisez la méthode pour renvoyer un seul membre de la collection (un objet) en spécifiant le nom de la propriété ou l’index de <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> <see cref="T:Microsoft.Office.Core.DocumentProperty" /> la collection (en tant que nombre).</para>
           <para>Vous pouvez faire référence aux propriétés de document soit par index soit par nom. La liste suivante affiche les noms des propriétés de document prédéfinies disponibles :</para>
           <para>Titre </para>
-          <para>Objet</para>
+          <para>Sujet</para>
           <para>Auteur</para>
-          <para>Mots clés</para>
+          <para>Mots-clés</para>
           <para>Commentaires</para>
           <para>Modèle</para>
           <para>Last Author</para>
@@ -1035,8 +1035,8 @@
           <para>Sécurité</para>
           <para>Catégorie</para>
           <para>Format</para>
-          <para>Manager</para>
-          <para>Company</para>
+          <para>Responsable</para>
+          <para>Société</para>
           <para>Number of Bytes</para>
           <para>Number of Lines</para>
           <para>Number of Paragraphs</para>
@@ -1044,7 +1044,7 @@
           <para>Number of Notes</para>
           <para>Number of Hidden Slides</para>
           <para>Number of Multimedia Clips</para>
-          <para>Base de liens hypertexte</para>
+          <para>Hyperlink Base</para>
           <para>Nombre de caractères (avec espaces)</para>
           <para>Les applications conteneurs ne sont pas nécessaires pour définir les valeurs de toutes les propriétés de document prédéfinies. Si Microsoft Excel ne définit pas de valeur pour l’une des propriétés de document intégrées, la lecture de la propriété de cette propriété <see cref="P:Microsoft.Office.Core.DocumentProperty.Value" /> de document provoque une erreur.</para>
           <para>La <b>méthode Item</b> est la méthode par défaut pour la collection <b>DocumentProperties.</b></para>
@@ -1075,9 +1075,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un nombre dont les quatre chiffres les plus à droite sont le numéro de version du moteur de calcul mineur et dont les autres chiffres (à gauche) sont la version principale de Microsoft Excel. Pour un objet, cette propriété renvoie les informations sur la version d’Excel qui a été entièrement recalculée pour le dernier calcul du <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> manuel. <b>Entier</b> en lecture seule.</summary>
+        <summary>Renvoie un nombre dont les quatre chiffres les plus à droite sont le numéro de version du moteur de calcul mineur et dont les autres chiffres (à gauche) sont la version principale de Microsoft Excel. Pour un objet, cette propriété renvoie les informations sur la version de Excel le dernier recalcul complet du <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> manuel. <b>Entier</b> en lecture seule.</summary>
         <value>To be added.</value>
-        <remarks><para>Si le workbook a été enregistré dans une version antérieure d’Excel et si ce dernier n’a pas été entièrement recalculé, cette propriété renvoie la valeur 0.</para>
+        <remarks><para>Si le workbook a été enregistré dans une version antérieure de Excel et si ce dernier n’a pas été entièrement recalculé, cette propriété renvoie la valeur 0.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1130,7 +1130,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si le classez fait la distinction entre les cas supérieur et inférieur lors de la comparaison de contenu. Boolean en lecture <b>seule</b> <b>(booléen</b> en C#).</summary>
+        <summary><b>True</b> si le classez fait la distinction entre les cas supérieur et inférieur lors de la comparaison de contenu. Boolean en lecture <b>seule</b> <b>(booléen</b> C#).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1165,7 +1165,7 @@
         <param name="Mode">Obligatoire <see cref="T:Microsoft.Office.Interop.Excel.XlFileAccess" /> . Indique le nouveau mode d'accès.</param>
         <param name="WritePassword">Objet <b>facultatif</b>. Spécifie le mot de passe réservé en écriture si le fichier est réservé en écriture et <paramref name="Mode" /> est <b>xlReadWrite</b>. Ignoré s’il n’existe pas de mot de passe pour le fichier ou s’il <paramref name="Mode" /> s’agit <b>de xlReadOnly</b>.</param>
         <param name="Notify">Objet <b>facultatif</b>. Cet argument est omis ou a la valeur <b>True</b> pour prévenir l'utilisateur si le fichier n'est pas immédiatement accessible.</param>
-        <summary>Modifie les autorisations d’accès pour le workbook. Cela peut nécessiter le chargement d’une version mise à jour à partir du disque.</summary>
+        <summary>Cette méthode modifie les autorisations d'accès au classeur ce qui peut impliquer la nécessité de charger, à partir du disque, une version mise à jour.</summary>
         <remarks><para>Si vous consultez un fichier ouvert en lecture seule, vous n'y avez pas un accès exclusif. Si vous faites passer le mode d'accès à un fichier de « lecture seule » en « lecture-écriture », Microsoft Excel doit charger une nouvelle copie du fichier pour être sûr qu'aucune modification n'y a été apportée pendant que vous le consultiez en lecture seule.</para>
           <para> </para></remarks>
       </Docs>
@@ -1262,7 +1262,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>La</b> valeur True permet à tous les graphiques du document actuel de suivre le point de données réel auquel il est attaché. <b>False</b> revient au suivi de l’index du point de données. <b>Booléen</b> <b>(booléen</b> en C#) En lecture-écriture.</summary>
+        <summary><b>La</b> valeur True permet à tous les graphiques du document actuel de suivre le point de données réel auquel il est attaché. <b>False</b> revient au suivi de l’index du point de données. <b>Booléen</b> <b>(booléen</b> C#) En lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1353,7 +1353,7 @@
       <Docs>
         <param name="SaveChanges">Objet <b>facultatif</b>. <b>True</b> enregistre les modifications et archive le document. <b>False</b> réapplique au document le statut Archivé sans enregistrer les révisions.</param>
         <param name="Comments">Objet <b>facultatif</b>. Permet à l’utilisateur d’entrer des commentaires d’enregistrement pour la révision du manuel en cours d’enregistrement (s’applique uniquement si <paramref name="SaveChanges" /> la valeur est <b>True).</b></param>
-        <param name="MakePublic">Objet <b>facultatif</b>. La valeur <b>True</b> permet à l'utilisateur de publier le classeur après son archivage. Cela permet d’envoyer le workbook pour le processus d’approbation, ce qui peut entraîner la publication d’une version du manuel pour les utilisateurs ayant des droits en lecture seule sur le workbook (s’applique uniquement si est égale <paramref name="SaveChanges" /> à <b>True</b>).</param>
+        <param name="MakePublic">Objet <b>facultatif</b>. La valeur <b>True</b> permet à l'utilisateur de publier le classeur après son archivage. Cela permet d’envoyer le workbook pour le processus d’approbation, ce qui peut finir par entraîner la publication d’une version du workbook pour les utilisateurs ayant des droits en lecture seule sur le workbook (s’applique uniquement si est égale <paramref name="SaveChanges" /> à <b>True</b>).</param>
         <summary>Renvoie un workbook d’un ordinateur local vers un serveur et définit le workbook local en lecture seule afin qu’il ne puisse pas être modifié localement. L'appel de cette méthode ferme également le classeur.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1385,11 +1385,11 @@
       <Docs>
         <param name="SaveChanges"><b>true</b> pour enregistrer le workbook sur l’emplacement du serveur. The default is <b>true</b>.</param>
         <param name="Comments">Commentaires pour la révision du workbook en cours d’checked in (s’applique uniquement si <paramref name="SaveChanges" /> est définie sur <b>true</b>).</param>
-        <param name="MakePublic"><b>true</b> pour permettre à l’utilisateur de publier le livre de travail une fois qu’il est enregistré.</param>
+        <param name="MakePublic"><b>true</b> pour permettre à l’utilisateur de publier le workbook après l’avoir enregistré.</param>
         <param name="VersionType">Fournit les informations de version se rapportant au classeur.</param>
         <summary>Enregistre un classeur sur un serveur à partir d’un ordinateur local, et définit le classeur local en lecture seule pour éviter qu’il ne soit modifié localement.</summary>
         <remarks><para>Si vous définissez le paramètre sur true, le workbook est soumis au processus d’approbation, ce qui peut entraîner la publication d’une version du workbook pour les utilisateurs ayant des droits en lecture seule sur le workbook (s’applique uniquement si la valeur est <paramref name="MakePublic" /> <b></b> <paramref name="SaveChanges" /> <b>true).</b> </para>
-          <para>Pour bénéficier des fonctionnalités de collaboration intégrées à Microsoft Excel, les documents doivent être stockés sur un serveur Microsoft SharePoint. </para>
+          <para>Pour bénéficier des fonctionnalités de collaboration intégrées à Microsoft Excel, les documents doivent être stockés sur un serveur Microsoft SharePoint.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1422,7 +1422,7 @@
       <Docs>
         <param name="SaveChanges">Objet <b>facultatif</b>. Si aucune modification n'a été apportée au classeur, cet argument est ignoré. Si des modifications ont été apportées au classeur et que celui-ci s'affiche dans d'autres fenêtres, cet argument est ignoré. S’il existe des modifications dans le workbook, mais qu’il n’apparaît dans aucune autre fenêtre ouverte, cet argument spécifie si les modifications doivent être enregistrées, comme indiqué dans le tableau suivant. ValueAction<b>True</b>Enregistre les modifications apportées au workbook. S’il n’existe pas encore de nom de fichier associé au classer, <paramref name="FileName" /> il est utilisé. <paramref name="FileName" />S’il est omis, l’utilisateur est invité à fournir un nom de fichier.<b> False</b>n’enregistre pas les modifications apportées à ce fichier. OmittedDisplays a dialog box asking the user whether or not to save changes.</param>
         <param name="Filename">Objet <b>facultatif</b>. Enregistrer les modifications sous ce nom de fichier.</param>
-        <param name="RouteWorkbook">Objet <b>facultatif</b>. Si le classeur ne doit pas être routé vers le destinataire suivant (soit parce qu'il n'a pas de bordereau de routage, soit parce qu'il a déjà été routé), cet argument est ignoré. Dans le cas contraire, Microsoft Excel route le manuel comme indiqué dans le tableau suivant. ValueMeaning<b>True</b>Envoie le workbook au destinataire suivant. <b>False</b> N’envoie pas le workbook. OmittedDisplays a dialog box asking the user whether the workbook should be sent.</param>
+        <param name="RouteWorkbook">Objet <b>facultatif</b>. Si le classeur ne doit pas être routé vers le destinataire suivant (soit parce qu'il n'a pas de bordereau de routage, soit parce qu'il a déjà été routé), cet argument est ignoré. Sinon, Microsoft Excel route le workbook comme indiqué dans le tableau suivant. ValueMeaning<b>True</b>Envoie le workbook au destinataire suivant. <b>False</b> N’envoie pas le workbook. OmittedDisplays a dialog box asking the user whether the workbook should be sent.</param>
         <summary>Cette méthode ferme l'objet.</summary>
         <remarks><para>La fermeture d’un workbook à l’aide de la méthode <b>Close</b> n’exécute Auto_Close macros dans le workbook. Utilisez la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> méthode pour exécuter les Auto_Close macros.</para>
           <para> </para></remarks>
@@ -1522,7 +1522,7 @@
         <ReturnType>Microsoft.Office.Core.CommandBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui représente les barres de commandes <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CommandBars" /> Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CommandBars" /> objet qui représente les barres de Microsoft Excel de commande. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>Lorsqu’un workbook est incorporé dans une autre application et activé par l’utilisateur en double-cliquant sur ce dernier, l’utilisation de cette propriété avec un objet <b>Workbook</b> renvoie l’ensemble des barres de commandes Microsoft Excel disponibles dans l’autre application. Dans tous les autres cas, l'utilisation de cette propriété avec un objet <b>Workbook</b> renvoie la valeur <b>Nothing</b>.</para>
           <para>Aucune programmation n'existe pour renvoyer l'ensemble des barres de commandes outils attachées à un classeur.</para>
@@ -1638,7 +1638,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Connections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La propriété établit une connexion entre le workbook et un ODBC ou une source de données OLEDB et actualise les données sans invite de <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Connections" /> l’utilisateur. En lecture seule.</summary>
+        <summary>La propriété établit une connexion entre le livre de travail et une source de données ODBC ou OLEDB et actualise les données sans invite de <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Connections" /> l’utilisateur. En lecture seule.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Connections" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1666,7 +1666,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Désactive les connexions externes ou les liens dans le classeur. Lecture seule</summary>
+        <summary>Désactive les connexions externes ou les liens dans le classeur. En lecture seule</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1694,7 +1694,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie l'objet qui représente l'application de conteneur de l'objet OLE spécifié. En lecture seule <b>Object</b>.</summary>
+        <summary>Cette propriété renvoie l'objet qui représente l'application de conteneur de l'objet OLE spécifié. Type de données <b>Object</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété offre une manière d'accéder au modèle objet de l'application de conteneur lorsqu'un classeur Excel est ouvert dans une application hôte telle que Microsoft Internet Explorer.</para>
           <para> </para></remarks>
@@ -1754,7 +1754,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si une copie de sauvegarde est créée lorsque ce fichier est enregistré. <b>Boolean</b> (en lecture seule).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si une copie de sauvegarde est créée lorsque ce fichier est enregistré. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1907,7 +1907,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si le workbook utilise le système de date 1904. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le classeur utilise le calendrier depuis 1904. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2056,7 +2056,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Nom du style de slicer par défaut du classeur. <b>Objet</b> (<b>objet</b> en C#). Lecture/Écriture</summary>
+        <summary>Nom du style de slicer par défaut du classeur. <b>Objet</b> (<b>objet</b> dans C#). Lecture/Écriture</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2207,7 +2207,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Valeur de type <b>Boolean</b> qui détermine si les commentaires manuscrits sont affichés dans le classeur. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Valeur de type <b>Boolean</b> qui détermine si les commentaires manuscrits sont affichés dans le classeur. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2295,7 +2295,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit si l’utilisateur doit être invité à convertir le manuel si celui-ci contient des fonctionnalités qui ne sont pas pris en charge par les versions d’Excel antérieures à short_Excel2007. Lecture/écriture</summary>
+        <summary>Renvoie ou définit si l’utilisateur doit être invité à convertir le livre de travail si celui-ci contient des fonctionnalités qui ne sont pas pris en charge par les versions de Excel antérieures à short_Excel2007. Lecture/écriture</summary>
         <value>Boolean</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2441,7 +2441,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété enregistre des fichiers modifiés, de tout format, dans un intervalle de temps. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété enregistre des fichiers modifiés, de tout format, dans un intervalle de temps. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Si Microsoft Excel échoue, si le système échoue ou si le système n'est pas éteint correctement (ne permettant pas à Excel d'enregistrer les fichiers modifiés), les fichiers sauvegardés sont ouverts et l'utilisateur a une occasion d'enregistrer des modifications qui seraient autrement perdues. Lorsque l'utilisateur redémarre Excel, une fenêtre de récupération des documents s'ouvre, donnant à l'utilisateur la possibilité de récupérer les fichiers sur lesquels il travaillait. L'affectation de la valeur <b>True</b> (par défaut) à cette propriété active cette fonctionnalité.</para>
           <para> </para></remarks>
@@ -2582,7 +2582,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection qui représente toutes les feuilles de macros internationales Microsoft Excel 4.0 dans le livre de calcul spécifié. En lecture seule.</summary>
+        <summary>Renvoie une collection qui représente toutes les feuilles de macro Microsoft Excel <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 4.0 internationales dans le livre de travail spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2610,7 +2610,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection qui représente toutes les feuilles de macro Microsoft Excel 4.0 dans le livre de calcul spécifié. En lecture seule.</summary>
+        <summary>Renvoie une collection qui représente toutes les <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> feuilles de macro Microsoft Excel 4.0 du manuel spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2640,7 +2640,7 @@
       <Docs>
         <summary>La propriété permet aux développeurs de vérifier si le manuel est en <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel8CompatibilityMode" /> mode de compatibilité. Lecture seule</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>En mode de compatibilité, certaines fonctionnalités sont désactivées ou fonctionnent différemment.  Par exemple, dans short_Excel2007 il existe plus de lignes et de colonnes disponibles par rapport aux versions antérieures d’Excel. Le référencement structuré est également disponible dans short_Excel2007.</para>
+        <remarks><para>En mode de compatibilité, certaines fonctionnalités sont désactivées ou fonctionnent différemment.  Par exemple, dans short_Excel2007 il existe plus de lignes et de colonnes disponibles par rapport aux versions antérieures de Excel. Le référencement structuré est également disponible dans short_Excel2007.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2706,7 +2706,7 @@
       </Parameters>
       <Docs>
         <param name="Type">Peut être l’un <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatType.xlTypePDF" /> ou <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatType.xlTypeXPS" /> l’autre .</param>
-        <param name="Filename">Chaîne <b>qui</b> indique le nom du fichier à enregistré. Vous pouvez inclure un chemin d’accès complet ou un chemin court.  Excel2007 enregistre le fichier dans le dossier actuel.</param>
+        <param name="Filename">Chaîne <b>qui</b> indique le nom du fichier à enregistré. Vous pouvez inclure un chemin d’accès complet ou court.  Excel2007 enregistre le fichier dans le dossier actuel.</param>
         <param name="Quality">Peut être définie sur l’une ou <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatQuality.xlQualityStandard" /> l’autre <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatQuality.xlQualityMinimum" /> ou .</param>
         <param name="IncludeDocProperties">Choisissez <b>True</b> pour indiquer que les propriétés du document doivent être incluses ou <b>False</b> pour les omettre.</param>
         <param name="IgnorePrintAreas">Avec la valeur <b>True</b>, les zones d’impression sont ignorées lors de la publication. Avec la valeur <b>False</b>, les zones d’impression sont utilisées lors de la publication.</param>
@@ -2909,7 +2909,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie le nom de l'objet, accompagné de son chemin d'accès sur le disque, sous la forme d'une chaîne de caractères. <b>String</b> en lecture seule.</summary>
+        <summary>Cette propriété renvoie le nom de l'objet, accompagné de son chemin d'accès sur le disque, sous la forme d'une chaîne de caractères. Type de données <b>String</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété est équivalente à la propriété, suivie du séparateur du système de fichiers <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> actuel, puis de la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> propriété.</para>
           <para> </para></remarks>
@@ -3067,7 +3067,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si le classeur est protégé par un mot de passe. <b>Boolean</b> (en lecture seule).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le classeur est protégé par un mot de passe. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>Vous pouvez affecter un mot de passe de protection à un workbook à l’aide de la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode.</para>
           <para> </para></remarks>
@@ -3111,7 +3111,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si le classeur possède un bordereau de routage. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le classeur possède un bordereau de routage. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Si vous affectez la valeur <b>True</b> à cette propriété, un bordereau de routage doté des valeurs par défaut est créé. Si vous lui affectez la valeur <b>False</b>, le bordereau de routage est supprimé.</para>
           <para> </para></remarks>
@@ -3172,7 +3172,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si les modifications dans le classeur en mode partagé sont mises en surbrillance à l'écran. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les modifications dans le classeur en mode partagé sont mises en surbrillance à l'écran. Type de données <b>Boolean</b> en lecture-écriture</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3234,7 +3234,7 @@
         <ReturnType>Microsoft.Office.Core.HTMLProject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet dans le livre de travail spécifié, qui représente une branche de projet de niveau supérieur comme dans l’Explorateur de projets dans <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HTMLProject" /> Microsoft Script Editor. En lecture seule.</summary>
+        <summary>Renvoie l’objet dans le livre de travail spécifié, qui représente une branche de projet de niveau supérieur, comme dans l’Explorateur Project dans le <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HTMLProject" /> Microsoft Script Editor. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3293,7 +3293,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Valeur de type <b>Boolean</b> qui spécifie si les bordures de la liste sont visibles lorsqu'une liste n'est pas active. Renvoie la valeur <b>True</b> si la bordure est visible. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Valeur de type <b>Boolean</b> qui spécifie si les bordures de la liste sont visibles lorsqu'une liste n'est pas active. Renvoie la valeur <b>True</b> si la bordure est visible. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>La définition de cette propriété affecte toutes les listes présentes dans la feuille de calcul.</para>
           <para> </para></remarks>
@@ -3325,7 +3325,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si le classeur s'exécute comme un programme complémentaire. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le classeur s'exécute comme un programme complémentaire. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Quand vous affectez la valeur <b>True</b> à cette propriété, le classeur présente les caractéristiques suivantes :</para>
           <list type="bullet">
@@ -3371,7 +3371,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si le classeur spécifié est modifié dans le programme d'origine. Elle a la valeur <b>False</b> si le classeur a été ouvert dans Microsoft Excel pour être modifié. <b>Boolean</b> (en lecture seule).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le classeur spécifié est modifié dans le programme d'origine. Elle a la valeur <b>False</b> si le classeur a été ouvert dans Microsoft Excel pour être modifié. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3402,7 +3402,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si le suivi des modifications est activé pour le classeur partagé. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le suivi des modifications est activé pour le classeur partagé. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3546,7 +3546,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si les modifications dans le classeur partagé s'affichent sur une feuille de calcul distincte. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les modifications dans le classeur partagé s'affichent sur une feuille de calcul distincte. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3717,7 +3717,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si le classeur est ouvert en tant que liste partagée. <b>Boolean</b> (en lecture seule).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le classeur est ouvert en tant que liste partagée. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>Pour enregistrer un workbook en tant que liste partagée, utilisez la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode. Pour passer du mode partagé au mode exclusif, utilisez la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExclusiveAccess" /> méthode.</para>
           <para> </para></remarks>
@@ -3965,7 +3965,7 @@
       </Parameters>
       <Docs>
         <param name="Name">Argument de type <b>String</b> obligatoire. Nom du lien Microsoft Excel ou DDE/OLE, tel qu’il est renvoyé par la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> méthode.</param>
-        <param name="ReadOnly">Objet <b>facultatif</b>. Affectez à cet argument la valeur <b>True</b> pour ouvrir des documents en lecture seule. La valeur par défaut est <b>False</b>.</param>
+        <param name="ReadOnly">Objet <b>facultatif</b>. Affectez à cet argument la valeur <b>True</b> pour ouvrir des documents en lecture seule. La valeur par défaut est <b>Faux</b>.</param>
         <param name="Type">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlLink" /> . Type de la liaison.</param>
         <summary>Cette méthode ouvre les documents source d'une ou plusieurs liaisons.</summary>
         <remarks>To be added.</remarks>
@@ -3994,7 +3994,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4025,7 +4025,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le mot de passe qui doit être fourni pour ouvrir le classeur spécifié. <b>String</b> en lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit le mot de passe qui doit être fourni pour ouvrir le classeur spécifié. Type de données <b>String</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Utilisez des mots de passe forts qui associent des majuscules et des minuscules, des chiffres et des symboles. Les mots de passe faibles n'associent pas ces éléments. Mot de passe fort : Y6dh!et5. Mot de passe faible : House27. Utilisez un mot de passe fort facile à mémoriser afin de ne pas avoir à le noter.</para>
           <para> </para></remarks>
@@ -4054,9 +4054,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie une chaîne de caractères (type <b>String</b>) indiquant l'algorithme que Microsoft Excel utilise pour chiffrer les mots de passe du classeur spécifié. En lecture seule.</summary>
+        <summary>Cette propriété renvoie une chaîne de caractères (type <b>String</b>) indiquant l'algorithme que Microsoft Excel utilise pour chiffrer les mots de passe du classeur spécifié. Propriété en lecture seule.</summary>
         <value>To be added.</value>
-        <remarks><para>Utilisez la méthode pour spécifier si Excel chiffre les propriétés de fichier pour les classeur protégés par <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> mot de passe.</para>
+        <remarks><para>Utilisez la méthode pour spécifier si Excel chiffre les propriétés de fichier pour les classes <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> protégées par mot de passe.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4083,9 +4083,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel chiffre les propriétés de fichier du classeur spécifié et protégé par un mot de passe. <b>Boolean</b> (en lecture seule).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel chiffre les propriétés de fichier du classeur spécifié et protégé par un mot de passe. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
-        <remarks><para>Utilisez la méthode pour spécifier si Excel chiffre les propriétés de fichier pour le classeur protégé par mot <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> de passe spécifié.</para>
+        <remarks><para>Utilisez la méthode pour spécifier si Excel chiffre les propriétés de fichier du classez spécifié protégé <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> par mot de passe.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4112,9 +4112,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>nombre entière indiquant</b> la longueur de clé de l’algorithme que Microsoft Excel utilise lors du chiffrement des mots de passe pour le livre de calcul spécifié. En lecture seule.</summary>
+        <summary>Renvoie un <b>nombre entière indiquant</b> la longueur de clé de l’algorithme Microsoft Excel lors du chiffrement des mots de passe pour le livre de calcul spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks><para>Utilisez la méthode pour spécifier si Excel chiffre les propriétés de fichier pour le classeur protégé par mot <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> de passe spécifié.</para>
+        <remarks><para>Utilisez la méthode pour spécifier si Excel chiffre les propriétés de fichier du classez spécifié protégé <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> par mot de passe.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4141,7 +4141,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie un objet de type <b>String</b> indiquant le nom du fournisseur de chiffrement relatif à l'algorithme que Microsoft Excel utilise pour chiffrer les mots de passe du classeur spécifié. En lecture seule.</summary>
+        <summary>Cette propriété renvoie un objet de type <b>String</b> indiquant le nom du fournisseur de chiffrement relatif à l'algorithme que Microsoft Excel utilise pour chiffrer les mots de passe du classeur spécifié. Propriété en lecture seule.</summary>
         <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4231,7 +4231,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si les paramètres de filtre et de tri font partie de la vue personnelle du classeur partagé définie par l'utilisateur. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les paramètres de filtre et de tri font partie de la vue personnelle du classeur partagé définie par l'utilisateur. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4262,7 +4262,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si les paramètres d'impression font partie de la vue personnelle du classeur partagé définie par l'utilisateur. En lecture-écriture <b>booléen</b>.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les paramètres d'impression font partie de la vue personnelle du classeur partagé définie par l'utilisateur. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4446,7 +4446,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si les calculs dans ce workbook seront effectués en utilisant uniquement la précision des nombres tels qu’ils sont affichés. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les calculs prévus dans ce classeur sont réalisés en utilisant uniquement la précision des nombres tels qu'ils sont affichés. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4491,7 +4491,7 @@
         <param name="Copies">Objet <b>facultatif</b>. Nombre de copies à imprimer. Si cet argument est omis, une seule copie est imprimée.</param>
         <param name="Preview">Objet <b>facultatif</b>. <b>True</b> pour que Microsoft Excel affiche l'aperçu avant impression avant d'imprimer l'objet. <b>False</b> (ou non défini) pour imprimer l'objet immédiatement.</param>
         <param name="ActivePrinter">Objet <b>facultatif</b>. Définit le nom de l'imprimante active.</param>
-        <param name="PrintToFile">Objet <b>facultatif</b>. <b>True</b>  pour imprimer dans un fichier. Si <paramref name="PrToFileName" /> ce n’est pas spécifié, Microsoft Excel invite l’utilisateur à entrer le nom du fichier de sortie.</param>
+        <param name="PrintToFile">Objet <b>facultatif</b>. <b>True</b>  pour imprimer dans un fichier. Si <paramref name="PrToFileName" /> elle n’est pas spécifiée, Microsoft Excel invite l’utilisateur à entrer le nom du fichier de sortie.</param>
         <param name="Collate">Objet <b>facultatif</b>. <b>True</b>  pour assembler plusieurs copies.</param>
         <param name="PrToFileName">Objet <b>facultatif</b>. Si la valeur est True, cet argument spécifie le nom du fichier dans lequel <paramref name="PrintToFile" /> vous souhaitez <b></b>imprimer.</param>
         <summary>Cette méthode imprime l'objet.</summary>
@@ -4709,7 +4709,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si l'ordre des pages dans le classeur est protégé. <b>Boolean</b> (en lecture seule).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si l'ordre des pages dans le classeur est protégé. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4737,7 +4737,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si les fenêtres du classeur sont protégées. <b>Boolean</b> (en lecture seule).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les fenêtres du classeur sont protégées. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4825,7 +4825,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si l'objet a été ouvert en lecture seule. <b>Boolean</b> (en lecture seule).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si l'objet a été ouvert en lecture seule. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>Elle s'utilise uniquement pour les listes liées à un site SharePoint.</para>
           <para> </para></remarks>
@@ -4857,7 +4857,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si le classeur a été enregistré en lecture seule recommandée. <b>Boolean</b> (en lecture seule).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le classeur a été enregistré en lecture seule recommandée. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>Lorsque vous ouvrez un classeur qui a été enregistré en lecture seule recommandée, Microsoft Excel affiche un message vous conseillant d'ouvrir le classeur en lecture seule.</para>
           <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour modifier cette propriété.</para>
@@ -4888,7 +4888,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Entraîne la vérification d’une balise intelligente au premier plan, annoteant automatiquement les données qui n’ont pas été annotées auparavant.</summary>
+        <summary>Entraîne la vérification d’une balise smart au premier plan, annoteant automatiquement les données qui n’ont pas été annotées auparavant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5032,7 +5032,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si des informations personnelles peuvent être supprimées du classeur spécifié. La valeur par défaut est <b>False</b>. En lecture/écriture <b>booléen</b>.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si des informations personnelles peuvent être supprimées du classeur spécifié. La valeur par défaut est <b>False</b>. Propriété de type <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5295,7 +5295,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si le workbook a été acheminé vers le destinataire suivant. <b>False</b> si le workbook doit être acheminé. <b>Boolean</b> (en lecture seule).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le classeur a été routé au destinataire suivant et la valeur <b>False</b> si le classeur doit être routé. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>Si le classeur n'a pas été routé au destinataire actif, cette propriété correspond toujours à <b>False</b> (par exemple, si le document n'a pas de bordereau de routage ou si celui-ci vient juste d'être créé).</para>
           <para> </para></remarks>
@@ -5390,7 +5390,7 @@
         <summary>Cette méthode enregistre les modifications apportées au classeur spécifié.</summary>
         <remarks><para>Pour ouvrir un fichier de classer, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode.</para>
           <para>Pour marquer un workbook comme enregistré sans l’écrire sur un disque, définissez sa <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" /> propriété sur <b>True</b>.</para>
-          <para>La première fois que vous enregistrez un classez, utilisez la méthode pour spécifier <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> un nom pour le fichier.</para>
+          <para>La première fois que vous enregistrez un classez, utilisez la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour spécifier un nom pour le fichier.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5474,7 +5474,7 @@
         <param name="Map">Objet <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> obligatoire. Mappage de schéma à appliquer aux données.</param>
         <summary>Cette méthode exporte les données qui ont été mappées au mappage de schéma XML spécifié dans un fichier de données XML.</summary>
         <remarks><para>Les fonctionnalités XML, à l’exception de l’enregistrement de fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professional Edition 2003 et Microsoft Office Excel 2003.</para>
-          <para>Cette méthode produit une erreur d'exécution si Excel ne peut pas exporter les données avec le mappage de schéma spécifié. Pour vérifier si Excel peut utiliser le plan de schéma spécifié pour exporter des données, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.XmlMap.IsExportable" /> propriété.</para>
+          <para>Cette méthode produit une erreur d'exécution si Excel ne peut pas exporter les données avec le mappage de schéma spécifié. Pour vérifier si Excel pouvez utiliser le mapme de schéma spécifié pour exporter des données, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.XmlMap.IsExportable" /> propriété.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5579,7 +5579,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel enregistre les valeurs des liaisons externes avec le classeur. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel enregistre les valeurs des liaisons externes avec le classeur. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5644,7 +5644,7 @@
         <param name="ShowMessage">Objet <b>facultatif</b>. <b>True :</b> affiche le message de télécopie avant de l'envoyer. <b>False</b> envoie la télécopie sans afficher le message de télécopie.</param>
         <summary>Envoie une feuille de calcul en tant que télécopie aux destinataires spécifiés.</summary>
         <remarks><para>Pour que la méthode <b>SendFaxOverInternet</b> puisse être utilisée, le service de télécopie doit être activé sur l'ordinateur de l'utilisateur.</para>
-          <para>Le format utilisé pour spécifier des numéros de télécopie dans le <paramref name="Recipients" /> paramètre est l’un ou <paramref name="recipientsfaxnumber@usersfaxprovider" /> l’autre. <paramref name="recipientsname@recipientsfaxnumber" /> Vous pouvez accéder aux données du fournisseur de télécopie de l'utilisateur via le chemin du registre suivant :</para>
+          <para>Le format utilisé pour spécifier des numéros de télécopie dans le <paramref name="Recipients" /> paramètre est soit ou <paramref name="recipientsfaxnumber@usersfaxprovider" /> <paramref name="recipientsname@recipientsfaxnumber" /> . Vous pouvez accéder aux données du fournisseur de télécopie de l'utilisateur via le chemin du registre suivant :</para>
           <para>HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Services\Fax</para>
           <para>Utilisez la valeur de la clé FaxAddress à ce chemin d’accès du Registre pour déterminer le format à utiliser pour un destinataire.</para>
           <para> </para></remarks>
@@ -5713,7 +5713,7 @@
       <Docs>
         <param name="Recipients">Required, <b>objet</b>. Spécifie le nom du destinataire sous la forme de texte ou, s'il y a plusieurs destinataires, d'un tableau de chaînes de caractères. Vous devez spécifier au moins un destinataire et tous les autres sont ajoutés dans la liste « À ».</param>
         <param name="Subject">Objet <b>facultatif</b>. Spécifie l'objet sujet du message. Si vous ne spécifiez pas cet argument, le nom du document est utilisé.</param>
-        <param name="ReturnReceipt">Objet <b>facultatif</b>. <b>True</b> pour demander une confirmation de renvoi. <b>False pour</b> ne pas demander d’accusé de réception. La valeur par défaut est <b>False</b>.</param>
+        <param name="ReturnReceipt">Objet <b>facultatif</b>. <b>True</b> pour demander une confirmation de renvoi. <b>False pour</b> ne pas demander d’accusé de réception. La valeur par défaut est <b>Faux</b>.</param>
         <summary>Cette méthode envoie le classeur en utilisant le système de messagerie installé.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5803,7 +5803,7 @@
       <Docs>
         <summary>Cette propriété permet à un développeur d'interagir avec la liste des objets publiés du classeur, qui sont affichés sur le serveur. En lecture seule.</summary>
         <value><see cref="P:Microsoft.Office.Interop.Excel._Workbook.ServerViewableItems" /></value>
-        <remarks><para>Cette propriété renvoie une collection des éléments qui ont pu être publiés dans Excel Services.  Elle peut inclure des Tableaux, des tableaux croisés dynamiques, des Plages nommées et des Graphiques.  Elle peut également contenir des Feuilles, du moment que ces Feuilles ne sont pas combinées avec les éléments de la liste précédente.  </para>
+        <remarks><para>Cette propriété renvoie une collection des éléments qui ont pu être publiés dans Excel Services. Elle peut inclure des Tableaux, des tableaux croisés dynamiques, des Plages nommées et des Graphiques. Elle peut également contenir des Feuilles, du moment que ces Feuilles ne sont pas combinées avec les éléments de la liste précédente.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5962,7 +5962,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si la feuille de calcul Historique des conflits est visible dans le classeur ouvert en tant que liste partagée. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la feuille de calcul Historique des conflits est visible dans le classeur ouvert en tant que liste partagée. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Si le classeur spécifié n'est pas ouvert en tant que liste partagée, cette propriété échoue. Pour déterminer si un workbook est ouvert en tant que liste partagée, utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" /> propriété.</para>
           <para> </para></remarks>
@@ -5996,7 +5996,7 @@
       <Docs>
         <summary>Cette propriété contrôle la visibilité du volet Filtre de graphique croisé dynamique. En lecture/écriture</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>Cette propriété contrôle la visibilité du volet Filtre de graphique croisé dynamique (l'active ou le désactive).  Pour que ce volet soit visible, un objet <b>PivotChart</b> doit être sélectionné. </para>
+        <remarks><para>Cette propriété contrôle la visibilité du volet Filtre de graphique croisé dynamique (l'active ou le désactive). Pour que ce volet soit visible, un objet <b>PivotChart</b> doit être sélectionné.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6026,7 +6026,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> (par défaut) si la liste de champs de tableau croisé dynamique peut être affichée. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> (par défaut) si la liste de champs de tableau croisé dynamique peut être affichée. Propriété de type <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6271,7 +6271,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TableStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> objet de collection pour le workbook actuel qui fait référence aux styles utilisés dans le workbook actuel. En lecture seule.</summary>
+        <summary>Renvoie un objet de collection pour le workbook actuel qui <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> fait référence aux styles utilisés dans le workbook actuel. En lecture seule.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /></value>
         <remarks><para>Vous pouvez manipuler les styles de tableau renvoyés par la propriété.</para>
           <para> </para></remarks>
@@ -6303,7 +6303,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si les références aux données externes sont supprimées quand le classeur est enregistré en tant que modèle. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les références aux données externes sont supprimées quand le classeur est enregistré en tant que modèle. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6401,7 +6401,7 @@
       <Parameters />
       <Docs>
         <summary>Bascule le mode Création de formulaire sur ou hors de l’écran.</summary>
-        <remarks><para>Lorsqu’Excel est en mode Création de formulaire, la barre d’outils Boîte à outils Contrôles s’affiche. Vous pouvez l'utiliser pour insérer des contrôles ActiveX tels que des boutons de commande, des barres de défilement et des boutons d'option. En mode Création, les procédures événementielles sont inopérantes et, lorsque vous cliquez sur un contrôle incorporé, les poignées de dimensionnement du contrôle s'affichent.</para>
+        <remarks><para>Lorsque Excel est en mode Création de formulaire, la barre d’outils Boîte à outils Contrôles s’affiche. Vous pouvez l'utiliser pour insérer des contrôles ActiveX tels que des boutons de commande, des barres de défilement et des boutons d'option. En mode Création, les procédures événementielles sont inopérantes et, lorsque vous cliquez sur un contrôle incorporé, les poignées de dimensionnement du contrôle s'affichent.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6589,7 +6589,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel met à jour les références hors programme dans le classeur. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel met à jour les références hors programme dans le classeur. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6686,7 +6686,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si le workbook utilise des modèles de recherche qui correspondent à l’intégralité du contenu d’une cellule. Boolean en lecture <b>seule</b> <b>(booléen</b> en C#).</summary>
+        <summary><b>True</b> si le workbook utilise des modèles de recherche qui correspondent à l’intégralité du contenu d’une cellule. Boolean en lecture <b>seule</b> <b>(booléen</b> C#).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6714,7 +6714,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si le manuel active les caractères génériques pour les comparaisons de chaînes de caractères et la recherche. Boolean en lecture <b>seule</b> <b>(booléen</b> en C#).</summary>
+        <summary><b>True</b> si le manuel active les caractères génériques pour les comparaisons de chaînes de caractères et la recherche. Boolean en lecture <b>seule</b> <b>(booléen</b> C#).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6742,7 +6742,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si le projet Visual Basic pour Applications du classeur spécifié a été signé numériquement. <b>Boolean</b> (en lecture seule).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le projet Visual Basic pour Applications du classeur spécifié a été signé numériquement. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6770,7 +6770,7 @@
         <ReturnType>Microsoft.Vbe.Interop.VBProject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie un objet <b>VBProject</b> représentant le projet Visual Basic inclus dans le classeur spécifié. En lecture seule.</summary>
+        <summary>Cette propriété renvoie un objet <b>VBProject</b> représentant le projet Visual Basic inclus dans le classeur spécifié. Propriété en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6798,7 +6798,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WebOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la collection, qui contient les attributs au niveau du workbook utilisés par Microsoft Excel lorsque vous enregistrez un document en tant que page Web ou <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> que vous ouvrez une page Web. En lecture seule.</summary>
+        <summary>Renvoie la collection, qui contient les attributs au niveau du Microsoft Excel lorsque vous enregistrez un document en tant que page Web ou que vous <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> ouvrez une page Web. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6851,7 +6851,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Windows</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection qui représente toutes les fenêtres du livre de travail spécifié. Objet <b>Windows en lecture</b> seule.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection qui représente toutes les fenêtres du livre de travail spécifié. Objet Windows en <b>lecture</b> seule.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété renvoie une collection de fenêtres visibles et masquées.</para>
           <para> </para></remarks>
@@ -6880,7 +6880,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection qui représente toutes les feuilles de calcul du manuel spécifié. Objet <b>Sheets</b> en lecture seule.</summary>
+        <summary>Renvoie une collection qui représente toutes les feuilles de calcul <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> du manuel spécifié. Objet <b>Sheets</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>Lorsqu'elle est utilisée sans qualificateur d'objet, cette propriété renvoie toutes les feuilles de calcul dans le classeur actif.</para>
           <para>Cette propriété ne retourne pas de feuilles macro ; utilisez la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" /> propriété ou la propriété pour <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" /> renvoyer ces feuilles.</para>
@@ -6913,7 +6913,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une chaîne (type de données <b>String</b>) pour le mot de passe en écriture d'un classeur. En lecture/écriture</summary>
+        <summary>Cette propriété renvoie ou définit une chaîne (type de données <b>String</b>) pour le mot de passe en écriture d'un classeur. Propriété en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6944,7 +6944,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si le classeur est protégé contre l'écriture. <b>Boolean</b> (en lecture seule).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le classeur est protégé contre l'écriture. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode pour définir cette propriété.</para>
           <para> </para></remarks>
@@ -6976,7 +6976,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie le nom de l'utilisateur qui a actuellement l'autorisation d'écriture pour le classeur. <b>String</b> en lecture seule.</summary>
+        <summary>Cette propriété renvoie le nom de l'utilisateur qui a actuellement l'autorisation d'écriture pour le classeur. Type de données <b>String</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7060,7 +7060,7 @@
         <returns>To be added.</returns>
         <remarks><para>Les fonctionnalités XML, à l’exception de l’enregistrement de fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professional Edition 2003 et Microsoft Office Excel 2003.</para>
           <para>Ne spécifiez pas de valeur pour le paramètre si vous souhaitez importer des <paramref name="Destination" /> données dans un mappage existant.</para>
-          <para>Les conditions suivantes entraînent la <b>génération d’erreurs</b> d’exécuter par la méthode XMLImport :</para>
+          <para>Les conditions suivantes entraînent la génération d’erreurs d’exécuter par la méthode <b>XMLImport</b> :</para>
           <list type="bullet">
             <item>
               <description>Les données XML spécifiées contiennent des erreurs de syntaxe.</description>
@@ -7096,7 +7096,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XmlMaps</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une collection qui représente les cartes de schéma qui ont été <see cref="T:Microsoft.Office.Interop.Excel.XmlMaps" /> ajoutées au livre de travail spécifié. En lecture seule.</summary>
+        <summary>Renvoie une collection qui représente les cartes de schéma qui ont été <see cref="T:Microsoft.Office.Interop.Excel.XmlMaps" /> ajoutées au workbook spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>Les fonctionnalités XML, à l’exception de l’enregistrement de fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professional Edition 2003 et Microsoft Office Excel 2003.</para>
           <para> </para></remarks>

@@ -1,5 +1,5 @@
 <Type Name="WorkbookConnection" FullName="Microsoft.Office.Interop.Excel.WorkbookConnection">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d36e4e18681b0c11f20840120b3306f1349f22ec" /><Meta Name="ms.sourcegitcommit" Value="b9fb06b594d56da0590a163c774e236b6362c059" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53147292" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2df29bf1c0ea3e9dd829b7e56d42c72d3a1dc9dc8714a6a0f8a934249a80041b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54505384" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface WorkbookConnection" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Une connexion est un ensemble d’informations nécessaires pour obtenir des données à partir d’une source de données externe autre qu’un 1st_Excel12 de travail.</summary>
-    <remarks><para>Les connexions peuvent être stockées à l'intérieur d'un classeur Excel.  Lorsque le workbook est ouvert, Excel crée une copie en mémoire de la connexion, appelée objet de connexion.  Un objet de connexion contient des informations, telles que le nom du serveur et le nom de l'objet à ouvrir sur ce serveur.  L'objet de connexion peut également éventuellement inclure les informations d'authentification et/ou une commande qui doit être transmise au serveur et exécutée ( exemple : une instruction SELECT que SQL Server doit exécuter).  </para>
+    <remarks><para>Les connexions peuvent être stockées à l'intérieur d'un classeur Excel. Lorsque le classeur est ouvert, Excel crée une copie en mémoire de la connexion auquel l'objet de connexion fait référence. Un objet de connexion contient des informations, telles que le nom du serveur et le nom de l'objet à ouvrir sur ce serveur. L'objet de connexion peut également éventuellement inclure les informations d'authentification et/ou une commande qui doit être transmise au serveur et exécutée ( exemple : une instruction SELECT que SQL Server doit exécuter).</para>
       <para>
         <b>Remarque</b>: la forme exacte de la connexion dépend du mécanisme utilisé pour récupérer des données : les connexions ODBC, les connexions OLEDB et les requêtes Web contiennent des informations différentes.</para>
       <para>Une connexion peut également être enregistrée dans un fichier de connexion distinct. La plupart des connexions d'un classeur Excel incluent un pointeur vers un fichier de connexion externe. Les fichiers de connexion ont des extensions (*.ODC, *.IQY, etc.) qui les identifient clairement en tant que fichiers de connexion. Ils peuvent être stockés sur l'ordinateur local de l'utilisateur ou dans tout emplacement connu ou approuvé, tel que WSS (Bibliothèque de connexions de données), ou dans tout autre serveur de l'entreprise. Les fichiers de connexion permettent à plusieurs utilisateurs au sein de la même organisation de réutiliser des connexions. Les administrateurs réseau sont en mesure de changer la manière dont l'ensemble d'une organisation se connecte à une source de données principale en modifiant un seul fichier de connexion. Un fichier de connexion n'est pas toujours requis lors de la connexion à une source de données externe.</para>
@@ -439,7 +439,7 @@ Cela n'entraîne pas non plus la suppression des fichiers de connexion du systè
         <ReturnType>Microsoft.Office.Interop.Excel.Ranges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la plage d’objets pour l’objet <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> spécifié. En lecture <see cref="T:Microsoft.Office.Interop.Excel.Ranges" /> seule.</summary>
+        <summary>Renvoie la plage d’objets de l’objet <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> spécifié. En lecture <see cref="T:Microsoft.Office.Interop.Excel.Ranges" /> seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

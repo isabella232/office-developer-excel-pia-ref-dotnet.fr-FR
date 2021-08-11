@@ -1,5 +1,5 @@
 <Type Name="AddIns2" FullName="Microsoft.Office.Interop.Excel.AddIns2">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d290e5057bbb26e2361ba5782d2258e77753d8fd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50002303" /></Metadata><TypeSignature Language="C#" Value="public interface AddIns2 : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="11bb5c9b652a0f0dea033112668dc057ef8d22cf1dac8a491555845202368adf" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506266" /></Metadata><TypeSignature Language="C#" Value="public interface AddIns2 : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIns2 implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AddIns2" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIns2&#xA;Implements IEnumerable" />
@@ -26,7 +26,7 @@
   </Attributes>
   <Docs>
     <summary>Collection d’objets qui représentent tous les modules qui sont actuellement disponibles ou ouverts dans Microsoft Excel, qu’ils soient <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> installés ou non.</summary>
-    <remarks><para>Le contenu de la collection correspond à la liste des modules qui s’affichent dans la boîte de dialogue Add-Ins (commande Des applications sous l’onglet Développeur) et à tous les modules qui sont actuellement <see cref="T:Microsoft.Office.Interop.Excel.AddIns2" /> ouverts.</para>
+    <remarks><para>Le contenu de la collection correspond à la liste des applications qui s’affichent dans la boîte de dialogue Add-Ins (commande Des applications sous l’onglet Développeur) et à tous les modules qui sont actuellement <see cref="T:Microsoft.Office.Interop.Excel.AddIns2" /> ouverts.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -118,7 +118,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui <see cref="T:Microsoft.Office.Interop.Excel.Application" /> représente l’application Microsoft Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet qui représente le <see cref="T:Microsoft.Office.Interop.Excel.Application" /> créateur de l’objet spécifié.</summary>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui représente <see cref="T:Microsoft.Office.Interop.Excel.Application" /> l’application Microsoft Excel’objet. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet qui représente le <see cref="T:Microsoft.Office.Interop.Excel.Application" /> créateur de l’objet spécifié.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Application" />Objet.</value>
         <remarks><para>En lecture seule.</para>
           <para> </para></remarks>
@@ -176,9 +176,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtient un <b>integer</b> 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
-        <value><b>Unteger</b> 32 bits qui indique l’application dans laquelle cet objet a été créé.</value>
+        <value>Un <b>integer</b> 32 bits qui indique l’application dans laquelle cet objet a été créé.</value>
         <remarks><para>En lecture seule <b>longue</b>.</para>
-          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C. La propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code créateur à <see cref="P:Microsoft.Office.Interop.Excel.AddIns2.Creator" /> quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C. La propriété est conçue pour être utilisée dans Microsoft Excel macintosh, où chaque application possède un code créateur à <see cref="P:Microsoft.Office.Interop.Excel.AddIns2.Creator" /> quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
