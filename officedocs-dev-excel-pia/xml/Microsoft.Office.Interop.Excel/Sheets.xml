@@ -1,5 +1,5 @@
 <Type Name="Sheets" FullName="Microsoft.Office.Interop.Excel.Sheets">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="db6b3bb11f3b424395c8a07057d1712212b447b0" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010268" /></Metadata><TypeSignature Language="C#" Value="public interface Sheets : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d7546dbed99f2b6271049c1688e78fecd9f3cd95b6a850c3aa2a52c58371ac7d" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519538" /></Metadata><TypeSignature Language="C#" Value="public interface Sheets : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Sheets implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Sheets" />
   <TypeSignature Language="VB.NET" Value="Public Interface Sheets&#xA;Implements IEnumerable" />
@@ -178,7 +178,7 @@
         <param name="After">To be added.</param>
         <param name="Count">To be added.</param>
         <param name="NewLayout">To be added.</param>
-        <summary>Cette méthode est implémentée uniquement pour l’objet de collection <b>Charts</b> et produit une erreur d’exécution si elle est utilisée sur les objets <b>Feuilles</b> et <b>Feuilles</b> de calcul.</summary>
+        <summary>Cette méthode est uniquement implémentée pour l’objet de collection <b>Charts</b> et produit une erreur d’exécution si elle est utilisée sur les objets <b>Sheets</b> et <b>Worksheets.</b></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,7 +206,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -240,7 +240,7 @@
         <param name="Before">Objet <b>facultatif</b>. Feuille avant laquelle la feuille copiée sera placée. Vous ne pouvez pas <paramref name="Before" /> spécifier si vous spécifiez <paramref name="After" /> .</param>
         <param name="After">Objet <b>facultatif</b>. Feuille après laquelle la feuille copiée sera placée. Vous ne pouvez pas <paramref name="After" /> spécifier si vous spécifiez <paramref name="Before" /> .</param>
         <summary>Copie la feuille à un autre emplacement dans le classeur.</summary>
-        <remarks><para>Si vous ne spécifiez pas l’une ou l’autre des deux, Microsoft Excel crée un nouveau workbook qui <paramref name="Before" /> contient la feuille <paramref name="After" /> copiée.</para>
+        <remarks><para>Si vous ne spécifiez pas l’une ou l’autre Microsoft Excel crée un nouveau <paramref name="Before" /> <paramref name="After" /> workbook qui contient la feuille copiée.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -482,7 +482,7 @@
         <param name="Before">Objet <b>facultatif</b>. Feuille avant laquelle la feuille déplacée s'insérera. Vous ne pouvez pas <paramref name="Before" /> spécifier si vous spécifiez <paramref name="After" /> .</param>
         <param name="After">Objet <b>facultatif</b>. Feuille après laquelle la feuille déplacée s'insérera. Vous ne pouvez pas <paramref name="After" /> spécifier si vous spécifiez <paramref name="Before" /> .</param>
         <summary>Cette méthode déplace la feuille à un autre endroit du classeur.</summary>
-        <remarks><para>Si vous ne spécifiez pas l’une ou l’autre des deux, Microsoft Excel crée un nouveau <paramref name="Before" /> <paramref name="After" /> workbook qui contient la feuille déplacée.</para>
+        <remarks><para>Si vous ne spécifiez pas l’une ou l’autre Microsoft Excel crée un nouveau <paramref name="Before" /> <paramref name="After" /> workbook qui contient la feuille déplacée.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -509,7 +509,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -554,11 +554,11 @@
         <param name="Copies">Objet <b>facultatif</b>. Nombre de copies à imprimer. Si cet argument est omis, une seule copie est imprimée.</param>
         <param name="Preview">Objet <b>facultatif</b>. <b>True</b> pour que Microsoft Excel affiche l'aperçu avant impression avant d'imprimer l'objet. <b>False</b> (ou non défini) pour imprimer l'objet immédiatement.</param>
         <param name="ActivePrinter">Objet <b>facultatif</b>. Définit le nom de l'imprimante active.</param>
-        <param name="PrintToFile">Objet <b>facultatif</b>. <b>True</b>  pour imprimer dans un fichier. Si <paramref name="PrToFileName" /> ce n’est pas spécifié, Microsoft Excel invite l’utilisateur à entrer le nom du fichier de sortie.</param>
+        <param name="PrintToFile">Objet <b>facultatif</b>. <b>True</b>  pour imprimer dans un fichier. Si <paramref name="PrToFileName" /> elle n’est pas spécifiée, Microsoft Excel invite l’utilisateur à entrer le nom du fichier de sortie.</param>
         <param name="Collate">Objet <b>facultatif</b>. <b>True</b>  pour assembler plusieurs copies.</param>
         <param name="PrToFileName">Objet <b>facultatif</b>. Si la valeur est True, cet argument spécifie le nom du fichier dans lequel <paramref name="PrintToFile" /> vous souhaitez <b></b>imprimer.</param>
         <summary>Cette méthode imprime l'objet.</summary>
-        <remarks><para>« Pages » dans les descriptions des pages imprimées et fait référence à ces pages, et non à l’ensemble des pages de la feuille <paramref name="From" /> <paramref name="To" /> ou du workbook.</para>
+        <remarks><para>« Pages » dans les descriptions des pages imprimées et fait référence à ces pages, et non à l’ensemble des pages de la <paramref name="From" /> <paramref name="To" /> feuille ou du workbook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

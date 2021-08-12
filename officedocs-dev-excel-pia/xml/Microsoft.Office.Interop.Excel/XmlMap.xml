@@ -1,5 +1,5 @@
 <Type Name="XmlMap" FullName="Microsoft.Office.Interop.Excel.XmlMap">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="90e19f9871537de3824defd244b85c6255bb7e45" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999621" /></Metadata><TypeSignature Language="C#" Value="public interface XmlMap" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="58611d8fcb25a1ddb69be84f80fc57499b32c31956a1e5f767f810ae2adea247" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519559" /></Metadata><TypeSignature Language="C#" Value="public interface XmlMap" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XmlMap" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XmlMap" />
   <TypeSignature Language="VB.NET" Value="Public Interface XmlMap" />
@@ -148,7 +148,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -263,7 +263,7 @@
         <param name="Overwrite"><b>Boolean</b> obligatoire. Définissez ce paramètre <b>sur True</b> pour réécrire le fichier spécifié dans le paramètre <paramref name="URL" /> s’il existe. Valeur par défaut si <b>False</b>.</param>
         <summary>Exporte le contenu des cellules mappées à l’objet <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> spécifié dans un fichier de données XML. Renvoie <see cref="T:Microsoft.Office.Interop.Excel.XlXmlExportResult" /> .</summary>
         <returns>To be added.</returns>
-        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" /> méthode pour exporter le contenu des cellules mappées vers une variable <b>de</b> chaîne.</para>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" /> méthode pour exporter le contenu des cellules mappées vers une variable <b>string.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -321,8 +321,8 @@
         <Parameter Name="Overwrite" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Url">Argument de type <b>String</b> obligatoire. Chemin d'accès aux données XML à importer. Ce chemin peut utiliser le format UNC (Universal Naming convention) ou URL (Uniform Resource Locator). Le fichier peut être un fichier de données XML ou un fichier de connexion de source de données (.uxdc) Office XML valide.</param>
-        <param name="Overwrite">Objet <b>facultatif</b>. Définissez <b>ce dernier sur True</b> pour réécrire les données existantes. Définissez ce <b>dernier sur False</b> pour l’appender aux données existantes. La valeur par défaut est <b>False</b>.</param>
+        <param name="Url">Argument de type <b>String</b> obligatoire. Chemin d'accès aux données XML à importer. Ce chemin peut utiliser le format UNC (Universal Naming convention) ou URL (Uniform Resource Locator). Le fichier peut être un fichier de données XML ou un fichier Office de connexion de source de données XML (.uxdc).</param>
+        <param name="Overwrite">Objet <b>facultatif</b>. Définissez cette valeur <b>sur True</b> pour réécrire les données existantes. Définissez ce <b>dernier sur False</b> pour l’appender aux données existantes. La valeur par défaut est <b>Faux</b>.</param>
         <summary>Importe les données du fichier de données XML spécifié dans les cellules qui ont été mappées à l’objet <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> spécifié. Renvoie <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -356,7 +356,7 @@
         <summary>Importe les données XML d’une variable <b>string</b> dans des cellules qui ont été mappées à l’objet <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> spécifié. Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" /> constante.</summary>
         <returns>To be added.</returns>
         <remarks><para>Les fonctionnalités XML, à l’exception de l’enregistrement de fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professional Edition 2003 et Microsoft Office Excel 2003.</para>
-          <para>Pour importer le contenu d’un fichier de données XML dans des cellules mappées à un mappé de schéma spécifique, utilisez la méthode de <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /> <b>l’objet XmlMap.</b></para>
+          <para>Pour importer le contenu d’un fichier de données XML dans des cellules mappées sur un schéma spécifique, utilisez la méthode de <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /> <b>l’objet XmlMap.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -443,7 +443,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -658,7 +658,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit si une boîte de dialogue qui détaille les erreurs de validation du schéma lorsque des données sont importées ou exportées par l’intermédiaire du mappage de schéma XML spécifié est affichée. La valeur par défaut est <b>False</b>. En lecture/écriture <b>booléen</b>.</summary>
+        <summary>Renvoie ou définit si une boîte de dialogue qui détaille les erreurs de validation du schéma lorsque des données sont importées ou exportées par l’intermédiaire du mappage de schéma XML spécifié est affichée. La valeur par défaut est <b>False</b>. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Les fonctionnalités XML, à l’exception de l’enregistrement de fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professional Edition 2003 et Microsoft Office Excel 2003.</para>
           <para> </para></remarks>

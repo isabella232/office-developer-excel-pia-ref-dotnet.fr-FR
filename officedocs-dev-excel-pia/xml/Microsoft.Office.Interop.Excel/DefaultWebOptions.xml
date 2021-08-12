@@ -1,5 +1,5 @@
 <Type Name="DefaultWebOptions" FullName="Microsoft.Office.Interop.Excel.DefaultWebOptions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f60968ca4bfd4013c6973e97422f9c5c78bdce23" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012529" /></Metadata><TypeSignature Language="C#" Value="public interface DefaultWebOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1ab1fdcab12372bedb81d7655c0e66bea641190a29a616aabfd11e57a54d7f78" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54510200" /></Metadata><TypeSignature Language="C#" Value="public interface DefaultWebOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DefaultWebOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface DefaultWebOptions" />
@@ -82,7 +82,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si le codage par défaut est utilisé lorsque vous enregistrez une page Web ou un document en texte brut, indépendamment du codage initial du fichier au moment de son ouverture. <b>False</b> si le codage d'origine du fichier est utilisé. La valeur par défaut est <b>False</b>.</summary>
+        <summary><b>True</b> si le codage par défaut est utilisé lorsque vous enregistrez une page Web ou un document en texte brut, indépendamment du codage initial du fichier au moment de son ouverture. <b>False</b> si le codage d'origine du fichier est utilisé. La valeur par défaut est <b>Faux</b>.</summary>
         <value>To be added.</value>
         <remarks><para>La <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Encoding" /> propriété peut être utilisée pour définir le codage par défaut.</para>
           <para> </para></remarks>
@@ -111,7 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,7 +205,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie la valeur <b>True</b> si les composants Microsoft Office Web Components nécessaires sont téléchargés lorsque vous visualisez le document enregistré dans un navigateur Web, mais uniquement si les composants ne sont pas encore installés sur l'ordinateur. Elle a la valeur <b>False</b> si les composants ne sont pas téléchargés. La valeur par défaut est <b>False</b>.</summary>
+        <summary>Cette propriété renvoie la valeur <b>True</b> si les composants Microsoft Office Web Components nécessaires sont téléchargés lorsque vous visualisez le document enregistré dans un navigateur Web, mais uniquement si les composants ne sont pas encore installés sur l'ordinateur. Elle a la valeur <b>False</b> si les composants ne sont pas téléchargés. La valeur par défaut est <b>Faux</b>.</summary>
         <value>To be added.</value>
         <remarks><para>Vous pouvez définir la propriété sur une URL centrale (sur l’intranet ou le web) ou un chemin d’accès (local ou réseau) vers un emplacement à partir duquel les utilisateurs autorisés peuvent télécharger des composants lors de l’affichage de votre <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LocationOfComponents" /> document enregistré. Il doit s'agir d'un chemin d'accès valide, faisant référence à un emplacement qui contient les composants nécessaires et l'utilisateur doit disposer d'une licence Microsoft Office.</para>
           <para>Les composants Microsoft Office Web Components permettent d'ajouter des fonctions interactives aux documents que vous enregistrez sous la forme de pages Web. Si vous visualisez une page Web à partir d'un navigateur situé sur un ordinateur sur lequel les composants ne sont pas installés, les parties interactives de la page seront statiques.</para>
@@ -267,11 +267,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le suffixe de dossier que Microsoft Excel utilise lorsque vous enregistrez un document en tant que page Web, utilisez des noms de fichiers longs et choisissez d’enregistrer les fichiers de prise en charge dans un dossier distinct (autrement dit, si les propriétés et les propriétés sont définies sur <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" /> <b>True</b>).</summary>
+        <summary>Renvoie le suffixe de dossier que Microsoft Excel utilise lorsque vous enregistrez un document en tant que page Web, utilisez des noms de fichiers longs et choisissez d’enregistrer les fichiers de prise en charge dans un dossier distinct (autrement dit, si les propriétés et les propriétés sont définies sur <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" /> <b>True).</b></summary>
         <value>To be added.</value>
         <remarks><para>Documents nouvellement créés utilisent le suffixe renvoyé par la propriété <b>FolderSuffix</b> de l'objet <b>DefaultWebOptions</b>. La valeur de la propriété de l’objet peut différer de celle de l’objet <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> <b>DefaultWebOptions</b> si le document a été précédemment modifié dans une autre version linguistique de Microsoft Excel. Vous pouvez utiliser la méthode pour modifier le suffixe en la langue que vous utilisez actuellement <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> dans Microsoft Office.</para>
           <para>Par défaut, le nom du dossier de prise en charge correspond au nom de la page Web auquel sont ajoutés un trait de soulignement (_), un point (.) ou un trait d'union (-) et le mot « files » (qui s'affiche dans la langue de la version de Microsoft Excel utilisée lors de l'enregistrement du fichier sous la forme d'une page Web). Par exemple, si vous utilisez la version néerlandaise de Microsoft Excel pour enregistrer un fichier nommé « Page1 » sous la forme d'une page Web, le nom par défaut du dossier de prise en charge est « Page1_bestanden ».</para>
-          <para>Le tableau suivant répertorie chaque version linguistique d’Office et indique la valeur de sa propriété <b>LanguageID</b> correspondante et son suffixe de dossier. Pour les langues qui ne sont pas répertoriés dans le tableau, le suffixe « .files » est utilisé.</para>
+          <para>Le tableau suivant répertorie chaque version linguistique de Office et indique la valeur de sa propriété <b>LanguageID</b> correspondante et le suffixe de son dossier. Pour les langues qui ne sont pas répertoriés dans le tableau, le suffixe « .files » est utilisé.</para>
           <list type="table">
             <item>
               <term>Arabe</term>
@@ -495,7 +495,7 @@
         <ReturnType>Microsoft.Office.Core.WebPageFonts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la collection représentant l’ensemble de polices que Microsoft Excel utilise lorsque vous ouvrez une page Web dans Excel et qu’aucune information de police n’est spécifiée dans la page Web, ou que la police par défaut actuelle ne peut pas afficher le jeu de caractères dans la <see cref="T:Microsoft.Office.Core.WebPageFonts" /> page Web.</summary>
+        <summary>Renvoie la collection représentant l’ensemble de polices que Microsoft Excel utilise lorsque vous ouvrez une page Web dans Excel et qu’aucune information de police n’est spécifiée dans la page Web ou que la police par défaut actuelle ne peut pas afficher le jeu de caractères dans la <see cref="T:Microsoft.Office.Core.WebPageFonts" /> page Web.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -559,7 +559,7 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l’URL centrale (sur l’intranet ou le Web) ou le chemin d’accès (local ou réseau) menant à l’emplacement à partir duquel les utilisateurs autorisés peuvent télécharger les composants Microsoft Office Web Components lorsqu’ils visualisent votre document enregistré. La valeur par défaut constitue le chemin d’accès local ou réseau d’installation de Microsoft Office.</summary>
         <value>To be added.</value>
-        <remarks><para>Les composants Web Office sont automatiquement téléchargés avec la page Web spécifiée si la propriété est définie sur True, si les composants ne sont pas déjà installés, si le chemin d’accès est valide et pointe vers un emplacement contenant les composants nécessaires et si l’utilisateur dispose d’une licence <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.DownloadComponents" /> Microsoft Office valide. <b></b></para>
+        <remarks><para>Office Les composants Web sont automatiquement téléchargés avec la page Web spécifiée si la propriété est définie sur True, si les composants ne sont pas déjà installés, si le chemin d’accès est valide et pointe vers un emplacement contenant les composants nécessaires et si l’utilisateur dispose d’une licence <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.DownloadComponents" /> Microsoft Office valide. <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -593,7 +593,7 @@
         <value>To be added.</value>
         <remarks><para>Le nouveau dossier est créé dans le dossier où vous avez enregistré la page Web et est nommé d'après le document. Si les noms de fichiers longs sont utilisés, un suffixe est ajouté au nom du dossier. La propriété renvoie le suffixe de dossier pour la prise en charge de langue que vous avez sélectionnée ou installée, ou le <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> suffixe de dossier par défaut.</para>
           <para>Si vous enregistrez un document qui était auparavant enregistré avec une valeur différente affectée à la propriété <b>OrganizeInFolder</b>, Microsoft Excel déplace automatiquement les fichiers de prise en charge à l'intérieur du dossier ou en dehors du dossier selon les cas.</para>
-          <para>Si vous n’utilisez pas de noms de fichiers longs (c’est-à-dire, si la propriété est définie sur False), Microsoft Excel enregistre automatiquement les fichiers de prise en charge dans <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" /> un dossier distinct. <b></b> Les fichiers ne peuvent pas être enregistrés dans le même dossier que la page Web.</para>
+          <para>Si vous n’utilisez pas de noms de fichiers longs (c’est-à-dire, si la propriété est définie sur False), Microsoft Excel enregistre automatiquement les fichiers de prise en charge dans un <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" /> dossier distinct. <b></b> Les fichiers ne peuvent pas être enregistrés dans le même dossier que la page Web.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -879,7 +879,7 @@
         <summary>Renvoie ou définit une constante indiquant la version du navigateur.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>MsoTargetBrowser</b> peut être l'une de ces constantes <b>MsoTargetBrowser</b>. </para>
+            <b>MsoTargetBrowser</b> peut être l'une de ces constantes <b>MsoTargetBrowser</b>.</para>
           <para>
             <b>msoTargetBrowserIE4</b> Microsoft Internet Explorer 4.0 ou une ultérieure.</para>
           <para>

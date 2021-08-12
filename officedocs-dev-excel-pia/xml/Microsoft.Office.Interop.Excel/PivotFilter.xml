@@ -1,5 +1,5 @@
 <Type Name="PivotFilter" FullName="Microsoft.Office.Interop.Excel.PivotFilter">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="8ca490d3d62655bdb53770e1be334fbb762008fb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010870" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFilter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d7125387017b779474c0b8eda06ea2a2023fb42d9091b0e2b896dd281b509eb8" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54510319" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFilter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotFilter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotFilter" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotFilter" />
@@ -248,7 +248,7 @@
       <Docs>
         <summary>Spécifie le type de filtre à appliquer. En lecture seule.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotFilterType" /></value>
-        <remarks><para>Le tableau suivant indique les types de filtres qui peuvent être ajoutés à un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> . Les arguments qui doivent être fournis à la méthode pour ce type de filtre sont marqués « Obligatoire » et ceux qui ne peuvent pas être fournis sont marqués « <see cref="T:Microsoft.Office.Interop.Excel.xlPivotFilters.Add" /> Non disponible ».</para>
+        <remarks><para>Le tableau suivant indique les types de filtres qui peuvent être ajoutés à un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> . Les arguments qui doivent être fournis à la méthode pour ce type de filtre sont marqués « Obligatoire » et ceux qui ne peuvent pas être fournis sont marqués « Non <see cref="T:Microsoft.Office.Interop.Excel.xlPivotFilters.Add" /> disponible ».</para>
           <list type="table">
             <item>
               <term>
@@ -872,11 +872,11 @@
       <Docs>
         <summary>Spécifie l’ordre d’évaluation du filtre parmi tous les filtres de valeur appliqués à <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> l’ensemble. Lecture/écriture</summary>
         <value><b>Integer</b>.</value>
-        <remarks><para>Cette propriété n’est valide que pour les types <b>Value</b> et <b></b> <paramref name="n" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> Top. Une erreur d’exécuter est renvoyée si une tentative de définir ou d’obtenir cette propriété pour les filtres <b>Étiquette</b> et <b>Date</b> est réalisée. 1 représente le premier filtre évalué, 2 représente le filtre évalué suivant, et ainsi de suite, jusqu’à ce que la <paramref name="n" /> thème valeur soit atteinte. -1 représente un filtre inactif.</para>
+        <remarks><para>Cette propriété n’est valide que pour les types <b>Value</b> et <b></b> <paramref name="n" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> Top. Une erreur d’exécuter est renvoyée si une tentative de définir ou d’obtenir cette propriété pour les filtres <b>Étiquette</b> et <b>Date</b> est réalisée. 1 représente le premier filtre évalué, 2 représente le filtre évalué suivant, et ainsi de suite, jusqu’à ce que <paramref name="n" /> la thème valeur soit atteinte. -1 représente un filtre inactif.</para>
           <para>Si la propriété n’est pas spécifiée lors de l’ajout d’un nouveau filtre, elle est définie sur (où est le nombre le plus élevé actuel <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> dans la collection de <paramref name="N+1" /> <paramref name="N" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> filtres).</para>
-          <para>La propriété peut être spécifiée dans la méthode ou elle peut être définie ultérieurement pour <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters.Add" /> un champ en modifiant la propriété.</para>
+          <para>La propriété peut être spécifiée dans la méthode ou peut être définie ultérieurement pour un <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters.Add" /> champ en modifiant la propriété.</para>
           <para>L'augmentation de l'ordre d'évaluation d'un champ diminue d'une unité l'ordre d'évaluation du champ qui avait cette valeur auparavant, ainsi que de tous les champs situés entre les deux champs concernés. La restitution de l'ordre d'évaluation antérieur n'a pas d'effet. La diminution de l'ordre d'évaluation pour un champ augmente d'une unité l'ordre d'évaluation du champ qui avait cette valeur auparavant, ainsi que de tous les champs situés entre les deux champs concernés.</para>
-          <para>L’ordre <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> de la collection est le même que l’ordre dans lequel elles sont évaluées. Ainsi, les développeurs peuvent modifier l’ordre dans lequel un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet est évalué. Lorsqu’un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> (non-OLAP) ou <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> un (OLAP) est supprimé de la collection, cette propriété est définie sur <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> -1 pour une valeur ou un filtre Top appliqué au <paramref name="n" /> champ. Si vous rajoutez le champ, vous définissez la propriété sur un filtre Value ou Top appliqué si aucune valeur <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> <paramref name="N+1" /> <paramref name="n" /> n’est explicitement spécifiée.</para>
+          <para>L’ordre de la collection est le même que <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> l’ordre dans lequel elles sont évaluées. Ainsi, les développeurs peuvent modifier l’ordre dans lequel un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objet est évalué. Lorsqu’un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> (non-OLAP) ou <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> un (OLAP) est supprimé de la collection, cette propriété est définie sur <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> -1 pour une valeur ou un filtre Top appliqué au <paramref name="n" /> champ. L’ajout du champ à nouveau définira la propriété pour un filtre Valeur ou Supérieure appliqué si aucune valeur <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> <paramref name="N+1" /> <paramref name="n" /> n’est explicitement spécifiée.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1018,15 +1018,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit ou obtient la sémantique de filtrage des filtres de date. <b>Booléen</b> <b>(booléen</b> en C#). Lecture/Écriture</summary>
+        <summary>Définit ou obtient la sémantique de filtrage pour les filtres de date. <b>Booléen</b> <b>(booléen</b> en C#). Lecture/Écriture</summary>
         <value>To be added.</value>
         <remarks><para>Les résultats des paramètres de propriété précédents et actuels sont décrits ci-après :</para>
           <list type="bullet">
             <item>
-              <description>False (comportement d’Office 2010) : tout moment peut être spécifié . sont des points précis dans l’heure (minuit de la date spécifiée). Le filtrage des plages de dates commence ou se termine à minuit.</description>
+              <description>False (comportement Office 2010) : tout moment peut être spécifié . sont des points précis dans l’heure (minuit de la date spécifiée). Le filtrage des plages de dates commence ou se termine à minuit.</description>
             </item>
             <item>
-              <description>True (comportement d’Office 2013) : ce comportement est appliqué pour les contrôles de chronologie. Seules les dates entières sont spécifiées ; les dates incluent toutes les heures de la journée jusqu’au jour suivant à minuit et non le jour suivant.</description>
+              <description>True (Office 2013) : ce comportement est appliqué pour les contrôles de chronologie. Seules les dates entières sont spécifiées ; les dates incluent toutes les heures de la journée jusqu’au jour suivant à minuit et non le jour suivant.</description>
             </item>
           </list>
           <para>Pour une chronologie, renvoie toujours <b>la valeur True</b>; renvoie une erreur d’run-time lorsque la définition est sur <b>False</b>.</para>

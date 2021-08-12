@@ -1,5 +1,5 @@
 <Type Name="Shape" FullName="Microsoft.Office.Interop.Excel.Shape">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="79407cc874dc91aaa0bdd4a827ab38f1c0fb6b0b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010366" /></Metadata><TypeSignature Language="C#" Value="public interface Shape" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d86638fcef155bf5d6626b30f97fabfb8dab499efe5e761ec66682ff972a7143" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507281" /></Metadata><TypeSignature Language="C#" Value="public interface Shape" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shape" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Shape" />
   <TypeSignature Language="VB.NET" Value="Public Interface Shape" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente un objet sur le calque de dessin, par exemple une forme automatique, une forme libre, un objet OLE ou une image. <b>L’objet Shape</b> est membre de la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection. La collection <b>Shapes</b> contient toutes les formes d’une diapositive.</summary>
-    <remarks><para>Il existe trois objets qui représentent des formes : la collection <b>Shapes,</b> qui représente toutes les formes d’un document ; la collection, qui représente un sous-ensemble spécifié des formes d’un document (par exemple, un objet ShapeRange peut représenter les formes 1 et 4 du document ou toutes les formes sélectionnées sur le document) ; et l’objet Shape, qui représente une seule forme d’un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> document. <b></b> <b></b> Pour utiliser plusieurs formes simultanément ou des formes faisant partie de la sélection, utilisez une collection <b>ShapeRange</b>.</para>
+    <remarks><para>Trois objets représentent des formes : la collection <b>Shapes,</b> qui représente toutes les formes d’un document ; la collection, qui représente un sous-ensemble spécifié des formes d’un document (par exemple, un objet ShapeRange peut représenter les formes 1 et 4 du document ou toutes les formes sélectionnées sur le document) ; et l’objet Shape, qui représente une seule forme d’un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> document. <b></b> <b></b> Pour utiliser plusieurs formes simultanément ou des formes faisant partie de la sélection, utilisez une collection <b>ShapeRange</b>.</para>
       <para>Cette section décrit comment :</para>
       <list type="bullet">
         <item>
@@ -52,7 +52,7 @@
       <para>Renvoi des formes attachées aux extrémités d’un connecteur.</para>
       <para>Pour renvoyer un <b>objet Shape</b> qui représente l’une des formes attachées par un connecteur, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> ou la <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> propriété.</para>
       <para>Renvoi d’une nouvelle forme libre</para>
-      <para>Utilisez les méthodes et les méthodes pour définir la géométrie d’une nouvelle forme libre et utilisez la méthode pour créer la forme libre et renvoyer l’objet <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> Shape qui la <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> représente. <b></b></para>
+      <para>Utilisez les méthodes et les méthodes pour définir la géométrie d’une nouvelle forme libre et utilisez la méthode pour créer la forme libre et renvoyer l’objet Shape qui <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> la <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> représente. <b></b></para>
       <para>Renvoi d’une seule forme au sein d’un groupe</para>
       <para>Utilisez <b>GroupItems</b>( ), où est le nom de la forme ou le numéro d’index dans le groupe, pour renvoyer un objet Shape qui représente une seule forme dans une <paramref name="index" /> forme <paramref name="index" /> groupée. <b></b></para>
       <para>Renvoi d’un groupe de formes nouvellement constitué</para>
@@ -144,7 +144,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -320,7 +320,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CalloutFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui contient les propriétés de mise en <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> forme de la forme spécifiée. <see cref="T:Microsoft.Office.Interop.Excel.Shape" />S’applique aux objets qui représentent des traits de ligne. En lecture seule.</summary>
+        <summary>Renvoie un objet qui contient les propriétés de mise en forme de <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> la forme spécifiée. S’applique <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> aux objets qui représentent des traits de ligne. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -643,7 +643,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ControlFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" /> objet qui contient les propriétés de contrôle Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" /> objet qui contient des propriétés Microsoft Excel contrôle. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -925,7 +925,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui contient les propriétés de mise en <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> forme de remplissage pour le graphique ou la forme spécifiée. En lecture seule.</summary>
+        <summary>Renvoie un objet qui contient les propriétés de mise en forme de <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> remplissage pour le graphique ou la forme spécifiée. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -983,7 +983,7 @@
       <Docs>
         <summary>Cette propriété renvoie le type de contrôle Microsoft Excel. En lecture <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" /> seule.</summary>
         <value>To be added.</value>
-        <remarks><para>Vous ne pouvez pas utiliser cette propriété avec ActiveX contrôles (la propriété de l’objet doit <see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> renvoyer <b>msoFormControl</b>).</para>
+        <remarks><para>Vous ne pouvez pas utiliser cette propriété avec ActiveX contrôles (la propriété de l’objet doit <see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>renvoyer msoFormControl</b>).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1334,7 +1334,7 @@
       <Docs>
         <param name="Increment">Argument de type <b>Single</b> obligatoire. Spécifie la distance de rotation horizontale de la forme en degrés. Spécifiez une valeur positive pour faire pivoter la forme dans le sens des aiguilles d'une montre, ou inversement, une valeur négative pour la faire pivoter dans le sens inverse.</param>
         <summary>Cette méthode modifie la rotation de la forme spécifiée autour de l’axe z selon le nombre de degrés spécifiés. Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> propriété pour définir la rotation absolue de la forme.</summary>
-        <remarks><para>Pour faire pivoter une forme en trois dimensions autour de l’axe des x ou des y, utilisez la méthode ou <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> la méthode.</para>
+        <remarks><para>Pour faire pivoter une forme en trois dimensions autour de l’axe des x ou des y, utilisez la <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> méthode <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> ou la méthode.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1703,7 +1703,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1996,7 +1996,7 @@
         <ReturnType>Microsoft.Office.Core.Script</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie l'objet <b>Script</b> qui représente un bloc de script ou de code dans la page Web spécifiée. Si la page ne contient pas de script, aucune valeur n'est renvoyée.</summary>
+        <summary>Cette propriété renvoie l'objet <b>Script</b> qui représente un bloc de script ou de code dans la page Web spécifiée. Si aucun script n'est associé à la page, aucun objet n'est renvoyé.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2193,7 +2193,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextEffectFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui contient les propriétés de mise en forme <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> d’effet de texte pour la forme spécifiée. <b>S’applique aux objets T:Microsoft.Office.Interop.Excel.Shape</b> qui représentent des objets WordArt. En lecture seule.</summary>
+        <summary>Renvoie un objet qui contient les propriétés de mise en forme <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> d’effet de texte pour la forme spécifiée. <b>S’applique à T:Microsoft.Office. Interop. Excel. Objets Shape</b> qui représentent des objets WordArt. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2423,7 +2423,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Dissocie toutes les formes groupées dans la forme ou la plage de formes spécifiée. Désassemble les images et les objets OLE au sein de la forme spécifiée. Renvoie les formes non groupées sous la forme d’un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> seul objet.</summary>
+        <summary>Dissocie toutes les formes groupées dans la forme ou la plage de formes spécifiée. Désassemble les images et les objets OLE dans la forme spécifiée. Renvoie les formes non groupées sous la forme d’un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> seul objet.</summary>
         <returns>To be added.</returns>
         <remarks><para>Comme un groupe de formes est traité comme un objet unique, grouper et dissocier des formes modifie le nombre d'éléments dans la collection <b>Shapes</b> et change les numéros d'index des éléments qui suivent les éléments concernés dans la collection.</para>
           <para> </para></remarks>

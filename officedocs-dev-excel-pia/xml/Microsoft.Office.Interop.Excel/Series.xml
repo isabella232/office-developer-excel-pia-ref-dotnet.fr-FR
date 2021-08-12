@@ -1,5 +1,5 @@
 <Type Name="Series" FullName="Microsoft.Office.Interop.Excel.Series">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3a8cc36d1324ac7595cb7a40f82c526876f56ea7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010429" /></Metadata><TypeSignature Language="C#" Value="public interface Series" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="28f59f5156343c5ddfa94f1648090a31d6a8243d12bbecec89739b2293fc74b8" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519489" /></Metadata><TypeSignature Language="C#" Value="public interface Series" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Series" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Series" />
   <TypeSignature Language="VB.NET" Value="Public Interface Series" />
@@ -85,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -586,7 +586,7 @@
         <param name="Include">Obligatoire <see cref="T:Microsoft.Office.Interop.Excel.XlErrorBarInclude" /> . Parties de la barre d'erreur à inclure.</param>
         <param name="Type">Obligatoire <see cref="T:Microsoft.Office.Interop.Excel.XlErrorBarType" /> . Type de barre d'erreur.</param>
         <param name="Amount">Objet <b>facultatif</b>. La marge d'erreur. Utilisé uniquement pour le montant d’erreur positif <paramref name="Type" /> lorsqu’est <b>xlErrorBarTypeCustom</b>.</param>
-        <param name="MinusValues">Objet <b>facultatif</b>. Montant d’erreur négatif lorsque <paramref name="Type" /> la valeur <b>est xlErrorBarTypeCustom</b>.</param>
+        <param name="MinusValues">Objet <b>facultatif</b>. Montant d’erreur négatif <paramref name="Type" /> lorsqu’il s’agit <b>de xlErrorBarTypeCustom</b>.</param>
         <summary>Applique des barres d'erreur à la série. <b>Objet</b>.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -677,7 +677,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui contient les propriétés de mise en <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> forme de remplissage pour le graphique ou la forme spécifiée. En lecture seule.</summary>
+        <summary>Renvoie un objet qui contient les propriétés de mise en forme de <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> remplissage pour le graphique ou la forme spécifiée. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -739,7 +739,7 @@
         <summary>Renvoie ou définit la formule de l’objet dans une notation de type A1. <b>String</b> en lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
-          <para>Si la cellule contient une constante, la propriété la renvoie. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule en tant que chaîne dans le même format que celui qui doit s'afficher dans la barre de formule (y compris le signe égal).</para>
+          <para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule en tant que chaîne dans le même format que celui qui doit s'afficher dans la barre de formule (y compris le signe égal).</para>
           <para>Si vous affectez une date à la formule d'une cellule, Microsoft Excel vérifie si la cellule est déjà dotée de l'un des formats numériques ou de date. Si tel n'est pas le cas, Microsoft Excel lui affecte le format de date numérique par défaut.</para>
           <para>S'il s'agit d'une plage à une ou deux dimensions, vous pouvez désigner la formule comme un tableau Visual Basic possédant les mêmes dimensions. De même, vous pouvez inclure la formule dans un tableau Visual Basic.</para>
           <para>Le fait de définir la formule pour une plage comprenant plusieurs cellules insère cette formule dans la totalité des cellules de la plage.</para>
@@ -1100,7 +1100,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si Microsoft Excel inverse le modèle dans l’élément lorsqu’il correspond à un nombre négatif. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Renvoie la valeur <b>True</b> si Microsoft Excel inverse le motif de l’élément lorsque celui-ci correspond à un nombre négatif. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1131,7 +1131,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ce paramètre contrôle si la série a été filtrée à partir du graphique. La valeur par défaut est <b>False</b>. <b>Booléen</b> <b>(booléen</b> en C#) En lecture-écriture.</summary>
+        <summary>Ce paramètre contrôle si la série a été filtrée à partir du graphique. La valeur par défaut est <b>Faux</b>. <b>Booléen</b> <b>(booléen</b> C#) En lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Lorsqu’un utilisateur filtre une série, la propriété <b>IsFiltered</b> de la série bascule vers <b>True</b>et la série est transférée hors de sa collection <b>SeriesCollection parente</b>. Toutefois, cette série reste dans son parent <b>FullSeriesCollection</b>. Lorsqu’un utilisateur filtre à nouveau la série, elle est insérée à sa place d’origine dans <b>SeriesCollection</b>.</para>
           <para> </para></remarks>
@@ -1160,7 +1160,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.LeaderLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie un objet <b>LeaderLines</b> qui représente les lignes d'étiquettes de la série. En lecture seule.</summary>
+        <summary>Cette propriété renvoie un objet <b>LeaderLines</b> qui représente les lignes d'étiquettes de la série. Propriété en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1222,7 +1222,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit la couleur d’arrière-plan de la marque. Ne s'applique qu'aux graphiques en courbes, nuages de points ou radar. En <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> lecture/écriture.</summary>
+        <summary>Renvoie ou définit la couleur d’arrière-plan du marqueur. Ne s'applique qu'aux graphiques en courbes, nuages de points ou radar. En <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1450,7 +1450,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1639,7 +1639,7 @@
         <summary>Cette propriété renvoie ou définit l'ordre de traçage de la série sélectionnée au sein du groupe de graphique. <b>Entier</b> en lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks><para>L'ordre de traçage ne peut être défini qu'au sein d'un groupe de graphiques (vous ne pouvez pas définir l'ordre de traçage pour la totalité du graphique en présence de plusieurs types de graphique). Par groupe de graphiques, il faut entendre un ensemble de séries de données qui possèdent le même type de graphique.</para>
-          <para>Si vous modifiez l’ordre de traçage d’une série, les ordres de traçage de l’autre série du groupe de graphiques seront ajustés si nécessaire.</para>
+          <para>Si vous modifiez l’ordre de traçage d’une série, les ordres de traçage de l’autre série du groupe de graphiques seront ajustés selon les besoins.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1755,7 +1755,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si le lissage de courbes est activé pour le graphique en courbes ou en nuages de point. Cette propriété ne s'applique qu'à ces deux types de graphiques. En lecture/écriture</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si le lissage des courbes est activé pour les graphiques en courbes ou en nuages de points. Cette propriété ne s'applique qu'à ces deux types de graphiques. Type de données en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1877,9 +1877,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un tableau de valeurs x pour une série de graphique. La <b>propriété XValues peut</b> être définie sur une plage sur une feuille de calcul ou sur un tableau de valeurs, mais elle ne peut pas être une combinaison des deux. <b>Objet</b> en lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un tableau de valeurs x pour une série de graphique. La <b>propriété XValues peut</b> être définie sur une plage dans une feuille de calcul ou sur un tableau de valeurs, mais elle ne peut pas être une combinaison des deux. <b>Objet</b> en lecture/écriture.</summary>
         <value>To be added.</value>
-        <remarks><para>Pour les rapports de tableau croisé dynamique, cette propriété est en lecture seule.</para>
+        <remarks><para>Par PivotChart rapports, cette propriété est en lecture seule.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
