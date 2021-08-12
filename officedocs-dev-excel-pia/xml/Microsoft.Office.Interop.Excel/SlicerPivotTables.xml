@@ -1,5 +1,5 @@
 <Type Name="SlicerPivotTables" FullName="Microsoft.Office.Interop.Excel.SlicerPivotTables">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e7cf06ad9737671167d43d23e4d02fbaa27f0834" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010156" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerPivotTables : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="260d005d4499b513b0b807510b94cec12b50c5076ebbd291d676fe8a95f9f6ff" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518887" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerPivotTables : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerPivotTables implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />
   <TypeSignature Language="VB.NET" Value="Public Interface SlicerPivotTables&#xA;Implements IEnumerable" />
@@ -26,7 +26,7 @@
   </Attributes>
   <Docs>
     <summary>Représente des informations sur la collection de tableaux croisés dynamiques associés à l’objet <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> spécifié.</summary>
-    <remarks><para>La <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> collection contient des informations sur les tableaux croisés dynamiques que le cache de slicer filtre actuellement. Il fournit des propriétés permettant de déterminer le nombre de tableaux croisés dynamiques associés au slicer et de récupérer des objets qui représentent les tableaux <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> croisés dynamiques filtrés. Il fournit également des méthodes pour ajouter et supprimer des tableaux croisés dynamiques de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> collection. La collection est vide si le slicer associé à l’objet spécifié n’est connecté à aucun tableau <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> croisé dynamique.</para>
+    <remarks><para>La <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> collection contient des informations sur les tableaux croisés dynamiques que le cache de slicer filtre actuellement. Il fournit des propriétés permettant de déterminer le nombre de tableaux croisés dynamiques associés au slicer et de récupérer des objets qui représentent les tableaux <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> croisés dynamiques filtrés. Il fournit également des méthodes pour ajouter et supprimer des tableaux croisés dynamiques de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> collection. La collection est vide si le slicer associé à l’objet spécifié n’est connecté à aucun <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> tableau croisé dynamique.</para>
       <para>Utilisez la propriété de l’objet pour renvoyer la collection associée à un , qui à son tour peut être associée à <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> un ou plusieurs <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> slicers.</para>
       <para> </para></remarks>
   </Docs>
@@ -117,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui <see cref="T:Microsoft.Office.Interop.Excel.Application" /> représente l’application Microsoft Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet qui représente le <see cref="T:Microsoft.Office.Interop.Excel.Application" /> créateur de l’objet spécifié.</summary>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui représente <see cref="T:Microsoft.Office.Interop.Excel.Application" /> l’application Microsoft Excel’objet. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet qui représente le <see cref="T:Microsoft.Office.Interop.Excel.Application" /> créateur de l’objet spécifié.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Application" />Objet.</value>
         <remarks><para>En lecture seule.</para>
           <para> </para></remarks>
@@ -174,9 +174,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un objet de 32 <b>bits</b> qui indique l’application dans laquelle cet objet a été créé.</summary>
-        <value><b>Unteger</b> 32 bits qui indique l’application dans laquelle cet objet a été créé.</value>
-        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C. La propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code créateur à <see cref="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Creator" /> quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+        <summary>Obtient un <b>integer</b> 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
+        <value>Un <b>integer</b> 32 bits qui indique l’application dans laquelle cet objet a été créé.</value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C. La propriété est conçue pour être utilisée dans Microsoft Excel macintosh, où chaque application possède un code créateur à <see cref="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Creator" /> quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -296,7 +296,7 @@
         <Parameter Name="PivotTable" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="PivotTable">Objet qui représente le tableau croisé dynamique à supprimer, ou le nom ou l’index du tableau <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> croisé dynamique dans la collection.</param>
+        <param name="PivotTable">Objet qui représente le tableau croisé dynamique à supprimer, ou le nom ou l’index du tableau croisé dynamique <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> dans la collection.</param>
         <summary>Supprime une référence à un tableau croisé dynamique de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> collection.</summary>
         <remarks><para>Lorsqu’un tableau croisé dynamique est supprimé de la collection, il n’est plus filtré par son parent et les slicers qui lui <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> sont associés.</para>
           <para> </para></remarks>

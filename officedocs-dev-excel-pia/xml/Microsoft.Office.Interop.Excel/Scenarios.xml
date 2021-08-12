@@ -1,5 +1,5 @@
 <Type Name="Scenarios" FullName="Microsoft.Office.Interop.Excel.Scenarios">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ae2d83b0cebf35ca68c44e96b1d08c3bd0e82529" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010464" /></Metadata><TypeSignature Language="C#" Value="public interface Scenarios : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f05ebf37586e1c931e1afca777bd6c97bc0ac8caf386737ec0631e3bf5e87e3e" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518460" /></Metadata><TypeSignature Language="C#" Value="public interface Scenarios : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Scenarios implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Scenarios" />
   <TypeSignature Language="VB.NET" Value="Public Interface Scenarios&#xA;Implements IEnumerable" />
@@ -61,10 +61,10 @@
       <Docs>
         <param name="Name">Argument de type <b>String</b> obligatoire. Nom du scénario.</param>
         <param name="ChangingCells">Required, <b>objet</b>. Objet <see cref="T:Microsoft.Office.Interop.Excel.Range" /> qui fait référence aux cellules qui changent pour le scénario.</param>
-        <param name="Values">Objet <b>facultatif</b>. Tableau qui contient les valeurs de scénario pour les cellules de <paramref name="ChangingCells" /> . Si cet argument est omis, les valeurs du scénario sont supposées être les valeurs actuelles dans les cellules de <paramref name="ChangingCells" /> .</param>
+        <param name="Values">Objet <b>facultatif</b>. Tableau qui contient les valeurs de scénario pour les cellules dans <paramref name="ChangingCells" /> . Si cet argument est omis, les valeurs du scénario sont supposées être les valeurs actuelles dans les cellules de <paramref name="ChangingCells" /> .</param>
         <param name="Comment">Objet <b>facultatif</b>. Chaîne spécifiant les annotations du scénario. Lorsqu'un nouveau scénario est ajouté, le nom de l'auteur et la date sont automatiquement ajoutés au début des annotations.</param>
         <param name="Locked">Objet <b>facultatif</b>. <b>True</b> pour verrouiller le scénario afin d'empêcher les modifications. La valeur par défaut est <b>True</b>.</param>
-        <param name="Hidden">Objet <b>facultatif</b>. <b>True</b> pour masquer le scénario. La valeur par défaut est <b>False</b>.</param>
+        <param name="Hidden">Objet <b>facultatif</b>. <b>True</b> pour masquer le scénario. La valeur par défaut est <b>Faux</b>.</param>
         <summary>Cette méthode crée un nouveau scénario et l’ajoute à la liste des scénarios disponibles pour la feuille de calcul active.</summary>
         <returns>To be added.</returns>
         <remarks><para>Le nom d'un scénario doit être unique ; Microsoft Excel produit une erreur si vous essayez de créer un scénario dont le nom est déjà utilisé.</para>
@@ -94,7 +94,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,5 +1,5 @@
 <Type Name="PivotCell" FullName="Microsoft.Office.Interop.Excel.PivotCell">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d2f870880113d0a92987ae33be86341048714031" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010933" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCell" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fbbdae64cf7a054bab0c86aad763673fe235fd17db6bf4e764080c5fc2243be9" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518740" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCell" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCell" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCell" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotCell" />
@@ -78,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,7 +134,7 @@
             </item>
             <item>
               <term>Recalcule une ou plusieurs cellules avec une formule, soit manuellement (F9), soit automatiquement par Excel.</term>
-              <description>S/O</description>
+              <description>N/A</description>
               <description>Définir sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> pour ces cellules.</description>
             </item>
             <item>
@@ -159,8 +159,8 @@
             </item>
             <item>
               <term>Efface une cellule.</term>
-              <description>Définir sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour cette cellule uniquement.</description>
-              <description>Définir sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour cette cellule uniquement.</description>
+              <description>Définissez sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour cette cellule uniquement.</description>
+              <description>Définissez sur <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> pour cette cellule uniquement.</description>
             </item>
             <item>
               <term>Effectue une opération d’annulation qui modifie la valeur à une valeur précédemment modifiée, avant que cette valeur ne soit appliquée.</term>
@@ -383,7 +383,7 @@
       <Parameters />
       <Docs>
         <summary>Ignore les modifications apportées à la cellule spécifiée dans un rapport de tableau croisé dynamique.</summary>
-        <remarks><para>Pour une cellule dans un tableau croisé dynamique basé sur une source de données OLAP, la méthode supprime la valeur ou la formule entrée dans la cellule spécifiée, puis exécute une mise à jour du tableau croisé dynamique pour récupérer la dernière valeur de la source de <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" /> données. La valeur de la source de données sera définie sur une référence null (Nothing in Visual Basic) par cette méthode pour la cellule spécifiée. La méthode supprime également toutes les modifications apportées à cette cellule de la liste des modifications d’Excel afin qu’elle ne soit plus incluse dans l’instruction UPDATE CUBE pour la source de données. Cette méthode recrée également l’état de session pour toutes les autres modifications apportées à la transaction. Cela inclut l’exécution d’une instruction ROLLBACK TRANSACTION, puis l’exécution d’une instruction UPDATE CUBE avec toutes les modifications à l’exception de la cellule spécifiée. Pour une cellule dans un tableau croisé dynamique basé sur une source de données non OLAP, cette méthode permet simplement d’effacer la cellule modifiée.</para>
+        <remarks><para>Pour une cellule dans un tableau croisé dynamique basé sur une source de données OLAP, la méthode supprime la valeur ou la formule entrée dans la cellule spécifiée, puis exécute une mise à jour du tableau croisé dynamique pour récupérer la dernière valeur de la source de <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" /> données. La valeur de la source de données sera définie sur une référence null (Nothing in Visual Basic) par cette méthode pour la cellule spécifiée. La méthode supprime également toutes les modifications apportées à cette cellule de la liste des modifications de Excel afin qu’elle ne soit plus incluse dans l’instruction UPDATE CUBE pour la source de données. Cette méthode recrée également l’état de session pour toutes les autres modifications apportées à la transaction. Cela inclut l’exécution d’une instruction ROLLBACK TRANSACTION, puis l’exécution d’une instruction UPDATE CUBE avec toutes les modifications à l’exception de la cellule spécifiée. Pour une cellule dans un tableau croisé dynamique basé sur une source de données non OLAP, cette méthode permet simplement d’effacer la cellule modifiée.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -551,7 +551,7 @@
       <Docs>
         <summary>Renvoie la <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> colonne d’un objet  <b>PivotCell</b> spécifique. En lecture seule.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /></value>
-        <remarks><para>Si la <b>propriété PivotCell</b> se trouve sur des lignes, la <b>propriété PivotColumnLine</b> renvoie une erreur d’run-time.</para>
+        <remarks><para>Si la <b>propriété PivotCell se</b> trouve sur des lignes, la <b>propriété PivotColumnLine</b> renvoie une erreur d’run-time.</para>
           <para>Si la <b>colonne PivotCell se</b> trouve sur des colonnes, la <b>propriété PivotColumnLine</b> renvoie l’objet <b>PivotLine de</b> colonne.</para>
           <para>Si la <b>colonne PivotCell se</b> trouve dans la zone de données, la <b>propriété PivotColumnLine</b> renvoie l’objet <b>PivotLine de</b> colonne correspondant.</para>
           <para> </para></remarks>
@@ -638,9 +638,9 @@
       <Docs>
         <summary>Renvoie la <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> ligne d’un objet  <b>PivotCell</b> spécifique. <b>PivotLine</b> en lecture seule.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /></value>
-        <remarks><para>Si la <b>fonction PivotCell</b> se trouve sur des lignes, <b>PivotRowLine</b> renvoie l’objet <b>PivotLine</b> de la ligne.</para>
+        <remarks><para>Si la <b>pivotcellule</b> se trouve sur des lignes, <b>PivotRowLine</b> renvoie l’objet <b>PivotLine</b> de la ligne.</para>
           <para>Si la <b>colonne PivotCell</b> se trouve sur des colonnes, <b>PivotRowLine renvoie</b>  une erreur d’run-time.</para>
-          <para>Si le <b>pivotCell se</b> trouve dans la zone de données, <b>PivotRowLine renvoie</b> l’objet <b>PivotLine</b> de la ligne correspondante.</para>
+          <para>Si le <b>pivotCell se</b> trouve dans la zone de données, <b>PivotRowLine</b> renvoie l’objet <b>PivotLine</b> de la ligne correspondante.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -667,7 +667,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui représente le rapport de tableau croisé dynamique contenant le coin supérieur gauche de la plage spécifiée ou le rapport de tableau croisé dynamique associé au rapport de <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> tableau croisé dynamique.</summary>
+        <summary>Renvoie un objet qui représente le rapport de tableau croisé dynamique contenant le coin supérieur gauche de la plage spécifiée ou le rapport de tableau croisé dynamique associé <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> PivotChart rapport.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

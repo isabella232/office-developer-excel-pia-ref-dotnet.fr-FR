@@ -1,5 +1,5 @@
 <Type Name="SeriesCollection" FullName="Microsoft.Office.Interop.Excel.SeriesCollection">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9b503045ebef3ddb75466923708250f026284484" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010415" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="226f220393deafb8f566b1b7879f06875da7a0c25077c8b40c4f8bf33c2b63b6" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518152" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesCollection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SeriesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesCollection&#xA;Implements IEnumerable" />
@@ -94,7 +94,7 @@
         <param name="Rowcol">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> . Spécifie si les nouvelles valeurs sont dans les lignes ou colonnes de la plage spécifiée.</param>
         <param name="SeriesLabels">Objet <b>facultatif</b>. Ignoré <paramref name="Source" /> s’il s’agit d’un tableau. <b>True</b> si la première ligne ou colonne contient le nom de la série de données. <b>Faux</b> si la première ligne ou colonne contient le premier point de données de la série. Si cet argument est omis, Microsoft Excel tente de déterminer l’emplacement du nom de série à partir du contenu de la première ligne ou colonne.</param>
         <param name="CategoryLabels">Objet <b>facultatif</b>. Ignoré <paramref name="Source" /> s’il s’agit d’un tableau. <b>True</b> si la première ligne ou colonne contient le nom des étiquettes de catégorie. <b>Faux</b> si la première ligne ou colonne contient le premier point de données de la série. Si cet argument est omis, Microsoft Excel tente de déterminer l’emplacement du label de catégorie à partir du contenu de la première ligne ou colonne.</param>
-        <param name="Replace">Objet <b>facultatif</b>. Si <paramref name="CategoryLabels" /> la valeur est <b>True</b> <paramref name="Replace" /> et <b>true,</b>les catégories spécifiées remplacent les catégories qui existent actuellement pour la série. Si <paramref name="Replace" /> <b></b>la false est, les catégories existantes ne seront pas remplacées. La valeur par défaut est <b>False</b>.</param>
+        <param name="Replace">Objet <b>facultatif</b>. Si <paramref name="CategoryLabels" /> la valeur est <b>True</b> <paramref name="Replace" /> et <b>true,</b>les catégories spécifiées remplacent les catégories qui existent actuellement pour la série. Si <paramref name="Replace" /> la <b>false</b>est, les catégories existantes ne seront pas remplacées. La valeur par défaut est <b>Faux</b>.</param>
         <summary>Ajoute une ou plusieurs nouvelles séries à la <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> collection.</summary>
         <returns>To be added.</returns>
         <remarks><para>Cette méthode n'est pas disponible pour les rapports de graphique croisé dynamique.</para>
@@ -124,7 +124,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -362,9 +362,9 @@
         <Parameter Name="NewSeries" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Rowcol">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> . Indique si les valeurs correspondant à une série de données particulière sont disposées en lignes ou en colonnes. Peut être l’une de ces <b>constantes XlRowCol</b> :<b>xlColumns</b> par défaut<b>xlRows</b></param>
-        <param name="SeriesLabels">Objet <b>facultatif</b>. <b>True</b> pour utiliser le contenu de la cellule de la première colonne de chaque ligne (ou de la première ligne de chaque colonne) comme nom de la série de données de cette ligne (ou de cette colonne). <b>False</b>pour utiliser le contenu de la cellule de la première colonne de chaque ligne (ou de la première ligne de chaque colonne) comme premier point de données de la série de données. La valeur par défaut est <b>False</b>.</param>
-        <param name="CategoryLabels">Objet <b>facultatif</b>. <b>True</b> pour utiliser le contenu de la première ligne (ou colonne) de la sélection comme abscisses du graphique. <b>False</b> pour utiliser le contenu de la première ligne (ou colonne) comme première série de données du graphique. La valeur par défaut est <b>False</b>.</param>
+        <param name="Rowcol">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> . Indique si les valeurs correspondant à une série de données particulière sont disposées en lignes ou en colonnes. Peut être l’une de ces <b>constantes XlRowCol</b> :<b>xlColumns</b> default<b>xlRows</b></param>
+        <param name="SeriesLabels">Objet <b>facultatif</b>. <b>True</b> pour utiliser le contenu de la cellule de la première colonne de chaque ligne (ou de la première ligne de chaque colonne) comme nom de la série de données de cette ligne (ou de cette colonne). <b>False</b>pour utiliser le contenu de la cellule de la première colonne de chaque ligne (ou de la première ligne de chaque colonne) comme premier point de données de la série de données. La valeur par défaut est <b>Faux</b>.</param>
+        <param name="CategoryLabels">Objet <b>facultatif</b>. <b>True</b> pour utiliser le contenu de la première ligne (ou colonne) de la sélection comme abscisses du graphique. <b>False</b> pour utiliser le contenu de la première ligne (ou colonne) comme première série de données du graphique. La valeur par défaut est <b>Faux</b>.</param>
         <param name="Replace">Objet <b>facultatif</b>. <b>True</b> pour appliquer les abscisses lors du remplacement des abscisses existantes par les données de la plage copiée. <b>False</b> pour insérer de nouvelles abscisses sans remplacer les anciennes. La valeur par défaut est <b>True</b>.</param>
         <param name="NewSeries">Objet <b>facultatif</b>. <b>True</b> pour coller les données en tant que nouvelle série. <b>False</b> pour coller les données en tant que nouveaux points dans une série existante. La valeur par défaut est <b>True</b>.</param>
         <summary>Cette méthode colle les données provenant du Presse-papiers dans la collection de séries spécifiée.</summary>

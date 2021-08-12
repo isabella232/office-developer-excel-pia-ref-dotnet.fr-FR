@@ -1,5 +1,5 @@
 <Type Name="Top10" FullName="Microsoft.Office.Interop.Excel.Top10">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="474d68fa0fa867d70e67f0c483f206c92800d97e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009512" /></Metadata><TypeSignature Language="C#" Value="public interface Top10" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c4552ea7180fd30903326f2ef7389b40ba0efd3c2c953fcd984f31fdcbc66c43" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518873" /></Metadata><TypeSignature Language="C#" Value="public interface Top10" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Top10" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Top10" />
   <TypeSignature Language="VB.NET" Value="Public Interface Top10" />
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> représente Microsoft Office’application Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, elle renvoie un objet <b>Application</b> qui représente l’auteur de l’objet spécifié. En lecture seule.</summary>
+        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui représente <see cref="T:Microsoft.Office.Interop.Excel._Application" /> l’Microsoft Office Excel application. Lorsqu’elle est utilisée avec un qualificateur d’objet, elle renvoie un objet <b>Application</b> qui représente l’auteur de l’objet spécifié. En lecture seule.</summary>
         <value><b>Application</b></value>
         <remarks><para>Vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l'application de cet objet.</para>
           <para> </para></remarks>
@@ -141,7 +141,7 @@
         <summary>Renvoie ou définit la façon dont la mise en forme conditionnelle dans un rapport de tableau croisé dynamique doit être évaluée.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCalcFor" /></value>
         <remarks><para>Cette propriété ne s'applique que lorsque le format conditionnel est utilisé sur les données d'un rapport de tableau croisé dynamique.</para>
-          <para>Cette propriété peut être définie sur <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlAllValues" /> , ou uniquement si la propriété est définie sur <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlColGroups" /> <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlRowGroups" /> <see cref="P:Microsoft.Office.Interop.Excel.Top10.ScopeType" /> <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlFieldsScope" /> . </para>
+          <para>Cette propriété peut être définie sur , ou uniquement si la propriété <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlAllValues" /> <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlColGroups" /> est définie sur <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlRowGroups" /> <see cref="P:Microsoft.Office.Interop.Excel.Top10.ScopeType" /> <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlFieldsScope" /> . </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -168,7 +168,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’application qui a créé cet objet, sous la forme d’un nombre entier de 32 bits. En lecture seule.</summary>
+        <summary>Renvoie un entier 32 bits qui indique l’application dans laquelle cet objet a été créé. En lecture seule.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
         <remarks><para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.  La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
           <para> </para></remarks>
@@ -280,7 +280,7 @@
       <Docs>
         <param name="Range">Plage à laquelle cette règle de mise en forme sera appliquée.</param>
         <summary>Définit la plage de cellules à laquelle cette règle de mise en forme s’applique.</summary>
-        <remarks><para>La plage doit être dans le style de référence A1 et être entièrement contenue dans la feuille qui est le parent de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. Elle peut inclure l'opérateur de plage (le signe deux-points), l'opérateur d'intersection (un espace) ou l'opérateur de liaison (une virgule). Les signes dollar peuvent également être utilisés, mais ils sont ignorés.</para>
+        <remarks><para>La plage doit être dans le style de référence A1 et être entièrement contenue dans la feuille parent de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. Elle peut inclure l'opérateur de plage (le signe deux-points), l'opérateur d'intersection (un espace) ou l'opérateur de liaison (une virgule). Les signes dollar peuvent également être utilisés, mais ils sont ignorés.</para>
           <para>Vous pouvez également utiliser un nom défini en local à n'importe quel endroit de la plage, mais le nom doit appartenir au langage de la macro.</para>
           <para> </para></remarks>
       </Docs>
@@ -340,7 +340,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -431,7 +431,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur de type <b>Boolean</b> indiquant si le format conditionnel est appliqué à un graphique de tableau croisé dynamique. En lecture seule.</summary>
+        <summary>Renvoie une valeur de type <b>Boolean</b> indiquant si le format conditionnel est appliqué à un graphique de tableau croisé dynamique. Propriété en lecture seule.</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,5 +1,5 @@
 <Type Name="Range" FullName="Microsoft.Office.Interop.Excel.Range">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b8435c17b649304d5fae3920a40103ffa541f441" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010702" /></Metadata><TypeSignature Language="C#" Value="public interface Range : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="970c62ca3e06a81e143d3b1337bd0b64ff32de6cab8e45021521933e8d6aaf7b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518194" /></Metadata><TypeSignature Language="C#" Value="public interface Range : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Range implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Range" />
   <TypeSignature Language="VB.NET" Value="Public Interface Range&#xA;Implements IEnumerable" />
@@ -273,7 +273,7 @@
         <param name="RowAbsolute">Objet <b>facultatif</b>. <b>True</b> pour renvoyer la portion de ligne de la référence en tant que référence absolue. La valeur par défaut est <b>True</b>.</param>
         <param name="ColumnAbsolute">Objet <b>facultatif</b>. <b>True</b> pour renvoyer la portion de colonne de la référence en tant que référence absolue. La valeur par défaut est <b>True</b>.</param>
         <param name="ReferenceStyle">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlReferenceStyle" /> .</param>
-        <param name="External">Objet <b>facultatif</b>. <b>True pour</b> renvoyer une référence externe ; <b>False</b> pour renvoyer une référence locale. La valeur par défaut est <b>False</b>.</param>
+        <param name="External">Objet <b>facultatif</b>. <b>True pour</b> renvoyer une référence externe ; <b>False</b> pour renvoyer une référence locale. La valeur par défaut est <b>Faux</b>.</param>
         <param name="RelativeTo">Objet <b>facultatif</b>. Si la valeur est False et qu’elle a la valeur <paramref name="RowAbsolute" /> <paramref name="ColumnAbsolute" /> <b></b> <paramref name="ReferenceStyle" /> <b>xlR1C1,</b>vous devez inclure un point de départ pour la référence relative. Cet argument est un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui définit le point de départ.</param>
         <summary>Renvoie la référence de plage.</summary>
         <value>To be added.</value>
@@ -350,7 +350,7 @@
         <param name="Action">Obligatoire <see cref="T:Microsoft.Office.Interop.Excel.XlFilterAction" /> . Il peut s’agir de l’une des constantes <b>XlFilterAction</b> suivantes :<b>xlFilterCopy</b><b>xlFilterInPlace</b></param>
         <param name="CriteriaRange">Objet <b>facultatif</b>. Plage de critères. Si cet argument n'est pas défini, il n'y a aucun critère.</param>
         <param name="CopyToRange">Objet <b>facultatif</b>. Plage de destination pour les lignes copiées si l’action est <paramref name="xlFilterCopy" /> . Sinon, cet argument est ignoré.</param>
-        <param name="Unique">Objet <b>facultatif</b>. <b>True pour</b> filtrer uniquement les enregistrements uniques ; <b>False</b> pour filtrer tous les enregistrements qui répondent aux critères. La valeur par défaut est <b>False</b>.</param>
+        <param name="Unique">Objet <b>facultatif</b>. <b>True pour</b> filtrer uniquement les enregistrements uniques ; <b>False</b> pour filtrer tous les enregistrements qui répondent aux critères. La valeur par défaut est <b>Faux</b>.</param>
         <summary>Filtre ou copie des données à partir d'une liste basée sur une plage de critères.</summary>
         <returns>To be added.</returns>
         <remarks><para>Si la sélection initiale est une seule cellule, la zone active de cette cellule est utilisée.</para>
@@ -435,7 +435,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -474,7 +474,7 @@
         <param name="OmitColumn">Objet <b>facultatif</b>. <b>True</b> pour remplacer la référence complète par le nom orienté ligne. Le nom orienté colonne peut être omis uniquement si la cellule référencée se trouve dans la même colonne que la formule et appartient à une plage dont le nom est orienté ligne. La valeur par défaut est <b>True</b>.</param>
         <param name="OmitRow">Objet <b>facultatif</b>. <b>True</b> pour remplacer la référence complète par le nom orienté colonne. Le nom orienté ligne peut être omis uniquement si la cellule référencée se trouve dans la même ligne que la formule et appartient à une plage dont le nom est orienté colonne. La valeur par défaut est <b>True</b>.</param>
         <param name="Order">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlApplyNamesOrder" /> . Détermine quel nom de plage est répertorié en premier lorsqu'une référence de cellule est remplacée par un nom de plage orienté ligne et orienté colonne. Peut être l’une de ces <b>constantes XlApplyNamesOrder</b> :<b>xlColumnThenRow</b><b>xlRowThenColumn </b><paramref name="default" /></param>
-        <param name="AppendLast">Objet <b>facultatif</b>. <b>True</b> pour remplacer les définitions des noms dans et également remplacer les définitions des noms qui <paramref name="Names" /> ont été définis ; <b>False</b> pour remplacer les définitions des noms <paramref name="Names" /> uniquement. La valeur par défaut est <b>False</b>.</param>
+        <param name="AppendLast">Objet <b>facultatif</b>. <b>True</b> pour remplacer les définitions des noms dans et également remplacer les définitions des noms qui <paramref name="Names" /> ont été définis ; <b>False</b> pour remplacer les définitions des noms <paramref name="Names" /> uniquement. La valeur par défaut est <b>Faux</b>.</param>
         <summary>Cette méthode attribue des noms aux cellules de la plage spécifiée.</summary>
         <returns>To be added.</returns>
         <remarks><para>Vous pouvez utiliser la <b>fonction Array</b> pour créer la liste des noms de <paramref name="Names" /> l’argument.</para>
@@ -532,7 +532,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Areas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Areas" /> collection qui représente toutes les plages d’une sélection à plusieurs espaces.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.Areas" /> collection qui représente toutes les plages d’une sélection multi-zone.</summary>
         <value>To be added.</value>
         <remarks><para>Pour une sélection unique, la <b>propriété Areas</b> renvoie une collection qui contient un objet , l’objet <see cref="T:Microsoft.Office.Interop.Excel.Range" /> d’origine lui-même. Pour une sélection de plusieurs zones, la propriété <b>Areas</b> renvoie une collection contenant un objet pour chaque zone sélectionnée.</para>
           <para> </para></remarks>
@@ -592,7 +592,7 @@
       </Parameters>
       <Docs>
         <param name="Destination">Objet <see cref="T:Microsoft.Office.Interop.Excel.Range" /> obligatoire. Cellules à remplir. La destination doit inclure la plage source.</param>
-        <param name="Type">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlAutoFillType" /> . Spécifie le type de remplissage. Il peut s’agit de l’une de ces constantes <b>XlAutoFillType</b> :<b>xlFillDays</b><b>xlFillFormats</b><b>xlFillWeekdays</b><b></b><b>xlGrowthTrend</b><b>xlFillCopy</b><b>xlFillDefault</b> <paramref name="default" /> <b>xlFillMonths xlFillValues</b><b>xlFillYears</b><b>xlLinearTrend</b>Si cet argument est <b>xlFillDefault</b> ou omis, Microsoft Excel sélectionne le type de remplissage le plus approprié, en fonction de la plage source.<b></b></param>
+        <param name="Type">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlAutoFillType" /> . Spécifie le type de remplissage. Il peut s’agit de l’une de ces constantes <b>XlAutoFillType</b> :<b>xlFillDays</b><b>xlFillFormats</b><b>xlFillWeekdays</b><b>xlGrowthTrend</b><b>xlFillCopy</b><b>xlFillDefault</b><b></b> <paramref name="default" /> <b>xlFillMonths xlFillValues</b><b>xlFillYears</b><b>xlLinearTrend</b>Si cet argument est <b>xlFillDefault</b> ou omis, Microsoft Excel sélectionne le type de remplissage le plus approprié, en fonction de la plage source.<b></b></param>
         <summary>Effectue une recopie incrémentée dans les cellules de la plage spécifiée.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -695,13 +695,13 @@
         <Parameter Name="Width" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Format">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlRangeAutoFormat" /> . La mise en forme automatique spécifiée.Certaines des constantes <b>XlRangeAutoFormat</b> peuvent ne pas être disponibles, selon la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</param>
+        <param name="Format">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlRangeAutoFormat" /> . La mise en forme automatique spécifiée.Certaines des constantes <b>XlRangeAutoFormat</b> peuvent ne pas être disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</param>
         <param name="Number">Objet <b>facultatif</b>. <b>True</b> pour inclure les formats numériques dans la mise en forme automatique. La valeur par défaut est <b>True.</b></param>
         <param name="Font">Objet <b>facultatif</b>. <b>True</b> pour inclure les formats de police dans la mise en forme automatique. La valeur par défaut est <b>True</b>.</param>
         <param name="Alignment">Objet <b>facultatif</b>. <b>True</b> pour inclure l’alignement dans la mise en forme automatique. La valeur par défaut est <b>True</b>.</param>
         <param name="Border">Objet <b>facultatif</b>. <b>True</b> pour inclure les formats de bordure dans la mise en forme automatique. La valeur par défaut est <b>True</b>.</param>
         <param name="Pattern">Objet <b>facultatif</b>. <b>True</b> pour inclure des formats de motif dans la mise en forme automatique. La valeur par défaut est <b>True</b>.</param>
-        <param name="Width">Objet <b>facultatif</b>. <b>True pour</b> inclure la largeur de colonne et la hauteur de ligne dans la mise en forme automatique. La valeur par défaut est <b>True</b>.</param>
+        <param name="Width">Objet <b>facultatif</b>. <b>True</b> pour inclure la largeur de colonne et la hauteur de ligne dans la mise en forme automatique. La valeur par défaut est <b>True</b>.</param>
         <summary>Met automatiquement en forme la plage spécifiée à l’aide d’un format prédéféré.</summary>
         <returns>To be added.</returns>
         <remarks><para>Si la plage est une cellule unique, cette méthode formate également la région active qui entoure la cellule. </para>
@@ -767,9 +767,9 @@
         <param name="Weight">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" /> . Épaisseur de la bordure. Peut être l’une des constantes <b>XlBorderWeight</b> suivantes :<b>xlHairline</b><b>xlMedium</b><b>xlThick</b><b>xlThin</b><paramref name="default" /></param>
         <param name="ColorIndex">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> . Couleur de la bordure, sous forme d’index dans la palette de couleurs ou sous forme de constante <b>XlColorIndex</b>. Il peut s’y trouver l’une des constantes <b>XlColorIndex</b> suivantes :<b>xlColorIndexAutomatic</b> <paramref name="default" /> <b>xlColorIndexNone</b></param>
         <param name="Color">Objet <b>facultatif</b>. Couleur de la bordure, sous forme de valeur RVB.</param>
-        <summary>Ajoute une bordure à une plage et définit <see cref="P:Microsoft.Office.Interop.Excel.Border.Color" /> les <see cref="P:Microsoft.Office.Interop.Excel.Border.LineStyle" /> propriétés et les propriétés <see cref="P:Microsoft.Office.Interop.Excel.Border.Weight" /> de la nouvelle bordure.</summary>
+        <summary>Ajoute une bordure à une plage et définit <see cref="P:Microsoft.Office.Interop.Excel.Border.Color" /> les <see cref="P:Microsoft.Office.Interop.Excel.Border.LineStyle" /> propriétés et les <see cref="P:Microsoft.Office.Interop.Excel.Border.Weight" /> propriétés de la nouvelle bordure.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Vous devez spécifier <paramref name="ColorIndex" /> l’un <paramref name="Color" /> ou l’autre, mais pas les deux.</para>
+        <remarks><para>Vous devez spécifier <paramref name="ColorIndex" /> l’une <paramref name="Color" /> ou l’autre des deux, mais pas les deux.</para>
           <para>Vous pouvez spécifier <paramref name="LineStyle" /> l’une <paramref name="Weight" /> ou l’autre des deux, mais pas les deux. Si vous ne spécifiez aucun de ces arguments, Microsoft Excel utilise le style et l'épaisseur de trait par défaut.</para>
           <para>Cette méthode affecte une bordure à l'ensemble de la plage sans la remplir. Pour définir les bordures de toutes les cellules, vous devez définir <see cref="P:Microsoft.Office.Interop.Excel.Borders.Color" /> les <see cref="P:Microsoft.Office.Interop.Excel.Borders.LineStyle" /> propriétés et les propriétés de la collection <see cref="P:Microsoft.Office.Interop.Excel.Borders.Weight" /> Borders. Pour supprimer la bordure, vous devez affecter la valeur <b>xlLineStyleNone</b> à la propriété <b>LineStyle</b> pour toutes les cellules de la plage.</para>
           <para> </para></remarks>
@@ -983,8 +983,8 @@
       </Parameters>
       <Docs>
         <param name="CustomDictionary">Objet <b>facultatif</b>. Chaîne qui indique le nom de fichier du dictionnaire personnel à examiner si le mot est introuvable dans le dictionnaire principal. Si vous ne spécifiez pas cet argument, c'est le dictionnaire actuellement spécifié qui est utilisé.</param>
-        <param name="IgnoreUppercase">Objet <b>facultatif</b>. <b>True</b> pour que Microsoft Excel ignore les mots qui sont tous en minuscules ; <b>False</b> pour que Microsoft Excel vérifie les mots qui sont tous en minuscules. Si cet argument est omis, ce sont les paramètres en vigueur qui sont utilisés.</param>
-        <param name="AlwaysSuggest">Objet <b>facultatif</b>. <b>True</b> pour que Microsoft Excel affiche une liste de suggestions d’orthographes alternatives lorsqu’une orthographe incorrecte est trouvée . <b>False pour</b> que Microsoft Excel s’interrompe pendant que vous saisiez l’orthographe correcte. Si cet argument est omis, ce sont les paramètres en vigueur qui sont utilisés.</param>
+        <param name="IgnoreUppercase">Objet <b>facultatif</b>. <b>True</b> pour que les Microsoft Excel ignorer les mots qui sont tous en minuscules ; <b>False</b> pour que les Microsoft Excel vérifier les mots qui sont tous en minuscules. Si cet argument est omis, ce sont les paramètres en vigueur qui sont utilisés.</param>
+        <param name="AlwaysSuggest">Objet <b>facultatif</b>. <b>True</b> pour que les Microsoft Excel une liste de suggestions d’orthographes alternatives lorsqu’une orthographe incorrecte est trouvée ; <b>False</b> pour que vous Microsoft Excel pause pendant que vous saisiez l’orthographe correcte. Si cet argument est omis, ce sont les paramètres en vigueur qui sont utilisés.</param>
         <param name="SpellLang">Objet <b>facultatif</b>. Langue du dictionnaire utilisé. Peut être l’une des <b>valeurs MsoLanguageID</b> utilisées par la <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> propriété.</param>
         <summary>Vérifie l'orthographe d'un objet.</summary>
         <returns>To be added.</returns>
@@ -1120,7 +1120,7 @@
       <Parameters />
       <Docs>
         <summary>Supprime tous les liens hypertexte de la plage spécifiée.</summary>
-        <remarks><para>Appeler la méthode sur la plage spécifiée équivaut à utiliser la commande Effacer les liens hypertexte dans la liste modifiable Effacer dans la section Modification de l’onglet <see cref="M:Microsoft.Office.Interop.Excel.Range.ClearHyperlinks" /> Accueil. Seuls les liens hypertexte seront supprimés ; tout autre contenu de cellule, tel que le texte et la mise en forme, n’est pas affecté.</para>
+        <remarks><para>Appeler la méthode sur la plage spécifiée équivaut à utiliser la commande Effacer les liens hypertexte à partir de la liste modifiable Effacer dans la section Modification de l’onglet <see cref="M:Microsoft.Office.Interop.Excel.Range.ClearHyperlinks" /> Accueil. Seuls les liens hypertexte seront supprimés ; tout autre contenu de cellule, tel que le texte et la mise en forme, n’est pas affecté.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1262,7 +1262,7 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente les colonnes de la plage spécifiée.</summary>
         <value>To be added.</value>
-        <remarks><para>Lorsqu’elle est appliquée à un objet <b>Range</b> constituant une sélection à zones multiples, cette propriété renvoie des colonnes uniquement à partir de la première zone de la plage. Par exemple, si l’objet <b>Range</b> a deux zones , A1:B2 et C3:D4, la propriété renvoie <see cref="P:Microsoft.Office.Interop.Excel.Range.Count" /> 2, et non 4. Pour utiliser cette propriété sur une plage qui peut contenir une sélection multi-zone, testez la propriété de l’objet pour déterminer si la plage contient plusieurs <see cref="P:Microsoft.Office.Interop.Excel.Areas.Count" /> <see cref="T:Microsoft.Office.Interop.Excel.Areas" /> étendues. Si c'est le cas, effectuez une boucle sur chaque zone de la plage.</para>
+        <remarks><para>Lorsqu’elle est appliquée à un objet <b>Range</b> constituant une sélection à zones multiples, cette propriété renvoie des colonnes uniquement à partir de la première zone de la plage. Par exemple, si l’objet <b>Range</b> possède deux zones , A1:B2 et C3:D4, la propriété renvoie <see cref="P:Microsoft.Office.Interop.Excel.Range.Count" /> 2, et non 4. Pour utiliser cette propriété sur une plage qui peut contenir une sélection à plusieurs secteurs, testez la propriété de l’objet pour déterminer si la plage contient plusieurs <see cref="P:Microsoft.Office.Interop.Excel.Areas.Count" /> <see cref="T:Microsoft.Office.Interop.Excel.Areas" /> étendues. Si c'est le cas, effectuez une boucle sur chaque zone de la plage.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1356,9 +1356,9 @@
       <Docs>
         <param name="Sources">Objet <b>facultatif</b>. Sources de la consolidation sous forme d'un tableau de chaînes de références de texte en notation de style R1C1. Les références doivent inclure le chemin complet des feuilles à consolider.</param>
         <param name="Function">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /> . Peut être l’une des <b>constantes XlConsilidationFunction</b> suivantes :<b>xlAverage</b> <paramref name="default" /> <b>xlCount</b><b>xlCountNums</b><b>xlMax</b><b>xlMin</b><b>xlProduct</b><b>xlStDev</b><b>xlStDevP</b><b>xlSum</b><b>xlVar</b><b>xlVarP</b></param>
-        <param name="TopRow">Objet <b>facultatif</b>. <b>True pour</b> consolider les données en fonction des titres de colonne dans la ligne supérieure des plages de consolidation ; <b>False pour</b> consolider les données par position. La valeur par défaut est <b>False</b>.</param>
-        <param name="LeftColumn">Objet <b>facultatif</b>. <b>True pour</b> consolider les données en fonction des titres de ligne dans la colonne gauche des plages de consolidation ; <b>False pour</b> consolider les données par position. La valeur par défaut est <b>False</b>.</param>
-        <param name="CreateLinks">Objet <b>facultatif</b>. <b>True pour</b> que la consolidation utilise des liens de feuille de calcul ; <b>False</b> pour que la consolidation copie les données. La valeur par défaut est <b>False</b>.</param>
+        <param name="TopRow">Objet <b>facultatif</b>. <b>True pour</b> consolider les données en fonction des titres de colonne dans la ligne supérieure des plages de consolidation ; <b>False pour</b> consolider les données par position. La valeur par défaut est <b>Faux</b>.</param>
+        <param name="LeftColumn">Objet <b>facultatif</b>. <b>True pour</b> consolider les données en fonction des titres de ligne dans la colonne gauche des plages de consolidation ; <b>False pour</b> consolider les données par position. La valeur par défaut est <b>Faux</b>.</param>
+        <param name="CreateLinks">Objet <b>facultatif</b>. <b>True pour</b> que la consolidation utilise des liens de feuille de calcul ; <b>False</b> pour que la consolidation copie les données. La valeur par défaut est <b>Faux</b>.</param>
         <summary>Cette méthode consolide des données à partir de plusieurs plages sur plusieurs feuilles de calcul dans une seule plage sur une seule feuille de calcul.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1449,7 +1449,7 @@
         <Parameter Name="Format" Type="Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />
       </Parameters>
       <Docs>
-        <param name="Appearance">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" /> . Spécifie la manière dont l’image doit être copiée. Il peut s’y trouver l’une des constantes <b>XlCopyPictureFormat</b> suivantes :<b>xlBitmap</b><b>xlPicture</b><paramref name="default" /></param>
+        <param name="Appearance">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" /> . Spécifie la manière dont l’image doit être copiée. Peut être l’une des constantes <b>XlCopyPictureFormat</b> suivantes :<b>xlBitmap</b><b>xlPicture</b><paramref name="default" /></param>
         <param name="Format">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" /> . Format de l’image. Peut être l’une des constantes <b>XlPictureAppearance</b> suivantes :<b>xlPrinter</b>. L’image est copiée telle qu’elle s’y trouve lorsqu’elle est imprimée. <b>xlScreen</b> <paramref name="default" /> . L’image est copiée de façon à ressembler autant que possible à son affichage à l’écran.</param>
         <summary>Copie l'objet sélectionné dans le Presse-papiers, sous forme d'image.</summary>
         <returns>To be added.</returns>
@@ -1537,13 +1537,13 @@
         <Parameter Name="Right" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Top">Objet <b>facultatif</b>. Affectez-lui la valeur <b>True</b> pour créer des noms en fonction des étiquettes de la ligne du haut. La valeur par défaut est <b>False</b>.</param>
-        <param name="Left">Objet <b>facultatif</b>. Affectez-lui la valeur <b>True</b> pour créer des noms en fonction des étiquettes de la colonne de gauche. La valeur par défaut est <b>False</b>.</param>
-        <param name="Bottom">Objet <b>facultatif</b>. Affectez-lui la valeur <b>True</b> pour créer des noms en fonction des étiquettes de la ligne du bas. La valeur par défaut est <b>False</b>.</param>
-        <param name="Right">Objet <b>facultatif</b>. Affectez-lui la valeur <b>True</b> pour créer des noms en fonction des étiquettes de la colonne de droite. La valeur par défaut est <b>False</b>.</param>
+        <param name="Top">Objet <b>facultatif</b>. Affectez-lui la valeur <b>True</b> pour créer des noms en fonction des étiquettes de la ligne du haut. La valeur par défaut est <b>Faux</b>.</param>
+        <param name="Left">Objet <b>facultatif</b>. Affectez-lui la valeur <b>True</b> pour créer des noms en fonction des étiquettes de la colonne de gauche. La valeur par défaut est <b>Faux</b>.</param>
+        <param name="Bottom">Objet <b>facultatif</b>. Affectez-lui la valeur <b>True</b> pour créer des noms en fonction des étiquettes de la ligne du bas. La valeur par défaut est <b>Faux</b>.</param>
+        <param name="Right">Objet <b>facultatif</b>. Affectez-lui la valeur <b>True</b> pour créer des noms en fonction des étiquettes de la colonne de droite. La valeur par défaut est <b>Faux</b>.</param>
         <summary>Cette méthode crée des noms dans la plage spécifiée en fonction des étiquettes de texte de la feuille.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Si vous ne spécifiez pas l’une des étiquettes de texte, ou l’une d’elles, Microsoft Excel devinera l’emplacement des étiquettes de texte, en fonction de la forme de <paramref name="Top" /> <paramref name="Left" /> la plage <paramref name="Bottom" /> <paramref name="Right" /> spécifiée.</para>
+        <remarks><para>Si vous ne spécifiez pas l’une des étiquettes de texte, ou Microsoft Excel deviner l’emplacement des étiquettes de texte, en fonction de la forme de la <paramref name="Top" /> <paramref name="Left" /> plage <paramref name="Bottom" /> <paramref name="Right" /> spécifiée.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1613,7 +1613,7 @@
       <Docs>
         <summary>Renvoie un nombre entier de 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui est équivalente au nombre hexadécimal 5843454C.</para>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C.</para>
           <para>La propriété <b>Creator</b> est conçue pour être utilisée dans Microsoft Excel pour Macintosh, dans lequel chaque application possède un code de créateur à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
           <para> </para></remarks>
       </Docs>
@@ -1672,7 +1672,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente la région actuelle.</summary>
         <value>To be added.</value>
         <remarks><para>Cette dernière correspond à une plage liée par une combinaison de lignes et de colonnes vides.</para>
-          <para>Cette propriété est utile pour de nombreuses opérations qui développent automatiquement la sélection pour inclure l’ensemble de la région actuelle, telles que la <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFormat(Microsoft.Office.Interop.Excel.XlRangeAutoFormat,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode.</para>
+          <para>Cette propriété est utile pour de nombreuses opérations qui développent automatiquement la sélection afin d’inclure toute la région actuelle, telles que la <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFormat(Microsoft.Office.Interop.Excel.XlRangeAutoFormat,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> méthode.</para>
           <para>Cette propriété ne peut pas être utilisée sur une feuille de calcul protégée.</para>
           <para> </para></remarks>
       </Docs>
@@ -1735,11 +1735,11 @@
       </Parameters>
       <Docs>
         <param name="Rowcol">Objet <b>facultatif</b>. Cet argument peut avoir pour valeur la constante <b>xlRows</b> ou <b>xlColumns</b> pour que les séries de données soient respectivement entrées dans des lignes ou des colonnes. Si vous ne spécifiez pas cet argument, la taille et la forme de la plage sont utilisées.</param>
-        <param name="Type">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlDataSeriesType" /> . Il peut s’y trouver l’une des <b>constantes XlDataSeriesType</b> suivantes :<b>xlAutoFill</b><b>xlDataSeriesLinear</b> <paramref name="default" /> <b>xlChron xlGrowth</b> <b></b></param>
-        <param name="Date">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlDataSeriesDate" /> . Si l’argument Type est <b>xlChronchrone</b>, l’argument <b>Date</b> indique l’unité de date d’étape. Peut être l’une des <b>constantes XlDataSeriesDate</b> suivantes :<b>xlDay</b> <paramref name="default" /> <b>xlWeekday</b><b>xlMonth</b><b>xlYear</b></param>
+        <param name="Type">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlDataSeriesType" /> . Peut être l’une des <b>constantes XlDataSeriesType</b> suivantes :<b>xlAutoFill</b><b>xlDataSeriesLinear</b> <paramref name="default" /> <b>xlChron xlChron xlGrowth</b><b></b></param>
+        <param name="Date">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlDataSeriesDate" /> . Si l’argument Type est <b>xlChronchrone,</b>l’argument <b>Date</b> indique l’unité de date d’étape. Peut être l’une des <b>constantes XlDataSeriesDate</b> suivantes :<b>xlDay</b> <paramref name="default" /> <b>xlWeekday</b><b>xlMonth</b><b>xlYear</b></param>
         <param name="Step">Objet <b>facultatif</b>. Valeur de pas de la série. La valeur par défaut est 1.</param>
         <param name="Stop">Objet <b>facultatif</b>. Valeur d'arrêt de la série. Si vous ne spécifiez pas cet argument, Microsoft Excel remplit la plage jusqu'à la fin.</param>
-        <param name="Trend">Objet <b>facultatif</b>. <b>True pour</b> créer une tendance linéaire ou une tendance de croissance ; <b>False pour</b> créer une série de données standard. La valeur par défaut est <b>False</b>.</param>
+        <param name="Trend">Objet <b>facultatif</b>. <b>True pour</b> créer une tendance linéaire ou une tendance de croissance ; <b>False pour</b> créer une série de données standard. La valeur par défaut est <b>Faux</b>.</param>
         <summary>Cette méthode crée une série de données dans la plage spécifiée.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1826,8 +1826,8 @@
       <Docs>
         <summary>Cette méthode affiche une boîte de dialogue définie par la table de définition de boîte de dialogue d'une feuille macro Microsoft Excel 4.0.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Cette méthode renvoie le numéro du contrôle choisi ou renvoie <b>False</b> si l’utilisateur clique sur le bouton Annuler.</para>
-          <para>L’objet renvoyé doit faire référence à un tableau de définition de boîte de dialogue sur une <see cref="T:Microsoft.Office.Interop.Excel.Range" /> feuille macro Microsoft Excel 4.0.</para>
+        <remarks><para>Cette méthode renvoie le numéro du contrôle choisi ou la méthode <b>False</b> si l’utilisateur clique sur le bouton Annuler.</para>
+          <para>L’objet renvoyé doit faire référence à une table de définition de boîte de dialogue sur <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Microsoft Excel feuille macro 4.0.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1912,8 +1912,8 @@
       <Parameters />
       <Docs>
         <summary>Cette méthode désigne une plage qui doit être recalculée lorsque le recalcul suivant se produit.</summary>
-        <remarks><para>La méthode force le recalcul de la plage spécifiée, pour les cellules que Microsoft Excel comprend comme qui doivent être <see cref="M:Microsoft.Office.Interop.Excel.Range.Calculate" /> recalculées.</para>
-          <para>Si l’application est en mode de calcul manuel, l’utilisation de la méthode indique à Excel d’identifier la cellule spécifiée <see cref="M:Microsoft.Office.Interop.Excel.Range.Dirty" /> à recalculer. Si l'application est en mode de calcul automatique, l'utilisation de la méthode <b>Dirty</b> indique à Excel qu'un recalcul doit être effectué.</para>
+        <remarks><para>La méthode force le recalcul de la plage spécifiée, pour les cellules Microsoft Excel qui doivent être <see cref="M:Microsoft.Office.Interop.Excel.Range.Calculate" /> recalculées.</para>
+          <para>Si l’application est en mode de calcul manuel, l’utilisation de la méthode Excel d’identifier la cellule spécifiée <see cref="M:Microsoft.Office.Interop.Excel.Range.Dirty" /> à recalculer. Si l'application est en mode de calcul automatique, l'utilisation de la méthode <b>Dirty</b> indique à Excel qu'un recalcul doit être effectué.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2039,7 +2039,7 @@
       </Parameters>
       <Docs>
         <param name="Direction">Obligatoire <see cref="T:Microsoft.Office.Interop.Excel.XlDirection" /> . Direction du déplacement.</param>
-        <summary>Renvoie un objet qui représente la cellule à la fin <see cref="T:Microsoft.Office.Interop.Excel.Range" /> de la région qui contient la plage source.</summary>
+        <summary>Renvoie un objet qui représente la cellule à la fin de la région <see cref="T:Microsoft.Office.Interop.Excel.Range" /> qui contient la plage source.</summary>
         <value>To be added.</value>
         <remarks><para>Revient à appuyer sur Fin+Flèche vers le haut, Fin+Flèche vers le bas, Fin+Flèche vers la gauche ou Fin+Flèche vers la droite. </para>
           <para> </para></remarks>
@@ -2166,7 +2166,7 @@
         <Parameter Name="FixedFormatExtClassPtr" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Requis <see cref="T:Microsoft.Office.Interop.Excel.XlFixedFormatType" /> Le type de format de fichier vers qui exporter.</param>
+        <param name="Type">Type <see cref="T:Microsoft.Office.Interop.Excel.XlFixedFormatType" /> de format de fichier vers qui exporter.</param>
         <param name="Filename">Objet <b>facultatif</b> Le nom de fichier du fichier à enregistré. Vous pouvez inclure un chemin d’accès complet ou short_Excel2007 enregistrer le fichier dans le dossier actuel.</param>
         <param name="Quality">Objet <b>facultatif</b> généralement formaté en <see cref="T:Microsoft.Office.Interop.Excel.XlFixedFormatQuality" /> tant que . Spécifie la qualité du fichier publié.</param>
         <param name="IncludeDocProperties"><b>L’objet</b> facultatif a la <b>valeur True</b> pour inclure les propriétés du document ; sinon, <b>false</b>.</param>
@@ -2319,11 +2319,11 @@
       </Parameters>
       <Docs>
         <param name="What">Required, <b>objet</b>. Données à rechercher. Il peut s’agir d’une chaîne ou de tout autre type de données Microsoft Excel.</param>
-        <param name="After">Objet <b>facultatif</b>. Cellule après laquelle vous souhaitez commencer la recherche. Cela correspond à la position de la cellule active lorsqu’une recherche est effectuée à partir de l’interface utilisateur. Notez <b>qu’After</b> doit être une seule cellule de la plage. N’oubliez pas que la recherche commence cette cellule ; la cellule spécifiée n’est pas recherché tant que la méthode n’est pas resserrée <paramref name="after" /> sur cette cellule. Si vous ne spécifiez pas cet argument, la recherche commence après la cellule dans le coin supérieur gauche de la plage.</param>
+        <param name="After">Objet <b>facultatif</b>. Cellule après laquelle vous souhaitez commencer la recherche. Cela correspond à la position de la cellule active lorsqu’une recherche est effectuée à partir de l’interface utilisateur. Notez <b>qu’After</b> doit être une seule cellule de la plage. N’oubliez pas que la recherche commence cette cellule ; la cellule spécifiée n’est pas recherché tant que la méthode <paramref name="after" /> n’est pas resserée sur cette cellule. Si vous ne spécifiez pas cet argument, la recherche commence après la cellule dans le coin supérieur gauche de la plage.</param>
         <param name="LookIn">Objet <b>facultatif</b>. Type d’informations.</param>
         <param name="LookAt">Objet <b>facultatif</b>. Peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlLookAt" /> constantes suivantes : <b>xlWhole</b> ou <b>xlPart</b>.</param>
         <param name="SearchOrder">Objet <b>facultatif</b>. Peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlSearchOrder" /> constantes suivantes : <b>xlByRows</b> ou <b>xlByColumns</b>.</param>
-        <param name="SearchDirection">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSearchDirection" /> . Sens de la recherche. Il peut s’y trouver l’une de ces constantes XlSearchDirection :<b>xlNext</b> <paramref name="default" /> <b>xlPrevious</b></param>
+        <param name="SearchDirection">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSearchDirection" /> . Sens de la recherche. Peut être l’une de ces constantes XlSearchDirection :<b>xlNext</b> <paramref name="default" /> <b>xlPrevious</b></param>
         <param name="MatchCase">Objet <b>facultatif</b>. <b>True</b> pour que la recherche respecte la casse. La valeur par défaut est <b>False</b>.</param>
         <param name="MatchByte">Objet <b>facultatif</b>. Utilisé uniquement si vous avez sélectionné ou installé la prise en charge des langues sur deux byte. <b>True</b> pour que les caractères sur deux caractères correspondent uniquement aux caractères sur deux sur deux caractères ; <b>False</b> pour que les caractères sur deux sur deux caractères correspondent à leurs équivalents sur un seul sur deux.</param>
         <param name="SearchFormat">Objet <b>facultatif</b>. Format de la recherche.</param>
@@ -2360,7 +2360,7 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="After">Objet <b>facultatif</b>. Cellule après laquelle vous souhaitez commencer la recherche. Cela correspond à la position de la cellule active lorsqu’une recherche est effectuée à partir de l’interface utilisateur. Notez <paramref name="After" /> qu’il doit s’agit d’une seule cellule de la plage. N’oubliez pas que la recherche commence cette cellule ; la cellule spécifiée n’est pas recherché tant que la méthode n’est pas resserrée <paramref name="after" /> sur cette cellule. Si cet argument n’est pas spécifié, la recherche commence après la cellule dans le coin supérieur gauche de la plage.</param>
+        <param name="After">Objet <b>facultatif</b>. Cellule après laquelle vous souhaitez commencer la recherche. Cela correspond à la position de la cellule active lorsqu’une recherche est effectuée à partir de l’interface utilisateur. Notez <paramref name="After" /> qu’il doit s’agit d’une seule cellule de la plage. N’oubliez pas que la recherche commence cette cellule ; la cellule spécifiée n’est pas recherché tant que la méthode <paramref name="after" /> n’est pas resserée sur cette cellule. Si cet argument n’est pas spécifié, la recherche commence après la cellule dans le coin supérieur gauche de la plage.</param>
         <summary>Poursuit une recherche qui a été commencée avec la <see cref="M:Microsoft.Office.Interop.Excel.Range.Find(System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSearchDirection,System.Object,System.Object,System.Object)" /> méthode.</summary>
         <returns>To be added.</returns>
         <remarks><para>Recherche la cellule suivante qui correspond à ces mêmes conditions et renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente cette cellule.</para>
@@ -2421,7 +2421,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>TRUE indique que la fonctionnalité Remplissage flash Excel a été activée et active.</summary>
+        <summary>TRUE indique que la fonctionnalité Excel remplissage flash a été activée et active.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2510,7 +2510,7 @@
         <summary>Cette propriété renvoie ou définit la formule de l'objet dans une notation de style A1 et dans la langue de la macro.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
-          <para>Si la cellule contient une constante, la propriété la renvoie. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule en tant que chaîne dans le même format que celui qui doit s'afficher dans la barre de formule (y compris le signe égal).</para>
+          <para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, cette propriété <b>Formula</b> renvoie une chaîne vide. Si la cellule contient une formule, la propriété <b>Formula</b> renvoie la formule en tant que chaîne dans le même format que celui qui doit s'afficher dans la barre de formule (y compris le signe égal).</para>
           <para>Si vous affectez une date à la formule d'une cellule, Microsoft Excel vérifie si la cellule est déjà dotée de l'un des formats numériques ou de date. Si tel n'est pas le cas, Microsoft Excel lui affecte le format de date numérique par défaut.</para>
           <para>Si la plage est une plage à une ou deux dimensions, vous pouvez définir la formule sur un tableau des mêmes dimensions. De même, vous pouvez placer la formule dans un tableau de base.</para>
           <para>Le fait de définir la formule pour une plage comprenant plusieurs cellules insère cette formule dans la totalité des cellules de la plage.</para>
@@ -3243,7 +3243,7 @@
         <param name="ColumnIndex">Objet <b>facultatif</b>. Nombre ou chaîne qui indique le numéro de colonne de la cellule que vous voulez atteindre, en commençant par 1 ou « A » pour la première colonne dans la plage.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente une plage décalée par la plage spécifiée.</summary>
         <value>To be added.</value>
-        <remarks><para>Les <paramref name="RowIndex" /> <paramref name="ColumnIndex" /> arguments et les arguments sont des décalages relatifs. En d’autres termes, la spécification d’un 1 renvoie les cellules de la première ligne de la plage, et non la <paramref name="RowIndex" /> première ligne de la feuille de calcul.</para>
+        <remarks><para>Les <paramref name="RowIndex" /> <paramref name="ColumnIndex" /> arguments sont des décalages relatifs. En d’autres termes, la spécification d’un 1 renvoie les cellules de la première ligne de la plage, et non la <paramref name="RowIndex" /> première ligne de la feuille de calcul.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3300,7 +3300,7 @@
         <summary>Distance entre le bord gauche de la colonne A et le bord gauche de la plage.</summary>
         <value>To be added.</value>
         <remarks><para>Si la plage n'est pas continue, la première zone est utilisée. Si la plage est constituée de plusieurs colonnes, celle située le plus à gauche dans la plage est utilisée.</para>
-          <para>Si la fenêtre est agrandie, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Si cette propriété est 0 (zéro), la fenêtre sera légèrement plus petite que si elle était agrandie. En d’autres termes, si cette propriété a la valeur 0 (zéro), la bordure gauche de la fenêtre principale de Microsoft Excel sera à peine visible à l’écran.</para>
+          <para>Si la fenêtre est agrandie, cette propriété renvoie un nombre négatif qui varie en fonction de la largeur de la bordure de la fenêtre. Si cette propriété est 0 (zéro), la fenêtre sera légèrement plus petite que si elle était agrandie. En d’autres termes, si cette propriété a la valeur 0 (zéro), la bordure gauche de la fenêtre Microsoft Excel sera à peine visible à l’écran.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3521,7 +3521,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie le nom MDX de l’objet <see cref="T:Microsoft.Office.Interop.Excel.Range" /> spécifié. En lecture seule.</summary>
-        <value>String</value>
+        <value>Chaîne</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3709,7 +3709,7 @@
         <Parameter Name="LinkNumber" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="TowardPrecedent">Objet <b>facultatif</b>. Spécifie le sens de navigation : <b>True</b> pour naviguer vers des antécédents ; <b>False pour</b> naviguer vers la dépendance.</param>
+        <param name="TowardPrecedent">Objet <b>facultatif</b>. Spécifie le sens de navigation : <b>True pour</b> naviguer vers des antécédents ; <b>False pour</b> naviguer vers la dépendance.</param>
         <param name="ArrowNumber">Objet <b>facultatif</b>. Spécifie le numéro de la flèche à suivre. Ce numéro correspond à la référence numérotée dans la formule de la cellule.</param>
         <param name="LinkNumber">Objet <b>facultatif</b>. Si la flèche est une flèche de référence externe, cet argument indique la référence externe à suivre. Si vous ne spécifiez pas cet argument, la première référence externe est suivie.</param>
         <summary>Cette méthode permet de suivre une flèche d'audit de la plage spécifiée vers la ou les cellules antécédentes, dépendantes ou ayant provoqué l'erreur.</summary>
@@ -3772,7 +3772,7 @@
         <Parameter Name="Length" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Text">Objet <b>facultatif</b>. Texte à ajouter à l'annotation (jusqu'à 255 caractères). Le texte est inséré à partir de la <paramref name="Start" /> position, en remplaçant les <paramref name="Length" /> caractères de la note existante. Si cet argument est omis, cette méthode renvoie le texte actuel de la note commençant à la position <paramref name="Start" /> , pour les <paramref name="Length" /> caractères.</param>
+        <param name="Text">Objet <b>facultatif</b>. Texte à ajouter à l'annotation (jusqu'à 255 caractères). Le texte est inséré à partir de la position, en remplaçant les <paramref name="Start" /> <paramref name="Length" /> caractères de la note existante. Si cet argument est omis, cette méthode renvoie le texte actuel de la note commençant à la position <paramref name="Start" /> , pour les <paramref name="Length" /> caractères.</param>
         <param name="Start">Objet <b>facultatif</b>. Emplacement de départ du texte défini ou renvoyé. Si cet argument n'est pas spécifié, cette méthode commence au premier caractère. Pour ajouter du texte à l'annotation, spécifiez un nombre supérieur au nombre de caractères de l'annotation existante.</param>
         <param name="Length">Objet <b>facultatif</b>. Nombre de caractères à définir ou à renvoyer. Si cet argument n'est pas spécifié, Microsoft Excel définit ou renvoie les caractères situés entre l'emplacement de départ du texte et la fin de l'annotation (255 caractères maximum). S’il y a plus de 255 caractères à partir de la fin de la note, cette méthode ne renvoie <paramref name="Start" /> que 255 caractères.</param>
         <summary>Cette méthode renvoie ou définit l'annotation de cellule associée à la cellule située dans le coin supérieur gauche de la plage.</summary>
@@ -3811,7 +3811,7 @@
         <summary>Cette propriété renvoie ou définit le code du format de l'objet.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété renvoie la valeur <b>Null</b> si toutes les cellules de la plage spécifiée n'ont pas le même format de nombre.</para>
-          <para>Le code de format est la même chaîne que l'option de Codes de Format dans la boîte de dialogue Format de cellule. La <b>fonction Format</b> utilise des chaînes de code de format différentes de celles de <b>NumberFormat et</b> des <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> propriétés.</para>
+          <para>Le code de format est la même chaîne que l'option de Codes de Format dans la boîte de dialogue Format de cellule. La <b>fonction Format</b> utilise des chaînes de code de format différentes de <b>numberFormat</b> et des <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> propriétés.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4048,7 +4048,7 @@
         <Parameter Name="Destination" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ParseLine">Objet <b>facultatif</b>. Chaîne qui contient des crochets gauche et droit pour indiquer où les cellules doivent être fractionner. Par exemple, « [xxx][xxx] » insère les trois premiers caractères dans la première colonne de la plage de destination, et insère les trois caractères suivants dans la deuxième colonne. Si cet argument est omis, Microsoft Excel devinera où fractionner les colonnes en fonction de l’espacement de la cellule supérieure gauche de la plage. Si vous souhaitez utiliser une autre plage pour deviner la ligne d’argument, utilisez un objet <b>Range</b> comme <paramref name="ParseLine" /> argument. Cette plage doit être l'une des cellules de redistribution. <paramref name="ParseLine" />L’argument ne peut pas être plus de 255 caractères, crochets et espaces compris.</param>
+        <param name="ParseLine">Objet <b>facultatif</b>. Chaîne qui contient des crochets gauche et droit pour indiquer où les cellules doivent être fractionner. Par exemple, « [xxx][xxx] » insère les trois premiers caractères dans la première colonne de la plage de destination, et insère les trois caractères suivants dans la deuxième colonne. Si cet argument est omis, Microsoft Excel l’endroit où fractionner les colonnes en fonction de l’espacement de la cellule supérieure gauche de la plage. Si vous souhaitez utiliser une autre plage pour deviner la ligne d’argument, utilisez un objet <b>Range</b> comme <paramref name="ParseLine" /> argument. Cette plage doit être l'une des cellules de redistribution. <paramref name="ParseLine" />L’argument ne peut pas être plus de 255 caractères, crochets et espaces compris.</param>
         <param name="Destination">Objet <b>facultatif</b>. Objet qui représente le coin supérieur gauche de la plage de destination pour <see cref="T:Microsoft.Office.Interop.Excel.Range" /> les données analyse. Si vous ne spécifiez pas cet argument, Microsoft Excel redistribue lui-même les données.</param>
         <summary>Cette méthode redistribue une plage de données et la divise en plusieurs cellules.</summary>
         <returns>To be added.</returns>
@@ -4083,8 +4083,8 @@
       <Docs>
         <param name="Paste">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /> . Partie de la plage à paster. Peut être l’une des <b>constantes XlPasteType</b> suivantes :<b>xlPasteAll default</b><b>xlPasteAllExceptBorders</b><b>xlPasteColumnWidths</b><b>xlPasteComments</b><b>xlPasteFormats</b><b>xlPasteFormulas</b><b>xlPasteFormulasAndNumberFormats</b><b>xlPasteValidation</b><b>xlPasteValues</b><b>xlPasteValuesAndNumberFormats</b></param>
         <param name="Operation">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlPasteSpecialOperation" /> . Opération de coller. Peut être l’une des <b>constantes XlPasteSpecialOperation</b> suivantes :<b>xlPasteSpecialOperationAdd</b><b>xlPasteSpecialOperationDivide</b><b>xlPasteSpecialOperationMultiply</b><b>xlPasteSpecialOperationNone</b> <paramref name="default" /> <b>xlPasteSpecialOperationSubtract</b></param>
-        <param name="SkipBlanks">Objet <b>facultatif</b>. <b>True</b> pour ne pas avoir de cellules vides dans la plage du Presse-papiers dans la plage de destination. La valeur par défaut est <b>False</b>.</param>
-        <param name="Transpose">Objet <b>facultatif</b>. <b>True</b> pour transposer les lignes et les colonnes lorsque la plage est passée. La valeur par défaut est <b>False</b>.</param>
+        <param name="SkipBlanks">Objet <b>facultatif</b>. <b>True</b> pour ne pas avoir de cellules vides dans la plage du Presse-papiers dans la plage de destination. La valeur par défaut est <b>Faux</b>.</param>
+        <param name="Transpose">Objet <b>facultatif</b>. <b>True</b> pour transposer les lignes et les colonnes lorsque la plage est passée. La valeur par défaut est <b>Faux</b>.</param>
         <summary>Cette dernière past <see cref="T:Microsoft.Office.Interop.Excel.Range" /> un élément du Presse-papiers dans la plage spécifiée.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -4254,7 +4254,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui représente le rapport de tableau croisé dynamique contenant le coin supérieur gauche de la plage spécifiée ou le rapport de tableau croisé dynamique associé au rapport de <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> tableau croisé dynamique.</summary>
+        <summary>Renvoie un objet qui représente le rapport de tableau croisé dynamique contenant le coin supérieur gauche de la plage spécifiée ou le rapport de tableau croisé dynamique associé <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> PivotChart rapport.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4382,14 +4382,14 @@
         <param name="From">Objet <b>facultatif</b>. Numéro de la page à partir de laquelle commence l'impression. Si cet argument est omis, l'impression commence à la première page.</param>
         <param name="To">Objet <b>facultatif</b>. Numéro de la dernière page à imprimer. Si cet argument est omis, l'impression s'effectue jusqu'à la dernière page.</param>
         <param name="Copies">Objet <b>facultatif</b>. Nombre de copies à imprimer. Si cet argument est omis, une seule copie est imprimée.</param>
-        <param name="Preview">Objet <b>facultatif</b>. <b>True pour</b> que Microsoft Excel appelle l’aperçu avant impression de l’objet ; <b>False</b> (ou omis) pour imprimer l’objet immédiatement.</param>
+        <param name="Preview">Objet <b>facultatif</b>. <b>True pour</b> que les Microsoft Excel prévisualisation avant l’impression de l’objet ; <b>False</b> (ou omis) pour imprimer l’objet immédiatement.</param>
         <param name="ActivePrinter">Objet <b>facultatif</b>. Définit le nom de l'imprimante active.</param>
         <param name="PrintToFile">Objet <b>facultatif</b>. <b>True</b>  pour imprimer dans un fichier. Si <b>PrToFileName</b> n'est pas défini, Microsoft Excel invite l'utilisateur à entrer le nom du fichier de sortie.</param>
         <param name="Collate">Objet <b>facultatif</b>. <b>True</b>  pour assembler plusieurs copies.</param>
         <param name="PrToFileName">Objet <b>facultatif</b>. Si l'argument <b>ImprimerDansFichier</b> a la valeur <b>True</b>True, cet argument spécifie le nom du fichier vers lequel vous souhaitez effectuer l'impression.</param>
         <summary>Cette méthode imprime l'objet.</summary>
         <returns>To be added.</returns>
-        <remarks><para>« Pages » dans les descriptions des pages imprimées et fait référence à ces pages, et non à l’ensemble des pages de la feuille <paramref name="From" /> <paramref name="To" /> ou du workbook.</para>
+        <remarks><para>« Pages » dans les descriptions des pages imprimées et fait référence à ces pages, et non à l’ensemble des pages de la <paramref name="From" /> <paramref name="To" /> feuille ou du workbook.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4582,7 +4582,7 @@
       </Parameters>
       <Docs>
         <param name="Columns">Tableau <b>d’objets</b> facultatif des index des colonnes qui contiennent les informations en double.  Si rien n’est passé, il suppose que toutes les colonnes contiennent des informations en double.</param>
-        <param name="Header">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> Indique si la première ligne contient des informations d’en-tête.  <see cref="F:Microsoft.Office.Interop.Excel.XlYesNoGuess.xlNo" /> est la valeur par défaut ; spécifiez <see cref="F:Microsoft.Office.Interop.Excel.XlYesNoGuess.xlGuess" /> si vous souhaitez qu’Excel tente de déterminer l’en-tête.</param>
+        <param name="Header">Facultatif Indique si la première ligne contient des <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> informations d’en-tête.  <see cref="F:Microsoft.Office.Interop.Excel.XlYesNoGuess.xlNo" />est la valeur par défaut ; spécifiez <see cref="F:Microsoft.Office.Interop.Excel.XlYesNoGuess.xlGuess" /> si vous souhaitez Excel tentez de déterminer l’en-tête.</param>
         <summary>Supprime les doublons dans une plage de valeurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4647,7 +4647,7 @@
         <param name="LookAt">Objet <b>facultatif</b>. Peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlLookAt" /> constantes suivantes : <b>xlWhole</b> ou <b>xlPart</b>.</param>
         <param name="SearchOrder">Objet <b>facultatif</b>. Peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlSearchOrder" /> constantes suivantes : <b>xlByRows</b> ou <b>xlByColumns</b>.</param>
         <param name="MatchCase">Objet <b>facultatif</b>. <b>True</b> pour que la recherche respecte la casse.</param>
-        <param name="MatchByte">Objet <b>facultatif</b>. Vous pouvez utiliser cet argument uniquement si vous avez sélectionné ou installé la prise en charge des langues sur deux byte dans Microsoft Excel. <b>True</b> pour que les caractères sur deux sur deux caractères ne correspondent qu’aux caractères sur deux sur deux caractères ; <b>False</b> pour que les caractères sur deux sur deux caractères correspondent à leurs équivalents sur un seul sur deux.</param>
+        <param name="MatchByte">Objet <b>facultatif</b>. Vous pouvez utiliser cet argument uniquement si vous avez sélectionné ou installé la prise en charge des langues sur deux Microsoft Excel. <b>True</b> pour que les caractères sur deux caractères correspondent uniquement aux caractères sur deux sur deux caractères ; <b>False</b> pour que les caractères sur deux sur deux caractères correspondent à leurs équivalents sur un seul sur deux.</param>
         <param name="SearchFormat">Objet <b>facultatif</b>. Format de la recherche pour la méthode.</param>
         <param name="ReplaceFormat">Objet <b>facultatif</b>. Format de remplacement pour la méthode.</param>
         <summary>Cette méthode renvoie un objet <b>Boolean</b> désignant des caractères contenus dans des cellules de la plage spécifiée.</summary>
@@ -4785,7 +4785,7 @@
                 <b>La hauteur</b> est en lecture seule.</description>
             </item>
             <item>
-              <description>Si vous renvoyez la propriété <b>RowHeight</b> <b>de</b> plusieurs lignes, vous obtenez la hauteur de ligne de chacune des lignes (si toutes les lignes ont la même hauteur) ou null (s’ils sont des hauteurs différentes). Si vous renvoyez <b>la propriété Height</b> de plusieurs lignes, vous obtenez la hauteur totale de toutes les lignes.</description>
+              <description>Si vous renvoyez la propriété <b>RowHeight</b> de plusieurs lignes, vous obtenez soit la hauteur de ligne de chacune des lignes (si toutes les lignes ont la même hauteur) soit la valeur <b>Null</b> (s’ils sont des hauteurs différentes). Si vous renvoyez <b>la propriété Height</b> de plusieurs lignes, vous obtenez la hauteur totale de toutes les lignes.</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -4908,7 +4908,7 @@
         <returns>To be added.</returns>
         <remarks><para>La plage doit se trouver dans une feuille macro.</para>
           <para>Vous ne pouvez pas utiliser d'arguments nommés avec cette méthode. Ils doivent être transmis par position.</para>
-          <para>La méthode <b>Run</b> renvoie la valeur renvoyée par la macro appelée. </para>
+          <para>La méthode <b>Run</b> renvoie la valeur renvoyée par la macro appelée.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4962,7 +4962,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Actions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spécifie les actions qui peuvent être effectuées sur le serveur SharePoint pour un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet.</summary>
+        <summary>Spécifie les actions qui peuvent être effectuées sur le serveur SharePoint d’un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Actions" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5042,7 +5042,7 @@
         <Parameter Name="Remove" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Remove">Objet <b>facultatif</b>. <b>True pour</b> supprimer un niveau de flèches d’tracer aux dépendants directs ; <b>False pour</b> développer un niveau de flèches d’tracer. La valeur par défaut est <b>False</b>.</param>
+        <param name="Remove">Objet <b>facultatif</b>. <b>True pour</b> supprimer un niveau de flèches d’tracer aux dépendants directs ; <b>False pour</b> développer un niveau de flèches d’tracer. La valeur par défaut est <b>Faux</b>.</param>
         <summary>Cette méthode affiche les flèches d'audit signalant les dépendants directs de la plage.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -5121,7 +5121,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Trace les flèches d’tracer dans l’arborescence des antécédents jusqu’à la cellule à l’origine de l’erreur et renvoie la plage qui contient cette cellule.</summary>
+        <summary>Trace les flèches d’tracer à travers l’arborescence des antécédents jusqu’à la cellule à l’origine de l’erreur et renvoie la plage contenant cette cellule.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5148,7 +5148,7 @@
         <Parameter Name="Remove" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Remove">Objet <b>facultatif</b>. <b>True pour</b> supprimer un niveau de flèches d’tracer vers des antécédents directs ; <b>False pour</b> développer un niveau de flèches d’tracer. La valeur par défaut est <b>False</b>.</param>
+        <param name="Remove">Objet <b>facultatif</b>. <b>True pour</b> supprimer un niveau de flèches d’tracer vers des antécédents directs ; <b>False pour</b> développer un niveau de flèches d’tracer. La valeur par défaut est <b>Faux</b>.</param>
         <summary>Cette méthode affiche les flèches d'audit signalant les antécédents directs de la plage.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -5254,12 +5254,12 @@
       </Parameters>
       <Docs>
         <param name="Key1">Objet <b>facultatif</b>. Premier champ de tri, sous forme de texte (un champ de tableau croisé dynamique ou un nom de plage) ou d’un objet ( « Dept » ou <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Cells(1, 1), par exemple).</param>
-        <param name="Order1">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> . Ordre de tri du champ ou de la plage spécifiée dans <paramref name="Key1" /> . Peut être l’une des constantes <b>XlSortOrder</b> suivantes :<b>xlDescending</b>. Trie <paramref name="Key1" /> dans l’ordre décroit.<b> xlAscending</b> <paramref name="default" /> . Trie <paramref name="Key1" /> dans l’ordre croissant.</param>
+        <param name="Order1">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> . Ordre de tri pour le champ ou la plage spécifié dans <paramref name="Key1" /> . Peut être l’une des constantes <b>XlSortOrder</b> suivantes :<b>xlDescending</b>. Trie <paramref name="Key1" /> dans l’ordre décroit.<b> xlAscending</b> <paramref name="default" /> . Trie <paramref name="Key1" /> dans l’ordre croissant.</param>
         <param name="Key2">Objet <b>facultatif</b>. Second champ de tri, sous forme de texte (un champ de tableau croisé dynamique ou un nom de plage) ou d'objet <b>Range</b>. Si vous ne spécifiez pas cet argument, il n'y a pas de second champ de tri. Ne peut pas être utilisé lors du tri des rapports de tableau croisé dynamique.</param>
         <param name="Type">Objet <b>facultatif</b>. Indique les éléments à trier. Utilisez cet argument uniquement lorsque vous triez des rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlSortType</b> suivantes :<b>xlSortLabels</b>. Trie le rapport de tableau croisé dynamique par étiquettes. <b>xlSortValues</b>. Trie le rapport de tableau croisé dynamique par valeurs.</param>
         <param name="Order2">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> . Ordre de tri pour le champ ou la plage spécifié dans <paramref name="Key2" /> . Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlSortOrder</b> suivantes :<b>xlDescending</b>. Trie <paramref name="Key2" /> dans l’ordre décroit.<b> xlAscending</b> <paramref name="default" /> . Trie <paramref name="Key2" /> dans l’ordre croissant.</param>
         <param name="Key3">Objet <b>facultatif</b>. Troisième champ de tri, sous forme de texte (un nom de plage) ou d'objet <b>Range</b>. Si vous ne spécifiez pas cet argument, il n'y a pas de troisième champ de tri. Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique.</param>
-        <param name="Order3">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> . Ordre de tri du champ ou de la plage spécifiée dans <paramref name="Key3" /> . Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlSortOrder</b> suivantes :<b>xlDescending</b>. Trie <paramref name="Key3" /> dans l’ordre décroit.<b> xlAscending</b> <paramref name="default" /> . Trie <paramref name="Key3" /> dans l’ordre croissant.</param>
+        <param name="Order3">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> . Ordre de tri pour le champ ou la plage spécifié dans <paramref name="Key3" /> . Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlSortOrder</b> suivantes :<b>xlDescending</b>. Trie <paramref name="Key3" /> dans l’ordre décroit.<b> xlAscending</b> <paramref name="default" /> . Trie <paramref name="Key3" /> dans l’ordre croissant.</param>
         <param name="Header">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> . Indique si la première ligne contient des en-têtes. Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlYesNoGuess</b> suivantes :<b>xlGuess</b>. Laissez Microsoft Excel déterminer s’il existe un en-tête et où il se trouve s’il en existe un. <b>xlNo</b> <paramref name="default" /> . (La plage entière doit être triée). <b>xlYes</b>. (La plage entière ne doit pas être triée).</param>
         <param name="OrderCustom">Objet <b>facultatif</b>. Cet argument est un entier en base un référencé vers la liste des ordres de tri personnalisés. Si vous <paramref name="OrderCustom" /> omettez, un tri normal est utilisé.</param>
         <param name="MatchCase">Objet <b>facultatif</b>. <b>True</b> pour un tri sensible à la cas ; <b>False</b> pour faire un tri qui ne soit pas sensible à la cas. Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique.</param>
@@ -5320,12 +5320,12 @@
         <param name="Order2">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> . Ordre de tri du champ ou de la plage spécifié dans <paramref name="Key2" /> l’argument. Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlSortOrder</b> suivantes :<b>xlDescending</b>. Trie <paramref name="Key2" /> dans l’ordre décroit <b>xlAscending par</b> défaut. Trie <paramref name="Key2" /> dans l’ordre croissant.</param>
         <param name="Key3">Objet <b>facultatif</b>. Troisième champ de tri, sous forme de texte (un nom de plage) ou d'objet <b>Range</b>. Si vous ne spécifiez pas cet argument, il n'y a pas de troisième champ de tri. Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique.</param>
         <param name="Order3">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> . Ordre de tri du champ ou de la plage spécifié dans <paramref name="Key3" /> l’argument. Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlSortOrder</b> suivantes : <b>xlDescending</b>. Trie <paramref name="Key3" /> dans l’ordre décroit.<b> xlAscending</b> <paramref name="default" /> . Trie <paramref name="Key3" /> dans l’ordre croissant.</param>
-        <param name="Header">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> . Indique si la première ligne contient des en-têtes. Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlYesNoGuess</b> suivantes :<b>xlGuess</b>. Permet à Microsoft Excel de déterminer s’il existe un en-tête et de déterminer où il se trouve s’il en existe un. <b>xlNo</b> <paramref name="default" /> . La plage entière doit être triée. <b>xlYes</b>. La plage entière ne doit pas être triée.</param>
+        <param name="Header">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> . Indique si la première ligne contient des en-têtes. Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlYesNoGuess</b> suivantes :<b>xlGuess</b>. Permet de Microsoft Excel s’il existe un en-tête et de déterminer où il se trouve s’il en existe un. <b>xlNo</b> <paramref name="default" /> . La plage entière doit être triée. <b>xlYes</b>. La plage entière ne doit pas être triée.</param>
         <param name="OrderCustom">Objet <b>facultatif</b>. Cet argument est un entier en base un référencé vers la liste des ordres de tri personnalisés. Si vous <paramref name="OrderCustom" /> omettez , (l’ordre de tri normal) est utilisé.</param>
         <param name="MatchCase">Objet <b>facultatif</b>. <b>True</b> pour un tri sensible à la cas ; <b>False</b> pour faire un tri qui ne soit pas sensible à la cas. Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique.</param>
         <param name="Orientation">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrientation" /> . Orientation du tri. Peut être l’une des constantes <b>XlSortOrientation</b> suivantes :<b>xlSortRows</b> <paramref name="default" /> . Le tri est effectué par ligne. <b>xlSortColumns</b>. Le tri est effectué par colonne.</param>
-        <param name="DataOption1">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> . Spécifie comment trier le texte dans <paramref name="Key1" /> . Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlSortDataOption</b> suivantes :<b>xlSortTextAsNumbers</b>. Traite le texte comme des données numériques pour le tri. <b>xlSortNormal</b> <paramref name="default" /> . Trie les données numériques et textuelles séparément.</param>
-        <param name="DataOption2">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> . Spécifie comment trier le texte dans <paramref name="Key 2" /> . Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlSortDataOption</b> suivantes :<b>xlSortTextAsNumbers</b>. Traite le texte comme des données numériques pour le tri. <b>xlSortNormal</b> <paramref name="default" /> . Trie les données numériques et textuelles séparément.</param>
+        <param name="DataOption1">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> . Spécifie comment trier le texte <paramref name="Key1" /> dans . Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlSortDataOption</b> suivantes :<b>xlSortTextAsNumbers</b>. Traite le texte comme des données numériques pour le tri. <b>xlSortNormal</b> <paramref name="default" /> . Trie les données numériques et textuelles séparément.</param>
+        <param name="DataOption2">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> . Spécifie comment trier le texte <paramref name="Key 2" /> dans . Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlSortDataOption</b> suivantes :<b>xlSortTextAsNumbers</b>. Traite le texte comme des données numériques pour le tri. <b>xlSortNormal</b> <paramref name="default" /> . Trie les données numériques et textuelles séparément.</param>
         <param name="DataOption3">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> . Spécifie comment trier le texte <paramref name="Key 3" /> dans . Cet argument ne peut pas être utilisé lors du tri de rapports de tableau croisé dynamique. Peut être l’une des constantes <b>XlSortDataOption</b> suivantes :<b>xlSortTextAsNumbers</b>. Traite les données numériques de texte pour le tri. <b>xlSortNormal</b> <paramref name="default" /> . Trie les données numériques et textuelles séparément.</param>
         <summary>Utilise des méthodes de tri d’Asie de l’Est pour trier la plage ou un rapport de tableau croisé dynamique, ou utilise la méthode pour la région active si la plage ne contient qu’une seule cellule. Par exemple, le japonais effectue des tris dans l'ordre des syllabes kana.</summary>
         <returns>To be added.</returns>
@@ -5384,7 +5384,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparklineGroups</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un objet qui représente un groupe existant de sparklines de <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroups" /> la plage spécifiée.</summary>
+        <summary>Obtient <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroups" /> un objet qui représente un groupe existant de sparklines à partir de la plage spécifiée.</summary>
         <value>Objet <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroups" /> qui représente un groupe existant de sparklines de la plage spécifiée.</value>
         <remarks><para>En lecture seule.</para>
           <para> </para></remarks>
@@ -5538,9 +5538,9 @@
       </Parameters>
       <Docs>
         <param name="GroupBy">Argument de type <b>Integer</b> obligatoire. Champ à grouper, en tant que décalage de type entier en base 1. Pour plus d'informations, voir l'exemple.</param>
-        <param name="Function">Obligatoire <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /> . Fonction de sous-total. Peut être l’une des <b>constantes XlConsolidationFunction</b> suivantes :<b>xlAverage</b><b>xlCount</b><b>xlCountNums</b><b>xlMax</b><b>xlMin xlProduct</b><b></b><b>xlStDev</b><b>xlStDevP</b><b>xlSum xlUnknown</b><b></b><b>xlVar</b><b>xlVarP</b></param>
+        <param name="Function">Obligatoire <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /> . Fonction de sous-total. Peut être l’une des <b>constantes XlConsolidationFunction</b> suivantes :<b>xlAverage</b><b>xlCount</b><b>xlCountNums</b><b>xlMax</b><b>xlMin</b><b>xlProduct</b><b>xlStDev</b><b>xlStDevP</b><b>xlSum xlUnknown</b><b></b><b>xlVar</b><b>xlVarP</b></param>
         <param name="TotalList">Required, <b>objet</b>. Tableau de décalages de champ en base 1, signalant les champs auxquels des sous-totaux sont ajoutés. Pour plus d'informations, voir l'exemple.</param>
-        <param name="Replace">Objet <b>facultatif</b>. <b>True</b> pour remplacer les sous-totaux existants. La valeur par défaut est <b>False</b>.</param>
+        <param name="Replace">Objet <b>facultatif</b>. <b>True</b> pour remplacer les sous-totaux existants. La valeur par défaut est <b>Faux</b>.</param>
         <param name="PageBreaks">Objet <b>facultatif</b>. <b>True</b> pour ajouter des sauts de page après chaque groupe. La valeur par défaut est <b>False</b>.</param>
         <param name="SummaryBelowData">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlSummaryRow" /> . Place les données de synthèse en lien avec le sous-total. Peut être l’une des constantes <b>XlSummaryRow</b> suivantes :<b>xlSummaryAbove</b><b>xlSummaryBelow</b><paramref name="default" /></param>
         <summary>Cette méthode crée les sous-totaux de la plage (ou de la zone active si la plage ne comporte qu'une seule cellule).</summary>
@@ -5673,17 +5673,17 @@
         <Parameter Name="TrailingMinusNumbers" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Destination">Objet <b>facultatif</b>. Objet <see cref="T:Microsoft.Office.Interop.Excel.Range" /> qui spécifie l’endroit où Microsoft Excel placera les résultats. Si la plage contient plusieurs cellules, la cellule située dans le coin supérieur gauche est utilisée.</param>
+        <param name="Destination">Objet <b>facultatif</b>. Objet <see cref="T:Microsoft.Office.Interop.Excel.Range" /> qui spécifie où Microsoft Excel placera les résultats. Si la plage contient plusieurs cellules, la cellule située dans le coin supérieur gauche est utilisée.</param>
         <param name="DataType">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlTextParsingType" /> . Format du texte à diviser en colonnes. Peut être l’une des <b>constantes XlTextParsingType</b> suivantes :<b>xlDelimited </b> <paramref name="default" /> <b>xlFixedWidth</b></param>
         <param name="TextQualifier">Facultatif <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> . Peut être l’une des constantes <b>XlTextQualifier</b> suivantes :<b>xlTextQualifierDoubleQuote</b> <paramref name="default" /> <b>xlTextQualifierNone</b><b>xlTextQualifierSingleQuote</b></param>
         <param name="ConsecutiveDelimiter">Objet <b>facultatif</b>. <b>True</b> pour que Microsoft Excel considère des séparateurs consécutifs comme un seul et même séparateur. La valeur par défaut est <b>False</b>.</param>
-        <param name="Tab">Objet <b>facultatif</b>. <b>True</b> pour avoir <paramref name="DataType" /> été <b>xlDelimited</b> et pour que le caractère de tabulation soit un délimiteur. La valeur par défaut est <b>False</b>.</param>
-        <param name="Semicolon">Objet <b>facultatif</b>. <b>True</b> pour avoir <paramref name="DataType" /> été <b>xlDelimited</b> et pour que le point-virgule soit un délimiteur. La valeur par défaut est <b>False</b>.</param>
-        <param name="Comma">Objet <b>facultatif</b>. <b>True</b> pour avoir <paramref name="DataType" /> été <b>xlDelimited</b> et pour que la virgule soit un délimiteur. La valeur par défaut est <b>False</b>.</param>
-        <param name="Space">Objet <b>facultatif</b>. <b>True</b> pour avoir <paramref name="DataType" /> été <b>xlDelimited</b> et pour que le caractère espace soit un délimiteur. La valeur par défaut est <b>False</b>.</param>
-        <param name="Other">Objet <b>facultatif</b>. <b>True</b> pour <paramref name="DataType" /> avoir été <b>xlDelimited</b> et pour que le caractère spécifié par <paramref name="OtherChar" /> l’argument soit un délimiteur. La valeur par défaut est <b>False</b>.</param>
+        <param name="Tab">Objet <b>facultatif</b>. <b>True</b> pour avoir <paramref name="DataType" /> été <b>xlDelimited</b> et pour que le caractère de tabulation soit un délimiteur. La valeur par défaut est <b>Faux</b>.</param>
+        <param name="Semicolon">Objet <b>facultatif</b>. <b>True</b> pour avoir <paramref name="DataType" /> été <b>xlDelimited</b> et pour que le point-virgule soit un délimiteur. La valeur par défaut est <b>Faux</b>.</param>
+        <param name="Comma">Objet <b>facultatif</b>. <b>True</b> pour avoir <paramref name="DataType" /> été <b>xlDelimited</b> et pour que la virgule soit un délimiteur. La valeur par défaut est <b>Faux</b>.</param>
+        <param name="Space">Objet <b>facultatif</b>. <b>True</b> pour avoir <paramref name="DataType" /> été <b>xlDelimited</b> et pour que le caractère espace soit un délimiteur. La valeur par défaut est <b>Faux</b>.</param>
+        <param name="Other">Objet <b>facultatif</b>. <b>True</b> pour avoir la valeur xlDelimited et pour que le caractère spécifié par <paramref name="DataType" /> <b></b> <paramref name="OtherChar" /> l’argument soit un délimiteur. La valeur par défaut est <b>Faux</b>.</param>
         <param name="OtherChar">Objet <b>facultatif</b> (obligatoire si <paramref name="Other" /> la valeur est <b>True</b>). Caractère de délimitation lorsque la valeur <paramref name="Other" /> est <b>True</b>. Si plusieurs caractères sont spécifiés, le premier est utilisé et les autres sont ignorés.</param>
-        <param name="FieldInfo">Objet <b>facultatif</b>. Tableau contenant des informations redistribuées pour des colonnes individuelles de données. L’interprétation dépend de la valeur de <paramref name="DataType" /> . Lorsque les données sont délimitées, cet argument est un tableau de tableaux à deux éléments, spécifiant les options de conversion pour une colonne particulière. Le premier élément est le numéro de colonne (base 1), et le deuxième élément est l’une des constantes spécifiant la façon dont la colonne <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" /> est l’une des constantes. Peut être l’une des constantes <b>XlColumnDataType</b> suivantes :<b>xlGeneralFormat</b>. Genera. <b>xlTextFormat</b>. Texte. <b>xlMDYFormat</b>. Date MDY. <b>xlDMYFormat</b>. Date JMY. <b>xlYMDFormat</b>. Date YMD. <b>xlMYDFormat</b>. Date MYD. <b>xlDYMFormat</b>. Date DYM. <b>xlYDMFormat</b>. Date ADM. <b>xlEMDFormat</b>. Date EMD. <b>xlSkipColumn</b>. Skip Column.You can use <b>xlEMDFormat</b> only if Taiwanese language support is installed and selected. La <b>constante xlEMDFormat</b> spécifie que les dates de l’ère taïwanais sont utilisées. Les spécifiés de colonne peuvent être dans n’importe quel ordre. Si un specifieur de colonne donné n’est pas présent pour une colonne particulière dans les données d’entrée, la colonne est analyse avec le <b>paramètre Général.</b> Si les données sources ont des colonnes de largeur fixe, le premier élément de chaque tableau à deux éléments spécifie la position du caractère de départ dans la colonne (sous la mesure d’un nombre ; 0 (zéro) est le premier caractère). Le deuxième élément du tableau à deux éléments spécifie l'option de redistribution de la colonne sous la forme d'un nombre compris entre un et neuf, comme indiqué ci-dessus.</param>
+        <param name="FieldInfo">Objet <b>facultatif</b>. Tableau contenant des informations redistribuées pour des colonnes individuelles de données. L’interprétation dépend de la valeur de <paramref name="DataType" /> . Lorsque les données sont délimitées, cet argument est un tableau de tableaux à deux éléments, spécifiant les options de conversion pour une colonne particulière. Le premier élément est le numéro de colonne (base 1), et le deuxième élément est l’une des constantes spécifiant la façon dont la colonne <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" /> est l’une des constantes. Peut être l’une des constantes <b>XlColumnDataType</b> suivantes :<b>xlGeneralFormat</b>. Genera. <b>xlTextFormat</b>. Texte. <b>xlMDYFormat</b>. Date MDY. <b>xlDMYFormat</b>. Date JMY. <b>xlYMDFormat</b>. Date YMD. <b>xlMYDFormat</b>. Date MYD. <b>xlDYMFormat</b>. Date DYM. <b>xlYDMFormat</b>. Date ADM. <b>xlEMDFormat</b>. Date EMD. <b>xlSkipColumn</b>. Skip Column.You can use <b>xlEMDFormat</b> only if Taiwanese language support is installed and selected. La <b>constante xlEMDFormat</b> spécifie que les dates d’ère taïwanais sont utilisées. Les spécifiés de colonne peuvent être dans n’importe quel ordre. Si un spécifié de colonne donné n’est pas présent pour une colonne particulière dans les données d’entrée, la colonne est analyse avec le <b>paramètre Général.</b> Si les données sources ont des colonnes de largeur fixe, le premier élément de chaque tableau à deux éléments spécifie la position du caractère de départ dans la colonne (sous la la mesure d’un nombre integer ; 0 (zéro) est le premier caractère). Le deuxième élément du tableau à deux éléments spécifie l'option de redistribution de la colonne sous la forme d'un nombre compris entre un et neuf, comme indiqué ci-dessus.</param>
         <param name="DecimalSeparator">Argument de type <b>String</b> facultatif. Séparateur des milliers utilisé par Microsoft Excel lors de la reconnaissance des nombres. Le paramètre par défaut est le paramètre du système.</param>
         <param name="ThousandsSeparator">Argument de type <b>String</b> facultatif. Séparateur décimal utilisé par Microsoft Excel lors de la reconnaissance des nombres. Le paramètre par défaut est le paramètre du système.</param>
         <param name="TrailingMinusNumbers">Objet <b>facultatif</b>. Nombres qui commencent par un signe moins.</param>
@@ -5845,7 +5845,7 @@
       <Docs>
         <summary>Détermine si la hauteur de ligne de <see cref="T:Microsoft.Office.Interop.Excel.Range" /> l’objet est égale à la hauteur standard de la feuille.</summary>
         <value>To be added.</value>
-        <remarks><para>Cette propriété renvoie la valeur <b>True</b> si la hauteur de ligne de l’objet <b>Range</b> est égale à la hauteur standard de la feuille et <b>Null</b> si la plage contient plusieurs lignes et si les lignes ne sont pas toutes de la même hauteur.</para>
+        <remarks><para>Cette propriété renvoie la valeur <b>True</b> si la hauteur de ligne de l’objet <b>Range</b> est égale à la hauteur standard de la feuille et <b>Null</b> si la plage contient plusieurs lignes et que les lignes ne sont pas toutes de la même hauteur.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6118,9 +6118,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si Microsoft Excel encapsule le texte dans l’objet.</summary>
+        <summary>Détermine si Microsoft Excel le texte dans l’objet.</summary>
         <value>To be added.</value>
-        <remarks><para>Cette propriété renvoie la valeur <b>True</b> si Microsoft Excel encapsule le texte dans l’objet et <b>Null</b> si la plage spécifiée contient certaines cellules qui encapsulent le texte et d’autres cellules qui ne le sont pas.</para>
+        <remarks><para>Cette propriété renvoie la valeur <b>True</b> Microsoft Excel renvoie le texte dans l’objet et <b>null</b> si la plage spécifiée contient des cellules qui encapsulent le texte et d’autres cellules qui ne le sont pas.</para>
           <para>Microsoft Excel modifie éventuellement la hauteur de ligne de la plage pour, le cas échéant, afficher le texte dans celle-ci.</para>
           <para> </para></remarks>
       </Docs>
