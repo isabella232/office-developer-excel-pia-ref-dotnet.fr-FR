@@ -1,5 +1,5 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Excel.DiagramNode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="86e622fca7f83a44ee8326d13178a7a41108a865" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012522" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="596c9db6646e72359bb9061ca4c386cce081415b843e368dbe3a6cb3403fdabd" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508597" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNode implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DiagramNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNode&#xA;Implements _IMsoDispObj" />
@@ -46,7 +46,7 @@
           <description>Pour faire référence à un diagramme enfant, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" /> propriété.</description>
         </item>
         <item>
-          <description>Pour faire référence à un nœud de diagramme enfant individuel, utilisez les méthodes <b>AddNode,</b> <b>CloneNode,</b> <b>NextNode</b> ou <b>PrevNode</b> ou la <b>propriété Root.</b></description>
+          <description>Pour faire référence à un nœud de diagramme enfant individuel, utilisez les méthodes <b>AddNode</b>, <b>CloneNode</b>, <b>NextNode</b> ou <b>PrevNode</b> ou la <b>propriété Root.</b></description>
         </item>
         <item>
           <description>Pour faire référence à une collection de nodes de diagrammes enfants, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> propriété.</description>
@@ -114,7 +114,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -529,7 +529,7 @@
       </Parameters>
       <Docs>
         <param name="pTargetNode">Objet <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> obligatoire. Nœud de diagramme cible à remplacer.</param>
-        <param name="swapChildren">Facultatif <b>Boolean</b>. Les nodes enfants des nodes cibles et sources en cours d’échange. Tous les nodes de diagramme enfant sont déplacés avec leurs nodes racine correspondants. La valeur <b>par défaut est True,</b>qui permute les nodes enfants.</param>
+        <param name="swapChildren">Facultatif <b>Boolean</b>. Les nodes enfants des nodes source et cible en cours d’échange. Tous les nodes de diagramme enfant sont déplacés avec leurs nodes racine correspondants. La valeur <b>par défaut est True,</b>qui permute les nodes enfants.</param>
         <summary>Intermute le nœud de diagramme source avec un nœud de diagramme cible.</summary>
         <remarks>To be added.</remarks>
       </Docs>
