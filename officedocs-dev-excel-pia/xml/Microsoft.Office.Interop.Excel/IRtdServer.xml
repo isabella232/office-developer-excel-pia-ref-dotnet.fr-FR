@@ -1,5 +1,5 @@
 <Type Name="IRtdServer" FullName="Microsoft.Office.Interop.Excel.IRtdServer">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="91b1868ee8a3354dc6036654d8402e4aad54ba45" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997655" /></Metadata><TypeSignature Language="C#" Value="public interface IRtdServer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5913a9fd46bfb7d5f88e17acdfa800f3c9bcbcb95acd68db9963071ca4d3270b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514372" /></Metadata><TypeSignature Language="C#" Value="public interface IRtdServer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRtdServer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IRtdServer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRtdServer" />
@@ -107,7 +107,7 @@
       <Docs>
         <summary>Cette méthode détermine si le serveur de données en temps réel est toujours actif. La valeur zéro ou un nombre négatif indiquent un échec ; un nombre positif indique que le serveur est actif.</summary>
         <returns>To be added.</returns>
-        <remarks><para>La méthode Heartbeat est appelée par Microsoft Excel si la propriété s’est écoulée depuis le dernier appel <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> d’Excel avec la <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> méthode.</para>
+        <remarks><para>La méthode Heartbeat est appelée par Microsoft Excel si la propriété s’est écoulée depuis le dernier appel Excel la <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> méthode.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -134,10 +134,10 @@
         <Parameter Name="TopicCount" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TopicCount">Argument de type <b>Integer</b> obligatoire. Le serveur RTD doit modifier la valeur du nombre d’éléments <paramref name="TopicCount" /> dans le tableau renvoyé.</param>
+        <param name="TopicCount">Argument de type <b>Integer</b> obligatoire. Le serveur RTD doit modifier la valeur du nombre d’éléments dans <paramref name="TopicCount" /> le tableau renvoyé.</param>
         <summary>Cette méthode est appelée par Microsoft Excel pour obtenir de nouvelles données.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Les données renvoyées à Excel sont un <b>objet</b> contenant un tableau à deux dimensions. La première dimension représente la liste des identificateurs de rubriques. La deuxième dimension représente les valeurs associées aux identificateurs de rubriques.</para>
+        <remarks><para>Les données renvoyées à Excel un <b>objet</b> contenant un tableau à deux dimensions. La première dimension représente la liste des identificateurs de rubriques. La deuxième dimension représente les valeurs associées aux identificateurs de rubriques.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
