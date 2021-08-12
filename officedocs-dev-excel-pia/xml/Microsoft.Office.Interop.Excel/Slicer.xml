@@ -1,5 +1,5 @@
 <Type Name="Slicer" FullName="Microsoft.Office.Interop.Excel.Slicer">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3a23eef4e7b55760a8f9b05aacbfcb4b526de165" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010254" /></Metadata><TypeSignature Language="C#" Value="public interface Slicer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a314d84d4ce630b9d17f2ffd7f2528f65d638a507533fddde3e79a372d377e51" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54512685" /></Metadata><TypeSignature Language="C#" Value="public interface Slicer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Slicer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Slicer" />
   <TypeSignature Language="VB.NET" Value="Public Interface Slicer" />
@@ -53,7 +53,7 @@
         <summary>Renvoie un objet qui représente le bouton de slicer actuellement en <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> focus pour le slicer spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>La propriété <b>ActiveItem</b> renvoie un objet <b>SlicerItem</b> lorsque le segment est activé et que le contrôle actif est un bouton dans le segment (par exemple, l’utilisateur peut faire naviguer les boutons dans le segment avec le clavier dans cet état).</para>
-          <para>La <b>propriété ActiveItem</b> retourne <b>Nothing</b> (une référence Null (Nothing en Visual Basic) en C#) dans les circonstances suivantes :</para>
+          <para>La <b>propriété ActiveItem</b> retourne <b>Nothing</b> (une référence Null (Nothing in Visual Basic) dans C#) dans les circonstances suivantes :</para>
           <list type="bullet">
             <item>
               <description>Le segment spécifié n’est pas activé (n’est pas sélectionné ni actif).</description>
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui <see cref="T:Microsoft.Office.Interop.Excel.Application" /> représente l’application Microsoft Excel. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet qui représente le <see cref="T:Microsoft.Office.Interop.Excel.Application" /> créateur de l’objet spécifié.</summary>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui représente <see cref="T:Microsoft.Office.Interop.Excel.Application" /> l’application Microsoft Excel’objet. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété renvoie un objet qui représente le <see cref="T:Microsoft.Office.Interop.Excel.Application" /> créateur de l’objet spécifié.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Application" />Objet.</value>
         <remarks><para>En lecture seule.</para>
           <para> </para></remarks>
@@ -214,7 +214,7 @@
         <summary>Obtient un <b>integer</b> 32 bits qui indique l’application dans laquelle cet objet a été créé.</summary>
         <value>Un <b>integer</b> 32 bits qui indique l’application dans laquelle cet objet a été créé.</value>
         <remarks><para>En lecture seule <b>longue</b>.</para>
-          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C. La propriété est conçue pour être utilisée dans Microsoft Excel pour Macintosh, où chaque application possède un code créateur <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> à quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
+          <para>Si l'objet a été créé dans Microsoft Excel, cette propriété renvoie la chaîne XCEL, qui équivaut au nombre hexadécimal 5843454C. La propriété est conçue pour être utilisée dans Microsoft Excel macintosh, où chaque application possède un code créateur à <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> quatre caractères. Par exemple, Microsoft Excel possède le code de créateur XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -294,11 +294,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient ou définit si le slicer spécifié peut être déplacé ou re res taille à l’aide de l’interface utilisateur.</summary>
+        <summary>Obtient ou définit si le slicer spécifié peut être déplacé ou re taille à l’aide de l’interface utilisateur.</summary>
         <value><b>true</b> si le slicer spécifié peut être déplacé ou re re taille à l’aide de l’interface utilisateur ; sinon, <b>false</b>. La valeur par défaut est <b>False</b>.</value>
         <remarks><para>En lecture/écriture</para>
           <para>
-            <b>true</b> si le slicer ne peut pas être déplacé ou ressergé en sélectionnant des bordures ou des poignées dans l’interface utilisateur ; sinon <b>false</b>. La valeur par défaut est <b>faux</b>. La définition <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> de la propriété sur <b>True</b> affecte uniquement l’interface utilisateur. Le déplacement ou le re resserr du slicer en activant des propriétés telles que , ou les propriétés de l’objet à partir du <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" /> code <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> n’est pas désactivé.</para>
+            <b>true</b> si le slicer ne peut pas être déplacé ou re re ressergé en sélectionnant des bordures ou des poignées dans l’interface utilisateur ; sinon <b>false</b>. La valeur par défaut est <b>faux</b>. La définition <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> de la propriété sur <b>true</b> affecte uniquement l’interface utilisateur. Le déplacement ou le re resserr du slicer en activant des propriétés telles que , ou les propriétés de l’objet à partir du <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" /> code <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> n’est pas désactivé.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
