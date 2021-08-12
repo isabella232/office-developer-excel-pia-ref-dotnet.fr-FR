@@ -1,5 +1,5 @@
 <Type Name="_Worksheet" FullName="Microsoft.Office.Interop.Excel._Worksheet">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7f0ab611aa4d579db9ac504ef7ee328ea8f5b52e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012669" /></Metadata><TypeSignature Language="C#" Value="public interface _Worksheet" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5a0f00f4b29aa758fd1287f9ad3d689ee59d0831e2bcf643edcfed5c38a0a6bb" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507449" /></Metadata><TypeSignature Language="C#" Value="public interface _Worksheet" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Worksheet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel._Worksheet" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Worksheet" />
@@ -409,7 +409,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui <see cref="T:Microsoft.Office.Interop.Excel.Application" /> représente l’application Microsoft Excel. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un objet qui représente <see cref="T:Microsoft.Office.Interop.Excel.Application" /> l’application Microsoft Excel’objet. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -587,11 +587,11 @@
             </item>
             <item>
               <term>une feuille de calcul particulière</term>
-              <description>Feuilles de calcul(1). Calculer</description>
+              <description>Worksheets(1). Calculer</description>
             </item>
             <item>
               <term>une plage déterminée</term>
-              <description>Feuilles de calcul(1). Rows(2). Calculer</description>
+              <description>Worksheets(1). Rows(2). Calculer</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -726,7 +726,7 @@
         <param name="AlwaysSuggest">Objet <b>facultatif</b>. <b>True</b> pour que Microsoft Excel affiche une liste de suggestions lorsqu'un mot mal orthographié est détecté. <b>False</b> pour que Microsoft Excel attende que vous tapiez le mot correctement orthographié. Si cet argument est omis, ce sont les paramètres en vigueur qui sont utilisés.</param>
         <param name="SpellLang">Objet <b>facultatif</b>. Langue du dictionnaire utilisé. Peut être l’une des <b>valeurs MsoLanguageID</b> utilisées par la <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> propriété.</param>
         <summary>Vérifie l'orthographe d'un objet. Ce formulaire n’a pas de valeur de retour ; Microsoft Excel affiche la boîte de dialogue Orthographe.</summary>
-        <remarks><para>Utilisez cette méthode pour vérifier les en-têtes, les pieds de liste et les objets d’une feuille de calcul.</para>
+        <remarks><para>Utilisez cette méthode pour vérifier les en-têtes, les pieds de bas de liste et les objets d’une feuille de calcul.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -781,7 +781,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui représente la plage contenant la première référence circulaire de la feuille, ou renvoie <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <b>Nothing</b> s’il n’y a pas de référence circulaire sur la feuille. Cette référence doit être enlevée avant que le calcul ne soit effectué. En lecture seule.</summary>
+        <summary>Renvoie un objet qui représente la plage contenant la première référence circulaire de la feuille, ou renvoie <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <b>Nothing</b> s’il n’existe aucune référence circulaire sur la feuille. Cette référence doit être enlevée avant que le calcul ne soit effectué. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -956,7 +956,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConsolidationFunction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie le code de fonction utilisé pour la consolidation actuelle. Il peut s’y trouver dans <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /> l’une des constantes. En lecture seule.</summary>
+        <summary>Cette propriété renvoie le code de fonction utilisé pour la consolidation actuelle. Il peut s’y trouver <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /> l’une des constantes. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -991,11 +991,11 @@
         <value>To be added.</value>
         <remarks><list type="table">
             <item>
-              <term>1 </term>
+              <term>1</term>
               <description>Utilisez des étiquettes dans la ligne supérieure.</description>
             </item>
             <item>
-              <term>2 </term>
+              <term>2</term>
               <description>Utilisez des étiquettes dans la colonne de gauche.</description>
             </item>
             <item>
@@ -1066,7 +1066,7 @@
         <param name="Before">Objet <b>facultatif</b>. Feuille avant laquelle la feuille copiée sera placée. Vous ne pouvez pas <paramref name="Before" /> spécifier si vous spécifiez <paramref name="After" /> .</param>
         <param name="After">Objet <b>facultatif</b>. Feuille après laquelle la feuille copiée sera placée. Vous ne pouvez pas <paramref name="After" /> spécifier si vous spécifiez <paramref name="Before" /> .</param>
         <summary>Copie la feuille à un autre emplacement dans le classeur.</summary>
-        <remarks><para>Si vous ne spécifiez pas l’une ou l’autre des deux, Microsoft Excel crée un nouveau workbook qui <paramref name="Before" /> contient la feuille <paramref name="After" /> copiée.</para>
+        <remarks><para>Si vous ne spécifiez pas l’une ou l’autre Microsoft Excel crée un nouveau <paramref name="Before" /> <paramref name="After" /> workbook qui contient la feuille copiée.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1153,7 +1153,7 @@
       <Parameters />
       <Docs>
         <summary>Supprime l'objet.</summary>
-        <remarks><para>Lorsque vous supprimez un , cette méthode affiche une boîte de dialogue qui invite l’utilisateur <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> à confirmer la suppression. Cette boîte de dialogue s'affiche par défaut. La <b>méthode Delete</b> renvoie une valeur <b>Boolean</b> qui est <b>False</b> si l’utilisateur a cliqué sur Annuler dans la boîte de dialogue ou <b>True</b> si l’utilisateur a cliqué sur Supprimer.</para>
+        <remarks><para>Lorsque vous supprimez un , cette méthode affiche une boîte de dialogue qui invite <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> l’utilisateur à confirmer la suppression. Cette boîte de dialogue s'affiche par défaut. La <b>méthode Delete</b> renvoie une valeur <b>Boolean</b> qui est <b>False</b> si l’utilisateur a cliqué sur Annuler dans la boîte de dialogue ou <b>True</b> si l’utilisateur a cliqué sur Supprimer.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1226,7 +1226,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si les sauts de page (automatiques et manuels) de la feuille spécifiée sont affichés. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les sauts de page (automatiques et manuels) de la feuille spécifiée sont affichés. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Vous ne pouvez pas définir cette propriété si aucune imprimante n'est installée.</para>
           <para> </para></remarks>
@@ -1264,7 +1264,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>Cette</b> valeur a la valeur True si la fenêtre, la feuille de calcul ou l’objet <b>ListObject</b> spécifié est affiché de droite à gauche et non de gauche à droite. Elle a la valeur <b>False</b> si cet objet s'affiche de gauche à droite. <b>Boolean</b> (en lecture seule).</summary>
+        <summary><b>Cette</b> valeur a la valeur True si la fenêtre, la feuille de calcul ou <b>l’objet ListObject</b> spécifié est affiché de droite à gauche et non de gauche à droite. Elle a la valeur <b>False</b> si cet objet s'affiche de gauche à droite. <b>Boolean</b> (en lecture seule).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1403,7 +1403,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si les flèches du Filtre Automatique sont activées lorsque la protection Interface utilisateur seulement est activée. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les flèches du Filtre Automatique sont activées lorsque la protection Interface utilisateur seulement est activée. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété s'applique à chaque feuille de calcul et n'est enregistrée ni avec celle-ci, ni avec la session.</para>
           <para> </para></remarks>
@@ -1435,7 +1435,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel recalcule automatiquement la feuille de calcul quand cela est nécessaire. Elle a la valeur <b>False</b> si Excel ne recalcule pas la feuille. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel recalcule automatiquement la feuille de calcul quand cela est nécessaire. Elle a la valeur <b>False</b> si Excel ne recalcule pas la feuille. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Quand la valeur de cette propriété est <b>False</b>, vous ne pouvez pas demander un recalcul. Quand vous changez la valeur de cette propriété, de <b>False</b> en <b>True</b>, Microsoft Excel recalcule la feuille de calcul.</para>
           <para> </para></remarks>
@@ -1544,7 +1544,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si les contrôles et les actions du tableau croisé dynamique sont activés lorsque la protection Interface utilisateur seulement est activée. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les contrôles et les actions du tableau croisé dynamique sont activés lorsque la protection Interface utilisateur seulement est activée. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété s'applique à chaque feuille de calcul et n'est enregistrée ni avec celle-ci, ni avec la session.</para>
           <para>Il doit exister un nombre suffisant de cellules non verrouillées en dessous et à droite du rapport de tableau croisé dynamique, afin que Microsoft Excel puisse le recalculer et l'afficher.</para>
@@ -2043,7 +2043,7 @@
         <param name="Before">Objet <b>facultatif</b>. Feuille avant laquelle la feuille déplacée s'insérera. Vous ne pouvez pas <paramref name="Before" /> spécifier si vous spécifiez <paramref name="After" /> .</param>
         <param name="After">Objet <b>facultatif</b>. Feuille après laquelle la feuille déplacée s'insérera. Vous ne pouvez pas <paramref name="After" /> spécifier si vous spécifiez <paramref name="Before" /> .</param>
         <summary>Déplace la feuille vers un autre emplacement dans le workbook</summary>
-        <remarks><para>Si vous ne spécifiez pas l’une ou l’autre des deux, Microsoft Excel crée un nouveau <paramref name="Before" /> <paramref name="After" /> workbook qui contient la feuille déplacée.</para>
+        <remarks><para>Si vous ne spécifiez pas l’une ou l’autre Microsoft Excel crée un nouveau <paramref name="Before" /> <paramref name="After" /> workbook qui contient la feuille déplacée.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2544,7 +2544,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PageSetup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un objet qui contient tous les paramètres de <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> mise en page de l’objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie un objet qui contient tous les paramètres de mise en <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> page de l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2572,7 +2572,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent pour l’objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2604,7 +2604,7 @@
       </Parameters>
       <Docs>
         <param name="Destination">Objet <b>facultatif</b>. Objet <see cref="T:Microsoft.Office.Interop.Excel.Range" /> qui spécifie l’endroit où le contenu du Presse-papiers doit être passé. Si cet argument est omis, la méthode utilise la sélection active. Il ne peut être spécifié que si le contenu du Presse-papiers peut être collé dans une plage. Si cet argument est spécifié, il ne <paramref name="Link" /> peut pas être utilisé.</param>
-        <param name="Link">Objet <b>facultatif</b>. <b>True</b> pour établir un lien avec la source des données collées. Si cet argument est spécifié, il ne <paramref name="Destination" /> peut pas être utilisé. La valeur par défaut est <b>False</b>.</param>
+        <param name="Link">Objet <b>facultatif</b>. <b>True</b> pour établir un lien avec la source des données collées. Si cet argument est spécifié, il ne <paramref name="Destination" /> peut pas être utilisé. La valeur par défaut est <b>Faux</b>.</param>
         <summary>Cette méthode colle le contenu du Presse-papiers dans la feuille.</summary>
         <remarks><para>Si vous ne spécifiez pas <paramref name="Destination" /> l’argument, vous devez sélectionner la plage de destination avant d’utiliser cette méthode.</para>
           <para>Cette méthode peut modifier la sélection de la feuille ; cela dépend du contenu du Presse-papiers.</para>
@@ -2643,8 +2643,8 @@
       </Parameters>
       <Docs>
         <param name="Format">Objet <b>facultatif</b>. Chaîne qui spécifie le format des données du Presse-papiers.</param>
-        <param name="Link">Objet <b>facultatif</b>. <b>True</b> pour établir un lien avec la source des données collées. Si les données sources ne conviennent pas à la liaison ou si l’application source ne prend pas en charge la liaison, ce paramètre est ignoré. La valeur par défaut est <b>False</b>.</param>
-        <param name="DisplayAsIcon">Objet <b>facultatif</b>. <b>True</b> pour afficher les données passées sous forme d’icône. La valeur par défaut est <b>False</b>.</param>
+        <param name="Link">Objet <b>facultatif</b>. <b>True</b> pour établir un lien avec la source des données collées. Si les données sources ne conviennent pas à la liaison ou si l’application source ne prend pas en charge la liaison, ce paramètre est ignoré. La valeur par défaut est <b>Faux</b>.</param>
+        <param name="DisplayAsIcon">Objet <b>facultatif</b>. <b>True</b> pour afficher les données passées sous forme d’icône. La valeur par défaut est <b>Faux</b>.</param>
         <param name="IconFileName">Objet <b>facultatif</b>. Nom du fichier qui contient l’icône à utiliser si <paramref name="DisplayAsIcon" /> la valeur est <b>True</b>.</param>
         <param name="IconIndex">Objet <b>facultatif</b>. Numéro d'index de l'icône dans le fichier d'icônes.</param>
         <param name="IconLabel">Objet <b>facultatif</b>. Étiquette de texte de l'icône.</param>
@@ -2763,20 +2763,20 @@
       </Parameters>
       <Docs>
         <param name="SourceType">Objet <b>facultatif</b>. Source des données du rapport. Il peut s’y trouver dans <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> l’une des constantes .constants.</param>
-        <param name="SourceData">Objet <b>facultatif</b>. Données du nouveau rapport. Il peut <see cref="T:Microsoft.Office.Interop.Excel.Range" /> s’agit d’un objet, d’un tableau de plages ou d’une constante de texte qui représente le nom d’un autre état. Pour une base de données externe, est un tableau de chaînes contenant la chaîne de requête SQL, où chaque élément peut contenir <paramref name="SourceData" /> jusqu’à 255 caractères. Vous devez utiliser <paramref name="Connection" /> l’argument pour spécifier la chaîne de connexion ODBC. Pour des raisons de compatibilité avec les versions antérieures d’Excel, il peut s’agit d’un tableau <paramref name="SourceData" /> à deux éléments. Le premier élément est la chaîne de connexion spécifiant la source ODBC des données. Le second élément est la chaîne de requête SQL utilisée pour obtenir les données. Si vous <paramref name="SourceData" /> spécifiez , vous devez également spécifier <paramref name="SourceType" /> . Si la cellule active se trouve à l’intérieur de la <paramref name="SourceData" /> plage, vous devez <paramref name="TableDestination" /> également la spécifier.</param>
+        <param name="SourceData">Objet <b>facultatif</b>. Données du nouveau rapport. Il peut <see cref="T:Microsoft.Office.Interop.Excel.Range" /> s’agit d’un objet, d’un tableau de plages ou d’une constante de texte qui représente le nom d’un autre état. Pour une base de données externe, est un tableau de chaînes contenant la chaîne de requête SQL, où chaque élément peut contenir jusqu’à <paramref name="SourceData" /> 255 caractères. Vous devez utiliser <paramref name="Connection" /> l’argument pour spécifier la chaîne de connexion ODBC. Pour la compatibilité avec les versions antérieures Excel, il peut s’agit d’un tableau <paramref name="SourceData" /> à deux éléments. Le premier élément est la chaîne de connexion spécifiant la source ODBC des données. Le second élément est la chaîne de requête SQL utilisée pour obtenir les données. Si vous <paramref name="SourceData" /> spécifiez , vous devez également spécifier <paramref name="SourceType" /> . Si la cellule active se trouve à l’intérieur de la <paramref name="SourceData" /> plage, vous devez <paramref name="TableDestination" /> également la spécifier.</param>
         <param name="TableDestination">Objet <b>facultatif</b>. Objet <b>Range</b> spécifiant où le rapport doit être placé dans la feuille de calcul. Si cet argument est omis, le rapport est placé dans la cellule active.</param>
         <param name="TableName">Objet <b>facultatif</b>. Chaîne qui indique le nom du nouveau rapport.</param>
         <param name="RowGrand">Objet <b>facultatif</b>. <b>True</b> pour afficher les totaux généraux des lignes du rapport.</param>
         <param name="ColumnGrand">Objet <b>facultatif</b>. <b>True</b> pour afficher les totaux généraux des colonnes du rapport.</param>
         <param name="SaveData">Objet <b>facultatif</b>. <b>True</b> pour enregistrer les données avec le rapport. <b>False</b> pour enregistrer uniquement la définition du rapport.</param>
         <param name="HasAutoFormat">Objet <b>facultatif</b>. <b>True</b> pour que Microsoft Excel mette automatiquement en forme le rapport lorsqu'il est actualisé ou que des champs sont déplacés.</param>
-        <param name="AutoPage">Objet <b>facultatif</b>. Valide uniquement si <paramref name="SourceType" /> <b>est xlConsolidation</b>. <b>True</b> pour que Microsoft Excel crée un champ de page pour la consolidation. Si <paramref name="AutoPage" /> <b></b>la false est, vous devez créer le ou les champs de page.</param>
+        <param name="AutoPage">Objet <b>facultatif</b>. Valide uniquement si <paramref name="SourceType" /> <b>xlConsolidation</b>. <b>True</b> pour que Microsoft Excel crée un champ de page pour la consolidation. Si <paramref name="AutoPage" /> <b></b>la false est, vous devez créer le ou les champs de page.</param>
         <param name="Reserved">Objet <b>facultatif</b>. N'est pas utilisé par Microsoft Excel.</param>
-        <param name="BackgroundQuery">Objet <b>facultatif</b>. <b>True</b> pour qu'Excel exécute des requêtes de manière asynchrone (en arrière-plan) pour le rapport. La valeur par défaut est <b>False</b>.</param>
-        <param name="OptimizeCache">Objet <b>facultatif</b>. <b>True</b> pour optimiser le cache de tableau croisé dynamique lors de sa création. La valeur par défaut est <b>False</b>.</param>
+        <param name="BackgroundQuery">Objet <b>facultatif</b>. <b>True</b> pour qu'Excel exécute des requêtes de manière asynchrone (en arrière-plan) pour le rapport. La valeur par défaut est <b>Faux</b>.</param>
+        <param name="OptimizeCache">Objet <b>facultatif</b>. <b>True</b> pour optimiser le cache de tableau croisé dynamique lors de sa création. La valeur par défaut est <b>Faux</b>.</param>
         <param name="PageFieldOrder">Objet <b>facultatif</b>. Ordre dans lequel les champs de page sont ajoutés à la mise en page du rapport de tableau croisé dynamique. Il peut s'agir de l'une des constantes <b>XlOrder</b> suivantes : <b>xlDownThenOver</b> ou <b>xlOverThenDown</b>. La valeur par défaut est <b>xlDownThenOver</b>.</param>
         <param name="PageFieldWrapCount">Objet <b>facultatif</b>. Nombre de champs de page contenus dans chaque colonne ou ligne du rapport de tableau croisé dynamique. La valeur par défaut est 0 (zéro).</param>
-        <param name="ReadData">Objet <b>facultatif</b>. <b>True</b> pour créer un cache de tableau croisé dynamique contenant tous les enregistrements issus de la base de données externe ; ce cache peut être très volumineux. Si la false est définie, vous pouvez définir certains champs en tant que champs de page serveur avant <paramref name="ReadData" /> que les données ne sont réellement lues. <b></b></param>
+        <param name="ReadData">Objet <b>facultatif</b>. <b>True</b> pour créer un cache de tableau croisé dynamique contenant tous les enregistrements issus de la base de données externe ; ce cache peut être très volumineux. Si la false est définie, vous pouvez définir certains champs en tant que champs de page serveur avant que les données <paramref name="ReadData" /> ne sont réellement lues. <b></b></param>
         <param name="Connection">Objet <b>facultatif</b>. Chaîne qui contient les paramètres ODBC permettant à Excel de se connecter à une source de données ODBC. La chaîne de connexion a la forme « ODBC ; &lt; chaîne de &gt; connexion " . Cet argument remplace tout paramètre précédent pour la <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> propriété de <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> l’objet.</param>
         <summary>Crée un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objet. Elle ne permet pas d'afficher l'Assistant Tableau croisé dynamique. Elle n'est pas disponible pour les sources de données OLE DB. Utilisez la méthode pour ajouter un cache de tableau croisé dynamique, puis créez un rapport de tableau croisé dynamique <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> basé sur le cache. <b>Objet PivotTable.</b></summary>
         <returns>To be added.</returns>
@@ -2883,7 +2883,7 @@
         <param name="Copies">Objet <b>facultatif</b>. Nombre de copies à imprimer. Si cet argument est omis, une seule copie est imprimée.</param>
         <param name="Preview">Objet <b>facultatif</b>. <b>True</b> pour que Microsoft Excel affiche l'aperçu avant impression avant d'imprimer l'objet. <b>False</b> (ou non défini) pour imprimer l'objet immédiatement.</param>
         <param name="ActivePrinter">Objet <b>facultatif</b>. Définit le nom de l'imprimante active.</param>
-        <param name="PrintToFile">Objet <b>facultatif</b>. <b>True</b>  pour imprimer dans un fichier. Si <paramref name="PrToFileName" /> ce n’est pas spécifié, Microsoft Excel invite l’utilisateur à entrer le nom du fichier de sortie.</param>
+        <param name="PrintToFile">Objet <b>facultatif</b>. <b>True</b>  pour imprimer dans un fichier. Si <paramref name="PrToFileName" /> elle n’est pas spécifiée, Microsoft Excel invite l’utilisateur à entrer le nom du fichier de sortie.</param>
         <param name="Collate">Objet <b>facultatif</b>. <b>True</b>  pour assembler plusieurs copies.</param>
         <param name="PrToFileName">Objet <b>facultatif</b>. Si la valeur est True, cet argument spécifie le nom du fichier dans lequel <paramref name="PrintToFile" /> vous souhaitez <b></b>imprimer.</param>
         <summary>Cette méthode imprime l'objet.</summary>
@@ -3005,23 +3005,23 @@
       </Parameters>
       <Docs>
         <param name="Password">Objet <b>facultatif</b>. Chaîne qui spécifie un mot de passe qui respecte la casse pour la feuille de calcul ou le classeur. Si cet argument est omis, vous pouvez annuler la protection de la feuille de calcul ou du classeur sans utiliser de mot de passe. Dans le cas contraire, vous devez spécifier le mot de passe pour annuler la protection de la feuille de calcul ou du classeur. Si vous oubliez le mot de passe, vous ne pouvez plus annuler la protection de la feuille de calcul ni du classeur. Pensez à conserver en lieu sûr une liste de vos mots de passe et les noms des documents correspondants.</param>
-        <param name="DrawingObjects">Objet <b>facultatif</b>. <b>True</b> pour protéger les formes. La valeur par défaut est <b>False</b>.</param>
+        <param name="DrawingObjects">Objet <b>facultatif</b>. <b>True</b> pour protéger les formes. La valeur par défaut est <b>Faux</b>.</param>
         <param name="Contents">Objet <b>facultatif</b>. <b>True</b> pour protéger le contenu. Pour un graphique, cela protège le graphique entier. Pour une feuille de calcul, cela protège les cellules verrouillées. La valeur par défaut est <b>True</b>.</param>
         <param name="Scenarios">Objet <b>facultatif</b>. <b>True</b> pour protéger les scénarios. Cet argument n'est valide que pour les feuilles de calcul. La valeur par défaut est <b>True</b>.</param>
         <param name="UserInterfaceOnly">Objet <b>facultatif</b>. <b>True pour</b> protéger l’interface utilisateur, mais pas les macros. Si cet argument est omis, la protection s'applique à la fois aux macros et à l'interface utilisateur.</param>
         <param name="AllowFormattingCells">Objet <b>facultatif</b>. <b>True</b> permet à l'utilisateur de mettre en forme n'importe quelle cellule d'une feuille de calcul protégée. La valeur par défaut est <b>False</b>.</param>
         <param name="AllowFormattingColumns">Objet <b>facultatif</b>. <b>True</b> permet à l'utilisateur de mettre en forme n'importe quelle colonne d'une feuille de calcul protégée. La valeur par défaut est <b>False</b>.</param>
-        <param name="AllowFormattingRows">Objet <b>facultatif</b>. <b>True</b> permet à l’utilisateur de mettre en forme n’importe quelle ligne dans une feuille de calcul protégée. La valeur par défaut est <b>False</b>.</param>
+        <param name="AllowFormattingRows">Objet <b>facultatif</b>. <b>True</b> permet à l’utilisateur de mettre en forme n’importe quelle ligne dans une feuille de calcul protégée. La valeur par défaut est <b>Faux</b>.</param>
         <param name="AllowInsertingColumns">Objet <b>facultatif</b>. <b>True</b> permet à l'utilisateur d'insérer des colonnes dans la feuille de calcul protégée. La valeur par défaut est <b>False</b>.</param>
         <param name="AllowInsertingRows">Objet <b>facultatif</b>. <b>True</b> permet à l'utilisateur d'insérer des lignes dans la feuille de calcul protégée. La valeur par défaut est <b>False</b>.</param>
         <param name="AllowInsertingHyperlinks">Objet <b>facultatif</b>. <b>True</b> permet à l'utilisateur d'insérer des liens hypertexte dans la feuille de calcul. La valeur par défaut est <b>False</b>.</param>
         <param name="AllowDeletingColumns">Objet <b>facultatif</b>. <b>True</b> permet à l'utilisateur de supprimer des colonnes dans la feuille de calcul protégée, où chaque cellule de la colonne à supprimer est déverrouillée. La valeur par défaut est <b>False</b>.</param>
-        <param name="AllowDeletingRows">Objet <b>facultatif</b>. <b>True</b> permet à l’utilisateur de supprimer des lignes dans la feuille de calcul protégée où chaque cellule de la ligne à supprimer est déverrouillée. La valeur par défaut est <b>False</b>.</param>
+        <param name="AllowDeletingRows">Objet <b>facultatif</b>. <b>True</b> permet à l’utilisateur de supprimer des lignes dans la feuille de calcul protégée où chaque cellule de la ligne à supprimer est déverrouillée. La valeur par défaut est <b>Faux</b>.</param>
         <param name="AllowSorting">Objet <b>facultatif</b>. <b>True</b> permet à l'utilisateur d'effectuer un tri dans la feuille de calcul protégée. Toutes les cellules de la plage à trier doivent être déverrouillées ou ne plus être protégées. La valeur par défaut est <b>False</b>.</param>
         <param name="AllowFiltering">Objet <b>facultatif</b>. <b>True</b> permet à l'utilisateur de définir des filtres dans la feuille de calcul protégée. Les utilisateurs peuvent changer des critères de filtre, mais ils ne peuvent ni activer, ni désactiver un filtre automatique. Ils peuvent définir des filtres dans un filtre automatique existant. La valeur par défaut est <b>False</b>.</param>
         <param name="AllowUsingPivotTables">Objet <b>facultatif</b>. <b>True</b> permet à l'utilisateur d'utiliser des rapports de tableau croisé dynamique dans la feuille de calcul protégée. La valeur par défaut est <b>False</b>.</param>
         <summary>Cette méthode protège une feuille de calcul de sorte qu'elle ne puisse être modifiée.</summary>
-        <remarks><para>Si vous appliquez la méthode <b>Protect</b> avec l’argument avec la valeur True à une feuille de calcul, puis que vous enregistrez le workbook, la feuille de calcul entière (et pas seulement l’interface) sera entièrement protégée lorsque vous rouvrirez le <paramref name="UserInterfaceOnly" /> workbook. <b></b> Pour activer à nouveau la protection de l’interface utilisateur après l’ouverture du manuel, vous devez de nouveau appliquer la méthode <b>Protect</b> avec la valeur <paramref name="UserInterfaceOnly" /> <b>True</b>.</para>
+        <remarks><para>Si vous appliquez la méthode <b>Protect</b> avec l’argument a la valeur True à une feuille de calcul, puis enregistrez le workbook, la feuille de calcul entière (pas seulement l’interface) sera entièrement protégée lorsque vous rouvrirez le <paramref name="UserInterfaceOnly" /> workbook. <b></b> Pour activer à nouveau la protection de l’interface utilisateur après l’ouverture du manuel, vous devez de nouveau appliquer la méthode <b>Protect</b> avec la valeur <paramref name="UserInterfaceOnly" /> <b>True</b>.</para>
           <para>Si vous souhaitez apporter une modification à une feuille de calcul protégée, il est possible d’utiliser la méthode <b>Protect</b> sur une feuille de calcul protégée si le mot de passe est fourni. Une autre méthode consiste à déprotecter la feuille de calcul, à apporter les modifications nécessaires, puis à la protéger à nouveau.</para>
           <para>
             <b>Remarque</b>: « Non protégée » signifie que la cellule peut être verrouillée (boîte de dialogue Format de cellule), mais qu’elle est incluse dans une plage définie dans la boîte de dialogue Autoriser les utilisateurs à modifier les plages, et que l’utilisateur a déprotecté la plage avec un mot de passe ou a été validé via les autorisations NT.</para>
@@ -3175,7 +3175,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si les scénarios de feuille de calcul sont protégés. <b>Boolean</b> (en lecture seule).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les scénarios de feuille de calcul sont protégés. Type de données <b>Boolean</b> en lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3806,7 +3806,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit la largeur standard (par défaut) de toutes les colonnes dans la feuille de calcul. <b>Double</b> en lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit la largeur standard (valeur par défaut) pour toutes les colonnes de la feuille de calcul. Type de données <b>Double</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks><para>Une unité de largeur de colonne est égale à la largeur d'un caractère du style Normal. Dans le cas des polices proportionnelles, la largeur du caractère 0 (zéro) est utilisée.</para>
           <para> </para></remarks>
@@ -3912,7 +3912,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel applique à la feuille de calcul les règles d'évaluation d'expression propres à Lotus 1-2-3. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel applique à la feuille de calcul les règles d'évaluation d'expression propres à Lotus 1-2-3. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3955,7 +3955,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel applique à la feuille de calcul les règles de saisie de formules propres à Lotus 1-2-3. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si Microsoft Excel applique à la feuille de calcul les règles de saisie de formules propres à Lotus 1-2-3. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4088,7 +4088,7 @@
         <summary>Cette propriété détermine si l'objet est visible. En <see cref="T:Microsoft.Office.Interop.Excel.XlSheetVisibility" /> lecture/écriture.</summary>
         <value>To be added.</value>
         <remarks><para>La propriété <b>Visible</b> d'un élément de tableau croisé dynamique a la valeur <b>True</b> si cet élément apparaît actuellement dans le tableau.</para>
-          <para>Si vous définissez la <b>propriété Visible</b> d’un nom sur <b>False,</b>ce nom n’apparaîtra pas dans la boîte de dialogue Définir le nom.</para>
+          <para>Si vous définissez la <b>propriété Visible</b> d’un nom sur <b>False</b>, ce nom n’apparaîtra pas dans la boîte de dialogue Définir le nom.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4115,7 +4115,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.VPageBreaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> collection qui représente les sauts de page verticaux de la feuille. En lecture seule.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> collection qui représente les sauts de page verticaux sur la feuille. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4150,7 +4150,7 @@
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objet qui représente les cellules mappées à un XPath particulier. Renvoie <b>nothing</b> si le XPath spécifié n’a pas été mappé à la feuille de calcul ou si la plage mappée est vide.</summary>
         <returns>To be added.</returns>
         <remarks><para>Les fonctionnalités XML, à l’exception de l’enregistrement de fichiers au format feuille de calcul XML, sont disponibles uniquement dans Microsoft Office Professional Edition 2003 et Microsoft Office Excel 2003.</para>
-          <para>Si le XPath existe dans une colonne dans une liste XML, l’objet <b>Range</b> renvoyé n’inclut pas la ligne d’en-tête ni la ligne Insérer.</para>
+          <para>Si le XPath existe dans une colonne dans une liste XML, l’objet <b>Range</b> renvoyé n’inclut pas la ligne d’en-tête ou la ligne Insert.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

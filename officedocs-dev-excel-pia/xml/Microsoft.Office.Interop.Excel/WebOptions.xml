@@ -1,5 +1,5 @@
 <Type Name="WebOptions" FullName="Microsoft.Office.Interop.Excel.WebOptions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="daab179c046c8ae3d7a70032ace37b8eb5d45e81" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009267" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4931b180d1a90c7fc24a9cf3ce958feee9c52b65b4f90806444ef2b8410dbdda" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54512419" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WebOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WebOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface WebOptions" />
@@ -79,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -140,7 +140,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie la valeur <b>True</b> si les composants Microsoft Office Web Components nécessaires sont téléchargés lorsque vous visualisez le document enregistré dans un navigateur Web, mais uniquement si les composants ne sont pas encore installés sur l'ordinateur. Elle a la valeur <b>False</b> si les composants ne sont pas téléchargés. La valeur par défaut est <b>False</b>.</summary>
+        <summary>Cette propriété renvoie la valeur <b>True</b> si les composants Microsoft Office Web Components nécessaires sont téléchargés lorsque vous visualisez le document enregistré dans un navigateur Web, mais uniquement si les composants ne sont pas encore installés sur l'ordinateur. Elle a la valeur <b>False</b> si les composants ne sont pas téléchargés. La valeur par défaut est <b>Faux</b>.</summary>
         <value>To be added.</value>
         <remarks><para>Vous pouvez définir la propriété sur une URL centrale (sur l’intranet ou le web) ou un chemin d’accès (local ou réseau) vers un emplacement à partir duquel les utilisateurs autorisés peuvent télécharger des composants lors de l’affichage de votre <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> document enregistré. Il doit s'agir d'un chemin d'accès valide, faisant référence à un emplacement qui contient les composants nécessaires et l'utilisateur doit disposer d'une licence Microsoft Office.</para>
           <para>Les composants Microsoft Office Web Components permettent d'ajouter des fonctions interactives aux documents que vous enregistrez sous la forme de pages Web. Si vous visualisez une page Web à partir d'un navigateur situé sur un ordinateur sur lequel les composants ne sont pas installés, les parties interactives de la page seront statiques.</para>
@@ -202,11 +202,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le suffixe de dossier que Microsoft Excel utilise lorsque vous enregistrez un document en tant que page Web, utilisez des noms de fichiers longs et choisissez d’enregistrer les fichiers de prise en charge dans un dossier distinct (autrement dit, si les propriétés et les propriétés sont définies sur <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b>True</b>).</summary>
+        <summary>Renvoie le suffixe de dossier que Microsoft Excel utilise lorsque vous enregistrez un document en tant que page Web, utilisez des noms de fichiers longs et choisissez d’enregistrer les fichiers de prise en charge dans un dossier distinct (autrement dit, si les propriétés et les propriétés sont définies sur <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b>True).</b></summary>
         <value>To be added.</value>
         <remarks><para>Les documents nouvellement créés utilisent le suffixe renvoyé par <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> la propriété de <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> l’objet. La valeur de la propriété <b>FolderSuffix</b> de l’objet peut différer de celle de l’objet <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> <b>DefaultWebOptions</b> si le document a été précédemment modifié dans une version linguistique différente de Microsoft Excel. Vous pouvez utiliser la méthode pour modifier le suffixe en la langue que vous utilisez actuellement <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> dans Microsoft Office.</para>
           <para>Par défaut, le nom du dossier de prise en charge correspond au nom de la page Web auquel sont ajoutés un trait de soulignement (_), un point (.) ou un trait d'union (-) et le mot « files » (qui s'affiche dans la langue de la version de Microsoft Excel utilisée lors de l'enregistrement du fichier sous la forme d'une page Web). Par exemple, si vous utilisez la version néerlandaise de Microsoft Excel pour enregistrer un fichier nommé « Page1 » sous la forme d'une page Web, le nom par défaut du dossier de prise en charge est « Page1_bestanden ».</para>
-          <para>Le tableau suivant répertorie chaque version linguistique d’Office et indique la valeur de sa propriété et son <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> suffixe de dossier correspondants. Pour les langues qui ne sont pas répertoriés dans le tableau, le suffixe « .files » est utilisé.</para>
+          <para>Le tableau suivant répertorie chaque version linguistique de Office et indique la valeur correspondante de la propriété et le <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> suffixe de dossier. Pour les langues qui ne sont pas répertoriés dans le tableau, le suffixe « .files » est utilisé.</para>
           <list type="table">
             <item>
               <term>Arabe</term>
@@ -435,7 +435,7 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l’URL centrale (sur l’intranet ou le Web) ou le chemin d’accès (local ou réseau) menant à l’emplacement à partir duquel les utilisateurs autorisés peuvent télécharger les composants Microsoft Office Web Components lorsqu’ils visualisent votre document enregistré. La valeur par défaut constitue le chemin d’accès local ou réseau d’installation de Microsoft Office.</summary>
         <value>To be added.</value>
-        <remarks><para>Les composants Web Office sont automatiquement téléchargés avec la page Web spécifiée si la propriété est définie sur True, si les composants ne sont pas déjà installés, si le chemin d’accès est valide et pointe vers un emplacement contenant les composants nécessaires et si l’utilisateur dispose d’une licence <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> Microsoft Office valide. <b></b></para>
+        <remarks><para>Office Les composants Web sont automatiquement téléchargés avec la page Web spécifiée si la propriété est définie sur True, si les composants ne sont pas déjà installés, si le chemin d’accès est valide et pointe vers un emplacement contenant les composants nécessaires et si l’utilisateur dispose d’une licence <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> Microsoft Office valide. <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -469,7 +469,7 @@
         <value>To be added.</value>
         <remarks><para>Le nouveau dossier est créé dans le dossier où vous avez enregistré la page Web et est nommé d'après le document. Si les noms de fichiers longs sont utilisés, un suffixe est ajouté au nom du dossier. La propriété renvoie le suffixe de dossier pour la prise en charge de langue que vous avez sélectionnée ou installée, ou le <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> suffixe de dossier par défaut.</para>
           <para>Si vous enregistrez un document qui était auparavant enregistré avec une valeur différente affectée à la propriété <b>OrganizeInFolder</b>, Microsoft Excel déplace automatiquement les fichiers de prise en charge à l'intérieur du dossier ou en dehors du dossier selon les cas.</para>
-          <para>Si vous n’utilisez pas de noms de fichiers longs (c’est-à-dire, si la propriété est définie sur False), Microsoft Excel enregistre automatiquement les fichiers de prise en charge dans <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> un dossier distinct. <b></b> Les fichiers ne peuvent pas être enregistrés dans le même dossier que la page Web.</para>
+          <para>Si vous n’utilisez pas de noms de fichiers longs (c’est-à-dire, si la propriété est définie sur False), Microsoft Excel enregistre automatiquement les fichiers de prise en charge dans un <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> dossier distinct. <b></b> Les fichiers ne peuvent pas être enregistrés dans le même dossier que la page Web.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -560,7 +560,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si les feuilles de style en cascade (CSS) sont utilisées pour les polices lorsque vous affichez un document enregistré dans un navigateur Web de mise en forme. <b>False si</b> les balises FONT HTML et les feuilles de &lt; style en cascade sont &gt; utilisées. La valeur par défaut est <b>True</b>.</summary>
+        <summary><b>True</b> si les feuilles de style en cascade (CSS) sont utilisées pour les polices lorsque vous affichez un document enregistré dans un navigateur Web de mise en forme. <b>False si</b> des balises FONT HTML et des feuilles de &lt; style en cascade sont &gt; utilisées. La valeur par défaut est <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks><para>Microsoft Excel crée un fichier de feuille de style en cascade et l’enregistre dans le dossier spécifié ou dans le même dossier que votre page Web, en fonction de la valeur de la <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> propriété.</para>
           <para>Vous devez affecter la valeur <b>True</b>True à cette propriété si votre navigateur Web prend en charge les feuilles de style en cascade : vous pouvez ainsi contrôler de manière plus précise la disposition et la mise en forme dans votre page Web et lui donner un aspect plus proche de votre document (tel qu'il s'affiche dans Microsoft Excel).</para>
@@ -684,7 +684,7 @@
       <Parameters />
       <Docs>
         <summary>&gt;Cette méthode attribue au document spécifié le suffixe de dossier par défaut correspondant à la prise en charge de langue sélectionnée ou installée.</summary>
-        <remarks><para>Microsoft Excel utilise le suffixe de dossier lorsque vous enregistrez un document en tant que page Web, utilisez des noms de fichiers longs et choisissez d’enregistrer les fichiers de prise en charge dans un dossier distinct (autrement dit, si les propriétés et les propriétés sont définies sur <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b>True</b>).</para>
+        <remarks><para>Microsoft Excel utilise le suffixe de dossier lorsque vous enregistrez un document en tant que page Web, utilisez des noms de fichiers longs et choisissez d’enregistrer les fichiers de prise en charge dans un dossier distinct (autrement dit, si les propriétés et les propriétés sont définies sur <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b>True).</b></para>
           <para>Le suffixe apparaît dans le nom de dossier à la suite du nom du document. Par exemple, si le document est intitulé « Book1 » et que la langue est l'anglais, le nom du dossier est « Book1_files ». Les suffixes de dossier disponibles sont répertoriés dans la <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> rubrique propriété.</para>
           <para> </para></remarks>
       </Docs>

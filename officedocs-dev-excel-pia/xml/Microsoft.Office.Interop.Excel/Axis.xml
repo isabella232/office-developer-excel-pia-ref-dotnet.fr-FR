@@ -1,5 +1,5 @@
 <Type Name="Axis" FullName="Microsoft.Office.Interop.Excel.Axis">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d10d4e8e1ee2a7c304ba94c879df8f19e1748061" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006166" /></Metadata><TypeSignature Language="C#" Value="public interface Axis" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="33db8a8125c546d90c5be7392ef005bd8bb9ada4d6c8b0676f7d3325261d456c" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507757" /></Metadata><TypeSignature Language="C#" Value="public interface Axis" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Axis" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Axis" />
   <TypeSignature Language="VB.NET" Value="Public Interface Axis" />
@@ -23,7 +23,7 @@
   <Docs>
     <summary>Représente un axe unique dans un graphique.</summary>
     <remarks><para><b>L’objet Axis</b> est membre de la <see cref="T:Microsoft.Office.Interop.Excel.Axes" /> collection.</para>
-      <para>Utilisez <b>Axes</b>( ) où le type est le type d’axe et le groupe est le groupe d’axes pour <paramref name="type, group" /> renvoyer un seul objet <b>Axis.</b> <paramref name="Type" /> peut être l’une des <see cref="ff" /> constantes suivantes : <b>xlCategory,</b> <b>xlSeries</b>ou <b>xlValue</b>. <paramref name="Group" /> peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> constantes suivantes : <b>xlPrimary</b> ou <b>xlSecondary</b>. Pour plus d’informations, voir la <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> méthode.</para>
+      <para>Utilisez <b>axes</b>( ) où le type est le type d’axe et le groupe est le groupe d’axes pour <paramref name="type, group" /> renvoyer un seul objet <b>Axis.</b> <paramref name="Type" /> peut être l’une des <see cref="ff" /> constantes suivantes : <b>xlCategory,</b> <b>xlSeries</b>ou <b>xlValue</b>. <paramref name="Group" /> peut être l’une des <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> constantes suivantes : <b>xlPrimary</b> ou <b>xlSecondary</b>. Pour plus d’informations, voir la <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> méthode.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet qui représente l’application Microsoft Excel’application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -482,12 +482,12 @@
         <value>To be added.</value>
         <remarks><para>L'emploi d'étiquettes d'unité facilite la lecture des étiquettes de graduation lorsque vous représentez sous la forme de graphique des valeurs importantes. Par exemple, si vous graduez l'axe des ordonnées en unités de centaines, milliers ou millions, vous pouvez utiliser des valeurs numériques plus petites pour les graduations de l'axe.</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayUnit" /> peut être l’une de ces <b>constantes XlDisplayUnit</b> :</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayUnit" /> peut être l’une de <b>ces constantes XlDisplayUnit</b> :</para>
           <para>
             <b>xl Xl</b>
           </para>
           <para>
-            <b>xl XlDredThousands</b>
+            <b>xl XlHoudredThousands</b>
           </para>
           <para>
             <b>xl Xl Galeries</b>
@@ -924,7 +924,7 @@
         <summary>Cette propriété renvoie ou définit les unités principales de l'axe des ordonnées.</summary>
         <value>To be added.</value>
         <remarks><para>La définition de cette propriété définit <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnitIsAuto" /> la propriété sur <b>False</b>.</para>
-          <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickMarkSpacing" /> propriété pour définir l’espacement des marques de cocher sur l’axe des catégories.</para>
+          <para>Utilisez la propriété <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickMarkSpacing" /> pour définir l’espacement des marques de cocher sur l’axe des catégories.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1297,7 +1297,7 @@
         <summary>Cette propriété renvoie ou définit la valeur d’échelle d’unité mineure pour l’axe des catégories lorsque la propriété <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /> est définie sur <b>xlTimeScale</b>.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlTimeUnit" /> peut être l’une de ces <b>constantes XlTimeUnit</b> :</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlTimeUnit" /> peut être l’une de <b>ces constantes XlTimeUnit</b> :</para>
           <para>
             <b>xlMonths</b>
           </para>
@@ -1478,7 +1478,7 @@
           <para>
             <b>xlTickLabelPositionNextToAxis</b>
           </para>
-          <para>Vous ne pouvez pas utiliser <b>la constante xlTickLabelPositionHigh</b> sur des graphiques 3D.</para>
+          <para>Vous ne pouvez pas <b>utiliser la constante xlTickLabelPositionHigh</b> sur des graphiques 3D.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1568,7 +1568,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit si l'espacement d'étiquette de graduation est automatique. <b>Boolean</b> (en lecture/écriture).</summary>
+        <summary>Renvoie ou définit si l'espacement d'étiquette de graduation est automatique. Type de données <b>Boolean</b> en lecture-écriture.</summary>
         <value><b>Boolean</b></value>
         <remarks><para>La <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> propriété renvoie l’espacement actuel des étiquettes de tick, que le paramètre soit automatique ou non.</para>
           <para> </para></remarks>
